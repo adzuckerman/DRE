@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-Sanofi Advanced Training MASTER</name>
+    <style>none</style>
+    <subject>Invitation to Doctor Evidence’s Specialized Advanced Training</subject>
+    <textOnly>*|MC:SUBJECT|*
+
+Dear {!Contact.FirstName},
+As you know, Doctor Evidence and Sanofi have initiated a multi-year engagement in order to provide you and your colleagues with the use of our dynamic platforms and professional services to create Systematic Literature Reviews, Meta-Analyses, Landscape Analyses, Comparative Safety Assessments, Regulatory Responses and more.  The engagement includes extensive assets across several therapeutic areas (Cardiovascular, Diabetes, Immunology, Multiple Sclerosis, General Medicines).
+You have been recommended to attend our Advanced Training sessions. During this full day, hands-on workshop you will be meeting with with our statisticians, methodologists, epidemiologists, technology professionals and other to enable you to fully use all DOC products to address Sanofi’s business needs. 
+
+Doctor Evidence: ADVANCED SUPER- USER TRAINING
+
+Advanced Super-User Training
+Participant Profile: Statisticians and programmers with advanced degrees responsible for performing analyses as core part of job function; biostatistician in Development or Medical. Recommended for personnel who wish to be fluent in the use of the DRE platforms as part of their daily work flow, as well as serve as a resource to others within the organization.
+
+Comprehensive use of technology features in DOC Data and DOC Library to conduct range of analyses for multiple deliverables
+
+Identify analytical tools and when and how to use them
+Run a Direct Meta-Analysis, an Indirect Network Meta-Analysis, or a Cohort Analysis in a study set
+Perform sensitivity analyses with additional data
+Use DRE Ontology Management system
+Interpret results to support recommendations
+
+Please email me your availability for the dates below. We will hold the workshop in person at Chilly-Mazarin on the date which is convenient for a majority of people. I&apos;ll send you an invite when I hear back from all of you.
+
+October 19, 2017 9 am - 3 pm CET
+October 24, 2017 9 am - 3 pm CET
+November 7, 2017 9 am - 3 pm CET
+
+Doctor Evidence and Sanofi have initiated a multi-year engagement to provide you and your colleagues with the use of our dynamic platforms and professional services. These will enable you to create deliverables such as such as Systematic Literature Reviews, Meta-Analyses, Landscape Analyses, Comparative Safety Assessments, Regulatory Responses and more.  The engagement includes extensive assets across several therapeutic areas (Cardiovascular, Diabetes, Immunology, Multiple Sclerosis, General Medicines).</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

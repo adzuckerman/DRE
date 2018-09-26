@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Doctor Evidence Holiday card v1</title>
+<style type="text/css">
+		body{
+			background-image:url(https://gallery.mailchimp.com/66abbef7c2619050df458918c/images/75ed46da-8751-4554-ba41-c24e38b5b537.png);
+			background-repeat:no-repeat;
+			background-attachment:fixed;
+			background-position:top;
+			background-color:#9df8ff;
+			text-align:center;
+		}
+</style></head>
+
+<body>
+<table width="70" border="0" align="center">
+  <tr>
+    <h1 style="font-size: 52px; color: #ECB520; padding-top: 310px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; text-shadow: 1px 2px 0 #004064;"><strong>HAPPY HOLIDAYS!</strong></h1>
+  </tr>
+  <tr>
+    <p style="font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif; font-style: italic ; font-size: 29px; color: #ffffcc; text-shadow: 1px 1px 0 #000 "> At this season, we take time to reflect on<br>
+      the good things we have...like our partnership with you.<br>
+      We at Doctor Evidence appreciate working with you<br>and hope that the holidays<br>
+      and the coming year will bring you every<br>
+      happiness and success.</p>
+  </tr>
+</table>
+</body>
+</html>

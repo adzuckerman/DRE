@@ -1,0 +1,3 @@
+Close Date is within one week for {!Opportunity.Name}. Please update stage to Closed Won/Closed Lost if appropriate or set the close date forward. 
+
+{!Opportunity.Link}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>GROWTH-Commentaries-Promo-11-2017</name>
+    <style>none</style>
+    <subject>Tom Frieden (former CDC director): Commentary for Doctor Evidence</subject>
+    <textOnly>*|Tom Frieden (former CDC director): Commentary for Doctor Evidence |*
+
+Hi {!Contact.FirstName},
+I thought this would be of interest to you:
+Guideline &amp; Research Organizations Worldwide for Transparency &amp; Harmonization (GROWTH) is dedicated to the promotion of evidence-based knowledge to inform clinical practice guidelines, treatment decisions, and health policy. The monthly GROWTH Newsletter informs readers of pertinent content from a variety of sources covering a diverse range of topics and events relevant to evidence-based medicine. The curated collection of GROWTH Commentaries are written by prominent leaders in academia, medicine, research, and government.
+
+Don’t miss the conclusion of the special GROWTH Commentaries series on Global Health, written by:
+
+Other authors from this series include:
+
+August, 2017 – Rebecca Martin, PhD, Director of the Center for Global Health at the CDC
+September, 2017 – Mauricio Ferri, MD, MS, and Susan L Norris, MD, MPH, MS, Consultant to the WHO Guidelines Review Committee Secretariat and Secretary of the WHO Guidelines Review Committee, respectively
+October, 2017 – Anna Rosling Ronnlund, MS, Co-Founder and Project Manager of GapMinder
+
+Sign up now and invite your colleagues to join the mailing list to receive monthly GROWTH Commentaries
+
+Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.
+*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
+
+Our mailing address is:
+*|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
+
+Want to change how you receive these emails?
+You can update your preferences or unsubscribe from this list.
+
+*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

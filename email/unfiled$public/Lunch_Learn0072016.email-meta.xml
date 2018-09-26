@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Lunch &amp; Learn072016</name>
+    <style>none</style>
+    <subject>Endometriosis, Immunology and HCV Lunch &amp; Learn sessions</subject>
+    <textOnly>*|Doctor Evidence Lunch and Learn|*
+
+Doctor Evidence Lunch &amp; Learn Sessions
+Tuesday,  July 12th 11-1 CST,
+and Wednesday,  July 20th 12-2 CST,
+
+Dear {!Contact.Name},
+We are pleased to invite you to Doctor Evidence&apos;s
+Lunch &amp; Learn sessions:
+Tuesday,  July 12th 11-1 CST,
+Room: ABV1 - 2S-101-01
+Led by Michiel De Bruin
+
+Wednesday,  July 20th 12-2 CST,
+Room: US-LC-ABV1-2S-101-01
+Led by Katia Butylkova
+
+Doctor Evidence (DRE) is a specialty evidence-based medicine software platform and services company that is engaged with AbbVie to provide the most relevant medical evidence and related analytics to inform AbbVie’s clinical and care decisions in multiple therapeutic areas.
+
+Learn how Doctor Evidence’s dynamic evidence-based software platforms can help you:
+
+Review and synthesize the curated database of relevant study sets in your therapeutic area
+Understand what types of research these data support
+Perform sophisticated meta-analyses, sensitivity and sub-group analyses with ease
+Learn how to incorporate output from analyses into documents, evidence tables and other deliverables.
+
+Look forward to seeing you soon,
+
+Katia Butylkova
+Account Director, Client Solutions
+
+This is an open session (walk-ins welcome and encouraged!) where we will be providing training and support on 3 of our technology resources that will be of greatest use to AbbVie associates:
+DOC Library,
+DOC Data,
+and DOC Label.
+We will also be answering questions related to any existing DRE projects as well as discussing new evidence-related needs and opportunities.
+We would love to see you there, so please stop by and bring your research questions!
+Lunch will be provided.
+
+Visit our website
+
+Click here to suggest a future topic of interest</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

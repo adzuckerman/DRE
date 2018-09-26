@@ -1,0 +1,12 @@
+<p>To Whom It May Concern:</p>
+
+<p>Please review and approve or reject the following TaskRay Project for Toggle Project Auto-Creation:</p>
+
+<p><a href="https://cs65.salesforce.com/{!TASKRAY__Project__c.Id}">https://cs65.salesforce.com/{!TASKRAY__Project__c.Id}</a></p>
+
+<p>You may approve or reject the request at the link below:</p>
+
+<p>{!ApprovalRequest.External_URL}</p>
+
+<p>Thanks,<br/>
+System Administrator</p>

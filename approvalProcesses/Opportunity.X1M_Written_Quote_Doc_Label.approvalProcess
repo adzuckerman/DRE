@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>bob@doctorevidence.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>mnewton@doctorevidence.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>sgarcia@doctorevidence.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>Unanimous</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Written Proposal $1M+</label>
+        <name>Written_Proposal_1M</name>
+    </approvalStep>
+    <description>Mika, Scott, and Bob approval of Written Proposal/Price Quote over $1M for Doc Label.</description>
+    <emailTemplate>unfiled$public/Stage_Approval_v2</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Proposal Requested</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterOrEqual</operation>
+            <value>1000000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Category__c</field>
+            <operation>equals</operation>
+            <value>DOC Label</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Check_Bob</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Check_Mika</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Check_Scott</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Doc_Label_Unanimous_Approval</name>
+            <type>Alert</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>$1M+ Written Quote Doc Label</label>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Sarah Collins Hire Blast</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Logo_1</letterhead>
+    <name>Sarah Collins</name>
+    <style>freeForm</style>
+    <subject>Doctor Evidence brings on Systematic Review expert</subject>
+    <textOnly>Doctor Evidence is happy to announce a new addition to our team. We now have the best systematic literature review expert in the industry to compliment our best in business EBM literature and analytic&apos;s platform.
+
+
+Dr. Collins most recently served as the Senior Director of Systematic Review (SR) at Abacus International. Over the past nine years she established and maintained the largest Systematic Review team in Europe, delivering more than 300 projects and providing market access solutions to 19 of the top 25 pharmaceutical manufacturers. Dr. Collins’ experience related to strategic planning, mergers and acquisitions, and other activities focused on developing cutting-edge SR methodologies will further complement Doctor Evidence’s services in these and similar areas.
+
+
+
+http://www.prweb.com/releases/2014/10/prweb12223202.htm
+
+
+“I am very excited to join Doctor Evidence in this capacity, which is directly in line with my experience and my drive to continue pushing innovation in healthcare decision-making,” Dr. Sarah Collins stated. “The Doctor Evidence specialty software-service model provides significant evolutionary steps forward in how our partners prepare their HEOR and market access contributions to the marketplace. I look forward to supporting further improvement of our partners’ attention to accuracy, efficiency and flexibility in the identification, synthesis and translation of scientific information to their stakeholders.”
+
+
+
+Dr. Sarah J Collins  FRSC
+
+Vice President, HEOR and Market Access, Client Solutions
+
+Doctor Evidence LLC
+
+Office: 00 44 (0)1992-581989
+
+
+
+Mobile:00 44 (0)7709-965290
+
+scollins@doctorevidence.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

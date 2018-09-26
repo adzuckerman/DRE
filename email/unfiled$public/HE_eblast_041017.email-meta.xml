@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HE-eblast-041017</name>
+    <style>none</style>
+    <subject>Risks associated with errors in healthcare utility and cost forecasts</subject>
+    <textOnly>*|Risks associated with errors in healthcare utility and cost forecasts|*
+
+Risks associated with errors in healthcare utility and cost forecasts
+
+Risks associated with errors in healthcare utility and cost forecasts
+
+Inaccurate estimates and forecasts of the burden of disease lead to errors and uncertainty in the accuracy and use of both utilization and economic models. Accurate estimates and forecasts are challenging, as access to expert methodologists and sufficiently curated data has been lacking. Whilst the demand for a high degree of confidence in forecasts has grown due to the need for providers of health care services to make sensitive choices about resource allocation, the experts and resources to credibly provide this information has not kept pace. This market condition has had negative impacts on the introduction of new medicines and the financial performance of manufacturers who have been unable to either communicate the value of their product or have made errors in calculating the real demand and uptake for their therapies.
+
+The Institute for Health Metrics and Evaluation (IHME) and Doctor Evidence (DRE) have formed a partnership to address this unmet market need. This partnership combines the power of technology-enabled digital content from peer-reviewed published literature and comprehensive global RWE sources. This partnership creates a new standard for the efficient and effective development of healthcare strategy through end-to-end epidemiological, economic, forecasting and reviews directly related to the natural history of disease presented on a unique platform for rapid interpretation, dissemination, and publication.
+
+The Partnership is focused on:
+
+Creation of RWE data marts from IHME data &amp; DRE peer-reviewed market scans
+Integration of RWE data into HTA submissions, guidelines and publications
+Collecting comprehensive and consistent global data to support signal detection
+Exploring novel opportunities for pragmatic trial design and validation
+Using geographic data and patient characteristic insights to optimize patient recruitment for clinical trials
+Highly reviewed and validated data and references to accelerate and reduce barriers to publication of new findings
+Harmonizing the use of Real World Data and published literature
+Making available unprecedented global coverage, including all emerging markets
+
+DRE has developed state-of-the-art technology designed specifically to extract, configure and analyze scientific and healthcare related data from published information, from regulatory documents, grey literature, drug labels, meeting abstracts, full publications to systematic reviews and guidelines.  DRE’s team of experienced and highly trained research specialists are led by methodologists educated at leading evidence-based medicine centers (McMaster, Brown, Cochrane). This expert staff uses processes refined over thirteen years to design and conduct systematic literature reviews and many types of evidence-based medicine synthesis and statistical analyses.
+
+The IHME recently received a $279 million grant from the Bill and Melinda Gates Foundation. This is additional funding beyond the $210 million awarded to the group in May of 2016 to support the Population Health Initiative.
+
+“IHME has developed the capacity to measure the burden of more than 300 diseases in 130 countries by age, gender, and population, and it produces tremendous data and insights that help us prioritize our investments to ensure that we are maximizing the life-saving potential of every dollar,” said Dr. Trevor Mundel, President of the Global Health Division at the Gates Foundation, when asked about the size of the donation. “IHME relies on the expertise of more than 2,000 collaborators around the world, and this effort requires resources.”
+
+IHME has grown from employing three individuals nine years ago to managing more than 300 faculty and staff today, while producing more than 200 scientific papers annually, and working closely with global and national institutions to improve health systems worldwide. Its findings are published in major scientific journals, policy reports, and online data visualizations. Moreover, IHME is now considered the trusted source for The World Bank, the United States Agency for International Development, The National Institutes of Health, the Wellcome Trust, and a range of other national and global organizations
+“IHME provides critical data about global health trends that can empower policymakers worldwide to identify better solutions in the fight against disease,” said Bill Gates, co-chair of the Bill &amp; Melinda Gates Foundation.
+
+IHME has several offerings that are combined with DRE technology and joint analytical services:
+
+Global Burden
+of Disease (GBD):
+
+Updated annually; findings published as dedicated issues of the Lancet. Published annually
+
+Worldwide epidemiological data resource containing incidence, prevalence, mortality, risk factors, and burden outcomes for diseases and sequelae. GBD database includes over 500 geographies within 195 countries and territories and provides time series from 1990 to 2015. IHME assembles and analyzes its GBD data using the best available processing and cross-check methodologies.  Diseases and injuries in the GBD datasets form a hierarchy of 310 causes, mutually exclusive and exhaustive of all-cause mortality which ensures that higher level group data can be interrogated in progressively greater detail.  IHME’s GBD model tracks 79 risk factors and correlates these with disease and injury prevalence and mortality.  IHME has GBD tools which allow extraction, analysis and reporting of any input, intermediate or output parameter - risk, prevalence, outcome – at any level of granularity within the data sets.  GBD data can be systematically analyzed, compared and exhibited for inclusion in reports and submissions.
+
+Forecasting Burden
+of Disease (FBD)
+
+Never published or made public
+
+Forecasting Database with 25-year forecasting models for any global territory. The FBD platform projects GBD results forward year-by-year for a 25-year horizon, presently from 2016 to 2040 and provides a comprehensive picture of future disease patterns to inform strategic decision-making. The forecasts consider a variety of factors – including past trends and relationships between risk factors, covariates, and causes of burden.  The FBD forecasting platform allows analyses of future impacts (by disease, age, sex, and country over time) at the same level of granular detail as the GBD. This unprecedented forecasting model provides a comprehensive picture of future disease patterns which can be used to inform strategic decision-making.
+
+The partnership will bring resources together, unlock the use of RWE and fully utilize the highest level of curated evidence to set the standard for global forecasting of the burden of illness and its associated use in cost and comparative effectiveness analysis.
+
+Note: the GBD database contains layers of detail beyond those available online; note that copyright to all data, including published data, is held by IHME and its commercial use requires IHME permission.
+
+Are you going ot ISPOR in Boston? Meet with DRE there.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

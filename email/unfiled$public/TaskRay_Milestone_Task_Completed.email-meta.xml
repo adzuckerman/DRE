@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Template when Task is Completed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>blankletterhead</letterhead>
+    <name>TaskRay Milestone Task Complete</name>
+    <style>freeForm</style>
+    <subject>Milestone Task: {!TASKRAY__Project_Task__c.Name} has Been Completed</subject>
+    <textOnly>Task Name:  {!TASKRAY__Project_Task__c.Name}
+Task Owner:  {!TASKRAY__Project_Task__c.OwnerFullName}
+
+Project Name:  {!TASKRAY__Project_Task__c.Project_Secondary_Name__c}
+PICO ID:  {!TASKRAY__Project_Task__c.TASKRAY__Project__c}
+Account:  {!TASKRAY__Project_Task__c.TASKRAY__trAccount__c}
+Opportunity ID: {!TASKRAY__Project_Task__c.TASKRAY__trOpportunityId__c}
+
+Task Start Date:  {!TASKRAY__Project_Task__c.TASKRAY__trStartDate__c}
+Task End Date:  {!TASKRAY__Project_Task__c.TASKRAY__Deadline__c}
+
+To review this task please use the link below:
+{!TASKRAY__Project_Task__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

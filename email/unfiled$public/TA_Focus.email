@@ -1,0 +1,348 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div align="center">
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="600" style="width:6.25in;border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0in 0in 0in 0in">
+ <tbody><tr>
+  <td valign="top" style="padding:0in 0in 0in 0in">
+  <div align="center">
+  <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="600" style="width:6.25in;background:white;border-collapse:collapse;mso-yfti-tbllook:
+   1184;mso-padding-alt:0in 0in 0in 0in">
+   <tbody><tr>
+    <td valign="top" style="padding:6.75pt 0in 0in 0in">
+    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;border-collapse:collapse;mso-yfti-tbllook:
+     1184;mso-padding-alt:0in 0in 0in 0in">
+     <tbody><tr>
+      <td valign="top" style="padding:0in 0in 0in 0in">
+      <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="left" width="366" style="width:274.5pt;border-collapse:collapse;
+       mso-yfti-tbllook:1184;mso-table-lspace:2.25pt;mso-table-rspace:2.25pt;
+       mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:column;
+       mso-table-left:left;mso-padding-alt:0in 0in 0in 0in">
+       <tbody><tr>
+        <td valign="top" style="padding:6.75pt 0in 6.75pt 13.5pt">
+        <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:
+        auto;line-height:10.3pt"><span style="font-size:8.5pt;font-family:&quot;Helvetica&quot;,sans-serif;
+        color:#606060">Doctor Evidence's Data HUB Management System</span></p>
+        </td>
+       </tr>
+      </tbody></table>
+      <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="right" width="197" style="width:147.75pt;border-collapse:collapse;
+       mso-yfti-tbllook:1184;mso-table-lspace:2.25pt;mso-table-rspace:2.25pt;
+       mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:column;
+       mso-table-left:right;mso-table-top:middle;mso-padding-alt:0in 0in 0in 0in">
+       <tbody><tr>
+        <td valign="top" style="padding:6.75pt 13.5pt 6.75pt 0in"></td>
+       </tr>
+      </tbody></table>
+      </td>
+     </tr>
+    </tbody></table>
+    </td>
+   </tr>
+  </tbody></table>
+  </div>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="padding:0in 0in 0in 0in">
+  <div align="center">
+  <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="600" style="width:6.25in;background:white;border-collapse:collapse;mso-yfti-tbllook:
+   1184;mso-padding-alt:0in 0in 0in 0in">
+   <tbody><tr>
+    <td valign="top" style="padding:0in 0in 0in 0in">
+    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;border-collapse:collapse;mso-yfti-tbllook:
+     1184;mso-padding-alt:0in 0in 0in 0in">
+     <tbody><tr>
+      <td valign="top" style="padding:6.75pt 6.75pt 6.75pt 6.75pt"><br>
+      </td>
+     </tr>
+    </tbody></table>
+    </td>
+   </tr>
+  </tbody></table>
+  </div>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="padding:0in 0in 0in 0in">
+  <div align="center">
+  <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="600" style="width:6.25in;background:white;border-collapse:collapse;mso-yfti-tbllook:
+   1184;mso-padding-alt:0in 0in 0in 0in">
+   <tbody><tr>
+    <td valign="top" style="padding:0in 0in 0in 0in">
+    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;border-collapse:collapse;mso-yfti-tbllook:
+     1184;mso-padding-alt:0in 0in 0in 0in">
+     <tbody><tr>
+      <td valign="top" style="padding:0in 0in 0in 0in">
+      <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="left" width="600" style="width:6.25in;border-collapse:collapse;
+       mso-yfti-tbllook:1184;mso-table-lspace:2.25pt;mso-table-rspace:2.25pt;
+       mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:column;
+       mso-table-left:left;mso-padding-alt:0in 0in 0in 0in">
+       <tbody><tr>
+        <td valign="top" style="padding:6.75pt 13.5pt 6.75pt 13.5pt"><h3 style="margin:0in;margin-bottom:.0001pt;text-align:justify;
+        line-height:16.9pt"><span style="font-family:&quot;Helvetica&quot;,sans-serif;
+        mso-fareast-font-family:&quot;Times New Roman&quot;;color:dimgray;letter-spacing:
+        -.4pt">The challenges associated with managing medical literature often
+        result in lost or incomplete knowledge and misspent resources. Doctor
+        Evidence has developed a library and data hub management system in
+        its&nbsp;<strong>DOC—Digital
+        Outcome Conversion—</strong>suite of products.&nbsp;&nbsp;<strong>DOC Library</strong>&nbsp;and&nbsp;<strong>DOC Data</strong>&nbsp;create
+        a Center Of Excellence and deliver clinical knowledge to multiple
+        functional areas in a fraction of the time with increased accuracy.</span><o:p></o:p></h3>
+        </td>
+       </tr>
+      </tbody></table>
+      </td>
+     </tr>
+    </tbody></table>
+    </td>
+   </tr>
+  </tbody></table>
+  </div>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="padding:0in 0in 0in 0in">
+  <div align="center">
+  <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="600" style="width:6.25in;background:white;border-collapse:collapse;mso-yfti-tbllook:
+   1184;mso-padding-alt:0in 0in 0in 0in">
+   <tbody><tr>
+    <td width="33%" valign="top" style="width:33.0%;padding:0in 0in 0in 0in">
+    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="left" width="100%" style="width:100.0%;border-collapse:collapse;
+     mso-yfti-tbllook:1184;mso-table-lspace:2.25pt;mso-table-rspace:2.25pt;
+     mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:column;
+     mso-table-left:left;mso-padding-alt:0in 0in 0in 0in">
+     <tbody><tr>
+      <td valign="top" style="padding:0in 0in 0in 0in">
+      <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;border-collapse:collapse;mso-yfti-tbllook:
+       1184;mso-padding-alt:0in 0in 0in 0in">
+       <tbody><tr>
+        <td valign="top" style="padding:6.75pt 6.75pt 6.75pt 6.75pt">
+        <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="left" style="border-collapse:collapse;mso-yfti-tbllook:1184;
+         mso-table-lspace:2.25pt;mso-table-rspace:2.25pt;mso-table-anchor-vertical:
+         paragraph;mso-table-anchor-horizontal:column;mso-table-left:left;
+         mso-padding-alt:0in 0in 0in 0in">
+         <tbody><tr>
+          <td valign="top" style="padding:0in 6.75pt 6.75pt 6.75pt">
+          <p class="MsoNormal" align="center" style="mso-margin-top-alt:auto;
+          mso-margin-bottom-alt:auto;text-align:center"><img width="164" id="_x0000_i1026" src="https://gallery.mailchimp.com/66abbef7c2619050df458918c/images/f7f552d3-9f31-4266-a61a-50aee4768ee1.jpeg" border="0"></p>
+          </td>
+         </tr>
+         <tr>
+          <td width="164" valign="top" style="width:123.0pt;padding:0in 6.75pt 0in 6.75pt">
+          <p class="MsoNormal" align="center" style="mso-margin-top-alt:auto;
+          mso-margin-bottom-alt:auto;text-align:center;line-height:16.9pt"><span style="font-size:11.5pt;font-family:&quot;Helvetica&quot;,sans-serif;
+          color:#606060">Cardiology<br>
+          Oncology<br>
+          Immunology<br>
+          Vascular Diseases<br>
+          &nbsp;</span></p>
+          </td>
+         </tr>
+        </tbody></table>
+        </td>
+       </tr>
+      </tbody></table>
+      </td>
+     </tr>
+    </tbody></table>
+    </td>
+    <td width="33%" valign="top" style="width:33.0%;padding:0in 0in 0in 0in">
+    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="left" width="100%" style="width:100.0%;border-collapse:collapse;
+     mso-yfti-tbllook:1184;mso-table-lspace:2.25pt;mso-table-rspace:2.25pt;
+     mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:column;
+     mso-table-left:left;mso-padding-alt:0in 0in 0in 0in">
+     <tbody><tr>
+      <td valign="top" style="padding:0in 0in 0in 0in">
+      <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;border-collapse:collapse;mso-yfti-tbllook:
+       1184;mso-padding-alt:0in 0in 0in 0in">
+       <tbody><tr>
+        <td valign="top" style="padding:6.75pt 6.75pt 6.75pt 6.75pt">
+        <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="left" style="border-collapse:collapse;mso-yfti-tbllook:1184;
+         mso-table-lspace:2.25pt;mso-table-rspace:2.25pt;mso-table-anchor-vertical:
+         paragraph;mso-table-anchor-horizontal:column;mso-table-left:left;
+         mso-padding-alt:0in 0in 0in 0in">
+         <tbody><tr>
+          <td valign="top" style="padding:0in 6.75pt 6.75pt 6.75pt">
+          <p class="MsoNormal" align="center" style="mso-margin-top-alt:auto;
+          mso-margin-bottom-alt:auto;text-align:center"><img width="164" id="_x0000_i1027" src="https://gallery.mailchimp.com/66abbef7c2619050df458918c/images/3e7b5794-5e4b-44b7-8190-820f9b12e59c.jpg" border="0"></p>
+          </td>
+         </tr>
+         <tr>
+          <td width="164" valign="top" style="width:123.0pt;padding:0in 6.75pt 0in 6.75pt">
+          <p class="MsoNormal" align="center" style="mso-margin-top-alt:auto;
+          mso-margin-bottom-alt:auto;text-align:center;line-height:16.9pt"><span style="font-size:11.5pt;font-family:&quot;Helvetica&quot;,sans-serif;
+          color:#606060">Endocrinology<br>
+          Metabolic<br>
+          Inflammation<br>
+          Ophthalmology</span></p>
+          </td>
+         </tr>
+        </tbody></table>
+        </td>
+       </tr>
+      </tbody></table>
+      </td>
+     </tr>
+    </tbody></table>
+    </td>
+    <td width="33%" valign="top" style="width:33.0%;padding:0in 0in 0in 0in">
+    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="left" width="100%" style="width:100.0%;border-collapse:collapse;
+     mso-yfti-tbllook:1184;mso-table-lspace:2.25pt;mso-table-rspace:2.25pt;
+     mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:column;
+     mso-table-left:left;mso-padding-alt:0in 0in 0in 0in">
+     <tbody><tr>
+      <td valign="top" style="padding:0in 0in 0in 0in">
+      <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;border-collapse:collapse;mso-yfti-tbllook:
+       1184;mso-padding-alt:0in 0in 0in 0in">
+       <tbody><tr>
+        <td valign="top" style="padding:6.75pt 6.75pt 6.75pt 6.75pt">
+        <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="left" style="border-collapse:collapse;mso-yfti-tbllook:1184;
+         mso-table-lspace:2.25pt;mso-table-rspace:2.25pt;mso-table-anchor-vertical:
+         paragraph;mso-table-anchor-horizontal:column;mso-table-left:left;
+         mso-padding-alt:0in 0in 0in 0in">
+         <tbody><tr>
+          <td valign="top" style="padding:0in 6.75pt 6.75pt 6.75pt">
+          <p class="MsoNormal" align="center" style="mso-margin-top-alt:auto;
+          mso-margin-bottom-alt:auto;text-align:center"><img width="164" id="_x0000_i1028" src="https://gallery.mailchimp.com/66abbef7c2619050df458918c/images/b9a838d5-a4f0-4abf-9c67-146f75d53631.jpeg" border="0"></p>
+          </td>
+         </tr>
+         <tr>
+          <td width="164" valign="top" style="width:123.0pt;padding:0in 6.75pt 0in 6.75pt">
+          <p class="MsoNormal" align="center" style="mso-margin-top-alt:auto;
+          mso-margin-bottom-alt:auto;text-align:center;line-height:16.9pt"><span style="font-size:11.5pt;font-family:&quot;Helvetica&quot;,sans-serif;
+          color:#606060">Pulmonary<br>
+          Respiratory Diseases<br>
+          Neurology<br>
+          CNS&nbsp;</span></p>
+          </td>
+         </tr>
+        </tbody></table>
+        </td>
+       </tr>
+      </tbody></table>
+      </td>
+     </tr>
+    </tbody></table>
+    </td>
+   </tr>
+  </tbody></table>
+  </div>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style="padding:0in 0in 0in 0in">
+  <div align="center">
+  <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="600" style="width:6.25in;background:white;border-collapse:collapse;mso-yfti-tbllook:
+   1184;mso-padding-alt:0in 0in 0in 0in">
+   <tbody><tr>
+    <td valign="top" style="padding:0in 0in 6.75pt 0in">
+    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;border-collapse:collapse;mso-yfti-tbllook:
+     1184;mso-padding-alt:0in 0in 0in 0in">
+     <tbody><tr>
+      <td valign="top" style="padding:0in 0in 0in 0in">
+      <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="left" width="600" style="width:6.25in;border-collapse:collapse;
+       mso-yfti-tbllook:1184;mso-table-lspace:2.25pt;mso-table-rspace:2.25pt;
+       mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:column;
+       mso-table-left:left;mso-padding-alt:0in 0in 0in 0in">
+       <tbody><tr>
+        <td valign="top" style="padding:6.75pt 13.5pt 6.75pt 13.5pt">
+        <h3 style="margin:0in;margin-bottom:.0001pt;text-align:justify;
+        line-height:16.9pt"><span style="font-family:&quot;Helvetica&quot;,sans-serif;
+        mso-fareast-font-family:&quot;Times New Roman&quot;;color:dimgray;letter-spacing:
+        -.4pt">DOC Data&nbsp;is a powerful environment for structuring data and
+        generating analysis from full-text clinical studies and other
+        epidemiology sources. DOC Data enables finger-tip ready review and
+        analysis of data for direct and indirect analysis.&nbsp;&nbsp;The
+        methodologies incorporated into the DOC Data platform meet the highest
+        global evidence-based medicine standards and practices.&nbsp; Data
+        analytics are directly integrated into the R Project for Statistical
+        Computing modules so there is no denigration tied to data portability
+        issues.&nbsp;&nbsp;The centralization and structuring of clinical data
+        into a single, quality-controlled data hub and networked repository
+        streamlines access and integration into an organization’s
+        best-practices workflows.</span><o:p></o:p></h3>
+        </td>
+       </tr>
+      </tbody></table>
+      </td>
+     </tr>
+    </tbody></table>
+    <p class="MsoNormal">&nbsp;</p>
+    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;border-collapse:collapse;mso-yfti-tbllook:
+     1184;mso-padding-alt:0in 0in 0in 0in">
+     <tbody><tr>
+      <td valign="top" style="padding:0in 0in 0in 0in">
+      <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="left" width="600" style="width:6.25in;border-collapse:collapse;
+       mso-yfti-tbllook:1184;mso-table-lspace:2.25pt;mso-table-rspace:2.25pt;
+       mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:column;
+       mso-table-left:left;mso-padding-alt:0in 0in 0in 0in">
+       <tbody><tr>
+        <td valign="top" style="padding:6.75pt 13.5pt 6.75pt 13.5pt">
+        <h4 style="margin:0in;margin-bottom:.0001pt;line-height:15.0pt"><strong><span style="font-family:&quot;Helvetica&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+        color:teal">DOC Library</span></strong><span style="font-family:&quot;Helvetica&quot;,sans-serif;
+        mso-fareast-font-family:&quot;Times New Roman&quot;;color:teal">&nbsp;has over
+        250,000 screened citations in it for the above topics and&nbsp;<strong>DOC Data&nbsp;</strong>has
+        over 20 million highly curated data points.&nbsp;&nbsp;</span><o:p></o:p></h4>
+        </td>
+       </tr>
+      </tbody></table>
+      </td>
+     </tr>
+    </tbody></table>
+    <p class="MsoNormal">&nbsp;</p>
+    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;border-collapse:collapse;mso-yfti-tbllook:
+     1184;mso-padding-alt:0in 0in 0in 0in">
+     <tbody><tr>
+      <td style="padding:13.5pt 13.5pt 13.5pt 13.5pt">
+      <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;border-collapse:collapse;border:none;
+       mso-border-top-alt:solid #999999 .75pt;mso-yfti-tbllook:1184;mso-padding-alt:
+       0in 0in 0in 0in">
+       <tbody><tr>
+        <td style="border:none;border-top:solid #999999 1.0pt;mso-border-top-alt:
+        solid #999999 .75pt;padding:0in 0in 0in 0in">
+        <h3 style="margin:0in;margin-bottom:.0001pt;line-height:16.9pt"><span style="font-family:&quot;Helvetica&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+        letter-spacing:-.4pt">If you would like to have a free demonstration of
+        our core product suite please contact:<br>
+        <a href="mailto:support@doctorevidence.com">support@doctorevidence.com</a><br>
+        <br>
+        Please visit our web-site:&nbsp;&nbsp;<a href="http://drevidence.com/">http://drevidence.com</a></span><o:p></o:p></h3>
+        </td>
+       </tr>
+      </tbody></table>
+      </td>
+     </tr>
+    </tbody></table>
+    <p class="MsoNormal">&nbsp;</p>
+    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;border-collapse:collapse;mso-yfti-tbllook:
+     1184;mso-padding-alt:0in 0in 0in 0in">
+     <tbody><tr>
+      <td valign="top" style="padding:0in 0in 0in 0in">
+      <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="left" width="600" style="width:6.25in;border-collapse:collapse;
+       mso-yfti-tbllook:1184;mso-table-lspace:2.25pt;mso-table-rspace:2.25pt;
+       mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:column;
+       mso-table-left:left;mso-padding-alt:0in 0in 0in 0in">
+       <tbody><tr>
+        <td valign="top" style="padding:6.75pt 13.5pt 6.75pt 13.5pt">
+        <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:
+        auto;line-height:10.3pt"><span style="font-size:8.5pt;font-family:&quot;Helvetica&quot;,sans-serif;
+        color:#606060">&nbsp;</span></p>
+        </td>
+       </tr>
+      </tbody></table>
+      </td>
+     </tr>
+    </tbody></table>
+    </td>
+   </tr>
+  </tbody></table>
+  </div>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>]]></td>
+</tr>
+</table>

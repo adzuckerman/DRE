@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>blankletterhead</letterhead>
+    <name>Project Satisfaction Survey-v1</name>
+    <style>freeForm</style>
+    <subject>Project Lead End of Project Satisfaction Questionnaire</subject>
+    <textOnly>Dear {!Contact.FirstName},
+Doctor Evidence welcomes your feedback as a {!Account.Name} Project Lead on the recently completed project entitled {!Case.Case_Name__c}.
+
+Your comments are collected by someone unconnected to the project, and will be used in aggregate to help us improve the work we do with {!Account.Name}.
+
+
+Please take a minute to read the information below regarding the goals you set up for this project:
+
+
+Business question/challenge: {!Case.Problem__c}
+
+Proposed solution: {!Case.Solution__c}
+
+Expected value: {!Case.Value__c}
+
+
+
+Please take a couple of minutes to fill out this survey.
+
+
+
+
+
+Thank you,
+
+Doctor Evidence</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

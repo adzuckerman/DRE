@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Lunch &amp; Learn061416</name>
+    <style>none</style>
+    <subject>Doctor Evidence Lunch and Learn this Tuesday, June 14th at 12:15 pm CST</subject>
+    <textOnly>DRE -Lunch &amp; Learn 06-02-16
+
+Doctor Evidence Lunch &amp; Learn Tuesday, June 14th, 2016
+from 12:15 pm - 2:00 pm CST
+
+Dear {!Contact.Name},
+
+We are pleased to invite you to the Doctor Evidence Lunch &amp; Learn session next Tuesday, June 14th, 2016 from 12:15 pm - 2:00 pm CST.
+
+This is an open session (walk-ins welcome and encouraged!) where we will be providing training and support on DOC Library,  DOC Data, and DOC Label resources. We will also be answering questions related to any existing DRE projects as well as discussing new evidence-related needs and opportunities.
+When: Tuesday, June 14th from 12:15 pm – 2:00 pm CST
+Location: US-LC-ABV1-1NW-101-02 Montreal
+We would love to see you there, so please stop by and bring your research questions!  Lunch will be provided.
+
+Look forward to seeing you soon,
+
+Katia Butylkova, Pharm.D.
+Account Director, Client Solutions
+Doctor Evidence</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

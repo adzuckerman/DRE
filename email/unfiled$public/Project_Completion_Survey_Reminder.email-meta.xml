@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Reminder email with survey URL</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Project Completion Survey Reminder</name>
+    <style>none</style>
+    <subject>Reminder to Submit Project Feedback</subject>
+    <textOnly>Dear {!Project_Request__c.Requester_First_Name__c},
+
+I am reaching out to you as a reminder to provide feedback for the recent project in collaboration with Doctor Evidence, “{!Project_Request__c.Project_Name__c}.”
+
+It is important to both Sanofi and Doctor Evidence that we receive feedback regarding these projects, as a mandate from the Sanofi CMO Office. Please click the link below to complete the brief survey:
+
+https://reports.doctorevidence.com/pages/Client/Survey.aspx?surveyId={!Project_Request__c.Id}
+
+Thank you for your valuable insight into our collaboration. If you have received this email in error, please contact {!Project_Request__c.Principal_Consultant_Email__c}.
+
+{!Project_Request__c.Principal_Consultant__c}
+
+{!Project_Request__c.Principal_Consultant_Title__c}
+Doctor Evidence
+
+{!Project_Request__c.Principle_Consultant_Phone__c}
+www.doctorevidence.com
+301 Arizona Ave, Suite 301, Santa Monica, CA 90401</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

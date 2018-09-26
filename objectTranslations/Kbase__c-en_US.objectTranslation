@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Extraction Quantity --></label>
+        <name>Extraction_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extraction Task Description --></label>
+        <name>Extraction_Task_Description__c</name>
+        <picklistValues>
+            <masterLabel>Tables</masterLabel>
+            <translation><!-- Tables --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term_Index</masterLabel>
+            <translation><!-- Term_Index --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation><!-- Text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reference ID --></label>
+        <name>Reference_ID__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Kbase</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Kbases</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Kbase Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

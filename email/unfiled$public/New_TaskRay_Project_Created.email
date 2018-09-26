@@ -1,0 +1,11 @@
+To Whom It May Concern,
+
+The following TaskRay Project / Sub-Project was created:
+{!TASKRAY__Project__c.Name}
+
+You may access this Project / Sub-Project by clicking on the below link:
+{!TASKRAY__Project__c.Link}
+
+If you have any questions regarding this notification, please contact the system administrator.
+
+Thank you.

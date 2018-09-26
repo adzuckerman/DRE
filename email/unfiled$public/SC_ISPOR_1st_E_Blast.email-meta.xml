@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SC-ISPOR-1st-E-Blast</name>
+    <style>none</style>
+    <subject>Doctor Evidence Live Demonstration at ISPOR </subject>
+    <textOnly>*|Doctor Evidence Live Demonstration at ISPOR|*
+
+Hi {!Contact.FirstName},
+
+Doctor Evidence is looking forward to the 22nd international ISPOR event coming up May 22nd – 24th in Boston.  This annual meeting gives us the chance to learn about different and innovative applications in the conduct and use of HEOR, engage with recognized global experts in the field, network with colleagues and clients, share research, and stay current on emerging trends in health care.
+
+The Doctor Evidence team will be conducting demonstrations of our evidence-based products and services in a meeting room at the Sheraton Boston hotel adjacent to the John B. Hynes Veterans Memorial Convention Center.  Please let me know if you are interested in meeting on Monday, May 22nd, Tuesday, May 23rd, or Wednesday, May 24th and I will send you some available times.
+
+Thanks and let me know if {!Account.Name} will be making the trip to Boston and please click here if you are interested in scheduling time to meet.
+
+Scott Clymer
+Vice President, Business Development
+Doctor Evidence
+301 Arizona Avenue, Suite 301
+Santa Monica, CA 90401
+Wk: 949-394-0984</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

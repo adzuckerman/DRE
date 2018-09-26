@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>blankletterhead</letterhead>
+    <name>Stage Approval v2</name>
+    <style>freeForm</style>
+    <subject>Opportunity Awaiting Your Approval For Advancement</subject>
+    <textOnly>The following Opportunity is awaiting your approval for advancement:
+
+Account: {!Opportunity.Account}
+Opportunity Name: {!Opportunity.Name}
+Owner: {!Opportunity.OwnerFullName}
+Amount: {!Opportunity.Amount}
+Stage: {!Opportunity.StageName}
+Progress (%): {!Opportunity.Probability}
+
+To approve or reject this advancement, click here:
+{!ApprovalRequest.Internal_URL}
+
+For more information, please click the link below (or copy and paste into your browser):
+{!Opportunity.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

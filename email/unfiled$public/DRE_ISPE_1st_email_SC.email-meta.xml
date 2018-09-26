@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-ISPE-1st-email-SC</name>
+    <style>none</style>
+    <subject>IHME and Doctor Evidence will be at the 33rd ISPE conference in Montreal</subject>
+    <textOnly>*|IHME and Doctor Evidence will be at the 33rd ISPE conference in Montreal|*
+
+Dear {!Contact.FirstName},
+
+The Institute for Health Metrics and Evaluation &amp; Doctor Evidence have partnered to combine the power of technology enabled digital content from peer reviewed published literature and comprehensive global RWE sources.
+
+This partnership creates a new standard for effective development of healthcare strategy through epidemiological and economic forecasting and reviews using the natural history of disease and unique platform for rapid interpretation, dissemination and publication.
+
+IHME and Doctor Evidence will be at the 33rd ISPE conference in Montreal and are scheduling meetings on Monday, August 28th, Tuesday, August 29th and Wednesday, August 30th to present the partnership and our offering.  Meeting times are limited so please contact me asap so we can bet the meetings on our calendars.
+
+We look forward to meeting with you at ISPE to discuss how our data and services will benefit your organization.
+
+Best Regards,
+
+Scott Clymer
+Vice President, Business Development
+
+IHME Offerings
+
+The Institute for Health Metrics and Evaluation offers unparalleled scope of global data on risk factors, disease, outcomes, healthcare utilization and costs, and forecasting. With more than a decade of experience, IHME has established relationships across the globe to get data from multiple sources and data types.  With a roster of clinical, epidemiological, and programming resources, IHME can provide data and advanced epidemiological modeling.
+
+These offerings are suitable for multiple functional areas across the pharmaceutical enterprise.
+
+Clinical Development scientists can make use of IHME data to understand the distribution of disease and outcomes in select geographies. This enables the identification of areas of unmet medical need that could benefit from specific new therapies. Moreover, the collaborative network of clinicians and scientists within IHME provide new avenues of access to potential investigators in select disease areas and geographies to facilitate clinical trial startup and enrollment.
+Global Commercial teams developing and refining plans for launch and uptake take advantage of forecasting tools from to provide unique information at a granular level across the globe. This can be used to establish market sizing as well as launch planning to support commercialization efforts.   Market Access and Health Economic functions are able to develop a global economic model based on epidemiology and health care expenditures.  Country specific data provides a unique ability to localize these models for the various markets of interest in support of launch and ongoing access support activities.
+
+Doctor Evidence
+
+In addition to the IHME data and analytics Doctor Evidence has over a decade of experience in identifying data from a variety of sources such as literature, regulatory filings, registries and drug labels. This data is delivered via a best in class advanced analytics platform.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

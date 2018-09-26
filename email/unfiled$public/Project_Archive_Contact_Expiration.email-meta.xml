@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email alert template for when a project is archived due to contract expiration</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Project Archive Contact Expiration</name>
+    <style>none</style>
+    <subject>Project/Sub-Project &quot;{!TASKRAY__Project__c.Name}&quot; has been archived (Contract Expired)</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

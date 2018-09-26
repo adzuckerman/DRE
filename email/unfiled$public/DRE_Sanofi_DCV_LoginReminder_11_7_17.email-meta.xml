@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>reminder to DCV people trained about how to login and also announcing DOC Search</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-Sanofi_DCV_LoginReminder_11-7-17</name>
+    <style>none</style>
+    <subject>Doctor Evidence-Sanofi Post Training</subject>
+    <textOnly>*|Doctor Evidence-Sanofi Post-training email|*
+
+Dear {!Contact.Name},
+
+This is a reminder that you have access to the Doctor Evidence DOC Library and DOC Data packages for Cardiovascular, Diabetes, Immunology, Multiple Sclerosis and Established Medicines (including Consumer Health).  A Single-sign on (SSO) system will allow you to use your existing Sanofi credentials to login to the Doctor Evidence Platform by navigating to:  https://sanofi.doctorevidence.com/
+
+You also now have access through this same Single-sign on system to DOC Search, Doctor Evidence&apos;s advanced search tool. Please take a minute to explore the tool, and watch out for training announcements about DOC Search, beginning December of 2017.
+
+To initiate a project with DRE, please complete this brief form: https://reports.doctorevidence.com/pages/Client/ServiceProject.aspx.
+
+Please also find attached the slides from our Introductory Training and a quickguide for DOC Library. Please don&apos;t hesitate to reach out with any training needs. On behalf of the Doctor Evidence Team, we are looking forward to a fruitful collaboration.
+
+Thank You,
+
+Nancy Morgan
+Director of Learning and Development
+Doctor Evidence
+301 Arizona Ave Suite 301 Santa Monica CA 90401
+847-507-1451
+
+
+Introductory Training
+
+DOC Library Quick start guide
+
+Click here to launch Doctor Evidence Platform</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

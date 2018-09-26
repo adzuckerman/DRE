@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>blankletterhead</letterhead>
+    <name>DRE-Sanofi-Follow-up-Advanced-TrainingFrance</name>
+    <style>freeForm</style>
+    <subject>Doctor Evidence-Sanofi Post Training -Advanced</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+
+Thanks for participating in the Doctor Evidence Advanced training. Here is the slide-deck from this week’s presentations. 
+
+You also have access to how-to videos and quick-guides which describe the steps necessary to navigate the DOC Data platform. To view this content, please navigate to https://dre.litmos.com?C=483766 and create an account if you do not already have one. (Your email is your user name, but you will need to create a password.) 
+
+Please take a moment to browse the DRE publications, which will give you an idea of the breadth of our work and the capabilities of our services: http://drevidence.com/publications/.
+
+Please don’t hesitate to contact us at sanofi.support@doctorevidence.com if you need support in using the system, or would like additional training. 
+
+Finally, any feedback you have about how to improve the trainings would be most helpful. Please take a few minutes to answer this brief survey.
+
+
+Sincerely,
+
+Nancy Morgan
+Director of Learning and Development
+Doctor Evidence
+847.507.1451</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

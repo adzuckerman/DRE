@@ -1,0 +1,30 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Dear&nbsp;{!Contact.FirstName},</p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">As announced at the recent G-I-N 2016 Conference in
+Philadelphia and in this <a href="http://www.prnewswire.com/news-releases/doctor-evidence-launches-growth-research-300344099.html?tc=eml_cleartime">press
+release</a>, Doctor Evidence is pleased to offer reduced platform fees to the {!Account.Name}. Annual
+platform licensing is now $15,000 USD (some restrictions apply), and includes
+free and unlimited access to all pre-digitized studies (now numbering over
+20,000). <o:p></o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">GROWTH Research licensing (available at a slightly higher
+price) will allow {!Account.Name}&nbsp;to offer access to the technologies and digital studies as
+a member benefit for all of your members. <o:p></o:p></p>
+
+<p class="MsoNormal"><br></p><p class="MsoNormal">Please let us know if you would like a <a href="mailto:slewis@doctorevidence.com">revised formal
+proposal</a> reflecting these special pricing rates, or if you would like to
+schedule a <a href="mailto:slewis@doctoreivdence.com">full demo</a> for you and your team.<o:p></o:p></p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><o:p></o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">This offer is valid for 2017 pricing if contracted by
+December 31, 2016.<o:p></o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">We look forward to hearing from you.<o:p></o:p></p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial">{!User.FirstName}&nbsp;</font><span style="font-family: arial;">{!User.LastName}</span></p><p class="MsoNormal"><font face="arial">{!User.Title}</font></p>]]></td>
+</tr>
+</table>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>SP_Account_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>SP Account ID</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Sales Plan</relationshipLabel>
+        <relationshipName>Sales_Plan</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SP_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>SP Amount</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SP_Close_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>SP Close Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SP_Offering__c</fullName>
+        <externalId>false</externalId>
+        <label>SP Offering</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ASCO DOC Search</fullName>
+                    <default>false</default>
+                    <label>ASCO DOC Search</label>
+                </value>
+                <value>
+                    <fullName>Data Hub</fullName>
+                    <default>false</default>
+                    <label>Data Hub</label>
+                </value>
+                <value>
+                    <fullName>DOC Label</fullName>
+                    <default>false</default>
+                    <label>DOC Label</label>
+                </value>
+                <value>
+                    <fullName>DOC NHANES</fullName>
+                    <default>false</default>
+                    <label>DOC NHANES</label>
+                </value>
+                <value>
+                    <fullName>DOC Track</fullName>
+                    <default>false</default>
+                    <label>DOC Track</label>
+                </value>
+                <value>
+                    <fullName>GROWTH</fullName>
+                    <default>false</default>
+                    <label>GROWTH</label>
+                </value>
+                <value>
+                    <fullName>IHME Data Mart</fullName>
+                    <default>false</default>
+                    <label>IHME Data Mart</label>
+                </value>
+                <value>
+                    <fullName>Project</fullName>
+                    <default>false</default>
+                    <label>Project</label>
+                </value>
+                <value>
+                    <fullName>Services</fullName>
+                    <default>false</default>
+                    <label>Services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SP_Opportunity_ID__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>SP Opportunity ID</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Sales Plan</relationshipLabel>
+        <relationshipName>Sales_Plan</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SP_Sales_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>SP Sales Type</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Expansion</fullName>
+                    <default>false</default>
+                    <label>Expansion</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Renewal</fullName>
+                    <default>false</default>
+                    <label>Renewal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SP_Therapeutic_Area__c</fullName>
+        <externalId>false</externalId>
+        <label>SP Therapeutic Area</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cardiology/Vascular Diseases</fullName>
+                    <default>false</default>
+                    <label>Cardiology/Vascular Diseases</label>
+                </value>
+                <value>
+                    <fullName>Endocrine/Metabolic</fullName>
+                    <default>false</default>
+                    <label>Endocrine/Metabolic</label>
+                </value>
+                <value>
+                    <fullName>Gynecology/Obstetrics</fullName>
+                    <default>false</default>
+                    <label>Gynecology/Obstetrics</label>
+                </value>
+                <value>
+                    <fullName>Immunology/Rheumatology</fullName>
+                    <default>false</default>
+                    <label>Immunology/Rheumatology</label>
+                </value>
+                <value>
+                    <fullName>Infections/Infectious Diseases</fullName>
+                    <default>false</default>
+                    <label>Infections/Infectious Diseases</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Musculoskeletal</fullName>
+                    <default>false</default>
+                    <label>Musculoskeletal</label>
+                </value>
+                <value>
+                    <fullName>Nephrology/Urology</fullName>
+                    <default>false</default>
+                    <label>Nephrology/Urology</label>
+                </value>
+                <value>
+                    <fullName>Neurology</fullName>
+                    <default>false</default>
+                    <label>Neurology</label>
+                </value>
+                <value>
+                    <fullName>Oncology</fullName>
+                    <default>false</default>
+                    <label>Oncology</label>
+                </value>
+                <value>
+                    <fullName>Ophthalmology</fullName>
+                    <default>false</default>
+                    <label>Ophthalmology</label>
+                </value>
+                <value>
+                    <fullName>Psychiatry/Psychology</fullName>
+                    <default>false</default>
+                    <label>Psychiatry/Psychology</label>
+                </value>
+                <value>
+                    <fullName>Pulmonary/Respiratory Diseases</fullName>
+                    <default>false</default>
+                    <label>Pulmonary/Respiratory Diseases</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <label>Sales Plan</label>
+    <nameField>
+        <displayFormat>SP{00000}</displayFormat>
+        <label>Sales Plan ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Sales Plans</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+</CustomObject>

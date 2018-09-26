@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Logo_1</letterhead>
+    <name>ICPE 2015 Boston Follow-up - Free 30 Days of DOC Label</name>
+    <style>freeForm</style>
+    <subject>Doctor Evidence - Free 30 Day Trial of DOC Label!</subject>
+    <textOnly>Offering a free 30 Day trial
+
+Please contact me at:
+
+jmurphy@doctorevidence.com
+
+
+DOC Label Tool
+
+Used for:
+
+FDA Responses | Risk Management Plans
+
+Clinical Trial Planning &amp; Design | Global Labeling Alignment
+
+Contains DailyMed database of USPI labels
+Over 30,000 current USPIs, updated daily
+Includes Medication Guides and FDA Letters
+NDC indexed for ancillary drug information
+Contains eMC database of SPC labels
+Over 6,000 current SPCs, updated daily
+Includes Patient Information Leaflets (PILs)</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

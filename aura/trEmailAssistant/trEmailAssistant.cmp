@@ -1,0 +1,89 @@
+<aura:component controller="TASKRAY.trComponentCtrl" access="global">
+  <aura:attribute name="recordId" type="String" access="global" />
+  <aura:attribute name="accountId" type="String" access="global" />
+  <aura:attribute name="accountName" type="String" access="global" />
+  <aura:attribute name="hasContext" default="false" type="Boolean" />
+  <aura:attribute name="timeEnabled" default="false" type="Boolean" />
+  <aura:handler name="init" value="{!this}" action="{!c.handlePeopleChange}" />
+  <aura:handler name="change" value="{!v.people}" action="{!c.handlePeopleChange}" />
+
+  <article class="slds-card forceBaseCard clientsHomeCard clientsRelatedRecordListCard" aria-describedby="header">
+    <div class="slds-card__header slds-grid">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__figure">
+          <div class="small forceEntityIcon">
+            <TASKRAY:svgIcon svgPath="/taskray.sprite.svg#taskray-check" category="standard" size="small" name="taskray-check" iconRoot="{!$Resource.TASKRAY__trltngresources}"
+              containerClass="email-component-header-check" />
+          </div>
+        </div>
+        <div class="slds-media__body">
+          <h2>
+            <a class="slds-card__header-link header-title-container">
+              <span class="slds-text-heading_small slds-truncate">
+                {!$Label.TASKRAY.trEmailAssistant_TaskRayHeader}
+              </span>
+            </a>
+          </h2>
+        </div>
+      </header>
+    </div>
+    <div class="slds-card__body ">
+      <aura:if isTrue="{!v.hasContext == true}">
+        <lightning:tabset>
+          <lightning:tab label="{!$Label.TASKRAY.trEmailAssistant_SnapshotTab}">
+            <span>
+              <span class="inbox-component slds-pill">
+                {!$Label.TASKRAY.trEmailAssistant_ProjectsForAccount}{!v.accountName}
+                <span class="close-container" onclick="{!c.removeContext}">
+                  <TASKRAY:svgIcon svgPath="/utility-sprite/svg/symbols.svg#close" category="utility" name="list" class="slds-button__icon"
+                    fillOverride="white" isButton="true" />
+                </span>
+              </span>
+              <TASKRAY:trProjectSnapshot recordId="{!v.accountId}" />
+            </span>
+          </lightning:tab>
+          <lightning:tab label="{!$Label.TASKRAY.trEmailAssistant_ToDoTab}">
+            <span>
+              <span class="inbox-component slds-pill">
+                {!$Label.TASKRAY.trEmailAssistant_ProjectsForAccount}{!v.accountName}
+                <span class="close-container" onclick="{!c.removeContext}">
+                  <TASKRAY:svgIcon svgPath="/utility-sprite/svg/symbols.svg#close" category="utility" name="list" class="slds-button__icon"
+                    fillOverride="white" isButton="true" />
+                </span>
+              </span>
+              <TASKRAY:trToDo recordId="{!v.accountId}" />
+            </span>
+          </lightning:tab>
+          <aura:if isTrue="{!v.timeEnabled == true}">
+            <lightning:tab label="{!$Label.TASKRAY.trEmailAssistant_TimeTab}">
+              <span>
+                <span class="inbox-component slds-pill">
+                  {!$Label.TASKRAY.trEmailAssistant_ProjectsForAccount}{!v.accountName}
+                  <span class="close-container" onclick="{!c.removeContext}">
+                    <TASKRAY:svgIcon svgPath="/utility-sprite/svg/symbols.svg#close" category="utility" name="list" class="slds-button__icon"
+                      fillOverride="white" isButton="true" />
+                  </span>
+                </span>
+                <TASKRAY:trTimeWeek recordId="{!v.accountId}" />
+              </span>
+            </lightning:tab>
+          </aura:if>
+        </lightning:tabset>
+      </aura:if>
+      <aura:if isTrue="{!v.hasContext == false}">
+        <lightning:tabset>
+          <lightning:tab label="{!$Label.TASKRAY.trEmailAssistant_MyProjectsTab}">
+            <span>
+              <TASKRAY:trMyProjects />
+            </span>
+          </lightning:tab>
+          <lightning:tab label="{!$Label.TASKRAY.trEmailAssistant_TasksTab}">
+            <span>
+              <TASKRAY:trTaskRayInbox />
+            </span>
+          </lightning:tab>
+        </lightning:tabset>
+      </aura:if>
+    </div>
+  </article>
+</aura:component>

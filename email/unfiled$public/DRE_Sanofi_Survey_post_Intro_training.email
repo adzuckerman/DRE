@@ -1,0 +1,18 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal">Dear {!Contact.FirstName},<o:p></o:p></p>
+
+<p class="MsoNormal">Thank you for attending the Doctor Evidence Introductory
+Training. Please take a few minutes to respond to this very brief survey. Your
+responses will help us improve our training to better meet Sanofi’s business
+needs.<o:p></o:p></p><p class="MsoNormal"><br></p>
+
+<p class="MsoNormal"><a href="https://www.getfeedback.com/r/bHOJzqHU">Please take a couple of minutes to fill out this survey.</a><o:p></o:p></p>
+
+<p class="MsoNormal"><br></p><p class="MsoNormal">Sincerely,<br>
+Nancy Morgan<br>
+Director of Education and Training<br>
+Doctor Evidence<o:p></o:p></p>]]></td>
+</tr>
+</table>

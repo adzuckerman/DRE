@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-GROWTH-NL-Aug-2017</name>
+    <style>none</style>
+    <subject>DRE-GROWTH Newsletter</subject>
+    <textOnly>*|DRE-GROWTH-Newsletter-August 2017|*
+
+Measuring the Impact of Public Health Interventions
+
+View this email in your browser
+
+2017 GROWTH COMMENTARY SERIES: GLOBAL HEALTH (PART 3)  Measuring the Impact of Public Health Interventions: (Almost) as Important as the Work Itself By Rebecca Martin, PhD
+Director of the Center for Global Health, US Centers for Disease Control and Prevention
+
+Over the more than 70-year history of the US Centers for Disease Control and Prevention (CDC), the agency has used data as the foundation of evidence-based decision-making. This data-driven approach is evident throughout CDC’s science as well as its program development and implementation – only what is accurately measured can be effectively managed and improved….
+
+Continue reading...
+
+Click here for more information in your topic area
+
+Coming in October: GROWTH Members-Only area
+
+Featuring:
+
+Bulletin board for posting:
+
+Job openings
+Calls for guideline panelists or other stakeholders, including consumer representatives
+Events posted by members
+GROWTH events
+Promote your publications
+Promote your conferences
+Educational programs and Evidence-Based Medicine courses
+
+Project templates, such as:
+
+Project protocols
+Data Configuration Protocols for extractions
+Typical timeline
+Platform training materials
+
+
+Contact Melanie Golob, Director of GROWTH, for more information on this upcoming members-only area
+
+Conferences
+
+The Global Evidence Summit is intended as an inter-sectoral and multi-disciplinary event exchanging ideas about how to best generate, summarize, and communicate evidence to inform policy and practice. The 5 conference hosting organizations anticipate input from a multitude of perspectives including education, social and criminal justice, environmental and gender health, health systems, and clinical care and practice. Doctor Evidence will be represented at the
+Global Evidence Summit
+Joël Kuiper, Senior Data Scientist, Doctor Evidence
+with co-presenters Iain Marshall and Byron Wallace
+
+Long Oral Session 25: Tools for evidence production and synthesis
+Date: Saturday 16 September 2017 - 14:00 to 15:30
+Location: Meeting Room 1.44  RobotReviewer: a tool for automating evidence synthesis — development and evaluation to date, and future plans
+Workshop
+Date: Wednesday 13 September 2017 - 16:00 to 17:30
+Location: Meeting Room 2.63  Using machine learning to automate data extraction from RCTs — hands on with RobotReviewer
+
+
+Publications
+Keep up with recent publications/presentations based on Doctor Evidence’s projects
+
+Visit the GROWTH Publications page
+
+September Commentary: &quot;Producing guidelines for public health emergencies”  By Susan Norris of the World Health Organization
+
+Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.
+*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
+
+Our mailing address is:
+*|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
+
+Want to change how you receive these emails?
+You can update your preferences or unsubscribe from this list
+
+*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

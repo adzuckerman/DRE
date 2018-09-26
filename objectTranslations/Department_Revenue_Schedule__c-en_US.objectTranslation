@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Costs --></label>
+        <name>Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <relationshipLabel><!-- Department Revenue Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Import Date --></label>
+        <name>Import_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Revenue Schedule --></label>
+        <name>Monthly_Revenue_Schedule__c</name>
+        <relationshipLabel><!-- Department Revenue Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Department Revenue Schedules --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Department Revenue Schedule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Department Revenue Schedules</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

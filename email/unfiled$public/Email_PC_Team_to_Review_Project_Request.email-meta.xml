@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email PC Team to Review / Modify Project Request Upon Submission</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email PC Team to Review Project Request</name>
+    <style>none</style>
+    <subject>New Project Request Pending Review</subject>
+    <textOnly>PC Team:
+
+The following project request requires your review and approval prior to its project creation. Please click on the link below to proceed.
+
+https://na63.salesforce.com/{!Project_Request__c.Id}
+
+Thank you,
+System Administrator</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

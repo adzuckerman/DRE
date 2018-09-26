@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email identifying critical issue on Case</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Critical Issue on Case</name>
+    <style>none</style>
+    <subject>Critical Issue on Case No. {!Critical_Issue__c.Case__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

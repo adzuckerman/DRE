@@ -1,0 +1,12 @@
+<p>To Whom It May Concern:</p>
+
+<p>The following request for a preferred vendor was submitted for your approval:</p>
+
+<p>
+To view the <b>Request Form</b>, please click <a href="https://cs65.salesforce.com/{!Preferred_Vendor_Request__c.Id}">here</a>. <br/>
+To view the <b>Salesforce Opportunity</b>, please click <a href="https://cs65.salesforce.com/{!Preferred_Vendor_Request__c.Opportunity_ID__c}">here</a>.
+</p>
+
+<p>To <b>APPROVE</b> or <b>REJECT</b> this request, please click <a href="{!ApprovalRequest.Internal_URL}">here</a>.</p>
+
+<p>Thank you.</p>

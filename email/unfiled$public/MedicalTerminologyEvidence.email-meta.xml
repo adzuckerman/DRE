@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Medical Terminology in Evidence</name>
+    <style>none</style>
+    <subject>Medical terminology management</subject>
+    <textOnly>*|Medical Terminology Management in Evidence|*
+
+Medical terminology management in evidence synthesis: Early versus late binding
+
+Craig Whittington, PhD,1
+Sandra Zelman Lewis, PhD,2,3
+Toby Sayre,1 and
+Robert Battista, MBA1
+
+What is your innovation/what does it do/what is its purpose?
+
+Medical terminology and coding systems are used extensively across the health care ecosystem, for example, in clinical trials, systematic reviews, clinical guidelines and medical information systems. A particular issue that faces researchers synthesizing evidence from multiple studies (e.g., when conducting a systematic review) and those developing clinical guidelines and health technology assessments is how to deal with primary research that uses a multitude of terminology and coding systems that vary by many factors such as country, therapeutic area, researcher/author and also over time. Programmers have now developed an innovative software solution to preserve the original terminology, yet efficiently accommodate synonyms and utilize a variety of medical ontologies, through a process called “late binding”. Part of the process is semi-automated and allows terms to be bound at different ‘levels’ (i.e., global, client-specific, user-specific or study-set specific).
+
+This software solution is innovative because, all other known solutions involve “early binding”. That is, they use the usual approach to managing medical terminology when conducting a systematic review, which involves creating a list of pre-approved terms that the researchers can choose from when extracting data. Decisions regarding what terms qualify as true synonyms and what terms should remain distinct are made prior to data extraction. As the data are collected, the term is renamed and incorporated into an ontology structure (i.e., terms are bound early). At the end of the extraction process, the data has already been organized in a way that is ready for analysis, but the original terminology is not preserved and cannot later be separated if desired for subsequent subgroup analyses.
+
+In contrast to early binding, this approach (late binding) allows the actual language of the study to be captured and preserved (e.g., HbA1c, A1c, glycosylated hemoglobin, hemoglobin A1c). After data have been extracted preserving the original authors’ terminology, synonyms are bound according to a structure outlined at the beginning of the project (i.e., a protocol) or to one or more existing medical ontologies. This permits the original wording to be preserved in the system and referenced, allowing for more transparency in the process. Any user can go back and review which original terms were combined to create the final term.
+
+The true power of computer-assisted late binding can be seen when synthesizing large data-sets (with many thousands of data points). However, consider even a relatively modest systematic review of 20 studies with 7 outcomes of interest and the associated study characteristics. Differences in terminology can amount to hundreds of decisions made by those extracting data from the original studies.Traditionally these decisions are rarely documented and therefore the process is not transparent. In cases where terms are true synonyms, this may not represent a problem, but often different variables representing what is thought to be the same construct are bound together using subjective and poorly defined criteria. The late binding system overcomes this problem.
+
+As noted, the more studies included in a dataset, the more variations there are in how authors present their data. In a small dataset, it is relatively easy for one person to manage all of the terms. As the size of the dataset increases, the workload put on individuals increases exponentially, and creates a potential bottleneck in the process. Therefore, it is potentially more efficient to move the consolidation of terms to the end of the project. This is particularly true within this system because the software learns from the manual binding of terms. This cuts down on the actual amount of binding that needs to be done as the size of a dataset increases. For example, if the terms HbA1c, A1C, and Glycosylated Hemoglobin are all bound to ‘HbA1c’ by a user, then if results from new studies are extracted with any of these terms, the system will automatically bind to HbA1c within that project.
+
+Finally, the implementation of late binding using different levels allows the system’s ontology specialists to easily tailor the dataset to the needs of a specific user or particular analysis without going back into the full-text of a study and re-extracting or re-naming terms. This also allows flexibility to use one study across multiple datasets, as it is possible to selectively bind terms within a dataset or user account as needed and leave unnecessary terms unbound so they are not brought into data analysis.
+What are the implications for the field of health services and policy research?
+
+Information contained within primary research reports does not need to be “lost” by early binding of terms at the data extraction stage.
+Increased transparency will allow independent verification of the binding process and therefore provide greater confidence in the results.
+Term binding can be efficiently managed at different levels within a project (i.e., global, client- specific, user-specific or study-set specific) providing greater flexibility and efficiency.
+Decisions applicable to how terms are bound are made immediately prior to analysis instead of at the beginning of the project. This allows for a partial audit of the available data extracted prior to final binding, while still following a pre-defined protocol.
+Capturing all terms as used in each study provides a valuable resource that can be indexed and used to create a dictionary of health care terms, which will be particularly useful for health services research topics without existing ontologies.
+
+How do you plan to make your session engaging and interactive?
+
+The late binding ontology management system is built into the software platform, which can be accessed via a web browser. We intend to demonstrate the late binding concept in real time using examples pertinent to the audience.
+Audience members with laptops will be able to log in to a demo site and follow along.
+Audience members will be requested to suggest terms to be bound and then watch as those synonyms are bound in the live environment.
+
+Three learning objectives:
+
+Learners will gain knowledge of the importance of ontology management.
+They will realize the difficulties associated with early term binding.
+They will acquire appreciation of the benefits of late binding.
+
+50 word session summary (for the agenda book and online purposes): Watch a live demonstration of an ontology management system in action. Participate in binding synonyms for analyses employing the next generation innovation which permits “late binding” so that the original text and terms are preserved and transparency enhanced.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

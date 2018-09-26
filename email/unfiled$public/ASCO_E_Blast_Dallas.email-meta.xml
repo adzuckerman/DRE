@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>ASCO E-Blast_Dallas</name>
+    <style>none</style>
+    <subject>Doctor Evidence at ASCO </subject>
+    <textOnly>*|Doctor Evidence at ASCO
+
+Hi {!Contact.FirstName},
+ 
+Mika Newton (mika@doctorevidence.com) and Michael del Aguila (mdelaguila@doctorevidence.com) from Doctor Evidence will be attending ASCO and have availability Sunday, June 4th and Monday, June 5th. Please feel free to reach out directly to Mika and Michael to schedule meetings and talk about your oncology research needs. Doctor Evidence offers innovative processes and technology to produce transparent and defendable evidence from literature sources. Any project that contains a literature review component we can help with. We also have a software tool that performs both direct and indirect meta-analysis with the ability to run and re-run analysis in real time. 
+Please let me know if you are interested in meeting with Mika and Michael on Sunday or Monday 
+
+Dallas Hodgson
+Vice President, Business Development
+Doctor Evidence
+301 Arizona Avenue, Suite 301
+Santa Monica, CA 90401
+Wk: 623-326-0297</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-AbbVie RWE poster</name>
+    <style>none</style>
+    <subject>Did you see the Celebration of Science RWE Meta-Analysis poster?</subject>
+    <textOnly>*|Celebration of Science RWE Meta-Analysis poste|*
+
+Did you see the Celebration of Science RWE Meta-Analysis poster?
+
+Please see a great example of a DRE/AbbVie collaboration in the therapeutic area of HCV.
+Click on the poster to review further.
+
+
+Users can now log in thrugh AbbVie&apos;s single Sign On portal at: https://federation.abbvie.com/idp/startSSO.ping?PartnerSpId=dre-launch:saml2:sp</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

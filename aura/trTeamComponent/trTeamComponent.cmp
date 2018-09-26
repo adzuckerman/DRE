@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="TASKRAY.trComponentCtrl">
+  <aura:attribute name="customMinHeight" type="String" default="360px" access="global" />
+  <aura:attribute name="projectId" type="String" />
+  <aura:attribute name="taskId" type="String" />
+  <aura:attribute name="baseURL" type="String" />
+  <aura:attribute name="iframeURL" type="String" default="" />
+  <aura:attribute name="iframeLoaded" type="Boolean" default="false" />
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+  <TASKRAY:trComponentContainer headerText="{!$Label.TASKRAY.trTeamComponent_Header}">
+    <div class="component-body">
+      <div style="display:none;">{!v.iframeURL}</div>
+      <aura:if isTrue="{!and( not(v.iframeLoaded) , v.iframeURL != '')}">
+        <div class="slds-spinner_container">
+          <lightning:spinner />
+        </div>
+      </aura:if>
+      <iframe src="{!v.iframeURL}" style="{!'height:100%; width:100%; border: none; min-height:'+v.customMinHeight}" onload="{!c.iframeLoaded}"
+        onunload="{!c.iframeUnloaded}" />
+    </div>
+  </TASKRAY:trComponentContainer>
+</aura:component>

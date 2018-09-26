@@ -1,0 +1,35 @@
+<messaging:emailTemplate subject="Preferred Vendor Request Form" recipientType="User" relatedToType="Preferred_Vendor_Request__c">
+<messaging:htmlEmailBody >
+
+<p>The following <a href="https://cs12.salesforce.com/{!relatedTo.Id}">Preferred Vendor Request</a> has been made:</p>
+
+<p>
+    <b>Anticipated Start Date:</b>&nbsp; 
+        <apex:outputText value="{0, date,MM'/'dd'/'yyyy}">
+            <apex:param value="{!relatedTo.Anticipated_Start_Date__c}" /> 
+        </apex:outputText><br/>
+    <b>Project Due Date:</b>&nbsp; 
+        <apex:outputText value="{0, date,MM'/'dd'/'yyyy}">
+            <apex:param value="{!relatedTo.Project_Due_Date__c}" /> 
+        </apex:outputText><br/>
+    <b>Est. Hours to Complete:</b> 
+        <apex:outputText value="{0,number,integer}">   
+           <apex:param value="{!relatedTo.Est_Hours_to_Complete__c}"/>
+        </apex:outputText><br/>
+    <b>Preferred Vendor Name:</b> <a href="https://cs12.salesforce.com/{!relatedTo.Preferred_Vendor__c}">{!relatedTo.Preferred_Vendor__r.Name}</a><br/>
+    <b>DRE Point of Contact:</b> <a href="https://cs12.salesforce.com/{!relatedTo.00N0m000001Qs9V}">{!relatedTo.DRE_Point_of_Contact__r.Name}</a><br/>
+    <b>Reason(s) for Outsourcing:</b> {!relatedTo.Reason_s_for_Outsourcing__c}<br/>
+    <b>Other Reason(s) for Outsourcing:</b> {!relatedTo.Other_Reason_s_for_Outsourcing__c}<br/>
+    <b>Description of Work:</b> {!relatedTo.Description_of_Work__c}<br/>
+    <b>Requester Name:</b> <a href="https://cs12.salesforce.com/{!relatedTo.CreatedById}">{!relatedTo.CreatedBy.Name}</a><br/>
+    <b>PICO ID:</b> <a href="https://cs12.salesforce.com/{!relatedTo.PICO_ID__c}">{!relatedTo.PICO_ID__r.Name}</a><br/>
+    <b>Requester Email Address:</b> {!relatedTo.CreatedBy.Email}<br/>
+    <b>Client Name:</b> <a href="https://cs12.salesforce.com/{!relatedTo.PICO_ID__r.TASKRAY__trAccount__c}">{!relatedTo.PICO_ID__r.TASKRAY__trAccount__r.Name}</a><br/>
+    <b>Opportunity Name:</b> <a href="https://cs12.salesforce.com/{!relatedTo.PICO_ID__r.TASKRAY__trOpportunity__r.Id}">{!relatedTo.PICO_ID__r.TASKRAY__trOpportunity__r.Name}</a><br/>
+    <b>SFID:</b> <a href="https://cs12.salesforce.com/{!relatedTo.PICO_ID__r.TASKRAY__trOpportunity__c}">{!relatedTo.PICO_ID__r.Opportunity_ID__c}</a><br/>
+    <b>Preferred Vendor Phone:</b> {!relatedTo.Preferred_Vendor_Phone__c}<br/>
+    <b>Preferred Vendor Email:</b> {!relatedTo.Preferred_Vendor_Email__c}
+</p>
+
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

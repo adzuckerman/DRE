@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="Event fired when one or more form field templates is selected for attachment to an agreement.">
+    <aura:attribute name="isCanceled" type="Boolean" default="false" />
+    <aura:attribute name="selectedTemplateWrappers" type="echosign_dev1.FormFieldTemplateWrapper" />
+</aura:event>

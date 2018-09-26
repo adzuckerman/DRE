@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Assistant Email --></label>
+        <name>Assistant_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Type --></label>
+        <name>Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project</masterLabel>
+            <translation><!-- Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Disease State --></label>
+        <name>Disease_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Functional Area --></label>
+        <name>Functional_Area__c</name>
+        <picklistValues>
+            <masterLabel>Clinical</masterLabel>
+            <translation><!-- Clinical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitive Intel</masterLabel>
+            <translation><!-- Competitive Intel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEOR</masterLabel>
+            <translation><!-- HEOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labeling</masterLabel>
+            <translation><!-- Labeling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managed Markets</masterLabel>
+            <translation><!-- Managed Markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Access</masterLabel>
+            <translation><!-- Market Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Med Affairs</masterLabel>
+            <translation><!-- Med Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Lifecycle</masterLabel>
+            <translation><!-- Product Lifecycle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R&amp;D</masterLabel>
+            <translation><!-- R&amp;D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulatory</masterLabel>
+            <translation><!-- Regulatory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety</masterLabel>
+            <translation><!-- Safety --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Indication --></label>
+        <name>Indication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Influencer Level --></label>
+        <name>Influencer_Level__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Access Level --></label>
+        <name>Litmos__Access_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Percentage --></label>
+        <name>Litmos__Completed_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Courses Assigned --></label>
+        <name>Litmos__Courses_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Courses Completed --></label>
+        <name>Litmos__Courses_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Once this field is checked, the user in Litmos will become inactive and all Litmos data stored in Salesforce for this person will be deleted. This person can then be provisioned as a new user or matched to an existing user in Litmos. --></help>
+        <label><!-- Disconnect from Litmos --></label>
+        <name>Litmos__Deactivate_From_Litmos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Name --></label>
+        <name>Litmos__Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Languages --></label>
+        <name>Litmos__Languages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Litmos__Level__c</name>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary</masterLabel>
+            <translation><!-- Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tertiary</masterLabel>
+            <translation><!-- Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Once this field is updated by Litmos, it means this person is synced to Litmos and the Litmos ID for this individual will display. --></help>
+        <label><!-- LitmosID --></label>
+        <name>Litmos__LitmosID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Once this field is updated by Litmos, it means that this person is synced to Litmos. --></help>
+        <label><!-- Litmos Activated --></label>
+        <name>Litmos__Litmos_Activated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Litmos UserId --></label>
+        <name>Litmos__Litmos_UserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- OriginalId --></label>
+        <name>Litmos__OriginalId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Once this field is checked, the person will be synced to Litmos. Use this field to provision the person into Litmos as a new user, or match this person to an existing Litmos user. --></help>
+        <label><!-- Sync Litmos --></label>
+        <name>Litmos__Sync_Litmos__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Id --></label>
+        <name>Litmos__User_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- MC Subscriber --></label>
+        <name>MC4SF__MC_Subscriber__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sentiment --></label>
+        <name>Sentiment__c</name>
+        <picklistValues>
+            <masterLabel>-1: Probably Won't Resist</masterLabel>
+            <translation><!-- -1: Probably Won&apos;t Resist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-2: Uninterested</masterLabel>
+            <translation><!-- -2: Uninterested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-3: Negative</masterLabel>
+            <translation><!-- -3: Negative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-4: Very Negative</masterLabel>
+            <translation><!-- -4: Very Negative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-5: Antagonistic Anti-sponsor</masterLabel>
+            <translation><!-- -5: Antagonistic Anti-sponsor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1: Will Go Along</masterLabel>
+            <translation><!-- 1: Will Go Along --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2: Interested</masterLabel>
+            <translation><!-- 2: Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3: Supportive</masterLabel>
+            <translation><!-- 3: Supportive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4: Strongly Supportive</masterLabel>
+            <translation><!-- 4: Strongly Supportive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5: Enthusiastic Advocate</masterLabel>
+            <translation><!-- 5: Enthusiastic Advocate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Therapeutic Area --></label>
+        <name>Therapeutic_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Show --></label>
+        <name>Trade_Show__c</name>
+    </fields>
+    <fields>
+        <label><!-- Working Relationship --></label>
+        <name>Working_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created for --></label>
+        <name>i__CreatedForUser__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Days Since Last Email --></label>
+        <name>i__DaysSinceLastMail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Inbound Email --></label>
+        <name>i__LastInboundMail__c</name>
+        <relationshipLabel><!-- Contacts (Last Inbound Email) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Inbound Email Time --></label>
+        <name>i__LastInboundSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Inbound Email Time --></label>
+        <name>i__LastInboundTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Email Time --></label>
+        <name>i__LastMailSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Mail Time Delta --></label>
+        <name>i__LastMailTimeDelta__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Email Time --></label>
+        <name>i__LastMailTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Email --></label>
+        <name>i__LastMail__c</name>
+        <relationshipLabel><!-- Contacts (Last Email) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Outbound Email --></label>
+        <name>i__LastOutboundMail__c</name>
+        <relationshipLabel><!-- Contacts (Last Outbound Email) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Outbound Email Time --></label>
+        <name>i__LastOutboundSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Outbound Email Time --></label>
+        <name>i__LastOutboundTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Email Addresses --></label>
+        <name>i__OtherEmails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Test --></label>
+        <name>rh2__Currency_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Describe --></label>
+        <name>rh2__Describe__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Formula Test --></label>
+        <name>rh2__Formula_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integer Test --></label>
+        <name>rh2__Integer_Test__c</name>
+    </fields>
+    <fieldSets>
+        <label><!-- Contact Filter Fields --></label>
+        <name>Contact_Filter_Fields</name>
+    </fieldSets>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Emails --></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label><!-- Training Widget --></label>
+            <section>Training Widget</section>
+        </sections>
+        <sections>
+            <label><!-- Training Widget (Read Only) --></label>
+            <section>Training Widget (Read Only)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Layout SDoc</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Please uncheck Disconnect from Litmos. --></errorMessage>
+        <name>Litmos__DisconnectFromLitmos</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t edit this field --></errorMessage>
+        <name>Litmos__Litmos_Activated_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t edit this field --></errorMessage>
+        <name>Litmos__Litmos_Id_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Litmos is already activated for this contact --></errorMessage>
+        <name>Litmos__Litmos_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Assign_All_Contacts_to_Litmos_Team --></label>
+        <name>Litmos__Assign_All_Contacts_to_Litmos_Team</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Assign_For_Trainings --></label>
+        <name>Litmos__Assign_For_Trainings</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Assign_To_Training --></label>
+        <name>Litmos__Assign_To_Training</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Flag_For_Litmos --></label>
+        <name>Litmos__Flag_For_Litmos</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sync_Data_from_Litmos --></label>
+        <name>Litmos__Sync_Data_from_Litmos</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sync_For_Training --></label>
+        <name>Litmos__Sync_For_Training</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Unflag_For_Litmos --></label>
+        <name>Litmos__Unflag_For_Litmos</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MailChimp_Subscriptions_detail --></label>
+        <name>MC4SF__MailChimp_Subscriptions_detail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MailChimp_Subscriptions_list --></label>
+        <name>MC4SF__MailChimp_Subscriptions_list</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Mass_Merge_List --></label>
+        <name>SDOC__Add_to_Mass_Merge_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Docs --></label>
+        <name>SDOC__Email_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- S_Docs --></label>
+        <name>SDOC__S_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Mass_Merge_List --></label>
+        <name>SDOC__View_Mass_Merge_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_EchoSign --></label>
+        <name>echosign_dev1__Send_to_EchoSign</name>
+    </webLinks>
+</CustomObjectTranslation>

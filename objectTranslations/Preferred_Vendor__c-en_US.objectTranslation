@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Billing City --></label>
+        <name>Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing State/Province --></label>
+        <name>Billing_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street --></label>
+        <name>Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Zip/Postal Code --></label>
+        <name>Billing_Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Name --></label>
+        <name>DRE_Point_of_Contact__c</name>
+        <relationshipLabel><!-- Preferred Vendors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hourly Rate --></label>
+        <name>Hourly_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Type --></label>
+        <name>Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Flat Rate</masterLabel>
+            <translation><!-- Flat Rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hourly Rate</masterLabel>
+            <translation><!-- Hourly Rate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shipping City --></label>
+        <name>Shipping_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Country --></label>
+        <name>Shipping_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping State/Province --></label>
+        <name>Shipping_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Street --></label>
+        <name>Shipping_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Zip/Postal Code --></label>
+        <name>Shipping_Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website --></label>
+        <name>Website__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Preferred Vendor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Preferred Vendors</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Preferred Vendor Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Rate type for this vendor is flat rate. You cannot specify an hourly rate for this vendor. --></errorMessage>
+        <name>Restrict_Flat_Rate_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rate type for this vendor is hourly rate. You must specify and hourly rate. --></errorMessage>
+        <name>Restrict_Hourly_Rate_Type</name>
+    </validationRules>
+</CustomObjectTranslation>

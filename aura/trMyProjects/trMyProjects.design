@@ -1,0 +1,7 @@
+<design:component label="TaskRay Projects">
+  <design:attribute name="width" label="Component Width" datasource="NARROW,WIDE" default='WIDE' />
+  <design:attribute name="showFollow" label="Show Follow Button" default="true" />
+  <design:attribute name="expandAllProjects" label="Show All Projects Expanded" />
+  <design:attribute name="overrideRecordId" label="Context Record ID" description="This can be the Id of an object like Account which has a related list of TaskRay projects, or the Id of a TaskRay project itself"
+  />
+</design:component>

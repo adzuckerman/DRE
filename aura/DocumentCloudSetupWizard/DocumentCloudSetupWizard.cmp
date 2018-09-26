@@ -1,0 +1,234 @@
+<aura:component controller="echosign_dev1.AgreementSetupWizardComponentController"
+                implements="force:appHostable"
+                description="Represents a setup wizard page component."
+                extensible="true">
+    
+    <ltng:require scripts="/resource/echosign_dev1__jszip300/jszip-3.0.0/dist/jszip.min.js" styles="{!join(',', $Resource.echosign_dev1__SLDS + '/SLDS/assets/styles/salesforce-lightning-design-system-vf.css')}" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:attribute name="setupWizardResult" type="echosign_dev1.LoadSetupWizardResult"/>
+    <aura:attribute name="isLoading" type="Boolean" default="true"/>
+    <aura:attribute name="isError" type="Boolean" default="true"/>
+    <aura:attribute name="oauthStep" type="Boolean" default="true" />
+    <aura:attribute name="updateStep" type="Boolean" default="false" />
+    <aura:attribute name="completeStep" type="Boolean" default="false" />
+    <aura:attribute name="isUpdateConfirmed" type="Boolean" default="false" />
+    <aura:attribute name="isTemplatesCreate" type="Boolean" default="false" />
+    
+    <aura:attribute name="partnerUrl" type="String"/>
+    <aura:attribute name="sitePrefix" type="String" />
+    <aura:attribute name="wizardStep" type="String" />
+    <aura:attribute name="oauthCode" type="String" />
+    <aura:attribute name="oauthError" type="String" />
+    <aura:attribute name="oauthErrorDescription" type="String" />
+    <aura:attribute name="oauthState" type="String" />
+    <aura:attribute name="apiAccessPoint" type="String" />
+    <aura:attribute name="returnUrl" type="String" />
+    <aura:attribute name="unzippedMetadata" type="String" />
+    <aura:attribute name="zippedMetadata" type="String" />
+    <aura:attribute name="updatesFrameUrl" type="String" /> 
+    <aura:attribute name="errorMessage" type="String" /> 
+    
+    <aura:attribute name="updatesFrameLoadCount" type="Integer" default="0" />
+    
+    <div class="slds slds-p-around--xx-large slds-container--large slds-container--center"> 
+    
+        <aura:if isTrue="{! v.isLoading }">
+            <div class="slds-grid slds-grid--align-center slds-m-vertical--xx-large">
+                <div class="slds-spinner--large slds-m-vertical--xx-large">
+                    <img class="slds-m-vertical--xx-large" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/images/spinners/slds_spinner_brand.gif'}" alt="" />
+                </div>
+            </div>
+        </aura:if>
+        
+        <aura:if isTrue="{! !v.isLoading }">
+            <div class="main" role="main">          
+                <div class="slds-page-header">
+                    <div class="slds-grid slds-grid--align-left">
+                        <div class="slds-col--padded">
+                            <div class="slds-media slds-tile slds-m-bottom--large">
+                                <div class="slds-media__figure">
+                                    <!-- <c:svgIcon class="slds-icon slds-icon-text-default slds-icon- -large" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe-sprite/svg/sign_app_RGB.svg#mnemonic'}" category="adobe" size="large" name="mnemonic" /> -->
+                                    <img src="{!$Resource.echosign_dev1__EchoSignTabLogo}" class="slds-icon slds-icon-text-default slds-icon--large" />                           
+                                </div>
+                                <div class="slds-media__body slds-text-heading--medium slds-p-top--small">
+                                    <p class="tile__title slds-truncate">
+                                        {! $Label.echosign_dev1.Setup_Wizard_Title }
+                                    </p>
+                                </div>
+                                <div class="slds-button-group" role="group">
+                                    <button onclick="{!c.exitWizard}" class="slds-button slds-button--neutral">{! $Label.echosign_dev1.Setup_Wizard_Exit_Label }</button>
+                                </div>           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aura:if isTrue="{! v.errorMessage != null }">
+                <div class="slds-grid slds-m-top--large">
+                    <div class="slds-notify slds-notify--alert slds-theme--error slds-theme--inverse-text slds-theme--alert-texture slds-size--1-of-1" role="alert">
+                        <span class="slds-assistive-text"></span>
+                        <!-- <button onclick="{!c.dismissAlert}" class="slds-button slds-button- -icon-inverse slds-notify__close">
+                            <img src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/action/close_60.png" alt="Close" class="slds-button__icon" />
+                            <span class="slds-assistive-text">Close</span>
+                        </button> -->
+                        <h2>{! v.errorMessage }</h2>
+                    </div>
+                </div>
+            </aura:if>
+            <div class="esign-box-noborder">
+                <aura:if isTrue="{! v.oauthStep }">
+                    <div class="slds-m-left--medium">
+                        <div>
+                            <span class="esign-selected-step">{! $Label.echosign_dev1.Setup_Wizard_Step_1_Label }</span>
+                            <span class="esign-next-step esign-incomplete-step">{! $Label.echosign_dev1.Setup_Wizard_Step_2_Label }</span>
+                        </div>
+                        <div class="esign-steps-bar-panel">
+                            <img class="slds-m-vertical--x-small esign-first-step" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe/dot_current.png'}" alt="{! $Label.echosign_dev1.Setup_Wizard_Step_1_Label }" />
+                            <img class="slds-m-vertical--x-small esign-middle-step" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe/bar_incomplete.png'}" alt="" />
+                            <img class="slds-m-vertical--x-small esign-last-step" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe/dot_incomplete.png'}" alt="{! $Label.echosign_dev1.Setup_Wizard_Step_2_Label }" />
+                        </div>
+                    </div>
+                    <div class="slds-m-top--medium">
+                        <div class="slds-text-heading--large">{! $Label.echosign_dev1.Setup_Wizard_Step_1_Header }</div>
+                    </div>
+                    <aura:if isTrue="{! v.oauthCode != '' }">
+                        <aura:if isTrue="{! v.errorMessage == null }">
+                            <div class="slds-m-top--medium">
+                                <div class="slds-text-body--regular">
+                                    <img class="slds-m-vertical--xx-large" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe/A12_FullCheck.png'}" alt="" />               
+                                    <span class="slds-m-left--small">{! $Label.echosign_dev1.Setup_Wizard_Step_1_Success_Label }</span>
+                                </div>
+                            </div>
+                        </aura:if>
+                        <div class="slds-m-top--medium">
+                            <aura:if isTrue="{! v.errorMessage != null }">
+                                <span>
+                                    <button disabled="disabled" class="slds-button slds-button--brand" onclick="{!c.navToUpdates}">{! $Label.echosign_dev1.Next_Button_Label }</button>
+                                </span>
+                            </aura:if>
+                            <aura:if isTrue="{! v.errorMessage == null }">
+                                <span>
+                                    <button class="slds-button slds-button--brand" onclick="{!c.navToUpdates}">{! $Label.echosign_dev1.Next_Button_Label }</button>
+                                </span>
+                            </aura:if>
+                        </div>
+                    </aura:if>
+                    <aura:if isTrue="{! v.oauthCode == '' }">
+                        <div class="slds-m-top--medium">
+                            <div class="slds-text-body--regular">{! $Label.echosign_dev1.Setup_Wizard_Get_Started_Label }</div>
+                        </div>
+                        <aura:if isTrue="{! !v.setupWizardResult.isNetworkRangesAdded }">
+                            <div class="slds-m-top--medium">
+                                <div class="slds-form-element">
+                                    <span class="slds-text-body--regular esign-note-text">{! $Label.echosign_dev1.Setup_Wizard_Get_Started_Note }</span>
+                                </div> 
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{! and( !v.setupWizardResult.isSetupCompleted, v.setupWizardResult.isNewInstall ) }">
+                            <div class="slds-m-top--medium">
+                                <div class="slds-form-element">
+                                    <ui:inputCheckbox value="{! v.isTemplatesCreate }" />
+                                    <span class="slds-m-left--small slds-text-body--regular esign-note-text">{! $Label.echosign_dev1.Setup_Wizard_Template_Create_Prompt }</span>
+                                </div> 
+                            </div>
+                        </aura:if>
+                        
+                        <div class="slds-m-top--xx-large">
+                            <span>
+                                <a onclick="{!c.navToSignin}" class="slds-button slds-button--brand">{! $Label.echosign_dev1.Setup_Wizard_Sign_In_Label }</a>
+                            </span>
+                            <span class="slds-m-left--large slds-m-right--large">{! $Label.echosign_dev1.Setup_Wizard_Or_Label }</span>
+                            <span>
+                                <a onclick="{!c.navToSignup}" class="slds-button slds-button--brand">{! $Label.echosign_dev1.Setup_Wizard_Sign_Up_Label }</a>
+                            </span>
+                        </div>
+                    </aura:if>
+                </aura:if>
+                <aura:if isTrue="{! v.updateStep }">
+                    <div class="slds-m-left--medium">
+                        <div>
+                            <span class="esign-complete-step">{! $Label.echosign_dev1.Setup_Wizard_Step_1_Label }</span>
+                            <span class="esign-next-step esign-selected-step">{! $Label.echosign_dev1.Setup_Wizard_Step_2_Label }</span>
+                        </div>
+                        <div class="esign-steps-bar-panel">
+                            <img class="slds-m-vertical--x-small esign-first-step" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe/dot_complete.png'}" alt="{! $Label.echosign_dev1.Setup_Wizard_Step_1_Label }" />
+                            <img class="slds-m-vertical--x-small esign-middle-step" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe/bar_complete.png'}" alt="" />
+                            <img class="slds-m-vertical--x-small esign-last-step" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe/dot_current.png'}" alt="{! $Label.echosign_dev1.Setup_Wizard_Step_2_Label }" />
+                        </div>
+                    </div>
+                    
+                    <div class="slds-m-top--medium slds-m-bottom--small">
+                        <div class="slds-text-heading--large">{! $Label.echosign_dev1.Setup_Wizard_Step_2_Header }</div>
+                    </div>
+                    
+                    <iframe onload="{! c.onUpdatesFrameLoad }" src="{! v.updatesFrameUrl }" width="100%" height="600px" frameborder="0" />
+                        
+                    <div class="slds-m-top--medium">
+                        <aura:if isTrue="{! !v.isUpdateConfirmed }">
+                            <div class="slds-text-body--regular">{! $Label.echosign_dev1.Setup_Wizard_Step_2_Note }</div>
+                        </aura:if>
+                        <!--<aura:if isTrue="{! v.isUpdateConfirmed }">
+                            <div class="slds-text-body- -regular">
+                                <img class="slds-m-vertical- -xx-large" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe/A12_FullCheck.png" alt="Success" />               
+                                <span class="slds-m-left- -small">Success! You have successfully enabled Automation Status Updates for your account.</span>
+                            </div>
+                        </aura:if> -->
+                    </div> 
+                    <div class="slds-m-top--xx-large">
+                        <span>
+                            <a disabled="{! v.errorMessage != null }" onclick="{!c.navToBackFromUpdate}" class="slds-button slds-button--neutral">{! $Label.echosign_dev1.Back_Button_Label }</a>
+                        </span>
+                        <aura:if isTrue="{! or( v.errorMessage != null ) }">
+                            <span class="slds-m-left--large">
+                                <button disabled="disabled" class="slds-button slds-button--brand" onclick="{!c.navToNextFromUpdate}">{! $Label.echosign_dev1.Next_Button_Label }</button>
+                            </span>
+                        </aura:if>
+                        <aura:if isTrue="{! and( v.errorMessage == null ) }">
+                            <span class="slds-m-left--large">
+                                <button class="slds-button slds-button--brand" onclick="{!c.navToNextFromUpdate}">{! $Label.echosign_dev1.Next_Button_Label }</button>
+                            </span>
+                        </aura:if>
+                    </div>
+                </aura:if>
+                <aura:if isTrue="{! v.completeStep }">
+                    <div class="slds-m-left--medium">
+                        <div>
+                            <span class="esign-complete-step">{! $Label.echosign_dev1.Setup_Wizard_Step_1_Label }</span>
+                            <span class="esign-next-step esign-complete-step">{! $Label.echosign_dev1.Setup_Wizard_Step_2_Label }</span>
+                        </div>
+                        <div class="esign-steps-bar-panel">
+                            <img class="slds-m-vertical--x-small esign-first-step" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe/dot_complete.png'}" alt="{! $Label.echosign_dev1.Setup_Wizard_Step_1_Label }" />
+                            <img class="slds-m-vertical--x-small esign-middle-step" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe/bar_complete.png'}" alt="" />
+                            <img class="slds-m-vertical--x-small esign-last-step" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe/dot_complete.png'}" alt="{! $Label.echosign_dev1.Setup_Wizard_Step_2_Label }" />
+                        </div>
+                    </div>
+                    <div class="slds-m-top--medium slds-m-bottom--small">
+                        <img class="slds-m-vertical--xx-large" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe/A12_FullCheck.png'}" alt="Success" />               
+                        <span class="slds-text-heading--large slds-m-left--small slds-m-left--small esign-no-height">{! $Label.echosign_dev1.Setup_Wizard_Congrats_Label }</span>
+                    </div>
+                    <div class="slds-m-top--medium">
+                        <div class="slds-text-body--regular">{! $Label.echosign_dev1.Setup_Wizard_Get_Started_Header }</div>
+                    </div> 
+                    <div class="slds-m-top--medium">
+                        <button onclick="{!c.navToLayout}" class="slds-button">
+                            <div class="slds-text-body--regular">{! $Label.echosign_dev1.Setup_Wizard_Add_Components }</div>
+                        </button>
+                    </div> 
+                    <div>
+                        <button onclick="{!c.navToTemplates}" class="slds-button">
+                            <div class="slds-text-body--regular">{! $Label.echosign_dev1.Setup_Wizard_Templates_Label }</div>
+                        </button>
+                    </div>
+                    <div class="slds-m-top--medium">
+                        <span>
+                            <button class="slds-button slds-button--brand" onclick="{!c.navToComplete}">{! $Label.echosign_dev1.Done_Button_Label }</button>
+                        </span>
+                    </div>
+                </aura:if>
+            </div>
+        </aura:if>
+    </div>
+    
+</aura:component>

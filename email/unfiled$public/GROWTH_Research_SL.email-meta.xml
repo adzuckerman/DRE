@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>GROWTH Research SL</name>
+    <style>none</style>
+    <subject>Doctor Evidence launches GROWTH Research</subject>
+    <textOnly>*|Doctor Evidence launches GROWTH Research|*
+
+Guideline &amp; Research Organizations Worldwide
+for Transparency &amp; Harmonization
+
+GROWTH Research aims to accelerate and improve the evidence base supporting research, systematic reviews, and other EBM products, ultimately leading to stronger and more reliable clinical recommendations and research results. Medical professional societies, universities, and hospital systems that become members of GROWTH Research can offer access to Doctor Evidence’s powerful database of digitized clinical studies as a member benefit for their faculty or physician researchers. Project-specific literature or methodology services are available to meet the needs of research endeavors.
+
+Please contact Sandra Zelman Lewis for more information or to set up a demo.
+
+Read Press Release</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Logo_1</letterhead>
+    <name>TA Focus</name>
+    <style>freeForm</style>
+    <subject>Doctor Evidence - Guiding EBM Analytics for Precision Medicine</subject>
+    <textOnly>Doctor Evidence&apos;s Data HUB Management System
+
+
+The challenges associated with managing medical literature often result in lost or incomplete knowledge and misspent resources. Doctor Evidence has developed a library and data hub management system in its DOC—Digital Outcome Conversion—suite of products. DOC Library and DOC Data create a Center Of Excellence and deliver clinical knowledge to multiple functional areas in a fraction of the time with increased accuracy.
+
+
+Cardiology
+Oncology
+Immunology
+Vascular Diseases
+
+
+Endocrinology
+Metabolic
+Inflammation
+Ophthalmology
+
+
+Pulmonary
+Respiratory Diseases
+Neurology
+CNS
+
+DOC Data is a powerful environment for structuring data and generating analysis from full-text clinical studies and other epidemiology sources. DOC Data enables finger-tip ready review and analysis of data for direct and indirect analysis.  The methodologies incorporated into the DOC Data platform meet the highest global evidence-based medicine standards and practices.  Data analytics are directly integrated into the R Project for Statistical Computing modules so there is no denigration tied to data portability issues.  The centralization and structuring of clinical data into a single, quality-controlled data hub and networked repository streamlines access and integration into an organization’s best-practices workflows.
+
+
+DOC Library has over 250,000 screened citations in it for the above topics and DOC Data has over 20 million highly curated data points.
+
+
+If you would like to have a free demonstration of our core product suite please contact:
+support@doctorevidence.com
+
+Please visit our web-site: http://drevidence.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

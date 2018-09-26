@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Director, Client Solutions --></label>
+        <name>Account_Director_Client_Solutions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associate Biostatistician --></label>
+        <name>Associate_Biostatistician__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associate Director, Client Solutions --></label>
+        <name>Associate_Director_Client_Solutions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associate Director, Clinical and DI --></label>
+        <name>Associate_Director_Clinical_and_DI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associate Director, Consulting --></label>
+        <name>Associate_Director_Consulting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associate Director, Library Operations --></label>
+        <name>Associate_Director_Library_Operations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associate Director, Methodology --></label>
+        <name>Associate_Director_Methodology__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associate Director, Operations --></label>
+        <name>Associate_Director_Operations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associate Librarian --></label>
+        <name>Associate_Librarian__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chief Medical Officer --></label>
+        <name>Chief_Medical_Officer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Solutions Approved --></label>
+        <name>Client_Solutions_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Solutions Coordinator --></label>
+        <name>Client_Solutions_Coordinator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clinical Operations Approved --></label>
+        <name>Clinical_Operations_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clinical Product Development Associate --></label>
+        <name>Clinical_Product_Development_Associate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consulting Services Approved --></label>
+        <name>Consulting_Services_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Integrity Analyst - II --></label>
+        <name>Data_Integrity_Analyst_II__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Integrity Analyst - I --></label>
+        <name>Data_Integrity_Analyst_I__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Integrity Approved --></label>
+        <name>Data_Integrity_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Director of Analytics, Consulting --></label>
+        <name>Dir_of_Analytics_Consulting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Director, Education &amp; Training --></label>
+        <name>Director_Education_Training__c</name>
+    </fields>
+    <fields>
+        <label><!-- Director/ Lead, Data Management --></label>
+        <name>Director_Lead_Data_Management__c</name>
+    </fields>
+    <fields>
+        <label><!-- Director, Methodology --></label>
+        <name>Director_Methodology__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimate Total --></label>
+        <name>Estimate_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Evidence Analyst --></label>
+        <name>Evidence_Analyst__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Head, QMI --></label>
+        <name>Global_Head_QMI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of Client Solutions, EU --></label>
+        <name>Head_of_Client_Solutions_EU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Independent Contractor --></label>
+        <name>Independent_Contractor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Librarian Assistant --></label>
+        <name>Librarian_Assistant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Librarian --></label>
+        <name>Librarian__c</name>
+    </fields>
+    <fields>
+        <label><!-- Library Approved --></label>
+        <name>Library_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Methodology Associate --></label>
+        <name>Methodology_Associate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Methodology Lead --></label>
+        <name>Methodology_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ontology Specialist Manager --></label>
+        <name>Ontology_Specialist_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ontology Specialist --></label>
+        <name>Ontology_Specialist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operations Approved --></label>
+        <name>Operations_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operations Associate --></label>
+        <name>Operations_Associate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity ID --></label>
+        <name>Opportunity_ID__c</name>
+        <relationshipLabel><!-- Contracts and Revenues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Performance Development Associate --></label>
+        <name>Performance_Development_Associate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Performance Development Lead --></label>
+        <name>Performance_Development_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Performance Development/ Tech Approved --></label>
+        <name>Performance_Development_Tech_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- QMI Approved --></label>
+        <name>QMI_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Senior Director, Client Solutions --></label>
+        <name>Senior_Director_Client_Solutions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Senior Director, Operations --></label>
+        <name>Sr_Director_Operations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Senior Vice President, Client Solutions --></label>
+        <name>Sr_VP_CS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Lead, Clinical Operations --></label>
+        <name>Team_Lead_Clinical_Operations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Lead, Data Integrity --></label>
+        <name>Team_Lead_Data_Integrity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vice President, Client Solutions --></label>
+        <name>VP_Client_Solutions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vice President, Consulting --></label>
+        <name>VP_Consulting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vice President, Knowledge Management --></label>
+        <name>Vice_President_Knowledge_Management__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Contract and Revenue</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contracts and Revenues</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Contract and Revenue Layout</layout>
+        <sections>
+            <label><!-- Client Solutions --></label>
+            <section>Client Solutions</section>
+        </sections>
+        <sections>
+            <label><!-- Clinical Operations --></label>
+            <section>Clinical Operations</section>
+        </sections>
+        <sections>
+            <label><!-- Consulting Services --></label>
+            <section>Consulting Services</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Data Integrity --></label>
+            <section>Data Integrity</section>
+        </sections>
+        <sections>
+            <label><!-- Library Sciences --></label>
+            <section>Library Sciences</section>
+        </sections>
+        <sections>
+            <label><!-- Operations --></label>
+            <section>Operations</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Development/ Tech --></label>
+            <section>Performance Development/ Tech</section>
+        </sections>
+        <sections>
+            <label><!-- Quality, Methodology, and Innovation --></label>
+            <section>Quality, Methodology, and Innovation</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

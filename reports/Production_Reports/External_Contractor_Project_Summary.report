@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>Case.PICO_ID__c</field>
+    </columns>
+    <columns>
+        <field>Case.External_Contractor_Needed__c</field>
+    </columns>
+    <columns>
+        <field>Case.External_Contractor_Name__c</field>
+    </columns>
+    <columns>
+        <field>Case.External_Contractor_Deliverable__c</field>
+    </columns>
+    <columns>
+        <field>Case.External_Contractor_Task__c</field>
+    </columns>
+    <columns>
+        <field>Case.External_Contractor_Deliverable_Deadline__c</field>
+    </columns>
+    <columns>
+        <field>Case.External_Contractor_Delivered_Date__c</field>
+    </columns>
+    <description>All Projects listed as needing an external contractor</description>
+    <filter>
+        <criteriaItems>
+            <column>Case.External_Contractor_Needed__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>External Contractor Project Summary</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

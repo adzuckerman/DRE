@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Application Name --></label>
+        <name>Application_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- GroupId --></label>
+        <name>GroupId__c</name>
+    </fields>
+    <fields>
+        <label><!-- ReportId --></label>
+        <name>ReportId__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Power BI</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Power BI</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Report Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Display_Report --></label>
+        <name>Display_Report</name>
+    </webLinks>
+</CustomObjectTranslation>

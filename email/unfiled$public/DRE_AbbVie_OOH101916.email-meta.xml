@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-AbbVie-OOH-101916</name>
+    <style>none</style>
+    <subject>Doctor Evidence - Abbvie Open Office Hours</subject>
+    <textOnly>*|Doctor Evidence-AbbVie Open Office Hours|*
+
+Dear {!Contact.Name},
+We are pleased to invite you to the Doctor Evidence Open office hours: Wednesday October 19th
+Time: 11:30-1pm CST
+Room: US LC ABV1 205 03
+Doctor Evidence (DRE) is a specialty evidence-based medicine software platform and services company that is engaged with AbbVie to provide the most relevant medical evidence and related analytics to inform AbbVie’s clinical and care decisions in Immunology, HCV, and Endometriosis.
+Based on the audience, we will be sharing examples of the use cases below with
+our DOC Data platform.
+
+Immunology HEOR (Prevalence of EAMs in SpA)
+Doctor Evidence worked with AbbVie Immunology HEOR team to address a key differentiation strategy for Humira in SpA. A high quality comprehensive review of evidence library and evidence tables were delivered within a very tight timeline to create awareness and to compare and contrast the EAM prevalence worldwide. A Meta-Analysis, abstract and publication will be soon to follow (EULAR 2017)
+
+Looking forward to seeing you!
+
+Katia Butylkova,
+Account Director, Client Solutions
+Doctor Evidence
+
+Click here to confirm your attendance</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

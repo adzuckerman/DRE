@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CVS Press release and Replicator announcement</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-GROWTH-CVS-Replicator</name>
+    <style>none</style>
+    <subject>Value Based Care reaching new heights!</subject>
+    <textOnly>*Value Based Care reaching new heights!
+
+SANTA MONICA, Calif., May 20, 2016 /PRNewswire/ -- Doctor Evidence, a global medical evidence software and services company, announced this week that the company will be working with CVS Health to help support evidence gathering for the formulary decision-making process. As part of an ongoing effort to provide the greatest value to its clients and their members, CVS Health has identified Doctor Evidence as an organization whose adherence to the highest methodological criteria will bring increased agility to its formulary process.
+
+Read about this exciting news!
+
+Also introducing:
+
+The Guidelines and Research Organizations Worldwide for Transparency and Harmonization—GROWTH—program is committed to providing the best available resources for collaborating sciences in any evidentiary review. In today’s age of determining value-based care, the transparency and reproducibility of healthcare analytics is essential to advance the best therapies with certainty and confidence of improved patient outcomes.
+
+Our first replication review will be based on ICER&apos;s Multiple Myeloma review and will be launched on May 25, 2016. GROWTH Replicator, which will use Doctor Evidence’s DOC (Digital Outcome Conversion) technology to reproduce reviews and provide an open access interface into the stated data and methods of a review. GROWTH Replicator is an ecosystem where scientists and methodologists can communicate in an open forum by testing, iterating, investigating and attempting to replicate an evidence review.
+
+Sing up for open access to ICER MM Review here!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

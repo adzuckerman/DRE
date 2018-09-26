@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow up after webinar and reminder about ISPOR</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SC-DRE-Ispor-webinar-050316</name>
+    <style>none</style>
+    <subject>LIVING GUIDELINES? Missed our Webinar? Need to catch up at ISPOR?</subject>
+    <textOnly>LVING GUIDELINES? Missed our Webinar? Need to catch up at ISPOR?
+
+Did you miss the DRE-GROWTH Webinar?
+A presentation and discussion by
+Mike Cheung, Chief Science Officer, KDIGO, and
+Sandra Zelman Lewis, PhD, Chief Guidelines Officer, Doctor Evidence,
+co-authors of the recent publication:
+“ Recommendations for kidney disease guideline updating: a report by the KDIGO Methods Committee”
+Click here for the archived webinar!
+
+MEET WITH OUR TEAM AT ISPOR
+
+SCHEDULE A ONE-ON-ONE MEETING WITH A MEMBER OF OUR TEAM
+
+Facebook
+
+Twitter
+
+Website
+
+Email</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

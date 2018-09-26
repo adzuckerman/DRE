@@ -1,0 +1,66 @@
+.THIS .esign-out-status {
+    color: orange;
+}
+
+.THIS .esign-out-completed {
+    color: green;
+}
+
+.THIS .esign-out-terminated {
+    color: red;
+}
+
+.THIS .esign-panel-padded {
+    padding-right: 120px !important;
+    padding-bottom: 20px !important;
+}
+
+.THIS .esign-panel-header-padded {
+    padding-right:80px !important;
+}
+
+.THIS .esign-new-agreement-button {
+    height: 15px !important;
+}
+
+.THIS .esign-new-agreement-dropdown {
+	margin-left: 25% !important;
+    width: 82% !important;
+}
+
+.THIS .esign-new-agreement-top-dropdown {
+	margin-left: 57px !important;
+    width: 82% !important;
+}
+
+.THIS .esign-agreement-action-inline-dropdown {
+	margin-left: 85% !important;
+    min-width: 92px !important;
+    margin-top: 5% !important;
+}
+
+.THIS .esign-field-value {
+    font-size: .775rem !important;
+    color: rgb(22, 50, 92) !important;
+    font-weight: normal !important;
+}
+
+.THIS .esign-top-right-button {
+    padding-left: 40px;
+}
+
+.THIS .esign-menu-action-down {
+    width: 1rem !important;
+    fill: rgb(159, 170, 181) !important;
+}
+
+.THIS .esign-menu-action-button {
+	float: right !important;
+    padding-top: 5px !important;
+    background: transparent !important;
+    border: hidden !important;
+}
+
+.THIS .esign-big-buffer-bottom {
+    margin-bottom: 50px !important;
+}

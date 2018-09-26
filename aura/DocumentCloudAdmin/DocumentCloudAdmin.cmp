@@ -1,0 +1,388 @@
+<aura:component controller="echosign_dev1.AgreementAdminComponentController"
+                implements="force:appHostable"
+                description="Represents an admin page component."
+                extensible="true">
+    
+    <ltng:require styles="{!join(',', $Resource.echosign_dev1__SLDS + '/SLDS/assets/styles/salesforce-lightning-design-system-vf.css')}" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:attribute name="loadResult" type="echosign_dev1.LoadAdminResult"/>
+    <aura:attribute name="errorMessage" type="String"/>
+    <aura:attribute name="isLoading" type="Boolean" default="true"/>
+    <aura:attribute name="isError" type="Boolean" default="false"/>
+    <aura:attribute name="fetchDocumentKeyJobId" type="String"/>
+    <aura:attribute name="fetchDocumentKeyJobError" type="String"/>
+
+    <div class="slds" style="background:white;">    
+        <aura:if isTrue="{! v.isLoading }">
+            <div class="slds-grid slds-grid--align-center slds-m-vertical--xx-large">
+                <div class="slds-spinner--large slds-m-vertical--xx-large">
+                    <img class="slds-m-vertical--xx-large" src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/images/spinners/slds_spinner_brand.gif'}" alt="" />
+                </div>
+            </div>
+        </aura:if>
+            
+        <aura:if isTrue="{! !v.isLoading }">
+            <div class="main" role="main">
+                <div id="signatureComponentsDialog" aura:id="signatureComponentsDialog" class="slds-hide">
+                    <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+                        <div class="slds-modal__container">
+                            <div class="slds-modal__header">
+                                <div class="slds-text-heading--large">{! $Label.echosign_dev1.Admin_Add_Component }</div>
+                                <br/>
+                                <div><p>{! $Label.echosign_dev1.Admin_Add_Component_Description }</p></div>
+                                <button onclick="{! c.toggleSignatureComponentsDialog }" class="slds-button slds-modal__close">
+                                    <echosign_dev1:svgIcon class="slds-button__icon slds-button__icon--inverse slds-button__icon--large esign-icon-markup" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/action-sprite/svg/symbols.svg#close'}" category="action" size="small" name="close" />
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                            <div class="slds-modal__content">
+                                <div class="slds-form--stacked">
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element__control">
+                                            <div>
+                                                <div>
+                                                    <echosign_dev1:svgIcon class="slds-icon slds-icon-standard-user slds-icon--small slds-shrink-none" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/standard-sprite/svg/symbols.svg#account'}" category="standard" size="small" name="account" />
+                                                    <button onclick="{!c.addAccountLayout}" class="slds-m-left--small slds-button">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Add_Component_Account }</div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <echosign_dev1:svgIcon class="slds-icon slds-icon-standard-user slds-icon--small slds-shrink-none" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/standard-sprite/svg/symbols.svg#opportunity'}" category="standard" size="small" name="opportunity" />
+                                                    <button onclick="{!c.addOpportunityLayout}" class="slds-m-left--small slds-button">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Add_Component_Opportunity }</div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <echosign_dev1:svgIcon class="slds-icon slds-icon-standard-user slds-icon--small slds-shrink-none" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/standard-sprite/svg/symbols.svg#contract'}" category="standard" size="small" name="contract" />
+                                                    <button onclick="{!c.addContractLayout}" class="slds-m-left--small slds-button">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Add_Component_Contract }</div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <echosign_dev1:svgIcon class="slds-icon slds-icon-standard-user slds-icon--small slds-shrink-none" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/standard-sprite/svg/symbols.svg#lead'}" category="standard" size="small" name="lead" />
+                                                    <button onclick="{!c.addLeadLayout}" class="slds-m-left--small slds-button">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Add_Component_Lead }</div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <echosign_dev1:svgIcon class="slds-icon slds-icon-standard-user slds-icon--small slds-shrink-none" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/standard-sprite/svg/symbols.svg#contact'}" category="standard" size="small" name="contact" />
+                                                    <button onclick="{!c.addContactLayout}" class="slds-m-left--small slds-button">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Add_Component_Contact }</div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-modal-backdrop slds-modal-backdrop--open"></div>
+                </div> 
+
+                <div id="networkRangesDialog" aura:id="networkRangesDialog" class="slds-hide">
+                    <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+                        <div class="slds-modal__container">
+                            <div class="slds-modal__header">
+                                <h2 class="slds-text-heading--medium">{! $Label.echosign_dev1.Admin_Network_Component }</h2>
+                                <button onclick="{! c.toggleNetworkRangesDialog }" class="slds-button slds-modal__close">
+                                    <echosign_dev1:svgIcon class="slds-button__icon slds-button__icon--inverse slds-button__icon--large esign-icon-markup" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/action-sprite/svg/symbols.svg#close'}" category="action" size="small" name="close" />
+                                    <span class="slds-assistive-text"></span>
+                                </button>
+                            </div>
+                            <div class="slds-modal__content">
+                                <div class="slds-form--stacked">
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element__control">
+                                            <div>
+                                                <div>
+                                                    <button onclick="{!c.addNetworkRangeOne}" class="slds-button esign-no-margin">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Network_Range1_Component }</div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button onclick="{!c.addNetworkRangeTwo}" class="slds-button esign-no-margin">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Network_Range2_Component }</div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button onclick="{!c.addNetworkRangeThree}" class="slds-button esign-no-margin">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Network_Range3_Component }</div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button onclick="{!c.addNetworkRangeFour}" class="slds-button esign-no-margin">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Network_Range4_Component }</div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button onclick="{!c.addNetworkRangeFive}" class="slds-button esign-no-margin">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Network_Range5_Component }</div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button onclick="{!c.addNetworkRangeSix}" class="slds-button esign-no-margin">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Network_Range6_Component }</div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button onclick="{!c.addNetworkRangeSeven}" class="slds-button esign-no-margin">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Network_Range7_Component }</div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button onclick="{!c.addNetworkRangeEight}" class="slds-button esign-no-margin">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Network_Range8_Component }</div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button onclick="{!c.addNetworkRangeNine}" class="slds-button esign-no-margin">
+                                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Network_Range9_Component }</div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-modal__footer">
+                                <button onclick="{!c.toggleNetworkRangesDialog}" class="slds-button slds-button--neutral slds-float--right">{! $Label.echosign_dev1.Done_Button_Label }</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-modal-backdrop slds-modal-backdrop--open"></div>
+                </div> 
+                
+                <div class="slds-page-header">
+                    <div class="slds-grid slds-grid--align-left">
+                        <div class="slds-col--padded">
+                            <div class="slds-media slds-tile slds-m-bottom--large">
+                                <div class="slds-media__figure">
+                                    <!-- <c:svgIcon class="slds-icon slds-icon-text-default slds-icon- -large" svgPath="/resource/echosign_dev1__SLDS/SLDS/assets/icons/adobe-sprite/svg/sign_app_RGB.svg#mnemonic" category="adobe" size="large" name="mnemonic" /> -->
+                                    <img src="{!$Resource.echosign_dev1__EchoSignTabLogo}" class="slds-icon slds-icon-text-default slds-icon--large" />                           
+                                </div>
+                                <div class="slds-media__body slds-text-heading--medium slds-p-top--small">
+                                    <p class="tile__title slds-truncate">
+                                        {! $Label.echosign_dev1.Adobe_Sign_Admin_Label }
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <aura:if isTrue="{! v.errorMessage != null }">
+                    <div class="slds-grid slds-m-top--large">
+                        <div class="slds-notify slds-notify--alert slds-theme--error slds-theme--inverse-text slds-theme--alert-texture slds-size--1-of-1" role="alert">
+                            <span class="slds-assistive-text"></span>
+                            <button onclick="{!c.dismissAlert}" class="slds-button slds-button--icon-inverse slds-notify__close">
+                                <img src="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/action/close_60.png'}" alt="" class="slds-button__icon" />
+                                <span class="slds-assistive-text"></span>
+                            </button>
+                            <h2>{! v.errorMessage }</h2>
+                        </div>
+                    </div>
+                </aura:if>
+            
+            <div class="slds-grid slds-wrap slds-p-top--medium">  
+                <section class="slds-col slds-size--1-of-1 slds-large-size--2-of-3">
+                    <div class="slds-m-right--medium esign-left-col">
+                        <aura:if isTrue="{! !v.loadResult.isSetupCompleted || !v.loadResult.isLayoutCompleted || !v.loadResult.isTemplateCompleted }">
+                            <div class="esgin-clear-section slds-page-header slds-box slds-m-top--x-small slds-m-bottom--xx-large">
+                                <div class="slds-text-heading--small esign-header-title">{! $Label.echosign_dev1.Admin_Get_Started_Label }</div>
+                                <ul class="slds-list--vertical slds-p-top--large slds-p-top--large slds-m-left--large">
+                                    <li class="slds-list__item slds-p-bottom--x-small">
+                                        <a onclick="{!c.navToWizard}">
+                                            <aura:if isTrue="{! v.loadResult.isSetupCompleted }">
+                                                <echosign_dev1:svgIcon otherClasses="slds-m-top--x-small" class="slds-icon slds-icon-text-default" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe-sprite/svg/Checkmark_Press_Active.svg#mnemonic'}" category="adobe" size="large" name="mnemonic" />
+                                            </aura:if>
+                                            <aura:if isTrue="{! !v.loadResult.isSetupCompleted }">
+                                                <echosign_dev1:svgIcon otherClasses="slds-m-top--x-small" class="slds-icon slds-icon-text-default" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe-sprite/svg/Checkmark_Up.svg#mnemonic'}" category="adobe" size="large" name="mnemonic" />
+                                            </aura:if>
+                                            <span class="slds-m-left--small">{! $Label.echosign_dev1.Admin_Complete_Setup_Wizard_Label }</span>
+                                        </a>
+                                    </li>
+                                    <li class="slds-list__item slds-has-divider--top-space esign-p-top--large slds-p-bottom--x-small">
+                                        <a onclick="{!c.toggleSignatureComponentsDialog}">
+                                            <aura:if isTrue="{! v.loadResult.isLayoutCompleted }">
+                                                <echosign_dev1:svgIcon otherClasses="slds-m-top--x-small" class="slds-icon slds-icon-text-default" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe-sprite/svg/Checkmark_Press_Active.svg#mnemonic'}" category="adobe" size="large" name="mnemonic" />
+                                            </aura:if>
+                                            <aura:if isTrue="{! !v.loadResult.isLayoutCompleted }">
+                                                <echosign_dev1:svgIcon otherClasses="slds-m-top--x-small" class="slds-icon slds-icon-text-default" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe-sprite/svg/Checkmark_Up.svg#mnemonic'}" category="adobe" size="large" name="mnemonic" />
+                                            </aura:if>
+                                            <span class="slds-m-left--small">{! $Label.echosign_dev1.Admin_Add_Components_Started_Label }&nbsp;<span class="esgin-optional-text">{! $Label.echosign_dev1.Admin_Optional_Label }</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="slds-list__item slds-has-divider--top-space esign-p-top--large">
+                                        <a onclick="{!c.navToTemplates}">
+                                            <aura:if isTrue="{! v.loadResult.isTemplateCompleted }">
+                                                <echosign_dev1:svgIcon otherClasses="slds-m-top--x-small" class="slds-icon slds-icon-text-default" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe-sprite/svg/Checkmark_Press_Active.svg#mnemonic'}" category="adobe" size="large" name="mnemonic" />
+                                            </aura:if>
+                                            <aura:if isTrue="{! !v.loadResult.isTemplateCompleted }">
+                                                <echosign_dev1:svgIcon otherClasses="slds-m-top--x-small" class="slds-icon slds-icon-text-default" svgPath="{!$Resource.echosign_dev1__SLDS + '/SLDS/assets/icons/adobe-sprite/svg/Checkmark_Up.svg#mnemonic'}" category="adobe" size="large" name="mnemonic" />
+                                            </aura:if>
+                                            <span class="slds-m-left--small">{! $Label.echosign_dev1.Admin_Template_Started_Label }&nbsp;<span class="esgin-optional-text">{! $Label.echosign_dev1.Admin_Optional_Label }</span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aura:if>
+                        <div class="esign-box-noborder slds-m-top--x-small">
+                            <div>
+                                <div class="slds-text-heading--small esign-header-title">{! $Label.echosign_dev1.Admin_Quick_Links_Label }</div>
+                                <div>
+                                    <button onclick="{!c.toggleSignatureComponentsDialog}" class="slds-button">
+                                        <div class="slds-text-body--regular">{! $Label.echosign_dev1.Admin_Quick_Links_Send_Component }</div>
+                                    </button>
+                                    <div class="slds-text-body--small">{! $Label.echosign_dev1.Admin_Quick_Links_Send_Description }</div>
+                                </div>
+                                <div class="slds-m-top--medium">
+                                    <button onclick="{!c.navToTemplates}" class="slds-button">
+                                        <div class="slds-text-body--regular">{! $Label.echosign_dev1.Admin_Quick_Links_Templates_Component }</div>
+                                    </button>
+                                    <div class="slds-text-body--small">{! $Label.echosign_dev1.Admin_Quick_Links_Templates_Description }</div>
+                                </div>
+                                <div class="slds-m-top--medium">
+                                    <button onclick="{!c.navToCustomSettings}" class="slds-button">
+                                        <div class="slds-text-body--regular">{! $Label.echosign_dev1.Admin_Quick_Links_Custom_Settings_Component }</div>
+                                    </button>
+                                    <div class="slds-text-body--small">{! $Label.echosign_dev1.Admin_Quick_Links_Custom_Settings_Description }</div>
+                                </div>
+                            </div>
+                            <div class="slds-m-top--x-large">
+                                <div class="slds-text-heading--small esign-header-title">{! $Label.echosign_dev1.Admin_Mappings_Header }</div>
+                                <div>
+                                    <button onclick="{!c.navToMerge}" class="slds-button">
+                                        <div class="slds-text-body--regular">{! $Label.echosign_dev1.Admin_Merge_Mappings_Header }</div>
+                                    </button>
+                                    <div class="slds-text-body--small">{! $Label.echosign_dev1.Admin_Merge_Mapping_Description }</div>
+                                </div>
+                                <div class="slds-m-top--medium">
+                                    <button onclick="{!c.navToData}" class="slds-button">
+                                        <div class="slds-text-body--regular">{! $Label.echosign_dev1.Admin_Data_Mappings_Header }</div>
+                                    </button>
+                                    <div class="slds-text-body--small">{! $Label.echosign_dev1.Admin_Data_Mapping_Description }</div>
+                                </div>
+                                <div class="slds-m-top--medium">
+                                    <button onclick="{!c.navToGroup}" class="slds-button">
+                                        <div class="slds-text-body--regular">{! $Label.echosign_dev1.Admin_Group_Mappings_Header }</div>
+                                    </button>
+                                    <div class="slds-text-body--small">{! $Label.echosign_dev1.Admin_Group_Mapping_Description }</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="slds-col slds-size--1-of-1 slds-large-size--1-of-3">
+                    <div>
+                        <div class="slds-text-heading--small esign-header-title">{! $Label.echosign_dev1.Admin_Adobe_Account_Header }</div>
+                        <aura:if isTrue="{! v.loadResult.authEmail == null }">
+                            <div>
+                                <span class="slds-text-body--small esgin-italic-text">{! $Label.echosign_dev1.Admin_No_Account_Linked_Label }</span>
+                                <span class="esign-m-left--100px">
+                                    <button onclick="{!c.navToAuth}" class="slds-button">
+                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Account_Link_Label }</div>
+                                    </button>
+                                </span>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{! v.loadResult.authEmail != null }">
+                            <div>
+                                <span class="slds-text-body--small">{! $Label.echosign_dev1.Admin_Linked_To_Label }&nbsp;{! v.loadResult.authEmail }</span>
+                                <span class="slds-m-left--large">
+                                    <button onclick="{!c.doUnlinkAccount}" class="slds-button">
+                                        <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Account_Unlink_Label }</div>
+                                    </button>
+                                </span>
+                            </div>
+                        </aura:if>
+                        <div class="slds-m-top--x-large">
+                            <div class="slds-text-heading--small esign-header-title">{! $Label.echosign_dev1.Admin_Resources_Header }</div>
+                            <div class="slds-text-body--regular slds-m-top--large">{! $Label.echosign_dev1.Admin_Account_Settings_Header }</div>
+                            <div>
+                                <button onclick="{!c.navToWizard}" class="slds-button">
+                                    <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Launch_Setup_Wizard_Label }</div>
+                                </button>
+                            </div>
+                            <div>
+                                <button onclick="{!c.toggleNetworkRangesDialog}" class="slds-button esign-no-margin">
+                                    <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Add_Network_Label }</div>
+                                </button>
+                            </div>
+                            <div>
+                                <button onclick="{!c.navToUpdate}" class="slds-button esign-no-margin">
+                                    <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Enable_Updates_Label }</div>
+                                </button>
+                            </div>
+                            <div>
+                                <button onclick="{!c.navToAdmin}" class="slds-button esign-no-margin">
+                                    <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Management_Console_Label }</div>
+                                </button>
+                            </div>
+                            <div>
+                                <button onclick="{!c.createStandardTemplate}" class="slds-button esign-no-margin">
+                                    <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Standard_Template_Label }</div>
+                                </button>
+                            </div>
+                            <div>
+                                <button onclick="{!c.createSelfSignTemplate}" class="slds-button esign-no-margin">
+                                    <div class="slds-text-body--small esign-link esign-long-link">{! $Label.echosign_dev1.Admin_Self_Sign_Template_Label }</div>
+                                </button>
+                            </div>
+                            <div>
+                                <button onclick="{!c.fetchDocumentKeys}" class="slds-button esign-no-margin" title="{! $Label.echosign_dev1.Fetch_Missing_Document_Keys_Message }">
+                                    <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Fetch_Missing_Document_Keys }</div>
+                                </button>
+                            </div>
+                            <div>
+                                <button onclick="{!c.updateDocumentKeys}" class="slds-button esign-no-margin " title="{! $Label.echosign_dev1.Update_Legacy_Document_Keys_Message }">
+                                    <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Update_Legacy_Document_Keys }</div>
+                                </button>
+                            </div>
+                            <div>
+                                <aura:if isTrue="{! and(v.fetchDocumentKeyJobError != null, v.fetchDocumentKeyJobError != '')}">
+                                    <div><span class="slds-text-body--small">{! v.fetchDocumentKeyJobError}</span></div>
+                                </aura:if>
+                                <aura:if isTrue="{! and(v.fetchDocumentKeyJobError == null, and(v.fetchDocumentKeyJobId != null, v.fetchDocumentKeyJobId != ''))}">
+                                    <div><span class="slds-text-body--small">{! $Label.echosign_dev1.Bulk_Action_Result_Label }&nbsp;<a style="font-size: 100%; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;" href="/apexpages/setup/listAsyncApexJobs.apexp">{! v.fetchDocumentKeyJobId}</a></span></div>
+                                </aura:if>
+                                <aura:if isTrue="{! v.fetchDocumentKeyJobId == ''}">
+                                    <div><span class="slds-text-body--small">{! $Label.echosign_dev1.Fetch_Document_Key_Operation_Not_Permitted }</span></div>
+                                </aura:if>
+                            </div>
+                            <div class="slds-text-body--regular slds-m-top--large">{! $Label.echosign_dev1.Admin_Learn_Support_Header }</div>
+                            <div>
+                                <button onclick="{!c.navToUserGuide}" class="slds-button">
+                                    <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Install_Guide_Label }</div>
+                                </button>
+                            </div>
+                            <div>
+                                <button onclick="{!c.navToForum}" class="slds-button">
+                                    <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Community_Forums_Label }</div>
+                                </button>
+                            </div>
+                            <div>
+                                <button onclick="{!c.navToTextTag}" class="slds-button">
+                                    <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Adobe_Forms_Label }</div>
+                                </button>
+                            </div>
+                            <div>
+                                <button onclick="{!c.navToSmartForm}" class="slds-button">
+                                    <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Smart_Forms_Label }</div>
+                                </button>
+                            </div>
+                            <div>
+                                <button onclick="{!c.navToPortal}" class="slds-button">
+                                    <div class="slds-text-body--small esign-link">{! $Label.echosign_dev1.Admin_Adobe_Portal_Label }</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </aura:if>        
+    </div> 
+</aura:component>

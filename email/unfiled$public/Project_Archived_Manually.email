@@ -1,0 +1,14 @@
+To Whom It May Concern,
+
+The following project or sub-project was recently archived.
+
+Account: {!TASKRAY__Project__c.TASKRAY__trAccount__c}
+SFID: {!TASKRAY__Project__c.Opportunity_ID__c}
+Project Name: {!TASKRAY__Project__c.Name}
+Secondary Project Name: {!TASKRAY__Project__c.Secondary_Project_Name__c}
+
+Salesforce URL:
+https://na63.salesforce.com/{!TASKRAY__Project__c.Id}
+
+Thank you,
+System Administrator

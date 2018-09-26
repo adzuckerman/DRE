@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>GROWTH Newsletter-Nov 2016</name>
+    <style>none</style>
+    <subject>Doctor Evidence - Guidelines and Multimorbidity</subject>
+    <textOnly>*|Doctor Evidence - Guidelines and Multimorbidity|*
+
+Hi {!Contact.FirstName},
+I thought you might be interested our GROWTH newsletter.
+
+{!User.FirstName} {!User.LastName}
+{!User.Title}
+
+
+
+by Cynthia Boyd, MD, MPH
+While the prevalence of having multiple chronic conditions, or multimorbidity, increases with age, the numbers of people living with multimorbidity of all ages is increasing.  Forty-eight percent of older adults have 3 or more chronic conditions. Many people living with multiple chronic conditions are less than 60 years of age…
+Continue reading...
+
+
+NOVEMBER IS
+AMERICAN DIABETES MONTH,
+COPD AWARENESS MONTH, AND LUNG CANCER AWARENESS MONTH
+
+Doctor Evidence has digital data assets from published clinical research across a wide variety of disease states, including over 1400 diabetes studies, 400 COPD studies, and 100 lung cancer studies, with more studies digitized daily.
+
+CLICK HERE FOR INFORMATION ON STUDIES IN YOUR TOPIC AREA
+
+Conferences
+
+Doctor Evidence will be presenting the poster
+
+Dissemination of Systematic Reviews: How One Tool Increases Knowledge of Systematic Reviews and the Science behind Them
+
+Sandra Zelman Lewis, PhD, EBQ Consulting, LLC, Northbrook, IL and Fasahath Husain, PhD, Doctor Evidence, Santa Monica, CA
+
+Save the Date: Evidence-Based Guidelines Affecting Policy, Practice and Stakeholders (E-GAPPS III) Conference - March 20-21, 2017
+
+Beyond Implementation: Are Clinical Guidelines Improving Healthcare Quality?
+
+The Guidelines International Network North America (G-I-N/ NA) will host the third conference on Evidence-based Guidelines Affecting Policy, Practice, and Stakeholders (E-GAPPS II) March 20-21, 2017. It will be held at the New York Academy of Medicine in collaboration with the Section on Evidence Based Health Care (SEBHC).
+Mark your calendar!
+
+
+ISPOR 19th Annual European Congress
+in Austria Center Vienna, Vienna, Austria
+
+Doctor Evidence presented the poster: INNOVATIVE APPROACH TO KEEPING EVIDENCE CURRENT AND GUIDELINES LIVING
+
+Sandra Zelman Lewis, PhD, Mika Newton, Todd Feinman, MD, Michael del Aguila, PhD, Gordon Cummins, MS
+Doctor Evidence, Santa Monica, CA, USA
+
+Facebook
+
+Twitter
+
+Website
+
+Email
+
+Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.
+*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
+
+Our mailing address is:
+*|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
+
+Want to change how you receive these emails?
+You can update your preferences or unsubscribe from this list
+
+*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

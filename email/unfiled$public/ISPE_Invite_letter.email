@@ -1,0 +1,59 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Dear {!Contact.FirstName},<o:p></o:p></p><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p>
+
+<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">The Institute for <a href="http://www.healthdata.org/">Health Metrics and Evaluation</a>&nbsp;&amp; <a href="http://drevidence.com">Doctor Evidence</a>&nbsp;have
+partnered to combine the power of&nbsp; technology enabled digital content from
+peer reviewed published literature and comprehensive global RWE sources. <o:p></o:p></p>
+
+<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">The partnership creates a new standard for effective development of
+healthcare strategy through epidemiological and economic forecasting and
+reviews using the natural history of disease and unique platform for rapid
+interpretation, dissemination and publication. <o:p></o:p></p>
+
+<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">IHME offerings <o:p></o:p></p>
+
+<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">The Institute for Health Metrics and Evaluation offers unparalleled scope of
+global data on risk factors, disease, outcomes, healthcare utilization and
+costs, and forecasting. With more than a decade of experience, IHME has
+established relationships across the globe to get data from multiple sources
+and data types.&nbsp; With a roster of clinical, epidemiological, and programming
+resources, IHME can provide data and advanced epidemiological modeling.<o:p></o:p></p><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p>
+
+<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><b><u>IHME clinical advantages </u></b><o:p></o:p></p>
+
+<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">These offerings are suitable for multiple functional areas across the
+pharmaceutical enterprise.&nbsp;&nbsp; <o:p></o:p></p>
+
+<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"></p><ul style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><li>Clinical Development scientists can make use of IHME data to understand
+the distribution of disease and outcomes in select geographies. This enables
+the identification of areas of unmet&nbsp;medical need that could benefit from
+specific new therapies. Moreover, the collaborative network of clinicians and
+scientists within IHME provide new avenues of access to potential investigators
+in select disease areas and geographies to facilitate clinical trial startup
+and enrollment.</li></ul><ul style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><li>Global Commercial teams developing and refining plans for launch and
+uptake take advantage of forecasting tools from to provide unique information
+at a granular level across the globe. This can be used to establish market
+sizing as well as launch planning to support commercialization
+efforts.&nbsp;&nbsp; Market Access and Health Economic functions are able to
+develop a global economic model based on epidemiology and health care
+expenditures.&nbsp; Country specific data provides a unique ability to localize
+these models for the various markets of interest in support of launch and
+ongoing access support activities.</li></ul><font face="arial"><span style="font-size: 12pt;"><o:p></o:p></span></font><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"></p>
+
+<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><o:p></o:p></p>
+
+<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">In addition to the IHME data and analytics, Doctor Evidence has over a decade
+of experience in identifying data from a variety of sources such as literature,
+regulatory filings, registries and drug labels. This data is delivered via a
+best in class advanced analytics platform. <o:p></o:p></p>
+
+<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">We look forward to meeting with you at ISPE to discuss how our data and
+services will benefit your organization. <o:p></o:p></p><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p>
+
+<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Best Regards, <o:p></o:p></p><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p>
+
+<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">{!Account.OwnerFullName}<o:p></o:p></p><p><font face="arial">{!Account.OwnerPhone}</font></p><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p>]]></td>
+</tr>
+</table>

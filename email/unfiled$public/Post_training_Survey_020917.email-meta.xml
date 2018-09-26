@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Post-training-Survey-020917</name>
+    <style>none</style>
+    <subject>Doctor Evidence-Post-training survey</subject>
+    <textOnly>*|Doctor Evidence Post-Training Survey|*
+
+Dear {!Contact.Name},
+
+Thanks for participating in the Doctor Evidence Introductory Training today. We appreciate your feedback and look forward to seeing you in future trainings. Below is a link to a 5-question survey which will help us address your needs going forward.
+
+https://www.surveymonkey.com/r/DZCHMQD
+
+Looking forward to hearing from you!
+
+Toby Sayre
+Vice President, Consulting Services
+Doctor Evidence</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

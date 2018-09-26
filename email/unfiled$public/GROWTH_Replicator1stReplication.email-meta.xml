@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template to go out with the press release</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>GROWTH Replicator- 1st Replication</name>
+    <style>none</style>
+    <subject>Try out DRE&apos;s software to replicate an EBM review -FOR FREE!</subject>
+    <textOnly>*|MC:SUBJECT|*
+
+Today Doctor Evidence launches GROWTH Replicator, a site that enables stakeholders across the healthcare ecosystem free access to a platform to replicate systematic evidence reviews. Doctor Evidence (DRE) is a leading human-enabled technology platform company that provides solutions for dynamic identification, synthesis, and analysis to perform evidence-based medicine evaluations. The GROWTH Replicator site will enable users to utilize DRE’s platform and Digital Outcome Conversion (DOC) technology to reproduce reviews, as well as provide an open access interface for the stated data and methods of a review.
+Through GROWTH Replicator, Doctor Evidence is providing an ecosystem where scientists and methodologists can communicate in an open forum by testing, iterating, investigating, and replicating an evidence review.
+Read press release.
+The first review tested by GROWTH Replicator is a recently released review conducted by the
+Institute for Clinical and Economic Review (ICER)
+on Multiple Myeloma.
+Scientists can enroll to use DRE&apos;s platform, a protected login site,where they can view the underlying data used in this particular review.
+GROWTH REPLICATOR
+ICER Multiple Myeloma Forum
+
+Click here for more information or to request free access.
+
+DRE
+
+DRE
+
+DRE
+
+Contact Us
+
+GROWTH
+
+GROWTH
+
+GROWTH</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

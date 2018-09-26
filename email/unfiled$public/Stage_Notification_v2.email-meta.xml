@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>blankletterhead</letterhead>
+    <name>Stage Notification v2</name>
+    <style>freeForm</style>
+    <subject>Opportunity Stage Advanced</subject>
+    <textOnly>The following Opportunity has had its stage advanced:
+
+Account: {!Opportunity.Account}
+Opportunity Name: {!Opportunity.Name}
+Owner: {!Opportunity.OwnerFullName}
+Amount:  {!Opportunity.Amount}
+Stage: {!Opportunity.StageName}
+Progress (%): {!Opportunity.Probability}%
+
+For more information, please click the link below (or copy and paste into your browser):
+{!Opportunity.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

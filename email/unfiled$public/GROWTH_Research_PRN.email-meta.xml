@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>GROWTH Research PRN</name>
+    <style>none</style>
+    <subject>Doctor Evidence launches GROWTH Research</subject>
+    <textOnly>*|Doctor Evidence launches GROWTH Research|*
+
+Doctor Evidence launches GROWTH Research
+
+GROWTH-- Guideline &amp; Research Organizations Worldwide for Transparency &amp; Harmonization
+
+SANTA MONICA, Calif., Oct. 13, 2016 /PRNewswire/ -- Doctor Evidence (DRE) announces the launch of GROWTH Research, a new initiative to connect patient-level data to peer-reviewed data for clinical and policy decisions applicable at institutional, national, or global levels. GROWTH Research enables organizations to use the syntheses and analytic results of publicly validated data from the peer-reviewed literature to mine and investigate patient-level data for research and discovery purposes.
+
+Continue Reading PR Newswire</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

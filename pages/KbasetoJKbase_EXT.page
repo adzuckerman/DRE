@@ -1,0 +1,31 @@
+<apex:page standardController="Kbase__c" extensions="KbaseToJKbase_EXT">    
+
+    <apex:pageBlock title="Create Kbase and Junction Kbase">
+    	<apex:outputPanel id="pageMessages">
+    		<apex:pageMessages />
+    	</apex:outputPanel>        
+    <apex:form >
+    	<apex:pageBlockSection title="1. Enter KBase Ref Id and Press Search">
+            <apex:inputText value="{!kBaseRefId}" label="Ref Id" required="true"/>
+            <apex:commandButton action="{!searchKbase}" value="Search" reRender="nextSteps,pageMessages" />
+        </apex:pageBlockSection>
+	</apex:form>                    
+    <apex:form >        
+        <apex:outputPanel id="nextSteps">
+        <apex:pageBlockSection title="2. KBase Information" Id="kbase_info" rendered="{!searched}">
+            <apex:outputField value="{!kbase.Name}" rendered="{!!foundExisting}" />            
+            <apex:inputField value="{!Kbase__c.Extraction_Quantity__c}" rendered="{!!foundExisting}" required="{! searched && !foundExisting}" />
+            <apex:inputField value="{!Kbase__c.Extraction_Task_Description__c}" rendered="{!!foundExisting}" required="{! searched && !foundExisting}" />
+            
+            <apex:outputField value="{!kbase.Name}" rendered="{!foundExisting}" />
+            <apex:outputField value="{!kbase.Extraction_Quantity__c}" rendered="{!foundExisting}" />
+            <apex:outputField value="{!kbase.Extraction_Task_Description__c}" rendered="{!foundExisting}"/>            
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="3. Finish" Id="buttonSection" columns="1" rendered="{!searched}">
+        	<apex:commandButton action="{!KbaseToJKbase}" value="Finish"/>
+        	<apex:commandButton action="{!Cancel}" value="Cancel" />               
+        </apex:pageBlockSection>
+        </apex:outputPanel>    
+	</apex:form>          
+    </apex:pageBlock>  
+</apex:page>

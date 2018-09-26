@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financials --></label>
+        <name>Financials__c</name>
+        <picklistValues>
+            <masterLabel>Actual</masterLabel>
+            <translation><!-- Actual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budget</masterLabel>
+            <translation><!-- Budget --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forecast</masterLabel>
+            <translation><!-- Forecast --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GAAP Classification --></label>
+        <name>GAAP_Classification__c</name>
+    </fields>
+    <fields>
+        <label><!-- GL Account Name --></label>
+        <name>GL_Account_Name__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Financials</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Financials</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Financials Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

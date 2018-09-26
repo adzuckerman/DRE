@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-AbbVie RSS updates</name>
+    <style>none</style>
+    <subject>New Doctor Evidence RSS Alerts Available</subject>
+    <textOnly>*|New Doctor Evidence RSS Alerts Available|*
+
+Doctor Evidence RSS Alerts Available - AbbVie Newsletter
+
+Did you see December&apos;s AbbVie Newsletter?
+
+Doctor Evidence has integrated the literature searches via RSS alerts. Click on the link below to contact library@abbvie.com about your subscription to Library News, the monthly electronic digest from the AbbVie Library.
+
+Keep Current with New Doctor Evidence Alerts
+
+New! Get extended coverage of drug therapy and diseases in the areas of HCV, immunology and endometriosis through the Library&apos;s new Doctor Evidence alerts. Subscribe to any of the 15 new alerts, such as:
+
+Adult Crohn&apos;s Disease - Drug Therapies [Doctor Evidence]
+Endometriosis Cost of Illness / Comparative Economic Evaluation [Doctor Evidence]
+HCV DAA [Doctor Evidence] - and more!
+
+Visit the Library’s alert page to see a complete list.
+For more information, email library@abbvie.com.
+
+Users can now log in thrugh AbbVie&apos;s single Sign On portal at: https://federation.abbvie.com/idp/startSSO.ping?PartnerSpId=dre-launch:saml2:sp</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

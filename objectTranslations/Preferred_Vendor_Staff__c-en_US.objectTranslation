@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Phone --></label>
+        <name>Home_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing City --></label>
+        <name>Mailing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Country --></label>
+        <name>Mailing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing State/Province --></label>
+        <name>Mailing_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Street --></label>
+        <name>Mailing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Zip/Postal Code --></label>
+        <name>Mailing_Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other City --></label>
+        <name>Other_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Country --></label>
+        <name>Other_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Email Address --></label>
+        <name>Other_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Phone --></label>
+        <name>Other_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other State/Province --></label>
+        <name>Other_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Street --></label>
+        <name>Other_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Zip/Postal Code --></label>
+        <name>Other_Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Vendor --></label>
+        <name>Preferred_Vendor__c</name>
+        <relationshipLabel><!-- Preferred Vendor Staff --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Preferred Vendor Staff</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Preferred Vendor Staff</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Preferred Vendor Staff Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,33 @@
+.THIS .step-container{
+  width: 100%;
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 12px;
+}
+.THIS .step-label{
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 0;
+}
+.THIS .milestone-selection-container .slds-form-element__label{
+  display: none;
+}
+
+.THIS .milestone-selection-container .slds-form-element{
+  margin: 6px 0px;
+}
+
+.THIS .milestone-selection-error{
+  margin: 6px 0px;
+  color: #c23934;
+}
+
+.THIS .spinner-container{
+  position: relative;
+  height: 32px;
+  width: 32px;
+}
+
+.THIS .spinner-container .slds-spinner_container{
+  background-color: transparent !important;
+}

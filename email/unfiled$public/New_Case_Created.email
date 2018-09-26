@@ -1,0 +1,4 @@
+A new case with case number #{!Case.CaseNumber} has been created on the account {!Account.Name}.
+
+For more information on the Case, please click on the direct link below:
+{!Case.Link}

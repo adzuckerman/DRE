@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-Sanofi Intermediate 1&amp;2 Post training-MASTER</name>
+    <style>none</style>
+    <subject>Doctor Evidence-Sanofi Post Training</subject>
+    <textOnly>*|Doctor Evidence-Sanofi Post-training email|*
+
+Dear {!Contact.Name},
+Thank you for attending the first part of our Intermediate Training. Please find attached the slide decks from the presentation. If you have not already signed up for the second part of the Intermediate training and wish to do so, please register below by clicking on the session of your choice. This subsequent 3-hour training will enable you to export data and conduct analyses within DOC Data. 
+
+PLEASE SELECT BELOW WHICH SESSION YOU WOULD LIKE TO ATTEND FOR THE SECOND INTERMEDIATE TRAINING IF YOU HAVE NOT DONE SO:
+
+19 Oct 2017 ~ Intermediate 3-4 ~ 10 AM-1 PM EST/ 4-7 PM CET
+16 Nov 2017 ~ Intermediate 3-4 | 9 AM-12 PM EST/ 3-6 PM CET
+7 Dec 2017 ~ Intermediate 3-4 ~ 9 AM-12 PM EST/ 3-6 PM CET
+
+Please don&apos;t hesitate to be in touch with any comments, suggestions or questions.
+
+Thank You,
+
+Nancy Morgan
+Director of Learning and Development
+Doctor Evidence
+301 Arizona Ave Suite 301 Santa Monica CA 90401
+847-507-1451
+
+
+Introductory Training
+
+Intermediate Training
+
+Click here to launch Doctor Evidence Platform</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

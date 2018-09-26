@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SC-ISPOR-3rd-E-Blast</name>
+    <style>none</style>
+    <subject>ISPOR 2017 meetings available with Doctor Evidence&apos;s team</subject>
+    <textOnly>*|ISPOR 2017 meetings available with Doctor Evidence&apos;s team|*
+
+Hi {!Contact.FirstName},
+I wanted to follow-up and see if you are interested in meeting with Doctor Evidence at the 22nd international ISPOR event coming up May 22nd – 24th in Boston.
+
+The Doctor Evidence team will be conducting demonstrations of our evidence-based products and services in a meeting room at the Sheraton Boston hotel adjacent to the Convention Center.
+Let me know if you are interested in meeting on Monday, May 22nd, Tuesday, May 23rd, or Wednesday, May 24th?
+
+Please click here if you are interested in scheduling time to meet.
+
+Scott Clymer
+Vice President, Business Development
+Doctor Evidence
+301 Arizona Avenue, Suite 301
+Santa Monica, CA 90401
+Wk: 623-326-0297
+
+Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.
+*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
+
+Our mailing address is:
+*|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
+
+Want to change how you receive these emails?
+You can update your preferences or unsubscribe from this list
+
+*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

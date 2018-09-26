@@ -1,0 +1,437 @@
+<apex:page controller="ContractInformationCtrl" showHeader="false" sidebar="false" contenttype="application/vnd.ms-excel#ContractsReport.xls">
+    <!-- <apex:pageBlock title="Export Results" >
+            <apex:pageBlockTable value="{!opportunityList}" var="opp">
+                <apex:column value="{!opp.contractId}"/>
+                <apex:column value="{!opp.accountName}"/>
+                <apex:column value="{!opp.opportunityName}"/>
+                <apex:column value="{!opp.offering}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock> -->
+        <head>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    
+            <!-- Optional theme -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+    
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        </head>
+    
+        <style>
+            .tables-container {
+                overflow-x: scroll;
+            }
+            .single-table {
+                display: table-cell;
+                padding-right: 5px;
+            }
+            .single-table table {
+                border: 1px solid #ececec
+            }
+            .table-caption {
+                font-size: 16px;
+                color: #000;
+                margin: auto;
+                background-color: #ececec;
+                 /*background: linear-gradient(#5d4660, #9d8c8b);*/
+                
+                text-align: center;
+            }
+            .table-head{
+                background-color: #fff;
+                border-bottom: 1px solid #dddddd;
+                border-top: 2px solid #dddddd;
+                /*background: linear-gradient(#9d8c8b, #f2e9c4);*/
+                font-size: 14px;
+            }
+            .table-head tr{
+                max-height: 80px !important;
+                height: 80px !important;
+                margin: auto;
+            }
+            .table-head th{
+                vertical-align: middle !important;
+                text-align: center;
+            }
+            .table-head p{
+                padding: 0px;
+                margin: 0px 5px;
+            }
+            .table-body{
+                font-size: 12px;
+            }
+            .table-body td{
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .table-body td:hover{
+                text-overflow: none;
+            }
+            .table-footer { 
+                background-color: #ececec;
+                /*background: linear-gradient(#f2e9c4, #9d8c8b);*/
+            }
+            p {
+                color: #FEFEFC;
+            }
+    
+        </style>
+        
+        <apex:variable value="{!0}" var="totalContractAmount"/>
+        <apex:variable value="{!0}" var="totalContractRev"/>
+        <apex:variable value="{!0}" var="totalContractRevSubscr"/>
+        <apex:variable value="{!0}" var="totalContractRevServ"/>
+        <apex:variable value="{!0}" var="totalContractCost"/>
+        <apex:variable value="{!0}" var="contractBacklogRevenue"/>
+    
+        <apex:variable value="{!0}" var="totalCostPriorCurrentYear"/>
+        <apex:variable value="{!0}" var="totalCostCurrentYear"/>
+        <apex:variable value="{!0}" var="totalRevenuePriorCurrentYear"/>
+        <apex:variable value="{!0}" var="totalRevenueCurrentYear"/> 
+        <apex:variable value="{!0}" var="totalRevenueCurrentYearSubscr"/> 
+        <apex:variable value="{!0}" var="totalRevenueCurrentYearServ"/> 
+    
+        <apex:variable value="{!0}" var="totalMonthRevenue"/>
+        <apex:variable value="{!0}" var="totalMonthExpense"/>
+        <apex:variable value="{!0}" var="totalMonthAccruesRev"/>
+        <apex:variable value="{!0}" var="totalMonthDefRev"/>
+
+        <apex:variable value="{!0}" var="totalMonthRevenue1"/>
+        <apex:variable value="{!0}" var="totalMonthExpense1"/>
+        <apex:variable value="{!0}" var="totalMonthAccruesRev1"/>
+        <apex:variable value="{!0}" var="totalMonthDefRev1"/>
+
+        <apex:variable value="{!0}" var="totalMonthRevenue2"/>
+        <apex:variable value="{!0}" var="totalMonthExpense2"/>
+        <apex:variable value="{!0}" var="totalMonthAccruesRev2"/>
+        <apex:variable value="{!0}" var="totalMonthDefRev2"/>
+    
+        <div class="tables-container"> 
+            <table class="table table-condensed table-striped">
+                  <!-- <caption class="table-caption"><h3>CONTRACT INFORMATION</h3></caption> -->
+                <thead class="table-head">
+                    <tr>
+                        <th colspan="11" style="background-color: #343434; border: 1px solid #FEFEFC;"><p>Contract Information</p></th>
+                        <!--<th colspan="6" style="background-color: #343434; border: 1px solid #FEFEFC;"><p>Prior Year Information</p></th>-->
+                        <apex:repeat value="{!invoiceMonthList}" var="invoiceMonth">
+                            <th colspan="6" style="background-color: #343434; border: 1px solid #FEFEFC;"><p>{!invoiceMonth.headerMonth}</p></th>
+                        </apex:repeat>
+                    </tr>
+                    <tr>
+                        <th style="background-color: #818181; border: 1px solid #FEFEFC;"><p>Contract ID</p></th>
+                        <th style="background-color: #818181; border: 1px solid #FEFEFC;"><p>Account Name</p></th>
+                        <th style="background-color: #818181; border: 1px solid #FEFEFC;"><p>Opportunity Name</p></th>
+                        <th style="background-color: #818181; border: 1px solid #FEFEFC;"><p>Offering</p></th>
+                        <th style="background-color: #818181; border: 1px solid #FEFEFC;"><p>Booking Year</p></th>
+                        <th style="background-color: #818181; border: 1px solid #FEFEFC;"><p>Contract Amount</p></th>
+                        <th style="background-color: #818181; border: 1px solid #FEFEFC;"><p>Total Contract</p><p>Rev To Date</p></th>
+                        <th style="background-color: #818181; border: 1px solid #FEFEFC;"><p>Total Subscription</p><p>Rev To Date</p></th>
+                        <th style="background-color: #818181; border: 1px solid #FEFEFC;"><p>Total Services</p><p>Rev To Date</p></th>
+                        <th style="background-color: #818181; border: 1px solid #FEFEFC;"><p>Total Contract</p><p>Cost To Date</p></th>
+                        <th style="background-color: #818181; border: 1px solid #FEFEFC;"><p>Contract</p><p>Backlog Revenue</p></th>
+  
+                        <!--<th style="background-color: #65679B; border: 1px solid #FEFEFC;"><p>Cost Prior</p><p>to {!currentYear}</p></th>
+                        <th style="background-color: #65679B; border: 1px solid #FEFEFC;"><p>Cost {!currentYear}</p></th>
+                        <th style="background-color: #65679B; border: 1px solid #FEFEFC;"><p>Revenue Prior</p><p>to {!currentYear}</p></th>
+                        <th style="background-color: #65679B; border: 1px solid #FEFEFC;"><p>Revenue {!currentYear}</p></th>
+                        <th style="background-color: #65679B; border: 1px solid #FEFEFC;"><p>Subscription Revenue {!currentYear}</p></th>
+                        <th style="background-color: #65679B; border: 1px solid #FEFEFC;"><p>Services Revenue {!currentYear}</p></th>-->
+                        <apex:repeat value="{!invoiceMonthList}" var="invoiceMonth">
+                            <th style="background-color: #65679B; border: 1px solid #FEFEFC;"><p>Revenue</p><p>{!invoiceMonth.headerDate}</p></th>
+                            <th style="background-color: #65679B; border: 1px solid #FEFEFC;"><p>Subscription Revenue</p><p>{!invoiceMonth.headerDate}</p></th>
+                            <th style="background-color: #65679B; border: 1px solid #FEFEFC;"><p>Services Revenue</p><p>{!invoiceMonth.headerDate}</p></th>
+                            <th style="background-color: #65679B; border: 1px solid #FEFEFC;"><p>Expense</p><p>{!invoiceMonth.headerDate}</p></th>
+                            <th style="background-color: #65679B; border: 1px solid #FEFEFC;"><p>Accrued</p><p>{!invoiceMonth.headerDate}</p></th>
+                            <th style="background-color: #65679B; border: 1px solid #FEFEFC;"><p>Def Rev</p><p>{!invoiceMonth.headerDate}</p></th>
+                        </apex:repeat>
+                    </tr>
+                </thead>
+                  
+                <tbody class="table-body">
+                    <apex:variable value="{!-1}" var="counter"/>
+    
+                    <!-- <apex:repeat value="{!invoiceMonthList}" var="invoiceMonth"> -->
+    
+                    <apex:repeat value="{!opportunityList}" var="opportunity">
+                        <apex:variable var="counter" value="{!counter + 1}"/>
+                    <!-- <apex:repeat value="{!invoiceMonthList}" var="invoiceMonth"> -->
+                        <tr>
+                            <td style="border-left: 5px solid black;">{!opportunityList[counter].contractId}</td>
+                            <td><apex:outputLink target="_blank" value="/{!opportunityList[counter].accountId}">{!opportunity.accountName}</apex:outputLink></td>
+                            <td><apex:outputLink target="_blank" value="/{!opportunityList[counter].opportunityId}">{!opportunity.opportunityName}</apex:outputLink></td>
+                            <td>{!opportunityList[counter].offering}</td>
+                            <td>{!opportunityList[counter].closeYear}</td>
+                            <td>
+                                <apex:outputText value="{0, number, currency}{1}">
+                                    <apex:param value="{!opportunityList[counter].contractAmount}" />
+                                    <apex:param value="{!IF(opportunityList[counter].contractAmount == null, '-', '')}" />
+                                </apex:outputText>
+                            </td>
+                            <td><apex:outputText value="{0, number, currency}{1}">
+                                   <apex:param value="{!opportunity.totalContractRev}" />
+                                   <apex:param value="{!IF(opportunity.totalContractRev == null, '-', '')}" />
+                              </apex:outputText></td>
+                            <td><apex:outputText value="{0, number, currency}{1}">
+                                   <apex:param value="{!opportunity.totalContractRevSubscr}" />
+                                   <apex:param value="{!IF(opportunity.totalContractRevSubscr == null, '-', '')}" />
+                              </apex:outputText></td>
+                            <td><apex:outputText value="{0, number, currency}{1}">
+                                   <apex:param value="{!opportunity.totalContractRevServ}" />
+                                   <apex:param value="{!IF(opportunity.totalContractRevServ == null, '-', '')}" />
+                              </apex:outputText></td>
+                            <td>
+                                <apex:outputText value="{0, number, currency}{1}">
+                                   <apex:param value="{!opportunityList[counter].totalContractCost}" />
+                                   <apex:param value="{!IF(opportunityList[counter].totalContractCost == null, '-', '')}" />
+                                </apex:outputText></td>
+                            <td style="border-right: 1px solid black;">
+                                <apex:outputText value="{0, number, currency}{1}">
+                                   <apex:param value="{!opportunityList[counter].contractBacklogRevenue}" />
+                                   <apex:param value="{!IF(opportunityList[counter].contractBacklogRevenue == null, '-', '')}" />
+                                </apex:outputText>
+                            </td>
+                    
+                            <!--<td>
+                                <apex:outputText value="{0, number, currency}{1}">
+                                    <apex:param value="{!invoicePriorList[counter].costPriorCurrentYear}"/>
+                                    <apex:param value="{!IF(invoicePriorList[counter].costPriorCurrentYear == null, '-', '')}"/>
+                                </apex:outputText>
+                            </td>
+                            <td>
+                                <apex:outputText value="{0, number, currency}{1}">
+                                    <apex:param value="{!invoicePriorList[counter].costCurrentYear}" />
+                                    <apex:param value="{!IF(invoicePriorList[counter].costCurrentYear == null, '-', '')}" />
+                                </apex:outputText>
+                            </td>
+                            <td>
+                                <apex:outputText value="{0, number, currency}{1}">
+                                    <apex:param value="{!invoicePriorList[counter].revenuePriorCurrentYear}" />
+                                    <apex:param value="{!IF(invoicePriorList[counter].revenuePriorCurrentYear == null, '-', '')}" />
+                                </apex:outputText>
+                            </td>
+                            <td>
+                                <apex:outputText value="{0, number, currency}{1}">
+                                    <apex:param value="{!invoicePriorList[counter].revenueCurrentYear}" />
+                                    <apex:param value="{!IF(invoicePriorList[counter].revenueCurrentYear == null, '-', '')}" />
+                                </apex:outputText>
+                            </td>
+                            <td>
+                                <apex:outputText value="{0, number, currency}{1}">
+                                    <apex:param value="{!invoicePriorList[counter].revenueCurrentYearSubscr}" />
+                                    <apex:param value="{!IF(invoicePriorList[counter].revenueCurrentYearSubscr == null, '-', '')}" />
+                                </apex:outputText>
+                            </td>
+                            <td style="border-right: 1px solid black;">
+                                <apex:outputText value="{0, number, currency}{1}">
+                                    <apex:param value="{!invoicePriorList[counter].revenueCurrentYearServ}" />
+                                    <apex:param value="{!IF(invoicePriorList[counter].revenueCurrentYearServ == null, '-', '')}" />
+                                </apex:outputText>
+                            </td>-->
+
+                            <apex:repeat value="{!invoiceMonthList}" var="invoiceMonth">
+                                <apex:repeat value="{!invoiceMonth.invoice[counter]}" var="invoice">
+                                    <td>
+                                        <apex:outputText value="{0, number, currency}{1}">
+                                           <apex:param value="{!invoice.revenue}" />
+                                           <apex:param value="{!IF(invoice.revenue == null, '-', '')}" />
+                                        </apex:outputText>
+                                    </td>
+                                    <td>
+                                        <apex:outputText value="{0, number, currency}{1}">
+                                           <apex:param value="{!invoice.revenueSubscr}" />
+                                           <apex:param value="{!IF(invoice.revenue == null, '-', '')}" />
+                                        </apex:outputText>
+                                    </td>
+                                    <td>
+                                        <apex:outputText value="{0, number, currency}{1}">
+                                           <apex:param value="{!invoice.revenueServ}" />
+                                           <apex:param value="{!IF(invoice.revenue == null, '-', '')}" />
+                                        </apex:outputText>
+                                    </td>
+                                    <td>
+                                        <apex:outputText value="{0, number, currency}{1}">
+                                           <apex:param value="{!invoice.expense}" />
+                                           <apex:param value="{!IF(invoice.expense == null, '-', '')}" />
+                                        </apex:outputText>
+                                    </td>
+                                    <td>
+                                        <apex:outputText value="{0, number, currency}{1}">
+                                           <apex:param value="{!invoice.accruesRev}" />
+                                           <apex:param value="{!IF(invoice.accruesRev == null, '-', '')}" />
+                                        </apex:outputText>
+                                    </td>
+                                    <td style="border-right: 1px solid black;">
+                                        <apex:outputText value="{0, number, currency}{1}">
+                                           <apex:param value="{!invoice.defRev}" />
+                                           <apex:param value="{!IF(invoice.defRev == null, '-', '')}" />
+                                        </apex:outputText>
+                                    </td>
+                                    <!--<apex:variable var="totalMonthRevenue" -->
+                     <!--               value="{!IF(invoice.revenue == null, totalMonthRevenue, totalMonthRevenue + invoice.revenue)}" />-->
+                     <!--               <apex:variable var="totalMonthExpense"-->
+                     <!--               value="{!IF(invoice.expense == null, totalMonthExpense, totalMonthExpense + invoice.expense)}" />-->
+                     <!--               <apex:variable var="totalMonthAccruesRev" -->
+                     <!--               value="{!IF(invoice.accruesRev == null, totalMonthAccruesRev, totalMonthAccruesRev + invoice.accruesRev)}" />-->
+                     <!--               <apex:variable var="totalMonthDefRev" -->
+                     <!--               value="{!IF(invoice.defRev == null, totalMonthDefRev, totalMonthDefRev + invoice.defRev)}" />-->
+                                
+                                </apex:repeat>
+                            </apex:repeat>
+                        </tr>
+                        <apex:variable var="totalContractAmount" 
+                        value="{!IF(opportunityList[counter].contractAmount == null, totalContractAmount, totalContractAmount + opportunityList[counter].contractAmount)}" />
+                        <apex:variable var="totalContractRev" 
+                        value="{!IF(opportunityList[counter].totalContractRev == null, totalContractRev, totalContractRev + opportunityList[counter].totalContractRev)}" />
+                        <apex:variable var="totalContractRevSubscr" 
+                        value="{!IF(opportunity.totalContractRevSubscr == null, totalContractRevSubscr, totalContractRevSubscr + opportunity.totalContractRevSubscr)}" />
+                        <apex:variable var="totalContractRevServ" 
+                        value="{!IF(opportunity.totalContractRevServ == null, totalContractRevServ, totalContractRevServ + opportunity.totalContractRevServ)}" />
+                        <apex:variable var="totalContractCost" 
+                        value="{!IF(opportunityList[counter].totalContractCost == null, totalContractCost, totalContractCost + opportunityList[counter].totalContractCost)}"/>
+                        <apex:variable var="contractBacklogRevenue" 
+                        value="{!IF(opportunityList[counter].contractBacklogRevenue == null, contractBacklogRevenue, contractBacklogRevenue + opportunityList[counter].contractBacklogRevenue)}" />
+
+                        <!--<apex:variable var="totalCostPriorCurrentYear"
+                        value="{!IF(invoicePriorList[counter].costPriorCurrentYear == null, totalCostPriorCurrentYear, totalCostPriorCurrentYear + invoicePriorList[counter].costPriorCurrentYear)}" /> 
+                        <apex:variable var="totalCostCurrentYear" 
+                        value="{!IF(invoicePriorList[counter].costCurrentYear == null, totalCostCurrentYear, totalCostCurrentYear + invoicePriorList[counter].costCurrentYear)}" />
+                        <apex:variable var="totalRevenuePriorCurrentYear"
+                        value="{!IF(invoicePriorList[counter].revenuePriorCurrentYear == null, totalRevenuePriorCurrentYear, totalRevenuePriorCurrentYear + invoicePriorList[counter].revenuePriorCurrentYear)}" /> 
+                        <apex:variable var="totalRevenueCurrentYear"
+                        value="{!IF(invoicePriorList[counter].revenueCurrentYear == null, totalRevenueCurrentYear, totalRevenueCurrentYear + invoicePriorList[counter].revenueCurrentYear)}"/>
+                        <apex:variable var="totalRevenueCurrentYearSubscr"
+                        value="{!IF(invoicePriorList[counter].revenueCurrentYear == null, totalRevenueCurrentYearSubscr, totalRevenueCurrentYearSubscr + invoicePriorList[counter].revenueCurrentYearSubscr)}"/>
+                        <apex:variable var="totalRevenueCurrentYearServ"
+                        value="{!IF(invoicePriorList[counter].revenueCurrentYear == null, totalRevenueCurrentYearServ, totalRevenueCurrentYearServ + invoicePriorList[counter].revenueCurrentYearServ)}"/>-->
+
+                    </apex:repeat>
+                </tbody>
+                <tfoot class="table-footer">
+                    <th colspan="5">Total</th>
+                    <th>
+                        <apex:outputText value="{0, number, currency}">
+                            <apex:param value="{!totalContractAmount}" />
+                        </apex:outputText>
+                    </th>
+                    <th>
+                        <apex:outputText value="{0, number, currency}">
+                               <apex:param value="{!totalContractRev}" />
+                          </apex:outputText>
+                    </th>
+                    <th>
+                        <apex:outputText value="{0, number, currency}">
+                               <apex:param value="{!totalContractRevSubscr}" />
+                          </apex:outputText>
+                    </th>
+                    <th>
+                        <apex:outputText value="{0, number, currency}">
+                               <apex:param value="{!totalContractRevServ}" />
+                          </apex:outputText>
+                    </th>
+                    <th>
+                        <apex:outputText value="{0, number, currency}">
+                               <apex:param value="{!totalContractCost}" />
+                        </apex:outputText>
+                    </th>
+                    <th>
+                        <apex:outputText value="{0, number, currency}">
+                            <apex:param value="{!contractBacklogRevenue}" />
+                        </apex:outputText>
+                    </th>
+    
+                    <!--<th>
+                        <apex:outputText value="{0, number, currency}">
+                            <apex:param value="{!totalCostPriorCurrentYear}" />
+                        </apex:outputText>
+                    </th>
+                    <th>
+                        <apex:outputText value="{0, number, currency}">
+                            <apex:param value="{!totalCostCurrentYear}" />
+                        </apex:outputText>
+                    </th>
+                    <th>
+                        <apex:outputText value="{0, number, currency}">
+                            <apex:param value="{!totalRevenuePriorCurrentYear}" />
+                        </apex:outputText>
+                    </th>
+                    <th>
+                        <apex:outputText value="{0, number, currency}">
+                            <apex:param value="{!totalRevenueCurrentYear}" />
+                        </apex:outputText>
+                    </th>
+                    <th>
+                        <apex:outputText value="{0, number, currency}">
+                            <apex:param value="{!totalRevenueCurrentYearSubscr}" />
+                        </apex:outputText>
+                    </th>
+                    <th>
+                        <apex:outputText value="{0, number, currency}">
+                            <apex:param value="{!totalRevenueCurrentYearServ}" />
+                        </apex:outputText>
+                    </th>-->
+    
+                    <apex:variable value="{!-1}" var="totalCounter"/>
+                    <apex:repeat value="{!invoiceMonthList}" var="invoiceMonth">
+                        <apex:variable var="totalMonthRevenue" value="{!0}"/>
+                        <apex:variable var="totalMonthRevenueSubsr" value="{!0}"/>
+                        <apex:variable var="totalMonthRevenueServ" value="{!0}"/>
+                        <apex:variable var="totalMonthExpense" value="{!0}"/>
+                        <apex:variable var="totalMonthAccruesRev" value="{!0}"/>
+                        <apex:variable var="totalMonthDefRev" value="{!0}"/>
+                        
+                        <apex:repeat value="{!invoiceMonth.invoice}" var="invoiceWrap">
+                            <apex:repeat value="{!invoiceWrap}" var="invoiceList">
+                                <apex:repeat value="{!invoiceList}" var="invoiceDetails">
+                                    <apex:variable var="totalMonthRevenue" 
+                                    value="{!IF(invoiceDetails.revenue == null, totalMonthRevenue, totalMonthRevenue + invoiceDetails.revenue)}" />
+                                    <apex:variable var="totalMonthRevenueSubsr" 
+                                    value="{!IF(invoiceDetails.revenueSubscr == null, totalMonthRevenueSubsr, totalMonthRevenueSubsr + invoiceDetails.revenueSubscr)}" />
+                                    <apex:variable var="totalMonthRevenueServ" 
+                                    value="{!IF(invoiceDetails.revenueServ == null, totalMonthRevenueServ, totalMonthRevenueServ + invoiceDetails.revenueServ)}" />
+                                    <apex:variable var="totalMonthExpense"
+                                    value="{!IF(invoiceDetails.expense == null, totalMonthExpense, totalMonthExpense + invoiceDetails.expense)}" />
+                                    <apex:variable var="totalMonthAccruesRev" 
+                                    value="{!IF(invoiceDetails.accruesRev == null, totalMonthAccruesRev, totalMonthAccruesRev + invoiceDetails.accruesRev)}" />
+                                    <apex:variable var="totalMonthDefRev" 
+                                    value="{!IF(invoiceDetails.defRev == null, totalMonthDefRev, totalMonthDefRev + invoiceDetails.defRev)}" />
+                                </apex:repeat>
+                            </apex:repeat>
+                        </apex:repeat>
+                    
+                        <th>
+                            <apex:outputText value="{0, number, currency}">
+                                <apex:param value="{!totalMonthRevenue}" />
+                            </apex:outputText>
+                        </th>
+                        <th>
+                            <apex:outputText value="{0, number, currency}">
+                                <apex:param value="{!totalMonthRevenueSubsr}" />
+                            </apex:outputText>
+                        </th>
+                        <th>
+                            <apex:outputText value="{0, number, currency}">
+                                <apex:param value="{!totalMonthRevenueServ}" />
+                            </apex:outputText>
+                        </th>
+                        <th>
+                            <apex:outputText value="{0, number, currency}">
+                                <apex:param value="{!totalMonthExpense}" />
+                            </apex:outputText>
+                        </th>
+                        <th>
+                            <apex:outputText value="{0, number, currency}">
+                                <apex:param value="{!totalMonthAccruesRev}" />
+                            </apex:outputText>
+                        </th>
+                        <th>
+                            <apex:outputText value="{0, number, currency}">
+                                <apex:param value="{!totalMonthDefRev}" />
+                            </apex:outputText>
+                        </th>
+                    </apex:repeat>
+                </tfoot>
+            </table>
+        </div>
+</apex:page>

@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForAllPageTypes" controller="TASKRAY.trComponentCtrl" access="global">
+  <!--implements="forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes,force:hasRecordId"-->
+  <aura:attribute name="showConfetti" type="Boolean" access="private" default="false" />
+  <aura:attribute name="showOverdueTasks" type="Boolean" default="false" />
+  <aura:attribute name="licenseCheckRan" type="Boolean" default="false" />
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+  <TASKRAY:trComponentContainer headerText="{!$Label.TASKRAY.trTodayComponent_Header}">
+    <div>
+      <div aura:id="error-container">
+
+      </div>
+      <TASKRAY:trToDoByDay runConfetti="{!c.runConfetti}" />
+      <TASKRAY:trTodoOverdue showOverdueTasks="{!v.showOverdueTasks}" toggleShowOverdueTasks="{!c.toggleShowOverdueTasks}" />
+
+      <aura:renderIf isTrue="{!v.showConfetti}">
+        <TASKRAY:trTaskRayInbox_celebration />
+      </aura:renderIf>
+    </div>
+  </TASKRAY:trComponentContainer>
+</aura:component>

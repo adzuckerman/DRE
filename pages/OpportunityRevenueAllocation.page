@@ -1,0 +1,202 @@
+<apex:page showHeader="false"  standardController="Opportunity" extensions="OpportunityRevenueAllocationCtrl">
+
+    <style type="text/css">
+        .editableSchedule, .notEditableSchedule {
+            padding: 5px;
+            margin: 2px 1px;
+            border-radius: 5px;
+            text-align: right;
+            overflow: hidden;
+        }
+        .editableSchedule:hover {
+            background-color: rgba(146, 213, 240, 0.3);
+            cursor: pointer;
+        }
+        .notEditableSchedule:hover {
+            background-color: #e4e6e9;
+        }
+        .editContainer {
+            width: 89px;
+            height: 0;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            right: 0;
+            z-index: 10;
+            border-radius: 0 0 5px 5px;
+            background-color: rgba(146, 213, 240, 0.3);
+            -webkit-transition: height 0.5s cubic-bezier(0.79, 0.18, 0.62, 1.44), background-color 0.8s;
+            transition: height 0.5s cubic-bezier(0.79, 0.18, 0.62, 1.44), background-color 0.8s;
+        }
+        .editContainerOn {
+            height: 80px;
+            background-color: rgb(146, 213, 240);
+        }
+        .inputFieldDiv {
+            margin: 5px;
+        }
+        .inputField {
+            width: 78px;
+            padding: 1px;
+            text-align: right;
+            border: 0;
+            border-radius: 2px;
+        }
+        .saveButton {
+            height: 28px;
+            padding: 5px 0;
+            color: #fff !important;
+            -webkit-transition: background-color 0.5s ease, color 0.5s ease;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+        .saveButton:hover {
+            color: #54698d !important;
+            background-color: #ddf1f9;;
+        }
+        .saveButtonLabel {
+            position: absolute;
+            width: 89px; 
+            left: 0;
+            text-align: center;
+        }
+        @keyframes scrollLabel {
+            from {
+                left: 8px;
+            }
+            to {
+                left: -8px;
+            }
+        }
+        .saveButtonLabelScroll {
+            animation-duration: 0.5s;
+            animation-name: scrollLabel;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+        .slds-table td {
+            padding: 0 !important;
+        }
+        
+        .slds-text-title--caps:first-child{
+            text-align: left !important;
+        }
+        
+        .slds-text-title--caps:last-child{
+            padding-right: 0px !important;
+        }
+        
+        .slds-text-title--caps{
+            text-align:right !important;
+        }
+    </style>
+
+    <apex:slds />
+
+    <apex:outputPanel id="SchedulesTable" layout="block" styleClass="slds-p-vertical--small" style="max-height: 320px; min-height: 320px; overflow-y: auto;">
+        <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+            <thead>
+                <tr class="slds-text-heading--label">
+                    <th scope="col" class="slds-text-title--caps">
+                        <div class="slds-truncate" title="Product">
+                            Product 
+                            <span  style="{!IF(isForecasted, 'color: #2076f7;', '')}">
+                                {!IF(isForecasted, 'IN FORECAST', '')}
+                            </span>
+                        </div>
+                    </th>
+                    <apex:repeat value="{!tableDates}" var="date">
+                        <th scope="col" class="slds-text-title--caps">
+                            <div class="slds-truncate" title="{!date}">{!date}</div>
+                        </th>
+                    </apex:repeat>
+                </tr>
+            </thead>
+            <tbody>
+                <apex:repeat value="{!schedulesList}" var="schedules">
+                    <tr>
+                        <td>
+                            <div class="slds-truncate slds-p-horizontal--x-small" title="{!schedules[0].Product__r.Name}">{!schedules[0].Product__r.Name}</div>
+                        </td>
+                        <apex:repeat value="{!schedules}" var="schedule">
+                            <td>
+                                <div id="{!schedule.Id}" class = "{!IF(
+                                    OR(
+                                        schedule.Id = null, 
+                                        schedule.Date__c >= TODAY(), 
+                                        lockedSchedules[schedule.Id],
+                                        isForecasted
+                                    ), 
+                                    'notEditableSchedule', 
+                                    'editableSchedule'
+                                )}" onclick="editSchedule(this)">
+                                    <div>
+                                        <apex:outputField styleClass="slds-truncate" title="{!schedule.POC__c}" value="{!schedule.POC__c}"/>
+                                    </div>
+                                    <div>
+                                        <apex:outputField styleClass="slds-truncate" title="{!schedule.Revenue__c}" value="{!schedule.Revenue__c}"/>
+                                    </div>
+                                    <div id="{!schedule.Id + '_edit'}" class="editContainer">
+                                        <div class="inputFieldDiv">
+                                            <input id="{!schedule.Id + '_poc'}" class="inputField" type="number" value="{!schedule.POC__c}"/>
+                                        </div>
+                                        <div class="inputFieldDiv">
+                                            <input id="{!schedule.Id + '_revenue'}" class="inputField" type="number" value="{!schedule.Revenue__c}"/>
+                                        </div>
+                                        <div id="{!schedule.Id + '_update'}" class="saveButton slds-text-title--caps" onclick="saveSchedule(this)">
+                                            <div id="{!schedule.Id + '_label'}" class="saveButtonLabel">
+                                                SAVE
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </apex:repeat>
+                    </tr>
+                </apex:repeat>
+            </tbody>
+        </table>
+    </apex:outputPanel>
+
+    <apex:form >
+        <apex:actionFunction name="updateSchedule" action="{!updateSchedule}" reRender="SchedulesTable">
+            <apex:param name="scheduleId" value=""/>
+            <apex:param name="schedulePoc" value=""/>
+            <apex:param name="scheduleRevenue" value=""/>
+        </apex:actionFunction>
+    </apex:form>
+
+    <script type="text/javascript">
+        
+        var currentEditId;
+
+        function editSchedule(target) {
+            if(target.id == currentEditId) {
+                return;
+            } else if(currentEditId != null) {
+                document.getElementById(currentEditId + '_edit').classList.toggle('editContainerOn', false);
+                currentEditId = null;                
+            }
+
+            var edit = document.getElementById(target.id + '_edit');
+            if(target.className == 'editableSchedule' && !edit.classList.contains('editContainerOn')) {
+                edit.classList.toggle('editContainerOn', true);
+                currentEditId = target.id;
+            }
+        }
+
+        function saveSchedule(target) {
+            var saveLabel = document.getElementById(currentEditId + '_label');
+            saveLabel.classList.toggle('saveButtonLabelScroll', true);
+            saveLabel.innerHTML = 'SAVING';
+
+            var schedulePoc = document.getElementById(currentEditId + '_poc').value;
+            var scheduleRevenue = document.getElementById(currentEditId + '_revenue').value;
+            updateSchedule(currentEditId, schedulePoc, scheduleRevenue);
+
+            currentEditId = null;
+        }
+
+    </script>
+
+</apex:page>

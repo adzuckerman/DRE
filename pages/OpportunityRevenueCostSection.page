@@ -1,0 +1,194 @@
+<apex:page showHeader="false"  standardController="Opportunity" extensions="OpportunityRevenueCostSectionCtrl">
+
+    <style type="text/css">
+        .cell {
+            padding: 5px;
+            margin: 2px 1px;
+            border-radius: 5px;
+            text-align: right;
+            overflow: hidden
+        }
+        .cell:hover {
+            background-color: rgba(146, 213, 240, 0.3);
+            cursor: pointer;
+        }
+        .notEditableSchedule:hover {
+            background-color: #e4e6e9;
+            cursor: default;
+        }
+        .editContainer {
+            width: 89px;
+            height: 0;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            right: 0;
+            z-index: 10;
+            border-radius: 0 0 5px 5px;
+            background-color: rgba(146, 213, 240, 0.3);
+            -webkit-transition: height 0.5s cubic-bezier(0.79, 0.18, 0.62, 1.44), background-color 0.8s;
+            transition: height 0.5s cubic-bezier(0.79, 0.18, 0.62, 1.44), background-color 0.8s;
+        }
+        .editContainerOn {
+            height: 80px;
+            background-color: rgb(146, 213, 240);
+        }
+        .inputFieldDiv {
+            margin: 5px;
+        }
+        .inputField {
+            width: 78px;
+            padding: 1px;
+            text-align: right;
+            border: 0;
+            border-radius: 2px;
+        }
+        .saveButton {
+            height: 28px;
+            padding: 5px 0;
+            color: #fff !important;
+            -webkit-transition: background-color 0.5s ease, color 0.5s ease;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+        .saveButton:hover {
+            color: #54698d !important;
+            background-color: #ddf1f9;;
+        }
+        .saveButtonLabel {
+            position: absolute;
+            width: 89px; 
+            left: 0;
+            text-align: center;
+        }
+        @keyframes scrollLabel {
+            from {
+                left: 8px;
+            }
+            to {
+                left: -8px;
+            }
+        }
+        .saveButtonLabelScroll {
+            animation-duration: 0.5s;
+            animation-name: scrollLabel;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+        .slds-table td {
+            padding: 0 !important;
+        }
+        
+        .slds-text-title--caps:first-child{
+            text-align: left !important;
+        }
+        
+        .slds-text-title--caps:last-child{
+            padding-right: 0px !important;
+        }
+        
+        .slds-text-title--caps{
+            text-align:right !important;
+        }
+    </style>
+
+    <style type="text/css">
+        .slds-truncate.column-name {
+            text-align: left !important;
+        }
+        .slds-truncate {
+            text-align: center !important;
+        }
+        .slds-scope td {
+            text-align: center !important;
+        }
+    </style>
+
+    <apex:slds />
+
+    <apex:outputPanel id="departmentsCosts" layout="block" styleClass="slds-p-vertical--small" style="max-height: 320px; min-height: 320px; overflow-y: auto;">
+        <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+            <thead>
+                <tr class="slds-text-heading--label">
+                    <th scope="col">
+                        <div class="slds-truncate column-name"></div>
+                    </th>
+                    <apex:repeat value="{!revenues}" var="revenue">
+                        <th scope="col" class="slds-text-title--caps">
+                            <div class="slds-truncate" title="{!revenue.Date__c}"><apex:outputField value="{!revenue.Date__c}"/></div>
+                        </th>
+                    </apex:repeat>
+                </tr>
+            </thead>
+            <tbody>
+              <apex:repeat value="{!revenuesMap}" var="depName">
+                <tr>
+                  <td scope="col" style="min-width: 200px;">
+                      <div class="slds-truncate column-name slds-p-horizontal--x-small">{!depName}</div>
+                  </td>
+                  <apex:repeat value="{!revenuesMap[depName]}" var="depDate">
+                      <td>
+                        <div id="{!depName}-:-{!depDate}" class="cell{!IF(lockedSchedules[revenuesMap[depName][depDate].Monthly_Revenue_Schedule__c], ' notEditableSchedule', '')}" onclick="editDepartmentCost(this)">
+                          <apex:outputField value="{!revenuesMap[depName][depDate].Costs__c}" styleClass="slds-truncate slds-p-horizontal--x-small"/>
+                          {!IF(revenuesMap[depName][depDate].Costs__c == null, '-', '')}
+                          
+                          <div id="{!depName}-:-{!depDate}_edit" class="editContainer">
+                              <div class="inputFieldDiv">
+                                  <input id="{!depName}-:-{!depDate}_cost" class="inputField" type="number" value="{!revenuesMap[depName][depDate].Costs__c}"/>
+                              </div>
+                              <div id="{!depName}-:-{!depDate}_update" class="saveButton slds-text-title--caps" onclick="saveDepartmentCost(this)">
+                                  <div id="{!depName}-:-{!depDate}_label" class="saveButtonLabel">
+                                      SAVE
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </td>
+                  </apex:repeat>
+                </tr>
+              </apex:repeat>
+            </tbody>
+        </table>
+    </apex:outputPanel>
+    
+    <apex:form >
+        <apex:actionFunction name="updateDepartmentCost" action="{!updateDepartmentCost}" reRender="departmentsCosts">
+            <apex:param name="departmentCostId" value=""/>
+            <apex:param name="departmentCostValue" value=""/>
+        </apex:actionFunction>
+    </apex:form>
+
+    <script type="text/javascript">
+        
+        var currentEditId;
+
+        function editDepartmentCost(target) {
+            console.log(target.id + '' + currentEditId);
+            if (target.id == currentEditId) {
+                return;
+            } else if(currentEditId != null) {
+                document.getElementById(currentEditId + '_edit').classList.toggle('editContainerOn', false);
+                currentEditId = null;                
+            }
+
+            var edit = document.getElementById(target.id + '_edit');
+            if (target.className == 'cell' && !edit.classList.contains('editContainerOn')) {
+                edit.classList.toggle('editContainerOn', true);
+                currentEditId = target.id;
+            }
+        }
+
+        function saveDepartmentCost(target) {
+            var saveLabel = document.getElementById(currentEditId + '_label');
+            saveLabel.classList.toggle('saveButtonLabelScroll', true);
+            saveLabel.innerHTML = 'SAVING';
+
+            var cost = document.getElementById(currentEditId + '_cost').value;
+            updateDepartmentCost(currentEditId, cost);
+
+            currentEditId = null;
+        }
+
+    </script>
+
+</apex:page>

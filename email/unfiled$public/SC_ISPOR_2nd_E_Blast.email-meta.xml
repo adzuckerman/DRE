@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SC-ISPOR-2nd-E-Blast</name>
+    <style>none</style>
+    <subject>Leading cardiovascular societies’ partnership with Doctor Evidence advances medicine and technology</subject>
+    <textOnly>*|Leading cardiovascular societies’ partnership with Doctor Evidence advances medicine and technology|*
+
+Doctor Evidence&apos;s work in partnership with the ACC and AHA.
+
+View this email in your browser
+
+Hi {!Contact.FirstName},
+The American College of Cardiology and the American Heart Association (&quot;ACC/AHA&quot;) published guidelines on lower extremity peripheral artery disease and syncope, along with the supporting systematic review on syncope. These jointly developed guidelines were simultaneously published in both Circulation and the Journal of the American College of Cardiology (JACC). Doctor Evidence, a software and services technology company that finds, categorizes and synthesizes data from published sources, assisted in the process.
+
+Methods Leading cardiovascular societies’ partnership with Doctor Evidence advances medicine and technology
+
+The ERC partnered with Doctor Evidence, LLC (DRE) to conduct a systematic review addressing the question: What is the effectiveness of pacemaker therapy in patients with vasovagal, carotid sinus, or situational syncope in adults? This systematic review complied with the &quot;Preferred Reporting Items for Systematic Reviews and Meta-Analyses statement&quot; and with recommendations of the “ACC/AHA Clinical Practice Guideline Methodology Summit Report.”
+
+Read the press release:
+
+Click here to read the Guideline
+
+Click here to sign-up for a  Doctor Evidence Live Demonstration at ISPOR</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

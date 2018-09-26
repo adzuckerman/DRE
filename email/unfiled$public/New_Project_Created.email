@@ -1,0 +1,4 @@
+A new Project: {!TASKRAY__Project__c.Name} has been created on the account {!Account.Name}.
+
+For more information on the Project, please click on the direct link below:
+{!TASKRAY__Project__c.Link}

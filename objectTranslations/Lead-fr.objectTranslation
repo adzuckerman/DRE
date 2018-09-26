@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Current Generator(s) --></label>
+        <name>Litmos__CurrentGenerators__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>Litmos__NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>Litmos__Primary__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Interest --></label>
+        <name>Litmos__ProductInterest__c</name>
+        <picklistValues>
+            <masterLabel>GC1000 series</masterLabel>
+            <translation><!-- GC1000 series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC3000 series</masterLabel>
+            <translation><!-- GC3000 series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC5000 series</masterLabel>
+            <translation><!-- GC5000 series --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SIC Code --></label>
+        <name>Litmos__SICCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- MC Subscriber --></label>
+        <name>MC4SF__MC_Subscriber__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CorrelationID --></label>
+        <name>SFGA__CorrelationID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correlation Data --></label>
+        <name>SFGA__Correlation_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Source --></label>
+        <name>SFGA__Web_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created for --></label>
+        <name>i__CreatedForUser__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Days Since Last Email --></label>
+        <name>i__DaysSinceLastMail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Inbound Email --></label>
+        <name>i__LastInboundMail__c</name>
+        <relationshipLabel><!-- Leads (Last Inbound Email) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Inbound Email Time --></label>
+        <name>i__LastInboundSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Inbound Email Time --></label>
+        <name>i__LastInboundTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Email Time --></label>
+        <name>i__LastMailSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Mail Time Delta --></label>
+        <name>i__LastMailTimeDelta__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Email Time --></label>
+        <name>i__LastMailTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Email --></label>
+        <name>i__LastMail__c</name>
+        <relationshipLabel><!-- Leads (Last Email) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Outbound Email --></label>
+        <name>i__LastOutboundMail__c</name>
+        <relationshipLabel><!-- Leads (Last Outbound Email) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Outbound Email Time --></label>
+        <name>i__LastOutboundSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Outbound Email Time --></label>
+        <name>i__LastOutboundTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Email Addresses --></label>
+        <name>i__OtherEmails__c</name>
+    </fields>
+    <fieldSets>
+        <label><!-- Lead Filter Fields --></label>
+        <name>Lead_Filter_Fields</name>
+    </fieldSets>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Emails --></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label><!-- Recommended Courses --></label>
+            <section>Recommended Courses</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead Layout SDoc</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MailChimp_Subscriptions_detail --></label>
+        <name>MC4SF__MailChimp_Subscriptions_detail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MailChimp_Subscriptions_list --></label>
+        <name>MC4SF__MailChimp_Subscriptions_list</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Docs --></label>
+        <name>SDOC__Email_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- S_Docs --></label>
+        <name>SDOC__S_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_EchoSign --></label>
+        <name>echosign_dev1__Send_to_EchoSign</name>
+    </webLinks>
+</CustomObjectTranslation>

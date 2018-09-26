@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>GROWTH Newsletter March</name>
+    <style>none</style>
+    <subject>GROWTH Newsletter March-2016</subject>
+    <textOnly>*|MC:SUBJECT|*
+
+Use this area to offer a short preview of your email&apos;s content.
+
+View this email in your browser
+
+Featured Commentary
+
+Implementing Person-Centered
+Care through Guidelines by Anna Gagliardi,
+Person-centered care (PCC) informs, educates, and engages health care consumers (patients, families, well public), and can be achieved by involving consumers in their own care, and in health system design and evaluation (1). PCC improves consumer knowledge, relationship with providers, satisfaction with services, treatment compliance, cost-effective service use and health outcomes (2,3,4). While advocated by governments and health system policies, it is less clear what organizations should do to achieve PCC, although such evidence is emerging.
+Continue reading
+
+Share your views about this month&apos;s commentary
+
+February is American Heart Month!
+Doctor Evidence has digitized studies across a broad range of cardiology/vascular topics, including:
+
+Cardiac stress testing
+Heart failure
+Hypercholesterolemia
+Pulmonary embolism
+Coronary artery disease (CAD)
+Hypertension
+Peripheral artery disease (PAD)
+Atrial fibrillation (AF)
+Abdominal aortic aneurysm (AAA)
+Cardiac arrest
+Venous thromboembolism (VTE)
+Heart disease
+Pulmonary arterial hypertension (PAH)
+Aortic valve stenosis
+
+GROWTH Evidence members are entitled to unlimited access of these digitized studies.
+
+Learn how to access GROWTH Evidence digitized studies
+
+About this author:
+Anna Gagliardi is a Scientist at the University Health Network’s Toronto General Hospital Research Institute and an Associate Professor at the University of Toronto. She held a five-year Canadian Institutes of Health Research New Investigator salary award from 2008 to 2013 to develop expertise in knowledge translation. This refers to developing and evaluating approaches for optimizing the translation of evidence generated through research into high quality health care. Anna’s research explores how to improve the quality and outcomes of health care services that persons (patients, families, well public) receive. In particular, Anna’s research focuses on how: (1) clinical practice guidelines can be better-designed to support health care decision-making by persons and health professionals; (2) multidisciplinary teamwork can be supported to improve satisfaction with, and the efficiency of health care delivery; (3) higher risk implantable medical devices can be monitored to prevent or minimize patient harm; (4) person-centred care can be delivered to women across their lifespan; and (5) person-centred hospital care can be implemented and evaluated.
+
+Doctor Evidence technology featured in:
+
+
+Medical Data Business Checks in to App Market
+
+Doctor Evidence is working with USC’s Center for Body Computing to put together a virtual physician app to “bring on-call, artificially intelligent docs to the palm of your hand”. It would serve as a supplement to the diagnosis from a real-life doctor, providing much needed information on your diagnosis.
+The app features a physician simulation, and would use health-related details to provide common-sense explanations of how other people with the same diagnosis chose between treatments, for example choosing between chemotherapy or surgery if you have been diagnosed with prostate cancer. “This new app will be powered by Doctor Evidence’s extensive database of peer-reviewed clinical trial statistics on disease and treatment outcomes, normally reserved for its large clients such as Kaiser Permanente’s Care Management Institute and IBM’s brainy Watson platform.”
+
+Read more:
+LA Business Journal (subscription required)
+Doctor Evidence website (free)
+
+Poster presentation
+
+Doctor Evidence is supporting IBM Watson’s Discovery Advisor with high quality data for the mining of trends and breakthrough insights in cardiology and oncology. Sandra Zelman Lewis, PhD, Chief Guidelines Officer of Doctor Evidence, presented a poster on this collaboration at the 8th Annual Conference on the Science of Dissemination and Implementation, December 14-15, 2015 in Washington, DC. The poster, co-authored by Robert Battista, MBA, CEO and co-founder of Doctor Evidence, was titled IBM Watson Mega Analytical Database Supports Healthcare Solutions for Personal and Population Health. This conference was co-hosted by AcademyHealth and the National Institutes of Health (NIH).
+Click here for more information on the Doctor Evidence/IBM Watson collaboration.
+
+Upcoming Commentary
+David Meyers, MD
+Chief Medical Officer
+Agency for Healthcare Research and Quality (AHRQ)
+
+Facebook
+
+Twitter
+
+Website
+
+Email</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

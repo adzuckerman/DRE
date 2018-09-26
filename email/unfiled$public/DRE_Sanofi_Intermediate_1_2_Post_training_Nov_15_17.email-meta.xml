@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>post Int 1 &amp; 2 email without dates</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-Sanofi Intermediate 1&amp;2 Post training_11-15-17</name>
+    <style>none</style>
+    <subject>Doctor Evidence-Sanofi Post Training</subject>
+    <textOnly>*|Doctor Evidence-Sanofi Post-training email|*
+
+Dear {!Contact.Name},
+Thank you for attending the first part of our Intermediate Training. Please find attached the slide decks from the presentation. We look forward to seeing you at the follow-up training on November 16, 2017, where you&apos;ll learn to prepare data for analyses, and conduct analyses 
+
+
+Please don&apos;t hesitate to be in touch with any comments, suggestions or questions.
+
+Thank You, 
+
+Nancy Morgan
+Director of Learning and Development
+Doctor Evidence
+301 Arizona Ave Suite 301 Santa Monica CA 90401
+847-507-1451
+
+
+Introductory Training
+
+Intermediate Training
+
+Click here to launch Doctor Evidence Platform</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

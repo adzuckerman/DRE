@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>blankletterhead</letterhead>
+    <name>DRE_Sanofi_Survey_post_Intro_training</name>
+    <style>freeForm</style>
+    <subject>Doctor Evidence-Sanofi Post Training Survey</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for attending the Doctor Evidence Introductory Training. Please take a few minutes to respond to this very brief survey. Your responses will help us improve our training to better meet Sanofi’s business needs.
+
+
+
+Link
+
+
+
+Sincerely,
+Nancy Morgan
+Director of Education and Training
+Doctor Evidence</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

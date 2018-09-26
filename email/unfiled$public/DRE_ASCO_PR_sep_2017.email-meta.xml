@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-ASCO-PR-sep-2017</name>
+    <style>none</style>
+    <subject>Doctor Evidence Subscription Software Platform for ASCO Meeting Abstracts</subject>
+    <textOnly>*|DRE the software platform for ASCO|*
+
+Doctor Evidence Subscription Software Platform For ASCO Meeting Abstracts
+
+Hi {!Contact.FirstName},
+Doctor Evidence (DRE), a global health technology and consulting company, has signed a contract with the American Society of Clinical Oncology, Inc. (ASCO®), the world&apos;s leading professional organization representing physicians who care for people with cancer, to digitize and host ASCO meeting abstracts in DRE&apos;s technology platform. This platform will be used for in-depth queries by researchers across abstracts with the capability to track data and changing research focus in the field of oncology over time. The product will be a subscription offering including new meeting abstracts as they become publicly available. Archived years of ASCO abstracts will also be available in the subscription offering.
+
+Click here to read the press release</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

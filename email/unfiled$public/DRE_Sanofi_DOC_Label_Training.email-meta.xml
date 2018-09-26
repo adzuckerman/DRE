@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>invite re: DOC Label training</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-Sanofi-DOC Label-Training</name>
+    <style>none</style>
+    <subject>DOCTOR EVIDENCE DOC LABEL TRAINING INVITATION</subject>
+    <textOnly>*|Doctor Evidence Upcoming DOC Search Trainings|*
+
+Dear {!Contact.FirstName},
+You now have access to DOC Label, Doctor Evidence’s easy-to-use web-based labeling platform, a centralized platform for structured and unstructured data contained in US and UK physician labels, patient medication guides and patient information leaflets. 
+ 
+You are invited to attend a training to learn how to use DOC Label to:
+Search, browse, and compare labels with simple or complex keywords
+Create automatic alerts
+View side-by-side results of multiple labels in an interactive search environment
+Access all label versions and related agency communications for each compound
+Export results to Word, Excel, or HTML
+SCHEDULE:
+27 March 2018 | 10-11 AM EST 
+4 April 2018 | 11 AM -12 PM EST 
+12 April 2018 | 10-11 AM EST | 
+
+Please respond to this invitation with the date of the training you would like to attend, or contact me for a private training at your convenience.
+I’ve attached a short slide outlining how this state of the art technology solution can bring increased efficiency and cost savings to your department..
+
+Kind Regards,
+Ash Srivastava
+DOC Label Associate
+Doctor Evidence
++1 (760) 221-4845</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

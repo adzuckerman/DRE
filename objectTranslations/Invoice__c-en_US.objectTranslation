@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Accrued+Deferred --></label>
+        <name>Accrued_Deferred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accrued Revenue --></label>
+        <name>Accrued_Revenue_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue --></label>
+        <name>Accrued_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Invoice Date --></label>
+        <name>Actual_Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumulative Cost of Revenue --></label>
+        <name>Cumulative_Cost_of_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumulative Gross Profit --></label>
+        <name>Cumulative_Gross_Profit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumulative Invoices --></label>
+        <name>Cumulative_Invoices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumulative Revenue --></label>
+        <name>Cumulative_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deferred Revenue --></label>
+        <name>Deferred_Revenue_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deferred Revenue --></label>
+        <name>Deferred_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enforce Date --></label>
+        <name>Enforce_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Forecast --></label>
+        <name>In_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Amount --></label>
+        <name>Invoice_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Month --></label>
+        <name>Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice # --></label>
+        <name>Invoice_Num__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone Description --></label>
+        <name>Milestone_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Revenue Services --></label>
+        <name>Monthly_Revenue_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Revenue Subscription --></label>
+        <name>Monthly_Revenue_Subscription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Revenue --></label>
+        <name>Monthly_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Accounts Receivable --></label>
+        <name>Net_Accounts_Receivable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Invoices</value>
+    </caseValues>
+    <startsWith>Vowel</startsWith>
+    <layouts>
+        <layout>Invoice Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

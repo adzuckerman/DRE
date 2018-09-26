@@ -1,0 +1,3 @@
+{!ApprovalRequest.Process_Approver} has approved Final Contract/SOW for {!Opportunity.Account} {!Opportunity.Name}.
+
+To review the Final Contract/SOW go to the following link: {!Opportunity.Link}

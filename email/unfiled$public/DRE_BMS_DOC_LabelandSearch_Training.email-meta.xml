@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>invite re: DOC Label and Search training</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-BMS-DOC LabelandSearch_Training</name>
+    <style>none</style>
+    <subject>DOCTOR EVIDENCE DOC LABEL AND SEARCH TRAINING INVITATION</subject>
+    <textOnly>*|Doctor Evidence Upcoming DOC Label and Search Training|*
+
+Dear {!Contact.FirstName},
+You now have access to DOC Label and DOC Search through the BMS engagement with Doctor Evidence. DOC Label, a web-based labeling tool, is a centralized platform for structured and unstructured data contained in US and UK physician labels, patient medication guides and patient information leaflets. DOC Search is Doctor Evidence&apos;s advanced medical information search engine that can be used to quickly and efficiently evaluate published and publicly available medical information for any topic. 
+ 
+You are invited to attend a 60-minute overview to learn about the capabilities of both DOC Label and DOC Search, as well as to become familiar with the literature and data assets available to you through the BMS-Doctor Evidence engagement. 
+Use DOC Label to search, browse, and compare labels with simple or complex keywords
+View side-by-side results of multiple labels in the DOC Label interactive search environment
+Access all label versions and related agency communications for each compound
+Use DOC Search to search over 28 million articles, including articles indexed from MEDLINE, ClinicalTrials.gov, and RSS feeds
+&gt;Use DOC Search to identify research gaps, understand trends in the evidence, set signals for surveillance
+
+SCHEDULE:
+24 April 2018 |11 AM-12 PM EST | 
+10 May 2018 |11 AM-12 PM EST | 
+21 May 2018 | 2 PM-3 PM EST | 
+5 June 2018 |11 AM-12 PM EST | 
+
+Please respond to this invitation with the date of the training you would like to attend. If you are already familiar with these platforms, and would like training on DOC Library and DOC Data, please contact me. Feel free to forward this announcement to interested colleagues.
+
+Kind Regards,
+Nancy Morgan
+Vice President, Learning and Development
+Doctor Evidence
+Doctor Evidence (DRE) is a technology and research services company that finds, synthesizes and analyzes information from published sources. We will work with you to create deliverables such as Systematic Literature Reviews, Meta-Analyses, Landscape Analyses, Comparative Safety Assessments, Regulatory Responses and more across several therapeutic areas: Immunotherapy, Cardiovascular, and Oncology. 
+Access the DRE platforms through Single-Sign-on at https://bms.doctorevidence.com/ .</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

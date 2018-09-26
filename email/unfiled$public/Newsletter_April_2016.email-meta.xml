@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>GROWTH newsletter April 2016</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Newsletter-April-2016</name>
+    <style>none</style>
+    <subject>DRE-GROWTH Newsletter</subject>
+    <textOnly>*|GROWTH Newsletter - April 2016|*
+
+Featured Commentary: Assessing the Evidence - Series Launch
+
+View this email in your browser
+
+Featured Commentary
+
+Assessing the Evidence
+by Crag Whittington, PhD &amp; Jacob Franek, MHSc
+GROWTH commentaries started in November 2014, and have covered a broad range of topics relevant to those interested in evidence-based medicine (EBM). We now have great pleasure to introduce a series of commentaries covering a specific theme: Assessing the Evidence. This 6-part series progresses from assessing the quality of RCTs all the way through to assessing the quality of guidelines. Making judgments about evidence and recommendations in healthcare is complex. Often, there is insufficient information to make a well-informed inference from evidence, but in most cases, inferences must be made and guidance provided. Systematic reviewers and others who use evidence must therefore make judgments about the quality or certainty in the evidence. And these judgments ultimately guide important healthcare decisions or recommendations.
+
+Critical to making judgments is the use of a systematic and explicit approach to guide the process by which judgments will be made. The lack of such an approach creates greater probability for errors in judgment, hinders the critical appraisal of judgments and prevents the external communication of judgments including rationales for decisions or recommendations reliant on these judgments.
+Continue reading
+
+MAY IS HEPATITIS AWARENESS MONTH
+Doctor Evidence has digital data assets from pulished clinical studies across a wide variety of disease states, including ~100 hepatitis studies BECOME A GROWTH MEMBER NOW AND LEARN HOW TO ACCESS DIGITIZED STUDIES IN YOUR AREA OF INTEREST
+
+Click here to register:
+A presentation and discussion by Michael Cheung, Chief Science Officer, Kidney Disease: Improving Global Outcomes (KDIGO), and Sandra Zelman Lewis, PhD, Chief Guidelines Officer, Doctor Evidence.
+
+Date: April 27, 2016 at 12:00 pm Pacific, 2:00 pm Central, 3:00 pm Eastern
+
+The webinar will address the recent publication of recommendations by the KDIGO Methods Committee on how to embark on a living guidelines model, including the potential use of state-of-the-art technological platforms to provide literature surveillance from multiple databases, sophisticated search filters using variable PICO elements, and data extraction and analyses for end-to-end support for guideline updates. These technologies can improve the quality, efficiency, and transparency of guideline updates, as well as create a more dynamic approach to guideline formation and updating.
+
+Doctor Evidence will be exhibiting at Health Datapalooza, May 8-11 in Washington DC at the Grand Hyatt. The volume of health data is expanding rapidly and is expected to double every 73 days by the year 2020! Health Datapalooza is a national conference focused on liberating this data, and bringing together the companies, startups, academics, government agencies, and individuals with the newest, most innovative, and effective applications and repositories of health data to improve patient outcomes. Be sure to stop by our booth to see a live demo!
+
+Click here to set up a meeting with a member of our team during the conference.
+
+
+
+
+
+
+
+
+
+
+Doctor Evidence is proud to be a gold sponsor of this year’s G-I-N International Conference in Philadelphia. The theme of this year’s conference is “Individualized Guidelines and Clinical Performance Measurement in an Era of Personalized Medicine.” Register before June 20th to get the early bird rate.
+We hope to see you there!
+
+
+Recommendations for kidney disease guideline updating: a report by the KDIGO Methods Committee.
+
+Authors: Katrin Uhlig,
+Jeffrey S. Berns, Serena Carville, Wiley Chan, Michael Cheung, Gordon H. Guyatt,
+Allyson Hart, Sandra Zelman Lewis, Marcello Tonelli, Angela C. Webster, Timothy J. Wilt,
+Bertram L. Kasiske
+
+Upcoming Commentary
+Gordon Guyatt
+Assessing the Quality of RCTs
+
+Facebook
+
+Twitter
+
+Website
+
+Email</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Junction Kbases</relationshipLabel>
+        <relationshipName>Sub_Kbases</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contract_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Opportunity_Name__r.Contract_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contract ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DI_II_Assigned_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-II Assigned Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_II_Assignee_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DI-II Assignee Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Junction_Kbases5</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DI_II_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-II Completion Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_II_Duration__c</fullName>
+        <externalId>false</externalId>
+        <formula>DI_II_Completion_Date__c -  DI_II_Assigned_Date__c + 1</formula>
+        <label>DI-II Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DI_II_Fix_Check_Assigned_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-II Fix Check Assigned Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_II_Fix_Check_Assignee_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DI-II Fix Check Assignee Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Junction_Kbases7</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DI_II_Fix_Check_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-II Fix Check Completion Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_II_Fix_Check_Duration__c</fullName>
+        <externalId>false</externalId>
+        <formula>DI_II_Fix_Check_Completion_Date__c -  DI_II_Fix_Check_Assigned_Date__c + 1</formula>
+        <label>DI-II Fix Check Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DI_II_Fixes_Assigned_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-II Fixes Assigned Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_II_Fixes_Assignee_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DI-II Fixes Assignee Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Junction_Kbases6</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DI_II_Fixes_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-II Fixes Completion Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_II_Fixes_Duration__c</fullName>
+        <externalId>false</externalId>
+        <formula>DI_II_Fixes_Completion_Date__c - DI_II_Fixes_Assigned_Date__c + 1</formula>
+        <label>DI-II Fixes Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DI_II_Reference_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-II Reference Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Reference_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DI_II_Work_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-II Work Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Initial DI-II</fullName>
+                    <default>false</default>
+                    <label>Initial DI-II</label>
+                </value>
+                <value>
+                    <fullName>Secondary DI-II</fullName>
+                    <default>false</default>
+                    <label>Secondary DI-II</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DI_I_Assigned_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-I Assigned Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_I_Assignee_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DI-I Assignee Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Junction_Kbases2</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DI_I_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-I Completion Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_I_Duration__c</fullName>
+        <externalId>false</externalId>
+        <formula>DI_I_Completion_Date__c - DI_I_Assigned_Date__c + 1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DI-I Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DI_I_Fix_Check_Assigned_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-I Fix Check Assigned Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_I_Fix_Check_Assignee_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DI-I Fix Check Assignee Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Junction_Kbases4</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DI_I_Fix_Check_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-I Fix Check Completion Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_I_Fix_Check_Duration__c</fullName>
+        <externalId>false</externalId>
+        <formula>DI_I_Fix_Check_Completion_Date__c - DI_I_Fix_Check_Assigned_Date__c + 1</formula>
+        <label>DI-I Fix Check Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DI_I_Fixes_Assigned_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-I Fixes Assigned Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_I_Fixes_Assignee_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DI-I Fixes Assignee Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Junction_Kbases3</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DI_I_Fixes_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-I Fixes Completion Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_I_Fixes_Duration__c</fullName>
+        <externalId>false</externalId>
+        <formula>DI_I_Fixes_Completion_Date__c - DI_I_Fixes_Assigned_Date__c + 1</formula>
+        <label>DI-I Fixes Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DI_I_Reference_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-I Reference Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Reference_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DI_I_Work_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-I Work Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Initial DI-I</fullName>
+                    <default>false</default>
+                    <label>Initial DI-I</label>
+                </value>
+                <value>
+                    <fullName>Secondary DI-I</fullName>
+                    <default>false</default>
+                    <label>Secondary DI-I</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Database_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Database_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Database Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Extraction_Assigned_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Extraction Assigned Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Extraction_Assignee_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Extraction Assignee Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Junction_Kbases1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Extraction_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Extraction Completion Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Extraction_Duration__c</fullName>
+        <externalId>false</externalId>
+        <formula>Extraction_Completion_Date__c - Extraction_Assigned_Date__c + 1</formula>
+        <label>Extraction Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Extraction_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <formula>Kbases__r.Extraction_Quantity__c</formula>
+        <label>Extraction Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Extraction_Reference_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Extraction Reference Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Reference_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Extraction_Task_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Extraction Task Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Tables</fullName>
+                    <default>false</default>
+                    <label>Tables</label>
+                </value>
+                <value>
+                    <fullName>Term Index</fullName>
+                    <default>false</default>
+                    <label>Term Index</label>
+                </value>
+                <value>
+                    <fullName>Text</fullName>
+                    <default>false</default>
+                    <label>Text</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Extraction_Work_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Extraction Work Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Primary Extraction</fullName>
+                    <default>false</default>
+                    <label>Primary Extraction</label>
+                </value>
+                <value>
+                    <fullName>Secondary Extraction</fullName>
+                    <default>false</default>
+                    <label>Secondary Extraction</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Kbases_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Kbases__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Kbases Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Kbases__c</fullName>
+        <externalId>false</externalId>
+        <label>Ref ID</label>
+        <referenceTo>Kbase__c</referenceTo>
+        <relationshipLabel>Junction Kbases</relationshipLabel>
+        <relationshipName>Sub_Kbases</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>LMS_Bucket__c</fullName>
+        <externalId>false</externalId>
+        <label>LMS Bucket</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Assigned</fullName>
+                    <default>false</default>
+                    <label>Assigned</label>
+                </value>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Meth_Rep_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Case__r.Meth_Rep_1__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Meth Rep #1</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meth_Rep_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Case__r.Meth_Rep_2__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Meth Rep #2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Opportunity_Name__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PICO_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.PICO_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PICO ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Production_Release_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Case__r.Production_Release_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Production Release Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reference_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Kbases__r.Name</formula>
+        <label>Ref ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Short_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Short_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Short Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Slack_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Slack URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>TaskRay_Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>TaskRay Sub-Project</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Project must be a sub-project.</errorMessage>
+            <filterItems>
+                <field>TASKRAY__Project__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Sub-Project</value>
+            </filterItems>
+            <infoMessage>Please select a sub-project.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>TASKRAY__Project__c</referenceTo>
+        <relationshipLabel>Junction Kbases</relationshipLabel>
+        <relationshipName>Junction_Kbases</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Team_Lead_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Team Lead Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Junction_Kbases</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Virtual_Tag__c</fullName>
+        <externalId>false</externalId>
+        <label>Virtual Tag</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Tag 1</fullName>
+                    <default>false</default>
+                    <label>Tag 1</label>
+                </value>
+                <value>
+                    <fullName>Tag 2</fullName>
+                    <default>false</default>
+                    <label>Tag 2</label>
+                </value>
+                <value>
+                    <fullName>Tag 3</fullName>
+                    <default>false</default>
+                    <label>Tag 3</label>
+                </value>
+                <value>
+                    <fullName>Tag 4</fullName>
+                    <default>false</default>
+                    <label>Tag 4</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Waiting_on__c</fullName>
+        <externalId>false</externalId>
+        <label>Waiting on...</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Grab-it</fullName>
+                    <default>false</default>
+                    <label>Grab-it</label>
+                </value>
+                <value>
+                    <fullName>Library</fullName>
+                    <default>false</default>
+                    <label>Library</label>
+                </value>
+                <value>
+                    <fullName>Meth Rep Decision Pending</fullName>
+                    <default>false</default>
+                    <label>Meth Rep Decision Pending</label>
+                </value>
+                <value>
+                    <fullName>Questions</fullName>
+                    <default>false</default>
+                    <label>Questions</label>
+                </value>
+                <value>
+                    <fullName>Tech</fullName>
+                    <default>false</default>
+                    <label>Tech</label>
+                </value>
+                <value>
+                    <fullName>TL Decision Pending</fullName>
+                    <default>false</default>
+                    <label>TL Decision Pending</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <label>Junction Kbase</label>
+    <nameField>
+        <label>Case to Ref ID</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Junction Kbases</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <webLinks>
+        <fullName>New_Junction_KBase</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Junction KBase</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>https://na63.salesforce.com/a0b/e?Name=LEAVE&amp;CF00NG000000Eo8Y9={!Case.CaseNumber}&amp;CF00NG000000Eo8Y9_lkid={!Case.Id}&amp;saveURL=%2F{!Case.Id}&amp;retURL=%2F{!Case.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Kbase</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Kbase</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>https://c.na63.visual.force.com/apex/KbasetoJKbase_EXT?retURL={!Case.Id}&amp;caseId={!Case.Id}</url>
+    </webLinks>
+</CustomObject>

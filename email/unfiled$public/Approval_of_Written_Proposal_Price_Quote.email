@@ -1,0 +1,6 @@
+Please be advised, all parties have unanimously approved Written Proposal/Price Quote as follows: 
+
+Opportunity Name: {!Opportunity.Name}
+Opportunity Account: {!Opportunity.Account}
+Opportunity Amount: {!Opportunity.Amount}
+Opportunity Detail Link: {!Opportunity.Link}

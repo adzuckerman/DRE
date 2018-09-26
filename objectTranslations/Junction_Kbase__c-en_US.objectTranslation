@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Junction Kbases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract ID --></label>
+        <name>Contract_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-II Assigned Date --></label>
+        <name>DI_II_Assigned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-II Assignee Name --></label>
+        <name>DI_II_Assignee_Name__c</name>
+        <relationshipLabel><!-- Junction Kbases (DI-II Assignee Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DI-II Completion Date --></label>
+        <name>DI_II_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-II Duration --></label>
+        <name>DI_II_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-II Fix Check Assigned Date --></label>
+        <name>DI_II_Fix_Check_Assigned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-II Fix Check Assignee Name --></label>
+        <name>DI_II_Fix_Check_Assignee_Name__c</name>
+        <relationshipLabel><!-- Junction Kbases (DI-II Fix Check Assignee Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DI-II Fix Check Completion Date --></label>
+        <name>DI_II_Fix_Check_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-II Fix Check Duration --></label>
+        <name>DI_II_Fix_Check_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-II Fixes Assigned Date --></label>
+        <name>DI_II_Fixes_Assigned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-II Fixes Assignee Name --></label>
+        <name>DI_II_Fixes_Assignee_Name__c</name>
+        <relationshipLabel><!-- Junction Kbases (DI-II Fixes Assignee Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DI-II Fixes Completion Date --></label>
+        <name>DI_II_Fixes_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-II Fixes Duration --></label>
+        <name>DI_II_Fixes_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-II Reference Status --></label>
+        <name>DI_II_Reference_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-II Work Type --></label>
+        <name>DI_II_Work_Type__c</name>
+        <picklistValues>
+            <masterLabel>Initial DI-II</masterLabel>
+            <translation><!-- Initial DI-II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary DI-II</masterLabel>
+            <translation><!-- Secondary DI-II --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DI-I Assigned Date --></label>
+        <name>DI_I_Assigned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-I Assignee Name --></label>
+        <name>DI_I_Assignee_Name__c</name>
+        <relationshipLabel><!-- Junction Kbases (DI-I Assignee Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DI-I Completion Date --></label>
+        <name>DI_I_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-I Duration --></label>
+        <name>DI_I_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-I Fix Check Assigned Date --></label>
+        <name>DI_I_Fix_Check_Assigned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-I Fix Check Assignee Name --></label>
+        <name>DI_I_Fix_Check_Assignee_Name__c</name>
+        <relationshipLabel><!-- Junction Kbases (DI-I Fix Check Assignee Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DI-I Fix Check Completion Date --></label>
+        <name>DI_I_Fix_Check_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-I Fix Check Duration --></label>
+        <name>DI_I_Fix_Check_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-I Fixes Assigned Date --></label>
+        <name>DI_I_Fixes_Assigned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-I Fixes Assignee Name --></label>
+        <name>DI_I_Fixes_Assignee_Name__c</name>
+        <relationshipLabel><!-- Junction Kbases (DI-I Fixes Assignee Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DI-I Fixes Completion Date --></label>
+        <name>DI_I_Fixes_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-I Fixes Duration --></label>
+        <name>DI_I_Fixes_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-I Reference Status --></label>
+        <name>DI_I_Reference_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- DI-I Work Type --></label>
+        <name>DI_I_Work_Type__c</name>
+        <picklistValues>
+            <masterLabel>Initial DI-I</masterLabel>
+            <translation><!-- Initial DI-I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary DI-I</masterLabel>
+            <translation><!-- Secondary DI-I --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Database Name --></label>
+        <name>Database_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extraction Assigned Date --></label>
+        <name>Extraction_Assigned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extraction Assignee Name --></label>
+        <name>Extraction_Assignee_Name__c</name>
+        <relationshipLabel><!-- Junction Kbases (Extraction Assignee Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Extraction Completion Date --></label>
+        <name>Extraction_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extraction Duration --></label>
+        <name>Extraction_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extraction Quantity --></label>
+        <name>Extraction_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extraction Reference Status --></label>
+        <name>Extraction_Reference_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extraction Task Description --></label>
+        <name>Extraction_Task_Description__c</name>
+        <picklistValues>
+            <masterLabel>Tables</masterLabel>
+            <translation><!-- Tables --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term Index</masterLabel>
+            <translation><!-- Term Index --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation><!-- Text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Extraction Work Type --></label>
+        <name>Extraction_Work_Type__c</name>
+        <picklistValues>
+            <masterLabel>Primary Extraction</masterLabel>
+            <translation><!-- Primary Extraction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary Extraction</masterLabel>
+            <translation><!-- Secondary Extraction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Kbases Name --></label>
+        <name>Kbases_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ref ID --></label>
+        <name>Kbases__c</name>
+        <relationshipLabel><!-- Junction Kbases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LMS Bucket --></label>
+        <name>LMS_Bucket__c</name>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation><!-- Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Meth Rep #1 --></label>
+        <name>Meth_Rep_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meth Rep #2 --></label>
+        <name>Meth_Rep_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- PICO ID --></label>
+        <name>PICO_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Release Date --></label>
+        <name>Production_Release_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ref ID --></label>
+        <name>Reference_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Name --></label>
+        <name>Short_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Slack URL --></label>
+        <name>Slack_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaskRay Sub-Project --></label>
+        <lookupFilter>
+            <errorMessage><!-- Project must be a sub-project. --></errorMessage>
+            <informationalMessage><!-- Please select a sub-project. --></informationalMessage>
+        </lookupFilter>
+        <name>TaskRay_Project__c</name>
+        <relationshipLabel><!-- Junction Kbases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Team Lead Name --></label>
+        <name>Team_Lead_Name__c</name>
+        <relationshipLabel><!-- Junction Kbases (Team Lead Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Virtual Tag --></label>
+        <name>Virtual_Tag__c</name>
+        <picklistValues>
+            <masterLabel>Tag 1</masterLabel>
+            <translation><!-- Tag 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tag 2</masterLabel>
+            <translation><!-- Tag 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tag 3</masterLabel>
+            <translation><!-- Tag 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tag 4</masterLabel>
+            <translation><!-- Tag 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Waiting on... --></label>
+        <name>Waiting_on__c</name>
+        <picklistValues>
+            <masterLabel>Grab-it</masterLabel>
+            <translation><!-- Grab-it --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Library</masterLabel>
+            <translation><!-- Library --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meth Rep Decision Pending</masterLabel>
+            <translation><!-- Meth Rep Decision Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Questions</masterLabel>
+            <translation><!-- Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TL Decision Pending</masterLabel>
+            <translation><!-- TL Decision Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tech</masterLabel>
+            <translation><!-- Tech --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Junction Kbase</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Junction Kbases</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Sub Kbase Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- DI-I --></label>
+            <section>DI-I</section>
+        </sections>
+        <sections>
+            <label><!-- DI-I Fix Check --></label>
+            <section>DI-I Fix Check</section>
+        </sections>
+        <sections>
+            <label><!-- DI-I Fixes --></label>
+            <section>DI-I Fixes</section>
+        </sections>
+        <sections>
+            <label><!-- DI-II --></label>
+            <section>DI-II</section>
+        </sections>
+        <sections>
+            <label><!-- DI-II Fix Check --></label>
+            <section>DI-II Fix Check</section>
+        </sections>
+        <sections>
+            <label><!-- DI-II Fixes --></label>
+            <section>DI-II Fixes</section>
+        </sections>
+        <sections>
+            <label><!-- Extraction --></label>
+            <section>Extraction</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- New_Junction_KBase --></label>
+        <name>New_Junction_KBase</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Kbase --></label>
+        <name>New_Kbase</name>
+    </webLinks>
+</CustomObjectTranslation>

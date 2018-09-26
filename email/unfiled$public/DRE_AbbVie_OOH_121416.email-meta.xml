@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-AbbVie-OOH-121416</name>
+    <style>none</style>
+    <subject>Doctor Evidence - Abbvie Open Office Hours</subject>
+    <textOnly>*|Doctor Evidence-AbbVie Open Office Hours|*
+
+Dear {!Contact.Name},
+We are pleased to invite you to the Doctor Evidence Open office hours:
+Wednesday, December 14th
+Time: 11:30-1pm CST
+Room: US-LC-ABV1-LLC-101-04 Barcelona
+Doctor Evidence (DRE) is a specialty evidence-based medicine software platform and services company that is engaged with AbbVie to provide the most relevant medical evidence and related analytics to inform AbbVie’s clinical and care decisions in Immunology, HCV, and Endometriosis. Based on the audience, we will be sharing examples of the use cases below with our DOC Data platform.
+
+Immunology (FDA Submission for Pediatric Psoriasis)
+Doctor Evidence worked with a cross-functional immunology team (Medical/HEOR/Safety) to perform a comprehensive literature review on the prevalence and severity of pediatric psoriasis. AbbVie gained insights on the US and global prevalence and severity data to support and FDA submission for an orphan indication.
+Immunology – Biotherapeutics (originator to biosimilar switching)
+Doctor Evidence is tracking published research that addresses differential efficacy and safety of switching from originator to biosimilar, as compared against patients who initiate and stay on biosimilar. These identified pieces of research are being updated on a monthly basis to keep in sync with a rapidly changing therapeutic dynamic.
+
+
+HCV (Patient Preference Study Input)
+DRE worked with the US HEOR team to provide input on the outcomes for a Patient Preference study. DRE used the existing database of HCV trials to generate a report on frequency and ranges of most common AEs across trials. The information was used to inform the selection of AEs for the study.
+
+Click here to confirm your attendance
+
+Users can now log in through AbbVie&apos;s single Sign On portal at: https://federation.abbvie.com/idp/startSSO.ping?PartnerSpId=dre-launch:saml2:sp
+
+LUNCH PASS PROVIDED BY ABBVIE
+Looking forward to seeing you!
+
+Katia Butylkova,
+Account Director, Client Solutions
+Doctor Evidence</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

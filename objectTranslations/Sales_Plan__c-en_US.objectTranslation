@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- SP Account ID --></label>
+        <name>SP_Account_ID__c</name>
+        <relationshipLabel><!-- Sales Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SP Amount --></label>
+        <name>SP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- SP Close Date --></label>
+        <name>SP_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SP Offering --></label>
+        <name>SP_Offering__c</name>
+        <picklistValues>
+            <masterLabel>ASCO DOC Search</masterLabel>
+            <translation><!-- ASCO DOC Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOC Label</masterLabel>
+            <translation><!-- DOC Label --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOC NHANES</masterLabel>
+            <translation><!-- DOC NHANES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOC Track</masterLabel>
+            <translation><!-- DOC Track --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Hub</masterLabel>
+            <translation><!-- Data Hub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROWTH</masterLabel>
+            <translation><!-- GROWTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IHME Data Mart</masterLabel>
+            <translation><!-- IHME Data Mart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project</masterLabel>
+            <translation><!-- Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation><!-- Services --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SP Opportunity ID --></label>
+        <name>SP_Opportunity_ID__c</name>
+        <relationshipLabel><!-- Sales Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SP Sales Type --></label>
+        <name>SP_Sales_Type__c</name>
+        <picklistValues>
+            <masterLabel>Expansion</masterLabel>
+            <translation><!-- Expansion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SP Therapeutic Area --></label>
+        <name>SP_Therapeutic_Area__c</name>
+        <picklistValues>
+            <masterLabel>Cardiology/Vascular Diseases</masterLabel>
+            <translation><!-- Cardiology/Vascular Diseases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endocrine/Metabolic</masterLabel>
+            <translation><!-- Endocrine/Metabolic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gynecology/Obstetrics</masterLabel>
+            <translation><!-- Gynecology/Obstetrics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immunology/Rheumatology</masterLabel>
+            <translation><!-- Immunology/Rheumatology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infections/Infectious Diseases</masterLabel>
+            <translation><!-- Infections/Infectious Diseases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Musculoskeletal</masterLabel>
+            <translation><!-- Musculoskeletal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nephrology/Urology</masterLabel>
+            <translation><!-- Nephrology/Urology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neurology</masterLabel>
+            <translation><!-- Neurology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncology</masterLabel>
+            <translation><!-- Oncology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ophthalmology</masterLabel>
+            <translation><!-- Ophthalmology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Psychiatry/Psychology</masterLabel>
+            <translation><!-- Psychiatry/Psychology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pulmonary/Respiratory Diseases</masterLabel>
+            <translation><!-- Pulmonary/Respiratory Diseases --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Plans</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Sales Plan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

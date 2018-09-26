@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>AdobeSign_Estimated_Hours__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Preferred_Vendor__r.Rate_Type__c, "Flat Rate") &amp;&amp; !ISPICKVAL(Rate_Type_Override__c,"Hourly Rate Override"), "N/A", TEXT(Est_Hours_to_Complete__c))</formula>
+        <label>AdobeSign Estimated Hours</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AdobeSign_Hourly_Rate__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(!ISBLANK(Hourly_Rate__c) &amp;&amp; !ISPICKVAL(Rate_Type_Override__c,"Flat Rate Override"), "$"&amp;TEXT(Hourly_Rate__c)&amp;"/hr", "N/A")</formula>
+        <label>AdobeSign Hourly Rate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AdobeSign_Total_Estimated_Fees__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(LEN( TEXT(Total_Estimated_Fees__c) ),
+1, "$" &amp; TEXT(Total_Estimated_Fees__c),
+2, "$" &amp; TEXT(Total_Estimated_Fees__c),
+3, "$" &amp; TEXT(Total_Estimated_Fees__c),
+4, "$" &amp; LEFT(TEXT(Total_Estimated_Fees__c), 1) &amp; "," &amp; RIGHT(TEXT(Total_Estimated_Fees__c), 3),
+5, "$" &amp; LEFT(TEXT(Total_Estimated_Fees__c), 2) &amp; "," &amp; RIGHT(TEXT(Total_Estimated_Fees__c), 3),
+6, "$" &amp; LEFT(TEXT(Total_Estimated_Fees__c), 3) &amp; "," &amp; RIGHT(TEXT(Total_Estimated_Fees__c), 3),
+7, "$" &amp; LEFT(TEXT(Total_Estimated_Fees__c), 1) &amp; "," &amp; MID(TEXT(Total_Estimated_Fees__c), 2,3) &amp; "," &amp; RIGHT(TEXT(Total_Estimated_Fees__c), 3),
+8, "$" &amp; LEFT(TEXT(Total_Estimated_Fees__c), 2) &amp; "," &amp; MID(TEXT(Total_Estimated_Fees__c), 3,3) &amp; "," &amp; RIGHT(TEXT(Total_Estimated_Fees__c), 3),
+null)</formula>
+        <label>AdobeSign Total Estimated Fees</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Anticipated_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Anticipated Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Client_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK("/" &amp; PICO_ID__r.TASKRAY__trAccount__r.Id, PICO_ID__r.TASKRAY__trAccount__r.Name)</formula>
+        <label>Client Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DRE_Point_of_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DRE Point of Contact</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Preferred_Vendor_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Description_of_Work__c</fullName>
+        <externalId>false</externalId>
+        <label>Description of Work</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Do_Not_Auto_Send_SOW__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do Not Auto-Send SOW</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Est_Hours_to_Complete__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please only specify estimated hours for non-flat rate projects</inlineHelpText>
+        <label>Est. Hours to Complete</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Flat_Rate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify a flat rate if the Preferred Vendor is on a flat rate or if you specify a Flat Rate Override.</inlineHelpText>
+        <label>Flat Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hourly_Rate_Override__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify amount for hourly rate override when vendor rate type is flat and you have selected Rate Type Override to be Hourly Rate Override.</inlineHelpText>
+        <label>Hourly Rate Override</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hourly_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Hourly Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>PICO_ID__r.TASKRAY__trOpportunity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK("/" &amp;  PICO_ID__r.TASKRAY__trOpportunity__r.Id , PICO_ID__r.TASKRAY__trOpportunity__r.Name)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Reason_s_for_Outsourcing__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Reason(s) for Outsourcing</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PICO_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>PICO ID</label>
+        <referenceTo>TASKRAY__Project__c</referenceTo>
+        <relationshipLabel>Preferred Vendor Requests</relationshipLabel>
+        <relationshipName>Preferred_Vendor_Requests</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>PO_No__c</fullName>
+        <externalId>false</externalId>
+        <label>PO No.</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Preferred_Vendor_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Preferred_Vendor__r.Email__c</formula>
+        <label>Preferred Vendor Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Preferred_Vendor_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Preferred_Vendor__r.Phone__c</formula>
+        <label>Preferred Vendor Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Preferred_Vendor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Preferred Vendor</label>
+        <referenceTo>Preferred_Vendor__c</referenceTo>
+        <relationshipLabel>Preferred Vendor Requests</relationshipLabel>
+        <relationshipName>Preferred_Vendor_Requests_del</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Project_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rate_Type_Override__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate Type Override</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hourly Rate Override</fullName>
+                    <default>false</default>
+                    <label>Hourly Rate Override</label>
+                </value>
+                <value>
+                    <fullName>Flat Rate Override</fullName>
+                    <default>false</default>
+                    <label>Flat Rate Override</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rate_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Preferred_Vendor__r.Rate_Type__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rate Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason_s_for_Outsourcing__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason(s) for Outsourcing</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>External expertise required</fullName>
+                    <default>false</default>
+                    <label>External expertise required</label>
+                </value>
+                <value>
+                    <fullName>Internal resource contraints</fullName>
+                    <default>false</default>
+                    <label>Internal resource contraints</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Requester_Email_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.Email</formula>
+        <label>Requester Email Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requester_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( "/" &amp; CreatedBy.Id, CreatedBy.FirstName &amp; " " &amp; CreatedBy.LastName)</formula>
+        <label>Requester Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFID__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK("/" &amp;  PICO_ID__r.TASKRAY__trOpportunity__c ,  PICO_ID__r.Opportunity_ID__c )</formula>
+        <label>SFID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Approval Process</fullName>
+                    <default>false</default>
+                    <label>In Approval Process</label>
+                </value>
+                <value>
+                    <fullName>PO No. Requested</fullName>
+                    <default>false</default>
+                    <label>PO No. Requested</label>
+                </value>
+                <value>
+                    <fullName>Submitted for Final Approval</fullName>
+                    <default>false</default>
+                    <label>Submitted for Final Approval</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Estimated_Fees__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL(Preferred_Vendor__r.Rate_Type__c, "Hourly Rate") || ISPICKVAL(Rate_Type_Override__c, "Hourly Rate Override"), Est_Hours_to_Complete__c * Hourly_Rate__c ,  Flat_Rate__c )</formula>
+        <label>Total Estimated Fees</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <label>Preferred Vendor Request</label>
+    <nameField>
+        <displayFormat>PVR-{000000}</displayFormat>
+        <label>Preferred Vendor Request Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Preferred Vendor Requests</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Preferred_Vendor__c</columns>
+        <columns>PICO_ID__c</columns>
+        <columns>Client_Name__c</columns>
+        <columns>SFID__c</columns>
+        <columns>Opportunity_Name__c</columns>
+        <columns>Reason_s_for_Outsourcing__c</columns>
+        <columns>DRE_Point_of_Contact__c</columns>
+        <columns>Total_Estimated_Fees__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <validationRules>
+        <fullName>Require_Estimate_Hours_to_Complete</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(
+   ISPICKVAL( Preferred_Vendor__r.Rate_Type__c, "Hourly Rate")&amp;&amp;ISBLANK( Est_Hours_to_Complete__c ),true,
+   IF(ISPICKVAL( Rate_Type_Override__c, "Hourly Rate Override") &amp;&amp; ISBLANK( Est_Hours_to_Complete__c ),true,false)
+)</errorConditionFormula>
+        <errorDisplayField>Est_Hours_to_Complete__c</errorDisplayField>
+        <errorMessage>The preferred vendor is on an hourly rate. You must specify an estimated number of hours to complete.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Flat_Rate</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(
+    ISPICKVAL(Preferred_Vendor__r.Rate_Type__c, "Flat Rate")&amp;&amp;
+ISBLANK(Flat_Rate__c),true,
+    IF(ISPICKVAL(Rate_Type_Override__c, "Flat Rate Override") &amp;&amp;ISBLANK(Flat_Rate__c),true,false)
+)</errorConditionFormula>
+        <errorDisplayField>Flat_Rate__c</errorDisplayField>
+        <errorMessage>This preferred vendor is on a flat project rate. Please specify the flat project rate for this request.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Hourly_Rate_Override</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(Rate_Type_Override__c, "Hourly Rate Override") &amp;&amp; ISBLANK( Hourly_Rate_Override__c)</errorConditionFormula>
+        <errorDisplayField>Hourly_Rate_Override__c</errorDisplayField>
+        <errorMessage>You must specify the hourly rate for this override.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Other_Reason_for_Outsourcing</fullName>
+        <active>true</active>
+        <errorConditionFormula>INCLUDES(Reason_s_for_Outsourcing__c,"Other")&amp;&amp; ISBLANK(Other_Reason_s_for_Outsourcing__c)</errorConditionFormula>
+        <errorDisplayField>Other_Reason_s_for_Outsourcing__c</errorDisplayField>
+        <errorMessage>You must provide a description of your other reason for outsourcing.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Estimated_Hours_to_Complete</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(
+    ISPICKVAL(  Rate_Type_Override__c, "Flat Rate Override")&amp;&amp;!ISBLANK( Est_Hours_to_Complete__c ),
+    true,
+    IF(
+        ISPICKVAL( Preferred_Vendor__r.Rate_Type__c, "Flat Rate") &amp;&amp; !ISBLANK( Est_Hours_to_Complete__c ),
+        true, false
+    )
+)</errorConditionFormula>
+        <errorDisplayField>Est_Hours_to_Complete__c</errorDisplayField>
+        <errorMessage>The preferred vendor is on an flat rate. The estimated number of hours to complete is not relevant. Please leave this blank.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Flat_Rate</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL( Preferred_Vendor__r.Rate_Type__c, "Hourly Rate")&amp;&amp; !ISPICKVAL(  Rate_Type_Override__c, "Flat Rate Override")&amp;&amp;
+!ISBLANK(Flat_Rate__c)</errorConditionFormula>
+        <errorDisplayField>Flat_Rate__c</errorDisplayField>
+        <errorMessage>This vendor is on an hourly rate. You cannot specify a flat rate for this request.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>SOW_Adobe_Sign</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>SOW Adobe Sign</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/echosign_dev1__AgreementTemplateProcess?masterId={!Preferred_Vendor_Request__c.Id}&amp;templateId=a280m000001DOx4</url>
+    </webLinks>
+</CustomObject>

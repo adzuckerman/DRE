@@ -1,0 +1,5 @@
+Dear {!Preferred_Vendor_Request__c.DRE_Point_of_Contact__c},<br /><br />
+
+There is a rate type change for a preferred vendor in an approval process. As a result, your request for the following preferred vendor and project has been *rejected*.<br /><br />
+
+To view the *Request Form*, please <a href="{!Preferred_Vendor_Request__c.Link}">click here</a>

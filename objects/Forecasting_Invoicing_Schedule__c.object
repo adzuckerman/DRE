@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>BS_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>B/S Category</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Booking_Month_0__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking Month</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Booking_Month_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking Month +1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Booking_Month_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking Month +2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Booking_Month_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking_Month +3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Booking_Month_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking_Month +4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Booking_Month_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking_Month +5</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Booking_Month_6__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking_Month +6</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <label>Forecasting Invoicing Schedule</label>
+    <visibility>Public</visibility>
+</CustomObject>

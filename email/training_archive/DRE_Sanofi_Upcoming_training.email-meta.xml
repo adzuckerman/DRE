@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-Sanofi Upcoming training- March-29-June-22</name>
+    <style>none</style>
+    <subject>Doctor Evidence Upcoming Training Sessions</subject>
+    <textOnly>*|Doctor Evidence-Sanofi Upcoming Training Sessions|*
+
+Dear {!Contact.FirstName},
+Sanofi and Doctor Evidence have initiated a year-long engagement in order to provide Sanofi personnel with relevant data to answer timely research questions. Doctor Evidence (DRE) is a technology and research services company that finds, synthesizes and analyzes information from published sources. We will work with you--at no cost--to create deliverables such as Systematic Literature Reviews, Meta-Analyses, Landscape Analyses, Comparative Safety Assessments, Regulatory Responses and more using our dynamic platforms and professional services.  The engagement includes extensive assets across several therapeutic areas (Cardiovascular, Diabetes, Immunology, Multiple Sclerosis, General Medicines).  You are invited to attend Doctor Evidence’s Introductory training so that you can maximize use of the Doctor Evidence services and platforms.
+Kind Regards,
+
+Nancy Morgan
+Director of Education and Training
+301 Arizona Ave Suite 301 Santa Monica CA 90401
+Doctor Evidence
+
+Please click on the date, time and location you are interested in from the schedule below, and you will receive a calendar invite a week before the event.
+Please note that there are now 3 locations in France to select.
+
+MARCH - 2017
+29 March 2017 | 10AM CET | La Boetié | f2f
+29 March 2017 | 10AM CET | Online
+29 March 2017 | 2PM CET | La Boetié | f2f
+29 March 2017 | 2PM CET | Online
+30 March 2017 | 10AM CET | Gentilly| f2f
+30 March 2017 | 10AM CET | Online
+30 March 2017 | 2PM CET | Chilly Mazarin | f2f
+30 March 2017 | 2PM CET | Online  APRIL - 2017
+5 April 2017 | 10AM EST | Online
+5 April 2017 | 4PM CET | Online
+6 April 2017 | 10AM EST | Online
+6 April 2017 | 4PM CET | Online
+12 April 2017 | 10AM EST | Bridgewater | f2f
+12 April 2017 | 10AM EST | Online
+12 April 2017 | 2PM EST | Bridgewater | f2f
+12 April 2017 | 2PM EST | Bridgewater | Online
+13 April 2017 | 10A EST | Bridgewater | f2f
+13 April 2017 | 10A EST | Bridgewater | Online
+13 April 2017 | 2PM EST | Bridgewater | f2f
+13 April 2017 | 2PM EST | Bridgewater | Online
+26 April 2017 | 10AM CET | La Boetié | f2f
+26 April 2017 | 10AM CET | La Boetié | Online
+26 April 2017 | 2PM CET | La Boetié | f2f
+26 April 2017 | 2PM CET | La Boetié | Online
+27 April 2017 | 10AM CET | Gentilly | f2f
+27 April 2017 | 10AM CET | Online
+27 April 2017 | 2PM CET | Chilly Mazarin| f2f
+27 April 2017 | 2PM CET | Online MAY - 2017
+3 May 2017 | 10AM EST | Online
+3 May 2017 | 4PM CET | Online
+4 May 2017 | 10AM EST | Online
+4 May 2017 | 4PM CET | Online
+17 May 2017  |10AM EST | Cambridge | f2f
+17 May 2017 | 10AM EST |  Online
+17 May 2017 | 2PM EST | Cambridge | f2f
+17 May 2017 | 2PM EST | Online
+18 May 2017 | 10AM EST | Cambridge | f2f
+18 May 2017 | 10AM EST |  Online
+18 May 2017 | 2PM EST | Cambridge | f2f
+18 May 2017 | 2PM EST | Online JUNE - 2017
+7 June 2017 | 10AM EST | Online
+7 June 2017 | 10AM EST | Online
+8 June 2017 | 4PM CET | Online
+8 June 2017 | 4PM CET | Online
+21 June 2017 | 2PM CET | La Boetié | f2f
+21 June 2017 | 2PM CET | Online
+21 June 2017 | 4PM CET | La Boetié | f2f
+21 June 2017 | 4PM CET | Online
+22 June 2017 | 2PM CET | Gentilly | f2f
+22 June 2017 | 2PM CET  | Online
+22 June 2017 | 4PM CET  | Chilly Mazarin | f2f
+22 June 2017 | 4PM CET  | Online
+
+Request Deliverables Now</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

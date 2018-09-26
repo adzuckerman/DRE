@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>DRE-HC-v3b</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-HC-v3b</name>
+    <style>none</style>
+    <subject>Holiday Greeting from Doctor Evidence</subject>
+    <textOnly>Happy Holidays!
+At this season, we at Doctor Evidence take time to reflect on the good things we have...like our partnership with you. We appreciate working with you and hope that the holidays and the coming year will bring you every happiness and success.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

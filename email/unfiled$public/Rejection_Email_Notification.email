@@ -1,0 +1,9 @@
+<p>Dear {!Preferred_Vendor_Request__c.CreatedBy},</p>
+
+<p>Your request for the following preferred vendor and project has been <b>rejected</b>.</p>
+
+<p>To view the <b>Request Form</b>, please click <a href="https://cs65.salesforce.com/{!Preferred_Vendor_Request__c.Id}">here</a>.</p>
+
+<p>Please contact your supervisor for any questions you may have involving this request.</p>
+
+<p>Thank you.</p>

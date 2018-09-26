@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Mika has approved closed won deal.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Approved Closed Won</name>
+    <style>none</style>
+    <subject>Mika Has Approved Closed Won Deal</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

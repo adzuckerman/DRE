@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- DRE Client Phase --></label>
+        <name>DRE_Client_Phase__c</name>
+        <picklistValues>
+            <masterLabel>Enterprise Partner</masterLabel>
+            <translation><!-- Enterprise Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise Pilot</masterLabel>
+            <translation><!-- Enterprise Pilot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Pilot</masterLabel>
+            <translation><!-- Strategic Pilot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Transactional</masterLabel>
+            <translation><!-- Strategic Transactional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transactional</masterLabel>
+            <translation><!-- Transactional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Disclosure Agreement End Date --></label>
+        <name>Disclosure_Agreement_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disclosure Agreement Start Date --></label>
+        <name>Disclosure_Agreement_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disclosure Agreement Type --></label>
+        <name>Disclosure_Agreement_Type__c</name>
+        <picklistValues>
+            <masterLabel>Confidential Disclosure Agreement (CDA)</masterLabel>
+            <translation><!-- Confidential Disclosure Agreement (CDA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mutual Non-Disclosure Agreement (NDA)</masterLabel>
+            <translation><!-- Mutual Non-Disclosure Agreement (NDA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Disclosure (NDA)</masterLabel>
+            <translation><!-- Non-Disclosure (NDA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Litmos__Active__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Priority --></label>
+        <name>Litmos__CustomerPriority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Litmos Id --></label>
+        <name>Litmos__Litmos_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>Litmos__NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Expiration Date --></label>
+        <name>Litmos__SLAExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Serial Number --></label>
+        <name>Litmos__SLASerialNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA --></label>
+        <name>Litmos__SLA__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Upsell Opportunity --></label>
+        <name>Litmos__UpsellOpportunity__c</name>
+        <picklistValues>
+            <masterLabel>Maybe</masterLabel>
+            <translation><!-- Maybe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Master Agreement End Date --></label>
+        <name>Master_Agreement_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Agreement Start Date --></label>
+        <name>Master_Agreement_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Agreement Type --></label>
+        <name>Master_Agreement_Type__c</name>
+        <picklistValues>
+            <masterLabel>General Services Agreement (GSA)</masterLabel>
+            <translation><!-- General Services Agreement (GSA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Licensing Agreement (LA)</masterLabel>
+            <translation><!-- Licensing Agreement (LA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master Services Agreement (MSA)</masterLabel>
+            <translation><!-- Master Services Agreement (MSA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Agreement (OA)</masterLabel>
+            <translation><!-- Other Agreement (OA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services Agreement (SA)</masterLabel>
+            <translation><!-- Services Agreement (SA) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onboarding Duration --></label>
+        <name>TASKRAY__trOnboardingDuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by TaskRay to record the actual end date of the onboarding project associated with this account. --></help>
+        <label><!-- Onboarding End --></label>
+        <name>TASKRAY__trOnboardingEndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by TaskRay to record the actual start date of the onboarding project associated with this account. --></help>
+        <label><!-- Onboarding Start --></label>
+        <name>TASKRAY__trOnboardingStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Toggl Id --></label>
+        <name>Toggl_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Last Email --></label>
+        <name>i__DaysSinceLastMail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Inbound Email --></label>
+        <name>i__LastInboundMail__c</name>
+        <relationshipLabel><!-- Accounts (Last Inbound Email) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Inbound Email Time --></label>
+        <name>i__LastInboundSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Inbound Email Time --></label>
+        <name>i__LastInboundTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Email Time --></label>
+        <name>i__LastMailSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Mail Time Delta --></label>
+        <name>i__LastMailTimeDelta__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Email Time --></label>
+        <name>i__LastMailTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Email --></label>
+        <name>i__LastMail__c</name>
+        <relationshipLabel><!-- Accounts (Last Email) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Outbound Email --></label>
+        <name>i__LastOutboundMail__c</name>
+        <relationshipLabel><!-- Accounts (Last Outbound Email) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Outbound Email Time --></label>
+        <name>i__LastOutboundSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Outbound Email Time --></label>
+        <name>i__LastOutboundTime__c</name>
+    </fields>
+    <fieldSets>
+        <label><!-- Account Filter Fields --></label>
+        <name>Account_Filter_Fields</name>
+    </fieldSets>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Company Level Contract --></label>
+            <section>Company Level Contract</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Emails --></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label><!-- Training Widget(Read Only) --></label>
+            <section>Training Widget(Read Only)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Layout SDoc</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Billing --></label>
+        <name>Litmos__Billing</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Team_In_Litmos --></label>
+        <name>Litmos__Create_Team_In_Litmos</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MailChimp_Subscriptions --></label>
+        <name>MC4SF__MailChimp_Subscriptions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Docs --></label>
+        <name>SDOC__Email_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- S_Docs --></label>
+        <name>SDOC__S_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_EchoSign --></label>
+        <name>echosign_dev1__Send_to_EchoSign</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,4 @@
+<design:component >
+	<design:attribute name="recordFieldName" label="Record Field Name" description="The API name of the field on the agreement object which points to this record." />
+	<design:attribute name="agreementTemplateRecordIds" label="Agreement Template Record IDs" description="The Salesforce record ID's of agreement templates to restrict the selection to. All applicable templates shown if left blank." />
+</design:component>

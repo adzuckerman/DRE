@@ -1,0 +1,60 @@
+<apex:page showHeader="false"  standardController="Opportunity" extensions="OpportunityBalanceSheetSectionCtrl">
+
+    <style type="text/css">
+        .slds-truncate.column-name {
+            text-align: left !important;
+        }
+        .slds-truncate {
+            text-align: center !important;
+        }
+        .slds-scope td {
+            text-align: center !important;
+        }
+    </style>
+
+    <apex:slds />
+
+    <apex:outputPanel id="SchedulesTable" layout="block" styleClass="slds-p-vertical--small" style="max-height: 150px; min-height: 150px; overflow-y: auto;">
+        <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+            <thead>
+                <tr class="slds-text-heading--label">
+                    <th scope="col">
+                        <div class="slds-truncate column-name" style="color: #2076f7;">
+                            {!IF(isForecasted, 'IN FORECAST', '')}
+                        </div>
+                    </th>
+                    <apex:repeat value="{!invoices}" var="invoice">
+                        <th scope="col" class="slds-text-title--caps">
+                            <div class="slds-truncate" title="{!invoice.Invoice_Date__c}"><apex:outputField value="{!invoice.Invoice_Date__c}"/></div>
+                        </th>
+                    </apex:repeat>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td scope="col">
+                            <div class="slds-truncate column-name">Accrued Revenue (Asset)</div>
+                        </td>
+                        <apex:repeat value="{!invoices}" var="invoice">
+                            <td>
+                                <apex:outputField value="{!invoice.Accrued_Revenue_Formula__c}" styleClass="slds-truncate slds-p-horizontal--x-small"/>
+                                {!IF(invoice.Accrued_Revenue_Formula__c == null, '-', '')}
+                            </td>
+                        </apex:repeat>
+                    </tr>
+                    <tr>
+                        <td scope="col">
+                            <div class="slds-truncate column-name">Deferred Revenue (Liability)</div>
+                        </td>
+                        <apex:repeat value="{!invoices}" var="invoice">
+                            <td>
+                                <apex:outputField value="{!invoice.Deferred_Revenue_Formula__c}" styleClass="slds-truncate slds-p-horizontal--x-small"/>
+                                {!IF(invoice.Deferred_Revenue_Formula__c == null, '-', '')}
+                            </td>
+                        </apex:repeat>
+                    </tr>
+            </tbody>
+        </table>
+    </apex:outputPanel>
+
+</apex:page>

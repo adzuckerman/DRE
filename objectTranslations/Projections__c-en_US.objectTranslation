@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Max Prob --></label>
+        <name>Max_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 10 Prob. --></label>
+        <name>Month_10_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 10 --></label>
+        <name>Month_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 11 Prob. --></label>
+        <name>Month_11_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 11 --></label>
+        <name>Month_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 12 Prob. --></label>
+        <name>Month_12_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 12 --></label>
+        <name>Month_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 13 Prob. --></label>
+        <name>Month_13_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 13 --></label>
+        <name>Month_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 14 Prob. --></label>
+        <name>Month_14_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 14 --></label>
+        <name>Month_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 15 Prob. --></label>
+        <name>Month_15_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 15 --></label>
+        <name>Month_15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 16 Prob. --></label>
+        <name>Month_16_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 16 --></label>
+        <name>Month_16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 17 Prob. --></label>
+        <name>Month_17_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 17 --></label>
+        <name>Month_17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 18 Prob. --></label>
+        <name>Month_18_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 18 --></label>
+        <name>Month_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 19 Prob. --></label>
+        <name>Month_19_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 19 --></label>
+        <name>Month_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 1 Prob. --></label>
+        <name>Month_1_Prob_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 1 --></label>
+        <name>Month_1__c</name>
+        <picklistValues>
+            <masterLabel>Apr</masterLabel>
+            <translation><!-- Apr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aug</masterLabel>
+            <translation><!-- Aug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dec</masterLabel>
+            <translation><!-- Dec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feb</masterLabel>
+            <translation><!-- Feb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jan</masterLabel>
+            <translation><!-- Jan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jul</masterLabel>
+            <translation><!-- Jul --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jun</masterLabel>
+            <translation><!-- Jun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mar</masterLabel>
+            <translation><!-- Mar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nov</masterLabel>
+            <translation><!-- Nov --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oct</masterLabel>
+            <translation><!-- Oct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sep</masterLabel>
+            <translation><!-- Sep --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Month 20 Prob. --></label>
+        <name>Month_20_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 20 --></label>
+        <name>Month_20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 21 Prob. --></label>
+        <name>Month_21_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 21 --></label>
+        <name>Month_21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 22 Prob. --></label>
+        <name>Month_22_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 22 --></label>
+        <name>Month_22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 23 Prob. --></label>
+        <name>Month_23_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 23 --></label>
+        <name>Month_23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 24 Prob. --></label>
+        <name>Month_24_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 24 --></label>
+        <name>Month_24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 2 Prob. --></label>
+        <name>Month_2_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 2 --></label>
+        <name>Month_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 3 Prob. --></label>
+        <name>Month_3_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 3 --></label>
+        <name>Month_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 4 Prob. --></label>
+        <name>Month_4_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 4 --></label>
+        <name>Month_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 5 Prob. --></label>
+        <name>Month_5_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 5 --></label>
+        <name>Month_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 6 Prob. --></label>
+        <name>Month_6_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 6 --></label>
+        <name>Month_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 7 Prob. --></label>
+        <name>Month_7_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 7 --></label>
+        <name>Month_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 8 Prob. --></label>
+        <name>Month_8_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 8 --></label>
+        <name>Month_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 9 Prob. --></label>
+        <name>Month_9_Prob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 9 --></label>
+        <name>Month_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- N.B. --></label>
+        <name>N_B__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Opportunity --></label>
+        <name>Related_Opportunity__c</name>
+        <relationshipLabel><!-- Projections --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Projection</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projections</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Projection Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Note --></label>
+            <section>Note</section>
+        </sections>
+        <sections>
+            <label><!-- Year 1 Projections --></label>
+            <section>Year 1 Projections</section>
+        </sections>
+        <sections>
+            <label><!-- Year 2 Projections --></label>
+            <section>Year 2 Projections</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

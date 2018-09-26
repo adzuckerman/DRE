@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Webinar-Ispor-DRE</name>
+    <style>none</style>
+    <subject>Living Guidelines Webinar</subject>
+    <textOnly>Living Guidelines Webinar:
+April 27, 2016 at 12:00 pm Pacific, 2:00 pm Central, 3:00 pm Eastern
+http://growthevidence.com/growth-webinars/
+A presentation and discussion by Mike Cheung, Chief Science Officer, KDIGO, and Sandra Zelman Lewis, PhD, Chief Guidelines Officer, Doctor Evidence, co-authors of the recent publication: “Recommendations for kidney disease guideline updating: a report by the KDIGO Methods Committee”
+Want to learn more about how we are transforming Evidence Based Medicine?
+SCHEDULE A PERSONAL DEMONSTRATION AT ISPOR 2016</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

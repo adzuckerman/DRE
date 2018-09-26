@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-Sanofi Upcoming training Feb-March</name>
+    <style>none</style>
+    <subject>Doctor Evidence Upcoming Training Sessions</subject>
+    <textOnly>*|Doctor Evidence-Sanofi upcoming training sessions|*
+
+Dear Sanofi Colleague,
+
+Doctor Evidence has launched an engagement with Sanofi across several therapeutic areas and functions, supporting literature review activities, related data analytics, and initiatives including RWE, AI, and Big Data.
+As part of the launch process, we are conducting training sessions covering the below topics. Training sessions are planned live in Paris, Cambridge, and Bridgewater, as well as via Adobe Connect, to provide flexibility for attendees. To register for a session, please click on one of the days below to be included in the session.
+
+Thank you,
+
+Nancy Morgan
+Director of Education and Training
+301 Arizona Ave Suite 301 Santa Monica CA 90401
+Doctor Evidence
+
+Introductory Module
+Course Description
+High level overview of DRE capability, data sources that feed into it, how to ask questions, and how DRE can address strategic data needs
+Format and Timing
+90 minutes in-person or Adobe Connect
+Pre-requisite
+None
+
+15 February 2017
+10 -11:30 AM CET or 2-3:30 PM CET
+
+La Boétie F2F
+
+Adobe Connect
+
+16 February 2017
+10 -11:30 AM CET or 2-3:30 PM CET
+
+La Boétie F2F
+
+Adobe Connect
+
+29 March 2017
+10 -11:30 AM CET or 2-3:30 PM CET
+
+La Boétie F2F
+
+Adobe Connect
+
+30 March 2017
+10 -11:30 AM CET or 2-3:30 PM CET
+
+La Boétie F2F
+
+Adobe Connect
+
+22 February 2017
+10-11:30 AM EST or  2-3:30 PM EST
+
+Cambridge F2F
+
+Adobe Connect
+
+23 February 2017
+10-11:30 AM EST or  2-3:30 PM EST
+
+Cambridge F2F
+
+Adobe Connect
+
+15 March 2017
+10-11:30 AM EST or  2-3:30 EST
+
+Cambridge F2F
+
+Adobe Connect
+
+16 March 2017
+10-11:30 AM EST or  2-3:30 PM EST
+
+Cambridge F2F
+
+Adobe Connect
+
+28 February 2017
+10-11:30 AM EST or  2-3:30 PM EST
+
+Bridgewater F2F
+
+Adobe Connect
+
+01 March 2017
+10-11:30 AM EST or  2-3:30 EST
+
+Bridgewater F2F
+
+Adobe Connect
+
+22 March 2017
+10-11:30 AM EST or  2-3:30 PM EST
+
+Bridgewater F2F
+
+Adobe Connect
+
+23 March 2017
+10-11:30 AM EST or  2-3:30 PM EST
+
+Bridgewater F2F
+
+Adobe Connect
+
+Upcoming Adobe Connect (only) training session on 9 March 2017 at 10 AM EST/4 PM CET</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

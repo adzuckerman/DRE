@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- API Token --></label>
+        <name>API_Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- New User Profile Name --></label>
+        <name>New_User_Profile_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workspace ID --></label>
+        <name>Workspace_ID__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>ToggleAccount</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ToggleAccounts</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

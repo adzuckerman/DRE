@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html> 
+ <head> 
+	<title>Doctor Evidence - Meet with our team at ISPOR</title>
+         <meta http-equiv="Content-type" content="text/html; charset=utf-8"> 
+          
+     <style type="text/css">
+		p{
+			margin-bottom:10px;
+			color:#050505;
+		}
+	/*
+	@tab Page
+	@section background color
+	@tip Choose a color for your HTML email's background. You might choose one to match your company's branding.
+	@theme page
+	*/
+		body{
+			/*@editable*/background-color:#7D8D8D;
+			text-align:center;
+		}
+		#layout{
+			margin:0 auto;
+			text-align:left;
+		}
+	/*
+	@tab Header
+	@section header top
+	@tip Set the look of the archive link bar.
+	*/
+		#header-top{
+			/*@editable*/background-color:#7D8D8D;
+			/*@editable*/border-top:0px none;
+			/*@editable*/border-bottom:0px none;
+			/*@editable*/color:#EEEEEE;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:11px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:normal;
+			padding:15px 0 5px;
+			/*@editable*/text-align:center;
+		}
+	/*
+	@tab Header
+	@section title style
+	@tip Titles and headlines in your message body. Make them big and easy to read.
+	@theme title
+	*/
+		.primary-heading{
+    /*@editable*/color: #E5C03D;
+    /*@editable*/font-family: "Lucida Grande", Helvetica;
+    /*@editable*/font-size: 70px;
+    /*@editable*/font-style: normal;
+    /*@editable*/font-weight: bold;
+    /*@editable*/line-height: 75%;
+    margin: 0;
+    padding: 20px 0 0 0;
+    /*@editable*/text-transform: uppercase;
+		}
+	/*
+	@tab Header
+	@section subtitle style
+	@tip This is the byline text that appears immediately underneath your titles/headlines.
+	@theme subtitle
+	*/
+		.secondary-heading{
+			/*@editable*/color:#F5E658;
+			/*@editable*/font-family:"Lucida Grande", Helvetica;
+			/*@editable*/font-size:20px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:normal;
+			/*@editable*/line-height:100%;
+			margin:0;
+			padding:10px 0 0 0;
+			/*@editable*/text-transform:uppercase;
+		}
+	/*
+	@tab Body
+	@section upper content
+	@tip This is the default text style for the introductory content of your email.
+	@theme content
+	*/
+		#content-upper{
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/color:#EEEEEE;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:14px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:normal;
+			/*@editable*/line-height:100%;
+			padding:15px 20px 0;
+			text-align:center;
+			vertical-align:bottom;
+		}
+	/*
+	@tab Body
+	@section middle content
+	@tip This is the default text style for the middle content of your email.
+	@theme content
+	*/
+		#content-middle{
+    /*@editable*/background-color: #025BAB;
+    /*@editable*/color: #EEEEEE;
+    /*@editable*/font-family: Arial;
+    /*@editable*/font-size: 14px;
+    /*@editable*/font-style: normal;
+    /*@editable*/font-weight: normal;
+    /*@editable*/line-height: 150%;
+    padding: 15px 20px;
+    text-align: left;
+    vertical-align: top;
+		}
+	/*
+	@tab Body
+	@section closing content
+	@tip This is the default text style for the closing content of your email.
+	@theme content
+	*/
+		#content-lower{
+    /*@editable*/background-color: #043D71;
+    /*@editable*/color: #EEEEEE;
+    /*@editable*/font-family: Arial;
+    /*@editable*/font-size: 12px;
+    /*@editable*/font-style: normal;
+    /*@editable*/font-weight: normal;
+    /*@editable*/line-height: 100%;
+		}
+		.lower-block{
+			padding:10px 20px 30px;
+			text-align:left;
+			vertical-align:top;
+			width:200px;
+		}
+		#button{
+			text-align:center;
+		}
+	/*
+	@tab Body
+	@section closing content button
+	@tip This is the default text style for the closing content button.
+	@theme content
+	*/
+		#button a{
+    /*@editable*/background-color: #DFA031;
+    /*@editable*/color: #FFFFFF;
+    display: block;
+    /*@editable*/font-family: Arial;
+    /*@editable*/font-size: 40px;
+    /*@editable*/font-style: normal;
+    /*@editable*/font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px 25px;
+    /*@editable*/text-decoration: none;
+    /*@editable*/text-transform: uppercase;
+		}
+	/*
+	@tab Footer
+	@section footer
+	@tip You might give your footer a light background color and separate it with a top border
+	@theme footer
+	*/
+		#footer{
+			/*@editable*/background-color:#7D8D8D;
+			/*@editable*/border-top:0px none;
+			/*@editable*/border-bottom:0px none;
+			/*@editable*/color:#EEEEEE;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:11px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:normal;
+			/*@editable*/line-height:14px;
+			padding:20px 0 20px 0;
+			/*@editable*/text-align:center;
+		}
+	/*
+	@tab Footer
+	@section link style
+	@tip Specify a color for your footer hyperlinks.
+	@theme link_footer
+	*/
+		#footer a{
+			/*@editable*/color:#FFFFFF;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Page
+	@section link style
+	@tip Specify a color for all the hyperlinks in your email.
+	@theme link
+	*/
+		a,a:link,a:visited{
+			/*@editable*/color:#FFFFFF;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+     </style></head> 
+     <body>
+        <table width="600" border="0" cellspacing="0" cellpadding="0" id="layout">
+        	<tr>
+            	<td id="header-top" colspan="3" mc:edit="headertop">
+                	
+                </td>
+            </tr>
+            <tr>
+                <td id="content-upper" colspan="3">
+					<img src="https://gallery.mailchimp.com/66abbef7c2619050df458918c/images/7246f8e9-42db-493a-8647-1a4671717e06.jpg" width="685" height="227">
+                    <div mc:edit="contentupper"><h1 class="primary-heading">Meet with our team!</h1>
+</div>
+              </td>
+            </tr>
+            <tr>
+           	  <td id="content-middle" mc:edit="main" colspan="3">
+            	<h2 class="secondary-heading" align="center">Don't miss the opportunity to learn <br>about our products</h2>
+            	  <p style="text-align: left; color: #FDFBFB;">Dear {!Contact.FirstName}, </p>
+            	  <p style="text-align: left; color: #FDFBFB;">Doctor Evidence LLC is a leading human-enabled technology company in Evidence-Based Medicine (EBM). Doctor Evidence’s leading-edge solutions provide dynamic platforms for clients across the healthcare ecosystem to review, synthesize and evaluate evidence-based medicine. Doctor Evidence has been used for the past 14 years by life-science companies, academic institutions, evidence-based practice centers, and leading healthcare providers in the marketplace to make timely, relevant and cost-effective evidence-based decisions. </p>
+            	  <p style="text-align: left; color: #FDFBFB;">We will be attending this years ACR/ARHP Annual Meeting in San Diego. Don't miss the opportunity to meet with our team and learn about our new product ASCO DOC Search. Please visit our website to read the press release at <a href="http://drevidence.com/about-us/spotlight/" target="new">Doctor Evidence</a></p></td>
+            </tr>
+            <tr id="content-lower">
+            	
+           	  <td mc:edit="contentright" class="lower-block" colspan="4">
+               	<p id="button"><a href="mailto:dhodgson@doctorevidence.com" target="_blank">Sign Me Up</a></p>
+               	  <p>&nbsp;</p></td>
+            </tr>
+            <tr>
+                
+        </tr></table>
+		<span style="padding: 0px;"></span>
+     </body> 
+ </html>
+
+<body>
+</body>
+</html>

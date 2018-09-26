@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>PreferredVendorAllHandler.cls</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>External Vendor Rate Change</name>
+    <style>none</style>
+    <subject>{!Preferred_Vendor_Request__c.PICO_ID__c} External Vendor Rate Change</subject>
+    <textOnly>Dear {!Preferred_Vendor_Request__c.DRE_Point_of_Contact__c},
+
+There is a rate type change for a preferred vendor in an approval process. As a result, your request for the following preferred vendor and project has been *rejected*.
+
+To view the *Request Form*, please go to {!Preferred_Vendor_Request__c.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

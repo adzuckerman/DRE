@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-Post-Training-15&amp;16Feb-2017</name>
+    <style>none</style>
+    <subject>Doctor Evidence-Post-training survey</subject>
+    <textOnly>*|Doctor Evidence- After training follow up|*
+
+Dear {!Contact.Name},
+
+Thank you for attending our basic training session. Below, please find a copy of the DRE Library Quick Start Guide and the Introductory Training Slides used during the training session.
+
+You each now have access to the Doctor Evidence DOC Library packages for Cardiovascular, Diabetes, Established Medicines, Immunology, and Multiple Sclerosis. An email from support@doctorevidence.com has been sent to you with your login credentials for the link. Note that you may change your password once you have logged in for the first time. To launch the platform, navigate to: Doctor Evidence Platform Launch: https://docdata.doctorevidence.com/
+
+To initiate a project with DRE, please complete this brief form: https://reports.doctorevidence.com/pages/Client/ServiceProject.aspx.
+
+We value your feedback, so please take a few minutes to complete a brief https://www.surveymonkey.com/r/DZCHMQD survey.
+On behalf of the Doctor Evidence Team, we are looking forward to a fruitful collaboration in 2017 and beyond.
+
+Thank You,
+
+Toby Sayre
+Vice President, Consulting Services
+Doctor Evidence
+301 Arizona Ave Suite 301 Santa Monica CA 90401
+707.303.6759
+
+PowerPoint presentation 02-16-17
+
+DOC Library Quick start guide
+
+Click here to launch Doctor Evidence Platform</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

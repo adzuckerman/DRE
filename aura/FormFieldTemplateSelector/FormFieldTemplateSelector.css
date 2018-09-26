@@ -1,0 +1,59 @@
+.THIS .esign-document-select-modal {
+    width: 100% !important;
+    max-width: 80% !important;
+}
+
+.THIS .esign-document-title {
+    padding-left: 5px !important;
+}
+
+.THIS .esign-doc-search-icon {
+    float: right !important;
+    margin-top: -27px !important;
+}
+/*mobile*/
+.THIS .esign-mobile-element{
+    display: none !important;
+}
+
+@media (max-width: 700px){
+     .THIS .esign-desktop-tablet-element{
+        display: none!important;
+    }
+    .THIS .esign-mobile-checkpox-padding{
+        padding-left: 5px !important;
+    }
+    .THIS .esign-mobile-select-box-width{
+        width: 7% !important;
+    }
+    .THIS .esign-mobile-element{
+        display: block !important;
+    }
+    .THIS .esign-mobile-modal-container{
+        padding: 0 !important;
+        margin: 0 !important;
+        justify-content: baseline !important;
+    }
+    
+    .THIS .esign-mobile-modal-header{
+        height: 70px !important;
+        background-color: #f4f6f9 !important;
+        padding: 20px !important;
+    }
+    .THIS .esign-mobile-modal-content{
+        padding:0px !important;
+        height: 700px;
+        font-size: 14px;
+    }
+    .THIS .esign-document-select-modal {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .THIS .esign-tab-content-padding{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .THIS .esign-header-icon  svg{
+        fill: #54698d !important;
+    }
+}

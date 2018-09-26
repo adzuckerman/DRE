@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>follow up template to be adapted to individual client</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>blankletterhead</letterhead>
+    <name>DRE-Sanofi-Follow-up_LITMOS_Intro</name>
+    <style>freeForm</style>
+    <subject>Doctor Evidence-Sanofi Post Training</subject>
+    <textOnly>Dear {!Contact.FirstName},
+Thanks for completing the Doctor Evidence self-paced Introductory Course. Attached please find quick-guides to help you navigate DOC Search, as well as DOC Library.  You have access to the DRE platforms through Single-Sign-On at https://sanofi.doctorevidence.com.
+
+Please take a moment to browse the DRE publications, which will give you an idea of the breadth of our work and the capabilities of our services: http://drevidence.com/publications/.
+
+Please don’t hesitate to contact us at sanofi.support@doctorevidence.com if you need support in using the system, or would like training on DOC Data, Doctor Evidence&apos;s analytic platform. 
+
+Sincerely,
+
+Nancy Morgan
+Director of Learning and Development
+Doctor Evidence
+847.507.1451</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

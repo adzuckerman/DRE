@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Animal / Pre-clinical / Pathophysiological</fullName>
+        <default>false</default>
+        <label>Animal / Pre-clinical / Pathophysiological</label>
+    </customValue>
+    <customValue>
+        <fullName>Diagnosis</fullName>
+        <default>false</default>
+        <label>Diagnosis</label>
+    </customValue>
+    <customValue>
+        <fullName>Economics</fullName>
+        <default>false</default>
+        <label>Economics</label>
+    </customValue>
+    <customValue>
+        <fullName>Efficacy / Effectiveness / Safety, Comparative</fullName>
+        <default>false</default>
+        <label>Efficacy / Effectiveness / Safety, Comparative</label>
+    </customValue>
+    <customValue>
+        <fullName>Efficacy / Effectiveness / Safety, Non-Comparative</fullName>
+        <default>false</default>
+        <label>Efficacy / Effectiveness / Safety, Non-Comparative</label>
+    </customValue>
+    <customValue>
+        <fullName>Epidemiology</fullName>
+        <default>false</default>
+        <label>Epidemiology</label>
+    </customValue>
+    <customValue>
+        <fullName>Health Services Delivery</fullName>
+        <default>false</default>
+        <label>Health Services Delivery</label>
+    </customValue>
+    <customValue>
+        <fullName>Humanistic Burden</fullName>
+        <default>false</default>
+        <label>Humanistic Burden</label>
+    </customValue>
+    <customValue>
+        <fullName>Prognosis</fullName>
+        <default>false</default>
+        <label>Prognosis</label>
+    </customValue>
+    <customValue>
+        <fullName>Unclear/Need More Info</fullName>
+        <default>false</default>
+        <label>Unclear/Need More Info</label>
+    </customValue>
+    <masterLabel>Methodology Question Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

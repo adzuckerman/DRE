@@ -1,0 +1,3 @@
+<apex:page standardController="Project_Request__c" extensions="projectToRequest_EXT" action="{!convertRequestToProject}">
+    <apex:pageMessages />    
+</apex:page>

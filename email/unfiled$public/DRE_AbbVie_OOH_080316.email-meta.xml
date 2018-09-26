@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-AbbVie-OOH-080316</name>
+    <style>none</style>
+    <subject>Doctor Evidence - Abbvie Open Office Hours</subject>
+    <textOnly>*|Doctor Evidence - Abbvie Open Office Hours|*
+
+Dear ,
+We are pleased to invite you to the Doctor Evidence Open office hours: Wednesday,  August 3rd 12-2 CST,
+Room: US-LC-ABV1-3SW-205-03
+Doctor Evidence (DRE) is a specialty evidence-based medicine software platform and services company that is engaged with AbbVie to provide the most relevant medical evidence and related analytics to inform AbbVie’s clinical and care decisions in Immunology, HCV, and Endometriosis.
+Based on the audience, we will be sharing examples of the use cases below with our DOC Data platform.
+
+Endometriosis Use Case:
+Comparative efficacy and safety of Endometriosis treatments was demonstrated using DOC Library and DOC Data to create advisory board materials.
+
+Use Case Immunology Team:
+Long-term comparative efficacy across different treatment options in RA was illustrated via network meta-analysis using the DOC Data platform
+
+Use Case Immunology team:
+Benefit-risk assessment of established Psoriasis therapies is being performed using the DOC Data platform and network meta-analysis tool, to aid in benefit-risk assessment for pipeline molecules.
+
+Use Case HCV Team:
+Real world effectiveness and safety of HCV therapies was demonstrated by digitizing all available observational data on 2D and 3D in DOC Data platform and performing a series of meta-analyses to show overall effect across different patient populations.
+
+Looking forward to seeing you!
+Michiel de Bruin
+Account Director, Client Solutions
+
+Click here to confirm your  attendance</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

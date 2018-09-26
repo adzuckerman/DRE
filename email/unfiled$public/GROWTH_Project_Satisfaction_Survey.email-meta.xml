@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>blankletterhead</letterhead>
+    <name>GROWTH-Project Satisfaction Survey-v1</name>
+    <style>freeForm</style>
+    <subject>GROWTH End of Project Satisfaction Questionnaire</subject>
+    <textOnly>Dear {!Contact.FirstName},
+As a valued client of Doctor Evidence, we’d like your feedback on your experience with the recently completed {!Case.Case_Name__c} project.
+
+Please take a moment to complete the following survey. Your comments are collected by someone unconnected to the project, and will be used in aggregate to help us improve the work we do with {!Account.Name}.
+
+
+
+Please take a minute to read the information below regarding the goals you set for this project:
+
+
+Project Question: {!Case.Problem__c}
+
+
+Expected Use: {!Case.Solution__c}
+
+
+
+Please take a couple of minutes to fill out this survey.
+
+
+
+
+
+Thank you,
+
+Doctor Evidence</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

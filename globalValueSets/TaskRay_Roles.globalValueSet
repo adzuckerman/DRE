@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Other (Not on Project Team)</fullName>
+        <default>false</default>
+        <label>Other (Not on Project Team)</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytics Lead</fullName>
+        <default>false</default>
+        <label>Analytics Lead</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytics Reviewer</fullName>
+        <default>false</default>
+        <label>Analytics Reviewer</label>
+    </customValue>
+    <customValue>
+        <fullName>Associate Account Director</fullName>
+        <default>false</default>
+        <label>Associate Account Director</label>
+    </customValue>
+    <customValue>
+        <fullName>Learning &amp; Development</fullName>
+        <default>false</default>
+        <label>Learning &amp; Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Librarian Lead</fullName>
+        <default>false</default>
+        <label>Librarian Lead</label>
+    </customValue>
+    <customValue>
+        <fullName>Methodologist</fullName>
+        <default>false</default>
+        <label>Methodologist</label>
+    </customValue>
+    <customValue>
+        <fullName>Ontology Lead</fullName>
+        <default>false</default>
+        <label>Ontology Lead</label>
+    </customValue>
+    <customValue>
+        <fullName>Operations Associate</fullName>
+        <default>false</default>
+        <label>Operations Associate</label>
+    </customValue>
+    <customValue>
+        <fullName>Principal Consultant</fullName>
+        <default>false</default>
+        <label>Principal Consultant</label>
+    </customValue>
+    <customValue>
+        <fullName>Project Manager</fullName>
+        <default>false</default>
+        <label>Project Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Sr. Clinical Data Specialist</fullName>
+        <default>false</default>
+        <label>Sr. Clinical Data Specialist</label>
+    </customValue>
+    <customValue>
+        <fullName>GH QMI</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GH QMI</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Integrity Team Lead</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Data Integrity Team Lead</label>
+    </customValue>
+    <customValue>
+        <fullName>Statistician</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Statistician</label>
+    </customValue>
+    <customValue>
+        <fullName>Chief Medical Officer</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chief Medical Officer</label>
+    </customValue>
+    <customValue>
+        <fullName>Head of Library Operations</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Head of Library Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>VP Consulting Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>VP Consulting Services</label>
+    </customValue>
+    <customValue>
+        <fullName>VP Client Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>VP Client Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Head of Clinical Ops and Data Integrity</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Head of Clinical Ops and Data Integrity</label>
+    </customValue>
+    <customValue>
+        <fullName>Ontology Manager</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ontology Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Meth Rep #3</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Meth Rep #3</label>
+    </customValue>
+    <masterLabel>TaskRay Roles</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

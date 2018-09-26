@@ -1,0 +1,49 @@
+<apex:page standardController="Power_BI__c" extensions="ReportController">
+	<apex:includeScript value="{!$Resource.powerbiJS}" />
+
+	<apex:outputPanel rendered="{!NOT(hasToken)}">
+        <div style="width:100; text-align: center; padding-top: 200px; font-size: 200%;">
+            <a href='{!authUrl}'>Login</a>
+        </div>
+	</apex:outputPanel>
+
+	<apex:form >
+		<apex:actionFunction name="refreshAccessToken" action="{!refreshAccessToken}"/>
+	</apex:form>
+	<div id="myReport" style="height: 800px;"/>
+
+	<script>
+		let accessToken = '{!PBIaccess_token}';
+		let refreshToken = '{!PBIrefresh_token}';
+		let expires_on = '{!PBIexpires_on}';
+		let validateResult = '{!validateResult}';
+		let selectedGroup = '{!groupId}'; 
+		let selectedReport = '{!reportId}'; 
+
+		window.onload = function() {
+
+			let expiresOn = parseInt(expires_on);
+			let currentTime = Date.now()/1000;
+        
+            if((expiresOn - 2000) <= currentTime)
+				refreshAccessToken();
+			
+			var filter = {
+			  $schema: "http://powerbi.com/product/schema#basic"
+			};
+
+			var embedConfiguration = {
+				type: 'report',
+				embedUrl: 'https://app.powerbi.com/reportEmbed?reportId=' + selectedReport + '&groupId=' + selectedGroup,
+				settings: {
+							filterPaneEnabled: true,
+							navContentPaneEnabled: true
+						  }
+			};
+
+			powerbi.accessToken = '{!PBIaccess_token}';
+			var element = document.getElementById('myReport');
+			var report = powerbi.embed(element, embedConfiguration);
+		}
+	</script>
+</apex:page>

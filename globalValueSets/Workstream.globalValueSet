@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>N/A</fullName>
+        <default>false</default>
+        <label>N/A</label>
+    </customValue>
+    <customValue>
+        <fullName>Praluent CV Events</fullName>
+        <default>false</default>
+        <label>Praluent CV Events</label>
+    </customValue>
+    <customValue>
+        <fullName>Clopidogrel Publications</fullName>
+        <default>false</default>
+        <label>Clopidogrel Publications</label>
+    </customValue>
+    <customValue>
+        <fullName>Lovenox Health Canada Indication</fullName>
+        <default>false</default>
+        <label>Lovenox Health Canada Indication</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Centricity--Depression</fullName>
+        <default>false</default>
+        <label>Patient Centricity--Depression</label>
+    </customValue>
+    <customValue>
+        <fullName>Enoxaparin Publications</fullName>
+        <default>false</default>
+        <label>Enoxaparin Publications</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC South Africa Strategy</fullName>
+        <default>false</default>
+        <label>CHC South Africa Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Sanofi Master Library</fullName>
+        <default>false</default>
+        <label>Sanofi Master Library</label>
+    </customValue>
+    <customValue>
+        <fullName>Irbesartan Publications</fullName>
+        <default>false</default>
+        <label>Irbesartan Publications</label>
+    </customValue>
+    <customValue>
+        <fullName>Toujeo Medical Strategy</fullName>
+        <default>false</default>
+        <label>Toujeo Medical Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Centricity--Patient Engagement</fullName>
+        <default>false</default>
+        <label>Patient Centricity--Patient Engagement</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Centricity--Devices</fullName>
+        <default>false</default>
+        <label>Patient Centricity--Devices</label>
+    </customValue>
+    <customValue>
+        <fullName>HEVA HTA Submissions</fullName>
+        <default>false</default>
+        <label>HEVA HTA Submissions</label>
+    </customValue>
+    <customValue>
+        <fullName>Sotagliflozin Library Updates</fullName>
+        <default>false</default>
+        <label>Sotagliflozin Library Updates</label>
+    </customValue>
+    <customValue>
+        <fullName>NICE Guideline Replication</fullName>
+        <default>false</default>
+        <label>NICE Guideline Replication</label>
+    </customValue>
+    <customValue>
+        <fullName>Diabetes China Strategy</fullName>
+        <default>false</default>
+        <label>Diabetes China Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Diabetes Literature Updates</fullName>
+        <default>false</default>
+        <label>Diabetes Literature Updates</label>
+    </customValue>
+    <customValue>
+        <fullName>Hypoglycemia South Africa Strategy</fullName>
+        <default>false</default>
+        <label>Hypoglycemia South Africa Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Lighthouse Soliqua RWE Pilot</fullName>
+        <default>false</default>
+        <label>Lighthouse Soliqua RWE Pilot</label>
+    </customValue>
+    <customValue>
+        <fullName>Soliqua Trial Strategy</fullName>
+        <default>false</default>
+        <label>Soliqua Trial Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Centricity--Flu Vaccine and Diabetes</fullName>
+        <default>false</default>
+        <label>Patient Centricity--Flu Vaccine and Diabetes</label>
+    </customValue>
+    <customValue>
+        <fullName>Glargine Cancer Risk</fullName>
+        <default>false</default>
+        <label>Glargine Cancer Risk</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Centricity--Nurse Interventions</fullName>
+        <default>false</default>
+        <label>Patient Centricity--Nurse Interventions</label>
+    </customValue>
+    <customValue>
+        <fullName>HEVA Soliqua Strategy</fullName>
+        <default>false</default>
+        <label>HEVA Soliqua Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmacovigilance euDKA</fullName>
+        <default>false</default>
+        <label>Pharmacovigilance euDKA</label>
+    </customValue>
+    <customValue>
+        <fullName>HEVA Obesity Strategy</fullName>
+        <default>false</default>
+        <label>HEVA Obesity Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Sotagliflozin HTA Submissions</fullName>
+        <default>false</default>
+        <label>Sotagliflozin HTA Submissions</label>
+    </customValue>
+    <customValue>
+        <fullName>HEVA Hypoglycemia Strategy</fullName>
+        <default>false</default>
+        <label>HEVA Hypoglycemia Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Diabetes Algeria Strategy</fullName>
+        <default>false</default>
+        <label>Diabetes Algeria Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Genzyme Library</fullName>
+        <default>false</default>
+        <label>Genzyme Library</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Centricity--Rare Diseases</fullName>
+        <default>false</default>
+        <label>Patient Centricity--Rare Diseases</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC Claims Week</fullName>
+        <default>false</default>
+        <label>CHC Claims Week</label>
+    </customValue>
+    <customValue>
+        <fullName>Synvisc Strategy</fullName>
+        <default>false</default>
+        <label>Synvisc Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Centricity--Sleep</fullName>
+        <default>false</default>
+        <label>Patient Centricity--Sleep</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC Probiotics</fullName>
+        <default>false</default>
+        <label>CHC Probiotics</label>
+    </customValue>
+    <customValue>
+        <fullName>GEM Literature Updates</fullName>
+        <default>false</default>
+        <label>GEM Literature Updates</label>
+    </customValue>
+    <customValue>
+        <fullName>Archaogen BD Strategy</fullName>
+        <default>false</default>
+        <label>Archaogen BD Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC OTC Switch</fullName>
+        <default>false</default>
+        <label>CHC OTC Switch</label>
+    </customValue>
+    <customValue>
+        <fullName>Valproate Safety</fullName>
+        <default>false</default>
+        <label>Valproate Safety</label>
+    </customValue>
+    <customValue>
+        <fullName>Pipeline Visualizations</fullName>
+        <default>false</default>
+        <label>Pipeline Visualizations</label>
+    </customValue>
+    <customValue>
+        <fullName>Sevelamer Canada Strategy</fullName>
+        <default>false</default>
+        <label>Sevelamer Canada Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC Allergies</fullName>
+        <default>false</default>
+        <label>CHC Allergies</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC Heartburn</fullName>
+        <default>false</default>
+        <label>CHC Heartburn</label>
+    </customValue>
+    <customValue>
+        <fullName>OA Trial Strategy</fullName>
+        <default>false</default>
+        <label>OA Trial Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Spiramycin FDA Submission</fullName>
+        <default>false</default>
+        <label>Spiramycin FDA Submission</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC Vitamins</fullName>
+        <default>false</default>
+        <label>CHC Vitamins</label>
+    </customValue>
+    <customValue>
+        <fullName>Eligard Canada Strategy</fullName>
+        <default>false</default>
+        <label>Eligard Canada Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC Canada Strategy</fullName>
+        <default>false</default>
+        <label>CHC Canada Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Metamizole Safety</fullName>
+        <default>false</default>
+        <label>Metamizole Safety</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada Medical Information</fullName>
+        <default>false</default>
+        <label>Canada Medical Information</label>
+    </customValue>
+    <customValue>
+        <fullName>Valproate Depression Strategy</fullName>
+        <default>false</default>
+        <label>Valproate Depression Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Asthma Trial Strategy</fullName>
+        <default>false</default>
+        <label>Asthma Trial Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>CHC Laxatives</fullName>
+        <default>false</default>
+        <label>CHC Laxatives</label>
+    </customValue>
+    <customValue>
+        <fullName>Dupilumab HTA Submissions</fullName>
+        <default>false</default>
+        <label>Dupilumab HTA Submissions</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical--Immunology Safety</fullName>
+        <default>false</default>
+        <label>Medical--Immunology Safety</label>
+    </customValue>
+    <customValue>
+        <fullName>COPD Trial Strategy</fullName>
+        <default>false</default>
+        <label>COPD Trial Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>IPF Trial Strategy</fullName>
+        <default>false</default>
+        <label>IPF Trial Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Immunology--IO Strategy</fullName>
+        <default>false</default>
+        <label>Immunology--IO Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Dupilumab Strategy</fullName>
+        <default>false</default>
+        <label>Dupilumab Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>MS South Africa Strategy</fullName>
+        <default>false</default>
+        <label>MS South Africa Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>RWE GLEM Workshop</fullName>
+        <default>false</default>
+        <label>RWE GLEM Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>MS Literature Updates</fullName>
+        <default>false</default>
+        <label>MS Literature Updates</label>
+    </customValue>
+    <customValue>
+        <fullName>Lighthouse MS RWE Pilot</fullName>
+        <default>false</default>
+        <label>Lighthouse MS RWE Pilot</label>
+    </customValue>
+    <customValue>
+        <fullName>MS Trial Strategy</fullName>
+        <default>false</default>
+        <label>MS Trial Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Rare Diseases Strategy</fullName>
+        <default>false</default>
+        <label>Rare Diseases Strategy</label>
+    </customValue>
+    <customValue>
+        <fullName>Diabetes RWE Modeling</fullName>
+        <default>false</default>
+        <label>Diabetes RWE Modeling</label>
+    </customValue>
+    <customValue>
+        <fullName>NSCLC</fullName>
+        <default>false</default>
+        <label>NSCLC</label>
+    </customValue>
+    <customValue>
+        <fullName>SCHNC</fullName>
+        <default>false</default>
+        <label>SCHNC</label>
+    </customValue>
+    <customValue>
+        <fullName>Urothelial Carcinoma</fullName>
+        <default>false</default>
+        <label>Urothelial Carcinoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Pancreatic Cancer</fullName>
+        <default>false</default>
+        <label>Pancreatic Cancer</label>
+    </customValue>
+    <masterLabel>Workstream</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

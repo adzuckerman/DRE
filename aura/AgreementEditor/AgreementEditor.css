@@ -1,0 +1,1245 @@
+.THIS .esign-role-section {
+    padding-left: 3% !important;
+}
+
+.THIS .esign-invert-icon {
+    -webkit-filter:invert(30%);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');
+    filter:invert(65%);
+    height: 20px;
+}
+
+.THIS .esign-invert-full-icon {
+    -webkit-filter:invert(60%);
+    filter:invert(60%);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');
+}
+
+.THIS .esign-small-icon {
+    height: 20px !important;
+    padding-bottom: 5px !important;
+}
+
+.THIS .esign-calendar-icon {
+    height: 15px !important;
+}
+
+.THIS .esign-recipient-padding {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.THIS .esign-month-panel {
+    padding-bottom: 8px;
+}
+
+.THIS .esign-year-panel {
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.THIS .esign-lds-invert-icon {
+    -webkit-filter:invert(60%);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');
+    filter:invert(60%);
+    height: 40px;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+}
+
+.THIS .esign-page-header-padding{
+    padding-left: 0px !important;
+    padding-top: 5px !important;
+}
+
+.THIS .esign-icon-markup {
+    background-color: transparent !important;
+}
+
+.THIS .esign-large-p-bottom {
+    padding-bottom: 250px !important;
+}
+
+.THIS .esign-inverse-m-top {
+    margin-top: -35px;
+}
+
+.THIS .esign-modal-small {
+    width: 20%;
+    padding-left: 40%;
+}
+
+.THIS .esign-modal-events {
+    z-index: 9;
+}
+
+.THIS .esign--size--2-of-1 {
+    width: 110% !important;
+}
+
+.THIS .esign-input-icon {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.THIS .esign-force-left {
+    margin-right: 0px !important;
+}
+
+.THIS .esign-grabber-elem {
+    width: 5px;
+}
+
+.THIS .esign-picklist-label-small {
+    min-width: 140px !important;
+}
+
+.THIS .esign-picklist-label-very-small {
+    min-width: 100px !important;
+}
+
+.THIS .esign-picklist-label-small {
+    width: 110px !important;
+}
+
+.THIS .esign-input-readonly {
+    /*opacity: 0.5;*/
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.THIS .esign-input-readonly-lighter {
+    background-color: rgba(0, 0, 0, 0.01) !important;
+}
+
+.THIS .role-highlight {
+    background-color: rgba(0, 0, 100, 0.1) !important;
+}
+
+.THIS .esign-role-type-display-icon {
+    position: relative !important;
+    width: 40px !important;
+    height: 40px !important;
+    padding-left: 0px !important;
+    padding-top: 5px !important;
+}
+
+.THIS .esign-role-type-icon {
+    padding-bottom: 5px;
+}
+
+.THIS .esign-recipient-input {
+    width: 38%;
+}
+
+.THIS .esign-lookup-icon {
+    margin-left: -10px;
+}
+
+.THIS .esign-center-label {
+    padding-left: 50%;
+    margin-top: 5%;
+}
+
+.THIS .esign-menu-align-left {
+    margin-right: 95px;
+}
+
+.THIS .esign-recipient-value {
+    padding-left: 10px !important;
+    /* margin-right: -88px !important;*/
+}
+
+.THIS .esign-lookup-value {
+    width: 60% !important;
+}
+
+.THIS .esign-date-year-select-down {
+    margin-right: -20px;
+}
+
+.THIS .esign-date-year-select-down {
+    border: 0px solid #d8dde6 !important;
+}
+
+.THIS .esign-radio-inline {
+    display: inline !important;
+}
+
+.THIS .esign-radio-label {
+    padding-left: 5px;
+}
+
+.THIS .esign-radio-align-right {
+    float: right;
+}
+
+.THIS .esign-last-form-element {
+    width: 100% !important;
+}
+
+.THIS .esign-picklist-small-value {
+    padding-right: 15px !important;
+}
+
+.THIS .esign-picklist-small-expand {
+    margin-right: -20px !important;
+}
+
+.THIS .esign-disabled-section {
+    background-color: #e0e5ee !important;
+    border-color: #a8b7c7 !important;
+    cursor: not-allowed !important;
+    -webkit-user-select: none !important;
+}
+
+.THIS .esign-current-signer-icon {
+    fill: #0079bc !important;
+}
+
+.THIS .esign-complete-signer-icon {
+    fill: #7dc37d !important;
+}
+
+.THIS .esign-recipient-address-item {
+    padding-left: 25px !important;
+}
+
+.THIS .esign-replace-signer-icon {
+    fill: #5469A2 !important;
+}
+
+.THIS .esign-button-group-down-icon {
+    fill: grey !important;
+    height: 16px !important;
+    padding-right: 8px !important;
+}
+
+.THIS .esign-button-group-menu {
+    width: 100px !important;
+    margin-top: 37px !important;
+    margin-left: 120px !important;
+}
+
+.THIS .esign-button-group-menu-safari {
+    width: 100px !important;
+    margin-top: 37px !important;
+    margin-left: -8% !important;
+}
+
+.THIS .esign-button-group-menu-ff {
+    width: 100px !important;
+    margin-top: 37px !important;
+    margin-left: 13% !important;
+}
+
+.THIS .esign-button-group-menu-item {
+    color: #0070d2 !important;
+}
+
+.THIS .esign-signed-image-panel {
+    height: 500px !important;
+    overflow-y: scroll !important;
+    white-space: nowrap !important;
+    padding-right: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.THIS .esign-signed-image {
+    border: 1px solid rgb(216, 221, 230);
+}
+
+.THIS .esign-top-buttons {
+    /*margin-right: 10% !important;*/
+}
+
+.THIS .esign-docked-form-header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background: rgb(244, 246, 249);
+    box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.16);
+    z-index: 8000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    padding: .5rem 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.THIS .esign-footer {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    align-self: flex-end;
+    flex: 0 0 auto;
+    background: rgb(244, 246, 249);
+    box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+    text-align: center;
+}
+
+.THIS .sticky-panel {
+    position: fixed !important;
+    top: 0 !important;
+    width: 83% !important;
+    padding-right: 55px;
+    margin-top: 0px;
+    max-width: 100% !important;
+    z-index: 1000 !important;
+}
+
+.THIS .esign-recipient-type-input {
+    padding-right: 10px !important;
+}
+
+.THIS .esign-recipient-email-type {
+    padding-right: 10px !important;
+    margin-top: 6px !important;
+    padding-left: 7px !important;
+    position: absolute !important;
+}
+.THIS .esign-recipient-email-input {
+    padding-left: 65px !important;
+}
+
+.THIS .esign-menu-narrow {
+    max-width: 237px !important;
+}
+
+.THIS .esign-menu-dialog {
+    min-width: 286px !important;
+}
+.THIS .esign-date-picker-right {
+    margin-left: 0px !important;
+}
+
+.THIS .esign-event-icon {
+    padding-left: 4px !important;
+    padding-top: 4px !important;
+}
+
+.THIS .esign-signed-document-link {
+    padding-left: 10px !important;
+}
+
+.THIS .esign-hybrid-recipient-row {
+    margin: 0px !important;
+}
+
+.THIS .esign-hybrid-recipient-between {
+    border-bottom-width: 0px !important;
+    border-top-width: 0px !important;
+}
+
+.THIS .esign-hybrid-recipient-last {
+    border-top-width: 0px !important;
+}
+
+.THIS .esign-lookup-moz {
+    /*width: -moz-max-content !important; */
+    margin-right: -40px !important;
+}
+
+.THIS .esign-hybrid-recipient-first {
+    border-bottom-width: 0px !important;
+    margin-top: 8px !important;
+}
+
+.THIS .esign-tooltip {
+    position: absolute !important;
+}
+
+.THIS .esign-tooltip-move-left {
+    margin-left: -50px !important;
+}
+
+.THIS .esign-field-error {
+    position: absolute !important;
+    background-color: #b30000 !important;
+    color: white !important;
+}
+
+.THIS .esign-error-panel {
+    border-color: #b30000 !important;
+}
+
+.THIS .esign-error-message {
+    color: #b30000 !important;
+}
+
+.THIS .esign-picklist-button {
+    height: 37px !important;
+}
+
+.THIS .esign-document-row {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.THIS .esign-tiny-picklist-button {
+    width: 35% !important;    
+}
+
+.THIS .esign-small-picklist-button {
+    width: 140px !important;    
+}
+
+.THIS .esign-tiny-picklist-icon {
+    margin-right: -20px !important;
+}
+
+.THIS .esign-narrow-right-input {
+    position: absolute !important;
+    width: 62% !important;
+    margin-left: 10px !important;
+}
+
+.THIS .esign-wide-email {
+    min-width: 250px !important;
+}
+
+.THIS .esign-inline-title {
+    margin-left: 30% !important;
+}
+
+.THIS .esign-lookup-button-panel {
+    max-width: 130px !important;
+}
+
+.THIS .esign-opp-lookup-button-panel {
+    max-width: 140px !important;
+}
+
+.THIS .esign-lookup-form-control {
+    min-width: 105% !important;
+}
+
+.THIS .esign-top-object-lookup-section {
+    min-width: 100% !important;
+    padding-right: 5px;
+}
+
+.THIS .esign-object-lookup-section {
+    min-width: 97% !important;
+    
+}
+
+.THIS .esign-margin-left-custom-lookups {
+    margin-left: 40%;
+}
+
+.THIS .esign-padding-top-custom-lookups {
+    padding-top: 10px;
+}
+
+.THIS .esign-right-center-icon {
+    margin-top: 0px !important;
+}
+
+.THIS .esign-input-wider {
+    max-width: 310px !important;
+    min-width: 110px !important;
+}
+
+.THIS .esign-left-sigtype {
+    position: absolute;
+    max-width: 50%;
+}
+
+.THIS .esign-search-results-label {
+    padding-left: 15px !important;
+    padding-bottom: 5px !important;
+}
+
+.THIS .esign-search-rec-panel {
+    min-width: -webkit-fill-available;
+    min-width: -moz-available;
+    margin-right: 0px ;
+}
+
+.THIS .esign-scrollable-list {
+    overflow-y: scroll !important;
+    height: 300px !important;
+}
+
+.THIS .esign-picklist-label-custom {
+    width: 100% !important;
+    padding-right: 0px !important;
+}
+
+.THIS .esign-regular-border-color {
+    border-color: rgb(216, 221, 230) !important;
+}
+
+.THIS .esign-email-background {
+    background-color: #95aec5 !important;
+}
+
+.THIS .esign-input-extend {
+    background-color: white;
+    color: #16325c;
+    border: 1px solid #d8dde6;
+    border-radius: 4px;
+    width: 100%;
+    -webkit-transition: border 0.1s linear, background-color 0.1s linear;
+    transition: border 0.1s linear, background-color 0.1s linear;
+    display: inline-block;
+    padding: 0 16px 0 12px;
+    line-height: 34px;
+    min-height: calc(34px + 2px);
+    border: 1px solid #d8dde6;
+}
+
+.THIS .esign-text-center-align {
+    text-align: center;
+}
+
+.THIS .esign-width-fit {
+    width: 120% !important;
+}
+
+.THIS .esign-picklist-label-custom {
+    width: 100% !important;
+}
+
+.THIS .esign-regular-border-color {
+    border-color: rgb(216, 221, 230) !important;
+}
+
+.THIS .esign-scrollable-y {
+    height: 150px;
+    overflow-y: none;
+}
+.THIS .esign-recipient-sender {
+    margin-left: 20px;
+}
+
+
+
+.THIS .esign-docked-form-footer {
+    position: fixed;
+    bottom:0;left:0;
+    width:100%;
+    background:rgb(244, 246, 249);
+    box-shadow:0 -2px 2px 0 rgba(0, 0, 0, 0.16);
+    z-index:8000;
+    
+    -webkit-box-pack:end;
+    padding:.5rem 0;
+}
+
+.THIS .esign-agreement-options-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.THIS .esign-modal-width {
+    width: fit-content !important;
+    width: -moz-fit-content !important;
+}
+
+.THIS .esign-contact-lookup{
+    font-size: 10px;
+}
+
+.THIS .esign-password-error-align{
+    margin-top: 10px;
+}
+.THIS .esign-external-password-error-align{
+    margin-top: 10px;
+}
+
+/*This stylying used for fixing the regression caused by saleforce slds-button--brand.*/
+.THIS .esign-send-button-styling{
+    color: white !important;
+    background-color: #0070d2 !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+/*Tablet greater than medium screen*/
+@media (min-width: 768px) {
+    .THIS .esign-obj-col--padded {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .THIS .esign-recipient-security-input-max {
+        max-width: 155px;
+    }
+    .THIS .esign-right-col-padding{
+        padding-right: 5px ;
+    }
+    .THIS .esign-left-col-padding{
+        padding-left: 5px ;
+    }
+
+}
+
+/*Tablet less than medium screen*/
+@media (max-width: 768px) {
+    
+    .THIS .esign-recipient-security-input {
+        max-width: 40px;
+        min-width: 40px;
+    }
+    .THIS .esign-right-col-padding{
+        padding-right: 0px !important;
+    }
+    .THIS .esign-left-col-padding{
+        padding-left: 0px !important;
+    }
+    .THIS .esign-search-rec-panel {
+        min-width: 20px ;
+    }
+    .THIS .esign-title-width{
+        max-width:650px !important;
+    }
+    .THIS .esign-recipient-name-email-button{
+        width: 250px;
+    }
+    .THIS .esign-i-sign-padding{
+        padding-right:110px;
+    }
+    .THIS .esign-top-object-lookup-section {
+        min-width: auto !important;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 600px){
+    .THIS .esign-links-width {
+        min-width: 250px;
+    }
+    .THIS .esign-checkbox-width {
+        max-width: 50%;
+    }
+}
+
+/*Tablet less that large screen*/
+@media (max-width: 1023px) {
+    .THIS .medium-hide {
+        display:none;
+    }
+    
+    .THIS .slds-form-element {
+        margin-right: 10px !important;
+    }
+    
+    .THIS .esign-medium-file-container {
+        background-color: #f4f6f9;
+    }
+    .THIS .esign-medium-file {
+        background-color: white;
+    }
+    .THIS .esign-footer--margin {
+        margin-bottom: 80px 
+    }
+    .THIS .sticky-panel {
+        position: relative !important;
+    }
+    .THIS .esign-grabber-elem {
+        width: 2px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px;
+    }
+    .THIS .esign-send-button {
+        margin-right: 25px;
+    }
+    
+    .THIS .esign-recipient-sender {
+        margin-left: 15px;
+    }
+    /*.THIS .esign-order-padding {
+    padding-right: 2px;
+    padding-left: 2px;
+    width: 30px;
+    }*/
+    .THIS .esign-role-section1 {
+        width: 90px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+    
+    .THIS .esign-security-input {
+        width: 10px;
+        padding-right: 0px;
+    }
+    
+    .THIS .esign-tab-margins {
+         margin-top: 10px !important;
+         margin-bottom: 10px !important;
+    }
+    
+    .THIS div.esign-recipient-row-margin-right {
+        margin-right: 10px;
+    }
+    
+    .THIS .esign-rec-lookup-size {
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+    .THIS .esign-flex-no-shrink {
+        flex-shrink: 0;
+    }
+    
+    .THIS .esign-flex-shrink {
+        flex-shrink: 6;
+        flex-grow: 6;
+    }
+    .THIS .esign-links-width {
+        min-width: 230px;
+    }
+    
+    .THIS .esign-flex-container {
+        -ms-box-orient: horizontal;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+    }
+    .THIS .esign-right-col-padding{
+        padding-right: 5px ;
+    }
+    .THIS .esign-left-col-padding{
+        padding-left: 5px;
+    }
+    .THIS .esign-date-picker-right {
+        margin-left: 0% !important;
+        left: 25% !important;
+    }
+    .THIS .esign-recipient-email-visibility-with-name{
+        color: rgb(29, 30, 31);
+        font-size: 10px;
+    }
+    .THIS .esign-recipient-name-email-button{
+        line-height: 18px !important;
+    }
+    .THIS .esign-search-rec-panel {
+        margin-right: 95px;
+    }
+    
+    .THIS .esign-p-top--x-small {
+        padding-top: 8px;
+    }
+ 
+    .THIS .esign-details-margin {
+        margin-top: 5px !important;
+    }
+    .THIS .esign-title-width{
+        max-width: 650px !important;
+    }
+    .THIS .esign-recipient-row-inline{
+        display:none !important;
+    }
+}
+/* Rcipient Row starts breaking below 1240px. So for handling it I am adding below media query  
+    BUG ID for this: DCSI-7935
+*/
+@media (max-width:1240px) and (min-width:1024px) {
+    .THIS .esign-recipient-name-email-button{
+        line-height: 18px !important;
+    }
+    .THIS .esign-recipient-email-visibility-with-name{
+        /*display: block;*/
+        color: rgb(29, 30, 31) !important;
+        font-size: 10px !important;
+    }
+    .THIS .esign-recipient-row-inline{
+        display:none !important;
+    }
+    /*For fixing bug DCSI-7930*/
+    .THIS .esign-radio-button-margin{
+        margin-right: 2px !important;
+    }
+}
+@media (min-width: 1240px){
+    .THIS .esign-recipient-email-visibility-with-name{
+        display: none;
+    }
+}
+/*DeskTop */
+@media (min-width: 1024px) {
+    .THIS .esign-file-header {
+        padding-top: 40px;
+    }
+    .THIS .esign-col--padded {
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    
+    .THIS .esign-email--margin {
+        margin-left: 16px;
+    }
+    
+    .THIS .sticky-panel {
+        position: fixed !important;
+    }
+    .THIS .esign-role-section {
+        padding-left: 3% !important;
+    }
+    .THIS .esign-recipient-padding {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .THIS .esign-search-panel {
+        min-width: 300px !important;
+        margin-right: -70px !important;
+    }
+    
+    .THIS .esign-recipient-security-input {
+        max-width: 150px;
+        min-width: 100px;
+    }
+    
+    .THIS .esign-message-margin {
+        margin-left: 21px;
+    }
+    
+    .THIS .esign-identity-margin {
+        margin-right: 0px !important;
+    }
+    
+        
+    .THIS .esign-details-margin {
+        margin-top: 32px !important;
+    }
+
+    .THIS .esign-right-col-padding{
+        padding-right: 7.5px;
+    }
+    .THIS .esign-left-col-padding{
+        padding-left: 7.5px;
+    }
+    .THIS .esign-radio-label{
+        padding-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .THIS .esign-recipient-security-input-max {
+        width: 155px;
+    }
+    .THIS .esign-menu-full {
+        width: max-content !important;
+        width: intrinsic !important;
+    }
+    .THIS .esign-recipient-email-size {
+        min-width: 500px;
+    }
+
+    .THIS .esign-dropdown {
+        overflow:hidden !important;
+        max-height: 300px !important;
+    }
+
+    .THIS esign-internal-password-error {
+        margin-left: -40% !important;
+        margin-top: 6% !important;
+    }
+
+
+    .THIS esign-external-password-error {
+        margin-left: -40% !important;
+        margin-top: 6% !important;
+    }
+}
+
+/*Mobile related changes*/
+.THIS .esign-mobile-element{
+    display: none !important;
+}
+.THIS .esign-recipient-order-width {
+    width: 50px !important;        
+}
+.THIS .esign-recipient-feature-button{
+    display: none !important;
+}
+.THIS .esign-recipient-feature-icon {
+    display: none !important;
+}
+
+/*.THIS .esign-mobile-modal-content{
+    display: none;
+}*/
+.THIS .esign-mobile-modal-footer{
+    display: none;
+}
+.THIS .esign-mobile-footer{
+    display: none !important;
+}   
+/* .THIS .esign-host-signing{
+text-align: right;
+margin-left: auto;
+margin-right: auto;
+}
+*/
+/*mobile*/
+@media (max-width: 560px){
+    /* Unhide all the hidden  block in desktop*/
+    .THIS .esign-recipient-feature-button{
+        display: block !important;
+    }
+    .THIS .esign-recipient-feature-icon {
+        display: block !important;
+    }
+    /*****************************************/
+    
+    /* Hide Destop realted display */
+    .THIS .esign-desktop-modal-content{
+        display: none;
+    }
+    .THIS .esign-mobile-modal-content{
+        display: block;
+    }
+    .THIS .esign-mobile-modal-footer{
+        display: block;
+    }
+    .THIS .esign-desktop-tablet-element{
+        display: none!important;
+    }
+    .THIS .esign-mobile-element{
+        display: block !important;
+    }
+    .THIS .esign-z-index-for-pop-up-window{
+        z-index : 1 !important;
+        position: fixed !important;
+        /*width: 98% !important;*/
+        /*bottom:0 !important;
+        overflow: hidden !important;*/
+    }
+    .THIS .esign-page-header-padding{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .THIS .sticky-panel {
+        position: fixed !important;
+        top: 0 !important;
+        width: 100% !important;
+        padding-right: 0px;
+        margin-top: 0px;
+        max-width: 100% !important;
+        z-index: 1000 !important;
+    }
+    .THIS .esign-title-width{
+        max-width:300px !important;
+    }
+    /**width for signing order option***/
+    .THIS .esign-width-fit {
+        width: 100% !important;
+    }
+    /*****************************************/
+    .THIS .esign-grabber-section-inline{
+        display: none;
+    }
+    
+    .THIS .esign-small-icon {
+    	height: 18px !important;
+    	padding-bottom: 5px !important;
+	}
+    /*Used for the display of backgroud and height of recipient row */
+    .THIS .esign-recipient-row-background{
+        background-color: white;
+    }
+    .THIS .esign-recipient-row{
+     height:40px;   
+    }
+    /*************************************************/
+    /*    Used for the display of recipient order    */
+    /* Overriding the value defined for large screen.*/
+    .THIS .esign-recipient-order-width {
+        width: 20px !important;        
+    }
+    .THIS .slds-form-element {
+        margin-top: 5px !important;
+        margin-right: 0px !important;
+        margin-bottom: 5px !important;
+    }
+    /* Used for setting the width of recipient order and making the border white.*/
+    .THIS .esign-recipient-order-section-inline{
+        border: #ffffff !important;
+        width:20px !important;
+        padding-left: 0px !important;
+    }
+    
+    .THIS .esign-role-section1{
+        padding:0px;
+        border: #ffffff !important;
+    }
+    .THIS .esign-lookup-section{
+        border: #ffffff !important;
+    }
+    
+    /*********************************************************/
+    /********************************************/
+    
+    /* Used for setting the size of role selector.*/
+    .THIS .esign-role-section1{
+        /*margin-right: 2px !important;
+        margin-left: 2px !important;*/
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        width: 40px !important;
+    }
+    
+    /* Used for setting the size of role icon.*/
+    .THIS .esign-role-type-display-icon {
+        position: relative !important;
+        width: 23px !important;
+        height: 40px !important;
+        padding-left: 0px !important;
+        padding-top: 5px !important;
+    }
+    .THIS .esign-recipient-type-picker-padding{
+        padding-top:5px;
+        padding-left: 5px !important;
+    }
+    /* Used for the lookup of recipient order.*/
+    .THIS .esign-input-wider {
+        width: 75% !important;
+        height:37px;
+        margin-left: 0px !important;
+    }
+    .THIS .esign-recipient-lookup-margin{
+        margin-top: 10px!important;
+    }
+    .THIS .esign-recipient-name-email-button{
+        width: 150px!important;
+    }
+    .THIS .esign-recipient-type-button-margin{
+        margin-top: 7px!important;
+    }
+    .THIS .esign-recipient-delete-button {
+        padding-top: 7px !important; 
+    }
+
+    /**/
+    
+    /* Used for removing the space at the right end of recipient row.*/
+    .THIS .esign-recipient-security-input {
+        min-width: 0px;
+    }
+    /**********************************************/
+    
+    /* Used for collapsing the features and replacing it with threedots icons.*/
+    .THIS .esign-recipient-feature-button{
+        display: block;
+        max-width:30px;
+        margin-left: 2px !important;
+        margin-right: 4px !important;
+        margin-top: 5px !important;
+    }
+    
+    .THIS .esign-notification {
+        position:fixed;
+        bottom:0px;
+        width:100%;
+        z-index:105;
+        text-align:center;
+        font-weight:normal;
+        font-size:14px;
+        color:white;
+        background-color: green;
+        padding:5px;
+    }
+    .THIS .esign-notification span.dismiss {
+        border:2px solid #FFF;
+        padding:0 5px;
+        cursor:pointer;
+        float:right;
+        margin-right:10px;
+    }
+    .THIS .esign-notification a {
+        color:white;
+        text-decoration:none;
+        font-weight:bold
+    }
+    
+    .THIS .esign-recipient-feature-icon {
+        display: block;
+        max-width:24px;
+        margin-left: 2px !important;
+        margin-right: 0px !important;
+        fill: #232526 !important;
+    }
+    
+    .THIS .esign-collapsed-features-items{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 7px;
+        padding-top: 7px;
+        padding-left: 20px;
+    }
+    .THIS .esign-collapsed-features-button {
+        font-size: 18px !important;
+        /*color: #54698d !important;*/
+    }
+    .THIS .esign-delete-recipient-text-color{
+        color: rgb(194, 57, 52)!important;
+    }
+    .THIS .esign-collapsed-features-button:hover {
+        width: 100% !important;
+        background-color: rgba(128, 128, 128, 0.35) !important;
+        transition: 0.3s ease-in-out !important;
+    }
+    /* Mobile modal styling*/
+    .THIS .esign-modal-small {
+        padding: 0 !important;
+        width: auto !important;
+    }
+    .THIS .esign-mobile-modal-container{
+        padding: 0 !important;
+        margin: 0 !important;
+        justify-content: baseline !important;
+        height: 100vh !important;
+    }
+    
+    .THIS .esign-mobile-modal-header{
+        height: 70px !important;
+        background-color: #f4f6f9 !important;
+        padding: 20px !important;
+    }
+    .THIS .esign-mobile-modal-content{
+        height: 700px;
+    }
+    .THIS .esign-header-text{
+        font-size: 16px!important;
+        text-align: left !important; 
+        padding-top: 13px !important;
+    }
+    .THIS .esign-mobile-modal-picker-content{
+        height: 100vh;
+        opacity: 0.7;
+    }
+    .THIS .esign-mobile-modal-picker-footer{
+        height: 220px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+   
+    .THIS .esign-header-icon  svg{
+        fill: #54698d !important;
+    }
+    .THIS .esign-header-icon{
+        padding: 0 !important;
+    }
+    .THIS .esign-temp-verification-check svg{
+        fill: #54698d !important;
+    }
+    .THIS .esign-mobile-modal-content{
+        padding-left: 9px !important;
+        padding-right: 11px !important;
+        padding-top: 12px !important;
+        font-size: 16px;
+        color: #54698d;
+    }
+    .THIS .esign-mobile-verification-padding{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+    .THIS .esign-menu-dialog {
+        width: 100% !important;
+    }
+    .THIS .esign-password-identification-button{
+        padding-top: 30px;
+        padding-left: 45px;
+        padding-right: 25px;
+    }
+    .THIS .esign-identification-ok-button{
+        width:100px;
+        margin-left:17px;
+    }
+    .THIS .esign-identification-back-button{
+        width:100px;
+    }
+    /***************************Modal Styling Ends Here*************************/
+    
+    /* Used for displaying the picker at the bottom. When clicked on threedots icon of collapsed feature.*/
+    .THIS .esign-collapsed-feature-list {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /******************************************************/
+    
+    /*Used for the display of Add-recipient, Add-me, Add-cc, just below recipient row.*/
+    .THIS .esign-recipient-button{
+        width:37%;
+        text-align: left;
+    }
+    .THIS .esign-add-me-button{
+        width:25%;
+        text-align: center;
+    }
+    .THIS .esign-add-cc-button{
+        width:25%;
+        text-align: right;
+    }
+    /*****************************************************/
+    
+    /* Used for the diplay of agreement option section */
+    .THIS .esign-box-padding{
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+    }
+    .THIS .esign-password-label-font-size{
+        font-size: 12px !important;
+    } 
+    .THIS .esign-calender-picker {
+        padding-left: 2px !important;
+        /*padding-right: 150px !important;*/
+    }
+    .THIS .esign-reminder-option{
+        padding-left: 2px !important;
+        /*padding-right: 100px !important;*/
+    }
+    .THIS .esign-language-option{
+        padding-left: 2px !important;
+        /*padding-right: 60px !important;*/
+    }
+    .THIS .esign-date-picker-right {
+        margin-left: 60px !important;
+    }
+    .THIS .esign-top-object-lookup-section {
+        padding-right: 6px !important;
+        min-width: 90% !important;
+    }
+   /********************************************************/
+    .THIS .esign-mobile-footer{
+        display: block !important;
+    }
+    
+    .THIS .esign-tablet-footer{
+        display: none !important;
+    }
+    .THIS .esign-preview-checkbox-mobile{
+        display: block !important;
+        margin-top: 0px !important; 
+        margin-left: 0 !important;
+        padding-bottom: 25px !important;
+    }
+    .THIS .esign-send-button-section{
+        padding-right: 20px;
+    }
+    .THIS .esign-send-button {
+        margin-right: 0px;
+        width: 75% !important;
+    }
+    .THIS .esign-footer--margin {
+        margin-bottom: 10px !important;
+    }
+    .THIS .touch .modal .modal-body {
+    max-height: none; 
+  }
+    .THIS .esign-iphone-modal-position{
+        position: fixed !important;
+    }
+}

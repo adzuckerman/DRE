@@ -1,0 +1,7 @@
+<aura:event type="COMPONENT" description="Event fired when one or more documents is selected for attachment to an agreement.">
+    <aura:attribute name="isCanceled" type="Boolean" default="false" />
+    <aura:attribute name="uploadedFileWrappers" type="echosign_dev1.UploadedFileWrapper" />
+    <aura:attribute name="selectedContentWrappers" type="echosign_dev1.ContentWrapper" />
+    <aura:attribute name="selectedDocumentWrappers" type="echosign_dev1.DocumentWrapper" />
+    <aura:attribute name="selectedLibraryDocumentWrappers" type="echosign_dev1.LibraryDocumentFileWrapper" />
+</aura:event>

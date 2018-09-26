@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email alert template for when a project is archived manually</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Project Archived Manually</name>
+    <style>none</style>
+    <subject>Project/Sub-Project &quot;{!TASKRAY__Project__c.Name}&quot; has been archived</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AcademyHealth-Abstract-Presentation</name>
+    <style>none</style>
+    <subject>Medical terminology technology for Evidence Synthesis at Academy Health Meeting</subject>
+    <textOnly>*|Medical Terminology technology for Evidence Synthesis at Academy Health Meeting|*
+
+Medical Terminology technology for Evidence Synthesis at Academy Health Meeting
+
+Patient-Centered Research: New Tools and Methods
+
+For more than 30 years, AcademyHealth&apos;s Annual Research Meeting (ARM) has been the premier forum for health services research, where more than 2,400 attendees gather to discuss health policy implications, sharpen research methods, and network with colleagues from around the world.
+Doctor Evidence will be providing an interactive innovations showcase on the ontology management system as part of the session entitled
+Patient-Centered Research: New Tools and Methods.
+
+Monday, June 27, 2016 at  4:45 PM
+Hynes Convention Center – Room 309
+At the Innovations Station on Patient-Centered Research: New Tools and Methods
+
+Read Abstract</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email blast sent to HE</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HE-DRE-USC-0316</name>
+    <style>none</style>
+    <subject>Who&apos;s leading digital health?</subject>
+    <textOnly>Whose leading digital health?
+
+DOCTOR EVIDENCE PARTNERS WITH USC
+
+Doctor Evidence recently joined the University of Southern California Keck School of Medicine’s Center for Body Computing as a foundational partner in the Virtual Care Clinic (VCC) for creation of digital health solutions.The VCC’s technology-enabled, patient-centered model of healthcare education, diagnosis and delivery will leverage Doctor Evidence’s capabilities to identify, extract and synthesize medical evidence to improve patient outcomes.
+
+Access to the pinpoint information provided by Doctor Evidence’s trusted data from peer-reviewed journals used to develop guidelines will enable patients and physicians to better manage an individual’s healthcare in real-time. The company’s integrated data is based on peer reviewed content, clinical trials, conference proceedings, abstracts, epidemiology data and drug labelling data.  Additionally, the Doctor Evidence technology platform synthesizes and characterizes the medical evidence needed to understand and make clear recommendations tailored to patients and their personal profiles.
+
+Digital Health is a rapidly emerging factor in consumer driven healthcare. The VCC makes available any medical doctor or expert to anyone with a smartphone by harnessing cutting-edge technologies and creative solutions developed at the renown USC Institute of Creative Technologies (ICT) in Playa Vista, the heart of Los Angeles&apos; digital zone known as Silicon Beach.
+
+“We are transforming digital health by enabling patients and their caregivers to have the highest degree of confidence in the care recommendations they get from emerging connected care solutions,” says Bob Battista, CEO. &quot;Our ability to deliver high-quality and patient- relative evidence on demand to support and validate recommendations for care is critical to establishing confidence, quality and safety in digital applications. Dr. Leslie Saxon at USC had been leading the national agenda for digital health for over 8 years, when she started the Center for Whole Body Computing. We are now bringing the Center’s formidable experience and reputation to our health society partners, like the American College of Cardiology, the American Heart Association and medical manufacturer brand teams that are looking to take a leading position in digital health initiatives on behalf of their disease states.”
+
+Press Release
+
+About Doctor Evidence:  Doctor Evidence, LLC, founded in 2004, is a leader in technological solutions for evidence-based medicine with a mission to provide stakeholders across the healthcare ecosystem with the most timely and relevant medical evidence and related analytics to make and inform the best clinical decisions. Using its proprietary Digital Outcome Conversion (DOC™) platform and its rigorous methodology of extracting clinical data from static sources, including published studies and epidemiological databases, Doctor Evidence creates dynamic, scientifically-curated data hubs which are pooled and analyzed to support the development of evidence-based clinical practice guideline recommendations, systematic reviews, and health technology assessments
+Learn about our products</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

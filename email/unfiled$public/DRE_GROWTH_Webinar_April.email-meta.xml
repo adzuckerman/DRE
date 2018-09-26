@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>GROWTH webinar announcement</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-GROWTH-Webinar-April</name>
+    <style>none</style>
+    <subject>You are invited to attend Doctor Evidence-GROWTH&apos;s Webinar</subject>
+    <textOnly>*|Living Guidelines: How Guideline Developers Will Keep Them Current|*
+
+DOCTOR EVIDENCE Webinar: April 27, 2016
+at 12:00 pm Pacific | 2:00 pm Central | 3:00 pm Eastern
+- Click here to register now! -
+
+A presentation and discussion by Mike Cheung, Chief Science Officer, KDIGO, and Sandra Zelman Lewis, PhD, Chief Guidelines Officer, Doctor Evidence, co-authors of the recent publication: “Recommendations for kidney disease guideline updating: a report by the KDIGO Methods Committee”
+
+LEARN:
+
+How and why KDIGO Methods Committee formed and functioned
+Why living guidelines are important
+Pain points for the development of living guidelines
+How technologies can support the updating of guidelines
+
+As new research is published and the underlying evidence base evolves, updated guidelines are critical for ensuring the quality, consistency and cost-effectiveness of care. Healthcare practices, system resources, formularies, and policies should be revised to provide the most effective and safe interventions, services, and processes of care. The currency and transparency of both the evidence and the methods used to create and update guidelines is essential to both patient and physician adherence to guidelines. Keeping guidelines up to date in an efficient, transparent, and timely manner is challenging, and requires ongoing surveillance, expert judgment, and the ability to conduct updates when needed. This webinar, presented by authors of the recent KDIGO (Kidney Disease: Improving Global Outcomes) Methods Committee paper recommending how to change procedures to support living guidelines. Dr. Lewis also helped to develop the American College of Chest Physicians’ methods for living CHEST guidelines. Whilst the authors discuss the KDIGO (Kidney Disease: Improving Global Outcomes) and  CHEST methods, the recommendations proposed are relevant to all guideline developers. How to identify explicit criteria to trigger updates, formulate PICO-focused literature updates, gather input from all relevant stakeholders, collaborate with other guideline development entities, use systematic and transparent approaches to extract and analyze the data, and employing GRADE to assess quality of evidence, will be presented.
+
+The webinar will include the potential for creating ‘living guidelines’ by using state-of-the-art technological platforms to provide literature surveillance from multiple databases; sophisticated search filters using variable PICO elements; and data extraction and analyses for end-to-end support for guideline updates. These technologies can improve the quality, efficiency, and transparency of guideline updates, as well as create a more dynamic approach to guideline formation and updating.
+(Please click below to read the publication)
+
+Recommendations for kidney disease guideline updating: a report by the KDIGO Methods Committee
+
+Sponsored by Doctor Evidence’s GROWTH, an initiative committed to facilitating trustworthy clinical practice guidelines (CPGs) using evidence-based techniques.
+Learn about Doctor Evidence&apos;s products
+
+DOCTOR EVIDENCE Webinar: April 27, 2016
+at 12:00 pm Pacific | 2:00 pm Central | 3:00 pm Eastern
+- Click here to register now! -
+
+Facebook
+
+Twitter
+
+Website
+
+Email</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

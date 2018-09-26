@@ -1,0 +1,11 @@
+A critical roadblock, issue or challenge has been identified related to the following case:
+
+Case No.: {!Case.CaseNumber}
+Case Name: {!Case.Case_Name__c}
+Critical Issue Description:
+
+{!Case.Critical_Issue_Description__c}
+
+{!Case.Link}
+
+Please work to resolve this issue and upon resolution uncheck the Critical Issue field.

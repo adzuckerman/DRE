@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>DRE_Logo</letterhead>
+    <name>Reduce Pricing v1</name>
+    <style>freeForm</style>
+    <subject>Doctor Evidence offers reduced pricing</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+
+
+As announced at the recent G-I-N 2016 Conference in Philadelphia and in this press release, Doctor Evidence is pleased to offer reduced platform fees to the {!Account.Name}. Annual platform licensing is now $15,000 USD (some restrictions apply), and includes free and unlimited access to all pre-digitized studies (now numbering over 20,000).
+
+
+GROWTH Research licensing (available at a slightly higher price) will allow {!Account.Name} to offer access to the technologies and digital studies as a member benefit for all of your members.
+
+
+
+Please let us know if you would like a revised formal proposal reflecting these special pricing rates, or if you would like to schedule a full demo for you and your team.
+
+
+
+This offer is valid for 2017 pricing if contracted by December 31, 2016.
+
+
+We look forward to hearing from you.
+
+
+
+{!User.FirstName} {!User.LastName}
+
+{!User.Title}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

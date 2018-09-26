@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-GROWTH-newsletter-sep-2017</name>
+    <style>none</style>
+    <subject>Producing guidelines for public health emergencies</subject>
+    <textOnly>*|Producing guidelines for public health emergencies|*
+
+Dear {!Contact.FirstName},
+Below are some of the highlights from our company during the past month and the new GROWTH Commentary.
+
+2017 GROWTH COMMENTARY SERIES: GLOBAL HEALTH (PART 4)  Producing guidelines for public health emergencies By Mauricio Ferri, MD, MS, and Susan L Norris, MD, MPH, MS
+Consultant to the WHO Guidelines Review Committee Secretariat and Secretary of the WHO Guidelines Review Committee
+
+The World Health Organization’s (WHO) mandate to prevent and minimize the consequences of natural disasters, disease outbreaks, conflict, and other humanitarian crises demands the production of evidence-informed guidelines to support activities on disaster risk management, resilience building, and preparedness for public health emergencies. Evidence-informed guidelines are powerful…
+
+Continue reading
+
+October Commentary Global Health Series Part 5:
+Innovative Presentations of Socioeconomic and Health Data By Anna Rosling-Rönnlund of Gapminder
+
+ASCO DOC Search  Perform a comprehensive search of American Society of Clinical Oncology (ASCO) meeting abstracts. Multi-year research will be possible, as meeting abstracts for the past 20 years and all future years will eventually be included in the repository. This technology will also allow researchers to follow the flow of research from abstracts to published papers, as well as any post-hoc or follow-up studies that use the same study population. Tracing these linkages avoids the issue of double counting patients, and allows for detailed searches and complex analyses.
+Read the press release
+
+Announcing the publication of the new 2016 Global Burden of Disease data The Lancet: Global Burden of Disease study provides latest estimates for worldwide causes of death, disease and illness
+
+The Global Burden of Disease study (GBD) has just published its latest global estimates (based on 2016 data) for the state of the world’s health in The Lancet issue published on September 14, 2017. The GBD is the only annual, comprehensive, peer-reviewed assessment of global trends in health, providing global and national estimates on more than 330 diseases, causes of death, and injuries in 195 countries and territories worldwide.
+Highlights from the study:
+
+Poor diet is associated with 10.3 million deaths, and tobacco caused 7.1 million deaths.
+In 2016, 1.1 billion people were living with mental health and substance use disorders and major depressive disorders ranked in the top 10 causes of ill health in all but 4 countries worldwide.
+Non-communicable diseases caused 72% of all deaths worldwide, with ischaemic heart disease the leading cause of premature mortality in most regions.
+Deaths from firearms, conflict, and terrorism have increased globally.
+Several exemplar countries – including Ethiopia, the Maldives, Nepal, Niger, Portugal, and Peru – had higher life expectancies than would be expected based on their levels of development alone.
+
+Doctor Evidence is a proud partner and collaborator of the Institute for Health Metrics and Evaluation.
+Contact us for more information.
+
+Conferences
+
+Doctor Evidence presented at the
+Global Evidence Summit
+Cape Town, South Africa
+Joël Kuiper, Senior Data Scientist, Doctor Evidence
+with co-presenters Iain Marshall and Byron Wallace
+
+Topics presented:
+
+RobotReviewer: a tool for automating evidence synthesis —development and evaluation to date, and future plans
+Using machine learning to automate data extraction from RCTs — hands on with RobotReviewer
+
+Automatic evidence synthesis and machine learning are built into Doctor Evidence technologies, including the newest platform, DOC Search. These capabilities ensure the pristine data extraction that has made Doctor Evidence the leader in systematic review technology. For more information, click here... The Global Evidence Summit was intended as an inter-sectoral and multi-disciplinary event exchanging ideas about how to best generate, summarize, and communicate evidence to inform policy and practice. The 5 conference hosting organizations gathered input from a multitude of perspectives including education, social and criminal justice, environmental and gender health, health systems, and clinical care and practice.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>NHANES-SC</name>
+    <style>none</style>
+    <subject>DRE: NHANES</subject>
+    <textOnly>DRE-NHANES
+
+DOC NHANES
+
+Access and agreegate data via a user-friendly interface.
+
+DOC NHANES offers online, user-friendly access to the rich content of the Center for Disease Control (CDC) National Health and Nutrition Examination Survey (NHANES).
+
+OUR SERVICES
+
+Conforms to NHANES Analytic Guidelines by selecting the appropriate weight variables and appending (combining multiple survey cycles) as well as merging (combining multiple datasets) automatically
+Provides break-down analysis by categories like demography, treatment or time period
+Calculates and plots prevalence, distribution, or continuous data (e.g. blood pressure, cholesterol level). Population estimates are also included in the form of “statements”
+Forecasts using linear or other regression models
+Outputs data in graphical and tabular format
+Exports raw data from graphical and tabular reports for additional operations elsewhere
+Outputs data in graphical and tabular format
+Exports raw data from graphical and tabular reports for additional operations elsewhere
+Retrieves variables quickly using its auto-complete search functionality
+
+DOC NHANES offers online, user-friendly access to the rich data content of NHANES that can be accessed anytime and anywhere. The interface displays straightforward pull-screens, keyword searches, and the option to export raw data. Users can employ the Variable Browser for easy search and assessment and variables within the NHANES data set.
+
+Lean more
+
+Visit our website and request a free demo
+
+GET STARTED</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,3 @@
+Please review Closed Won Deal for {!Opportunity.Account} {!Opportunity.Name}.
+
+Please log in and approve: {!Opportunity.Link}

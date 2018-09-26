@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Advertisement</fullName>
+        <default>false</default>
+        <label>Advertisement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Employee Referral</fullName>
+        <default>false</default>
+        <label>Employee Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>External Referral</fullName>
+        <default>false</default>
+        <label>External Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Public Relations</fullName>
+        <default>false</default>
+        <label>Public Relations</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Board Referral</fullName>
+        <default>false</default>
+        <label>Board Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Seminar - Partner</fullName>
+        <default>false</default>
+        <label>Seminar - Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trade Show</fullName>
+        <default>false</default>
+        <label>Trade Show</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Word of mouth</fullName>
+        <default>false</default>
+        <label>Word of mouth</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar 8/31 4:00pm edt</fullName>
+        <default>false</default>
+        <label>Webinar 8/31 4:00pm edt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar 8/31 12:00pm edt</fullName>
+        <default>false</default>
+        <label>Webinar 8/31 12:00pm edt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar - SERVE</fullName>
+        <default>false</default>
+        <label>Webinar - SERVE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NHANES Webinar 10/17 3:00pm est</fullName>
+        <default>false</default>
+        <label>NHANES Webinar 10/17 3:00pm est</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NHANES Webinar 10/17 11:00am est</fullName>
+        <default>false</default>
+        <label>NHANES Webinar 10/17 11:00am est</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NHANES Webinar 10/19 3:00pm est</fullName>
+        <default>false</default>
+        <label>NHANES Webinar 10/19 3:00pm est</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NHANES Webinar 10/19 11:00am est</fullName>
+        <default>false</default>
+        <label>NHANES Webinar 10/19 11:00am est</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NHANES Trial Run 10/13/11</fullName>
+        <default>false</default>
+        <label>NHANES Trial Run 10/13/11</label>
+    </standardValue>
+</StandardValueSet>

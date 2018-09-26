@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>DRE_Logo</letterhead>
+    <name>ACC-2016</name>
+    <style>freeForm</style>
+    <subject>DRE at ACC.16</subject>
+    <textOnly>Dear {!Contact.Name},
+
+Doctor Evidence has significant cardiovascular database assets and it is the proud platform used for guidelines development for the American College of Cardiology and the American Heart Association.
+Members of out team will be at the American College of Cardiology&apos;s 65th Annual Scientific Session &amp; Expo and will be happy to meet with you at your company&apos;s booth. Please let me know your availability during the conference.
+
+
+Sincerely,
+
+{!User.FirstName} {!User.LastName},
+{!User.Title}
+Doctor Evidence
+{!User.Phone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

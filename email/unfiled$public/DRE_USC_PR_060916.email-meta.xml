@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>DRE-USC press release</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-USC-PR-060916</name>
+    <style>none</style>
+    <subject>Nation&apos;s First Digital Health Fellowship</subject>
+    <textOnly>DRE-USC-PR
+
+Doctor Evidence Provides Grant for University of Southern California&apos;s
+Digital Fellow on
+Advancing Digital Health Solutions
+
+Nation’s First Digital Health Fellowship Created at
+USC Center for Body Computing
+
+SANTA MONICA, Calif., June 9, 2016 /PRNewswire/ -- Doctor Evidence, a leading evidence-based medicine company, announced today it will provide a grant to the University of Southern California (USC) Center for Body Computing (CBC) for the nation&apos;s first   Digital Health Fellowship in the U.S.  The 1-year Fellowship is a first of its kind digital health research and clinical training program developed at the CBC. Dr. Andrew Keibel, who is a recent graduate of the Keck Medicine of USC&apos;s Internal Medicine Residency Program, was chosen as the first Fellow. He will work on the CBC&apos;s innovative solutions for improving doctor/patient shared decision-making and collaboration through connected care health applications using data provided by Doctor Evidence (DRE).
+
+&quot;For the last 12 years, we&apos;ve led the country&apos;s top university-based research and strategic development partnerships for digital health, wearable tech and medical apps, so creating a Fellowship specifically for digital health was a natural next step,&quot; said Leslie Saxon, MD, founder and executive director of the USC CBC and the Fellowship supervisor. &quot;We&apos;re grateful to the generous support provided by Doctor Evidence to make this happen.&quot;
+
+Read Doctor Evidence&apos;s press release</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

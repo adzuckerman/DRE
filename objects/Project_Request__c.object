@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>Associate_Account_Director__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Associate Account Director</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Project_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Better_Inform_Clinical_Development__c</fullName>
+        <description>Better inform clinical development for more appropriate development.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Better inform clinical development for more appropriate development.</inlineHelpText>
+        <label>Better Inform Clinical Development</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Shape clinical development strategy</fullName>
+                    <default>false</default>
+                    <label>Shape clinical development strategy</label>
+                </value>
+                <value>
+                    <fullName>Novel target discovery</fullName>
+                    <default>false</default>
+                    <label>Novel target discovery</label>
+                </value>
+                <value>
+                    <fullName>Target unmet need</fullName>
+                    <default>false</default>
+                    <label>Target unmet need</label>
+                </value>
+                <value>
+                    <fullName>Reduced study size &amp; duration</fullName>
+                    <default>false</default>
+                    <label>Reduced study size &amp; duration</label>
+                </value>
+                <value>
+                    <fullName>Optimized recruitment</fullName>
+                    <default>false</default>
+                    <label>Optimized recruitment</label>
+                </value>
+                <value>
+                    <fullName>Identify sub group of populations</fullName>
+                    <default>false</default>
+                    <label>Identify sub group of populations</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Comparison__c</fullName>
+        <externalId>false</externalId>
+        <label>Comparison</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corporate_Image__c</fullName>
+        <description>Corporate image for transversal contributions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Corporate image for transversal contributions.</inlineHelpText>
+        <label>Corporate Image</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Competitive advantage</fullName>
+                    <default>false</default>
+                    <label>Competitive advantage</label>
+                </value>
+                <value>
+                    <fullName>Scientific / tech leadership</fullName>
+                    <default>false</default>
+                    <label>Scientific / tech leadership</label>
+                </value>
+                <value>
+                    <fullName>Data driven company</fullName>
+                    <default>false</default>
+                    <label>Data driven company</label>
+                </value>
+                <value>
+                    <fullName>Ethics / transparency</fullName>
+                    <default>false</default>
+                    <label>Ethics / transparency</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Improved_Clinical_Trial_Success_Rates__c</fullName>
+        <description>Improved clinical trial success rates for more appropriate development.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Improved clinical trial success rates for more appropriate development.</inlineHelpText>
+        <label>Improved Clinical Trial Success Rates</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Higher % of responders</fullName>
+                    <default>false</default>
+                    <label>Higher % of responders</label>
+                </value>
+                <value>
+                    <fullName>Quicker response</fullName>
+                    <default>false</default>
+                    <label>Quicker response</label>
+                </value>
+                <value>
+                    <fullName>Better response magnitude</fullName>
+                    <default>false</default>
+                    <label>Better response magnitude</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Initiate_Because_of_DRE_Training__c</fullName>
+        <externalId>false</externalId>
+        <label>Initiate Because of DRE Training</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Intended_Stakeholder__c</fullName>
+        <externalId>false</externalId>
+        <label>Intended Stakeholder</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Intervention__c</fullName>
+        <externalId>false</externalId>
+        <label>Intervention</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Longer_Product_Lifetime__c</fullName>
+        <description>Longer product lifetime for better / sustained adoption.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Longer product lifetime for better / sustained adoption.</inlineHelpText>
+        <label>Longer Product Lifetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New indication</fullName>
+                    <default>false</default>
+                    <label>New indication</label>
+                </value>
+                <value>
+                    <fullName>Extension of indication</fullName>
+                    <default>false</default>
+                    <label>Extension of indication</label>
+                </value>
+                <value>
+                    <fullName>Sustaining reimbursement</fullName>
+                    <default>false</default>
+                    <label>Sustaining reimbursement</label>
+                </value>
+                <value>
+                    <fullName>RX to OTC conversion</fullName>
+                    <default>false</default>
+                    <label>RX to OTC conversion</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Medical_Empowerment__c</fullName>
+        <description>Medical empowerment for transversal contributions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Medical empowerment for transversal contributions.</inlineHelpText>
+        <label>Medical Empowerment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Improve local disease expertise</fullName>
+                    <default>false</default>
+                    <label>Improve local disease expertise</label>
+                </value>
+                <value>
+                    <fullName>Easy access to data</fullName>
+                    <default>false</default>
+                    <label>Easy access to data</label>
+                </value>
+                <value>
+                    <fullName>Better knowledge management</fullName>
+                    <default>false</default>
+                    <label>Better knowledge management</label>
+                </value>
+                <value>
+                    <fullName>New insights generation &amp; validation</fullName>
+                    <default>false</default>
+                    <label>New insights generation &amp; validation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Medical_Value_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Medical Value Description</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Methodology_Question_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Methodology Question Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Methodology_Question_Type</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>More_Appropriate_Access__c</fullName>
+        <description>More appropriate access.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>More appropriate access.</inlineHelpText>
+        <label>More Appropriate Access</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Speed up regulatory process</fullName>
+                    <default>false</default>
+                    <label>Speed up regulatory process</label>
+                </value>
+                <value>
+                    <fullName>Arguments to address local specificities</fullName>
+                    <default>false</default>
+                    <label>Arguments to address local specificities</label>
+                </value>
+                <value>
+                    <fullName>Opportunity sizing</fullName>
+                    <default>false</default>
+                    <label>Opportunity sizing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>More_Appropriate_Pricing__c</fullName>
+        <description>More appropriate pricing for more appropriate access.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>More appropriate pricing for more appropriate access.</inlineHelpText>
+        <label>More Appropriate Pricing</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Build cost model customized to local needs</fullName>
+                    <default>false</default>
+                    <label>Build cost model customized to local needs</label>
+                </value>
+                <value>
+                    <fullName>Identify sub-groups with higher cost</fullName>
+                    <default>false</default>
+                    <label>Identify sub-groups with higher cost</label>
+                </value>
+                <value>
+                    <fullName>Produce health economic model for local needs</fullName>
+                    <default>false</default>
+                    <label>Produce health economic model for local needs</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Number_of_Trainings__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Trainings</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0</fullName>
+                    <default>false</default>
+                    <label>0</label>
+                </value>
+                <value>
+                    <fullName>1+ Sessions</fullName>
+                    <default>false</default>
+                    <label>1+ Sessions</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Project Requests</relationshipLabel>
+        <relationshipName>Project_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Outcome__c</fullName>
+        <externalId>false</externalId>
+        <label>Outcome</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outputs_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Outputs Description</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Overall_Project_Satisfaction__c</fullName>
+        <externalId>false</externalId>
+        <label>Overall Project Satisfaction</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 - Unsatisfied</fullName>
+                    <default>false</default>
+                    <label>1 - Unsatisfied</label>
+                </value>
+                <value>
+                    <fullName>2 - No evaluation</fullName>
+                    <default>false</default>
+                    <label>2 - No evaluation</label>
+                </value>
+                <value>
+                    <fullName>3 - Satisfied</fullName>
+                    <default>false</default>
+                    <label>3 - Satisfied</label>
+                </value>
+                <value>
+                    <fullName>4 - Publication</fullName>
+                    <default>false</default>
+                    <label>4 - Publication</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Patient_Experience__c</fullName>
+        <description>Patient experience for transversal contributions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Patient experience for transversal contributions.</inlineHelpText>
+        <label>Patient Experience</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Generate feedbacks or patient insights</fullName>
+                    <default>false</default>
+                    <label>Generate feedbacks or patient insights</label>
+                </value>
+                <value>
+                    <fullName>Understand persistence / compliance drivers</fullName>
+                    <default>false</default>
+                    <label>Understand persistence / compliance drivers</label>
+                </value>
+                <value>
+                    <fullName>Patient centricity</fullName>
+                    <default>false</default>
+                    <label>Patient centricity</label>
+                </value>
+                <value>
+                    <fullName>Personalized medicine</fullName>
+                    <default>false</default>
+                    <label>Personalized medicine</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Population__c</fullName>
+        <externalId>false</externalId>
+        <label>Population</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Principal_Consultant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Principal Consultant</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Project_Requests1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Priority_Grade__c</fullName>
+        <externalId>false</externalId>
+        <label>Priority Grade</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Grade A</fullName>
+                    <default>false</default>
+                    <label>Grade A</label>
+                </value>
+                <value>
+                    <fullName>Grade B</fullName>
+                    <default>false</default>
+                    <label>Grade B</label>
+                </value>
+                <value>
+                    <fullName>Grade C</fullName>
+                    <default>false</default>
+                    <label>Grade C</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Problem__c</fullName>
+        <externalId>false</externalId>
+        <label>Problem</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Product_Claim__c</fullName>
+        <description>Product claim for better / sustained adoption.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product claim for better / sustained adoption.</inlineHelpText>
+        <label>Product Claim</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New effectiveness medical claims</fullName>
+                    <default>false</default>
+                    <label>New effectiveness medical claims</label>
+                </value>
+                <value>
+                    <fullName>New safety medical claims</fullName>
+                    <default>false</default>
+                    <label>New safety medical claims</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Product_Monitoring__c</fullName>
+        <description>Product monitoring for better / sustained adoption.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product monitoring for better / sustained adoption.</inlineHelpText>
+        <label>Product Monitoring</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Market penetration uptakes</fullName>
+                    <default>false</default>
+                    <label>Market penetration uptakes</label>
+                </value>
+                <value>
+                    <fullName>Prescription behaviors</fullName>
+                    <default>false</default>
+                    <label>Prescription behaviors</label>
+                </value>
+                <value>
+                    <fullName>Switches from/to competition</fullName>
+                    <default>false</default>
+                    <label>Switches from/to competition</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Project_Name__c</fullName>
+        <description>Project Name / PICO ID to be assigned for project acceptance.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Project Name / PICO ID to be assigned for project acceptance.</inlineHelpText>
+        <label>Project Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Objectives__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Objectives</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Project_Record_Created__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Project Record Created</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Project_Stakes__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Stakes</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Project_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 - Rapid Assessment</fullName>
+                    <default>false</default>
+                    <label>1 - Rapid Assessment</label>
+                </value>
+                <value>
+                    <fullName>2 - Bibliographic</fullName>
+                    <default>false</default>
+                    <label>2 - Bibliographic</label>
+                </value>
+                <value>
+                    <fullName>3 - Internal Strategy</fullName>
+                    <default>false</default>
+                    <label>3 - Internal Strategy</label>
+                </value>
+                <value>
+                    <fullName>4 - Potential Publication</fullName>
+                    <default>false</default>
+                    <label>4 - Potential Publication</label>
+                </value>
+                <value>
+                    <fullName>5 - HTA</fullName>
+                    <default>false</default>
+                    <label>5 - HTA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Question__c</fullName>
+        <externalId>false</externalId>
+        <label>Question</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Requested_Meeting_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Meeting Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Requester_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Requester Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Project Requests</relationshipLabel>
+        <relationshipName>Project_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Requester_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Requester Email</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requester_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Requester_Contact__r.FirstName</formula>
+        <label>Requester First Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requester_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Requester Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requester_s_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Requester's Comments</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Required_By_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Required By Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Scientific_Communications__c</fullName>
+        <description>Scientific communication for transversal contributions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scientific communication for transversal contributions.</inlineHelpText>
+        <label>Scientific Communications</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Increased transparency</fullName>
+                    <default>false</default>
+                    <label>Increased transparency</label>
+                </value>
+                <value>
+                    <fullName>Attractiveness to KOLs</fullName>
+                    <default>false</default>
+                    <label>Attractiveness to KOLs</label>
+                </value>
+                <value>
+                    <fullName>Responsiveness (to field team for example)</fullName>
+                    <default>false</default>
+                    <label>Responsiveness (to field team for example)</label>
+                </value>
+                <value>
+                    <fullName>Generated high impact factor article(s)</fullName>
+                    <default>false</default>
+                    <label>Generated high impact factor article(s)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Secondary_Project_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Project Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solution__c</fullName>
+        <externalId>false</externalId>
+        <label>Solution</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TaskRay_Project_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>TaskRay_Project__r.Id</formula>
+        <label>TaskRay Project Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TaskRay_Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>TaskRay Project link.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>TaskRay Project link.</inlineHelpText>
+        <label>TaskRay Project</label>
+        <referenceTo>TASKRAY__Project__c</referenceTo>
+        <relationshipLabel>Project Requests</relationshipLabel>
+        <relationshipName>Project_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Value</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Working_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Working Group</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Workstream__c</fullName>
+        <externalId>false</externalId>
+        <label>Workstream</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Workstream</valueSetName>
+        </valueSet>
+    </fields>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object created to receive client requests from the DOC Data portal.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <label>Project Request</label>
+    <nameField>
+        <displayFormat>PR-{00000}</displayFormat>
+        <label>Project Request Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Project Requests</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <validationRules>
+        <fullName>Requireds_Field_for_Project_Creation</fullName>
+        <active>true</active>
+        <errorConditionFormula>(
+ISBLANK(Project_Name__c) ||
+ISBLANK(Secondary_Project_Name__c) ||
+ISBLANK(Working_Group__c) ||
+ISBLANK(Opportunity__c) ||
+ISBLANK(Associate_Account_Director__c) ||
+ISBLANK(TEXT(Project_Type__c)) ||
+ISBLANK(Principal_Consultant__c) ||
+ISBLANK(TEXT(Priority_Grade__c)) ||
+ISBLANK(Methodology_Question_Type__c) ||
+ISBLANK(Question__c) ||
+ISBLANK(Population__c) ||
+ISBLANK(Intervention__c) ||
+ISBLANK(Comparison__c) ||
+ISBLANK(Outcome__c) ||
+ISBLANK(Problem__c) ||
+ISBLANK(Solution__c) ||
+ISBLANK(Value__c) ||
+ISBLANK(Requester_Contact__c) ||
+ISBLANK(Better_Inform_Clinical_Development__c) ||
+ISBLANK(Corporate_Image__c) ||
+ISBLANK(Improved_Clinical_Trial_Success_Rates__c) ||
+ISBLANK(TEXT(Initiate_Because_of_DRE_Training__c)) ||
+ISBLANK(Intended_Stakeholder__c) ||
+ISBLANK(Longer_Product_Lifetime__c) ||
+ISBLANK(Medical_Empowerment__c) ||
+ISBLANK(Medical_Value_Description__c) ||
+ISBLANK(More_Appropriate_Access__c) ||
+ISBLANK(More_Appropriate_Pricing__c) ||
+ISBLANK(TEXT(Number_of_Trainings__c)) ||
+ISBLANK(Outputs_Description__c) ||
+ISBLANK(Patient_Experience__c) ||
+ISBLANK(Product_Claim__c) ||
+ISBLANK(Product_Monitoring__c) ||
+ISBLANK(Project_Objectives__c) ||
+ISBLANK(Project_Stakes__c) ||
+ISBLANK(Requested_Meeting_Time__c) ||
+ISBLANK(Requester_Email__c) ||
+ISBLANK(Required_By_Date__c) ||
+ISBLANK(Scientific_Communications__c) ||
+ISBLANK(Requester_Contact__c) 
+) &amp;&amp; Project_Record_Created__c == true</errorConditionFormula>
+        <errorMessage>You cannot generate a project record unless you have completed all the fields on this request.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Twenty_Character_Minimum_Fields</fullName>
+        <active>false</active>
+        <description>Question, Problem, Solution, and Value fields cannot be fewer that 20 characters.</description>
+        <errorConditionFormula>$User.Id != '0050f000009IX1y' &amp;&amp; ( LEN(Question__c) &lt; 20 || LEN(Problem__c) &lt; 20 || LEN(Solution__c) &lt; 20 || LEN(Value__c) &lt; 20)</errorConditionFormula>
+        <errorMessage>Question, Problem, Solution, and Value fields cannot be fewer that 20 characters.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Generate_TaskRay_Project</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Generate TaskRay Project</masterLabel>
+        <openType>replace</openType>
+        <page>ProjectRequest_Generate_Project</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_Client_Feedback_Request</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Client Feedback Request</masterLabel>
+        <openType>noSidebar</openType>
+        <page>ClientFeedbackRequestedBtn</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

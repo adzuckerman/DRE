@@ -1,0 +1,100 @@
+.THIS .esign-document-select-modal {
+    width: 100% !important;
+    max-width: 80% !important;
+}
+
+.THIS .esign-document-title {
+    padding-left: 5px !important;
+}
+
+.THIS .esign-doc-search-icon {
+    float: right !important;
+    margin-top: -27px !important;
+}
+
+.THIS .esign-inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.THIS .esign-tab-selected-link {
+    color: #0070d2 !important;
+}
+
+/*mobile*/
+.THIS .esign-mobile-element{
+    display: none !important;
+}
+@media (max-width: 700px){
+    .THIS .esign-desktop-tablet-element{
+        display: none!important;
+    }
+    .THIS .esign-mobile-element{
+        display: block !important;
+    }
+    .THIS .esign-mobile-modal-container{
+        padding: 0 !important;
+        margin: 0 !important;
+        justify-content: baseline !important;
+    }
+    .THIS .esign-mobile-modal-header{
+        height: 70px !important;
+        background-color: #f4f6f9 !important;
+        padding: 20px !important;
+    }
+    .THIS .esign-mobile-modal-content{
+        height: 700px;
+        font-size: 14px;
+    }
+    .THIS .esign-mobile-verification-padding{
+        padding-bottom: 15px;
+        padding-top: 15px;
+        padding-left: 11px;
+        padding-right: 9px;
+    }
+    .THIS .esign-action-button{
+        width:120px;
+        margin-top: 20px;
+    }
+    .THIS .esign-line-height{
+        line-height: 60px;
+    }
+    .THIS .slds-table td{
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+    .THIS .slds-table tr{
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+    .THIS .esign-file-media-icon{
+        padding-top: 20px !important;
+        margin-right: 0px !important;
+    }
+    .THIS .slds-table {
+        font-size: 14px !important;
+    }
+    .THIS .esign-checkbox-column-width{
+        width: 7% !important;
+    }
+    .THIS .esign-name-column-width{
+        width: 60% !important;
+    }
+    .THIS .esign-date-column-width{
+        width: 30% !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .THIS .slds-icon--small{
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .THIS .esign-z-index-for-pop-up-window{
+        z-index : 1 !important;
+        position: "fixed";
+    }
+}

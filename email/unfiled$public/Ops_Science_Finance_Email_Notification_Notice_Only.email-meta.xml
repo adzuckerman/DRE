@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Ops 1-2, Science, and Finance Email Notification - for internal notice</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Ops Science Finance Email Notification - Notice Only</name>
+    <style>none</style>
+    <subject>{!TASKRAY__Project__c.Name} External Vendor Request</subject>
+    <textOnly>To Whom It May Concern:
+
+The following request for a preferred vendor was submitted for approval:
+
+To view the Request Form, please click here.
+https://cs65.salesforce.com/{!Preferred_Vendor_Request__c.Id}
+To view the Salesforce Opportunity, please click here.
+https://cs65.salesforce.com/{!Preferred_Vendor_Request__c.Opportunity_ID__c}
+
+Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

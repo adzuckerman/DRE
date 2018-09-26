@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Logo_1</letterhead>
+    <name>Guideline_GIN 2015</name>
+    <style>freeForm</style>
+    <subject>Which Technology Platform Do Global Guideline Societies Trust The Most?</subject>
+    <textOnly>Doctor Evidence has been selected by some of the leading guideline Societies, including the American College of Cardiology, American Heart Association, ASCO, ACCP (CHEST) and others to do the evidence reviews underlying their guidelines.  Reed Elsevier also uses the DRE platform for their evidence system to inform their market facing guidance products, like ClinicalKey.  DRE clients now enjoy using the fully integrated features of the R statistical modules, including the accepted model by NICE and CMS for indirect, network treatment comparisons using Bayesian methods. Please visit our GROWTH site and enjoy the commentaries written by some of the leading global policy advocates from the IOM and EBM community:
+
+Featured Commentary
+
+This month’s GROWTH Commentary is the final contribution to the 5-part series of commentaries reflecting on the past 4 years since the landmark Institute of Medicine (IOM, now the National Academy of Medicine) reports on Clinical Practice Guidelines We Can Trust and Finding What Works in Health Care: Standards for Systematic Reviews were published.
+
+In previous essays,
+
+Sheldon Greenfield, MD, as Chair of the first of these reports, launched this series by commenting on the state of guidelines and guideline development today.
+Mary Nix, MS, PMP, Staff Lead of the AHRQ National Guidelines Clearinghouse (NGC), discussed the NGC inclusion criteria that were revamped as a result of recommendations from the IOM report and how the revised criteria have impacted the submissions of guidelines.
+Tom Oliver, Guidelines Director at the American Society of Clinical Oncology, contemplated the two IOM reports and how they have impacted the work of guideline developers, specifically ASCO.
+Peg Ford, a leading consumer representative, addressed how the IOM reports affected patient engagement.
+Sally Morton, PhD, Vice Chair of the IOM report, concludes this series by reviewing how this report influenced the field of systematic reviews and guideline development: Reflecting on the Past 4 Years Since the IOM Established Standards for Systematic Reviews and Guidelines.
+
+The GROWTH Commentary is designed to be interactive.
+To post comments, login by following these simple steps:
+1. User name: enter your email address
+2. Password: enter the word &quot;commentaries&quot;
+
+If you were forwarded this email please follow the new “Register here” steps.
+
+Poster presentation:
+Integrating the Power of Technology into
+Healthcare System Redesigns for Quality and Patient Care Improvement
+September 21, 2015
+4 PM Eastern, Atrium Hall
+
+Guidelines International Network (G-I-N) conference
+
+Doctor Evidence Breakfast &amp; 2.0 Platform Showcase
+at G-I-N Conference 2015
+
+A Live Demonstration of Doctor Evidence&apos;s
+Technology Platforms for Evidence Reviews
+
+Friday, October 9, 2015
+7:15 am - 8:15 am
+Administratiezaal, Beurs van Berlage
+See this high quality, user-friendly, and complete solution to support Living Guidelines!
+
+For more information about the conference and to register,
+visit the conference website at http://www.gin2015.net/
+
+Guidelines International Network Oral presentation:
+Technologies That Improve Systematic Reviews: Rapid Reviews Lose Their Appeal
+October 9, 2015
+10:30 AM GMT+1:00, Room location: Graanbeurszaal
+
+Doctor Evidence GROWTH Reception
+Doctor Evidence will be hosting an exclusive wine &amp; dessert reception on Thursday, October 8, 2015 for current and pledged members of GROWTH Evidence and GROWTH Patients.
+Invitations will be sent soon.
+
+Featured Commentary
+
+Facebook
+
+Twitter
+
+Website
+
+Subscribe
+
+Contact Us</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

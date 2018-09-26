@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Opportunities.Monthly_Revenue_Schedules__r.Department_Revenue_Schedules__r$Id</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.Monthly_Revenue_Schedules__r$Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities.Monthly_Revenue_Schedules__r.Department_Revenue_Schedules__r$Costs__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.Monthly_Revenue_Schedules__r.Department_Revenue_Schedules__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.Monthly_Revenue_Schedules__r.Department_Revenue_Schedules__r$LastModifiedDate</field>
+    </columns>
+    <format>Tabular</format>
+    <name>January Cost Delete</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Opportunities_and_Cost__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Opportunities.Monthly_Revenue_Schedules__r$Date__c</dateColumn>
+        <endDate>2018-01-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-01-01</startDate>
+    </timeFrameFilter>
+</Report>

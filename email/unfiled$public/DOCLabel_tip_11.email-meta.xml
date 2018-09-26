@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DOCLabel-tip 11</name>
+    <style>none</style>
+    <subject>DOC Label Tip of the Month, “Set it and forget it” search!</subject>
+    <textOnly>DOC Label Feature*
+
+Dear DOC Label Subscriber,
+
+Every month we bring you a DOC Label Tip to help you get the most out of DOC Label. This month, we will show you how to set up an alert to receive an email notification any time an important change occurs in selected labeling information.
+
+Follow the steps below to establish your own “Set it and forget it” search! These features will help you save valuable time while ensuring that you never miss out on any updates to labels you choose to follow.
+
+1. Log into DOC Label and begin your search as usual.
+
+2. Click the “Save Search” button to save your search.
+
+3. Click the “Search” button to view the search window.
+
+4. Click the “Saved Search” tab to view your saved searches.
+
+5. Click the “Follow” button to follow this search and receive email notifications anytime a label that matches your search criteria is updated or added to the system. Click “Unfollow” to remove the search from these updates.
+
+Click here to set up a one-on-one session to address any questions you may have about DOC Label
+
+Ashwani Srivastava, MD
+DOC Label Associate, Client Solutions
+Doctor Evidence | Growth Evidence
+301 Arizona Avenue, Suite 301, Santa Monica, CA 90401
+p. 760-221-4845
+
+Forward
+
+Copyright © 2016 Doctor Evidence, LLC, All rights reserved.
+You are receiving this email because you are a DOC Library/ DOC Data Subscriber.
+
+Our mailing address is:
+Doctor Evidence, LLC
+301 Arizona Avenue, STE 301
+Santa Monica, CA 90401
+Add us to your address book
+
+Want to change how you receive these emails?
+You can update your preferences or unsubscribe from this list</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

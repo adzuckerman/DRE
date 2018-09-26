@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>DOC_Data_Configuration__c</fullName>
+        <externalId>false</externalId>
+        <label>DOC Data Configuration</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>DOC_Data_Licensing__c</fullName>
+        <externalId>false</externalId>
+        <label>DOC Data Licensing</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>DOC_Library_Configuration__c</fullName>
+        <externalId>false</externalId>
+        <label>DOC Library Configuration</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>DOC_Library_Licensing__c</fullName>
+        <externalId>false</externalId>
+        <label>DOC Library Licensing</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Services__c</fullName>
+        <externalId>false</externalId>
+        <label>Services</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Subscription__c</fullName>
+        <externalId>false</externalId>
+        <label>Subscription</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <customSettingsType>List</customSettingsType>
+    <description>GAAP Multiple Element Allocation</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Contract Drivers</label>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>Landscape_View</fullName>
+        <columns>NAME</columns>
+        <columns>DOC_Data_Configuration__c</columns>
+        <columns>DOC_Data_Licensing__c</columns>
+        <columns>DOC_Library_Configuration__c</columns>
+        <columns>DOC_Library_Licensing__c</columns>
+        <columns>Services__c</columns>
+        <columns>Subscription__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Landscape View</label>
+    </listViews>
+</CustomObject>

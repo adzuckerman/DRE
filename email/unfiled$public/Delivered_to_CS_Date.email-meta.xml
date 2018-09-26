@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>blankletterhead</letterhead>
+    <name>Delivered to CS Date</name>
+    <style>freeForm</style>
+    <subject>Delivered to CS Date for {!Case.Account}</subject>
+    <textOnly>Production Stage Completed:  {!Case.Project_Stage_Ops__c}
+Account:  {!Case.Account}
+Opportunity ID:  {!Case.Opportunity_ID__c}
+PICO ID:  {!Case.PICO_ID__c}
+Case Number:  {!Case.CaseNumber}
+Case Name: {!Case_Name__c}
+Completion Date:  {!Case.Delivered_to_CS_Date__c}
+
+To navigate to the case please use the link below:
+{!Case.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

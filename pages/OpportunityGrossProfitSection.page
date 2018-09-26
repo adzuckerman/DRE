@@ -1,0 +1,116 @@
+<apex:page showHeader="false"  standardController="Opportunity" extensions="OpportunityGrossProfitSectionCtrl">
+
+    <style type="text/css">
+        .slds-truncate.column-name {
+            text-align: left !important;
+        }
+        .slds-truncate {
+            text-align: center !important;
+        }
+        .slds-scope td {
+            text-align: center !important;
+        }
+    </style>
+
+    <apex:slds />
+
+    <apex:outputPanel layout="block" styleClass="slds-p-vertical--small" style="max-height: 340px; min-height: 225px; overflow-y: auto;">
+        <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+            <thead>
+                <tr class="slds-text-heading--label">
+                    <th scope="col">
+                        <div class="slds-truncate column-name" style="color: #2076f7;">
+                            {!IF(isForecasted, 'IN FORECAST', '')}
+                        </div>
+                    </th>
+                    <apex:repeat value="{!revenues}" var="revenue">
+                        <th scope="col" class="slds-text-title--caps">
+                            <div class="slds-truncate" title="{!revenue.Date__c}"><apex:outputField value="{!revenue.Date__c}"/></div>
+                        </th>
+                    </apex:repeat>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td scope="col" style="min-width: 200px;">
+                            <div class="slds-truncate column-name">Monthly Revenue</div>
+                        </td>
+                        <apex:repeat value="{!revenues}" var="revenue">
+                            <td>
+                                <apex:outputField value="{!revenue.Revenue__c}" styleClass="slds-truncate slds-p-horizontal--x-small"/>
+                                {!IF(revenue.Revenue__c == null, '-', '')}
+                            </td>
+                        </apex:repeat>
+                    </tr>
+                    <tr>
+                        <td scope="col" style="min-width: 200px;">
+                            <div class="slds-truncate column-name">Cost Of Revenue</div>
+                        </td>
+                        <apex:repeat value="{!revenues}" var="revenue">
+                            <td>
+                                <apex:outputField value="{!revenue.Costs__c}" styleClass="slds-truncate slds-p-horizontal--x-small"/>
+                                {!IF(revenue.Costs__c == null, '-', '')}
+                            </td>
+                        </apex:repeat>
+                    </tr>
+                    <tr>
+                        <td scope="col" style="min-width: 200px; border-top: 2px solid #ccc;">
+                            <div class="slds-truncate column-name">Gross Profit</div>
+                        </td>
+                        <apex:repeat value="{!revenues}" var="revenue">
+                            <td style="border-top: 2px solid #ccc;">
+                                <apex:outputField value="{!revenue.Gross__c}" styleClass="slds-truncate slds-p-horizontal--x-small"/>
+                                {!IF(revenue.Gross__c == null, '-', '')}
+                            </td>
+                        </apex:repeat>
+                    </tr>
+                    <tr>
+                        <td colspan="{!revenues.size + 1}"><br /></td>
+                    </tr>
+                    <tr>
+                        <td scope="col" style="font-style: italic;">
+                            <div class="slds-truncate column-name">Cumulative Revenue</div>
+                        </td>
+                        <apex:variable var="cumulativeRevenue" value="{!0}"/>
+                        <apex:repeat value="{!revenues}" var="revenue">
+                            <apex:variable var="cumulativeRevenue" value="{!cumulativeRevenue + revenue.Revenue__c}"/>
+                            <td style="font-style: italic;">
+                                <apex:outputText value="{0, number, currency}" styleClass="slds-truncate slds-p-horizontal--x-small">
+                                    <apex:param value="{!cumulativeRevenue}" />
+                                </apex:outputText>
+                            </td>
+                        </apex:repeat>
+                    </tr>
+                    <tr>
+                        <td scope="col" style="font-style: italic;">
+                            <div class="slds-truncate column-name">Cumulative Cost of Revenue</div>
+                        </td>
+                        <apex:variable var="cumulativeCostofRevenue" value="{!0}"/>
+                        <apex:repeat value="{!revenues}" var="revenue">
+                            <apex:variable var="cumulativeCostofRevenue" value="{!cumulativeCostofRevenue + revenue.Costs__c}"/>
+                            <td style="font-style: italic;">
+                                <apex:outputText value="{0, number, currency}" styleClass="slds-truncate slds-p-horizontal--x-small">
+                                    <apex:param value="{!cumulativeCostofRevenue}" />
+                                </apex:outputText>
+                            </td>
+                        </apex:repeat>
+                    </tr>
+                    <tr>
+                        <td scope="col" style="min-width: 200px; border-top: 2px solid #ccc; font-style: italic;">
+                            <div class="slds-truncate column-name">Cumulative Gross Profit</div>
+                        </td>
+                        <apex:variable var="cumulativeGrossProfit" value="{!0}"/>
+                        <apex:repeat value="{!revenues}" var="revenue">
+                            <apex:variable var="cumulativeGrossProfit" value="{!cumulativeGrossProfit + revenue.Gross__c}"/>
+                            <td style="border-top: 2px solid #ccc; font-style: italic;">
+                                <apex:outputText value="{0, number, currency}" styleClass="slds-truncate slds-p-horizontal--x-small">
+                                    <apex:param value="{!cumulativeGrossProfit}" />
+                                </apex:outputText>
+                            </td>
+                        </apex:repeat>
+                    </tr>
+            </tbody>
+        </table>
+    </apex:outputPanel>
+
+</apex:page>

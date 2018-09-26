@@ -1,0 +1,52 @@
+.THIS .TASKRAYTrTimeWeek .oneTimeItem  {
+  line-height: 14px;
+}
+
+.THIS .slds-card__header .email-component-header-check  {
+  background-color: #00617f;
+}
+
+.THIS .slds-dropdown__list a {
+  height: 30px;
+}
+
+.THIS .TASKRAYTrComponentContainer {
+  border: none;
+}
+
+.THIS .TASKRAYTrComponentContainer .TASKRAYTrComponentHeader {
+  display: none;
+}
+
+.THIS .inbox-component.slds-pill {
+  margin-left: 12px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: #00617f;
+  color: white;
+}
+
+.THIS .inbox-component.slds-pill .close-container {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.THIS .slds-card__body  .slds-tabs--default__content.slds-show {
+  padding-top: 0px;
+}
+
+.THIS .slds-card__body  .slds-tabs--default__content.slds-show .inbox-component.slds-pill {
+  margin-top: 10px;
+}
+
+.THIS .slds-card__body  .slds-tabs--default__content.slds-show .TASKRAY.TASKRAYTrComponentContainer {
+  padding-top: 2px !important;
+}
+
+.THIS .slds-card__body div.taskProjectForTime > br {
+  display: none;
+}
+
+.THIS .slds-card__body div.taskProjectForTime a {
+  margin-bottom: 5px;
+}

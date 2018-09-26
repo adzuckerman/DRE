@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>blankletterhead</letterhead>
+    <name>NHANES-promo-informal</name>
+    <style>freeForm</style>
+    <subject>Introduction to DOC Nhanes</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+I would like to introduce you to our DOC NHANES product. We have found this product to be incredibly valuable to our Epidemiology and Safety clients that use NHANES data for various internal and external deliverables. Please let me know if you would be interested in a free 30 day trial of this product.
+
+
+
+Thank you,
+
+{!User.Name}
+
+{!User.Title}
+
+{!User.Email}
+
+{!User.Phone}
+
+
+
+Visit our website www.doctorevidence.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

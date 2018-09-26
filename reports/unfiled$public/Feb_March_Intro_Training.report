@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OPENED</field>
+    </columns>
+    <columns>
+        <field>WHONAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>SENDDATE</field>
+    </columns>
+    <columns>
+        <field>LASTOPENDATE</field>
+    </columns>
+    <columns>
+        <field>TIMESOPENED</field>
+    </columns>
+    <description>List of invites to Feb-March Training</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>EMAILTEMPLATENAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>feb</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>EMAILTEMPLATENAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>march</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Feb-March Intro Training Invites v2</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>EmailStatus</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>LASTOPENDATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>SENDDATE</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

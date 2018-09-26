@@ -1,0 +1,3 @@
+The opportunity {!Opportunity.Name} for {!Opportunity.Account} has reached the {!Opportunity.StageName}. The opportunity amount is for {!Opportunity.Amount}. 
+
+Please log in and approve: {!Opportunity.Link}

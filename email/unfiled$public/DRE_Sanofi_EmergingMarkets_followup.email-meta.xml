@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>followup to SGZ Emerging Markets Intro training</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>blankletterhead</letterhead>
+    <name>DRE-Sanofi-Emerging Markets Followup</name>
+    <style>freeForm</style>
+    <subject>Doctor Evidence-Sanofi Training</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+
+
+Sanofi has engaged with Doctor Evidence to provide Sanofi personnel with relevant data to answer timely research questions. Doctor Evidence (DRE) is a technology and research services company that finds, synthesizes and analyzes information from published sources. We will work with you--at no cost--to create deliverables such as Systematic Literature Reviews, Meta-Analyses, Landscape Analyses, Comparative Safety Assessments, Regulatory Responses and more using our dynamic platforms and professional services.
+
+We would like to invite you to attend a training relevant to the particular needs of Sanofi Genzyme Emerging Markets. The two-hour training will provide an overview of the DRE platforms and services, potential use cases for your group, and hands-on training on two of our platforms.
+
+To accommodate different time zones, we will be holding the same training at different times. Please email me the session you are interested in at nmorgan@doctorevidence.com, and I will send you a calendar invite with the log-in information. 
+August 29, 2017  11 am -1 pm CST
+September 13, 2017 4 -6 pm CEST
+
+
+
+
+
+
+Sincerely,
+
+
+Nancy Morgan
+
+
+Director of Learning and Development
+
+Doctor Evidence
+
+
+847.507.1451</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

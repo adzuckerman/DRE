@@ -1,0 +1,3 @@
+Mika has approved Closed Won Deal for {!Opportunity.Account} {!Opportunity.Name}.
+
+To review the approved closed won deal go to the following link: {!Opportunity.Link}

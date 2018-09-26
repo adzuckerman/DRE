@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Complete: Delivered (as originally scoped)</fullName>
+        <default>false</default>
+        <label>Complete: Delivered (as originally scoped)</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Complete: Delivered (modified from original scope)</fullName>
+        <default>false</default>
+        <label>Complete: Delivered (modified from original scope)</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Complete: Delivered feasibility assessment</fullName>
+        <default>false</default>
+        <label>Complete: Delivered feasibility assessment</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Discontinued: Client strategy change</fullName>
+        <default>false</default>
+        <label>Discontinued: Client strategy change</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Discontinued: Infeasible timeline</fullName>
+        <default>false</default>
+        <label>Discontinued: Infeasible timeline</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Discontinued: Strategic internal decision</fullName>
+        <default>false</default>
+        <label>Discontinued: Strategic internal decision</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Terminated</fullName>
+        <default>false</default>
+        <label>Contract Terminated</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Expired</fullName>
+        <default>false</default>
+        <label>Contract Expired</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

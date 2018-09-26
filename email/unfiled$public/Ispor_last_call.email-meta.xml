@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Ispor- last call</name>
+    <style>none</style>
+    <subject>Last chance to meet at ISPOR</subject>
+    <textOnly>Doctor Evidence - Meet with our team at ISPOR
+
+Meet with our team!
+Don&apos;t miss the opportunity to learn
+about our products
+
+Doctor Evidence LLC is a leading human-enabled technology company in Evidence-Based Medicine (EBM). Doctor Evidence’s leading-edge solutions provide dynamic platforms for clients across the healthcare ecosystem to review, synthesize and evaluate evidence-based medicine. Doctor Evidence has been used for the past 14 years by life-science companies, academic institutions, evidence-based practice centers, and leading healthcare providers in the marketplace to make timely, relevant and cost-effective evidence-based decisions.
+
+Where
+
+The Normandy Hotel
+2118 Wyoming Avenue NW
+Washington, D.C. 20008
+Diplomat Room (#114)
+p.202-483-1350
+
+When
+
+May 23rd - 25th
+
+From 9:00 am - 5:00 pm
+
+Sign Me Up
+
+Stop by and meet with us!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

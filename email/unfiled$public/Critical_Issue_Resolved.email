@@ -1,0 +1,3 @@
+The Critical Issue on Case No. {!Critical_Issue__c.Case__c} has been resolved. For more information please navigate to the link below:
+
+{!Critical_Issue__c.Link}

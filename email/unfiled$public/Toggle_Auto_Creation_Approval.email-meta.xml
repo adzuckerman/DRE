@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Toggle Auto Creation Approval</name>
+    <style>none</style>
+    <subject>Review &amp; Approve / Reject the Toggl Project Auto-Creation</subject>
+    <textOnly>To Whom It May Concern:
+
+Please review and approve or reject the following TaskRay Project for Toggle Project Auto-Creation:
+
+https://cs65.salesforce.com/{!TASKRAY__Project__c.Id}
+
+You may approve or reject the request at the link below:
+
+{!ApprovalRequest.External_URL}
+
+Thanks,
+System Administrator</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

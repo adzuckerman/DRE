@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>revised Sanofi email without html links for meeting preference</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>REVISED DRE-Sanofi-Upcoming-Introductory-Training-MASTER</name>
+    <style>none</style>
+    <subject>DRE-Sanofi Upcoming Introductory Training</subject>
+    <textOnly>*|Docto Evidence Upcoming Introductory Training|*
+
+Dear {!Contact.FirstName},
+Sanofi and Doctor Evidence have initiated a year-long engagement in order to provide Sanofi personnel with relevant data to answer timely research questions. Doctor Evidence (DRE) is a technology and research services company that finds, synthesizes and analyzes information from published sources. We will work with you--at no cost--to create deliverables such as Systematic Literature Reviews, Meta-Analyses, Landscape Analyses, Comparative Safety Assessments, Regulatory Responses and more using our dynamic platforms and professional services.  The engagement includes extensive assets across several therapeutic areas:  Cardiovascular, Diabetes, Immunology, Multiple Sclerosis, General Medicines (including Consumer Health).   You are invited to attend Doctor Evidence’s Introductory training so that you can maximize use of the Doctor Evidence services and platforms. Upcoming dates for a Webinar version of the training are offered below.
+You can also take a self-paced, online version of the Introductory course. To do so, self-enroll at https://dre.litmos.com/self-signup/. Enter the code “Sanofi” when you create your account on this sign-up page, and you will automatically be enrolled in the course
+Kind Regards,
+
+Nancy Morgan
+Director of Learning and Development
+301 Arizona Ave Suite 301 Santa Monica CA 90401
+Doctor Evidence
+
+Please respond to this email with your preferred date. Please also include your title, department and GBU.
+
+31 Oct 2017 ~ Introductory | 10AM EST | 4PM CET | Webinar
+14 Nov 2017 ~ Introductory | 10AM EST | 4PM CET | Webinar
+5 Dec 2017 ~ Introductory | 10AM EST | 4PM CET | Webinar</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

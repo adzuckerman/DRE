@@ -1,0 +1,3826 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Assigned_for_Digitization__c</fullName>
+        <externalId>false</externalId>
+        <label># Assigned for Digitization (After FT)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assigned_for_Full_Text_Screening__c</fullName>
+        <externalId>false</externalId>
+        <label># Assigned for Full Text Screening</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Case_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Work_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Work Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Rapid Assessment</fullName>
+                    <default>false</default>
+                    <label>Rapid Assessment</label>
+                </value>
+                <value>
+                    <fullName>New Project</fullName>
+                    <default>false</default>
+                    <label>New Project</label>
+                </value>
+                <value>
+                    <fullName>Update</fullName>
+                    <default>false</default>
+                    <label>Update</label>
+                </value>
+                <value>
+                    <fullName>PICO Modification(s)</fullName>
+                    <default>false</default>
+                    <label>PICO Modification(s)</label>
+                </value>
+                <value>
+                    <fullName>Additional Data Extraction</fullName>
+                    <default>false</default>
+                    <label>Additional Data Extraction</label>
+                </value>
+                <value>
+                    <fullName>Additional Deliverable(s)</fullName>
+                    <default>false</default>
+                    <label>Additional Deliverable(s)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Client_Accepted_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Accepted Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Client_Deliverable__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Deliverable</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Evidence Table</fullName>
+                    <default>false</default>
+                    <label>Evidence Table</label>
+                </value>
+                <value>
+                    <fullName>Powerpoint File (interim/final deliverable)</fullName>
+                    <default>false</default>
+                    <label>Powerpoint File (interim/final deliverable)</label>
+                </value>
+                <value>
+                    <fullName>Typed Report (interim/final deliverable)</fullName>
+                    <default>false</default>
+                    <label>Typed Report (interim/final deliverable)</label>
+                </value>
+                <value>
+                    <fullName>Analysis File</fullName>
+                    <default>false</default>
+                    <label>Analysis File</label>
+                </value>
+                <value>
+                    <fullName>Publication (incl. abstract, poster, manuscript, draft/final)</fullName>
+                    <default>false</default>
+                    <label>Publication (incl. abstract, poster, manuscript, draft/final)</label>
+                </value>
+                <value>
+                    <fullName>Rapid Assessment</fullName>
+                    <default>false</default>
+                    <label>Rapid Assessment</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Any Powerpoint Presentations</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Any Powerpoint Presentations</label>
+                </value>
+                <value>
+                    <fullName>Any Spreadsheet</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Any Spreadsheet</label>
+                </value>
+                <value>
+                    <fullName>Comparative Safety Assessment</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Comparative Safety Assessment</label>
+                </value>
+                <value>
+                    <fullName>Feasibility Assessment</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Feasibility Assessment</label>
+                </value>
+                <value>
+                    <fullName>HTA Proactive Response Dossier</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>HTA Proactive Response Dossier</label>
+                </value>
+                <value>
+                    <fullName>Interim and Final Reports</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Interim and Final Reports</label>
+                </value>
+                <value>
+                    <fullName>Landscape Assessment</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Landscape Assessment</label>
+                </value>
+                <value>
+                    <fullName>Literature Summary Report</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Literature Summary Report</label>
+                </value>
+                <value>
+                    <fullName>Manuscript for External Publication</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Manuscript for External Publication</label>
+                </value>
+                <value>
+                    <fullName>Medical Response Letter</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Medical Response Letter</label>
+                </value>
+                <value>
+                    <fullName>Meta-Analysis</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Meta-Analysis</label>
+                </value>
+                <value>
+                    <fullName>Real World Clinical Comparative Assessments</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Real World Clinical Comparative Assessments</label>
+                </value>
+                <value>
+                    <fullName>Report on Analytics</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Report on Analytics</label>
+                </value>
+                <value>
+                    <fullName>Response to Regulatory Agencies</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Response to Regulatory Agencies</label>
+                </value>
+                <value>
+                    <fullName>Systematic Literature Report</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Systematic Literature Report</label>
+                </value>
+                <value>
+                    <fullName>Value Dossier</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Value Dossier</label>
+                </value>
+                <value>
+                    <fullName>White Papers</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>White Papers</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Client_Delivered_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Delivered Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Client_Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Department</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Canada Medical Affairs</fullName>
+                    <default>false</default>
+                    <label>Canada Medical Affairs</label>
+                </value>
+                <value>
+                    <fullName>China Medical Affairs</fullName>
+                    <default>false</default>
+                    <label>China Medical Affairs</label>
+                </value>
+                <value>
+                    <fullName>Committee</fullName>
+                    <default>false</default>
+                    <label>Committee</label>
+                </value>
+                <value>
+                    <fullName>Cross-Functional</fullName>
+                    <default>false</default>
+                    <label>Cross-Functional</label>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                    <label>Development</label>
+                </value>
+                <value>
+                    <fullName>Epidemiology</fullName>
+                    <default>false</default>
+                    <label>Epidemiology</label>
+                </value>
+                <value>
+                    <fullName>ERC</fullName>
+                    <default>false</default>
+                    <label>ERC</label>
+                </value>
+                <value>
+                    <fullName>Global HEOR</fullName>
+                    <default>false</default>
+                    <label>Global HEOR</label>
+                </value>
+                <value>
+                    <fullName>Global HEVA</fullName>
+                    <default>false</default>
+                    <label>Global HEVA</label>
+                </value>
+                <value>
+                    <fullName>Global Medical Affairs</fullName>
+                    <default>false</default>
+                    <label>Global Medical Affairs</label>
+                </value>
+                <value>
+                    <fullName>Global Medical Information</fullName>
+                    <default>false</default>
+                    <label>Global Medical Information</label>
+                </value>
+                <value>
+                    <fullName>Global Patient Solutions</fullName>
+                    <default>false</default>
+                    <label>Global Patient Solutions</label>
+                </value>
+                <value>
+                    <fullName>Global Pharmacovigilance</fullName>
+                    <default>false</default>
+                    <label>Global Pharmacovigilance</label>
+                </value>
+                <value>
+                    <fullName>Global Real-World Evidence</fullName>
+                    <default>false</default>
+                    <label>Global Real-World Evidence</label>
+                </value>
+                <value>
+                    <fullName>Global Research &amp; Development</fullName>
+                    <default>false</default>
+                    <label>Global Research &amp; Development</label>
+                </value>
+                <value>
+                    <fullName>Global Safety</fullName>
+                    <default>false</default>
+                    <label>Global Safety</label>
+                </value>
+                <value>
+                    <fullName>Global Scientific Communications &amp; Publications</fullName>
+                    <default>false</default>
+                    <label>Global Scientific Communications &amp; Publications</label>
+                </value>
+                <value>
+                    <fullName>HSC</fullName>
+                    <default>false</default>
+                    <label>HSC</label>
+                </value>
+                <value>
+                    <fullName>Market Access</fullName>
+                    <default>false</default>
+                    <label>Market Access</label>
+                </value>
+                <value>
+                    <fullName>Safety</fullName>
+                    <default>false</default>
+                    <label>Safety</label>
+                </value>
+                <value>
+                    <fullName>SciCom</fullName>
+                    <default>false</default>
+                    <label>SciCom</label>
+                </value>
+                <value>
+                    <fullName>South Africa Medical Affairs</fullName>
+                    <default>false</default>
+                    <label>South Africa Medical Affairs</label>
+                </value>
+                <value>
+                    <fullName>UK Scientific Communications and Publications</fullName>
+                    <default>false</default>
+                    <label>UK Scientific Communications and Publications</label>
+                </value>
+                <value>
+                    <fullName>US HEOR</fullName>
+                    <default>false</default>
+                    <label>US HEOR</label>
+                </value>
+                <value>
+                    <fullName>US HEVA</fullName>
+                    <default>false</default>
+                    <label>US HEVA</label>
+                </value>
+                <value>
+                    <fullName>US Medical Affairs</fullName>
+                    <default>false</default>
+                    <label>US Medical Affairs</label>
+                </value>
+                <value>
+                    <fullName>HEOR - Global</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>HEOR - Global</label>
+                </value>
+                <value>
+                    <fullName>HEOR - US</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>HEOR - US</label>
+                </value>
+                <value>
+                    <fullName>Med Affairs - Global</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Med Affairs - Global</label>
+                </value>
+                <value>
+                    <fullName>Med Affairs - US</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Med Affairs - US</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Client_Kick_Off_Meeting_Scheduled__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Kick Off Meeting Scheduled</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Client_Kick_Off_Meeting__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Kick Off Meeting</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Client_Services_Rep__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Services Rep</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Augusta Crumrine</fullName>
+                    <default>false</default>
+                    <label>Augusta Crumrine</label>
+                </value>
+                <value>
+                    <fullName>Ben Taylor</fullName>
+                    <default>false</default>
+                    <label>Ben Taylor</label>
+                </value>
+                <value>
+                    <fullName>Fasahath Husain</fullName>
+                    <default>false</default>
+                    <label>Fasahath Husain</label>
+                </value>
+                <value>
+                    <fullName>Jean-Francois Bitsch</fullName>
+                    <default>false</default>
+                    <label>Jean-Francois Bitsch</label>
+                </value>
+                <value>
+                    <fullName>Max Goldstein</fullName>
+                    <default>false</default>
+                    <label>Max Goldstein</label>
+                </value>
+                <value>
+                    <fullName>Michael del Aguila</fullName>
+                    <default>false</default>
+                    <label>Michael del Aguila</label>
+                </value>
+                <value>
+                    <fullName>Toby Sayre</fullName>
+                    <default>false</default>
+                    <label>Toby Sayre</label>
+                </value>
+                <value>
+                    <fullName>Arielle Levy</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Arielle Levy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ClosedDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comparison__c</fullName>
+        <externalId>false</externalId>
+        <label>Comparison</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Complete_Project_Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Complete Project Plan</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Complexity_of_Topic__c</fullName>
+        <externalId>false</externalId>
+        <label>Complexity of Topic</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Complex</fullName>
+                    <default>false</default>
+                    <label>Complex</label>
+                </value>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Simple or Standard</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Simple or Standard</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Conduct_Analytics_Complete__c</fullName>
+        <externalId>false</externalId>
+        <label>Conduct Analytics - Complete</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Conduct_Analytics_Start__c</fullName>
+        <externalId>false</externalId>
+        <label>Conduct Analytics - Start</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Consulting_Services_Rep_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Consulting Services Rep #1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Alexandra Ellis</fullName>
+                    <default>false</default>
+                    <label>Alexandra Ellis</label>
+                </value>
+                <value>
+                    <fullName>Christopher Halladay</fullName>
+                    <default>false</default>
+                    <label>Christopher Halladay</label>
+                </value>
+                <value>
+                    <fullName>Craig Whittington</fullName>
+                    <default>false</default>
+                    <label>Craig Whittington</label>
+                </value>
+                <value>
+                    <fullName>Daniel Conn</fullName>
+                    <default>false</default>
+                    <label>Daniel Conn</label>
+                </value>
+                <value>
+                    <fullName>Ed Mills</fullName>
+                    <default>false</default>
+                    <label>Ed Mills</label>
+                </value>
+                <value>
+                    <fullName>Fasahath Husain</fullName>
+                    <default>false</default>
+                    <label>Fasahath Husain</label>
+                </value>
+                <value>
+                    <fullName>Gaye Siliman</fullName>
+                    <default>false</default>
+                    <label>Gaye Siliman</label>
+                </value>
+                <value>
+                    <fullName>Jane Pan</fullName>
+                    <default>false</default>
+                    <label>Jane Pan</label>
+                </value>
+                <value>
+                    <fullName>Kenny Shum</fullName>
+                    <default>false</default>
+                    <label>Kenny Shum</label>
+                </value>
+                <value>
+                    <fullName>Kristian Thorlund</fullName>
+                    <default>false</default>
+                    <label>Kristian Thorlund</label>
+                </value>
+                <value>
+                    <fullName>Lionel Duarte</fullName>
+                    <default>false</default>
+                    <label>Lionel Duarte</label>
+                </value>
+                <value>
+                    <fullName>Priscilla Yen</fullName>
+                    <default>false</default>
+                    <label>Priscilla Yen</label>
+                </value>
+                <value>
+                    <fullName>Roshan Shah</fullName>
+                    <default>false</default>
+                    <label>Roshan Shah</label>
+                </value>
+                <value>
+                    <fullName>Steve Lee</fullName>
+                    <default>false</default>
+                    <label>Steve Lee</label>
+                </value>
+                <value>
+                    <fullName>Tuan Dinh</fullName>
+                    <default>false</default>
+                    <label>Tuan Dinh</label>
+                </value>
+                <value>
+                    <fullName>Jacob Franek</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Jacob Franek</label>
+                </value>
+                <value>
+                    <fullName>Michael del Aguila</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Michael del Aguila</label>
+                </value>
+                <value>
+                    <fullName>Nilay Patel</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Nilay Patel</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Consulting_Services_Rep_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Consulting Services Rep #2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Alexandra Ellis</fullName>
+                    <default>false</default>
+                    <label>Alexandra Ellis</label>
+                </value>
+                <value>
+                    <fullName>Christopher Halladay</fullName>
+                    <default>false</default>
+                    <label>Christopher Halladay</label>
+                </value>
+                <value>
+                    <fullName>Craig Whittington</fullName>
+                    <default>false</default>
+                    <label>Craig Whittington</label>
+                </value>
+                <value>
+                    <fullName>Daniel Conn</fullName>
+                    <default>false</default>
+                    <label>Daniel Conn</label>
+                </value>
+                <value>
+                    <fullName>Ed Mills</fullName>
+                    <default>false</default>
+                    <label>Ed Mills</label>
+                </value>
+                <value>
+                    <fullName>Fasahath Husain</fullName>
+                    <default>false</default>
+                    <label>Fasahath Husain</label>
+                </value>
+                <value>
+                    <fullName>Gaye Siliman</fullName>
+                    <default>false</default>
+                    <label>Gaye Siliman</label>
+                </value>
+                <value>
+                    <fullName>Jane Pan</fullName>
+                    <default>false</default>
+                    <label>Jane Pan</label>
+                </value>
+                <value>
+                    <fullName>Kenny Shum</fullName>
+                    <default>false</default>
+                    <label>Kenny Shum</label>
+                </value>
+                <value>
+                    <fullName>Kristian Thorlund</fullName>
+                    <default>false</default>
+                    <label>Kristian Thorlund</label>
+                </value>
+                <value>
+                    <fullName>Lionel Duarte</fullName>
+                    <default>false</default>
+                    <label>Lionel Duarte</label>
+                </value>
+                <value>
+                    <fullName>Priscilla Yen</fullName>
+                    <default>false</default>
+                    <label>Priscilla Yen</label>
+                </value>
+                <value>
+                    <fullName>Roshan Shah</fullName>
+                    <default>false</default>
+                    <label>Roshan Shah</label>
+                </value>
+                <value>
+                    <fullName>Steve Lee</fullName>
+                    <default>false</default>
+                    <label>Steve Lee</label>
+                </value>
+                <value>
+                    <fullName>Tuan Dinh</fullName>
+                    <default>false</default>
+                    <label>Tuan Dinh</label>
+                </value>
+                <value>
+                    <fullName>Jacob Franek</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Jacob Franek</label>
+                </value>
+                <value>
+                    <fullName>Michael del Aguila</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Michael del Aguila</label>
+                </value>
+                <value>
+                    <fullName>Nilay Patel</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Nilay Patel</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ContactEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactFax</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactMobile</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Contract_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name__r.Contract_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contract ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contracted_Service__c</fullName>
+        <externalId>false</externalId>
+        <label>Contracted Service</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Competitor Label Review</fullName>
+                    <default>false</default>
+                    <label>Competitor Label Review</label>
+                </value>
+                <value>
+                    <fullName>Documents &amp; Publications</fullName>
+                    <default>false</default>
+                    <label>Documents &amp; Publications</label>
+                </value>
+                <value>
+                    <fullName>Economic Assessment</fullName>
+                    <default>false</default>
+                    <label>Economic Assessment</label>
+                </value>
+                <value>
+                    <fullName>Meta-Analysis or Network Meta-Analysis</fullName>
+                    <default>false</default>
+                    <label>Meta-Analysis or Network Meta-Analysis</label>
+                </value>
+                <value>
+                    <fullName>Other-analysis or statistical work</fullName>
+                    <default>false</default>
+                    <label>Other-analysis or statistical work</label>
+                </value>
+                <value>
+                    <fullName>Rapid Assessment</fullName>
+                    <default>false</default>
+                    <label>Rapid Assessment</label>
+                </value>
+                <value>
+                    <fullName>SLR of Clinical Trials</fullName>
+                    <default>false</default>
+                    <label>Systematic Literature Review of Clinical Trials and Real World Evidence</label>
+                </value>
+                <value>
+                    <fullName>Focused Literature Reviews</fullName>
+                    <default>false</default>
+                    <label>Focused Literature Reviews</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Clinical Program Analytics</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Clinical Program Analytics</label>
+                </value>
+                <value>
+                    <fullName>Evidence Synthesis</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Evidence Synthesis</label>
+                </value>
+                <value>
+                    <fullName>Medical Writing and Communications</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Medical Writing and Communications</label>
+                </value>
+                <value>
+                    <fullName>Rapid Appraisal</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Rapid Appraisal</label>
+                </value>
+                <value>
+                    <fullName>Real World Evidence Assessment</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Real World Evidence Assessment</label>
+                </value>
+                <value>
+                    <fullName>Safety Assessment</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Safety Assessment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Critical_Issue_Description__c</fullName>
+        <description>Brief description of why there is an issue.</description>
+        <externalId>false</externalId>
+        <label>Critical Issue Description</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Critical_Issue__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>When checked and a description of the issue is provided automatically sends email to Todd, Hae, Mika, Michael, Toby.</description>
+        <externalId>false</externalId>
+        <label>Critical Issue</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Satisfaction__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Satisfaction</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Satisfied - Project Closed</fullName>
+                    <default>false</default>
+                    <label>Satisfied - Project Closed</label>
+                </value>
+                <value>
+                    <fullName>Satisfied - New Follow-On Work</fullName>
+                    <default>false</default>
+                    <label>Satisfied - New Follow-On Work</label>
+                </value>
+                <value>
+                    <fullName>Not Satisfied - Revisions Required</fullName>
+                    <default>false</default>
+                    <label>Not Satisfied - Revisions Required</label>
+                </value>
+                <value>
+                    <fullName>Not Satisfied - Project Closed</fullName>
+                    <default>false</default>
+                    <label>Not Satisfied - Project Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DI_II_Complete_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-II Complete Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_II_Mass_Analysis_Complete_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-II Mass Analysis Complete Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_II_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-II Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_I_Complete_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-I Complete Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_I_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DI-I Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DOC_Data_Dataset_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>DOC Data Dataset Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Configuration_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Data Configuration Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Data_Studies_Unique_to_Contract__c</fullName>
+        <externalId>false</externalId>
+        <label># of Data Studies Unique to Contract</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Database_Deadline__c</fullName>
+        <externalId>false</externalId>
+        <label>Database Deadline</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Database_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Database Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deliverable_Deadline_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Deliverable Deadline Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Delivered_to_CS_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivered to CS Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Develop_Powerpoint_Report_Complete__c</fullName>
+        <externalId>false</externalId>
+        <label>Develop Powerpoint Report - Complete</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Develop_Powerpoint_Report_Start__c</fullName>
+        <externalId>false</externalId>
+        <label>Develop Powerpoint Report - Start</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Develop_Publication_Complete__c</fullName>
+        <externalId>false</externalId>
+        <label>Develop Publication - Complete</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Develop_Publication_Start__c</fullName>
+        <externalId>false</externalId>
+        <label>Develop Publication - Start</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Develop_Publication__c</fullName>
+        <externalId>false</externalId>
+        <label>Develop Publication</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Abstract</fullName>
+                    <default>false</default>
+                    <label>Abstract</label>
+                </value>
+                <value>
+                    <fullName>Poster</fullName>
+                    <default>false</default>
+                    <label>Poster</label>
+                </value>
+                <value>
+                    <fullName>Manuscript</fullName>
+                    <default>false</default>
+                    <label>Manuscript</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Develop_Written_Report_Complete__c</fullName>
+        <externalId>false</externalId>
+        <label>Develop Written Report - Complete</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Develop_Written_Report_Start__c</fullName>
+        <externalId>false</externalId>
+        <label>Develop Written Report - Start</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Digitized__c</fullName>
+        <externalId>false</externalId>
+        <label># Digitized</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Disease_Indication__c</fullName>
+        <externalId>false</externalId>
+        <label>Disease Indication</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimated_Volume_of_Data_Configuration__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Volume of Data Configuration</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>20</fullName>
+                    <default>false</default>
+                    <label>20</label>
+                </value>
+                <value>
+                    <fullName>50</fullName>
+                    <default>false</default>
+                    <label>50</label>
+                </value>
+                <value>
+                    <fullName>100</fullName>
+                    <default>false</default>
+                    <label>100</label>
+                </value>
+                <value>
+                    <fullName>200</fullName>
+                    <default>false</default>
+                    <label>200</label>
+                </value>
+                <value>
+                    <fullName>1 - Low (&lt;15 studies)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>1 - Low (&lt;15 studies)</label>
+                </value>
+                <value>
+                    <fullName>15</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>15</label>
+                </value>
+                <value>
+                    <fullName>2 - Medium (16-50 studies)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>2 - Medium (16-50 studies)</label>
+                </value>
+                <value>
+                    <fullName>3 - High (51-100 studies)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>3 - High (51-100 studies)</label>
+                </value>
+                <value>
+                    <fullName>4 - Very High (&gt;100 studies)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>4 - Very High (&gt;100 studies)</label>
+                </value>
+                <value>
+                    <fullName>Needs Assessing</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Needs Assessing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Estimated_Volume_of_Literature__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Volume of Literature</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&lt;1,000</fullName>
+                    <default>false</default>
+                    <label>&lt;1,000</label>
+                </value>
+                <value>
+                    <fullName>1,001-2,500</fullName>
+                    <default>false</default>
+                    <label>1,001-2,500</label>
+                </value>
+                <value>
+                    <fullName>2,501-5,000</fullName>
+                    <default>false</default>
+                    <label>2,501-5,000</label>
+                </value>
+                <value>
+                    <fullName>&gt;5,000</fullName>
+                    <default>false</default>
+                    <label>&gt;5,000</label>
+                </value>
+                <value>
+                    <fullName>High (&gt;6,000)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>High (&gt;6,000)</label>
+                </value>
+                <value>
+                    <fullName>Low (&lt;3,000)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Low (&lt;3,000)</label>
+                </value>
+                <value>
+                    <fullName>Medium (3,001-6,000)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Medium (3,001-6,000)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>External_Contractor_Deliverable_Deadline__c</fullName>
+        <externalId>false</externalId>
+        <label>External Contractor Deliverable Deadline</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>External_Contractor_Deliverable__c</fullName>
+        <externalId>false</externalId>
+        <label>External Contractor Deliverable</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Evidence Table</fullName>
+                    <default>false</default>
+                    <label>Evidence Table</label>
+                </value>
+                <value>
+                    <fullName>Powerpoint File (interim/final deliverable)</fullName>
+                    <default>false</default>
+                    <label>Powerpoint File (interim/final deliverable)</label>
+                </value>
+                <value>
+                    <fullName>Typed Report (interim/final deliverable)</fullName>
+                    <default>false</default>
+                    <label>Typed Report (interim/final deliverable)</label>
+                </value>
+                <value>
+                    <fullName>Analysis File</fullName>
+                    <default>false</default>
+                    <label>Analysis File</label>
+                </value>
+                <value>
+                    <fullName>Publication (incl. abstract, poster, manuscript, draft/final)</fullName>
+                    <default>false</default>
+                    <label>Publication (incl. abstract, poster, manuscript, draft/final)</label>
+                </value>
+                <value>
+                    <fullName>Rapid Assessment</fullName>
+                    <default>false</default>
+                    <label>Rapid Assessment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>External_Contractor_Delivered_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>External Contractor Delivered Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>External_Contractor_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>External Contractor Detail</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>External_Contractor_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>External Contractor Name</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Alex Ellis</fullName>
+                    <default>false</default>
+                    <label>Alex Ellis</label>
+                </value>
+                <value>
+                    <fullName>BMJ</fullName>
+                    <default>false</default>
+                    <label>BMJ</label>
+                </value>
+                <value>
+                    <fullName>Chris Halladay</fullName>
+                    <default>false</default>
+                    <label>Chris Halladay</label>
+                </value>
+                <value>
+                    <fullName>Dinh Consulting Group</fullName>
+                    <default>false</default>
+                    <label>Dinh Consulting Group</label>
+                </value>
+                <value>
+                    <fullName>Ioannina University</fullName>
+                    <default>false</default>
+                    <label>Ioannina University</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse Outcomes (Paul Arora)</fullName>
+                    <default>false</default>
+                    <label>Lighthouse Outcomes (Paul Arora)</label>
+                </value>
+                <value>
+                    <fullName>Maryam Noparast</fullName>
+                    <default>false</default>
+                    <label>Maryam Noparast</label>
+                </value>
+                <value>
+                    <fullName>Masoud Porrahmat</fullName>
+                    <default>false</default>
+                    <label>Masoud Porrahmat</label>
+                </value>
+                <value>
+                    <fullName>Medlior (Tara Cowling)</fullName>
+                    <default>false</default>
+                    <label>Medlior (Tara Cowling)</label>
+                </value>
+                <value>
+                    <fullName>Mtek Science</fullName>
+                    <default>false</default>
+                    <label>Mtek Science</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>External_Contractor_Needed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>External Contractor Needed?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>External_Contractor_Task__c</fullName>
+        <externalId>false</externalId>
+        <label>External Contractor Task</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Extraction_Complete_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Extraction Complete Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Extraction_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Extraction Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FQ_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>FQ ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FQ_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>FQ Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FT_Library_Deadline__c</fullName>
+        <externalId>false</externalId>
+        <label>FT Library Deadline</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Full_Text_Review_Completed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Full Text Review Completed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Full_Text_Review_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Full Text Review Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Governance_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Governance Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bibliographic</fullName>
+                    <default>false</default>
+                    <label>Bibliographic</label>
+                </value>
+                <value>
+                    <fullName>Internal Strategy (Research)</fullName>
+                    <default>false</default>
+                    <label>Internal Strategy (Research)</label>
+                </value>
+                <value>
+                    <fullName>Potential Publication (Research)</fullName>
+                    <default>false</default>
+                    <label>Potential Publication (Research)</label>
+                </value>
+                <value>
+                    <fullName>Rapid Assessment</fullName>
+                    <default>false</default>
+                    <label>Rapid Assessment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Import_FQ_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Import FQ ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>In_Protocol_Development_Queue_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>In Protocol Development Queue Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Includes_Dataset__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Includes Dataset</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Includes_Library__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Includes Library</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Intervention__c</fullName>
+        <externalId>false</externalId>
+        <label>Intervention</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsClosedOnCreate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsEscalated</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsSelfServiceClosed</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsVisibleInSelfService</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>KOL_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>KOL Detail</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>KOL_Needed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>KOL Needed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Librarian__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lead Librarian</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Librarian_Lead__c</fullName>
+        <externalId>false</externalId>
+        <label>Librarian Lead</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Heidi Tibollo</fullName>
+                    <default>false</default>
+                    <label>Heidi Tibollo</label>
+                </value>
+                <value>
+                    <fullName>Mary Carpenter</fullName>
+                    <default>false</default>
+                    <label>Mary Carpenter</label>
+                </value>
+                <value>
+                    <fullName>Maura Sostack</fullName>
+                    <default>false</default>
+                    <label>Maura Sostack</label>
+                </value>
+                <value>
+                    <fullName>Melinda Davies</fullName>
+                    <default>false</default>
+                    <label>Melinda Davies</label>
+                </value>
+                <value>
+                    <fullName>Nancy Firchow</fullName>
+                    <default>false</default>
+                    <label>Nancy Firchow</label>
+                </value>
+                <value>
+                    <fullName>Rienne Schinner</fullName>
+                    <default>false</default>
+                    <label>Rienne Schinner</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Library_Asset_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Library Asset Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low Renovation</fullName>
+                    <default>false</default>
+                    <label>Low Renovation</label>
+                </value>
+                <value>
+                    <fullName>Medium Renovation</fullName>
+                    <default>false</default>
+                    <label>Medium Renovation</label>
+                </value>
+                <value>
+                    <fullName>High Renovation/De Novo</fullName>
+                    <default>false</default>
+                    <label>High Renovation/De Novo</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Library_Complete_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Library Complete Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Library_Package_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Library Package Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Library_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Library Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Meth_Rep_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Meth Rep #1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Alicia Clausel</fullName>
+                    <default>false</default>
+                    <label>Alicia Clausel</label>
+                </value>
+                <value>
+                    <fullName>Ambar Grijalva</fullName>
+                    <default>false</default>
+                    <label>Ambar Grijalva</label>
+                </value>
+                <value>
+                    <fullName>Ben Taylor</fullName>
+                    <default>false</default>
+                    <label>Ben Taylor</label>
+                </value>
+                <value>
+                    <fullName>Bobby Milam</fullName>
+                    <default>false</default>
+                    <label>Bobby Milam</label>
+                </value>
+                <value>
+                    <fullName>Craig Whittington</fullName>
+                    <default>false</default>
+                    <label>Craig Whittington</label>
+                </value>
+                <value>
+                    <fullName>Dara Paek</fullName>
+                    <default>false</default>
+                    <label>Dara Paek</label>
+                </value>
+                <value>
+                    <fullName>Erin Murray</fullName>
+                    <default>false</default>
+                    <label>Erin Murray</label>
+                </value>
+                <value>
+                    <fullName>Fasahath Husain</fullName>
+                    <default>false</default>
+                    <label>Fasahath Husain</label>
+                </value>
+                <value>
+                    <fullName>John Gilles</fullName>
+                    <default>false</default>
+                    <label>John Gilles</label>
+                </value>
+                <value>
+                    <fullName>Lauren Mintzer</fullName>
+                    <default>false</default>
+                    <label>Lauren Mintzer</label>
+                </value>
+                <value>
+                    <fullName>Madison Zhang</fullName>
+                    <default>false</default>
+                    <label>Madison Zhang</label>
+                </value>
+                <value>
+                    <fullName>Rebecca Diekemper</fullName>
+                    <default>false</default>
+                    <label>Rebecca Diekemper</label>
+                </value>
+                <value>
+                    <fullName>Roshan Shah</fullName>
+                    <default>false</default>
+                    <label>Roshan Shah</label>
+                </value>
+                <value>
+                    <fullName>Sharath Krishna</fullName>
+                    <default>false</default>
+                    <label>Sharath Krishna</label>
+                </value>
+                <value>
+                    <fullName>Sonya Egodadge</fullName>
+                    <default>false</default>
+                    <label>Sonya Egodadge</label>
+                </value>
+                <value>
+                    <fullName>Sophie Yoon</fullName>
+                    <default>false</default>
+                    <label>Sophie Yoon</label>
+                </value>
+                <value>
+                    <fullName>Yi Xu</fullName>
+                    <default>false</default>
+                    <label>Yi Xu</label>
+                </value>
+                <value>
+                    <fullName>Yuting Kuang</fullName>
+                    <default>false</default>
+                    <label>Yuting Kuang</label>
+                </value>
+                <value>
+                    <fullName>Zuleika Aponte</fullName>
+                    <default>false</default>
+                    <label>Zuleika Aponte</label>
+                </value>
+                <value>
+                    <fullName>Maria Akopjan</fullName>
+                    <default>false</default>
+                    <label>Maria Akopjan</label>
+                </value>
+                <value>
+                    <fullName>Arielle Levy</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Arielle Levy</label>
+                </value>
+                <value>
+                    <fullName>Jacob Franek</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Jacob Franek</label>
+                </value>
+                <value>
+                    <fullName>Jerrin Thomas</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Jerrin Thomas</label>
+                </value>
+                <value>
+                    <fullName>Laura Mitchell</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Laura Mitchell</label>
+                </value>
+                <value>
+                    <fullName>Nilay Patel</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Nilay Patel</label>
+                </value>
+                <value>
+                    <fullName>Rachel Hughes</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Rachel Hughes</label>
+                </value>
+                <value>
+                    <fullName>Shauna Ekimura</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Shauna Ekimura</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Meth_Rep_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Meth Rep #2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Alicia Clausel</fullName>
+                    <default>false</default>
+                    <label>Alicia Clausel</label>
+                </value>
+                <value>
+                    <fullName>Ambar Grijalva</fullName>
+                    <default>false</default>
+                    <label>Ambar Grijalva</label>
+                </value>
+                <value>
+                    <fullName>Ben Taylor</fullName>
+                    <default>false</default>
+                    <label>Ben Taylor</label>
+                </value>
+                <value>
+                    <fullName>Bobby Milam</fullName>
+                    <default>false</default>
+                    <label>Bobby Milam</label>
+                </value>
+                <value>
+                    <fullName>Craig Whittington</fullName>
+                    <default>false</default>
+                    <label>Craig Whittington</label>
+                </value>
+                <value>
+                    <fullName>Dara Paek</fullName>
+                    <default>false</default>
+                    <label>Dara Paek</label>
+                </value>
+                <value>
+                    <fullName>Erin Murray</fullName>
+                    <default>false</default>
+                    <label>Erin Murray</label>
+                </value>
+                <value>
+                    <fullName>Fasahath Husain</fullName>
+                    <default>false</default>
+                    <label>Fasahath Husain</label>
+                </value>
+                <value>
+                    <fullName>John Gilles</fullName>
+                    <default>false</default>
+                    <label>John Gilles</label>
+                </value>
+                <value>
+                    <fullName>Lauren Mintzer</fullName>
+                    <default>false</default>
+                    <label>Lauren Mintzer</label>
+                </value>
+                <value>
+                    <fullName>Madison Zhang</fullName>
+                    <default>false</default>
+                    <label>Madison Zhang</label>
+                </value>
+                <value>
+                    <fullName>Rebecca Diekemper</fullName>
+                    <default>false</default>
+                    <label>Rebecca Diekemper</label>
+                </value>
+                <value>
+                    <fullName>Roshan Shah</fullName>
+                    <default>false</default>
+                    <label>Roshan Shah</label>
+                </value>
+                <value>
+                    <fullName>Sharath Krishna</fullName>
+                    <default>false</default>
+                    <label>Sharath Krishna</label>
+                </value>
+                <value>
+                    <fullName>Sonya Egodadge</fullName>
+                    <default>false</default>
+                    <label>Sonya Egodadge</label>
+                </value>
+                <value>
+                    <fullName>Sophie Yoon</fullName>
+                    <default>false</default>
+                    <label>Sophie Yoon</label>
+                </value>
+                <value>
+                    <fullName>Yi Xu</fullName>
+                    <default>false</default>
+                    <label>Yi Xu</label>
+                </value>
+                <value>
+                    <fullName>Yuting Kuang</fullName>
+                    <default>false</default>
+                    <label>Yuting Kuang</label>
+                </value>
+                <value>
+                    <fullName>Zuleika Aponte</fullName>
+                    <default>false</default>
+                    <label>Zuleika Aponte</label>
+                </value>
+                <value>
+                    <fullName>Maria Akopjan</fullName>
+                    <default>false</default>
+                    <label>Maria Akopjan</label>
+                </value>
+                <value>
+                    <fullName>Arielle Levy</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Arielle Levy</label>
+                </value>
+                <value>
+                    <fullName>Jacob Franek</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Jacob Franek</label>
+                </value>
+                <value>
+                    <fullName>Jerrin Thomas</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Jerrin Thomas</label>
+                </value>
+                <value>
+                    <fullName>Laura Mitchell</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Laura Mitchell</label>
+                </value>
+                <value>
+                    <fullName>Nilay Patel</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Nilay Patel</label>
+                </value>
+                <value>
+                    <fullName>Rachel Hughes</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Rachel Hughes</label>
+                </value>
+                <value>
+                    <fullName>Shauna Ekimura</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Shauna Ekimura</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Meth_Rep_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Meth Rep #3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Alicia Clausel</fullName>
+                    <default>false</default>
+                    <label>Alicia Clausel</label>
+                </value>
+                <value>
+                    <fullName>Ambar Grijalva</fullName>
+                    <default>false</default>
+                    <label>Ambar Grijalva</label>
+                </value>
+                <value>
+                    <fullName>Ben Taylor</fullName>
+                    <default>false</default>
+                    <label>Ben Taylor</label>
+                </value>
+                <value>
+                    <fullName>Bobby Milam</fullName>
+                    <default>false</default>
+                    <label>Bobby Milam</label>
+                </value>
+                <value>
+                    <fullName>Craig Whittington</fullName>
+                    <default>false</default>
+                    <label>Craig Whittington</label>
+                </value>
+                <value>
+                    <fullName>Dara Paek</fullName>
+                    <default>false</default>
+                    <label>Dara Paek</label>
+                </value>
+                <value>
+                    <fullName>Erin Murray</fullName>
+                    <default>false</default>
+                    <label>Erin Murray</label>
+                </value>
+                <value>
+                    <fullName>Fasahath Husain</fullName>
+                    <default>false</default>
+                    <label>Fasahath Husain</label>
+                </value>
+                <value>
+                    <fullName>John Gilles</fullName>
+                    <default>false</default>
+                    <label>John Gilles</label>
+                </value>
+                <value>
+                    <fullName>Lauren Mintzer</fullName>
+                    <default>false</default>
+                    <label>Lauren Mintzer</label>
+                </value>
+                <value>
+                    <fullName>Madison Zhang</fullName>
+                    <default>false</default>
+                    <label>Madison Zhang</label>
+                </value>
+                <value>
+                    <fullName>Rebecca Diekemper</fullName>
+                    <default>false</default>
+                    <label>Rebecca Diekemper</label>
+                </value>
+                <value>
+                    <fullName>Sharath Krishna</fullName>
+                    <default>false</default>
+                    <label>Sharath Krishna</label>
+                </value>
+                <value>
+                    <fullName>Sonya Egodadge</fullName>
+                    <default>false</default>
+                    <label>Sonya Egodadge</label>
+                </value>
+                <value>
+                    <fullName>Sophie Yoon</fullName>
+                    <default>false</default>
+                    <label>Sophie Yoon</label>
+                </value>
+                <value>
+                    <fullName>Yuting Kuang</fullName>
+                    <default>false</default>
+                    <label>Yuting Kuang</label>
+                </value>
+                <value>
+                    <fullName>Zuleika Aponte</fullName>
+                    <default>false</default>
+                    <label>Zuleika Aponte</label>
+                </value>
+                <value>
+                    <fullName>Maria Akopjan</fullName>
+                    <default>false</default>
+                    <label>Maria Akopjan</label>
+                </value>
+                <value>
+                    <fullName>Arielle Levy</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Arielle Levy</label>
+                </value>
+                <value>
+                    <fullName>Jerrin Thomas</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Jerrin Thomas</label>
+                </value>
+                <value>
+                    <fullName>Rachel Hughes</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Rachel Hughes</label>
+                </value>
+                <value>
+                    <fullName>Shauna Ekimura</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Shauna Ekimura</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Methodology_Associate__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Methodology Associate</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Cases2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Methodology_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Methodology Lead</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Cases1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Methodology_Question_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Methodology Question Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Animal / Pre-clinical / Pathophysiological</fullName>
+                    <default>false</default>
+                    <label>Animal / Pre-clinical / Pathophysiological</label>
+                </value>
+                <value>
+                    <fullName>Diagnosis</fullName>
+                    <default>false</default>
+                    <label>Diagnosis</label>
+                </value>
+                <value>
+                    <fullName>Economics</fullName>
+                    <default>false</default>
+                    <label>Economics</label>
+                </value>
+                <value>
+                    <fullName>Efficacy / Effectiveness / Safety, Comparative</fullName>
+                    <default>false</default>
+                    <label>Efficacy / Effectiveness / Safety, Comparative</label>
+                </value>
+                <value>
+                    <fullName>Efficacy / Effectiveness / Safety, Non-Comparative</fullName>
+                    <default>false</default>
+                    <label>Efficacy / Effectiveness / Safety, Non-Comparative</label>
+                </value>
+                <value>
+                    <fullName>Epidemiology</fullName>
+                    <default>false</default>
+                    <label>Epidemiology</label>
+                </value>
+                <value>
+                    <fullName>Health Services Delivery</fullName>
+                    <default>false</default>
+                    <label>Health Services Delivery</label>
+                </value>
+                <value>
+                    <fullName>Humanistic Burden</fullName>
+                    <default>false</default>
+                    <label>Humanistic Burden</label>
+                </value>
+                <value>
+                    <fullName>Prognosis</fullName>
+                    <default>false</default>
+                    <label>Prognosis</label>
+                </value>
+                <value>
+                    <fullName>Unclear/Need More Info</fullName>
+                    <default>false</default>
+                    <label>Unclear/Need More Info</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Number_of_Hours_Reported__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Hours Reported</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offering__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity_Name__r.Product_Category__c)</formula>
+        <label>Offering</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ontology_Complete_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Ontology Complete Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ontology_Lead__c</fullName>
+        <externalId>false</externalId>
+        <label>Ontology Lead</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Augusta Crumrine</fullName>
+                    <default>false</default>
+                    <label>Augusta Crumrine</label>
+                </value>
+                <value>
+                    <fullName>ChunYi Ho</fullName>
+                    <default>false</default>
+                    <label>ChunYi Ho</label>
+                </value>
+                <value>
+                    <fullName>Joseph Tsung</fullName>
+                    <default>false</default>
+                    <label>Joseph Tsung</label>
+                </value>
+                <value>
+                    <fullName>Lauren Mintzer</fullName>
+                    <default>false</default>
+                    <label>Lauren Mintzer</label>
+                </value>
+                <value>
+                    <fullName>Rui Zou</fullName>
+                    <default>false</default>
+                    <label>Rui Zou</label>
+                </value>
+                <value>
+                    <fullName>Sara del Aguila</fullName>
+                    <default>false</default>
+                    <label>Sara del Aguila</label>
+                </value>
+                <value>
+                    <fullName>Tammy Quach</fullName>
+                    <default>false</default>
+                    <label>Tammy Quach</label>
+                </value>
+                <value>
+                    <fullName>Alicia Clausel</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Alicia Clausel</label>
+                </value>
+                <value>
+                    <fullName>Marina Gettas</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Marina Gettas</label>
+                </value>
+                <value>
+                    <fullName>Purnima Gurung</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Purnima Gurung</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ontology_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Ontology Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Operations_Deliverable__c</fullName>
+        <externalId>false</externalId>
+        <label>Operations Deliverable</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Term Index</fullName>
+                    <default>false</default>
+                    <label>Term Index</label>
+                </value>
+                <value>
+                    <fullName>Library</fullName>
+                    <default>false</default>
+                    <label>Library</label>
+                </value>
+                <value>
+                    <fullName>Database</fullName>
+                    <default>false</default>
+                    <label>Database</label>
+                </value>
+                <value>
+                    <fullName>Other/Custom</fullName>
+                    <default>false</default>
+                    <label>Other/Custom</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Opportunity_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name__r.Opportunity_ID__c</formula>
+        <label>Opportunity ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity Name</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Origin</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Outcome__c</fullName>
+        <externalId>false</externalId>
+        <label>Outcome</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Overall_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Overall Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Queue</fullName>
+                    <default>false</default>
+                    <label>In Queue</label>
+                </value>
+                <value>
+                    <fullName>In Production</fullName>
+                    <default>false</default>
+                    <label>In Production</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PICO_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>PICO ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Package_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Package ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Project__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Record to represent the parent project.</description>
+        <externalId>false</externalId>
+        <label>Parent Project</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Population__c</fullName>
+        <externalId>false</externalId>
+        <label>Population</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Principal_Scientist__c</fullName>
+        <externalId>false</externalId>
+        <label>Principal Scientist</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ben Taylor</fullName>
+                    <default>false</default>
+                    <label>Ben Taylor</label>
+                </value>
+                <value>
+                    <fullName>Craig Whittington</fullName>
+                    <default>false</default>
+                    <label>Craig Whittington</label>
+                </value>
+                <value>
+                    <fullName>Egbe Ubamadu</fullName>
+                    <default>false</default>
+                    <label>Egbe Ubamadu</label>
+                </value>
+                <value>
+                    <fullName>Erin Murray</fullName>
+                    <default>false</default>
+                    <label>Erin Murray</label>
+                </value>
+                <value>
+                    <fullName>Fasahath Husain</fullName>
+                    <default>false</default>
+                    <label>Fasahath Husain</label>
+                </value>
+                <value>
+                    <fullName>Madison Zhang</fullName>
+                    <default>false</default>
+                    <label>Madison Zhang</label>
+                </value>
+                <value>
+                    <fullName>Rebecca Diekemper</fullName>
+                    <default>false</default>
+                    <label>Rebecca Diekemper</label>
+                </value>
+                <value>
+                    <fullName>Roshan Shah</fullName>
+                    <default>false</default>
+                    <label>Roshan Shah</label>
+                </value>
+                <value>
+                    <fullName>Sophie Yoon</fullName>
+                    <default>false</default>
+                    <label>Sophie Yoon</label>
+                </value>
+                <value>
+                    <fullName>Jacob Franek</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Jacob Franek</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Problem__c</fullName>
+        <externalId>false</externalId>
+        <label>Problem</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Process_Phase__c</fullName>
+        <externalId>false</externalId>
+        <label>Process Phase</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 - Early Scoping</fullName>
+                    <default>false</default>
+                    <label>1 - Early Scoping</label>
+                </value>
+                <value>
+                    <fullName>2 - Protocol Development</fullName>
+                    <default>false</default>
+                    <label>2 - Protocol Development</label>
+                </value>
+                <value>
+                    <fullName>3 - Library Estimating</fullName>
+                    <default>false</default>
+                    <label>3 - Library Estimating</label>
+                </value>
+                <value>
+                    <fullName>4 - Library Production</fullName>
+                    <default>false</default>
+                    <label>4 - Library Production</label>
+                </value>
+                <value>
+                    <fullName>5 - In Active Production</fullName>
+                    <default>false</default>
+                    <label>5 - In Active Production</label>
+                </value>
+                <value>
+                    <fullName>6 - Delivered</fullName>
+                    <default>false</default>
+                    <label>6 - Delivered</label>
+                </value>
+                <value>
+                    <fullName>7 - Delivered + Routine Updating</fullName>
+                    <default>false</default>
+                    <label>7 - Delivered + Routine Updating</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Production_Release_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Production Release Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Project_Instruction_Completed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Instruction Completed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Project_Instruction_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Instruction Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Project_Plan_Approved_by_Client__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Plan Approved by Client</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Project_Stage_Ops__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Stage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Protocol Development Queue</fullName>
+                    <default>false</default>
+                    <label>Protocol Development Queue</label>
+                </value>
+                <value>
+                    <fullName>Protocol Development</fullName>
+                    <default>false</default>
+                    <label>Protocol Development</label>
+                </value>
+                <value>
+                    <fullName>Library Queue</fullName>
+                    <default>false</default>
+                    <label>Library Queue</label>
+                </value>
+                <value>
+                    <fullName>Library Production</fullName>
+                    <default>false</default>
+                    <label>Library Production</label>
+                </value>
+                <value>
+                    <fullName>Pre-Production</fullName>
+                    <default>false</default>
+                    <label>Pre-Production</label>
+                </value>
+                <value>
+                    <fullName>Configuration Queue</fullName>
+                    <default>false</default>
+                    <label>Configuration Queue</label>
+                </value>
+                <value>
+                    <fullName>Configuration</fullName>
+                    <default>false</default>
+                    <label>Configuration</label>
+                </value>
+                <value>
+                    <fullName>Ontology</fullName>
+                    <default>false</default>
+                    <label>Ontology</label>
+                </value>
+                <value>
+                    <fullName>Custom Deliverables</fullName>
+                    <default>false</default>
+                    <label>Custom Deliverables</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Rapid Assessment</fullName>
+                    <default>false</default>
+                    <label>Rapid Assessment</label>
+                </value>
+                <value>
+                    <fullName>Delivered to CS</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Delivered to CS</label>
+                </value>
+                <value>
+                    <fullName>Rapid Intel</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Rapid Intel</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Protocol_Development_Complete_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Protocol Development Complete Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Protocol_Development_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Protocol Development Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Question__c</fullName>
+        <externalId>false</externalId>
+        <label>Question</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Reason</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Requires_Client_Full_Text_Screen__c</fullName>
+        <externalId>false</externalId>
+        <label>Requires Client Full-Text Screen?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Retrieved_Studies_and_DeDuped__c</fullName>
+        <externalId>false</externalId>
+        <label># Retrieved and De-Duped</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Scoping_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Scoping Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Send_Project_Plan_to_Client_for_R_A__c</fullName>
+        <externalId>false</externalId>
+        <label>Send Project Plan to Client for R&amp;A</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Short_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Short Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solution__c</fullName>
+        <externalId>false</externalId>
+        <label>Solution</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SourceId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Start_Development_of_Project_Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Development of Project Plan</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedCompany</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedName</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Technology_Requirements_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Technology Requirements Detail</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Technology_Requirements__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Tech Discussion Required?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Therapeutic_Area__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity_Name__r.Therapeutic_Area__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Therapeutic Area</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ti_ab_Library_Deadline__c</fullName>
+        <externalId>false</externalId>
+        <label>Ti/ab Library Deadline</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Value</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Working_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Working Group</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Workstream__c</fullName>
+        <externalId>false</externalId>
+        <label>Workstream</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Archaogen BD Strategy</fullName>
+                    <default>false</default>
+                    <label>Archaogen BD Strategy</label>
+                </value>
+                <value>
+                    <fullName>Asthma Trial Strategy</fullName>
+                    <default>false</default>
+                    <label>Asthma Trial Strategy</label>
+                </value>
+                <value>
+                    <fullName>Canada Medical Information</fullName>
+                    <default>false</default>
+                    <label>Canada Medical Information</label>
+                </value>
+                <value>
+                    <fullName>CHC Allergies</fullName>
+                    <default>false</default>
+                    <label>CHC Allergies</label>
+                </value>
+                <value>
+                    <fullName>CHC Canada Strategy</fullName>
+                    <default>false</default>
+                    <label>CHC Canada Strategy</label>
+                </value>
+                <value>
+                    <fullName>CHC Claims Week</fullName>
+                    <default>false</default>
+                    <label>CHC Claims Week</label>
+                </value>
+                <value>
+                    <fullName>CHC Heartburn</fullName>
+                    <default>false</default>
+                    <label>CHC Heartburn</label>
+                </value>
+                <value>
+                    <fullName>CHC Laxatives</fullName>
+                    <default>false</default>
+                    <label>CHC Laxatives</label>
+                </value>
+                <value>
+                    <fullName>CHC OTC Switch</fullName>
+                    <default>false</default>
+                    <label>CHC OTC Switch</label>
+                </value>
+                <value>
+                    <fullName>CHC Probiotics</fullName>
+                    <default>false</default>
+                    <label>CHC Probiotics</label>
+                </value>
+                <value>
+                    <fullName>CHC South Africa Strategy</fullName>
+                    <default>false</default>
+                    <label>CHC South Africa Strategy</label>
+                </value>
+                <value>
+                    <fullName>CHC Vitamins</fullName>
+                    <default>false</default>
+                    <label>CHC Vitamins</label>
+                </value>
+                <value>
+                    <fullName>Clopidogrel Publications</fullName>
+                    <default>false</default>
+                    <label>Clopidogrel Publications</label>
+                </value>
+                <value>
+                    <fullName>COPD Trial Strategy</fullName>
+                    <default>false</default>
+                    <label>COPD Trial Strategy</label>
+                </value>
+                <value>
+                    <fullName>Diabetes Algeria Strategy</fullName>
+                    <default>false</default>
+                    <label>Diabetes Algeria Strategy</label>
+                </value>
+                <value>
+                    <fullName>Diabetes China Strategy</fullName>
+                    <default>false</default>
+                    <label>Diabetes China Strategy</label>
+                </value>
+                <value>
+                    <fullName>Diabetes Literature Updates</fullName>
+                    <default>false</default>
+                    <label>Diabetes Literature Updates</label>
+                </value>
+                <value>
+                    <fullName>Diabetes RWE Modeling</fullName>
+                    <default>false</default>
+                    <label>Diabetes RWE Modeling</label>
+                </value>
+                <value>
+                    <fullName>Dupilumab HTA Submissions</fullName>
+                    <default>false</default>
+                    <label>Dupilumab HTA Submissions</label>
+                </value>
+                <value>
+                    <fullName>Dupilumab Strategy</fullName>
+                    <default>false</default>
+                    <label>Dupilumab Strategy</label>
+                </value>
+                <value>
+                    <fullName>Eligard Canada Strategy</fullName>
+                    <default>false</default>
+                    <label>Eligard Canada Strategy</label>
+                </value>
+                <value>
+                    <fullName>Enoxaparin Publications</fullName>
+                    <default>false</default>
+                    <label>Enoxaparin Publications</label>
+                </value>
+                <value>
+                    <fullName>GEM Literature Updates</fullName>
+                    <default>false</default>
+                    <label>GEM Literature Updates</label>
+                </value>
+                <value>
+                    <fullName>Genzyme Library</fullName>
+                    <default>false</default>
+                    <label>Genzyme Library</label>
+                </value>
+                <value>
+                    <fullName>Glargine Cancer Risk</fullName>
+                    <default>false</default>
+                    <label>Glargine Cancer Risk</label>
+                </value>
+                <value>
+                    <fullName>HEVA HTA Submissions</fullName>
+                    <default>false</default>
+                    <label>HEVA HTA Submissions</label>
+                </value>
+                <value>
+                    <fullName>HEVA Hypoglycemia Strategy</fullName>
+                    <default>false</default>
+                    <label>HEVA Hypoglycemia Strategy</label>
+                </value>
+                <value>
+                    <fullName>HEVA Obesity Strategy</fullName>
+                    <default>false</default>
+                    <label>HEVA Obesity Strategy</label>
+                </value>
+                <value>
+                    <fullName>HEVA Soliqua Strategy</fullName>
+                    <default>false</default>
+                    <label>HEVA Soliqua Strategy</label>
+                </value>
+                <value>
+                    <fullName>Hypoglycemia South Africa Strategy</fullName>
+                    <default>false</default>
+                    <label>Hypoglycemia South Africa Strategy</label>
+                </value>
+                <value>
+                    <fullName>Immunology--IO Strategy</fullName>
+                    <default>false</default>
+                    <label>Immunology--IO Strategy</label>
+                </value>
+                <value>
+                    <fullName>IPF Trial Strategy</fullName>
+                    <default>false</default>
+                    <label>IPF Trial Strategy</label>
+                </value>
+                <value>
+                    <fullName>Irbesartan Publications</fullName>
+                    <default>false</default>
+                    <label>Irbesartan Publications</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse MS RWE Pilot</fullName>
+                    <default>false</default>
+                    <label>Lighthouse MS RWE Pilot</label>
+                </value>
+                <value>
+                    <fullName>Lighthouse Soliqua RWE Pilot</fullName>
+                    <default>false</default>
+                    <label>Lighthouse Soliqua RWE Pilot</label>
+                </value>
+                <value>
+                    <fullName>Lovenox Health Canada Indication</fullName>
+                    <default>false</default>
+                    <label>Lovenox Health Canada Indication</label>
+                </value>
+                <value>
+                    <fullName>Medical--Immunology Safety</fullName>
+                    <default>false</default>
+                    <label>Medical--Immunology Safety</label>
+                </value>
+                <value>
+                    <fullName>Metamizole Safety</fullName>
+                    <default>false</default>
+                    <label>Metamizole Safety</label>
+                </value>
+                <value>
+                    <fullName>MS Literature Updates</fullName>
+                    <default>false</default>
+                    <label>MS Literature Updates</label>
+                </value>
+                <value>
+                    <fullName>MS South Africa Strategy</fullName>
+                    <default>false</default>
+                    <label>MS South Africa Strategy</label>
+                </value>
+                <value>
+                    <fullName>MS Trial Strategy</fullName>
+                    <default>false</default>
+                    <label>MS Trial Strategy</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>NICE Guideline Replication</fullName>
+                    <default>false</default>
+                    <label>NICE Guideline Replication</label>
+                </value>
+                <value>
+                    <fullName>OA Trial Strategy</fullName>
+                    <default>false</default>
+                    <label>OA Trial Strategy</label>
+                </value>
+                <value>
+                    <fullName>Patient Centricity--Depression</fullName>
+                    <default>false</default>
+                    <label>Patient Centricity--Depression</label>
+                </value>
+                <value>
+                    <fullName>Patient Centricity--Devices</fullName>
+                    <default>false</default>
+                    <label>Patient Centricity--Devices</label>
+                </value>
+                <value>
+                    <fullName>Patient Centricity--Flu Vaccine and Diabetes</fullName>
+                    <default>false</default>
+                    <label>Patient Centricity--Flu Vaccine and Diabetes</label>
+                </value>
+                <value>
+                    <fullName>Patient Centricity--Nurse Interventions</fullName>
+                    <default>false</default>
+                    <label>Patient Centricity--Nurse Interventions</label>
+                </value>
+                <value>
+                    <fullName>Patient Centricity--Patient Engagement</fullName>
+                    <default>false</default>
+                    <label>Patient Centricity--Patient Engagement</label>
+                </value>
+                <value>
+                    <fullName>Patient Centricity--Rare Diseases</fullName>
+                    <default>false</default>
+                    <label>Patient Centricity--Rare Diseases</label>
+                </value>
+                <value>
+                    <fullName>Patient Centricity--Sleep</fullName>
+                    <default>false</default>
+                    <label>Patient Centricity--Sleep</label>
+                </value>
+                <value>
+                    <fullName>Pharmacovigilance euDKA</fullName>
+                    <default>false</default>
+                    <label>Pharmacovigilance euDKA</label>
+                </value>
+                <value>
+                    <fullName>Pipeline Visualizations</fullName>
+                    <default>false</default>
+                    <label>Pipeline Visualizations</label>
+                </value>
+                <value>
+                    <fullName>Praluent CV Events</fullName>
+                    <default>false</default>
+                    <label>Praluent CV Events</label>
+                </value>
+                <value>
+                    <fullName>Rare Diseases Strategy</fullName>
+                    <default>false</default>
+                    <label>Rare Diseases Strategy</label>
+                </value>
+                <value>
+                    <fullName>RWE GLEM Workshop</fullName>
+                    <default>false</default>
+                    <label>RWE GLEM Workshop</label>
+                </value>
+                <value>
+                    <fullName>Sanofi Master Library</fullName>
+                    <default>false</default>
+                    <label>Sanofi Master Library</label>
+                </value>
+                <value>
+                    <fullName>Sevelamer Canada Strategy</fullName>
+                    <default>false</default>
+                    <label>Sevelamer Canada Strategy</label>
+                </value>
+                <value>
+                    <fullName>Soliqua Trial Strategy</fullName>
+                    <default>false</default>
+                    <label>Soliqua Trial Strategy</label>
+                </value>
+                <value>
+                    <fullName>Sotagliflozin HTA Submissions</fullName>
+                    <default>false</default>
+                    <label>Sotagliflozin HTA Submissions</label>
+                </value>
+                <value>
+                    <fullName>Sotagliflozin Library Updates</fullName>
+                    <default>false</default>
+                    <label>Sotagliflozin Library Updates</label>
+                </value>
+                <value>
+                    <fullName>Spiramycin FDA Submission</fullName>
+                    <default>false</default>
+                    <label>Spiramycin FDA Submission</label>
+                </value>
+                <value>
+                    <fullName>Synvisc Strategy</fullName>
+                    <default>false</default>
+                    <label>Synvisc Strategy</label>
+                </value>
+                <value>
+                    <fullName>Toujeo Medical Strategy</fullName>
+                    <default>false</default>
+                    <label>Toujeo Medical Strategy</label>
+                </value>
+                <value>
+                    <fullName>Valproate Depression Strategy</fullName>
+                    <default>false</default>
+                    <label>Valproate Depression Strategy</label>
+                </value>
+                <value>
+                    <fullName>Valproate Safety</fullName>
+                    <default>false</default>
+                    <label>Valproate Safety</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>of_Assigned_Library_Studies__c</fullName>
+        <externalId>false</externalId>
+        <label># of Assigned Library Studies</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <searchLayouts>
+        <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PICO_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.PRIORITY</customTabListAdditionalFields>
+        <excludedStandardButtons>NewCase</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PICO_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Short_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.STATUS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.CASE_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.SUBJECT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>CASES.CASE_NUMBER</searchFilterFields>
+        <searchFilterFields>PICO_ID__c</searchFilterFields>
+        <searchFilterFields>Short_Name__c</searchFilterFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PICO_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWriteTransfer</sharingModel>
+    <listViews>
+        <fullName>AllOpenCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>PICO_ID__c</columns>
+        <columns>Case_Name__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>Database_Name__c</columns>
+        <columns>Parent_Project__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>equals</operation>
+            <value>Sanofi</value>
+        </filters>
+        <label>All Open Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>Card2</fullName>
+        <columns>PICO_ID__c</columns>
+        <columns>Deliverable_Deadline_Date__c</columns>
+        <columns>Working_Group__c</columns>
+        <columns>Case_Name__c</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>equals</operation>
+            <value>sanofi</value>
+        </filters>
+        <filters>
+            <field>PICO_ID__c</field>
+            <operation>contains</operation>
+            <value>card</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <label>Card</label>
+    </listViews>
+    <listViews>
+        <fullName>Custom_View</fullName>
+        <columns>PICO_ID__c</columns>
+        <columns>Case_Name__c</columns>
+        <columns>Case_Work_Type__c</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Contracted_Service__c</columns>
+        <columns>Deliverable_Deadline_Date__c</columns>
+        <columns>Client_Department__c</columns>
+        <columns>Client_Delivered_Date__c</columns>
+        <columns>Client_Deliverable__c</columns>
+        <columns>Population__c</columns>
+        <columns>Value__c</columns>
+        <columns>Problem__c</columns>
+        <columns>Solution__c</columns>
+        <columns>Methodology_Question_Type__c</columns>
+        <columns>Question__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PICO_ID__c</field>
+            <operation>contains</operation>
+            <value>SNF-IMMU</value>
+        </filters>
+        <label>Custom View</label>
+    </listViews>
+    <listViews>
+        <fullName>MyCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>PICO_ID__c</columns>
+        <columns>Case_Name__c</columns>
+        <columns>Client_Department__c</columns>
+        <columns>NAME</columns>
+        <columns>Working_Group__c</columns>
+        <columns>Deliverable_Deadline_Date__c</columns>
+        <columns>Client_Delivered_Date__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Client_Deliverable__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>PICO_ID__c</columns>
+        <columns>Deliverable_Deadline_Date__c</columns>
+        <columns>Client_Delivered_Date__c</columns>
+        <columns>Client_Accepted_Date__c</columns>
+        <columns>NAME</columns>
+        <columns>Case_Name__c</columns>
+        <columns>Client_Deliverable__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>My Open Cases</label>
+    </listViews>
+    <validationRules>
+        <fullName>Require_Critical_Issue_Checked</fullName>
+        <active>false</active>
+        <description>Require Critical Issue checked if a Critical Issue Description is provided.</description>
+        <errorConditionFormula>Critical_Issue_Description__c != NULL &amp;&amp; !Critical_Issue__c</errorConditionFormula>
+        <errorDisplayField>Critical_Issue__c</errorDisplayField>
+        <errorMessage>A Critical Issue Description has been provided but Critical Issue is not checked.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Critical_Issue_Description</fullName>
+        <active>false</active>
+        <description>Require critical issue description if critical issue is checked.</description>
+        <errorConditionFormula>Critical_Issue__c &amp;&amp;  Critical_Issue_Description__c == NULL</errorConditionFormula>
+        <errorDisplayField>Critical_Issue_Description__c</errorDisplayField>
+        <errorMessage>Critical issue is checked, but the Critical Issue Description has not been provided.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>New_Case</fullName>
+        <availability>online</availability>
+        <description>New case from opportunity</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Case</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>https://na11.salesforce.com/500/e?retURL=%2F500%2Fo&amp;
+CF00NG000000Enghi={!Opportunity.Name}&amp;cas4={!Account.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Critical_Issue</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Critical Issue</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>https://na63.salesforce.com/a1T/e?CF00N0f00000Fcdqv={!Case.CaseNumber}&amp;CF00N0f00000Fcdqv_lkid={!Case.Id}&amp;retURL=%2F{!Case.Id}</url>
+    </webLinks>
+</CustomObject>

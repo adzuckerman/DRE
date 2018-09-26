@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>DRE_Logo</letterhead>
+    <name>Intro General</name>
+    <style>freeForm</style>
+    <subject>Doctor Evidence&apos;s Information Technology capabilities</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+My name is {!User.Name} and I’m VP of Business Development at Doctor Evidence responsible for the {!Account.Name} account. I am going to be in the {!Contact.MailingCity} area the week of JAN-25 and was hoping to get some of your time to better understand your role and talk you through our Information Technology capabilities. Tues, January 26th and Wed, Jan 27th are wide open right now for me.  Let me know which day and a time that works best for you and I’ll add a meeting onto our calendars.
+
+Doctor Evidence offers a centralized, unified space for commercial and clinical evidence gathering. Our DOC Data solution combines evidence based medicine and technology to produce outcome-based results including evidence tables, frequency reports (outcomes, characteristics), and software that quickly produces both direct and indirect meta-analysis.  It’s an awesome platform and I’d like to see if it can help in your area of Business Development? http://drevidence.com/products/doc-data/
+
+I’m looking forward to meeting you the week of January 25th.  Let me know if the 26th or 27th works best and a convenient time on one of those two days for a one-hour presentation and demonstration of our EBM monitoring platform.
+
+
+
+{!User.Name}
+
+{!User.Phone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

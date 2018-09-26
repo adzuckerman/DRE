@@ -1,0 +1,16 @@
+<p>Dear {!Project_Request__c.Requester_First_Name__c},</p>
+
+<p>I am reaching out to you because you recently received the final deliverable for a project in collaboration with Doctor Evidence, “{!Project_Request__c.Project_Name__c}.”</p>
+
+<p>Sanofi has asked us to collect feedback regarding the project process and outputs, and we would like to ask for just a few minutes of your time to fill out the brief survey below:</p>
+
+<p><a href="https://reports.doctorevidence.com/pages/Client/Survey.aspx?surveyId={!Project_Request__c.Id}">https://reports.doctorevidence.com/pages/Client/Survey.aspx?surveyId={!Project_Request__c.TaskRay_ProjectId__c}</a></p>
+ 
+<p>Thank you for your valuable insight into our collaboration. If you have received this email in error, please contact {!Project_Request__c.Principal_Consultant_Email__c}.</p>
+
+<p style="font-size:13px; color:#4F4F60; margin: 0; padding:0; font-family:arial;">{!Project_Request__c.Principal_Consultant__c}</p>
+<p style="font-size:12px; margin: 0; color:#4F4F60; font-family:arial;">{!Project_Request__c.Principal_Consultant_Title__c}<br/>
+Doctor Evidence</p>
+<p style="font-size:10.5px; color:#4F4F60; font-family:arial;">{!Project_Request__c.Principle_Consultant_Phone__c}<br/>
+<a href="http://www.doctorevidence.com" style="color: #4F4F60; text-decoration:none;">www.doctorevidence.com</a><br/>
+301 Arizona Ave, Suite 301, Santa Monica, CA 90401</p>

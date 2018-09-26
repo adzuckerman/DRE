@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>GROWTH-Holiday 2016</name>
+    <style>none</style>
+    <subject>GROWTH Holiday Greeting</subject>
+    <textOnly>*|GROWTH Holiday Greeting|*
+
+Dear {!Contact.FirstName},
+
+It&apos;s been a wonderful year for GROWTH, but we couldn&apos;t have done it without you. As we enter into the Holiday season once again, we would like to extend warm wishes to you and yours. We at GROWTH appreciate working with you and hope that the holiday and the coming year will bring you every happiness and success.
+
+Happy Holidays
+From your friends at
+DOCTOR EVIDENCE</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

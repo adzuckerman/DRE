@@ -1,0 +1,101 @@
+<apex:page showHeader="false"  standardController="Opportunity" extensions="InvoiceListCtrl">
+
+    <style type="text/css">
+        .slds-truncate.column-name {
+            text-align: left !important;
+        }
+        .slds-truncate {
+            text-align: center !important;
+        }
+        .slds-scope td {
+            text-align: center !important;
+        }
+    </style>
+
+    <apex:slds />
+
+    <apex:outputPanel id="SchedulesTable" layout="block" styleClass="slds-p-vertical--small" style="max-height: 270px; min-height: 270px; overflow-y: auto;">
+        <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+            <thead>
+                <tr class="slds-text-heading--label">
+                    <th scope="col">
+                        <div class="slds-truncate column-name"></div>
+                    </th>
+                    <apex:repeat value="{!invoices}" var="invoice">
+                        <th scope="col" class="slds-text-title--caps">
+                            <div class="slds-truncate" title="{!invoice.name}">{!invoice.name}</div>
+                        </th>
+                    </apex:repeat>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td scope="col">
+                            <div class="slds-truncate column-name">Monthly Revenue</div>
+                        </td>
+                        <apex:repeat value="{!invoices}" var="invoice">
+                            <td>
+                                <apex:outputText value="{0, number, currency}{1}" styleClass="slds-truncate slds-p-horizontal--x-small">
+                                    <apex:param value="{!invoice.monthRevenue}" />
+                                    <apex:param value="{!IF(invoice.monthRevenue == null, '-', '')}" />
+                                </apex:outputText>
+                            </td>
+                        </apex:repeat>
+                    </tr>
+                    <tr>
+                        <td scope="col">
+                            <div class="slds-truncate column-name">Cumulative Revenue</div>
+                        </td>
+                        <apex:repeat value="{!invoices}" var="invoice">
+                            <td>
+                                <apex:outputText value="{0, number, currency}{1}" styleClass="slds-truncate slds-p-horizontal--x-small">
+                                    <apex:param value="{!invoice.cumulativeRevenue}" />
+                                    <apex:param value="{!IF(invoice.cumulativeRevenue == null, '-', '')}" />
+                                </apex:outputText>
+                            </td>
+                        </apex:repeat>
+                    </tr>
+                    <tr>
+                        <td scope="col">
+                            <div class="slds-truncate column-name">Cumulative Invoices</div>
+                        </td>
+                        <apex:repeat value="{!invoices}" var="invoice">
+                            <td>
+                                <apex:outputText value="{0, number, currency}{1}" styleClass="slds-truncate slds-p-horizontal--x-small">
+                                    <apex:param value="{!invoice.cumulativeAmount}" />
+                                    <apex:param value="{!IF(invoice.cumulativeAmount == null, '-', '')}" />
+                                </apex:outputText>
+                            </td>
+                        </apex:repeat>
+                    </tr>
+                    <tr>
+                        <td scope="col">
+                            <div class="slds-truncate column-name">Accrued Revenue</div>
+                        </td>
+                        <apex:repeat value="{!invoices}" var="invoice">
+                            <td>
+                                <apex:outputText value="{0, number, currency}{1}" styleClass="slds-truncate slds-p-horizontal--x-small">
+                                    <apex:param value="{!invoice.accruedRevenue}" />
+                                    <apex:param value="{!IF(invoice.accruedRevenue == null, '-', '')}" />
+                                </apex:outputText>
+                            </td>
+                        </apex:repeat>
+                    </tr>
+                    <tr>
+                        <td scope="col">
+                            <div class="slds-truncate column-name">Deferred Revenue</div>
+                        </td>
+                        <apex:repeat value="{!invoices}" var="invoice">
+                            <td>
+                                <apex:outputText value="{0, number, currency}{1}" styleClass="slds-truncate slds-p-horizontal--x-small">
+                                    <apex:param value="{!invoice.deferredRevenue}" />
+                                    <apex:param value="{!IF(invoice.deferredRevenue == null, '-', '')}" />
+                                </apex:outputText>
+                            </td>
+                        </apex:repeat>
+                    </tr>
+            </tbody>
+        </table>
+    </apex:outputPanel>
+
+</apex:page>

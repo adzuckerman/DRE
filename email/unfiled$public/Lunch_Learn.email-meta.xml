@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Lunch &amp; Learn</name>
+    <style>none</style>
+    <subject>Doctor Evidence - Lunch &amp; Learn session</subject>
+    <textOnly>DRE -Lunch &amp; Learn
+
+Doctor Evidence Lunch &amp; Learn May 10th, 2016
+from 11:00 am - 1:00 pm CST
+
+Dear Colleagues,
+
+We are pleased to invite you to the Doctor Evidence Lunch &amp; Learn session next Tuesday, May 10th, 2016 from 11:00 am - 1:00 pm CST.
+
+This is an open session (walk-ins welcome and encouraged!) where we will be providing training and support on DOC Library,  DOC Data, and DOC Label resources. We will also be answering questions related to any existing DRE projects and discussing new evidence related needs and opportunities.
+When: Wednesday, May 10th from 11:00 am – 1:00 pm CST
+Location: US-LC-ABV1-1NW-102-09 Barceloneta
+Snacks will be provided, please accept this calendar invite.
+We would love to see you there so please stop by and bring your research questions!
+
+Look forward to seeing you soon,
+
+Michiel de Bruin
+Account Director, Client Solutions
+Doctor Evidence</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

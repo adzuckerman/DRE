@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-Sanofi-Intermediate-Training</name>
+    <style>none</style>
+    <subject>DOCTOR EVIDENCE INTERMEDIATE TRAINING INVITATION</subject>
+    <textOnly>*|DRE-Sanofi Intermediate Training|*
+
+Dear {!Contact.FirstName}, 
+Thank you for completing the Doctor Evidence Introductory training. 
+
+We invite you to participate in our four-module Intermediate Training, which will be held over two 3-hour sessions on consecutive days via webinar. (Please note that you can attend the two sessions on non-consecutive days, depending on your schedule.) 
+
+Doctor Evidence: INTERMEDIATE TRAINING 
+Module 1. Advanced Literature Search and Screening (1 hour)
+This hands-on workshop will enable participants to search, sort, filter, rate, share and download publications in Doctor Evidence&apos;s central repository of literature, DOC Library, as well as to understand the methodology behind the curation of derivative libraries in DOC Library in the creation of a customized library package.
+Participant Profile: Users who plan to access the DOC Library as part of their workflow on a regular basis to monitor literature for a specific topic e.g. Medical &amp; Clinical Development, Librarians and researchers. 
+ 
+Module 2. Examining the Body of Evidence in DOC Data (2 hours)
+This DOC Data training provides an overview of how to use DOC Data, a central repository for evidence data. Participants will learn how to use visualizations to evaluate a body of evidence; understand how to review and configure a digital study summary; filter a data set for variables of interest; explore heterogeneity.  
+Participant Profile: HEOR, Safety and Epidemiology, Medical Communications and Market Access, Biostatisticians.
+ 
+SCHEDULE:
+17 Jan 2018 ~ Intermediate 1-2 | 9 AM-12 PM EST/ 3-6 PM CET
+14 Feb 2018~ Intermediate 1-2 | 9 AM-12 PM EST/ 3-6 PM CET
+ 
+Module 3: Exporting Data for Deliverables (2 hours)
+Participants will learn how to create deliverables for comparative safety and efficacy assessments, regulatory responses, and medical and payer response letters. This training enables participants to create and export Evidence Tables; create custom CSV data exports; generate Evidence Value Statements; and save and share workflows in DOC Data.
+Participant Profile: HEOR, Safety, Epidemiology, Medical communications, Market Access, and Biostatisticians
+ 
+Module 4: Conducting Analyses (90 minutes)
+This training provides participants with an overview of the DOC Data analytical capabilities, and the ability to conduct analyses using the platform. (Cohort Analyses, Direct Meta-Analyses, and Network Meta-Analyses.) 
+Participant Profile:   HEOR, Safety, Epidemiology Medical Communications, Market Access, and Biostatisticians.   
+ 
+SCHEDULE:
+
+18 Jan 2018 ~ Intermediate 3-4 | 9 AM-12 PM EST/ 3-6 PM CET  
+15 Feb 2018 ~ Intermediate 3-4 | 9 AM-12 PM EST/ 3-6 PM CET 
+
+Doctor Evidence and Sanofi have initiated a multi-year engagement to provide you and your colleagues with the use of our dynamic platforms and professional services. These will enable you to create deliverables such as such as Systematic Literature Reviews, Meta-Analyses, Landscape Analyses, Comparative Safety Assessments, Regulatory Responses and more. The engagement includes extensive assets across several therapeutic areas (Cardiovascular, Diabetes, Immunology, Multiple Sclerosis, General Medicines).</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

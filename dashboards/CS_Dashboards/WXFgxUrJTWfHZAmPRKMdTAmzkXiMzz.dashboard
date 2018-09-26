@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardGridLayout>
+        <dashboardGridComponents>
+            <colSpan>5</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <componentType>Table</componentType>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <header>Closed Cases by Deliverable</header>
+                <report>CS_Dashboard_Reports/Closed_Cases_by_Deliverables</report>
+                <showPicturesOnTables>false</showPicturesOnTables>
+                <sortBy>RowLabelAscending</sortBy>
+            </dashboardComponent>
+            <rowIndex>0</rowIndex>
+            <rowSpan>13</rowSpan>
+        </dashboardGridComponents>
+        <numberOfColumns>9</numberOfColumns>
+        <rowHeight>80</rowHeight>
+    </dashboardGridLayout>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <description>Closed Cases sorted by Deliverable Type</description>
+    <isGridLayout>true</isGridLayout>
+    <runningUser>ilara@doctorevidence.com</runningUser>
+    <textColor>#000000</textColor>
+    <title>Closed Cases by Deliverable Type</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

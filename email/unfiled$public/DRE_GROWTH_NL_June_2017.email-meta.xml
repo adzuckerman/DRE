@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-GROWTH-NL-June-2017</name>
+    <style>none</style>
+    <subject>DRE-GROWTH Newsletter by Christopher J.L. Murray, MD, DPhil</subject>
+    <textOnly>*|Doctor Evidence-GROWTH Newsletter-June-2017|*
+
+Dear {!Contact.Name},
+Welcome to our latest newsletter, for this month we have a commentary from Christopher J. L. Murray, MD, DPhil, who is is a Professor of Global Health at the University of Washington and Institute Director of the Institute for Health Metrics and Evaluation (IHME) whose career has focused on improving health for everyone worldwide by improving health evidence.
+
+2017 GROWTH COMMENTARY SERIES: GLOBAL HEALTH (PART 1)  Expanding Transparency in Health Estimation by Christopher J. L. Murray, MD, DPhil
+Director, Institute for Health Metrics and Evaluation (IHME)
+
+Trust us. We’re experts.
+That has been the unstated message for health data scientists for decades. Even though multi-billion-dollar decisions rely on the strength of the evidence being produced in scientific journals on levels and trends in health, scientists have expected those decision-makers to swallow a certain amount of murkiness when it comes to the completeness and quality of the evidence upon which their decisions must be based. That murkiness…
+
+Continue reading...
+
+JUNE AWARENESS MONTH: ALZHEIMER’S and
+BRAIN AWARENESS Doctor Evidence has digital data assets from published clinical research across a wide variety of disease states, including approximately 400 studies on this month’s special awareness topics, Alzheimer&apos;s and brain awareness, with more studies digitized daily.
+
+GROWTH Value is the newest offering from the GROWTH division of Doctor Evidence. It offers payers, pharmacy benefits managers, and other healthcare industry stakeholders a transparent, trusted resource for evidence-based coverage decisions. GROWTH Value compliments other evidence products from the GROWTH division of Doctor Evidence, including GROWTH Research and GROWTH Evidence.  GROWTH Value generates  data tables that take advantage of the experience, quality, and attention to detail of the Doctor Evidence technology platform and highly skilled teams.
+
+GROWTH Value treatment analysis tables are prepared for organizations that need evidence quickly but without the rigor required of a full systematic review. These tables contain efficacy, safety, and cost data to support coverage decisions and treatment protocols.
+
+Conferences
+
+For over 30 years, AcademyHealth&apos;s Annual Research Meeting (ARM) has been the premier forum for health services research (HSR). The largest meeting of its kind, the ARM convenes the foremost experts at the intersection of health, health care, and policy to share important findings and showcase the latest research on how the health system works, what it costs, and how to improve it. Doctor Evidence will be represented at the
+AcademyHealth Annual Research Meeting
+
+Roshan Shah, MS, Director of Analytics, Consulting Services,
+will present a live demonstration on conducting
+Sensitivity Analysis in the Context of Network Meta-Analysis
+June 27th, 11:30am EDT at the Innovations Station
+
+Publications
+
+Keep up with recent publications based on Doctor Evidence’s projects
+
+Visit the GROWTH Publications page
+
+July Commentary: 2017 GROWTH Commentary Series:
+US Agency for International Development (USAID) By Kelly Saldana, MPIA, MPH
+
+Doctor Evidence has partnered with the Institute for Health Metrics and Evaluation (IHME) to increase the accuracy and reliability of healthcare utilization estimates and economic forecasts. The powerful technologies of Doctor Evidence, combined with the comprehensive Global Burden of Disease epidemiological data of IHME, will be integrated into real-world evidence data hubs to support clinical guidelines, health technology assessments, and comparative effectiveness analyses. Visionaries like the Bill and Melinda Gates Foundation will utilize these combined resources and knowledge to forecast both healthcare needs and policies or interventions that demonstrate effectiveness in alleviating those burdens. The result will be improved healthcare strategy from start to finish, guided by efficient and targeted analyses and conclusions.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

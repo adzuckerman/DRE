@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Account Created, continued usage</fullName>
+        <default>false</default>
+        <label>Account Created, continued usage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Created, no further activity</fullName>
+        <default>false</default>
+        <label>Account Created, no further activity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended Once</fullName>
+        <default>false</default>
+        <label>Attended Once</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended Twice</fullName>
+        <default>false</default>
+        <label>Attended Twice</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed Intermediate Training M: 1-2</fullName>
+        <default>false</default>
+        <label>Completed Intermediate Training M: 1-2</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed Intermediate Training M:3-4</fullName>
+        <default>false</default>
+        <label>Completed Intermediate Training M:3-4</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed Intro Training</fullName>
+        <default>false</default>
+        <label>Completed Intro Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed Intro Training - Litmos</fullName>
+        <default>false</default>
+        <label>Completed Intro Training - Litmos</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed Training</fullName>
+        <default>false</default>
+        <label>Completed Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Confirmed Response - Not Trained</fullName>
+        <default>false</default>
+        <label>Confirmed Response - Not Trained</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Created, continued usage</fullName>
+        <default>false</default>
+        <label>Created, continued usage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Created, no further activity</fullName>
+        <default>false</default>
+        <label>Created, no further activity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>docdata.doctorevidence.com</fullName>
+        <default>false</default>
+        <label>docdata.doctorevidence.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Enoxaparin for ACS and VTE w/ Severe RF</fullName>
+        <default>false</default>
+        <label>Enoxaparin for ACS and VTE w/ Severe RF</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ICER Replication: Multiple Sclerosis</fullName>
+        <default>false</default>
+        <label>ICER Replication: Multiple Sclerosis</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invitation Sent - Confirmed Response</fullName>
+        <default>false</default>
+        <label>Invitation Sent - Confirmed Response</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invitation Sent - No Response</fullName>
+        <default>false</default>
+        <label>Invitation Sent - No Response</label>
+    </standardValue>
+    <standardValue>
+        <fullName>lms.doctorevidence.com</fullName>
+        <default>false</default>
+        <label>lms.doctorevidence.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No Response</fullName>
+        <default>false</default>
+        <label>No Response</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Patient Profiles in Hypertension</fullName>
+        <default>false</default>
+        <label>Patient Profiles in Hypertension</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Patient Reported Outcomes</fullName>
+        <default>false</default>
+        <label>Patient Reported Outcomes</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Personalized ARB Treatment in Hypertensi</fullName>
+        <default>false</default>
+        <label>Personalized ARB Treatment in Hypertensi</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Responded</fullName>
+        <default>false</default>
+        <label>Responded</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Safety and Efficacy of Treatments in ICP</fullName>
+        <default>false</default>
+        <label>Safety and Efficacy of Treatments in ICP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sanofi.doctorevidence.com</fullName>
+        <default>false</default>
+        <label>Sanofi.doctorevidence.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sanofilms.doctorevidence.com</fullName>
+        <default>false</default>
+        <label>Sanofilms.doctorevidence.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent</fullName>
+        <default>false</default>
+        <label>Sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Therapies for Type 2 Diabetes</fullName>
+        <default>false</default>
+        <label>Therapies for Type 2 Diabetes</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trained</fullName>
+        <default>false</default>
+        <label>Trained</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trained, Modules 1-2</fullName>
+        <default>false</default>
+        <label>Trained, Modules 1-2</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trained, Modules 3-4</fullName>
+        <default>false</default>
+        <label>Trained, Modules 3-4</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AdobeSign Estimated Hours --></label>
+        <name>AdobeSign_Estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdobeSign Hourly Rate --></label>
+        <name>AdobeSign_Hourly_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdobeSign Total Estimated Fees --></label>
+        <name>AdobeSign_Total_Estimated_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anticipated Start Date --></label>
+        <name>Anticipated_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Name --></label>
+        <name>Client_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DRE Point of Contact --></label>
+        <name>DRE_Point_of_Contact__c</name>
+        <relationshipLabel><!-- Preferred Vendor Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description of Work --></label>
+        <name>Description_of_Work__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Auto-Send SOW --></label>
+        <name>Do_Not_Auto_Send_SOW__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please only specify estimated hours for non-flat rate projects --></help>
+        <label><!-- Est. Hours to Complete --></label>
+        <name>Est_Hours_to_Complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please specify a flat rate if the Preferred Vendor is on a flat rate or if you specify a Flat Rate Override. --></help>
+        <label><!-- Flat Rate --></label>
+        <name>Flat_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify amount for hourly rate override when vendor rate type is flat and you have selected Rate Type Override to be Hourly Rate Override. --></help>
+        <label><!-- Hourly Rate Override --></label>
+        <name>Hourly_Rate_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hourly Rate --></label>
+        <name>Hourly_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity ID --></label>
+        <name>Opportunity_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Reason(s) for Outsourcing --></label>
+        <name>Other_Reason_s_for_Outsourcing__c</name>
+    </fields>
+    <fields>
+        <label><!-- PICO ID --></label>
+        <name>PICO_ID__c</name>
+        <relationshipLabel><!-- Preferred Vendor Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PO No. --></label>
+        <name>PO_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Vendor Email --></label>
+        <name>Preferred_Vendor_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Vendor Phone --></label>
+        <name>Preferred_Vendor_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Vendor --></label>
+        <name>Preferred_Vendor__c</name>
+        <relationshipLabel><!-- Preferred Vendor Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Due Date --></label>
+        <name>Project_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Type Override --></label>
+        <name>Rate_Type_Override__c</name>
+        <picklistValues>
+            <masterLabel>Flat Rate Override</masterLabel>
+            <translation><!-- Flat Rate Override --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hourly Rate Override</masterLabel>
+            <translation><!-- Hourly Rate Override --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate Type --></label>
+        <name>Rate_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason(s) for Outsourcing --></label>
+        <name>Reason_s_for_Outsourcing__c</name>
+        <picklistValues>
+            <masterLabel>External expertise required</masterLabel>
+            <translation><!-- External expertise required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal resource contraints</masterLabel>
+            <translation><!-- Internal resource contraints --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requester Email Address --></label>
+        <name>Requester_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requester Name --></label>
+        <name>Requester_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFID --></label>
+        <name>SFID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Approval Process</masterLabel>
+            <translation><!-- In Approval Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PO No. Requested</masterLabel>
+            <translation><!-- PO No. Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Final Approval</masterLabel>
+            <translation><!-- Submitted for Final Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Estimated Fees --></label>
+        <name>Total_Estimated_Fees__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Preferred Vendor Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Preferred Vendor Requests</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Preferred Vendor Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Related Information --></label>
+            <section>Related Information</section>
+        </sections>
+        <sections>
+            <label><!-- Vendor --></label>
+            <section>Vendor</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- The preferred vendor is on an hourly rate. You must specify an estimated number of hours to complete. --></errorMessage>
+        <name>Require_Estimate_Hours_to_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This preferred vendor is on a flat project rate. Please specify the flat project rate for this request. --></errorMessage>
+        <name>Require_Flat_Rate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must specify the hourly rate for this override. --></errorMessage>
+        <name>Require_Hourly_Rate_Override</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a description of your other reason for outsourcing. --></errorMessage>
+        <name>Require_Other_Reason_for_Outsourcing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The preferred vendor is on an flat rate. The estimated number of hours to complete is not relevant. Please leave this blank. --></errorMessage>
+        <name>Restrict_Estimated_Hours_to_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This vendor is on an hourly rate. You cannot specify a flat rate for this request. --></errorMessage>
+        <name>Restrict_Flat_Rate</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- SOW_Adobe_Sign --></label>
+        <name>SOW_Adobe_Sign</name>
+    </webLinks>
+</CustomObjectTranslation>

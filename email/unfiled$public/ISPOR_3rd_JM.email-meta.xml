@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Logo_1</letterhead>
+    <name>ISPOR 3rd JM</name>
+    <style>freeForm</style>
+    <subject>ISPOR 2015</subject>
+    <textOnly>Visit Us At ISPOR 2015
+
+Are you attending ISPOR 2015 ?
+Visit Doctor Evidence at booth # 905
+for a meet and greet and an introduction to our company.
+
+Click here to schedule a private demonstrations of our new evidence based medicine platform DOC Data 2.0 at ISPOR 2015
+
+DOC Data can produce:
+
+DOC Data can support:
+
+· Meta-Analyses
+· Indirect Comparison Analyses
+· Evidence Tables
+· Outcomes Frequency Reports
+· Characteristic Frequency Reports
+· Treatment Frequency Reports
+
+· Systematic Literature Reviews
+· Global Value Dossiers
+· AMCP Dossiers
+· Incidence/Prevalence Analysis
+· Mortality/Hospitalization Predictors Analysis
+· Treatment Pattern Analysis
+· Treatment Switching Pattern Analysis
+· Economic Modeling and Analysis
+
+Our Vision:
+TRANSPARENT ACCESS TO HIGH QUALITY DATA
+
+At Doctor Evidence, we believe that clarity in evidence analysis is the key to optimum decision-making policy. We offer full analysis of published data and patient outcomes, both humanistic and economic, in a transparent software environment. In enlisting our solutions for these analytical uses, we hope to partner with payers and manufacturers for the benefit of better patient care protocols.
+
+Our Mission:
+ADDRESSING INDUSTRY TRENDS
+
+Doctor Evidence’s solutions address the macro-industry trends that have created a need for integrated data access. Change is being driven by accountable care organizations, corporate integrity mandates, consumer driven healthcare, and shared decision-making across stakeholders.
+Our evidence platform connects value drivers and informs coverage policy and formularies specific to certain populations. The Doctor Evidence vision has the ability to reconnect value chain benefits to all stakeholders, including patients. We strive for a fully cross-segmental evidence integration that results in better decision-making through data.
+
+Our Process:
+REDUCE COST OF ANALYSIS AND MAXIMIZE DISTRIBUTION VALUE
+
+Doctor Evidence’s diverse suite of solutions is tailored to be best-in-class at finding and analyzing data in published studies. At the core of our solution is a document outcome conversion system that provides robust evidence identification, storage and analysis platform for making digital systematic review analysis possible. Integrated into our digital platform are specific applications that complement targeted workflows essential to making healthcare policy decisions—namely, clinical guidelines, formulary decisions, and health technology assessments to inform procurement decisions.
+
+Joshua W. Murphy
+SVP of Strategic Engagements
+Doctor Evidence
+p. 732.693.2304
+
+
+Visit us at booth #905
+
+Copyright © 2015 Doctor Evidence, LLC, All rights reserved.
+You are receiving this email because:
+1) We obtained you email at a trade event
+2) Your are associated to an employee of Doctor Evidence or GROWTH Evidence
+Our mailing address is: Doctor Evidence, LLC 301 Arizona Avenue, STE 301 Santa Monica, CA 90401
+
+Join our mailing list!</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

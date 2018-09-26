@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2017-ACR-ARHP template</name>
+    <style>none</style>
+    <subject>Meet with Doctor Evidence&apos;s Team at ACR-ARHP 2017</subject>
+    <textOnly>Doctor Evidence - Meet with our team at ISPOR
+
+Meet with our team!
+Don&apos;t miss the opportunity to learn
+about our products
+
+Dear,
+
+Doctor Evidence LLC is a leading human-enabled technology company in Evidence-Based Medicine (EBM). Doctor Evidence’s leading-edge solutions provide dynamic platforms for clients across the healthcare ecosystem to review, synthesize and evaluate evidence-based medicine. Doctor Evidence has been used for the past 14 years by life-science companies, academic institutions, evidence-based practice centers, and leading healthcare providers in the marketplace to make timely, relevant and cost-effective evidence-based decisions.
+
+We will be attending this years ACR/ARHP Annual Meeting in San Diego. Don&apos;t miss the opportunity to meet with our team and learn about our new product ASCO DOC Search. Please visit our website to read the press release at Doctor Evidence
+
+Sign Me Up</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

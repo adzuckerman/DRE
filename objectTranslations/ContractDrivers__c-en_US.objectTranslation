@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- DOC Data Configuration --></label>
+        <name>DOC_Data_Configuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOC Data Licensing --></label>
+        <name>DOC_Data_Licensing__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOC Library Configuration --></label>
+        <name>DOC_Library_Configuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOC Library Licensing --></label>
+        <name>DOC_Library_Licensing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services --></label>
+        <name>Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription --></label>
+        <name>Subscription__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Contract Drivers</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contract Drivers</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

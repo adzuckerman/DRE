@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Associate Account Director --></label>
+        <name>Associate_Account_Director__c</name>
+        <relationshipLabel><!-- Project Requests (Associate Account Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Better inform clinical development for more appropriate development. --></help>
+        <label><!-- Better Inform Clinical Development --></label>
+        <name>Better_Inform_Clinical_Development__c</name>
+        <picklistValues>
+            <masterLabel>Identify sub group of populations</masterLabel>
+            <translation><!-- Identify sub group of populations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Novel target discovery</masterLabel>
+            <translation><!-- Novel target discovery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optimized recruitment</masterLabel>
+            <translation><!-- Optimized recruitment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reduced study size &amp; duration</masterLabel>
+            <translation><!-- Reduced study size &amp; duration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shape clinical development strategy</masterLabel>
+            <translation><!-- Shape clinical development strategy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target unmet need</masterLabel>
+            <translation><!-- Target unmet need --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comparison --></label>
+        <name>Comparison__c</name>
+    </fields>
+    <fields>
+        <help><!-- Corporate image for transversal contributions. --></help>
+        <label><!-- Corporate Image --></label>
+        <name>Corporate_Image__c</name>
+        <picklistValues>
+            <masterLabel>Competitive advantage</masterLabel>
+            <translation><!-- Competitive advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data driven company</masterLabel>
+            <translation><!-- Data driven company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethics / transparency</masterLabel>
+            <translation><!-- Ethics / transparency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scientific / tech leadership</masterLabel>
+            <translation><!-- Scientific / tech leadership --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Improved clinical trial success rates for more appropriate development. --></help>
+        <label><!-- Improved Clinical Trial Success Rates --></label>
+        <name>Improved_Clinical_Trial_Success_Rates__c</name>
+        <picklistValues>
+            <masterLabel>Better response magnitude</masterLabel>
+            <translation><!-- Better response magnitude --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Higher % of responders</masterLabel>
+            <translation><!-- Higher % of responders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quicker response</masterLabel>
+            <translation><!-- Quicker response --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Initiate Because of DRE Training --></label>
+        <name>Initiate_Because_of_DRE_Training__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intended Stakeholder --></label>
+        <name>Intended_Stakeholder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intervention --></label>
+        <name>Intervention__c</name>
+    </fields>
+    <fields>
+        <help><!-- Longer product lifetime for better / sustained adoption. --></help>
+        <label><!-- Longer Product Lifetime --></label>
+        <name>Longer_Product_Lifetime__c</name>
+        <picklistValues>
+            <masterLabel>Extension of indication</masterLabel>
+            <translation><!-- Extension of indication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New indication</masterLabel>
+            <translation><!-- New indication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RX to OTC conversion</masterLabel>
+            <translation><!-- RX to OTC conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sustaining reimbursement</masterLabel>
+            <translation><!-- Sustaining reimbursement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Medical empowerment for transversal contributions. --></help>
+        <label><!-- Medical Empowerment --></label>
+        <name>Medical_Empowerment__c</name>
+        <picklistValues>
+            <masterLabel>Better knowledge management</masterLabel>
+            <translation><!-- Better knowledge management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Easy access to data</masterLabel>
+            <translation><!-- Easy access to data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Improve local disease expertise</masterLabel>
+            <translation><!-- Improve local disease expertise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New insights generation &amp; validation</masterLabel>
+            <translation><!-- New insights generation &amp; validation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Medical Value Description --></label>
+        <name>Medical_Value_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Methodology Question Type --></label>
+        <name>Methodology_Question_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- More appropriate access. --></help>
+        <label><!-- More Appropriate Access --></label>
+        <name>More_Appropriate_Access__c</name>
+        <picklistValues>
+            <masterLabel>Arguments to address local specificities</masterLabel>
+            <translation><!-- Arguments to address local specificities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity sizing</masterLabel>
+            <translation><!-- Opportunity sizing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speed up regulatory process</masterLabel>
+            <translation><!-- Speed up regulatory process --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- More appropriate pricing for more appropriate access. --></help>
+        <label><!-- More Appropriate Pricing --></label>
+        <name>More_Appropriate_Pricing__c</name>
+        <picklistValues>
+            <masterLabel>Build cost model customized to local needs</masterLabel>
+            <translation><!-- Build cost model customized to local needs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identify sub-groups with higher cost</masterLabel>
+            <translation><!-- Identify sub-groups with higher cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Produce health economic model for local needs</masterLabel>
+            <translation><!-- Produce health economic model for local needs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Trainings --></label>
+        <name>Number_of_Trainings__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1+ Sessions</masterLabel>
+            <translation><!-- 1+ Sessions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Project Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Outcome --></label>
+        <name>Outcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outputs Description --></label>
+        <name>Outputs_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Project Satisfaction --></label>
+        <name>Overall_Project_Satisfaction__c</name>
+        <picklistValues>
+            <masterLabel>1 - Unsatisfied</masterLabel>
+            <translation><!-- 1 - Unsatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - No evaluation</masterLabel>
+            <translation><!-- 2 - No evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Satisfied</masterLabel>
+            <translation><!-- 3 - Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Publication</masterLabel>
+            <translation><!-- 4 - Publication --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Patient experience for transversal contributions. --></help>
+        <label><!-- Patient Experience --></label>
+        <name>Patient_Experience__c</name>
+        <picklistValues>
+            <masterLabel>Generate feedbacks or patient insights</masterLabel>
+            <translation><!-- Generate feedbacks or patient insights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient centricity</masterLabel>
+            <translation><!-- Patient centricity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personalized medicine</masterLabel>
+            <translation><!-- Personalized medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Understand persistence / compliance drivers</masterLabel>
+            <translation><!-- Understand persistence / compliance drivers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Population --></label>
+        <name>Population__c</name>
+    </fields>
+    <fields>
+        <label><!-- Principal Consultant --></label>
+        <name>Principal_Consultant__c</name>
+        <relationshipLabel><!-- Project Requests (Principal Consultant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Priority Grade --></label>
+        <name>Priority_Grade__c</name>
+        <picklistValues>
+            <masterLabel>Grade A</masterLabel>
+            <translation><!-- Grade A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grade B</masterLabel>
+            <translation><!-- Grade B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grade C</masterLabel>
+            <translation><!-- Grade C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Problem --></label>
+        <name>Problem__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product claim for better / sustained adoption. --></help>
+        <label><!-- Product Claim --></label>
+        <name>Product_Claim__c</name>
+        <picklistValues>
+            <masterLabel>New effectiveness medical claims</masterLabel>
+            <translation><!-- New effectiveness medical claims --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New safety medical claims</masterLabel>
+            <translation><!-- New safety medical claims --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Product monitoring for better / sustained adoption. --></help>
+        <label><!-- Product Monitoring --></label>
+        <name>Product_Monitoring__c</name>
+        <picklistValues>
+            <masterLabel>Market penetration uptakes</masterLabel>
+            <translation><!-- Market penetration uptakes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescription behaviors</masterLabel>
+            <translation><!-- Prescription behaviors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switches from/to competition</masterLabel>
+            <translation><!-- Switches from/to competition --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Project Name / PICO ID to be assigned for project acceptance. --></help>
+        <label><!-- Project Name --></label>
+        <name>Project_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Objectives --></label>
+        <name>Project_Objectives__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Record Created --></label>
+        <name>Project_Record_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Stakes --></label>
+        <name>Project_Stakes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Type --></label>
+        <name>Project_Type__c</name>
+        <picklistValues>
+            <masterLabel>1 - Rapid Assessment</masterLabel>
+            <translation><!-- 1 - Rapid Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Bibliographic</masterLabel>
+            <translation><!-- 2 - Bibliographic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Internal Strategy</masterLabel>
+            <translation><!-- 3 - Internal Strategy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Potential Publication</masterLabel>
+            <translation><!-- 4 - Potential Publication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - HTA</masterLabel>
+            <translation><!-- 5 - HTA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Question --></label>
+        <name>Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Meeting Time --></label>
+        <name>Requested_Meeting_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requester Contact --></label>
+        <name>Requester_Contact__c</name>
+        <relationshipLabel><!-- Project Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requester Email --></label>
+        <name>Requester_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requester First Name --></label>
+        <name>Requester_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requester Name --></label>
+        <name>Requester_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requester&apos;s Comments --></label>
+        <name>Requester_s_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required By Date --></label>
+        <name>Required_By_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Scientific communication for transversal contributions. --></help>
+        <label><!-- Scientific Communications --></label>
+        <name>Scientific_Communications__c</name>
+        <picklistValues>
+            <masterLabel>Attractiveness to KOLs</masterLabel>
+            <translation><!-- Attractiveness to KOLs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generated high impact factor article(s)</masterLabel>
+            <translation><!-- Generated high impact factor article(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increased transparency</masterLabel>
+            <translation><!-- Increased transparency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Responsiveness (to field team for example)</masterLabel>
+            <translation><!-- Responsiveness (to field team for example) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Secondary Project Name --></label>
+        <name>Secondary_Project_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution --></label>
+        <name>Solution__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaskRay Project Id --></label>
+        <name>TaskRay_Project_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- TaskRay Project link. --></help>
+        <label><!-- TaskRay Project --></label>
+        <name>TaskRay_Project__c</name>
+        <relationshipLabel><!-- Project Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Working Group --></label>
+        <name>Working_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workstream --></label>
+        <name>Workstream__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Project Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project Requests</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Project Request Layout</layout>
+        <sections>
+            <label><!-- Better / Sustained Adoption --></label>
+            <section>Better / Sustained Adoption</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- More Appropriate Access --></label>
+            <section>More Appropriate Access</section>
+        </sections>
+        <sections>
+            <label><!-- More Appropriate Development --></label>
+            <section>More Appropriate Development</section>
+        </sections>
+        <sections>
+            <label><!-- Project Information --></label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label><!-- Requester Information --></label>
+            <section>Requester Information</section>
+        </sections>
+        <sections>
+            <label><!-- Transversal Contributions --></label>
+            <section>Transversal Contributions</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- You cannot generate a project record unless you have completed all the fields on this request. --></errorMessage>
+        <name>Requireds_Field_for_Project_Creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Question, Problem, Solution, and Value fields cannot be fewer that 20 characters. --></errorMessage>
+        <name>Twenty_Character_Minimum_Fields</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generate_TaskRay_Project --></label>
+        <name>Generate_TaskRay_Project</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Client_Feedback_Request --></label>
+        <name>Send_Client_Feedback_Request</name>
+    </webLinks>
+</CustomObjectTranslation>

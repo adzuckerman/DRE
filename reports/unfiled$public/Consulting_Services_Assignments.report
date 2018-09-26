@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>Case.Case_Name__c</field>
+    </columns>
+    <columns>
+        <field>Case.PICO_ID__c</field>
+    </columns>
+    <columns>
+        <field>Case.Consulting_Services_Rep_1__c</field>
+    </columns>
+    <columns>
+        <field>Case.Consulting_Services_Rep_2__c</field>
+    </columns>
+    <columns>
+        <field>Case.Scoping_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Case.Deliverable_Deadline_Date__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Consulting Services Resource Allocation</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseAuditHistory</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CASE_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

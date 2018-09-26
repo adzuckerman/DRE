@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>DOC Search follow up with slide deck</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-Sanofi DOC_Search_post training</name>
+    <style>none</style>
+    <subject>Doctor Evidence-Sanofi Post Training</subject>
+    <textOnly>*|Doctor Evidence-Sanofi Post-training email|*
+
+Dear {!Contact.Name},
+Thank you for attending our training on Doctor Evidence&apos;s advanced search tool, DOC Search. Click on the images below to view the slides used during the session, as well as quickguides on how to use the platform.  
+
+You have access to DOC Search, as well as DOC Library and DOC Data, through a Single-sign on (SSO) system. Please use your existing Sanofi credentials to login to the Doctor Evidence Platform, including DOC Search, by navigating to:  https://sanofi.doctorevidence.com/
+
+To view videos on navigating DOC Search, as well as videos on other Doctor Evidence platforms, please visit https://dre.litmos.com/self-signup/. Enter the code “Sanofi” when you create your account..
+
+To initiate a project with DRE, please complete this brief form: https://reports.doctorevidence.com/pages/Client/ServiceProject.aspx.
+
+Please let us know by replying to this email if you are interested in training on using DRE&apos;s analytical platform, DOC Data, or if you have any other training needs.
+
+
+Thank You,
+
+Nancy Morgan
+Director of Learning and Development
+Doctor Evidence
+301 Arizona Ave Suite 301 Santa Monica CA 90401
+847-507-1451
+
+
+Introductory Training
+
+DOC Search Quick start guide
+
+Click here to launch Doctor Evidence Platform</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
