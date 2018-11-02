@@ -1,4 +1,4 @@
-<apex:page standardController="Project_Request__c" extensions="ClientFeedbackRequestedBtn" action="{!sendEmail}">
+<apex:page standardController="TASKRAY__Project__c" extensions="ClientFeedbackRequestedBtn" action="{!sendEmail}">
     <apex:form >
         <apex:pageMessages />
         <apex:commandButton value="Back To Project request" action="{!BackToTRProject}" />

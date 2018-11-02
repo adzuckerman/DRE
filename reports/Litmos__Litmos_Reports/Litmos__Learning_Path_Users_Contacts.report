@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Litmos__UserLearningPathResult__c$Name</field>
+    </columns>
+    <columns>
+        <field>Litmos__UserLearningPathResult__c$Litmos__UserID__c.Name</field>
+    </columns>
+    <columns>
+        <field>Litmos__UserLearningPathResult__c$Litmos__UserID__c.UserRole.Name</field>
+    </columns>
+    <columns>
+        <field>Litmos__UserLearningPathResult__c$Litmos__LearningPathID__c</field>
+    </columns>
+    <columns>
+        <field>Litmos__UserLearningPathResult__c$Litmos__LearningPathID__c.Id</field>
+    </columns>
+    <columns>
+        <field>Litmos__UserLearningPathResult__c$Litmos__LearningPathID__c.Litmos__Percentage_Complete__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Learning Path &amp; Users/Contacts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Litmos__SFDC_User_Learning_Path_Results__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Litmos__UserLearningPathResult__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>invite re: DOC Search training</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-Sanofi-CHCDOC SearchTraining</name>
+    <style>none</style>
+    <subject>DOCTOR EVIDENCE DOC Search TRAINING INVITATION</subject>
+    <textOnly>*|Doctor Evidence Upcoming DOC Search Trainings|*
+
+Dear {!Contact.FirstName},
+You are invited to a 60-minute training on DOC Search, a new Doctor Evidence technology tool available to all Sanofi colleagues. This easy-to-use advanced medical information search engine can be used to quickly and efficiently evaluate published and publicly available medical information for any topic.
+ 
+Learn how to search over 29 million articles, including articles indexed from MEDLINE, ClinicalTrials.gov, and RSS feeds to:
+Monitor and view the most up-to-date literature
+Conduct business intelligence by viewing recent publication of target drug/molecule, adverse events, and econometric data
+Monitor new trials, literature, and other sources for safety signals
+Set queries/signals for surveillance
+Understand trends in the evidence
+Identify research gaps
+Analyze most influential authors by topic-specific expertise
+SCHEDULE:
+3 Oct 2018 | 11 am -12 pm EST | (CHC US and South America) 
+11 Oct 2018 | 9 am -10 am Central China Time (GMT+8) (CHC Asia) 
+25 Oct 2018 | 10 am-11 am EST | 4 pm-5 pm CET| (CHC US and Europe) 
+
+PLEASE CLICK ON THE DATE OF YOUR CHOICE ABOVE, AND YOU WILL RECEIVE AN OUTLOOK CALENDAR INVITE TO THE EVENT. 
+
+This training is also available online in a self-paced format. Self-enroll at https://dre.litmos.com/self-signup/. Enter the code “Sanofi” when you create your account on this sign-up page, and you will automatically be enrolled in the DOC Search course.
+
+
+Kind Regards,
+
+Nancy Morgan
+Vice President, Learning and Development
+301 Arizona Ave Suite 301 Santa Monica CA 90401
+Doctor Evidence
+
+Doctor Evidence (DRE) is a technology and research services company that finds, synthesizes and analyzes information from published sources. We will work with you--at no cost--to create deliverables such as Systematic Literature Reviews, Meta-Analyses, Landscape Analyses, Comparative Safety Assessments, and Regulatory Responses across several therapeutic areas:  Cardiovascular, Diabetes, Immunology, Multiple Sclerosis, General Medicines (including Consumer Health), Vaccines and Oncology.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

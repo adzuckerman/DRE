@@ -1,0 +1,151 @@
+<!--<apex:page controller="ActiveContactListController" id="page"  tabStyle="My_Contacts__tab" standardStylesheets="false">-->
+<apex:page controller="Litmos.ActiveContactListController" id="page"  standardStylesheets="false">
+
+<style>
+    .custPopup{
+     left:45%;
+     top=57%;
+     z-index: 9999;
+     position:absolute; 
+     } 
+    
+    .popupBackground{ background-color:black;
+     opacity: 0.30;
+     filter: alpha(opacity = 30);
+     position:absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     z-index: 9998; }
+
+</style>     
+    
+<script src="{!URLFOR($resource.litmos_resources,'litmos_resources/js/jquery-1.11.3.js')}"></script>
+
+<script>
+    function FlagError(flagged){
+        if($(".check:checked").length > 0){
+            if(flagged==true)
+                CheckForFlag();
+            else
+                CheckForUnflag();
+        }else{
+            alert('You must have to select atleast one contact');
+        }
+        
+    }
+    function checkError(){
+        if($(".check:checked").length > 0)
+            assignCourses();
+        else
+            alert('You must have to select atleast one contact');
+    }
+    function confirmation(count,flagged){
+       var conf;
+       if(flagged==true)
+           conf=confirm(count+" Contacts have been selected to be flagged for Litmos Sync.Please confirm?");
+       else
+           conf=confirm(count+" Contacts have been selected to be unflagged for Litmos Sync.Please confirm?");
+       if(conf==true)
+           updateUsers();
+    } 
+    function checkedOrUncheckedAll(){
+            if($(".checkAll").is(':checked'))
+                $(".check").prop('checked',true);
+            else
+                $(".check").prop('checked',false);
+        
+    }
+    function selectOrDeselectAll(){
+        if($(".check:checked").length == $(".check").length)
+            $(".checkAll").prop('checked',true);
+        else
+            $(".checkAll").prop('checked',false);        
+    }
+</script>
+    <apex:form id="frm">
+    
+    <apex:actionStatus id="status">
+        <apex:facet name="start"> 
+             <apex:outputPanel id="tstpopup"> 
+                    <apex:outputPanel styleClass="popupBackground" layout="block" style="width:100%"/> 
+                    <apex:outputPanel styleClass="custPopup" layout="block"> 
+                        <img src="http://jimpunk.net/Loading/wp-content/uploads/loading45.gif" style="horizontal-align:middle;height:100px;width:130px;margin-top:120%"/> 
+                        <!--<span>Please wait...</span>--> 
+                    </apex:outputPanel> 
+             </apex:outputPanel> 
+        </apex:facet> 
+      </apex:actionStatus>
+      
+    <apex:pageMessages ></apex:pageMessages>
+    <apex:sectionHeader title="Contacts" subtitle="Setup"/>
+    <apex:actionFunction name="CheckForFlag" oncomplete="confirmation('{!selectedUser}',true);" action="{!checkForFlag}"  rerender="frm" status="status"/>
+    <apex:actionFunction name="CheckForUnflag" oncomplete="confirmation('{!selectedUser}',false);" action="{!checkForUnflag}"  rerender="frm" status="status"/>
+    <apex:actionFunction name="search" action="{!search}"  rerender="frm" status="status"/>
+    
+    <apex:actionFunction name="updateUsers" action="{!updateUsers}" rerender="frm"/>
+    <apex:actionFunction name="assignCourses" action="{!assignCourses}" rerender="frm"/>
+       <apex:pageBlock title="Search Contacts">
+           
+           <table width="100%">
+               
+               <tr>
+                   <td width="5%"></td>
+                   <td width="25%"> 
+                       <apex:inputText value="{!fName}" html-placeholder="Enter First Name" style="height:25px;width:80%;border-radius:5px;"/>
+                        <apex:commandButton value="Go!" style="background:#9CCC49;color:white;height:30px;font-size:13px" onclick="search(); return false"/>
+                   </td>
+                   <td width="3%"></td>
+                   <td width="25%"> 
+                       <apex:inputText value="{!lName}" html-placeholder="Enter Last Name" style="height:25px;width:80%;border-radius:5px;"/>
+                       <apex:commandButton value="Go!" style="background:#9CCC49;color:white;height:30px;font-size:13px" onclick="search(); return false"/>
+                   </td>
+                   <td width="3%"></td>
+                   <td width="25%"> 
+                       <apex:inputText value="{!role}" html-placeholder="Enter Account" style="height:25px;width:80%;border-radius:5px;"/>
+                       <apex:commandButton value="Go!" style="background:#9CCC49;color:white;height:30px;font-size:13px" onclick="search(); return false"/>
+                   </td>
+                   <td width="14%"></td>
+                   
+               </tr>
+           </table>
+       </apex:pageBlock>
+       <apex:pageBlock title="Select Contacts">
+            
+            <apex:pageBlockSection columns="1" title="Active Contacts">
+                <apex:outputPanel rendered="{!ContactModelList.size == 0}">
+                    No Contact Found!
+                </apex:outputPanel>
+                <apex:pageBlockTable value="{!ContactModelList}" var="Contact" rendered="{!ContactModelList.size > 0}">
+                    <apex:column headerValue="Action">
+                        <apex:facet name="header">
+                            <input class="checkAll" type="checkbox" style="vertical-align:middle" onChange="checkedOrUncheckedAll(); return false"/>
+                        </apex:facet>
+                        <apex:inputCheckbox styleClass="check" onChange="selectOrDeselectAll(); return false" value="{!Contact.flag}" style="vertical-align:middle"/>
+                        <!--<apex:commandLink value="Edit"/>&nbsp;
+                        <apex:commandLink value="Login"/>-->
+                        
+                    </apex:column>
+                    
+                    <apex:column value="{!Contact.userObj.name}" headerValue="Full Name"/>
+                    
+                    <apex:column value="{!Contact.userObj.Account.name}" headerValue="Account"/>
+                    
+                    <apex:column value="{!Contact.userObj.Litmos__Sync_Litmos__c}"/>
+                    <!--<apex:column value="{!user.userObj.manager.name}" headerValue="Manager"/>-->
+                    <apex:column >
+                        <apex:commandLink value="View Courses" action="/apex/AssignCoursesToUsers?uIds={!Contact.userObj.id}&viewCourses=1" rendered="{!Contact.userObj.Litmos__Sync_Litmos__c == true && Contact.userObj.Litmos__Litmos_UserId__c != null}"/>
+                    </apex:column>
+                    
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Flag For Litmos"  onclick="FlagError(true); return false;" style="background:#9CCC49;color:white;height:30px;font-size:13px"/>
+                <apex:commandButton value="Unflag For Litmos" onclick="FlagError(false); return false;" style="background:#9CCC49;color:white;height:30px;font-size:13px"/>
+                <apex:commandButton value="Assign Courses" onclick="checkError(); return false" style="background:#9CCC49;color:white;height:30px;font-size:13px"/>
+                
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

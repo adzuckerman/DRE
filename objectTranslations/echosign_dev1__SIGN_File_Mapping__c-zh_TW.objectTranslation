@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Disable --></label>
+        <name>echosign_dev1__Disable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Index --></label>
+        <name>echosign_dev1__Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Map on Events --></label>
+        <name>echosign_dev1__Map_on_Events__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation>已接受</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>已核准</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled / Declined</masterLabel>
+            <translation>已取消/已拒絕</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation>已傳遞</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>已過期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form-Filled</masterLabel>
+            <translation>填寫表單</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Acceptance</masterLabel>
+            <translation>傳出以供接受</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Approval</masterLabel>
+            <translation>傳出進行核准</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Delivery</masterLabel>
+            <translation>傳送以供傳遞</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Form-Filling</masterLabel>
+            <translation>傳出以供填寫表單</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Signature</masterLabel>
+            <translation>傳出進行簽名</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation>已簽署</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Acceptance</masterLabel>
+            <translation>等候對方接受</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Approval</masterLabel>
+            <translation>等候副署者核准</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Delivery</masterLabel>
+            <translation>等候對方傳送</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Form-Filling</masterLabel>
+            <translation>等候對方填寫表單</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Signature</masterLabel>
+            <translation>等候副署者簽名</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Adobe Sign Object Mapping --></label>
+        <name>echosign_dev1__SIGN_Object_Mapping__c</name>
+        <relationshipLabel><!-- File Mappings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source Type --></label>
+        <name>echosign_dev1__Source_Type__c</name>
+        <picklistValues>
+            <masterLabel>Audit Trail</masterLabel>
+            <translation>稽核記錄</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed Agreement - Merged PDF</masterLabel>
+            <translation>已簽署的合約 - 合併的 PDF</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed Agreement - Separate PDFs</masterLabel>
+            <translation>已簽署的合約 - 個別 PDF</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supporting Documents</masterLabel>
+            <translation>支援文件</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Salesforce Field --></label>
+        <name>echosign_dev1__Target_Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Type --></label>
+        <name>echosign_dev1__Target_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add a reference link to the file</masterLabel>
+            <translation>將參考連結新增至檔案</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attach file directly to object</masterLabel>
+            <translation>直接將檔案附加至物件</translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- File Mapping --></value>
+    </caseValues>
+    <nameFieldLabel><!-- File Mapping Name --></nameFieldLabel>
+    <layouts>
+        <layout>EchoSign File Mapping Layout</layout>
+        <sections>
+            <label>自訂連結</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

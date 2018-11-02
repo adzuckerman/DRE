@@ -83,4 +83,18 @@
     <enableFeeds>false</enableFeeds>
     <label>Forecasting Invoicing Schedule</label>
     <visibility>Public</visibility>
+    <listViews>
+        <fullName>Invoicing_Schedule</fullName>
+        <columns>NAME</columns>
+        <columns>BS_Category__c</columns>
+        <columns>Booking_Month_0__c</columns>
+        <columns>Booking_Month_1__c</columns>
+        <columns>Booking_Month_2__c</columns>
+        <columns>Booking_Month_3__c</columns>
+        <columns>Booking_Month_4__c</columns>
+        <columns>Booking_Month_5__c</columns>
+        <columns>Booking_Month_6__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Invoicing Schedule</label>
+    </listViews>
 </CustomObject>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>follow up template to be adapted to individual client</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>blankletterhead</letterhead>
+    <name>DRE-Training_Follow-up Generic</name>
+    <style>freeForm</style>
+    <subject>Doctor Evidence-Post Training</subject>
+    <textOnly>Dear {!Contact.FirstName},
+Thanks for participating in the Doctor Evidence training today. Attached please find the slide deck from the presentation. Here are some quickguides to help you navigate DOC Search. I also made available some videos demonstrating how to use the DOC Search platform here: https://dre.litmos.com?C=661222.  Your username is your email, but you&apos;ll need to create a password.
+
+You can access the platforms at https://merck.doctorevidence.com.  Please don’t hesitate reach out if you need support in using the system. 
+
+Please don&apos;t hesitate to contact Laura Guild at lguild@doctorevidence.com if you need additional services.
+
+Sincerely,
+
+Nancy Morgan
+Director of Learning and Development
+Doctor Evidence
+847.507.1451</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,2 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?><CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>GAAPBatchQuery</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GAAPBatchQuery</shortDescription>
+        <value>SELECT Id, Project_Name__c, Account__r.Name FROM Toggl_Time_Entry__c WHERE Project_Name__c != NULL AND GAAP_Class__c = NULL</value>
+    </labels>
+    <labels>
+        <fullName>IsActive_ContentDocumentTrigger</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IsActive_ContentDocumentTrigger</shortDescription>
+        <value>FALSE</value>
+    </labels>
+    <labels>
+        <fullName>IsActive_OpportunityTrigger</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IsActive_OpportunityTrigger</shortDescription>
+        <value>FALSE</value>
+    </labels>
 </CustomLabels>

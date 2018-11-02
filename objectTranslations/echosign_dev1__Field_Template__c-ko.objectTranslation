@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>대상 계약 필드를 선택합니다.</help>
+        <label><!-- Target Agreement Field --></label>
+        <name>echosign_dev1__Agreement_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Template --></label>
+        <name>echosign_dev1__Agreement_Template__c</name>
+        <relationshipLabel><!-- Map Data into Agreement Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>대상 필드의 값을 입력합니다.</help>
+        <label><!-- Target Field Value --></label>
+        <name>echosign_dev1__Constant_Value__c</name>
+    </fields>
+    <fields>
+        <help>마스터 개체에서 소스 필드로 설정할 필드를 선택합니다.</help>
+        <label><!-- Select Source Field from Master Object --></label>
+        <name>echosign_dev1__Field_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapping Method --></label>
+        <name>echosign_dev1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Input Specific Value</masterLabel>
+            <translation>특정 값 입력</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select Master Object Field</masterLabel>
+            <translation>마스터 개체 필드 선택</translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>데이터를 계약 필드에 매핑</value>
+    </caseValues>
+    <nameFieldLabel>데이터를 계약 필드 이름에 매핑</nameFieldLabel>
+    <layouts>
+        <layout>Map Data into Agreement Field Layout</layout>
+        <sections>
+            <label>사용자 정의 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

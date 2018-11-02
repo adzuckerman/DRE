@@ -5,10 +5,5 @@
         <sharedTo>cwhittington@doctorevidence.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
-    <folderShares>
-        <accessLevel>Manage</accessLevel>
-        <sharedTo>rdiekemper@doctorevidence.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
     <name>Craig&apos;s Folder</name>
 </ReportFolder>

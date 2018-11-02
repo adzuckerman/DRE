@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- PICO ID / Project Name --></label>
+        <name>PICO_ID_Project_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Vendor Name --></label>
+        <name>Preferred_Vendor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Vendor Request --></label>
+        <name>Preferred_Vendor_Request__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SFID / Opportunity ID --></label>
+        <name>SFID_Opportunity_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Estimated Fees --></label>
+        <name>Total_Estimated_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>echosign_dev1__Account__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Options --></label>
+        <name>echosign_dev1__AdditionalOptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 1 (User) --></label>
+        <name>echosign_dev1__Additional_Recipient_1_User__c</name>
+        <relationshipLabel><!-- Agreements (Additional Recipient 1 (User)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 2 (User) --></label>
+        <name>echosign_dev1__Additional_Recipient_2_User__c</name>
+        <relationshipLabel><!-- Agreements (Additional Recipient 2 (User)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 3 (User) --></label>
+        <name>echosign_dev1__Additional_Recipient_3_User__c</name>
+        <relationshipLabel><!-- Agreements (Additional Recipient 3 (User)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>選取收件者的語言。</help>
+        <label><!-- Language --></label>
+        <name>echosign_dev1__AgreementLocale__c</name>
+        <picklistValues>
+            <masterLabel>Chinese (China)</masterLabel>
+            <translation>中文 (中國)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Taiwan)</masterLabel>
+            <translation>中文 (台灣)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech (Czech Republic)</masterLabel>
+            <translation>捷克文 (捷克共和國)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish (Denmark)</masterLabel>
+            <translation>丹麥文 (丹麥)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch (Netherlands)</masterLabel>
+            <translation>荷蘭文 (荷蘭)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United Kingdom)</masterLabel>
+            <translation>英文 (英國)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United States)</masterLabel>
+            <translation>英文 (美國)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish (Finland)</masterLabel>
+            <translation>芬蘭文 (芬蘭)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French (France)</masterLabel>
+            <translation>法文 (法國)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German (Germany)</masterLabel>
+            <translation>德文 (德國)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Icelandic (Iceland)</masterLabel>
+            <translation>冰島文 (冰島)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian (Indonesia)</masterLabel>
+            <translation>印尼文 (印尼)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian (Italy)</masterLabel>
+            <translation>義大利文 (義大利)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese (Japan)</masterLabel>
+            <translation>日文 (日本)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean (South Korea)</masterLabel>
+            <translation>韓文 (南韓)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malay (Malaysia)</masterLabel>
+            <translation>馬來文 (馬來西亞)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian (Norway)</masterLabel>
+            <translation>挪威文 (挪威)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish (Poland)</masterLabel>
+            <translation>波蘭文 (波蘭)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Brazil)</masterLabel>
+            <translation>葡萄牙文 (巴西)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Portugal)</masterLabel>
+            <translation>葡萄牙文 (葡萄牙)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian (Russia)</masterLabel>
+            <translation>俄文 (俄羅斯)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Spain)</masterLabel>
+            <translation>西班牙文 (西班牙)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish (Sweden)</masterLabel>
+            <translation>瑞典文 (瑞典)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai (Thailand)</masterLabel>
+            <translation>泰文 (泰國)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish (Turkey)</masterLabel>
+            <translation>土耳其文 (土耳其)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese (Vietnam)</masterLabel>
+            <translation>越南文 (越南)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agreement Type --></label>
+        <name>echosign_dev1__Agreement_Type__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>(選擇性) 依要顯示的順序輸入以逗號分隔的附件 ID 清單。</help>
+        <label><!-- Attachment ID Order --></label>
+        <name>echosign_dev1__Attachment_ID_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment Service Invocation Count --></label>
+        <name>echosign_dev1__Attachment_Service_Invocation_Count__c</name>
+    </fields>
+    <fields>
+        <help>在傳送文件以供簽名之前，預覽文件或將表單欄位或簽名欄位拖放到文件上。</help>
+        <label><!-- Preview or Position Signature Fields --></label>
+        <name>echosign_dev1__Authoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Update --></label>
+        <name>echosign_dev1__AutoUpdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background Action --></label>
+        <name>echosign_dev1__Background_Action__c</name>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation>取消</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete</masterLabel>
+            <translation>刪除</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remind</masterLabel>
+            <translation>提醒</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send</masterLabel>
+            <translation>傳送</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update</masterLabel>
+            <translation>更新</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notify Signer --></label>
+        <name>echosign_dev1__Cancel_Delete_Notify_Signer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Delete Reason --></label>
+        <name>echosign_dev1__Cancel_Delete_Reason__c</name>
+    </fields>
+    <fields>
+        <help>將已簽署合約的額外副本傳送至這些電子郵件地址。</help>
+        <label><!-- Send email copies to --></label>
+        <name>echosign_dev1__Cc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>echosign_dev1__Contract__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Data Mapping Error --></label>
+        <name>echosign_dev1__Data_Mapping_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Mapping Result --></label>
+        <name>echosign_dev1__Data_Mapping_Result__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>已完成</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>失敗</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>正在處理</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Sent (Date) --></label>
+        <name>echosign_dev1__DateSentDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent --></label>
+        <name>echosign_dev1__DateSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Signed (Date) --></label>
+        <name>echosign_dev1__DateSignedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Signed --></label>
+        <name>echosign_dev1__DateSigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Viewed (Date) --></label>
+        <name>echosign_dev1__DateViewedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Viewed --></label>
+        <name>echosign_dev1__DateViewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Unsigned --></label>
+        <name>echosign_dev1__DaysUnsigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Until Signed --></label>
+        <name>echosign_dev1__DaysUntilSigned__c</name>
+    </fields>
+    <fields>
+        <help>指定合約過期因而無法簽署之前的天數。</help>
+        <label><!-- Expire document in X days --></label>
+        <name>echosign_dev1__DaysUntilSigningDeadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Key --></label>
+        <name>echosign_dev1__Document_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document --></label>
+        <name>echosign_dev1__Document__c</name>
+    </fields>
+    <fields>
+        <help>傳送自動每週或每日提醒給收件者。</help>
+        <label><!-- Enable Automatic Reminders --></label>
+        <name>echosign_dev1__Enable_Automatic_Reminders__c</name>
+    </fields>
+    <fields>
+        <help>託管簽署可透過您的電腦或裝置取得本人簽名。</help>
+        <label><!-- Host signing for the first signer --></label>
+        <name>echosign_dev1__Enable_Hosted_Signing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encoded Password --></label>
+        <name>echosign_dev1__EncodedPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>echosign_dev1__ErrorMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign External Password --></label>
+        <name>echosign_dev1__External_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Signers Verification Method --></label>
+        <name>echosign_dev1__External_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>知識式驗證</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>簽署合約的密碼</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>網路身分驗證</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fill &amp; Sign --></label>
+        <name>echosign_dev1__Fill_Sign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Internal Password --></label>
+        <name>echosign_dev1__Internal_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Signers Verification Method --></label>
+        <name>echosign_dev1__Internal_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>知識式驗證</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>簽署合約的密碼</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>網路身分驗證</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- LastEventId --></label>
+        <name>echosign_dev1__LastEventId__c</name>
+    </fields>
+    <fields>
+        <help>這個欄位會儲存任何從未管理套件轉換之記錄的記錄 ID。</help>
+        <label><!-- Legacy Record ID --></label>
+        <name>echosign_dev1__Legacy_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Mapping Error --></label>
+        <name>echosign_dev1__Merge_Mapping_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Mapping Result --></label>
+        <name>echosign_dev1__Merge_Mapping_Result__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>已完成</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>失敗</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>正在處理</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Merge Mapping --></label>
+        <name>echosign_dev1__Merge_Mapping__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>指定收件者的訊息。</help>
+        <label><!-- Message --></label>
+        <name>echosign_dev1__Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minutes Until Signed --></label>
+        <name>echosign_dev1__Minutes_Until_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipients (Email) --></label>
+        <name>echosign_dev1__More_Recipients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>echosign_dev1__NewPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Load Action --></label>
+        <name>echosign_dev1__On_Load_Action__c</name>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation>取消</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete</masterLabel>
+            <translation>刪除</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remind</masterLabel>
+            <translation>提醒</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send</masterLabel>
+            <translation>傳送</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update</masterLabel>
+            <translation>更新</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>View</masterLabel>
+            <translation>檢視</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>echosign_dev1__Opportunity__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Server URL --></label>
+        <name>echosign_dev1__Partner_Server_URL__c</name>
+    </fields>
+    <fields>
+        <help>傳送給所有方的已簽署 PDF 已經過加密，並且需要此密碼才能開啟。請勿遺失密碼，因為密碼無法復原。</help>
+        <label><!-- Password required to view PDF --></label>
+        <name>echosign_dev1__PasswordProtectPDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password required to sign --></label>
+        <name>echosign_dev1__PasswordProtectSign__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Password --></label>
+        <name>echosign_dev1__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Signed --></label>
+        <name>echosign_dev1__Percent_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect Delay (seconds) --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_Delay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect URL --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_URL__c</name>
+    </fields>
+    <fields>
+        <help>核取這個方塊時，Document Cloud 會將文件傳送至連絡人的傳真號碼。如果連絡人的傳真號碼是空白，則 Document Cloud 會將文件傳送至連絡人的電子郵件地址。</help>
+        <label><!-- Send written signatures to fax number --></label>
+        <name>echosign_dev1__PreferFax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Mapping --></label>
+        <name>echosign_dev1__Process_Template__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>設定這個欄位，可強制基本 Document Cloud 合約和進階 Document Cloud 合約頁面使用合約記錄上的查詢欄位，重新建立相關收件者清單。</help>
+        <label><!-- Rebuild Recipient List --></label>
+        <name>echosign_dev1__Rebuild_Recipient_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 1 (Contact) --></label>
+        <name>echosign_dev1__Recipient2__c</name>
+        <relationshipLabel><!-- Related Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 2 (Contact) --></label>
+        <name>echosign_dev1__Recipient3__c</name>
+        <relationshipLabel><!-- Related Agreements (2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 3 (Contact) --></label>
+        <name>echosign_dev1__Recipient4__c</name>
+        <relationshipLabel><!-- Related Agreements (3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recipient Addresses --></label>
+        <name>echosign_dev1__Recipient_Addresses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 1 (Lead) --></label>
+        <name>echosign_dev1__Recipient_Lead2__c</name>
+        <relationshipLabel><!-- Related Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 2 (Lead) --></label>
+        <name>echosign_dev1__Recipient_Lead3__c</name>
+        <relationshipLabel><!-- Related Agreements (2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 3 (Lead) --></label>
+        <name>echosign_dev1__Recipient_Lead4__c</name>
+        <relationshipLabel><!-- Related Agreements (3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>合約將傳送至與商機關聯的電子郵件地址</help>
+        <label><!-- Recipient (Lead) --></label>
+        <name>echosign_dev1__Recipient_Lead__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recipient (User) --></label>
+        <name>echosign_dev1__Recipient_User__c</name>
+        <relationshipLabel><!-- Agreements (Recipient (User)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recipient (Contact) --></label>
+        <name>echosign_dev1__Recipient__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remind recipient to sign --></label>
+        <name>echosign_dev1__RemindRecipient__c</name>
+        <picklistValues>
+            <masterLabel>Every Day, Until Signed</masterLabel>
+            <translation>每天，直到簽署為止</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Week, Until Signed</masterLabel>
+            <translation>每週，直到簽署為止</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>從不</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>echosign_dev1__Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- ReturnURL_Text --></label>
+        <name>echosign_dev1__ReturnURL_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- ReturnURL --></label>
+        <name>echosign_dev1__ReturnURL__c</name>
+    </fields>
+    <fields>
+        <help>如果您也需要簽署這份合約，請核取這個選項。然後，選擇您或收件者優先簽署。</help>
+        <label><!-- I also need to sign this document --></label>
+        <name>echosign_dev1__SenderSigns__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender Recorded --></label>
+        <name>echosign_dev1__Sender_Recorded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender Signs Only --></label>
+        <name>echosign_dev1__Sender_Signs_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send On Behalf Of --></label>
+        <name>echosign_dev1__Sender_User__c</name>
+        <relationshipLabel><!-- Agreements (Send On Behalf Of) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Signature Order --></label>
+        <name>echosign_dev1__SignatureOrder__c</name>
+        <picklistValues>
+            <masterLabel>I sign, then the Recipient signs</masterLabel>
+            <translation>我先簽署，然後是收件者簽署</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recipient signs, then I sign</masterLabel>
+            <translation>收件者先簽署，然後是我簽署</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Signature Type --></label>
+        <name>echosign_dev1__SignatureType__c</name>
+        <picklistValues>
+            <masterLabel>Written Signature</masterLabel>
+            <translation>書面簽名</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-Signature</masterLabel>
+            <translation>電子簽名</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recipients sign in --></label>
+        <name>echosign_dev1__Signature_Flow__c</name>
+        <picklistValues>
+            <masterLabel>Any Order</masterLabel>
+            <translation>任意順序</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Entered</masterLabel>
+            <translation>順序已輸入</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Signed PDF --></label>
+        <name>echosign_dev1__SignedPDF__c</name>
+    </fields>
+    <fields>
+        <help>指定合約過期且再也無法進行簽署時的日期。</help>
+        <label><!-- Signing Deadline --></label>
+        <name>echosign_dev1__Signing_Deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signing URL --></label>
+        <name>echosign_dev1__Signing_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>echosign_dev1__StatusVisible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Status --></label>
+        <name>echosign_dev1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation>已接受</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>已核准</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled / Declined</masterLabel>
+            <translation>已取消/已拒絕</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation>建立日期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation>已傳遞</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>草稿</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>已過期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form-Filled</masterLabel>
+            <translation>已填寫表單</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Acceptance</masterLabel>
+            <translation>傳出以供接受</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Approval</masterLabel>
+            <translation>傳出進行核准</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Delivery</masterLabel>
+            <translation>傳送以供傳遞</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Form-Filling</masterLabel>
+            <translation>傳出以供填寫表單</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Signature</masterLabel>
+            <translation>傳出進行簽名</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Send</masterLabel>
+            <translation>預先傳送</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send in Progress</masterLabel>
+            <translation>傳送進行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation>已簽署</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Acceptance</masterLabel>
+            <translation>等候對方接受</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Approval</masterLabel>
+            <translation>等候副署者核准</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Delivery</masterLabel>
+            <translation>等候對方傳送</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Form-Filling</masterLabel>
+            <translation>等候對方填寫表單</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Signature</masterLabel>
+            <translation>等候副署者簽名</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync Data Mapping --></label>
+        <name>echosign_dev1__Sync_Data_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trigger Data Mapping --></label>
+        <name>echosign_dev1__Trigger_Process_Template__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>合約</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Additional Fields --></label>
+        <name>AdditionalFieldSet</name>
+    </fieldSets>
+    <nameFieldLabel>合約名稱</nameFieldLabel>
+    <layouts>
+        <layout>Agreement Layout Enterprise / Unlimited</layout>
+        <sections>
+            <label>EchoSign 功能</label>
+            <section>EchoSign Functions</section>
+        </sections>
+        <sections>
+            <label>EchoSign 選項</label>
+            <section>EchoSign Options</section>
+        </sections>
+        <sections>
+            <label>訊息</label>
+            <section>Message</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agreement Layout Professional</layout>
+        <sections>
+            <label>EchoSign 功能</label>
+            <section>EchoSign Functions</section>
+        </sections>
+        <sections>
+            <label>EchoSign 內部欄位 - 請勿編輯</label>
+            <section>EchoSign Internal Fields - DO NOT EDIT</section>
+        </sections>
+        <sections>
+            <label>EchoSign 選項</label>
+            <section>EchoSign Options</section>
+        </sections>
+        <sections>
+            <label>訊息</label>
+            <section>Message</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- There is a maximum of 180 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Maximum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The signing deadline date must not be in the past. --></errorMessage>
+        <name>echosign_dev1__Signing_Deadline_Future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Positioning fields and signatures is not possible with a written signature. --></errorMessage>
+        <name>echosign_dev1__WrittenWithoutPosition</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Suggesting revisions is not possible with a written signature. --></errorMessage>
+        <name>echosign_dev1__Written_Without_Revisions</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Cancel_Agreement_Bulk --></label>
+        <name>echosign_dev1__Cancel_Agreement_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Agreement --></label>
+        <name>echosign_dev1__Delete_Agreement</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Agreement_Bulk --></label>
+        <name>echosign_dev1__Delete_Agreement_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshStatus --></label>
+        <name>echosign_dev1__RefreshStatus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendReminder --></label>
+        <name>echosign_dev1__SendReminder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Agreement_Bulk --></label>
+        <name>echosign_dev1__Send_Agreement_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Reminder_Bulk --></label>
+        <name>echosign_dev1__Send_Reminder_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendforSignature --></label>
+        <name>echosign_dev1__SendforSignature</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SetAgreementPassword --></label>
+        <name>echosign_dev1__SetAgreementPassword</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_Agreement_Bulk --></label>
+        <name>echosign_dev1__Update_Agreement_Bulk</name>
+    </webLinks>
+</CustomObjectTranslation>

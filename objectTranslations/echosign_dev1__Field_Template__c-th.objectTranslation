@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>เลือกฟิลด์ข้อตกลงเป้าหมาย</help>
+        <label><!-- Target Agreement Field --></label>
+        <name>echosign_dev1__Agreement_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Template --></label>
+        <name>echosign_dev1__Agreement_Template__c</name>
+        <relationshipLabel><!-- Map Data into Agreement Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ป้อนค่าของฟิลด์เป้าหมาย</help>
+        <label><!-- Target Field Value --></label>
+        <name>echosign_dev1__Constant_Value__c</name>
+    </fields>
+    <fields>
+        <help>เลือกฟิลด์จากออบเจกต์หลักเพื่อใช้เป็นฟิลด์แหล่งที่มา</help>
+        <label><!-- Select Source Field from Master Object --></label>
+        <name>echosign_dev1__Field_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapping Method --></label>
+        <name>echosign_dev1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Input Specific Value</masterLabel>
+            <translation>ป้อนค่าเฉพาะ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select Master Object Field</masterLabel>
+            <translation>เลือกฟิลด์ออบเจกต์หลัก</translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>แมปข้อมูลลงในฟิลด์ข้อตกลง</value>
+    </caseValues>
+    <nameFieldLabel>แม็ปข้อมูลเข้ากับชื่อฟิลด์ข้อตกลง</nameFieldLabel>
+    <layouts>
+        <layout>Map Data into Agreement Field Layout</layout>
+        <sections>
+            <label>ลิงค์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

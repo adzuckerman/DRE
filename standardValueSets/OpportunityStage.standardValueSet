@@ -11,9 +11,9 @@
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Capabilities Presentation / Demo</fullName>
+        <fullName>Capabilities Presentation</fullName>
         <default>false</default>
-        <label>Capabilities Presentation / Demo</label>
+        <label>Capabilities Presentation</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>25</probability>

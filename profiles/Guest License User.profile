@@ -17793,6 +17793,26 @@
         <field>vr__VR_Email_History_Lead__c.vr__Unsubscribed__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Confidentiality_Agreement_End_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Confidentiality_Agreement_Start_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Confidentiality_Agreement_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Junction_Kbase__c.Case__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
@@ -18366,6 +18386,21 @@
     <layoutAssignments>
         <layout>vr__VR_Email_History_Lead__c-vr__VR Email History Lead Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Booking_Months__c-Booking Month Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CommunityMemberLayout-Community Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Department_Costs__c-Department Costs Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ListEmail-List Email Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Toggl_Custom_Log__c-Toggl Custom Log Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
@@ -18754,6 +18789,18 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>vr__VRStatistics</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Department_Costs__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Department_Revenue_Schedule__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>echosign_dev1__Adobe_Sign_Admin_Component_Tab</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <userPermissions>

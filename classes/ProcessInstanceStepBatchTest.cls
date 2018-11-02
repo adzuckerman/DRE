@@ -44,10 +44,12 @@ public class ProcessInstanceStepBatchTest {
         insert pvr;
         
         Test.startTest();
-            ProcessInstanceStepBatch p = new ProcessInstanceStepBatch();
-            database.executebatch(p);
+            //ProcessInstanceStepBatch p = new ProcessInstanceStepBatch();
+            //database.executebatch(p);
             
-            
+            ProcessInstanceStepScheduler myClass = new ProcessInstanceStepScheduler();   
+            String chron = '0 0 23 * * ?';        
+            system.schedule('Test Sched', chron, myClass);
         Test.stopTest();
     }
 }

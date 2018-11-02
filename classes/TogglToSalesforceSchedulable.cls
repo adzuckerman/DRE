@@ -1,5 +1,5 @@
 /*   Name:          TogglToSalesforceSchedulable
- *   Developer:     CLOUD MINE CONSULTING
+ *   Developer:     OMNIVO DIGITAL (www.omnivodigital.com)
  *   Date:          4/23/2018
  *   Description:   Scheduled APEX to make batch callout to Toggl
  *                

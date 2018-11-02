@@ -489,44 +489,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Patient_Experience__c</fullName>
-        <description>Patient experience for transversal contributions.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Patient experience for transversal contributions.</inlineHelpText>
-        <label>Patient Experience</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MultiselectPicklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Generate feedbacks or patient insights</fullName>
-                    <default>false</default>
-                    <label>Generate feedbacks or patient insights</label>
-                </value>
-                <value>
-                    <fullName>Understand persistence / compliance drivers</fullName>
-                    <default>false</default>
-                    <label>Understand persistence / compliance drivers</label>
-                </value>
-                <value>
-                    <fullName>Patient centricity</fullName>
-                    <default>false</default>
-                    <label>Patient centricity</label>
-                </value>
-                <value>
-                    <fullName>Personalized medicine</fullName>
-                    <default>false</default>
-                    <label>Personalized medicine</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-        <visibleLines>4</visibleLines>
-    </fields>
-    <fields>
         <fullName>Population__c</fullName>
         <externalId>false</externalId>
         <label>Population</label>
@@ -548,36 +510,6 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Priority_Grade__c</fullName>
-        <externalId>false</externalId>
-        <label>Priority Grade</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Grade A</fullName>
-                    <default>false</default>
-                    <label>Grade A</label>
-                </value>
-                <value>
-                    <fullName>Grade B</fullName>
-                    <default>false</default>
-                    <label>Grade B</label>
-                </value>
-                <value>
-                    <fullName>Grade C</fullName>
-                    <default>false</default>
-                    <label>Grade C</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>Problem__c</fullName>
@@ -887,21 +819,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>TaskRay_Project__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <description>TaskRay Project link.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>TaskRay Project link.</inlineHelpText>
-        <label>TaskRay Project</label>
-        <referenceTo>TASKRAY__Project__c</referenceTo>
-        <relationshipLabel>Project Requests</relationshipLabel>
-        <relationshipName>Project_Requests</relationshipName>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Value__c</fullName>
         <externalId>false</externalId>
         <label>Value</label>
@@ -935,6 +852,155 @@
             <valueSetName>Workstream</valueSetName>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>Actual_Meeting_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Meeting Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Patient_Experience__c</fullName>
+        <description>Patient experience for transversal contributions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Patient experience for transversal contributions.</inlineHelpText>
+        <label>Patient Experience</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Generate feedback or patient insights</fullName>
+                    <default>false</default>
+                    <label>Generate feedback or patient insights</label>
+                </value>
+                <value>
+                    <fullName>Understand persistence / compliance drivers</fullName>
+                    <default>false</default>
+                    <label>Understand persistence / compliance drivers</label>
+                </value>
+                <value>
+                    <fullName>Patient centricity</fullName>
+                    <default>false</default>
+                    <label>Patient centricity</label>
+                </value>
+                <value>
+                    <fullName>Personalized medicine</fullName>
+                    <default>false</default>
+                    <label>Personalized medicine</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Principal_Consultant_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Principal_Consultant__r.Email</formula>
+        <label>Principal Consultant Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Principal_Consultant_Title__c</fullName>
+        <externalId>false</externalId>
+        <formula>Principal_Consultant__r.Title</formula>
+        <label>Principal Consultant Title</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Principle_Consultant_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Principal_Consultant__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Principle Consultant Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Priority_Grade__c</fullName>
+        <externalId>false</externalId>
+        <label>Priority Grade</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Grade A: Publication, Abstract, Poster or HTA</fullName>
+                    <default>false</default>
+                    <label>Grade A: Publication, Abstract, Poster or HTA</label>
+                </value>
+                <value>
+                    <fullName>Grade B: Payer or Regulatory response</fullName>
+                    <default>false</default>
+                    <label>Grade B: Payer or Regulatory response</label>
+                </value>
+                <value>
+                    <fullName>Grade C: Clinical business question</fullName>
+                    <default>false</default>
+                    <label>Grade C: Clinical business question</label>
+                </value>
+                <value>
+                    <fullName>Grade Z: Sanofi iEGP</fullName>
+                    <default>false</default>
+                    <label>Grade Z: Sanofi iEGP</label>
+                </value>
+                <value>
+                    <fullName>Grade A</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Grade A</label>
+                </value>
+                <value>
+                    <fullName>Grade B</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Grade B</label>
+                </value>
+                <value>
+                    <fullName>Grade C</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Grade C</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TaskRay_Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>TaskRay Project link.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will auto-populate upon TaskRay Project creation. Please leave this field blank. This field is intended to serve as a link.</inlineHelpText>
+        <label>TaskRay Project</label>
+        <referenceTo>TASKRAY__Project__c</referenceTo>
+        <relationshipLabel>Project Requests</relationshipLabel>
+        <relationshipName>Project_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -961,6 +1027,9 @@
     <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Requester_Name__c</columns>
+        <columns>Requester_Email__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -986,36 +1055,24 @@ ISBLANK(Problem__c) ||
 ISBLANK(Solution__c) ||
 ISBLANK(Value__c) ||
 ISBLANK(Requester_Contact__c) ||
-ISBLANK(Better_Inform_Clinical_Development__c) ||
-ISBLANK(Corporate_Image__c) ||
-ISBLANK(Improved_Clinical_Trial_Success_Rates__c) ||
 ISBLANK(TEXT(Initiate_Because_of_DRE_Training__c)) ||
-ISBLANK(Intended_Stakeholder__c) ||
-ISBLANK(Longer_Product_Lifetime__c) ||
-ISBLANK(Medical_Empowerment__c) ||
 ISBLANK(Medical_Value_Description__c) ||
-ISBLANK(More_Appropriate_Access__c) ||
-ISBLANK(More_Appropriate_Pricing__c) ||
 ISBLANK(TEXT(Number_of_Trainings__c)) ||
 ISBLANK(Outputs_Description__c) ||
-ISBLANK(Patient_Experience__c) ||
-ISBLANK(Product_Claim__c) ||
-ISBLANK(Product_Monitoring__c) ||
 ISBLANK(Project_Objectives__c) ||
 ISBLANK(Project_Stakes__c) ||
 ISBLANK(Requested_Meeting_Time__c) ||
 ISBLANK(Requester_Email__c) ||
 ISBLANK(Required_By_Date__c) ||
-ISBLANK(Scientific_Communications__c) ||
 ISBLANK(Requester_Contact__c) 
 ) &amp;&amp; Project_Record_Created__c == true</errorConditionFormula>
         <errorMessage>You cannot generate a project record unless you have completed all the fields on this request.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Twenty_Character_Minimum_Fields</fullName>
-        <active>false</active>
+        <active>true</active>
         <description>Question, Problem, Solution, and Value fields cannot be fewer that 20 characters.</description>
-        <errorConditionFormula>$User.Id != '0050f000009IX1y' &amp;&amp; ( LEN(Question__c) &lt; 20 || LEN(Problem__c) &lt; 20 || LEN(Solution__c) &lt; 20 || LEN(Value__c) &lt; 20)</errorConditionFormula>
+        <errorConditionFormula>($User.Id != '0050f000009IX1y' &amp;&amp; $User.Id != '005G0000008CJgr') &amp;&amp; ( LEN(Question__c) &lt; 20 || LEN(Problem__c) &lt; 20 || LEN(Solution__c) &lt; 20 || LEN(Value__c) &lt; 20)</errorConditionFormula>
         <errorMessage>Question, Problem, Solution, and Value fields cannot be fewer that 20 characters.</errorMessage>
     </validationRules>
     <webLinks>

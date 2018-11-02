@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Deleted --></label>
+        <name>Litmos__Deleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- DisplayOrder --></label>
+        <name>Litmos__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- LearningPath --></label>
+        <name>Litmos__LearningPathID__c</name>
+        <relationshipLabel><!-- Learning Path Programs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LitmosID --></label>
+        <name>Litmos__LitmosID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program --></label>
+        <name>Litmos__ProgramID__c</name>
+        <relationshipLabel><!-- Learning Path Programs --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Learning Path Program Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

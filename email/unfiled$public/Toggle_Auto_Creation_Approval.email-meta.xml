@@ -4,12 +4,12 @@
     <encodingKey>ISO-8859-1</encodingKey>
     <name>Toggle Auto Creation Approval</name>
     <style>none</style>
-    <subject>Review &amp; Approve / Reject the Toggl Project Auto-Creation</subject>
+    <subject>Review &amp; Approve / Reject the Toggl Project Auto-Creation for {!TASKRAY__Project__c.Name}</subject>
     <textOnly>To Whom It May Concern:
 
-Please review and approve or reject the following TaskRay Project for Toggle Project Auto-Creation:
+Please review and approve or reject TaskRay Project {!TASKRAY__Project__c.Name} for Toggl Project Auto-Creation:
 
-https://cs65.salesforce.com/{!TASKRAY__Project__c.Id}
+https://doctorevidence.my.salesforce.com/{!TASKRAY__Project__c.Id}
 
 You may approve or reject the request at the link below:
 

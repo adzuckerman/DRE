@@ -1,0 +1,38 @@
+<aura:component controller="FileController" access="global">
+	<!-- 'parentId' Aura Attribute for store the Id for Parent Record where we are attach our file -->  
+    <aura:attribute name="parentId" type="string" />    
+    <!-- 'showLoadingSpinner' attribute for show/hide the uploading image and msg in aura:if-->
+    <aura:attribute name="showLoadingSpinner" type="boolean" default="false" />
+    <!-- 'fileName' attribute for display the selected file name -->  
+    <aura:attribute name="fileName" type="String" default="No File Selected.." />
+    
+    <aura:registerEvent name="cmpEvent" type="c:FileUploadEvent"/>
+    
+    <div class="slds-card slds-has-top-magnet">
+        <div > 
+            <div class="slds-clearfix">
+                <h3 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="File Detail"><lightning:icon iconName="standard:file" size="small" alternativeText="Show Files"/>&nbsp;Files</span>
+                </h3>
+                <div style="margin-left: 25%;margin-top: 5px;">
+                    <label class="slds-form-element__label" for="unique-id-of-input">Is a Proposal?</label><ui:inputCheckbox aura:id="checkbox" class="chkbx"/><br/>
+					<div style="margin-top: 4px;">
+                    <lightning:input aura:id="fileId" onchange="{!c.handleFilesChange}" type="file" name="file" label="Upload File" multiple="false"/>
+                    </div>
+                    <div class="slds-text-body_small slds-text-color_error">{!v.fileName} </div>
+                    
+
+                    <aura:if isTrue="{!v.showLoadingSpinner}">
+                        <div class="slds-text-body_small slds-text-color_error">Uploading... 
+                            <img src="/auraFW/resources/aura/images/spinner.gif" class="spinner-img" alt="Loading"/>'
+                        </div>
+                    </aura:if>
+                    
+                    <br/>
+                    <button style="margin-bottom: 8px;" class="slds-button slds-button_brand" onclick="{!c.doSave}">Upload File</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

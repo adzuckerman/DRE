@@ -26,13 +26,12 @@
         <name>Opportunity__c</name>
         <relationshipLabel><!-- Department Revenue Schedules --></relationshipLabel>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Department Revenue Schedule</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Department Revenue Schedules</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
+    <fields>
+        <label><!-- MRS Date --></label>
+        <name>MRS_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity ID --></label>
+        <name>Opportunity_ID__c</name>
+    </fields>
 </CustomObjectTranslation>

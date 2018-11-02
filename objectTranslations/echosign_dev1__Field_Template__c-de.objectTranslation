@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Wählen Sie das Zielvereinbarungsfeld aus.</help>
+        <label><!-- Target Agreement Field --></label>
+        <name>echosign_dev1__Agreement_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Template --></label>
+        <name>echosign_dev1__Agreement_Template__c</name>
+        <relationshipLabel><!-- Map Data into Agreement Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geben Sie einen Wert für das Zielfeld ein.</help>
+        <label><!-- Target Field Value --></label>
+        <name>echosign_dev1__Constant_Value__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie ein Feld aus dem Masterobjekt aus, das das Quellfeld sein soll.</help>
+        <label><!-- Select Source Field from Master Object --></label>
+        <name>echosign_dev1__Field_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapping Method --></label>
+        <name>echosign_dev1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Input Specific Value</masterLabel>
+            <translation>Bestimmten Wert eingeben</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select Master Object Field</masterLabel>
+            <translation>Masterobjektfeld auswählen</translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Daten zu Vereinbarungsfeld zuordnen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Daten zu Vereinbarungsfeldern zuordnen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Daten zu Vereinbarungsfeld zuordnen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Daten zu Vereinbarungsfeldern zuordnen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Daten zu Vereinbarungsfeld zuordnen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Daten zu Vereinbarungsfeldern zuordnen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Daten zu Vereinbarungsfeld zuordnen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Daten zu Vereinbarungsfeldern zuordnen</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Daten zu Vereinbarungsfeldname zuordnen</nameFieldLabel>
+    <layouts>
+        <layout>Map Data into Agreement Field Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

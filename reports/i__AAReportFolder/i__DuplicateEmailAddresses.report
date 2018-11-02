@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>i__EmailAddr__c.i__FullAddr__c</field>
+    </columns>
+    <columns>
+        <field>i__EmailAddr__c.i__ContactCt__c</field>
+    </columns>
+    <columns>
+        <field>i__EmailAddr__c.i__LeadCt__c</field>
+    </columns>
+    <columns>
+        <field>i__EmailAddr__c.i__UserCt__c</field>
+    </columns>
+    <description>Find duplicate email addresses (used by more than 1 Contact, User, or Lead)</description>
+    <filter>
+        <criteriaItems>
+            <column>i__EmailAddr__c.i__LinkCt__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Duplicate Email Addresses</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$i__EmailAddr__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

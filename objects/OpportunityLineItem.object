@@ -31,6 +31,17 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <compactLayouts>
+        <fullName>Default</fullName>
+        <fields>Product2Id</fields>
+        <fields>Quantity</fields>
+        <fields>UnitPrice</fields>
+        <fields>ProductCode</fields>
+        <fields>Discount</fields>
+        <fields>Subtotal</fields>
+        <fields>TotalPrice</fields>
+        <label>Default</label>
+    </compactLayouts>
     <fields>
         <fullName>Contract_End__c</fullName>
         <externalId>false</externalId>
@@ -104,6 +115,6 @@ PricebookEntry.Product2.Name = 'DOC Data Licensing'
     <fields>
         <fullName>UnitPrice</fullName>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>Default</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
 </CustomObject>

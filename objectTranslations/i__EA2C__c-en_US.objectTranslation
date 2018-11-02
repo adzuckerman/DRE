@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>i__Account__c</name>
+        <relationshipLabel><!-- EA2Cs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BothIds --></label>
+        <name>i__BothIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>i__Contact__c</name>
+        <relationshipLabel><!-- EA2Cs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Domain --></label>
+        <name>i__Domain__c</name>
+    </fields>
+    <fields>
+        <label><!-- EmailAddr --></label>
+        <name>i__EmailAddr__c</name>
+        <relationshipLabel><!-- EA2Cs --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>EA2C Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

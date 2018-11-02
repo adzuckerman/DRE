@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cached Input Type --></label>
+        <name>echosign_dev1__Cached_Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Lista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation>Texto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Active esta casilla para que esta asignación de datos se ejecute de forma predeterminada en los acuerdos enviados. Puede omitir la opción predeterminada si indica una asignación diferente para usar con un acuerdo específico o plantilla.</help>
+        <label><!-- Default Data Mapping? --></label>
+        <name>echosign_dev1__Default_Data_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>echosign_dev1__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Field CSV --></label>
+        <name>echosign_dev1__Merge_Field_CSV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify User of Errors --></label>
+        <name>echosign_dev1__Notify_User_of_Errors__c</name>
+        <relationshipLabel><!-- Data Mappings --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Asignación de datos</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Asignaciones de datos</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre de asignación de datos</nameFieldLabel>
+    <layouts>
+        <layout>Process Template Layout</layout>
+        <sections>
+            <label>Personalización de vínculos</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

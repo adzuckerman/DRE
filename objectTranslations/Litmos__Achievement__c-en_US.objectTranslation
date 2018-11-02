@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Achievement Date --></label>
+        <name>Litmos__AchievementDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliant Till Date --></label>
+        <name>Litmos__CompliantTillDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program --></label>
+        <name>Litmos__ProgramID__c</name>
+        <relationshipLabel><!-- Achievements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>Litmos__Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score --></label>
+        <name>Litmos__Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Litmos__Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>Litmos__UserID__c</name>
+        <relationshipLabel><!-- Achievements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Litmos__contactID__c</name>
+        <relationshipLabel><!-- Achievements --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

@@ -265,7 +265,10 @@
         <columns>Toggl_Id__c</columns>
         <columns>User__c</columns>
         <columns>Account__c</columns>
+        <columns>Opportunity__c</columns>
+        <columns>Project__c</columns>
         <columns>Project_Name__c</columns>
+        <columns>GAAP_Class__c</columns>
         <columns>Description__c</columns>
         <columns>Tags__c</columns>
         <columns>Start_Date__c</columns>
@@ -273,6 +276,11 @@
         <columns>CREATED_DATE</columns>
         <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
+        <filters>
+            <field>Project_Name__c</field>
+            <operation>contains</operation>
+            <value>3115</value>
+        </filters>
         <label>All</label>
     </listViews>
 </CustomObject>

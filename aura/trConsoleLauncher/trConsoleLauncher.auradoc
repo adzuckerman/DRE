@@ -1,4 +1,1 @@
-<aura:documentation>
-  <aura:description>The TaskRay Console Launcher is a simple component that opens the TaskRay Visualforce page as a
-    primary tab in a lightning console app.</aura:description>
-</aura:documentation>
+(hidden)

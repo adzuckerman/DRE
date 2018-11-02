@@ -1,0 +1,58 @@
+<aura:component controller="FileController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <!-- show files list -->
+    <aura:attribute name="lstFiles" type="List" />
+    
+    <!-- Handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="cmpEvent" event="c:FileUploadEvent" action="{!c.doRender}"/>
+    <div style="height:100%; width:100%;">
+        {!v.body}
+    </div>	
+    <div class="slds-card slds-has-top-magnet">
+        <div >
+            <div class="slds-clearfix">
+                
+                <div class="slds-section slds-is-open" style="margin-top: 0 !important;">
+                    
+                    <div aria-hidden="false" class="slds-section__content" style="padding-top: 0 !important;">
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_1-of-1">
+                                <div class="slds-text-align_left slds-m-around_x-small">
+                                    <table class="slds-table slds-table_bordered slds-max-medium-table_stacked-horizontal">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    <div class="slds-truncate" title="File Name">File Name</div>
+                                                </th>
+                                                <th scope="col">
+                                                    <div class="slds-truncate" title="Is a Proposal?">Is a <br/>Proposal?</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <aura:iteration items="{!v.lstFiles}" var="file" indexVar="index">
+                                                <tr class="slds-hint-parent">                                                    
+                                                    <td data-label="File Name" style="max-width: 200px !important;min-width: 200px !important;">
+                                                        <div class="slds-truncate" title="{!file.title}">
+                                                            <a href="{! '/lightning/r/ContentDocument/' + file.contentDocumentId  + '/view'}" target="_blank" style="text-decoration: none;">{!file.title}</a>
+                                                        </div>
+                                                    </td>    
+                                                    <td data-label="Is a Proposal?">
+                                                        <div class="slds-truncate" title="Is a Proposal?">
+                                                            <ui:outputCheckbox value="{!file.is_Proposal_Document}"/>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </aura:iteration>  
+                                        </tbody>
+                                    </table>                                                   
+                                </div>
+                            </div>                                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

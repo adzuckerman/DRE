@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Action --></label>
+        <name>MC4SF__Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bounce Type --></label>
+        <name>MC4SF__Bounce_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- MC Campaign --></label>
+        <name>MC4SF__MC_Campaign__c</name>
+        <relationshipLabel><!-- MC Subscriber Activity --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MC List --></label>
+        <name>MC4SF__MC_List__c</name>
+        <relationshipLabel><!-- MC Subscriber Activity --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MC Subscriber --></label>
+        <name>MC4SF__MC_Subscriber__c</name>
+        <relationshipLabel><!-- MC Subscriber Activity --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MailChimp Campaign ID --></label>
+        <name>MC4SF__MailChimp_Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text URL --></label>
+        <name>MC4SF__Text_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Date --></label>
+        <name>MC4SF__Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>MC4SF__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL --></label>
+        <name>MC4SF__URL__c</name>
+    </fields>
+    <layouts>
+        <layout>Subscriber Activity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Wide --></label>
+            <section>Wide</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

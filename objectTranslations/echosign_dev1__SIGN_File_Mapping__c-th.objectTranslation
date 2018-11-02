@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Disable --></label>
+        <name>echosign_dev1__Disable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Index --></label>
+        <name>echosign_dev1__Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Map on Events --></label>
+        <name>echosign_dev1__Map_on_Events__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation>ยอมรับแล้ว</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>อนุมัติ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled / Declined</masterLabel>
+            <translation>ยกเลิก / ปฏิเสธ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation>จัดส่งแล้ว</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>หมดอายุแล้ว</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form-Filled</masterLabel>
+            <translation>กรอกแบบฟอร์มแล้ว</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Acceptance</masterLabel>
+            <translation>ส่งออกสำหรับการยอมรับ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Approval</masterLabel>
+            <translation>ส่งเพื่อขออนุมัติ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Delivery</masterLabel>
+            <translation>ส่งออกสำหรับการจัดส่ง</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Form-Filling</masterLabel>
+            <translation>ส่งออกสำหรับการกรอกแบบฟอร์ม</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Signature</masterLabel>
+            <translation>ส่งเพื่อขอลายเซ็น</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation>ที่ได้รับการเซ็น</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Acceptance</masterLabel>
+            <translation>กำลังรอการยอมรับร่วม</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Approval</masterLabel>
+            <translation>รอการอนุมัติร่วม</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Delivery</masterLabel>
+            <translation>กำลังรอการจัดส่งร่วม</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Form-Filling</masterLabel>
+            <translation>รอการกรอกแบบฟอร์มร่วม</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Signature</masterLabel>
+            <translation>รอลายเซ็นกำกับ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Adobe Sign Object Mapping --></label>
+        <name>echosign_dev1__SIGN_Object_Mapping__c</name>
+        <relationshipLabel><!-- File Mappings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source Type --></label>
+        <name>echosign_dev1__Source_Type__c</name>
+        <picklistValues>
+            <masterLabel>Audit Trail</masterLabel>
+            <translation>ร่องรอยการตรวจสอบ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed Agreement - Merged PDF</masterLabel>
+            <translation>ข้อตกลงที่ลงลายเซ็น - PDF รวม</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed Agreement - Separate PDFs</masterLabel>
+            <translation>ข้อตกลงที่ลงลายเซ็น - PDF แยกต่างหาก</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supporting Documents</masterLabel>
+            <translation>เอกสารประกอบ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Salesforce Field --></label>
+        <name>echosign_dev1__Target_Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Type --></label>
+        <name>echosign_dev1__Target_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add a reference link to the file</masterLabel>
+            <translation>เพิ่มลิงค์การอ้างอิงในไฟล์</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attach file directly to object</masterLabel>
+            <translation>แนบไฟล์กับออบเจกต์โดยตรง</translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- File Mapping --></value>
+    </caseValues>
+    <nameFieldLabel><!-- File Mapping Name --></nameFieldLabel>
+    <layouts>
+        <layout>EchoSign File Mapping Layout</layout>
+        <sections>
+            <label>ลิงค์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

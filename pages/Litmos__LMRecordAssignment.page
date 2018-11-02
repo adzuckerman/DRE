@@ -1,0 +1,539 @@
+<apex:page controller="Litmos.LMRecordAssignmentController">
+<c:PageBlockTableEnhancer targetPbTableIds="queueTable,valueTable" paginate="true" defaultPageSize="20" pageSizeOptions="5,10,20,30,40,50,100"/>
+<style>
+
+.assignItemBox .assign-header {
+   background-color: #f8f8f8;
+     border-radius: 5px 5px 0px 0px;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    
+    border-top: 3px solid #1797c0;
+}
+.assignItemBox table.item-page-list {
+    border: 1px solid #EEE;
+padding:0px !important;}
+.assignItemBox h2,
+.assignItemBox table.item-page-list h2{
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 100;
+     border-bottom: 1px solid #dbdbdb;
+    display: block;
+    padding: 1em;
+}
+.assignItemBox .assign-header .assign-search{
+padding: 1em;
+
+}
+.ct-box{
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px;
+    height: 32px;
+   /* margin-bottom: 20px;*/
+  }
+
+.ct-box h1{color: #000;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-top:8px;
+    display: block;}
+   
+.assignItemBox .assign-header .field-help-box label {
+    position: absolute;
+    top: 18px;
+    left: 3px;
+    padding-left: 35px;
+    color: #888;
+    z-index: 9000;
+    }
+.assignItemBox .assign-header input[type="text"]{
+    width:50%;
+    font-size: 17px;
+    border: 1px solid #e0e3e5;
+    border-radius: 4px;
+    background: #FFF url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAA6ElEQVQokZXSvUqDQRCF4UfBwp/CQhDBq7DQNkXEIp3egDYKegMxt5JGrOwitiKS2laLgEUqiWCidiqiFt+IcdkVPLAsy8w7e2YYftTABT7HzilqCppCayz5HB104/2CvRzYiIRbbGIWk5jHNgZ4w2oKXuIdWwVHB1H4JA1825sugAu4wXMO7IS9nGZwhacc2MVcAVxCD8M0cBbwTgE8xAfaaaCmGvkd9rGomuwymniIws0UnMAuXiPhOnrq+b0MfdRzltZUIx/iMe62ajn6AQ+wUWgpqzruAx6Vfv4LHgV8/B8Q1nGElS9G/kG2ATO2dQAAAABJRU5ErkJggg==") no-repeat scroll 10px 9px;
+    padding:5px 8px 5px 36px;
+    color: #666;
+    z-index: 999;
+}
+.assignItemBox .assign-header input[type="submit"],.assignItemBox input[type="submit"]{
+background-color: #9CCC49;
+border-color: #b5b5b5;
+border-bottom-color:#7f7f7f
+    display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0px;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.42857;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+-moz-user-select: none;
+color:#fff;
+
+}
+.assignItemBox table{
+width:100%;
+}
+
+.assignItemBox table.item-page-list{
+   background-color:#fff;
+    border-collapse: collapse;
+}
+.assignItemBox table.item-page-list tr td,
+.assignItemBox table.item-page-list tr th{
+     padding:0 1em;
+     }
+.assignItemBox table.item-page-list tr td a{
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+    font-size: 1em;
+    margin:0px;
+    
+}
+ .assignItemBox .assignResults {
+    /*height: 400px;
+    overflow: auto;*/
+    padding: 10px;
+    }
+    .assignItemBox .assignResults table.item-page-list {
+     width: 100%;
+    border-spacing: 0px !important;
+    
+    }
+    
+.assignItemBox .assignResults table.item-page-list tr {
+    background-image: linear-gradient(#FFF, #FFF);
+    height: 55px;
+}
+.assignItemBox .assignResults table.item-page-list tr td {
+    padding: 10px;
+    border-bottom: 1px solid #EEE;
+    vertical-align: middle;
+    cursor:pointer;
+    }
+    
+    table.item-page-list tr td.main-col, table.grid tr td.main-col, .main-col {
+    width: 100%;
+    }
+    .assignItemBox div.title, .assignItemBox div.title a, .assignItemBox div.title a:link, .assignItemBox div.title:visited, label.title {
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+    font-size: 1em;
+    }
+    .assignItemBox .assignResults table.item-page-list tr td label{
+    display: inline-block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+    .assignItemBox .assign-footer-opt {
+    background-color: #cfeef8;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #cfeef8;
+   
+    padding: 0.8em 1.1em;
+    }
+     .assignItemBox .assign-footer {
+    border-top: 1px solid #CCC;
+    padding: 10px;
+    }
+    
+.assignItemBox table.item-page-list tr th{
+
+padding:0px;}
+   .assignItemBox table.item-page-list tr td:first-child {
+   padding-left:15px;width:30px;
+   }
+  .assignItemBox .assign-header input[type="submit"].success{
+   
+color: #FFF;
+background-color: #9CCC49;
+border-color: #b5b5b5;
+border-bottom-color:#7f7f7f;
+ 
+    }
+    
+    .assignItemBox .centered input[type="submit"].success{
+     margin:0px 0px 0px 9em !important;}
+    .float-left {
+    float: left;
+}
+
+.assignItemBox .assign-header input[type="submit"], .assignItemBox input[type="submit"].loadmore{
+    background-color: #AFB5A5;
+border-color: #b5b5b5;
+border-bottom-color:#7f7f7f
+    display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0px;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.42857;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+-moz-user-select: none;
+color:#fff;
+}
+    .assignItemBox table.item-page-list tr td {
+    padding: 10px 0px 10px 10px;
+    border-bottom: 1px solid #EEE;
+    vertical-align: middle;
+    }
+    .centerd{
+    text-align:center;
+    padding:1.2em 0 ;
+   }
+   
+      .ct-box #assignResults{
+      
+      padding:5.5em;}
+      .check-all{
+          background-color: #cfeef8;
+        color: #000;
+        font-weight: bold;
+        border: 1px solid #cfeef8;
+        padding: 0.8em 1.1em 0.8em 2.7em;
+        border-bottom: 1px solid #dbdbdb;
+      }
+      .check-all label{padding-left:17px;}
+      .pull-right{float:right;}
+      .pull-left{float:left;}
+      
+      #sId{
+           height:auto!important;   
+      }
+      .check-list{display:block;width:250px;float:left;padding:3px 0px;}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.centered{width:100%;padding:1em 0;text-align:center;}
+.page_title {
+      background: transparent;
+    display: block;
+    padding: 1em;
+   
+    font-size: 1.3em;
+    font-weight: 300;
+    border-bottom: 1px solid #dbdbdb;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+.selector_table {
+    background: #FFF;
+    padding: 0.5em;
+    margin: 1em 0;
+    width: 332px;
+}
+.selector_table td {
+    padding: 0.3em 0.5em;
+    vertical-align: middle;
+}
+.course_selector_table td {
+    padding:0.3em 1em 0 0;
+}
+.course_selector_table .field-label {
+    font-weight:bold;
+}
+.course_selector_table select,
+.selector_table select {
+    padding: 0.5em;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 30px;
+}
+input.btn.green_button {
+    border: 1px solid #6AA700;
+    background: #9CCC49;
+    color: #fff;
+    padding: 6px 12px;
+    margin: 0 0 1em;
+    font-size:14px;
+}
+input.btn.back_button {
+    border: 1px solid #6AA700;
+    background: #9CCC49;
+    color: #fff;
+    padding: 6px 12px;
+    margin: -42px 12px 1em;
+    font-size:14px;
+}
+.course_table {
+    margin: 1em 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+.course_table th,
+.course_table td {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+}
+.course_table th {
+    background:#F3F3F3;
+}
+.assign-header{
+    background-color: #f8f8f8;
+    border-radius: 5px 5px 0px 0px;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    border-top: 3px solid #1797c0;
+}
+.align-content{
+  padding:1em;
+  }
+  .align-content table{
+  background-color:#FFF;
+  }
+  .white-bg{
+   background-color:#FFF;
+  }
+  .lookupInput input[type="text"]{
+    background-color:#f8f8f8;border:1px solid #ccc;border-radius:5px;height:20px;padding:0.3em;min-width:90px;
+}
+body .pbBody table.list input[type="button"]{
+    
+    padding:4px 8px;font-size:13px;cursor:pointer;
+}
+.lookupInput a {
+    background-image: url(/img/func_icons/util/lookup20.gif);
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    background-position: top left;
+    text-indent: -9993434px;
+    display: inline-block;
+
+}
+
+.lookupInput .fieldValue {
+    display: inline-block;
+}
+.lookupInput .fieldValue2 {
+    display: inline-block;
+}
+.no-course{
+    display:block;
+    text-align: center;
+    margin-top:8%;
+    font-size:18px;
+    color:#676767;
+}
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+<script>
+$(document).ready(function(){
+   var inSalesforce1 = (window.navigator.userAgent.toLowerCase().indexOf('salesforce1') != -1);
+   if (inSalesforce1 == true ) {
+      $('.courseBtn').hide();
+      $('.learningBtn').hide();
+      $('.teamsBtn').hide();
+   }
+        
+  $( '#dialog,#dialog2,#pathsDialog,#teamsDialog' ).dialog({
+      title : 'Assign',
+      resizable: true,
+      height:500,
+      modal: true,
+      width:900,
+      autoOpen: false,
+      
+    });
+  
+});
+
+function showpopup(){
+    $( '#dialog' ).dialog('open',"option", "minWidth", 600);
+}
+function showpopup2(){
+    $( '#dialog2' ).dialog('open',"option", "minWidth", 600);
+}    
+    
+</script>
+
+<apex:form id="formId"> 
+<apex:outputPanel id="messagePanel">
+<apex:pageMessages />
+</apex:outputPanel>
+
+<div class="assign-header">
+<h3 class="page_title">{!objectRecordType}</h3>
+<apex:commandButton value="Back" styleClass="success back_button pull-right" action="{!gotoBackPage}"/>
+<div class="align-content white-bg">
+<table class="selector_table">
+    <tr>
+        <td>Field Label: </td>
+        <td><apex:selectList size="1" value="{!selectedValue}"><apex:selectOptions value="{!fieldList}" ></apex:selectOptions><apex:actionSupport event="onchange" action="{!fieldListChange}" reRender="queueTable,panelId,popup"/></apex:selectList></td>
+        <!--<td><apex:commandLink value="Add Field" action="{!addFieldValue}"/></td>-->
+    </tr>
+    <tr>
+        <td>Record Type: </td>
+        <td><apex:outputLabel value="{!objectRecordType}"></apex:outputLabel></td>
+    </tr>
+</table>
+</div>
+ <div class="align-content">
+<apex:outputPanel id="panelId">
+
+    <apex:outputPanel rendered="{!isRendered}">
+        <table class="course_selector_table">
+            <tr>
+                <td><label class="field-label">Select Course</label></td>
+                <td><label class="field-label">Select {!selectedValue}  </label></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><div class="lookupInput"><div class="fieldValue2"><apex:inputText value="{!selectedCourse}" /></div><apex:commandLink value="Click" onclick="showpopup2(); return false;" /></div></td>
+                <td>
+                    <div class="lookupInput"><apex:outputPanel ><apex:outputPanel rendered="{! IF(selectedValue!='Revenue',true,false)}"><div class="fieldValue"><apex:inputText value="{!selectedFieldValue}" /></div><apex:commandLink value="Click" onclick="showpopup(); return false;" /></apex:outputPanel> </apex:outputPanel>   
+                    <apex:outputPanel rendered="{! IF(selectedValue=='Revenue',true,false)}"><apex:inputText size="1" value="{!selectedFieldValue}"/></apex:outputPanel>
+                        </div>
+                </td>    
+                <td><apex:commandButton styleClass="success green_button pull-right" value="Add to Recommended Course List" action="{!createRecommendedcourseList}" rerender="queueTable,messagePanel"/></td>    
+            </tr>
+        </table>
+    </apex:outputPanel>
+</apex:outputPanel>
+<apex:outputPanel id="tableId">
+<apex:pageBlock title="Course Mapping">
+   <apex:pageblocktable id="queueTable"  value="{!mapList}"  var="f">
+                <apex:column headervalue="Field Label" value="{!f.Litmos__RecordObjectField__c}"/>
+                <apex:column headervalue="Value" value="{!f.Litmos__FieldValue__c}"/>
+                <apex:column headervalue="Course" value="{!f.Course__r.Name}"/>
+                <apex:column headervalue="Created Date" value="{!f.CreatedDate}"/>
+                <apex:column headervalue="Active"><apex:outputLabel value="{!if(f.Course__r.Litmos__Active__c,'Yes','No')}"></apex:outputLabel></apex:column>
+                <apex:column headervalue="Course Deleted"><apex:outputLabel value="{!if(f.Course__r.Litmos__Deleted__c,'Yes','No')}"></apex:outputLabel></apex:column>
+                <apex:column headervalue=""><apex:commandButton value="Delete" action="{!deleteMapping}" reRender="tableId,messagePanel"><apex:param name="deleteId" value="{!f.Id}" assignTo="{!deleteId}" /></apex:commandButton></apex:column>
+   </apex:pageblocktable>
+</apex:pageBlock>
+</apex:outputPanel>
+
+</div>
+</div>
+</apex:form>
+<apex:form >
+<div style="width:630px" id="dialog" title="Basic dialog">
+      <script>
+           function setFieldValue(selectedFieldValue){
+                //alert('hi');
+                //console.log('hi'+selectedFieldValue);
+                //settingFieldValue(selectedFieldValue);
+                var decodedVar = decodeURIComponent(selectedFieldValue).replace('+', ' ');
+               
+                $('.fieldValue input').val(decodedVar);
+                $('#dialog').dialog('close');
+            } 
+            
+            function setSearchVal(){
+                var searchVal = document.getElementById("searchId").value;
+                console.log(searchVal);
+                searchFieldValue(searchVal);
+            }  
+      </script>
+      <apex:actionFunction name="settingFieldValue" action="{!setFieldValue}" reRender="testId">
+        <apex:param id="selectedFieldValue" name="selectedFieldValue" assignTo="{!selectedFieldValue}" value=""  />
+      </apex:actionFunction>
+
+      <apex:actionFunction name="searchFieldValue" action="{!searchFieldValue}" reRender="fieldValueId" status="actStatusId">
+        <apex:param id="searchVal" name="searchVal" assignTo="{!searchVal}" value=""  />
+      </apex:actionFunction>
+      
+      <apex:outputPanel id="popup">
+      <apex:outputPanel rendered="{! if(selectedValue!=null,true,false)}">
+          Search: <input type="text" id="searchId"/> <apex:commandButton value="Search" onclick="setSearchVal();return false;" />
+          <apex:actionStatus id="actStatusId" >
+                        <apex:facet name="start" >
+                          <img src="{!$Resource.loading}" />                    
+                        </apex:facet>
+          </apex:actionStatus>
+          
+          <apex:pageBlock title="Field Values" id="fieldValueId" rendered="{!fieldValueList.size>0}">
+           <apex:pageblocktable id="valueTable" value="{!fieldValueList}"  var="f" >
+                        <apex:column headervalue="Field Value"><apex:commandLink value="{!f.fieldValue}" onclick="setFieldValue('{!f.encodedValue}');return false;"/></apex:column>
+           </apex:pageblocktable>
+          </apex:pageBlock>
+          
+          <apex:outputPanel rendered="{!fieldValueList.size==0}" styleClass="no-course">{!$Label.litmos__no_field_values}</apex:outputPanel>  
+        
+        
+      </apex:outputPanel>
+      </apex:outputPanel>
+</div>
+
+
+<div style="width:630px" id="dialog2" title="Basic dialog">
+      <script>
+           function setFieldValuecourse(selectedFieldValue){
+                
+                //console.log('hi'+selectedFieldValue);
+                //settingFieldValuecourse(selectedFieldValue);
+                $('.fieldValue2 input').val(selectedFieldValue);
+                $('#dialog2').dialog('close');
+            } 
+            
+            function setSearchValCourse(){
+                var searchVal = document.getElementById("searchId2").value;
+                console.log(searchVal);
+                searchFieldValueCourse(searchVal);
+            }  
+      </script>
+
+      <apex:actionFunction name="searchFieldValueCourse" action="{!searchFieldValueCourse}" reRender="outpanel" status="actStatusId2">
+        <apex:param id="searchVal2" name="searchVal" assignTo="{!searchValCourse}" value=""  />
+      </apex:actionFunction>
+      
+      <apex:outputPanel id="popup2">
+          Search: <input type="text" id="searchId2"/> <apex:commandButton value="Search" onclick="setSearchValCourse();return false;" />
+          <apex:actionStatus id="actStatusId2" >
+                        <apex:facet name="start" >
+                          <img src="{!$Resource.loading}" />                    
+                        </apex:facet>
+          </apex:actionStatus>
+          
+          <apex:outputPanel id="outpanel">
+          <apex:pageBlock title="Courses" id="fieldValueId2" rendered="{!courseList.size>0}">
+          
+           <apex:pageblocktable id="valueTable"  value="{!courseList}"  var="f">
+                       <apex:column headervalue="Courses" ><apex:commandLink styleClass="{!if(OR(!f.Litmos__Active__c,f.Litmos__Deleted__c),'not-active','')}" value="{!f.Name}" onclick="setFieldValuecourse('{!f.Name}');return false;"/><apex:outputLabel value="{!if(f.Litmos__Active__c,'','(InActive)')}"></apex:outputLabel> <apex:outputLabel value="{!if(f.Litmos__Deleted__c,'(Deleted)','')}"></apex:outputLabel> </apex:column>
+           </apex:pageblocktable>
+        </apex:pageBlock>
+        <apex:outputPanel rendered="{!!(courseList.size>0)}" styleClass="no-course">{!$Label.litmos__no_course_values}</apex:outputPanel>  
+      </apex:outputPanel>
+      </apex:outputPanel>
+</div>
+</apex:form>
+
+
+</apex:page>

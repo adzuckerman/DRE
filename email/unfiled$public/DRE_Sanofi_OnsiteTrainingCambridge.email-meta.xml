@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>invite re: DOC Search training Cambridge 8-30-18</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-Sanofi-OnsiteTrainingCambridge</name>
+    <style>none</style>
+    <subject>DOCTOR EVIDENCE Onsite TRAINING INVITATION  Cambridge 8-30-18</subject>
+    <textOnly>*|Doctor Evidence Upcoming DOC Search Trainings|*
+
+Dear {!Contact.FirstName},
+You are invited to attend onsite trainings on the Doctor Evidence platforms in Cambridge on August 30th, 2018. Access to the Doctor Evidence platforms and associated deliverables are available free of cost to all Sanofi personnel.
+Our newest platform, DOC Search, is an easy-to-use advanced medical information search engine that can be used to quickly and efficiently evaluate published and publicly available medical information for any topic. Learn how to efficiently search over 28 million articles, including articles indexed from MEDLINE, ClinicalTrials.gov, and RSS feeds to view the most up-to-date literature; monitor new trials, literature, and other sources for safety signals; set queries/signals for surveillance, and more. 9:00 am - 10:00 am EST - (US-CAM-50Bin-4-162-SCONF and via WebEx)
+DOC Data, our analytical platform, is a powerful environment for structuring data and generating analysis from full-text clinical studies and other epidemiological sources. Learn how to access highly curated variable-level data for a given topic in an accessible central platform; review descriptive information about and across studies; export data; create evidence tables; and conduct advanced analytics. 10:30 am-11:30 am EST - (US-CAM-50Bin-4-162-SCONF and via Webex)
+Bring your individual questions to our Open Forum. Learn how to maximize your use of the Doctor Evidence platforms, discuss current or upcoming projects, and receive hands-on assistance. 1:00 pm - 2:00 pm EST - (US-CAM-50Bin-4-162-SCONF only)
+Please reply to this invite with your session(s) of choice and we&apos;ll send you an invite for each. Feel free to invite a colleague! 
+
+Access the Doctor Evidence platforms at https://sanofi.doctorevidence.com/ using your Sanofi credentials.
+
+Kind Regards,
+
+Nancy Morgan
+Vice President, Learning and Development
+301 Arizona Ave Suite 301 Santa Monica CA 90401
+Doctor Evidence
+
+Doctor Evidence (DRE) is a technology and research services company that finds, synthesizes and analyzes information from published sources. We will work with you--at no cost--to create deliverables such as Systematic Literature Reviews, Meta-Analyses, Landscape Analyses, Comparative Safety Assessments, and Regulatory Responses across several therapeutic areas:  Cardiovascular, Diabetes, Immunology, Multiple Sclerosis, General Medicines (including Consumer Health), Vaccines and Oncology.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

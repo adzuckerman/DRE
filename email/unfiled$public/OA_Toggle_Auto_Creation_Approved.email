@@ -1,0 +1,8 @@
+<p>To Whom It May Concern:</p>
+
+<p>Please be advised that OA approved Toggl Project Auto-Creation for the TaskRay Project <a href="https://doctorevidence.my.salesforce.com/{!TASKRAY__Project__c.Id}">{!TASKRAY__Project__c.Name}</a>.</p>
+
+<p>No further action is required by any other OA approver at this time.</p>
+
+<p>Thanks,<br/>
+System Administrator</p>

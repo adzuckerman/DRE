@@ -1,0 +1,33 @@
+<apex:page controller="Litmos.LitmosSetupController" action="{!verify}">
+<style>
+       
+table.global td {
+    text-align: left !important;
+}
+    </style>
+<apex:form id="frm">
+<apex:pageBlock title="Recommended Course List Setup" >
+             <table border="0" width="100%" class="global">
+                 <tr>
+                     <td width="30%" valign="top" style="text-align: right;"><apex:commandButton style="width:220px;" value="Create Recommended Course Lists" action="{!goToRecommendedCourseListTab}"/></td>
+                     <td valign="top">
+                         <p style="margin-left: 10px;margin-right: 138px;margin-top: 0px;">Courses can be recommended to record owners of Cases, Leads and Opportunities. These courses can be seen and accessed on the actual record in Salesforce. In order recommended courses to owners of each record type, please create recommended course list mappings that map Litmos courses with certain record field values. First, please customize the record fields.
+                              <br/><br/> 
+                             
+                         </p>
+                     </td>
+                 </tr>
+
+                 <tr>
+                     <td width="30%" valign="top" style="text-align: right;"><apex:commandButton style="width:220px;" value="Customize Fields" action="{!goToAddFieldValuesTab}"/></td>
+                     <td valign="top">
+                        <p style="margin-left: 10px;margin-right: 138px;margin-top: 0px;">In order to create Recommended Course Lists for Cases, Leads and Opportunities, fields must be added to the mapping index of each record type. This must be done before Recommended Course List mappings can be created.
+                              <br/><br/> 
+                         </p>
+                     </td>
+                 </tr>
+
+             </table>
+        </apex:pageBlock>
+</apex:form>        
+</apex:page>

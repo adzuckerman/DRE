@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cached Input Type --></label>
+        <name>echosign_dev1__Cached_Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>목록</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation>텍스트</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>전송된 모든 계약에 대해 기본적으로 이 병합 매핑을 실행하려면 이 확인란을 선택합니다. 특정 계약 또는 계약 템플릿에 다른 병합 매핑을 지정하면 기본값을 무시할 수 있습니다.</help>
+        <label><!-- Default Merge Mapping? --></label>
+        <name>echosign_dev1__Default__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>echosign_dev1__Description__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>병합 매핑 이름</value>
+    </caseValues>
+    <nameFieldLabel>병합 매핑</nameFieldLabel>
+    <layouts>
+        <layout>EchoSign Merge Mapping Layout</layout>
+        <sections>
+            <label>사용자 정의 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

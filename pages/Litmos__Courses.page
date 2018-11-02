@@ -1,0 +1,37 @@
+<apex:page standardController="Contact" extensions="Litmos.contactLitmosRecord">
+<apex:form id="frm">
+<apex:actionStatus id="status">
+        <apex:facet name="start"> 
+             <apex:outputPanel id="tstpopup"> 
+                    <apex:outputPanel styleClass="popupBackground" layout="block" style="width:100%"/> 
+                    <apex:outputPanel styleClass="custPopup" layout="block"> 
+                        <img src="http://jimpunk.net/Loading/wp-content/uploads/loading45.gif" style="horizontal-align:middle;height:100px;width:130px;margin-top:120%"/> 
+                        <!--<span>Please wait...</span>--> 
+                    </apex:outputPanel> 
+             </apex:outputPanel> 
+        </apex:facet> 
+      </apex:actionStatus>    
+    <apex:pageBlock title="Courses for {!Contact.Name} - {!counter}" rendered="{!counter > 0}">
+        <apex:pageBlockTable value="{!UserRecord}" var="o">
+            <apex:column value="{!o.Course__r.Litmos__Course_Name__c}"/>
+            <apex:column value="{!o.Litmos__Completed__c}"/>
+            <apex:column value="{!o.Litmos__Percentage_Complete__c}"/>
+            <apex:column value="{!o.Litmos__Completed_Date__c}"/>
+        </apex:pageBlockTable>
+        
+        <apex:outputPanel id="gridId" styleClass="nav">
+                  <apex:commandLink action="{!previous}" rendered="{!showPrevious}" reRender="activeUserSection,gridId" status="actStatusId">Previous</apex:commandlink>
+                  <apex:commandLink action="{!next}" rendered="{!showNext}" reRender="activeUserSection,gridId" status="actStatusId">Next</apex:commandlink>
+                  
+                  <apex:actionStatus id="actStatusId" >
+                        <apex:facet name="start" >
+                          <img src="{!$Resource.loading}" />                    
+                        </apex:facet>
+                  </apex:actionStatus>
+                
+        </apex:outputPanel>
+                
+    </apex:pageBlock>
+    <apex:pageBlock title="There are no courses assigned to {!Contact.Name}." rendered="{!counter = 0}"/>
+    </apex:form>
+</apex:page>

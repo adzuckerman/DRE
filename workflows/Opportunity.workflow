@@ -441,23 +441,6 @@
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>
     <outboundMessages>
-        <fullName>Opportunity_Change_Test</fullName>
-        <apiVersion>40.0</apiVersion>
-        <endpointUrl>https://putsreq.com/zgaJpZ9dhIX3dmsaZ7VS</endpointUrl>
-        <fields>AccountId</fields>
-        <fields>CloseDate</fields>
-        <fields>Contract_End__c</fields>
-        <fields>Id</fields>
-        <fields>Name</fields>
-        <fields>Opportunity_ID__c</fields>
-        <fields>StageName</fields>
-        <includeSessionId>false</includeSessionId>
-        <integrationUser>docdatadev@doctorevidence.com</integrationUser>
-        <name>Opportunity Change Test</name>
-        <protected>false</protected>
-        <useDeadLetterQueue>false</useDeadLetterQueue>
-    </outboundMessages>
-    <outboundMessages>
         <fullName>Opportunity_OM_Production</fullName>
         <apiVersion>40.0</apiVersion>
         <description>Opportunity Change Outbound Message for DocData Production</description>
@@ -472,6 +455,23 @@
         <includeSessionId>false</includeSessionId>
         <integrationUser>docdatadev@doctorevidence.com</integrationUser>
         <name>Opportunity Change OM Production</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>Opportunity_Change_Test</fullName>
+        <apiVersion>40.0</apiVersion>
+        <endpointUrl>https://putsreq.com/j0u40rirAGREpGgD8QDk</endpointUrl>
+        <fields>AccountId</fields>
+        <fields>CloseDate</fields>
+        <fields>Contract_End__c</fields>
+        <fields>Id</fields>
+        <fields>Name</fields>
+        <fields>Opportunity_ID__c</fields>
+        <fields>StageName</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>docdatadev@doctorevidence.com</integrationUser>
+        <name>Opportunity Change Test</name>
         <protected>false</protected>
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>

@@ -13,19 +13,6 @@
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>
     <outboundMessages>
-        <fullName>Account_Change_OM_Test</fullName>
-        <apiVersion>42.0</apiVersion>
-        <description>Account Change OM for Doc Data Sync</description>
-        <endpointUrl>https://putsreq.com/ZI0iPI7s0ollWRwwF1Qx</endpointUrl>
-        <fields>Id</fields>
-        <fields>Name</fields>
-        <includeSessionId>false</includeSessionId>
-        <integrationUser>docdatadev@doctorevidence.com</integrationUser>
-        <name>Account Change OM Test</name>
-        <protected>false</protected>
-        <useDeadLetterQueue>false</useDeadLetterQueue>
-    </outboundMessages>
-    <outboundMessages>
         <fullName>Account_OM_Production</fullName>
         <apiVersion>40.0</apiVersion>
         <description>Account Change Outbound Message for DocData Production</description>
@@ -38,10 +25,27 @@
         <protected>false</protected>
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>
+    <outboundMessages>
+        <fullName>Account_Change_OM_Test</fullName>
+        <apiVersion>44.0</apiVersion>
+        <description>Account Change OM for Doc Data Sync</description>
+        <endpointUrl>https://putsreq.com/j0u40rirAGREpGgD8QDk</endpointUrl>
+        <fields>Id</fields>
+        <fields>Name</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>docdatadev@doctorevidence.com</integrationUser>
+        <name>Account Change OM Test</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
     <rules>
         <fullName>DocTimely Account Changed Rule</fullName>
         <actions>
             <name>Account_Change_OM</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <actions>
+            <name>Account_Change_OM_Test</name>
             <type>OutboundMessage</type>
         </actions>
         <active>true</active>

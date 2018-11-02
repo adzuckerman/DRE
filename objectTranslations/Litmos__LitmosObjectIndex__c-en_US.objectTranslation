@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- ContactBuyer --></label>
+        <name>Litmos__ContactBuyer__c</name>
+        <relationshipLabel><!-- LitmosObjectIndexs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ContactPartner --></label>
+        <name>Litmos__ContactPartner__c</name>
+        <relationshipLabel><!-- LitmosObjectIndexs (ContactPartner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Litmos__Opportunity__c</name>
+        <relationshipLabel><!-- LitmosObjectIndexs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User Learning Path Result --></label>
+        <name>Litmos__User_Learning_Path_Result__c</name>
+        <relationshipLabel><!-- LitmosObjectIndexs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User Module Result --></label>
+        <name>Litmos__User_Module_Result__c</name>
+        <relationshipLabel><!-- LitmosObjectIndexs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User Program Result --></label>
+        <name>Litmos__User_Program_Result__c</name>
+        <relationshipLabel><!-- LitmosObjectIndexs --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

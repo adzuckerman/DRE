@@ -94,6 +94,51 @@
         <fullName>StockKeepingUnit</fullName>
         <trackHistory>false</trackHistory>
     </fields>
+    <fields>
+        <fullName>Offering__c</fullName>
+        <externalId>false</externalId>
+        <label>DRE Internal Offering</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Offering_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Revenue_Period__c</fullName>
+        <description>Revenue period in months.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Revenue period in months.</inlineHelpText>
+        <label>Revenue Period</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Services__c</fullName>
+        <externalId>false</externalId>
+        <label>Services</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Subscription__c</fullName>
+        <externalId>false</externalId>
+        <label>Subscription</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <searchLayouts>
@@ -116,7 +161,14 @@
     <sharingModel>ReadWrite</sharingModel>
     <listViews>
         <fullName>AllProducts</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>Offering__c</columns>
+        <columns>Revenue_Period__c</columns>
+        <columns>Services__c</columns>
+        <columns>Subscription__c</columns>
+        <columns>PRODUCT2.ACTIVE</columns>
         <filterScope>Everything</filterScope>
-        <label>All Products</label>
+        <label>All Customer Products</label>
     </listViews>
 </CustomObject>

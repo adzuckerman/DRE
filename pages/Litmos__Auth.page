@@ -1,0 +1,2 @@
+<apex:page controller="Litmos.BaseController" sidebar="false" action="{!getAccessToken}">
+</apex:page>

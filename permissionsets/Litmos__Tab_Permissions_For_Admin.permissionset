@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Testing</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Tab Permissions For Admin</label>
+    <license>Salesforce</license>
+    <tabSettings>
+        <tab>Litmos__Dashboard</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Litmos__Litmos_Setup</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Litmos__My_Users</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

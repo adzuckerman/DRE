@@ -21,17 +21,16 @@ public with sharing class OpportunityRevenueAllocationCtrl {
             List<RevenueCalculationUtil.LockDateWrapper> lockedDates = RevenueCalculationUtil.lockedDates;
             for (List<Product_Revenue_Schedule__c> scheduleList : schedulesList) {
                 for (Product_Revenue_Schedule__c schedule : scheduleList) {
+                    result.put(schedule.Id, false);
                     for (RevenueCalculationUtil.LockDateWrapper lockedDate : lockedDates) {
-                        if (lockedDate.lockType != 'Revenue') {
-                            result.put(schedule.Id, false);
-                            continue;
-                        }
-                        Boolean inRange = (lockedDate.startDate != null && lockedDate.endDate != null && schedule.Date__c >= lockedDate.startDate && schedule.Date__c <= lockedDate.endDate)
-                            || (lockedDate.startDate != null && lockedDate.endDate == null && schedule.Date__c >= lockedDate.startDate)
-                            || (lockedDate.startDate == null && lockedDate.endDate != null && schedule.Date__c <= lockedDate.endDate);
-                        
-                        if (!result.containsKey(schedule.Id) || !result.get(schedule.Id)) {
-                            result.put(schedule.Id, inRange);
+                        if (lockedDate.lockType == 'Revenue') {
+                            Boolean inRange = (lockedDate.startDate != null && lockedDate.endDate != null && schedule.Date__c >= lockedDate.startDate && schedule.Date__c <= lockedDate.endDate)
+                                || (lockedDate.startDate != null && lockedDate.endDate == null && schedule.Date__c >= lockedDate.startDate)
+                                || (lockedDate.startDate == null && lockedDate.endDate != null && schedule.Date__c <= lockedDate.endDate);
+                            
+                            if (inRange) {
+                                result.put(schedule.Id, true);
+                            }
                         }
                     }
                 }

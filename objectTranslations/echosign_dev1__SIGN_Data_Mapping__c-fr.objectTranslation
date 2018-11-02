@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cached Input Type --></label>
+        <name>echosign_dev1__Cached_Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Liste</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation>Texte</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Cochez cette case pour que ce mappage de données soit exécuté par défaut pour tous les accords envoyés. Vous pouvez remplacer la valeur par défaut si vous spécifiez un autre mappage de données à utiliser avec un accord ou un modèle d’accord spécifique.</help>
+        <label><!-- Default Data Mapping? --></label>
+        <name>echosign_dev1__Default_Data_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>echosign_dev1__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Field CSV --></label>
+        <name>echosign_dev1__Merge_Field_CSV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify User of Errors --></label>
+        <name>echosign_dev1__Notify_User_of_Errors__c</name>
+        <relationshipLabel><!-- Data Mappings --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Mappage de données</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mappages de données</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom de mappage des données</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Process Template Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

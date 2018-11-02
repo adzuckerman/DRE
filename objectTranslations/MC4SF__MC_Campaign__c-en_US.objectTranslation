@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Abuse Reports --></label>
+        <name>MC4SF__Abuse_Reports__c</name>
+    </fields>
+    <fields>
+        <label><!-- Analytics Tag --></label>
+        <name>MC4SF__Analytics_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Analytics --></label>
+        <name>MC4SF__Analytics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Archive URL --></label>
+        <name>MC4SF__Archive_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authenticated --></label>
+        <name>MC4SF__Authenticate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto-Convert Video --></label>
+        <name>MC4SF__Auto_Convert_Video__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto FB Post --></label>
+        <name>MC4SF__Auto_FB_Post__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Footer Enabled --></label>
+        <name>MC4SF__Auto_Footer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Tweeted --></label>
+        <name>MC4SF__Auto_Tweet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Id --></label>
+        <name>MC4SF__Campaign_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Share Report --></label>
+        <name>MC4SF__Campaign_Share_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClickTale Tag --></label>
+        <name>MC4SF__ClickTale_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClickTale Tracking Enabled --></label>
+        <name>MC4SF__ClickTale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clicks --></label>
+        <name>MC4SF__Clicks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Type --></label>
+        <name>MC4SF__Content_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Time --></label>
+        <name>MC4SF__Create_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- ecomm360 Tracking Enabled --></label>
+        <name>MC4SF__Ecomm360__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emails Sent --></label>
+        <name>MC4SF__Emails_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook Likes --></label>
+        <name>MC4SF__Facebook_Likes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forwards Opens --></label>
+        <name>MC4SF__Forwards_Opens__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forwards --></label>
+        <name>MC4SF__Forwards__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Email --></label>
+        <name>MC4SF__From_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Name --></label>
+        <name>MC4SF__From_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Tag --></label>
+        <name>MC4SF__Google_Analytics_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Tracking Enabled --></label>
+        <name>MC4SF__Google_Analytics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Tag --></label>
+        <name>MC4SF__Goooal_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Tracking Enabled --></label>
+        <name>MC4SF__Goooal__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTML Clicks Tracked --></label>
+        <name>MC4SF__HTML_Clicks_Tracked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hard Bounces --></label>
+        <name>MC4SF__Hard_Bounces__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hourly Stats - Emails Sent --></label>
+        <name>MC4SF__Hourly_Stats_Emails_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hourly Stats - Unique Opens --></label>
+        <name>MC4SF__Hourly_Stats_Unique_Opens__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hourly Stats - Recipients Click --></label>
+        <name>MC4SF__Hourly_Status_Recipients_Click__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSS Auto-Inlined --></label>
+        <name>MC4SF__Inline_CSS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Click --></label>
+        <name>MC4SF__Last_Click__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Open --></label>
+        <name>MC4SF__Last_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link to MC Campaign --></label>
+        <name>MC4SF__Link_to_MC_Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- MC List --></label>
+        <name>MC4SF__MC_List__c</name>
+        <relationshipLabel><!-- MC Campaigns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MailChimp Folder ID --></label>
+        <name>MC4SF__MailChimp_Folder_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MailChimp ID --></label>
+        <name>MC4SF__MailChimp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MailChimp Link --></label>
+        <name>MC4SF__MailChimp_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- MailChimp List ID --></label>
+        <name>MC4SF__MailChimp_List_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MailChimp Template ID --></label>
+        <name>MC4SF__MailChimp_Template_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MailChimp Web ID --></label>
+        <name>MC4SF__MailChimp_Web_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Segment Conditions --></label>
+        <name>MC4SF__New_Segment_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Segment Match --></label>
+        <name>MC4SF__New_Segment_Match__c</name>
+        <picklistValues>
+            <masterLabel>all</masterLabel>
+            <translation><!-- all --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>any</masterLabel>
+            <translation><!-- any --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New Segment Name --></label>
+        <name>MC4SF__New_Segment_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opens Tracked --></label>
+        <name>MC4SF__Opens_Tracked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opens --></label>
+        <name>MC4SF__Opens__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient Likes --></label>
+        <name>MC4SF__Recipient_Likes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Password --></label>
+        <name>MC4SF__Report_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Secure URL --></label>
+        <name>MC4SF__Report_Secure_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report URL --></label>
+        <name>MC4SF__Report_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment Opts --></label>
+        <name>MC4SF__Segment_Opts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segmented Text --></label>
+        <name>MC4SF__Segmented_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Time --></label>
+        <name>MC4SF__Send_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soft Bounces --></label>
+        <name>MC4SF__Soft_Bounces__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>MC4SF__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>MC4SF__Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Syntax Errors --></label>
+        <name>MC4SF__Syntax_Errors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Clicks Tracked --></label>
+        <name>MC4SF__Text_Clicks_Tracked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timewarp Schedule --></label>
+        <name>MC4SF__Timewarp_Schedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timewarp Enabled --></label>
+        <name>MC4SF__Timewarp__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Name --></label>
+        <name>MC4SF__To_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type Opts --></label>
+        <name>MC4SF__Type_Opts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>MC4SF__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Clicks --></label>
+        <name>MC4SF__Unique_Clicks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Likes --></label>
+        <name>MC4SF__Unique_Likes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Opens --></label>
+        <name>MC4SF__Unique_Opens__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unsubscribes --></label>
+        <name>MC4SF__Unsubscribes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Who Clicked --></label>
+        <name>MC4SF__Users_Who_Clicked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wizard Status --></label>
+        <name>MC4SF__Wizard_Status__c</name>
+        <picklistValues>
+            <masterLabel>Content Saved</masterLabel>
+            <translation><!-- Content Saved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PlainText Saved</masterLabel>
+            <translation><!-- PlainText Saved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recipients Saved</masterLabel>
+            <translation><!-- Recipients Saved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup Saved</masterLabel>
+            <translation><!-- Setup Saved --></translation>
+        </picklistValues>
+    </fields>
+    <fieldSets>
+        <label><!-- AggregateHourlyCampaignStats --></label>
+        <name>AggregateHourlyCampaignStats</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- CampaignDetail --></label>
+        <name>CampaignDetail</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- CampaignStats --></label>
+        <name>CampaignStats</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Options --></label>
+        <name>Options</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RelatedRecords --></label>
+        <name>RelatedRecords</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Tracking --></label>
+        <name>Tracking</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UnsubscribesBounces --></label>
+        <name>UnsubscribesBounces</name>
+    </fieldSets>
+    <layouts>
+        <layout>MC Campaign Layout</layout>
+        <sections>
+            <label><!-- Aggregate Hourly Campaign Stats --></label>
+            <section>Aggregate Hourly Campaign Stats</section>
+        </sections>
+        <sections>
+            <label><!-- Campaign Report --></label>
+            <section>Campaign Report</section>
+        </sections>
+        <sections>
+            <label><!-- Campaign Stats --></label>
+            <section>Campaign Stats</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Options --></label>
+            <section>Options</section>
+        </sections>
+        <sections>
+            <label><!-- Related Records --></label>
+            <section>Related Records</section>
+        </sections>
+        <sections>
+            <label><!-- Tracking --></label>
+            <section>Tracking</section>
+        </sections>
+        <sections>
+            <label><!-- Unsubscribes/Bounces --></label>
+            <section>Unsubscribes/Bounces</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Refresh_Campaign_Stats --></label>
+        <name>MC4SF__Refresh_Campaign_Stats</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Retrieve_from_MailChimp_list --></label>
+        <name>MC4SF__Retrieve_from_MailChimp_list</name>
+    </webLinks>
+</CustomObjectTranslation>

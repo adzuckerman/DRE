@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Costs --></label>
+        <name>Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <relationshipLabel><!-- Department Costs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Financials --></label>
+        <name>Financials__c</name>
+        <picklistValues>
+            <masterLabel>Actual</masterLabel>
+            <translation><!-- Actual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budget</masterLabel>
+            <translation><!-- Budget --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forecast</masterLabel>
+            <translation><!-- Forecast --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GAAP Class --></label>
+        <name>GAAP_Class__c</name>
+        <picklistValues>
+            <masterLabel>Cost of Revenue</masterLabel>
+            <translation><!-- Cost of Revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General &amp; Administrative</masterLabel>
+            <translation><!-- General &amp; Administrative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research &amp; Development</masterLabel>
+            <translation><!-- Research &amp; Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales &amp; Marketing</masterLabel>
+            <translation><!-- Sales &amp; Marketing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Budgeted Cost</masterLabel>
+            <translation><!-- Budgeted Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Employee Cost</masterLabel>
+            <translation><!-- Current Employee Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Hires</masterLabel>
+            <translation><!-- Strategic Hires --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Department Costs</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Department Costs</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Department Costs Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

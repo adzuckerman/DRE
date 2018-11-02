@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cached Input Type --></label>
+        <name>echosign_dev1__Cached_Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Lijst</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation>Tekst</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Schakel dit vakje in als u deze samenvoegingstoewijzing wilt uitvoeren voor alle verzonden overeenkomsten. U kunt de standaardinstelling overschrijven als u een andere samenvoegingstoewijzing opgeeft voor een bepaalde overeenkomst of overeenkomstsjabloon.</help>
+        <label><!-- Default Merge Mapping? --></label>
+        <name>echosign_dev1__Default__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>echosign_dev1__Description__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Toewijzingssamenvoeging</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Samenvoegingstoewijzingen</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Naam voor samenvoegingstoewijzi</nameFieldLabel>
+    <layouts>
+        <layout>EchoSign Merge Mapping Layout</layout>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

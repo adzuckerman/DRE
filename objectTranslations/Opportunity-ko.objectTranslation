@@ -732,42 +732,6 @@
         <name>Plan_Year__c</name>
     </fields>
     <fields>
-        <label><!-- Offering --></label>
-        <name>Product_Category__c</name>
-        <picklistValues>
-            <masterLabel>ASCO DOC Search</masterLabel>
-            <translation><!-- ASCO DOC Search --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>DOC Label</masterLabel>
-            <translation><!-- DOC Label --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>DOC Track</masterLabel>
-            <translation><!-- DOC Track --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Data Hub</masterLabel>
-            <translation><!-- Data Hub --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>GROWTH</masterLabel>
-            <translation><!-- GROWTH --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>IHME</masterLabel>
-            <translation><!-- IHME --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Service Project Platform</masterLabel>
-            <translation><!-- Service Project Platform --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Services</masterLabel>
-            <translation><!-- Services --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <label><!-- Product Generic Name --></label>
         <name>Product_Generic_Name__c</name>
     </fields>
@@ -1246,6 +1210,62 @@
     <fields>
         <label><!-- # of Meetings --></label>
         <name>of_Meetings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Proposal Submitted --></label>
+        <name>Is_Proposal_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offering --></label>
+        <name>Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>ASCO DOC Search</masterLabel>
+            <translation><!-- ASCO DOC Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASH DOC Search</masterLabel>
+            <translation><!-- ASH DOC Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOC Label</masterLabel>
+            <translation><!-- DOC Label --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOC Search</masterLabel>
+            <translation><!-- DOC Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOC Track</masterLabel>
+            <translation><!-- DOC Track --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Hub</masterLabel>
+            <translation><!-- Data Hub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROWTH</masterLabel>
+            <translation><!-- GROWTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IHME</masterLabel>
+            <translation><!-- IHME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project</masterLabel>
+            <translation><!-- Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Project Platform</masterLabel>
+            <translation><!-- Service Project Platform --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Record Locked ? --></label>
+        <name>Record_Locked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use New Forecasting Algorithm --></label>
+        <name>Use_New_Forecasting_Algorithm__c</name>
     </fields>
     <layouts>
         <layout>Opportunity Layout</layout>

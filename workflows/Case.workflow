@@ -181,7 +181,7 @@
         <fields>PICO_ID__c</fields>
         <fields>Status</fields>
         <includeSessionId>false</includeSessionId>
-        <integrationUser>docdatadev@doctorevidence.com</integrationUser>
+        <integrationUser>kphan@doctorevidence.com</integrationUser>
         <name>Case Change OM</name>
         <protected>false</protected>
         <useDeadLetterQueue>false</useDeadLetterQueue>
@@ -205,7 +205,7 @@
         <fields>PICO_ID__c</fields>
         <fields>Status</fields>
         <includeSessionId>false</includeSessionId>
-        <integrationUser>docdatadev@doctorevidence.com</integrationUser>
+        <integrationUser>kphan@doctorevidence.com</integrationUser>
         <name>Case Change OM Test</name>
         <protected>false</protected>
         <useDeadLetterQueue>false</useDeadLetterQueue>
@@ -229,7 +229,7 @@
         <fields>PICO_ID__c</fields>
         <fields>Status</fields>
         <includeSessionId>false</includeSessionId>
-        <integrationUser>docdatadev@doctorevidence.com</integrationUser>
+        <integrationUser>kphan@doctorevidence.com</integrationUser>
         <name>Case Change OM Production</name>
         <protected>false</protected>
         <useDeadLetterQueue>false</useDeadLetterQueue>

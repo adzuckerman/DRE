@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Course Description --></label>
+        <name>Litmos__Course_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course Id --></label>
+        <name>Litmos__Course_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course Name --></label>
+        <name>Litmos__Course_Name__c</name>
+    </fields>
+</CustomObjectTranslation>

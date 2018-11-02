@@ -1,17 +1,1 @@
-.THIS .esign-replace-signer-icon {
-    fill: #5469A2 !important;
-}
-
-/*Tablet*/
-@media (max-width: 1023px){
-    .THIS .esign-title-width{
-        max-width:650px !important;
-    }
-}
-
-/*mobile*/
-@media (max-width: 600px){
-    .THIS .esign-title-width{
-        max-width:300px !important;
-    }
-}
+(hidden)

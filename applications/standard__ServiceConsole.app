@@ -182,9 +182,17 @@
     <tabs>Kbase__c</tabs>
     <tabs>Contract_and_Revenue__c</tabs>
     <tabs>Project_Request__c</tabs>
+    <tabs>Department_Revenue_Schedule__c</tabs>
+    <tabs>Department_Costs__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Contract_and_Revenue__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Department_Costs__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Department_Revenue_Schedule__c</tab>
         </mappings>
         <mappings>
             <tab>Kbase__c</tab>

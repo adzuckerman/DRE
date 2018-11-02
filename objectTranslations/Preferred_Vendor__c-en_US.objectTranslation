@@ -76,15 +76,287 @@
         <label><!-- Website --></label>
         <name>Website__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Preferred Vendor</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Preferred Vendors</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <help><!-- Data Extraction (Data &amp; Evidence Tables) --></help>
+        <label><!-- Data Extraction --></label>
+        <name>Data_Extraction__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Can Get Resources</masterLabel>
+            <translation><!-- Yes - Can Get Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Capable</masterLabel>
+            <translation><!-- Yes - Capable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Primary</masterLabel>
+            <translation><!-- Yes - Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Secondary</masterLabel>
+            <translation><!-- Yes - Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Tertiary</masterLabel>
+            <translation><!-- Yes - Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Health Economics Modeling / Publication --></help>
+        <label><!-- Health Econ Modeling / Pub --></label>
+        <name>Health_Econ_Modeling_Pub__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Can Get Resources</masterLabel>
+            <translation><!-- Yes - Can Get Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Capable</masterLabel>
+            <translation><!-- Yes - Capable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Primary</masterLabel>
+            <translation><!-- Yes - Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Secondary</masterLabel>
+            <translation><!-- Yes - Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Tertiary</masterLabel>
+            <translation><!-- Yes - Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Health Policy Report / Publication --></help>
+        <label><!-- Health Policy Report / Pub --></label>
+        <name>Health_Policy_Report_Pub__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Can Get Resources</masterLabel>
+            <translation><!-- Yes - Can Get Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Capable</masterLabel>
+            <translation><!-- Yes - Capable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Primary</masterLabel>
+            <translation><!-- Yes - Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Secondary</masterLabel>
+            <translation><!-- Yes - Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Tertiary</masterLabel>
+            <translation><!-- Yes - Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Quality Appraisal (e.g. RoB) --></help>
+        <label><!-- Quality Appraisal --></label>
+        <name>Quality_Appraisal__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Can Get Resources</masterLabel>
+            <translation><!-- Yes - Can Get Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Capable</masterLabel>
+            <translation><!-- Yes - Capable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Primary</masterLabel>
+            <translation><!-- Yes - Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Secondary</masterLabel>
+            <translation><!-- Yes - Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Tertiary</masterLabel>
+            <translation><!-- Yes - Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>State_Province__c</name>
+    </fields>
+    <fields>
+        <help><!-- Statistics / Analysis --></help>
+        <label><!-- Statistics / Analysis --></label>
+        <name>Statistics_Analysis__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Can Get Resources</masterLabel>
+            <translation><!-- Yes - Can Get Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Capable</masterLabel>
+            <translation><!-- Yes - Capable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Primary</masterLabel>
+            <translation><!-- Yes - Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Secondary</masterLabel>
+            <translation><!-- Yes - Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Tertiary</masterLabel>
+            <translation><!-- Yes - Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Technical Report / Feasibility Assessment / Publication Medical-Clinical (Includes Biostats) --></help>
+        <label><!-- Tech Report / Feas Assmt / Pub Med-Clin --></label>
+        <name>Tech_Report_Feas_Assmt_Pub__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Can Get Resources</masterLabel>
+            <translation><!-- Yes - Can Get Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Capable</masterLabel>
+            <translation><!-- Yes - Capable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Primary</masterLabel>
+            <translation><!-- Yes - Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Secondary</masterLabel>
+            <translation><!-- Yes - Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Tertiary</masterLabel>
+            <translation><!-- Yes - Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Technical Report / Publication (Diagnostic / Prognostic) --></help>
+        <label><!-- Tech Report / Pub (Diag / Prog) --></label>
+        <name>Tech_Report_Pub_Diag_Prog__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Can Get Resources</masterLabel>
+            <translation><!-- Yes - Can Get Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Capable</masterLabel>
+            <translation><!-- Yes - Capable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Primary</masterLabel>
+            <translation><!-- Yes - Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Secondary</masterLabel>
+            <translation><!-- Yes - Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Tertiary</masterLabel>
+            <translation><!-- Yes - Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Technical Report / Publication (Epi / Clinical) --></help>
+        <label><!-- Tech Report / Pub (Epi / Clinical) --></label>
+        <name>Tech_Report_Pub_Epi_Clinical__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Can Get Resources</masterLabel>
+            <translation><!-- Yes - Can Get Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Capable</masterLabel>
+            <translation><!-- Yes - Capable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Primary</masterLabel>
+            <translation><!-- Yes - Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Secondary</masterLabel>
+            <translation><!-- Yes - Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Tertiary</masterLabel>
+            <translation><!-- Yes - Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Technical Report / Publication (Health Economic) --></help>
+        <label><!-- Tech Report / Pub (Health Econ) --></label>
+        <name>Tech_Report_Pub_Health_Econ__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Can Get Resources</masterLabel>
+            <translation><!-- Yes - Can Get Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Capable</masterLabel>
+            <translation><!-- Yes - Capable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Primary</masterLabel>
+            <translation><!-- Yes - Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Secondary</masterLabel>
+            <translation><!-- Yes - Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Tertiary</masterLabel>
+            <translation><!-- Yes - Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Zip/Postal Code --></label>
+        <name>Zip_Postal_Code__c</name>
+    </fields>
     <layouts>
         <layout>Preferred Vendor Layout</layout>
         <sections>
@@ -94,6 +366,10 @@
         <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Skill Sets --></label>
+            <section>Skill Sets</section>
         </sections>
     </layouts>
     <validationRules>

@@ -37,8 +37,12 @@ public class WebSurveyReminderBatchTest{
         
         
         Test.StartTest();
-            WebSurveyReminderBatch b = new WebSurveyReminderBatch(); 
-            database.executebatch(b, 1);
+            //WebSurveyReminderBatch b = new WebSurveyReminderBatch(); 
+            //database.executebatch(b, 1);
+            
+            WebSurveyReminderScheduled myClass = new WebSurveyReminderScheduled ();   
+            String chron = '0 0 23 * * ?';        
+            system.schedule('Test Sched', chron, myClass);
         Test.StopTest();
         
         //TASKRAY__Project__c currentTProject = [SELECT Id, Client_Feedback_Requested__c FROM TASKRAY__Project__c WHERE Id =: tProject.Id];

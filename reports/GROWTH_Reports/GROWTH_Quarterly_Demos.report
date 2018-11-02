@@ -35,13 +35,13 @@
             <column>ACCOWNER</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Sandy Lewis</value>
+            <value>Sandra Zelman Lewis</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Platform demo</value>
+            <operator>contains</operator>
+            <value>demo</value>
         </criteriaItems>
         <criteriaItems>
             <column>ACCOWNER</column>

@@ -34,7 +34,7 @@
             <column>USERS.NAME</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Sandy Lewis</value>
+            <value>Sandra Zelman Lewis</value>
         </criteriaItems>
         <criteriaItems>
             <column>USERS.NAME</column>

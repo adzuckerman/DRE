@@ -20,11 +20,6 @@
         <name>Client_Name__c</name>
     </fields>
     <fields>
-        <label><!-- DRE Point of Contact --></label>
-        <name>DRE_Point_of_Contact__c</name>
-        <relationshipLabel><!-- Preferred Vendor Requests --></relationshipLabel>
-    </fields>
-    <fields>
         <label><!-- Description of Work --></label>
         <name>Description_of_Work__c</name>
     </fields>
@@ -161,15 +156,36 @@
         <label><!-- Total Estimated Fees --></label>
         <name>Total_Estimated_Fees__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Preferred Vendor Request</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Preferred Vendor Requests</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
+    <fields>
+        <label><!-- DRE Point of Contact --></label>
+        <lookupFilter>
+            <errorMessage><!-- This user is not an authorized DRE Point of Contact. --></errorMessage>
+        </lookupFilter>
+        <name>DRE_Point_of_Contact__c</name>
+        <relationshipLabel><!-- Preferred Vendor Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Preferred Vendor Request PO Number to be issued by DRE finance. --></help>
+        <label><!-- PO Number --></label>
+        <name>PO_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Principal Consultant --></label>
+        <name>Principal_Consultant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Preferred Vendor Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Manager --></label>
+        <name>Project_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Project Name --></label>
+        <name>Secondary_Project_Name__c</name>
+    </fields>
     <layouts>
         <layout>Preferred Vendor Request Layout</layout>
         <sections>

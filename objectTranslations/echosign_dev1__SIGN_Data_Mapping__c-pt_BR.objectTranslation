@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cached Input Type --></label>
+        <name>echosign_dev1__Cached_Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Lista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation>Texto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Marque esta caixa se desejar executar o mapeamento de dados como padrão em todos os contratos enviados. Você pode substituir o padrão se especificar um outro mapeamento de dados a ser utilizado em um contrato ou modelo de contrato específicos.</help>
+        <label><!-- Default Data Mapping? --></label>
+        <name>echosign_dev1__Default_Data_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>echosign_dev1__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Field CSV --></label>
+        <name>echosign_dev1__Merge_Field_CSV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify User of Errors --></label>
+        <name>echosign_dev1__Notify_User_of_Errors__c</name>
+        <relationshipLabel><!-- Data Mappings --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Mapeamento de dados</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mapeamentos de dados</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome de mapeamento de dados</nameFieldLabel>
+    <layouts>
+        <layout>Process Template Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,9 @@
+<apex:page controller="Litmos.BaseController" sidebar="false" action="{!SetupCheck}" >
+    <apex:includeScript value="{!$Resource.Litmos__jquery_min}"/>
+    <apex:outputPanel >
+        <apex:iframe src="{!LitmosTabUrl}" rendered="true" scrolling="true" height="1800px" id="litmos_dashboard_iframe" />
+        <script>document.getElementById('litmos_dashboard_iframe').height = window.innerHeight;</script>
+
+    </apex:outputPanel>
+    
+</apex:page>

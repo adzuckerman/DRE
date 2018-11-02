@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Litmos__ContactID__c</name>
+        <relationshipLabel><!-- Queues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LearningPath --></label>
+        <name>Litmos__LearningPathID__c</name>
+        <relationshipLabel><!-- Queues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LearningPathProgram --></label>
+        <name>Litmos__LearningPathProgramID__c</name>
+        <relationshipLabel><!-- Queues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LitmosID --></label>
+        <name>Litmos__LitmosID__c</name>
+    </fields>
+    <fields>
+        <label><!-- LitmosQueueId --></label>
+        <name>Litmos__LitmosQueueId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>Litmos__Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Module New --></label>
+        <name>Litmos__ModuleNewID__c</name>
+        <relationshipLabel><!-- Queues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Program --></label>
+        <name>Litmos__ProgramID__c</name>
+        <relationshipLabel><!-- Queues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ProgramModule --></label>
+        <name>Litmos__ProgramModuleID__c</name>
+        <relationshipLabel><!-- Queues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RecordStatus --></label>
+        <name>Litmos__RecordStatus__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RecordType --></label>
+        <name>Litmos__RecordType__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>Litmos__UserID__c</name>
+        <relationshipLabel><!-- Queues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User Learning Path Result --></label>
+        <name>Litmos__UserLearningPathResultID__c</name>
+        <relationshipLabel><!-- Queues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User Module Result --></label>
+        <name>Litmos__UserModuleResultID__c</name>
+        <relationshipLabel><!-- Queues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User Program Result --></label>
+        <name>Litmos__UserProgramResultID__c</name>
+        <relationshipLabel><!-- Queues --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

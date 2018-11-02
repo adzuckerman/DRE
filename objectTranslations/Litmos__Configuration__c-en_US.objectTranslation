@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- API Base URL --></label>
+        <name>Litmos__API_Base_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- API End Point --></label>
+        <name>Litmos__API_End_Point__c</name>
+    </fields>
+    <fields>
+        <label><!-- API Key --></label>
+        <name>Litmos__API_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add Users Based On Role --></label>
+        <name>Litmos__Add_Users_Based_On_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- App Base URL --></label>
+        <name>Litmos__App_Base_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Provisioning --></label>
+        <name>Litmos__Auto_Provisioning__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Sync Time --></label>
+        <name>Litmos__Daily_Sync_Time__c</name>
+        <picklistValues>
+            <masterLabel>01 AM</masterLabel>
+            <translation><!-- 01 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01 PM</masterLabel>
+            <translation><!-- 01 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02 AM</masterLabel>
+            <translation><!-- 02 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02 PM</masterLabel>
+            <translation><!-- 02 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03 AM</masterLabel>
+            <translation><!-- 03 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03 PM</masterLabel>
+            <translation><!-- 03 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04 AM</masterLabel>
+            <translation><!-- 04 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04 PM</masterLabel>
+            <translation><!-- 04 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05 AM</masterLabel>
+            <translation><!-- 05 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05 PM</masterLabel>
+            <translation><!-- 05 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06 AM</masterLabel>
+            <translation><!-- 06 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06 PM</masterLabel>
+            <translation><!-- 06 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07 AM</masterLabel>
+            <translation><!-- 07 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07 PM</masterLabel>
+            <translation><!-- 07 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08 AM</masterLabel>
+            <translation><!-- 08 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08 PM</masterLabel>
+            <translation><!-- 08 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09 AM</masterLabel>
+            <translation><!-- 09 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09 PM</masterLabel>
+            <translation><!-- 09 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 AM</masterLabel>
+            <translation><!-- 10 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 PM</masterLabel>
+            <translation><!-- 10 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 AM</masterLabel>
+            <translation><!-- 11 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 PM</masterLabel>
+            <translation><!-- 11 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 AM</masterLabel>
+            <translation><!-- 12 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 PM</masterLabel>
+            <translation><!-- 12 PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Enable RecommendedCourse Provisioning --></label>
+        <name>Litmos__Enable_RecommendedCourse_Provisioning__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable_RoleSync --></label>
+        <name>Litmos__Enable_RoleSync__c</name>
+    </fields>
+    <fields>
+        <help><!-- Click here to switch Litmos to Tile View Version 2 --></help>
+        <label><!-- Enable Tile View --></label>
+        <name>Litmos__Enable_Tile_View__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Time Stamp --></label>
+        <name>Litmos__Last_Time_Stamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Litmos website address --></label>
+        <name>Litmos__Litmos_website_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- MaxContactAssignedForCourse --></label>
+        <name>Litmos__MaxContactAssignedForCourse__c</name>
+    </fields>
+    <fields>
+        <label><!-- MaxCoursesAssignedForUser --></label>
+        <name>Litmos__MaxCoursesAssignedForUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- MaxLearningpathAssignedForUser --></label>
+        <name>Litmos__MaxLearningpathAssignedForUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- MaxUserAssignedForCourse --></label>
+        <name>Litmos__MaxUserAssignedForCourse__c</name>
+    </fields>
+    <fields>
+        <label><!-- MaxUserAssignedForLP --></label>
+        <name>Litmos__MaxUserAssignedForLP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Litmos__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- PercentageCalculationFrequency --></label>
+        <name>Litmos__PercentageCalculationFrequency__c</name>
+        <picklistValues>
+            <masterLabel>Hourly</masterLabel>
+            <translation><!-- Hourly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nightly</masterLabel>
+            <translation><!-- Nightly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync Active --></label>
+        <name>Litmos__Sync_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Frequency --></label>
+        <name>Litmos__Sync_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Every 1 Hour</masterLabel>
+            <translation><!-- Every 1 Hour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every 15 Minutes</masterLabel>
+            <translation><!-- Every 15 Minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every 30 Minutes</masterLabel>
+            <translation><!-- Every 30 Minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every 4 Hours</masterLabel>
+            <translation><!-- Every 4 Hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Once Daily</masterLabel>
+            <translation><!-- Once Daily --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync Status --></label>
+        <name>Litmos__Sync_Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed - With Sync Errors</masterLabel>
+            <translation><!-- Completed - With Sync Errors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed - Without Sync Errors</masterLabel>
+            <translation><!-- Completed - Without Sync Errors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>Litmos__User_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>Litmos__Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- enableCourseResultSummary --></label>
+        <name>Litmos__enableCourseResultSummary__c</name>
+    </fields>
+    <fields>
+        <label><!-- enableLearningResultSummary --></label>
+        <name>Litmos__enableLearningResultSummary__c</name>
+    </fields>
+</CustomObjectTranslation>

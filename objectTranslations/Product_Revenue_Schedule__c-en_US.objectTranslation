@@ -33,15 +33,22 @@
         <label><!-- Revenue --></label>
         <name>Revenue__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Product Revenue Schedule</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Product Revenue Schedules</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
+    <fields>
+        <label><!-- Offering Type --></label>
+        <name>Offering_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Category --></label>
+        <name>Revenue_Category__c</name>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation><!-- Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription</masterLabel>
+            <translation><!-- Subscription --></translation>
+        </picklistValues>
+    </fields>
     <layouts>
         <layout>Product Revenue Schedule Layout</layout>
         <sections>

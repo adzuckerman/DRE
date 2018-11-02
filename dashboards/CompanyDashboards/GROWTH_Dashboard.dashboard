@@ -117,7 +117,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <footer>Scheduled for 04/01/2018 - 06/30/2018</footer>
+            <footer>Scheduled for 10/01/2018 - 12/31/2018</footer>
             <header>Current Quarter Demos</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -145,7 +145,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <footer>Scheduled for 01/01/2018 - 03/31/2018</footer>
+            <footer>Scheduled for 07/01/2018 - 09/30/2018</footer>
             <header>Last Quarter Demos</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>

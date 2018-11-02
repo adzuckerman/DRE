@@ -1,0 +1,175 @@
+<apex:page standardController="Contact"  tabStyle="Contact"  extensions="Litmos.ContactTrainingListController"  >
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+<style>
+p.no-content {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #676767;
+    padding: 20px;
+}
+.ui-dialog .ui-dialog-content{
+   height:655px !important;
+   width: 600px !important;
+}
+.ui-dialog.ui-widget {
+   top: 0px !important;
+}
+    .ui-dialog,
+    #dialog {
+        width:630px !important;
+    }
+   table.training-widget {
+        table-layout:fixed;
+        width:100%;
+        overflow: auto;
+        border-spacing: 0px;
+        border: none;
+        background: #fff;
+        border-style: solid;
+        border-width: 0px;
+    }
+    
+    table.training-widget td {
+        border: 0px;
+        border-bottom: #E4E4E4 1px solid;
+        padding: 4px 5px;
+        color:#676767;
+    }
+    table.training-widget th {
+        padding: 5px;
+        border: 0px;
+        font-weight:bold;
+        color:#676767;
+        border-bottom: #DDDDDD 1px solid;
+         white-space: normal;
+    }
+    @media(max-width:768px){
+        .ft-wrapper {
+            width: 360px;
+            overflow: auto;
+        }
+        .ft-wrapper table.training-widget{
+            width:900px;
+        }
+    }
+
+</style>
+<script>
+$(document).ready(function(){
+   var inSalesforce1 = (window.navigator.userAgent.toLowerCase().indexOf('salesforce1') != -1);
+   if (inSalesforce1 == true ) {
+      $('.courseBtn').hide();
+      $('.learningBtn').hide();
+      $('.teamsBtn').hide();
+   }
+        
+  $( '#dialog,#pathsDialog,#teamsDialog' ).dialog({
+      title : 'Assign',
+      resizable: true,
+      height:500,
+      modal: true,
+      width:900,
+      autoOpen: false,
+      
+    });
+  
+});
+
+function openLitmosDialog(tkn , litmosType){
+  if('{!currentContact.Litmos_Activated__c}' == 'true'){
+  if(litmosType == 'AssignTrainingLP'){
+    //$('#pathsDialog').children().attr("src","https://dev.litmos.com/account/oauthlogin?auth_referer=sfdc&access_token="+tkn+"&sfdcIdLP={!selectedId}");
+    $('#pathsDialog').children().attr("src","{!baseAPPURL}/account/oauthlogin?auth_referer=sfdc&access_token="+tkn+"&sfdcIdLP={!salesforceID}");
+        
+    $( '#pathsDialog' ).dialog('open',"option", "minWidth", 600);
+    
+  }else if(litmosType == 'AssignTraining'){
+    //$('#dialog').children().attr("src","https://dev.litmos.com/account/oauthlogin?auth_referer=sfdc&access_token="+tkn+"&sfdcIdCourse={!selectedId}");
+      $('#dialog').children().attr("src","{!baseAPPURL}/account/oauthlogin?auth_referer=sfdc&access_token="+tkn+"&sfdcIdCourse={!salesforceID}");
+    
+    $( '#dialog' ).dialog('open',"option", "minWidth", 600);
+  }else if(litmosType == 'AssignToTeam'){
+     
+     //$('#teamsDialog').children().attr("src","https://dev.litmos.com/account/oauthlogin?auth_referer=sfdc&access_token=" + tkn + "&sfdcIdTeam={!selectedId}");
+     
+     $('#teamsDialog').children().attr("src","{!baseAPPURL}/account/oauthlogin?auth_referer=sfdc&access_token=" + tkn + "&sfdcIdTeam={!salesforceID}");
+     
+     $( '#teamsDialog' ).dialog('open');
+  }
+  }else{
+    alert('{!$Label.No_Training_Profile}');
+  }
+}
+</script>
+   <apex:form id="frm">
+
+    <apex:actionFunction name="assignToLearningPath" action="{!assignTraining}" rerender="false" oncomplete="openLitmosDialog('{!token}','AssignTrainingLP');" />
+    <apex:actionFunction name="assignTraining" action="{!assignTraining}" rerender="false" oncomplete="openLitmosDialog('{!token}','AssignTraining')" />
+    <apex:actionFunction name="assignToTeam" action="{!assignTraining}" rerender="false" oncomplete="openLitmosDialog('{!token}','AssignToTeam')" />
+        <apex:pageBlock id="table" title="Training Widget">
+        <div class="ft-wrapper">
+            <table border="1" class="training-widget">
+                <tr>
+                    <th style="font-weight:bold;text-align:left;" colspan="4">
+                        Training
+                    </th>
+                    <td colspan="4">
+                        <apex:commandButton value="Assign To Courses" styleClass="courseBtn" style="background:rgb(150,201,61);color:white;float:left" onclick="assignTraining(); return false"/>
+                        <apex:commandButton value="Assign To Learning Paths" styleClass="learningBtn" style="background:rgb(150,201,61);color:white;float:left" onclick="assignToLearningPath(); return false"/>
+                        <apex:commandButton value="Assign To Teams" styleClass="teamsBtn" style="background:rgb(150,201,61);color:white;float:left" onclick="assignToTeam(); return false"/>
+                        <apex:commandButton value="Back" style="background:rgb(150,201,61);color:white;float:left" action="{!back}" />
+                    </td>
+                </tr>
+            </table>
+    
+            
+            <apex:outputPanel rendered="{!AND(currentContact.Litmos__Litmos_Activated__c == true , modelList.size>0)}">
+            <table border="1" class="training-widget large" >
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Assigned Date</th>
+                    <th>Due Date</th>
+                    <th>Completed Date</th>
+                    <th>Completed</th>
+                    <th>Percentage Completed</th>
+                </tr>
+                <apex:repeat value="{!modelList}" var="m">
+                    <apex:outputPanel rendered="{!modelList.size>0}" layout="none">
+                       <tr> 
+                        <td>{!m.name}</td>
+                        <td>{!m.type}</td>
+                        <td>{!m.assignedDate}</td>
+                        <td>{!m.dueDate}</td>
+                        <td>{!m.completedDate}</td>
+                        <td><apex:inputCheckbox disabled="true" value="{!m.completedBoolean}"/></td>
+                        <td>{!m.completed}%</td>
+                       </tr> 
+                    </apex:outputPanel>
+                </apex:repeat>    
+            </table>
+            </apex:outputPanel>
+            </div>
+            <apex:outputPanel rendered="{!AND(currentContact.Litmos__Litmos_Activated__c == true , modelList.size==0)}">
+                <p class="no-content">{!$Label.litmos__no_course_and_learnings}</p>
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!currentContact.Litmos__Litmos_Activated__c == false}">
+              <p class="no-content">{!$Label.litmos__sync_error_message}</p>
+            </apex:outputPanel>
+        </apex:pageBlock> 
+     <div style="width:630px" id="dialog" title="Basic dialog">
+       <apex:iframe src="" scrolling="true" width="630px" height="620px" title="Litmos"/>
+    </div>
+    <div id="pathsDialog" title="Basic dialog">
+       <apex:iframe src="" scrolling="true" width="630px" height="620px" title="Litmos"/>
+    </div>
+    <div id="teamsDialog" title="Basic dialog">
+       <apex:iframe src="" scrolling="true" width="630px" height="620px" title="Litmos"/>
+        
+    </div> 
+    </apex:form>
+    
+</apex:page>

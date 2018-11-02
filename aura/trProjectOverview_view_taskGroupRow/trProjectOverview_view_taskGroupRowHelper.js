@@ -1,4 +1,1 @@
-({
-	helperMethod : function() {
-	}
-})
+(hidden)

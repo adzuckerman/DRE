@@ -11,9 +11,9 @@
 The following request for a preferred vendor was submitted for your approval:
 
 To view the Request Form, please click here.
-https://cs65.salesforce.com/{!Preferred_Vendor_Request__c.Id}
+https://na63.salesforce.com/{!Preferred_Vendor_Request__c.Id}
 To view the Salesforce Opportunity, please click here.
-https://cs65.salesforce.com/{!Preferred_Vendor_Request__c.Opportunity_ID__c}
+https://na63.salesforce.com/{!Preferred_Vendor_Request__c.Opportunity_ID__c}
 
 To APPROVE or REJECT this request, please click here.
 {!ApprovalRequest.Internal_URL}

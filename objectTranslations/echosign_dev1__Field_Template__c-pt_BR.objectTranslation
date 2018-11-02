@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Selecionar campo do contrato de destino.</help>
+        <label><!-- Target Agreement Field --></label>
+        <name>echosign_dev1__Agreement_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Template --></label>
+        <name>echosign_dev1__Agreement_Template__c</name>
+        <relationshipLabel><!-- Map Data into Agreement Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Insira um valor para o campo de destino.</help>
+        <label><!-- Target Field Value --></label>
+        <name>echosign_dev1__Constant_Value__c</name>
+    </fields>
+    <fields>
+        <help>Selecione um campo no objeto principal como o campo de origem.</help>
+        <label><!-- Select Source Field from Master Object --></label>
+        <name>echosign_dev1__Field_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapping Method --></label>
+        <name>echosign_dev1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Input Specific Value</masterLabel>
+            <translation>Inserir valor específico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select Master Object Field</masterLabel>
+            <translation>Selecionar campo de Objeto principal</translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Mapear dados no campo do contrato</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mapear dados nos campos do contrato</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Mapear dados no nome dos campos de contr</nameFieldLabel>
+    <layouts>
+        <layout>Map Data into Agreement Field Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

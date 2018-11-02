@@ -81,6 +81,32 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>DRE_Point_of_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field to indicate this user is a DRE Point of Contact for Preferred Vendor Requests.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to indicate this user is a DRE Point of Contact for Preferred Vendor Requests.</inlineHelpText>
+        <label>DRE Point of Contact</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hire_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Hire Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Termination_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Termination Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
@@ -137,6 +163,7 @@
         <columns>CORE.USERS.USERNAME</columns>
         <columns>CORE.PROFILE.NAME</columns>
         <columns>CORE.USERS.TITLE</columns>
+        <columns>CORE.USERS.DIVISION</columns>
         <columns>CORE.USERS.DEPARTMENT</columns>
         <columns>CORE.USERS.ACTIVE</columns>
         <columns>CORE.USERS.LAST_LOGIN</columns>

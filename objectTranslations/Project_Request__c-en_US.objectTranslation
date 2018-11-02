@@ -225,27 +225,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Patient experience for transversal contributions. --></help>
-        <label><!-- Patient Experience --></label>
-        <name>Patient_Experience__c</name>
-        <picklistValues>
-            <masterLabel>Generate feedbacks or patient insights</masterLabel>
-            <translation><!-- Generate feedbacks or patient insights --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Patient centricity</masterLabel>
-            <translation><!-- Patient centricity --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Personalized medicine</masterLabel>
-            <translation><!-- Personalized medicine --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Understand persistence / compliance drivers</masterLabel>
-            <translation><!-- Understand persistence / compliance drivers --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <label><!-- Population --></label>
         <name>Population__c</name>
     </fields>
@@ -253,22 +232,6 @@
         <label><!-- Principal Consultant --></label>
         <name>Principal_Consultant__c</name>
         <relationshipLabel><!-- Project Requests (Principal Consultant) --></relationshipLabel>
-    </fields>
-    <fields>
-        <label><!-- Priority Grade --></label>
-        <name>Priority_Grade__c</name>
-        <picklistValues>
-            <masterLabel>Grade A</masterLabel>
-            <translation><!-- Grade A --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Grade B</masterLabel>
-            <translation><!-- Grade B --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Grade C</masterLabel>
-            <translation><!-- Grade C --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <label><!-- Problem --></label>
@@ -412,12 +375,6 @@
         <name>TaskRay_Project_Id__c</name>
     </fields>
     <fields>
-        <help><!-- TaskRay Project link. --></help>
-        <label><!-- TaskRay Project --></label>
-        <name>TaskRay_Project__c</name>
-        <relationshipLabel><!-- Project Requests --></relationshipLabel>
-    </fields>
-    <fields>
         <label><!-- Value --></label>
         <name>Value__c</name>
     </fields>
@@ -429,15 +386,69 @@
         <label><!-- Workstream --></label>
         <name>Workstream__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Project Request</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Project Requests</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
+    <fields>
+        <label><!-- Actual Meeting Time --></label>
+        <name>Actual_Meeting_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Patient experience for transversal contributions. --></help>
+        <label><!-- Patient Experience --></label>
+        <name>Patient_Experience__c</name>
+        <picklistValues>
+            <masterLabel>Generate feedback or patient insights</masterLabel>
+            <translation><!-- Generate feedback or patient insights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient centricity</masterLabel>
+            <translation><!-- Patient centricity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personalized medicine</masterLabel>
+            <translation><!-- Personalized medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Understand persistence / compliance drivers</masterLabel>
+            <translation><!-- Understand persistence / compliance drivers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Principal Consultant Email --></label>
+        <name>Principal_Consultant_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Principal Consultant Title --></label>
+        <name>Principal_Consultant_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Principle Consultant Phone --></label>
+        <name>Principle_Consultant_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority Grade --></label>
+        <name>Priority_Grade__c</name>
+        <picklistValues>
+            <masterLabel>Grade A: Publication, Abstract, Poster or HTA</masterLabel>
+            <translation><!-- Grade A: Publication, Abstract, Poster or HTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grade B: Payer or Regulatory response</masterLabel>
+            <translation><!-- Grade B: Payer or Regulatory response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grade C: Clinical business question</masterLabel>
+            <translation><!-- Grade C: Clinical business question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grade Z: Sanofi iEGP</masterLabel>
+            <translation><!-- Grade Z: Sanofi iEGP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field will auto-populate upon TaskRay Project creation. Please leave this field blank. This field is intended to serve as a link. --></help>
+        <label><!-- TaskRay Project --></label>
+        <name>TaskRay_Project__c</name>
+        <relationshipLabel><!-- Project Requests --></relationshipLabel>
+    </fields>
     <layouts>
         <layout>Project Request Layout</layout>
         <sections>

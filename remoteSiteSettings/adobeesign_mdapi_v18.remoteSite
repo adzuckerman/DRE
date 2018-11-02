@@ -3,5 +3,5 @@
     <description>Metadata API Remote Site Setting for the Adobe Sign for Salesforce v18</description>
     <disableProtocolSecurity>false</disableProtocolSecurity>
     <isActive>true</isActive>
-    <url>https://echosign-dev1.cs65.visual.force.com</url>
+    <url>https://echosign-dev1.na63.visual.force.com</url>
 </RemoteSiteSetting>

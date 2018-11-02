@@ -96,31 +96,31 @@
             <column>Junction_Kbase__c.PICO_ID__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>SNF-Immu-021c</value>
+            <value>snf-immu-022q</value>
         </criteriaItems>
         <criteriaItems>
             <column>Junction_Kbase__c.PICO_ID__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>SNF-Immu-022m</value>
+            <value>snf-immu-038c</value>
         </criteriaItems>
         <criteriaItems>
             <column>Junction_Kbase__c.PICO_ID__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>SNF-Immu-031a</value>
+            <value>snf-immu-039c</value>
         </criteriaItems>
         <criteriaItems>
             <column>Junction_Kbase__c.PICO_ID__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>SNF-Musc-015b</value>
+            <value>snf-immu-040b</value>
         </criteriaItems>
         <criteriaItems>
             <column>Junction_Kbase__c.PICO_ID__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>SNF-Neur-028b</value>
+            <value>snf-infc-018e</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

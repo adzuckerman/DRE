@@ -21,11 +21,19 @@
     <tabs>standard-File</tabs>
     <tabs>Contract_and_Revenue__c</tabs>
     <tabs>Project_Request__c</tabs>
+    <tabs>Department_Revenue_Schedule__c</tabs>
+    <tabs>Department_Costs__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
             <tab>Contract_and_Revenue__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Department_Costs__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Department_Revenue_Schedule__c</tab>
         </mappings>
         <mappings>
             <tab>Project_Request__c</tab>

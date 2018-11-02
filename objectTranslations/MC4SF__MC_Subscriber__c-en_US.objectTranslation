@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Country Code --></label>
+        <name>MC4SF__Country_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daylight Savings GMT Offset --></label>
+        <name>MC4SF__Daylight_Savings_GMT_Offset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>MC4SF__Email2__c</name>
+    </fields>
+    <fields>
+        <label><!-- XXXEmail Address --></label>
+        <name>MC4SF__Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Type --></label>
+        <name>MC4SF__Email_Type__c</name>
+        <picklistValues>
+            <masterLabel>html</masterLabel>
+            <translation><!-- html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>text</masterLabel>
+            <translation><!-- text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GMT Offset --></label>
+        <name>MC4SF__GMT_Offset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geographic Location --></label>
+        <name>MC4SF__Geographic_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Golden Monkey --></label>
+        <name>MC4SF__Golden_Monkey__c</name>
+    </fields>
+    <fields>
+        <label><!-- IP Opt --></label>
+        <name>MC4SF__IP_Opt__c</name>
+    </fields>
+    <fields>
+        <label><!-- IP Signup --></label>
+        <name>MC4SF__IP_Signup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Info Changed --></label>
+        <name>MC4SF__Info_Changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interests --></label>
+        <name>MC4SF__Interests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>MC4SF__Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Activity Date --></label>
+        <name>MC4SF__Last_Activity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Activity Sync Date --></label>
+        <name>MC4SF__Last_Activity_Sync_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Sync Date --></label>
+        <name>MC4SF__Last_Sync_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there was an MC4SF application error with this record, it will be captured here. --></help>
+        <label><!-- Validation/Sync Errors --></label>
+        <name>MC4SF__Lead_Validation_Errors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lists --></label>
+        <name>MC4SF__Lists__c</name>
+    </fields>
+    <fields>
+        <label><!-- MC List --></label>
+        <name>MC4SF__MC_List__c</name>
+        <relationshipLabel><!-- MC Subscribers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MailChimp Campaign ID --></label>
+        <name>MC4SF__MailChimp_Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MailChimp ID --></label>
+        <name>MC4SF__MailChimp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MailChimp List ID --></label>
+        <name>MC4SF__MailChimp_List_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Rating --></label>
+        <name>MC4SF__Member_Rating_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Rating --></label>
+        <name>MC4SF__Member_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Status --></label>
+        <name>MC4SF__Member_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cleaned</masterLabel>
+            <translation><!-- Cleaned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscribed</masterLabel>
+            <translation><!-- Subscribed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsubscribed</masterLabel>
+            <translation><!-- Unsubscribed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Merge0 --></label>
+        <name>MC4SF__Merge0__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge10 --></label>
+        <name>MC4SF__Merge10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge11 --></label>
+        <name>MC4SF__Merge11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge12 --></label>
+        <name>MC4SF__Merge12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge13 --></label>
+        <name>MC4SF__Merge13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge14 --></label>
+        <name>MC4SF__Merge14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge15 --></label>
+        <name>MC4SF__Merge15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge16 --></label>
+        <name>MC4SF__Merge16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge17 --></label>
+        <name>MC4SF__Merge17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge18 --></label>
+        <name>MC4SF__Merge18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge19 --></label>
+        <name>MC4SF__Merge19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge1 --></label>
+        <name>MC4SF__Merge1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge20 --></label>
+        <name>MC4SF__Merge20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge21 --></label>
+        <name>MC4SF__Merge21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge22 --></label>
+        <name>MC4SF__Merge22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge23 --></label>
+        <name>MC4SF__Merge23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge24 --></label>
+        <name>MC4SF__Merge24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge25 --></label>
+        <name>MC4SF__Merge25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge26 --></label>
+        <name>MC4SF__Merge26__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge27 --></label>
+        <name>MC4SF__Merge27__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge28 --></label>
+        <name>MC4SF__Merge28__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge29 --></label>
+        <name>MC4SF__Merge29__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge2 --></label>
+        <name>MC4SF__Merge2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge30 --></label>
+        <name>MC4SF__Merge30__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge31 --></label>
+        <name>MC4SF__Merge31__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge32 --></label>
+        <name>MC4SF__Merge32__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge33 --></label>
+        <name>MC4SF__Merge33__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge34 --></label>
+        <name>MC4SF__Merge34__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge35 --></label>
+        <name>MC4SF__Merge35__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge36 --></label>
+        <name>MC4SF__Merge36__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge37 --></label>
+        <name>MC4SF__Merge37__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge38 --></label>
+        <name>MC4SF__Merge38__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge39 --></label>
+        <name>MC4SF__Merge39__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge3 --></label>
+        <name>MC4SF__Merge3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge40 --></label>
+        <name>MC4SF__Merge40__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge41 --></label>
+        <name>MC4SF__Merge41__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge42 --></label>
+        <name>MC4SF__Merge42__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge43 --></label>
+        <name>MC4SF__Merge43__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge44 --></label>
+        <name>MC4SF__Merge44__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge45 --></label>
+        <name>MC4SF__Merge45__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge46 --></label>
+        <name>MC4SF__Merge46__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge47 --></label>
+        <name>MC4SF__Merge47__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge48 --></label>
+        <name>MC4SF__Merge48__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge49 --></label>
+        <name>MC4SF__Merge49__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge4 --></label>
+        <name>MC4SF__Merge4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge50 --></label>
+        <name>MC4SF__Merge50__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge51 --></label>
+        <name>MC4SF__Merge51__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge52 --></label>
+        <name>MC4SF__Merge52__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge53 --></label>
+        <name>MC4SF__Merge53__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge54 --></label>
+        <name>MC4SF__Merge54__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge55 --></label>
+        <name>MC4SF__Merge55__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge56 --></label>
+        <name>MC4SF__Merge56__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge57 --></label>
+        <name>MC4SF__Merge57__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge58 --></label>
+        <name>MC4SF__Merge58__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge59 --></label>
+        <name>MC4SF__Merge59__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge5 --></label>
+        <name>MC4SF__Merge5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge60 --></label>
+        <name>MC4SF__Merge60__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge61 --></label>
+        <name>MC4SF__Merge61__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge62 --></label>
+        <name>MC4SF__Merge62__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge63 --></label>
+        <name>MC4SF__Merge63__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge64 --></label>
+        <name>MC4SF__Merge64__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge65 --></label>
+        <name>MC4SF__Merge65__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge66 --></label>
+        <name>MC4SF__Merge66__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge67 --></label>
+        <name>MC4SF__Merge67__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge68 --></label>
+        <name>MC4SF__Merge68__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge69 --></label>
+        <name>MC4SF__Merge69__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge6 --></label>
+        <name>MC4SF__Merge6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge70 --></label>
+        <name>MC4SF__Merge70__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge71 --></label>
+        <name>MC4SF__Merge71__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge72 --></label>
+        <name>MC4SF__Merge72__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge73 --></label>
+        <name>MC4SF__Merge73__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge74 --></label>
+        <name>MC4SF__Merge74__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge75 --></label>
+        <name>MC4SF__Merge75__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge76 --></label>
+        <name>MC4SF__Merge76__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge77 --></label>
+        <name>MC4SF__Merge77__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge78 --></label>
+        <name>MC4SF__Merge78__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge79 --></label>
+        <name>MC4SF__Merge79__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge7 --></label>
+        <name>MC4SF__Merge7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge80 --></label>
+        <name>MC4SF__Merge80__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge81 --></label>
+        <name>MC4SF__Merge81__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge8 --></label>
+        <name>MC4SF__Merge8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge9 --></label>
+        <name>MC4SF__Merge9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>MC4SF__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Email --></label>
+        <name>MC4SF__Old_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent MC Subscriber --></label>
+        <name>MC4SF__Parent_MC_Subscriber__c</name>
+        <relationshipLabel><!-- MC Subscribers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>MC4SF__Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Static Segments --></label>
+        <name>MC4SF__Static_Segments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Reason Text --></label>
+        <name>MC4SF__Status_Reason_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Reason --></label>
+        <name>MC4SF__Status_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Timestamp --></label>
+        <name>MC4SF__Status_Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscriber Last Modified Since Sync Date --></label>
+        <name>MC4SF__Subscriber_Last_Modified_Since_Sync_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Zone --></label>
+        <name>MC4SF__Time_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timestamp Opt --></label>
+        <name>MC4SF__Timestamp_Opt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timestamp Signup --></label>
+        <name>MC4SF__Timestamp_Signup__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Subscriber in MC --></label>
+        <name>MC4SF__View_Subscriber_in_MC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web ID --></label>
+        <name>MC4SF__Web_ID__c</name>
+    </fields>
+    <layouts>
+        <layout>MC Subscriber Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Geographic Location --></label>
+            <section>Geographic Location</section>
+        </sections>
+        <sections>
+            <label><!-- Member Profile --></label>
+            <section>Member Profile</section>
+        </sections>
+        <sections>
+            <label><!-- Signup Details --></label>
+            <section>Signup Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sync Details --></label>
+            <section>Sync Details</section>
+        </sections>
+        <sections>
+            <label><!-- Wide --></label>
+            <section>Wide</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

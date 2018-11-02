@@ -43,7 +43,7 @@
             <column>ACCOUNT_OWNER</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Sandy Lewis</value>
+            <value>Sandra Zelman Lewis</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
@@ -87,6 +87,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <interval>INTERVAL_PREVCUR2FY</interval>
+        <endDate>2023-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-01-01</startDate>
     </timeFrameFilter>
 </Report>

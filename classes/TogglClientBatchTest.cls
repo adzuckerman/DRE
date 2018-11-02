@@ -20,7 +20,9 @@ public class TogglClientBatchTest {
         TogglClientBatch d = new TogglClientBatch(); 
         database.executebatch(d, 1);
         
-        
+        TogglClientScheduler myClass = new TogglClientScheduler();   
+        String chron = '0 0 23 * * ?';        
+        system.schedule('Test Sched', chron, myClass);
         
     }
 }

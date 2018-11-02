@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Angiv Salesforce-id'et for kontoposten, som aftalen skal slå op til.</help>
+        <label><!-- Account --></label>
+        <name>echosign_dev1__Account__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, er aftaleskabelonen synlig, og ellers er den ikke.</help>
+        <label><!-- Active --></label>
+        <name>echosign_dev1__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Type --></label>
+        <name>echosign_dev1__Agreement_Type__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Send aftalen automatisk uden at vise afsendelsessiden (f.eks. udløste arbejdsprocesser). Sørg for at tilføje en modtager og en vedhæftet fil, hvis du bruger denne indstilling.</help>
+        <label><!-- Auto Send --></label>
+        <name>echosign_dev1__Auto_Send__c</name>
+    </fields>
+    <fields>
+        <help>Send automatiske påmindelser til underskrivere.</help>
+        <label><!-- Automatic Reminders --></label>
+        <name>echosign_dev1__Automatic_Reminders__c</name>
+        <picklistValues>
+            <masterLabel>Every Day, Until Signed</masterLabel>
+            <translation>Hver dag indtil underskrivelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Week, Until Signed</masterLabel>
+            <translation>Hver uge indtil underskrivelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>Aldrig</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>På hovedobjektposten skal denne aftaleskabelon gøres tilgængelig for afsendere via handlingen Send til underskrivelse i Chatter Feed Adobe Sign.</help>
+        <label><!-- Available for Publisher Actions --></label>
+        <name>echosign_dev1__Available_Publisher_Actions__c</name>
+    </fields>
+    <fields>
+        <help>Bekræft den adgangskode, som modtageren skal angive.</help>
+        <label><!-- Confirm Password --></label>
+        <name>echosign_dev1__Confirm_Password__c</name>
+    </fields>
+    <fields>
+        <help>Angiv Salesforce-id'et for kontraktposten, som aftalen skal slå op til.</help>
+        <label><!-- Contract --></label>
+        <name>echosign_dev1__Contract__c</name>
+    </fields>
+    <fields>
+        <help>Vælg datatilknytningen for at knytte Adobe Sign-feltinput fra den underskrevne aftale tilbage til Salesforce.</help>
+        <label><!-- Data Mapping --></label>
+        <name>echosign_dev1__Data_Mapping__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Angiv antal dage, før aftalen udløber.</help>
+        <label><!-- Days Until Expiration --></label>
+        <name>echosign_dev1__Days_Until_Expiration__c</name>
+    </fields>
+    <fields>
+        <help>Angiv som standardskabelon for nye aftaler.</help>
+        <label><!-- Default --></label>
+        <name>echosign_dev1__Default__c</name>
+    </fields>
+    <fields>
+        <help>Send kopier af aftalen til de angivne e-mailadresser.</help>
+        <label><!-- Email Copy To --></label>
+        <name>echosign_dev1__Email_Copy_To__c</name>
+    </fields>
+    <fields>
+        <help>Sørg for, at eksterne underskrivere er nødt til at bekræfte deres identitet, før de kan få vist eller underskrive dokumentet.</help>
+        <label><!-- External Signers Verification Method --></label>
+        <name>echosign_dev1__External_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>Vidensbaseret godkendelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>Adgangskode til underskrivning af aftale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>Godkendelse af webidentitet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Hvis aktiveret: Aftalen eller dokumentet vises kun for afsenderen til udfyldning og underskrivelse. Siden Efter afsendelse kan bruges til at videresende det underskrevne dokument.</help>
+        <label><!-- Fill &amp; Sign --></label>
+        <name>echosign_dev1__Fill_Sign__c</name>
+    </fields>
+    <fields>
+        <help>Aktivér værtsbaseret underskrivning med personligt fremmøde.</help>
+        <label><!-- Enable Hosted Signing --></label>
+        <name>echosign_dev1__Hosted_Signing__c</name>
+    </fields>
+    <fields>
+        <help>Sørg for, at interne underskrivere er nødt til at bekræfte deres identitet, før de kan få vist eller underskrive dokumentet.</help>
+        <label><!-- Internal Signers Verification Method --></label>
+        <name>echosign_dev1__Internal_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>Vidensbaseret godkendelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>Adgangskode til underskrivning af aftale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>Godkendelse af webidentitet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Vælg modtagernes sprog.</help>
+        <label><!-- Language --></label>
+        <name>echosign_dev1__Language__c</name>
+        <picklistValues>
+            <masterLabel>Chinese (China)</masterLabel>
+            <translation>Kinesisk (Kina)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Taiwan)</masterLabel>
+            <translation>Kinesisk (Taiwan)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech (Czech Republic)</masterLabel>
+            <translation>Tjekkisk (Tjekkiet)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish (Denmark)</masterLabel>
+            <translation>Dansk (Danmark)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch (Netherlands)</masterLabel>
+            <translation>Nederlandsk (Nederlandene)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United Kingdom)</masterLabel>
+            <translation>Engelsk (Storbritannien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United States)</masterLabel>
+            <translation>Engelsk (USA)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish (Finland)</masterLabel>
+            <translation>Finsk (Finland)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French (France)</masterLabel>
+            <translation>Fransk (Frankrig)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German (Germany)</masterLabel>
+            <translation>Tysk (Tyskland)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Icelandic (Iceland)</masterLabel>
+            <translation>Islandsk (Island)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian (Indonesia)</masterLabel>
+            <translation>Indonesisk (Indonesien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian (Italy)</masterLabel>
+            <translation>Italiensk (Italien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese (Japan)</masterLabel>
+            <translation>Japansk (Japan)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean (South Korea)</masterLabel>
+            <translation>Koreansk (Sydkorea)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malay (Malaysia)</masterLabel>
+            <translation>Malaysisk (Malaysia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian (Norway)</masterLabel>
+            <translation>Norsk (Norge)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish (Poland)</masterLabel>
+            <translation>Polsk (Polen)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Brazil)</masterLabel>
+            <translation>Portugisisk (Brasilien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Portugal)</masterLabel>
+            <translation>Portugisisk (Portugal)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian (Russia)</masterLabel>
+            <translation>Russisk (Rusland)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Spain)</masterLabel>
+            <translation>Spansk (Spanien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish (Sweden)</masterLabel>
+            <translation>Svensk (Sverige)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai (Thailand)</masterLabel>
+            <translation><!-- Thai (Thailand) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish (Turkey)</masterLabel>
+            <translation>Tyrkisk (Tyrkiet)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese (Vietnam)</masterLabel>
+            <translation>Vietnamesisk (Vietnam)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Angiv det Salesforce-objekt, der henvises til for denne aftaleskabelon. (f.eks. Opportunity, Lead)</help>
+        <label><!-- Master Object Type --></label>
+        <name>echosign_dev1__Master_Object_Type__c</name>
+    </fields>
+    <fields>
+        <help>Vælg flettetilknytningen for at flette Salesforce-felter ind i Adobe Sign-aftalen, før den sendes til underskrivelse.</help>
+        <label><!-- Merge Mapping --></label>
+        <name>echosign_dev1__Merge_Mapping__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Angiv den meddelelse, der skal sendes til modtagerne.</help>
+        <label><!-- Message --></label>
+        <name>echosign_dev1__Message__c</name>
+    </fields>
+    <fields>
+        <help>Angiv et navn på aftalen.</help>
+        <label><!-- Agreement Name --></label>
+        <name>echosign_dev1__Name__c</name>
+    </fields>
+    <fields>
+        <help>Angiv Salesforce-id'et for salgsmulighedsposten, som aftalen skal slå op til.</help>
+        <label><!-- Opportunity --></label>
+        <name>echosign_dev1__Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>Angiv en adgangskode, som modtageren skal angive.</help>
+        <label><!-- View Password --></label>
+        <name>echosign_dev1__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect Delay (seconds) --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_Delay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect URL --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_URL__c</name>
+    </fields>
+    <fields>
+        <help>Giv underskriverne mulighed for at vise og placere felter i dokumentet, før aftalen sendes til underskrift.</help>
+        <label><!-- Enable Preview and Position Fields --></label>
+        <name>echosign_dev1__Preview_Position__c</name>
+    </fields>
+    <fields>
+        <help>Når aktiveret vises aftalen eller dokumentet kun til afsendere ved underskrivelse.</help>
+        <label><!-- Sender Signs Only --></label>
+        <name>echosign_dev1__Sender_Signs_Only__c</name>
+    </fields>
+    <fields>
+        <help>Når aftalen sendes automatisk eller sendes vha. en automatisk arbejdsproces, sendes aftalen på vegne af den bruger, der er angivet vha. dette felt. Hvis det ikke er angivet, bruges den aktuelle kontekstbruger som sædvanlig.</help>
+        <label><!-- Send On Behalf Of --></label>
+        <name>echosign_dev1__Sender_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign External Password --></label>
+        <name>echosign_dev1__Sign_External_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Internal Password --></label>
+        <name>echosign_dev1__Sign_Internal_Password__c</name>
+    </fields>
+    <fields>
+        <help>Angiv en adgangskode, som modtageren skal bruge til at underskrive aftalen med.</help>
+        <label><!-- Password to Sign Agreement --></label>
+        <name>echosign_dev1__Sign_Password__c</name>
+    </fields>
+    <fields>
+        <help>Angiv modtagerrækkefølgen til underskrivning af dokumenter.</help>
+        <label><!-- Signature Flow --></label>
+        <name>echosign_dev1__Signature_Flow__c</name>
+        <picklistValues>
+            <masterLabel>Recipients sign in any order</masterLabel>
+            <translation>Modtagere underskriver i enhver rækkefølge</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recipients sign in order</masterLabel>
+            <translation>Modtagerne underskriver i rækkefølge</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Giv afsenderen mulighed for også at underskrive aftalen ved at vælge en rækkefølge for underskrifterne.</help>
+        <label><!-- Sender Signature Order --></label>
+        <name>echosign_dev1__Signature_Order__c</name>
+        <picklistValues>
+            <masterLabel>Recipients sign first, then sender signs</masterLabel>
+            <translation>Modtagerne underskriver først, og derefter underskriver afsenderen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sender signs first, then recipients sign</masterLabel>
+            <translation>Afsender underskriver først, dernæst underskriver modtagere</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Send til elektronisk underskrivelse, eller anmod om håndskreven underskrift.</help>
+        <label><!-- Signature Type --></label>
+        <name>echosign_dev1__Signature_Type__c</name>
+        <picklistValues>
+            <masterLabel>Written Signature</masterLabel>
+            <translation>Håndskreven underskrift</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-Signature</masterLabel>
+            <translation>e-signatur</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Den underskrevne PDF-fil, som er sendt til alle parter, er krypteret, og denne adgangskode er påkrævet for at åbne den. Mist ikke adgangskoden, da den ikke kan gendannes.</help>
+        <label><!-- Password protect the signed document --></label>
+        <name>echosign_dev1__View_Password__c</name>
+    </fields>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Aftaleskabelon</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Aftaleskabelon</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Aftaleskabelon</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Aftaleskabeloner</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Aftaleskabeloner</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Aftaleskabeloner</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Navn på aftaleskabelon</nameFieldLabel>
+    <layouts>
+        <layout>Agreement Template Layout</layout>
+        <sections>
+            <label>Aftaleoplysninger</label>
+            <section>Agreement Information</section>
+        </sections>
+        <sections>
+            <label>Aftaleindstillinger</label>
+            <section>Agreement Options</section>
+        </sections>
+        <sections>
+            <label>Sikkerhedsindstillinger for aftale</label>
+            <section>Agreement Security Options</section>
+        </sections>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Tilknytningsindstillinger</label>
+            <section>Mapping Settings</section>
+        </sections>
+        <sections>
+            <label>Refererede objekter</label>
+            <section>Referenced Objects</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Confirm password does not match the password that you want the recipient to input. --></errorMessage>
+        <name>echosign_dev1__Confirm_Password</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter a password that you want the recipient to input. --></errorMessage>
+        <name>echosign_dev1__Enabled_Password_Set</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There is a maximum of 180 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Maximum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There is a minimum of 1 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Minimum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enabling in-person or preview/position fields is not allowed with auto send enabled. --></errorMessage>
+        <name>echosign_dev1__Preview_Hosted_With_Auto_Send</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Suggesting revisions is not possible with a written signature. --></errorMessage>
+        <name>echosign_dev1__Written_Without_Revisions</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>设置协议应查找的帐户记录的 Salesforce ID。</help>
+        <label><!-- Account --></label>
+        <name>echosign_dev1__Account__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则协议模板可见，否则协议模板不可见。</help>
+        <label><!-- Active --></label>
+        <name>echosign_dev1__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Type --></label>
+        <name>echosign_dev1__Agreement_Type__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>自动发送协议，不显示发送页面（例如，触发式工作流）。使用此选项时，请确保添加了收件人和文件附件。</help>
+        <label><!-- Auto Send --></label>
+        <name>echosign_dev1__Auto_Send__c</name>
+    </fields>
+    <fields>
+        <help>向签名者发送自动提醒。</help>
+        <label><!-- Automatic Reminders --></label>
+        <name>echosign_dev1__Automatic_Reminders__c</name>
+        <picklistValues>
+            <masterLabel>Every Day, Until Signed</masterLabel>
+            <translation>每天，直到签名</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Week, Until Signed</masterLabel>
+            <translation>每周，直到签名</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>从不</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>对于主对象记录，允许发送者通过 Chatter Feed Adobe Sign 发送以请求签名操作来使用此协议模板。</help>
+        <label><!-- Available for Publisher Actions --></label>
+        <name>echosign_dev1__Available_Publisher_Actions__c</name>
+    </fields>
+    <fields>
+        <help>确认让收件人输入的密码。</help>
+        <label><!-- Confirm Password --></label>
+        <name>echosign_dev1__Confirm_Password__c</name>
+    </fields>
+    <fields>
+        <help>设置协议应查找的合同记录的 Salesforce ID。</help>
+        <label><!-- Contract --></label>
+        <name>echosign_dev1__Contract__c</name>
+    </fields>
+    <fields>
+        <help>选择将 Adobe Sign 字段输入从已签名协议映射回 Salesforce 的数据映射。</help>
+        <label><!-- Data Mapping --></label>
+        <name>echosign_dev1__Data_Mapping__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>设置协议到期之前的天数。</help>
+        <label><!-- Days Until Expiration --></label>
+        <name>echosign_dev1__Days_Until_Expiration__c</name>
+    </fields>
+    <fields>
+        <help>设置为新协议的默认模板。</help>
+        <label><!-- Default --></label>
+        <name>echosign_dev1__Default__c</name>
+    </fields>
+    <fields>
+        <help>将协议副本发送到指定的电子邮件地址。</help>
+        <label><!-- Email Copy To --></label>
+        <name>echosign_dev1__Email_Copy_To__c</name>
+    </fields>
+    <fields>
+        <help>确保必须先验证外部签名者的身份，才允许其查看或签署文档。</help>
+        <label><!-- External Signers Verification Method --></label>
+        <name>echosign_dev1__External_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>基于知识的身份验证</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>协议签署密码</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>Web 身份验证</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>启用后，协议或文档将只呈递给发件人进行填写并签名。可使用“发布发送”页面转发已签名的文档。</help>
+        <label><!-- Fill &amp; Sign --></label>
+        <name>echosign_dev1__Fill_Sign__c</name>
+    </fields>
+    <fields>
+        <help>启用托管的本人签名。</help>
+        <label><!-- Enable Hosted Signing --></label>
+        <name>echosign_dev1__Hosted_Signing__c</name>
+    </fields>
+    <fields>
+        <help>确保必须先验证内部签名者的身份，才允许其查看或签署文档。</help>
+        <label><!-- Internal Signers Verification Method --></label>
+        <name>echosign_dev1__Internal_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>基于知识的身份验证</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>协议签署密码</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>Web 身份验证</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>选择收件人使用的语言。</help>
+        <label><!-- Language --></label>
+        <name>echosign_dev1__Language__c</name>
+        <picklistValues>
+            <masterLabel>Chinese (China)</masterLabel>
+            <translation>中文（中国）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Taiwan)</masterLabel>
+            <translation>中文（台湾）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech (Czech Republic)</masterLabel>
+            <translation>捷克语 (捷克共和国)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish (Denmark)</masterLabel>
+            <translation>丹麦语（丹麦）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch (Netherlands)</masterLabel>
+            <translation>荷兰语（荷兰）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United Kingdom)</masterLabel>
+            <translation>英语（英国）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United States)</masterLabel>
+            <translation>英语（美国）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish (Finland)</masterLabel>
+            <translation>芬兰语（芬兰）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French (France)</masterLabel>
+            <translation>法语（法国）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German (Germany)</masterLabel>
+            <translation>德语（德国）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Icelandic (Iceland)</masterLabel>
+            <translation>冰岛语（冰岛）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian (Indonesia)</masterLabel>
+            <translation>印尼语（印度尼西亚）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian (Italy)</masterLabel>
+            <translation>意大利语（意大利）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese (Japan)</masterLabel>
+            <translation>日语（日本）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean (South Korea)</masterLabel>
+            <translation>朝鲜语（韩国）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malay (Malaysia)</masterLabel>
+            <translation>马来语（马来西亚）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian (Norway)</masterLabel>
+            <translation>挪威语（挪威）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish (Poland)</masterLabel>
+            <translation>波兰语（波兰）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Brazil)</masterLabel>
+            <translation>葡萄牙语（巴西）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Portugal)</masterLabel>
+            <translation>葡萄牙语（葡萄牙）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian (Russia)</masterLabel>
+            <translation>俄语（俄罗斯）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Spain)</masterLabel>
+            <translation>西班牙语（西班牙）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish (Sweden)</masterLabel>
+            <translation>瑞典语（瑞典）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai (Thailand)</masterLabel>
+            <translation>泰语（泰国）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish (Turkey)</masterLabel>
+            <translation>土耳其语 (土耳其)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese (Vietnam)</masterLabel>
+            <translation>越南语（越南）</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>指定对此协议模板将引用的 Salesforce 对象（如 Opportunity、Lead）。</help>
+        <label><!-- Master Object Type --></label>
+        <name>echosign_dev1__Master_Object_Type__c</name>
+    </fields>
+    <fields>
+        <help>选择在发送协议进行签名之前，用于将 Salesforce 字段合并到 Adobe Sign 协议中的合并映射。</help>
+        <label><!-- Merge Mapping --></label>
+        <name>echosign_dev1__Merge_Mapping__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>输入将要发送给收件人的消息。</help>
+        <label><!-- Message --></label>
+        <name>echosign_dev1__Message__c</name>
+    </fields>
+    <fields>
+        <help>输入协议的名称。</help>
+        <label><!-- Agreement Name --></label>
+        <name>echosign_dev1__Name__c</name>
+    </fields>
+    <fields>
+        <help>设置协议应查找的业务机会记录的 Salesforce ID。</help>
+        <label><!-- Opportunity --></label>
+        <name>echosign_dev1__Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>输入让收件人输入的密码。</help>
+        <label><!-- View Password --></label>
+        <name>echosign_dev1__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect Delay (seconds) --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_Delay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect URL --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_URL__c</name>
+    </fields>
+    <fields>
+        <help>在发送协议进行签名之前，允许签名者预览和定位文档中的字段。</help>
+        <label><!-- Enable Preview and Position Fields --></label>
+        <name>echosign_dev1__Preview_Position__c</name>
+    </fields>
+    <fields>
+        <help>如果启用，协议或文档将只呈递给发件人进行签名。</help>
+        <label><!-- Sender Signs Only --></label>
+        <name>echosign_dev1__Sender_Signs_Only__c</name>
+    </fields>
+    <fields>
+        <help>在自动发送协议或使用自动工作流发送协议时，将代表此字段指定的用户发送协议。如果未指定，则按通常情况使用当前上下文用户。</help>
+        <label><!-- Send On Behalf Of --></label>
+        <name>echosign_dev1__Sender_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign External Password --></label>
+        <name>echosign_dev1__Sign_External_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Internal Password --></label>
+        <name>echosign_dev1__Sign_Internal_Password__c</name>
+    </fields>
+    <fields>
+        <help>设置收件人用来签署协议需要输入的的密码</help>
+        <label><!-- Password to Sign Agreement --></label>
+        <name>echosign_dev1__Sign_Password__c</name>
+    </fields>
+    <fields>
+        <help>设置签名文档的接收者顺序。</help>
+        <label><!-- Signature Flow --></label>
+        <name>echosign_dev1__Signature_Flow__c</name>
+        <picklistValues>
+            <masterLabel>Recipients sign in any order</masterLabel>
+            <translation>接收者按任意顺序签名</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recipients sign in order</masterLabel>
+            <translation>接收者按顺序签名</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>通过选择签名顺序使发件人也可以签署文档。</help>
+        <label><!-- Sender Signature Order --></label>
+        <name>echosign_dev1__Signature_Order__c</name>
+        <picklistValues>
+            <masterLabel>Recipients sign first, then sender signs</masterLabel>
+            <translation>收件人先签名，然后发件人签名</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sender signs first, then recipients sign</masterLabel>
+            <translation>发件人先签名，然后收件人签名</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>发送以进行电子签名或请求手写签名。</help>
+        <label><!-- Signature Type --></label>
+        <name>echosign_dev1__Signature_Type__c</name>
+        <picklistValues>
+            <masterLabel>Written Signature</masterLabel>
+            <translation>书面签名</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-Signature</masterLabel>
+            <translation>电子签名</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>发送给所有相关人员的已签名 PDF 受密码保护，需要此密码才能打开。请勿丢失此密码，因为它无法找回。</help>
+        <label><!-- Password protect the signed document --></label>
+        <name>echosign_dev1__View_Password__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>协议模板</value>
+    </caseValues>
+    <nameFieldLabel>协议模板名称</nameFieldLabel>
+    <layouts>
+        <layout>Agreement Template Layout</layout>
+        <sections>
+            <label>协议信息</label>
+            <section>Agreement Information</section>
+        </sections>
+        <sections>
+            <label>协议选项</label>
+            <section>Agreement Options</section>
+        </sections>
+        <sections>
+            <label>协议安全选项</label>
+            <section>Agreement Security Options</section>
+        </sections>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>映射设置</label>
+            <section>Mapping Settings</section>
+        </sections>
+        <sections>
+            <label>引用的对象</label>
+            <section>Referenced Objects</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Confirm password does not match the password that you want the recipient to input. --></errorMessage>
+        <name>echosign_dev1__Confirm_Password</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter a password that you want the recipient to input. --></errorMessage>
+        <name>echosign_dev1__Enabled_Password_Set</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There is a maximum of 180 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Maximum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There is a minimum of 1 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Minimum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enabling in-person or preview/position fields is not allowed with auto send enabled. --></errorMessage>
+        <name>echosign_dev1__Preview_Hosted_With_Auto_Send</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Suggesting revisions is not possible with a written signature. --></errorMessage>
+        <name>echosign_dev1__Written_Without_Revisions</name>
+    </validationRules>
+</CustomObjectTranslation>

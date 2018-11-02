@@ -1,0 +1,23 @@
+<apex:page controller="Litmos.CreateRealTimeContact" action="{!createContact}">
+<style>
+    input.btn.sft {
+        display:block;
+        float:right;
+        height: 40px;
+        padding: 0 6px;
+        font-size:12px;
+        border: #DEDEDE 1px solid;
+        background: rgb(150,201,61);
+        color: white;
+            margin-right: 1%;
+    }
+    .message{
+        width: 80% !important;
+    }
+</style>
+    
+    <apex:form >
+        <apex:commandButton value="Back" styleClass="sft" action="{!back}" style="background: rgb(150,201,61);color: white;margin-right:1%" />
+    </apex:form>
+    <apex:pageMessages />
+</apex:page>

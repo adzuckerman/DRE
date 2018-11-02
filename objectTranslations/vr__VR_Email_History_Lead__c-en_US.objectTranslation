@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Bounced --></label>
+        <name>vr__Bounced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Hash --></label>
+        <name>vr__Campaign_Hash__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clicked Links --></label>
+        <name>vr__Clicked_Links__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clicked --></label>
+        <name>vr__Clicked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Hash --></label>
+        <name>vr__Company_Hash__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email ID --></label>
+        <name>vr__Email_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Type --></label>
+        <name>vr__Email_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>vr__Lead__c</name>
+        <relationshipLabel><!-- VR Email History Lead --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- List Type --></label>
+        <name>vr__List_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mail Date --></label>
+        <name>vr__Mail_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opened --></label>
+        <name>vr__Opened__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent --></label>
+        <name>vr__Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unsubscribed --></label>
+        <name>vr__Unsubscribed__c</name>
+    </fields>
+    <layouts>
+        <layout>VR Email History Lead Layout</layout>
+        <sections>
+            <label><!-- Campaign Preview --></label>
+            <section>Campaign Preview</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

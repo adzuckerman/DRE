@@ -1,0 +1,24 @@
+<apex:page controller="Litmos.BaseController" sidebar="false">
+    <div>
+        <h1>Litmos Account Settings</h1>
+        <p>These settings control the connection between your Salesforce account and your Litmos account.</p>
+        <div style="padding:10px;margin-bottom:5px;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;background-color:#cfeef8;">
+            <p><b>Step 1: Connect Salesforce to Litmos LMS</b></p>
+            <p>If you already have a Litmos account then all you have to do is click Continue and then login. If you are new to Litmos please click continue and select the setup a new account option.</p>
+            <p><b>Current Status: </b> 
+                <apex:outputPanel rendered="{!IF(IsLitmosAccountConnected == true,true,false)}" layout="inline">Connected</apex:outputPanel>
+                <apex:outputPanel rendered="{!IF(IsLitmosAccountConnected == false,true,false)}" layout="inline">Not Connected</apex:outputPanel>            
+            </p>
+            <a style="display:inline-block;text-decoration:none;font-weight:bold;padding:5px 10px;border:solid 3px #fff;background-color:#009900;color:#fff;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;" href="{!LitmosOAuthUrl}">Connect to Litmos</a>
+        </div>  
+        <div style="padding:10px;margin-bottom:10px;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;background-color:#cfeef8;">
+            <p><b>Step 2: Authorize Litmos to connect to Salesforce</b></p>
+            <p>In order to assign training courses to your users please authorize Litmos to access your Salesforce account.</p>
+            <p><b>Current Status: </b> 
+                <apex:outputPanel rendered="{!IF(IsSFDCConnected == true,true,false)}" layout="inline">Connected</apex:outputPanel>
+                <apex:outputPanel rendered="{!IF(IsSFDCConnected == false,true,false)}" layout="inline">Not Connected</apex:outputPanel>             
+            </p>  
+            <a style="display:inline-block;text-decoration:none;font-weight:bold;padding:5px 10px;border:solid 3px #fff;background-color:#009900;color:#fff;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;" href="{!OAuthSetupUrl}">Authorize Litmos</a>
+        </div>              
+    </div>
+</apex:page>

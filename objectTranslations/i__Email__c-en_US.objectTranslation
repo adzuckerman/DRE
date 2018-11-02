@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Case --></label>
+        <name>i__Case__c</name>
+        <relationshipLabel><!-- Emails (Case) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Content --></label>
+        <name>i__Content__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Case --></label>
+        <name>i__CreatedCase__c</name>
+        <relationshipLabel><!-- Emails (Created Case) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- obsolete --></label>
+        <name>i__EncSubj__c</name>
+    </fields>
+    <fields>
+        <help><!-- Encrypted Subject --></help>
+        <label><!-- Encrypted Subject --></label>
+        <name>i__EncSubject__c</name>
+    </fields>
+    <fields>
+        <label><!-- From --></label>
+        <name>i__From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Attachments? --></label>
+        <name>i__HasAttachments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypted --></label>
+        <name>i__IsEncrypted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hard linked? --></label>
+        <name>i__IsHardLinked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logged For --></label>
+        <name>i__LoggedFor__c</name>
+        <relationshipLabel><!-- Emails --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MsgDigest --></label>
+        <name>i__MsgDigest__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only necessary if global Email Lifespan setting is non-zero --></help>
+        <label><!-- Prevent auto-deletion of this email --></label>
+        <name>i__NoAutoDelete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>i__Opportunity__c</name>
+        <relationshipLabel><!-- Emails --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Number of recipients of this email. --></help>
+        <label><!-- Recipient Count --></label>
+        <name>i__RecipientCt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent --></label>
+        <name>i__Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- To --></label>
+        <name>i__To__c</name>
+    </fields>
+    <fields>
+        <help><!-- Was the email sent to a User (inbound), or from a User (outbound)? --></help>
+        <label><!-- Type --></label>
+        <name>i__Type__c</name>
+        <picklistValues>
+            <masterLabel>Inbound</masterLabel>
+            <translation><!-- Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound</masterLabel>
+            <translation><!-- Outbound --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Email Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <sharingReasons>
+        <label><!-- User on Email --></label>
+        <name>i__User_on_Email</name>
+    </sharingReasons>
+</CustomObjectTranslation>

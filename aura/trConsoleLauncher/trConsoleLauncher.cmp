@@ -1,8 +1,1 @@
-<aura:component implements="flexipage:availableForAllPageTypes" access="global">
-  <lightning:workspaceAPI aura:id="workspace" />
-  <TASKRAY:trComponentContainer headerText="">
-    <div class="slds-text-body_regular slds-m-bottom_x-small slds-m-top_large">{!
-      $Label.TASKRAY.TaskRay_Console_Launcher_subHeader}</div>
-    <lightning:button label="{! $Label.TASKRAY.TaskRay_Console_Launcher_openButton}" onclick="{!c.openTab}" />
-  </TASKRAY:trComponentContainer>
-</aura:component>
+(hidden)

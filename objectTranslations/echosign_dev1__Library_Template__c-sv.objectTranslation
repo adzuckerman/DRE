@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Agreement --></label>
+        <name>echosign_dev1__Agreement__c</name>
+        <relationshipLabel><!-- Library Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document Key --></label>
+        <name>echosign_dev1__Document_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified --></label>
+        <name>echosign_dev1__Last_Modified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Type --></label>
+        <name>echosign_dev1__Reference_Type__c</name>
+        <picklistValues>
+            <masterLabel>Document</masterLabel>
+            <translation>Dokument</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form Field Layer</masterLabel>
+            <translation>Formulärfältslager</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>echosign_dev1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Document</masterLabel>
+            <translation>Dokument</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form Field Layer</masterLabel>
+            <translation>Formulärfältslager</translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Biblioteksmall</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Biblioteksmall</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Biblioteksmall</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Biblioteksmallar</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Biblioteksmallar</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Biblioteksmallar</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Biblioteksmallens namn</nameFieldLabel>
+</CustomObjectTranslation>

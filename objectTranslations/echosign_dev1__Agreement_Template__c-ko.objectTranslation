@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>계약이 검색해야 할 계정 레코드의 Salesforce ID를 설정합니다.</help>
+        <label><!-- Account --></label>
+        <name>echosign_dev1__Account__c</name>
+    </fields>
+    <fields>
+        <help>선택하면 계약 템플릿이 표시되며 선택하지 않으면 숨겨집니다.</help>
+        <label><!-- Active --></label>
+        <name>echosign_dev1__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Type --></label>
+        <name>echosign_dev1__Agreement_Type__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>전송 페이지를 표시하지 않고 계약을 자동으로 전송합니다(예: 트리거된 워크플로). 이 옵션을 사용하는 경우 수신자와 파일 첨부를 추가합니다.</help>
+        <label><!-- Auto Send --></label>
+        <name>echosign_dev1__Auto_Send__c</name>
+    </fields>
+    <fields>
+        <help>서명자에게 자동 알림 메시지를 전송합니다.</help>
+        <label><!-- Automatic Reminders --></label>
+        <name>echosign_dev1__Automatic_Reminders__c</name>
+        <picklistValues>
+            <masterLabel>Every Day, Until Signed</masterLabel>
+            <translation>서명될 때까지 매일</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Week, Until Signed</masterLabel>
+            <translation>서명될 때까지 매주</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>사용 안 함</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>마스터 개체 레코드에서 Adobe Sign이 서명 작업을 위해 보내는 Chatter 피드를 통해 전송자가 이 계약 템플릿을 사용할 수 있도록 설정합니다.</help>
+        <label><!-- Available for Publisher Actions --></label>
+        <name>echosign_dev1__Available_Publisher_Actions__c</name>
+    </fields>
+    <fields>
+        <help>수신자가 입력하도록 할 암호를 확인합니다.</help>
+        <label><!-- Confirm Password --></label>
+        <name>echosign_dev1__Confirm_Password__c</name>
+    </fields>
+    <fields>
+        <help>계약이 검색해야 할 계약 레코드의 Salesforce ID를 설정합니다.</help>
+        <label><!-- Contract --></label>
+        <name>echosign_dev1__Contract__c</name>
+    </fields>
+    <fields>
+        <help>서명된 계약의 Adobe Sign 필드 입력 내용을 Salesforce에 다시 매핑할 데이터 매핑을 선택합니다.</help>
+        <label><!-- Data Mapping --></label>
+        <name>echosign_dev1__Data_Mapping__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>계약이 만료될 때까지 남은 일 수를 설정합니다.</help>
+        <label><!-- Days Until Expiration --></label>
+        <name>echosign_dev1__Days_Until_Expiration__c</name>
+    </fields>
+    <fields>
+        <help>새 계약의 기본 템플릿으로 설정합니다.</help>
+        <label><!-- Default --></label>
+        <name>echosign_dev1__Default__c</name>
+    </fields>
+    <fields>
+        <help>계약의 복사본을 지정된 전자 메일 주소로 전송합니다.</help>
+        <label><!-- Email Copy To --></label>
+        <name>echosign_dev1__Email_Copy_To__c</name>
+    </fields>
+    <fields>
+        <help>외부 서명자가 문서를 보거나 서명하기 전에 자신의 ID를 확인해야 하도록 합니다.</help>
+        <label><!-- External Signers Verification Method --></label>
+        <name>echosign_dev1__External_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>지식 기반 인증</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>계약 서명을 위한 암호</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>웹 ID 인증</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>활성화하면 계약 또는 문서가 발신자에게만 작성하고 서명할 수 있도록 제공됩니다. 후 전송 페이지를 사용하여 서명된 문서를 전달할 수 있습니다.</help>
+        <label><!-- Fill &amp; Sign --></label>
+        <name>echosign_dev1__Fill_Sign__c</name>
+    </fields>
+    <fields>
+        <help>호스팅된 직접 서명을 활성화합니다.</help>
+        <label><!-- Enable Hosted Signing --></label>
+        <name>echosign_dev1__Hosted_Signing__c</name>
+    </fields>
+    <fields>
+        <help>내부 서명자가 문서를 보거나 서명하기 전에 자신의 ID를 확인해야 하도록 합니다.</help>
+        <label><!-- Internal Signers Verification Method --></label>
+        <name>echosign_dev1__Internal_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>지식 기반 인증</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>계약 서명을 위한 암호</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>웹 ID 인증</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>수신자의 언어를 선택합니다.</help>
+        <label><!-- Language --></label>
+        <name>echosign_dev1__Language__c</name>
+        <picklistValues>
+            <masterLabel>Chinese (China)</masterLabel>
+            <translation>중국어(중국)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Taiwan)</masterLabel>
+            <translation>중국어(대만)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech (Czech Republic)</masterLabel>
+            <translation>체코어(체코)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish (Denmark)</masterLabel>
+            <translation>덴마크어(덴마크)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch (Netherlands)</masterLabel>
+            <translation>네덜란드어(네덜란드)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United Kingdom)</masterLabel>
+            <translation>영어(영국)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United States)</masterLabel>
+            <translation>영어(미국)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish (Finland)</masterLabel>
+            <translation>핀란드어(핀란드)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French (France)</masterLabel>
+            <translation>프랑스어(프랑스)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German (Germany)</masterLabel>
+            <translation>독일어(독일)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Icelandic (Iceland)</masterLabel>
+            <translation>아이슬란드어(아이슬란드)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian (Indonesia)</masterLabel>
+            <translation>인도네시아어(인도네시아)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian (Italy)</masterLabel>
+            <translation>이탈리아어(이탈리아)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese (Japan)</masterLabel>
+            <translation>일본어(일본)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean (South Korea)</masterLabel>
+            <translation>한국어(대한민국)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malay (Malaysia)</masterLabel>
+            <translation>말레이어(말레이시아)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian (Norway)</masterLabel>
+            <translation>노르웨이어(노르웨이)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish (Poland)</masterLabel>
+            <translation>폴란드어(폴란드)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Brazil)</masterLabel>
+            <translation>포르투갈어(브라질)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Portugal)</masterLabel>
+            <translation>포르투갈어(포르투갈)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian (Russia)</masterLabel>
+            <translation>러시아어(러시아)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Spain)</masterLabel>
+            <translation>스페인어(스페인)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish (Sweden)</masterLabel>
+            <translation>스웨덴어(스웨덴)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai (Thailand)</masterLabel>
+            <translation>태국어(태국)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish (Turkey)</masterLabel>
+            <translation>터키어(터키)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese (Vietnam)</masterLabel>
+            <translation>베트남어(베트남)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>이 계약 템플릿에 대해 참조될 Salesforce 개체를 지정합니다(예: Opportunity, Lead).</help>
+        <label><!-- Master Object Type --></label>
+        <name>echosign_dev1__Master_Object_Type__c</name>
+    </fields>
+    <fields>
+        <help>서명을 위해 전송하기 전에 Adobe Sign 계약에 Salesforce 필드를 병합할 병합 매핑을 선택합니다.</help>
+        <label><!-- Merge Mapping --></label>
+        <name>echosign_dev1__Merge_Mapping__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>수신자에게 전송할 메시지를 입력합니다.</help>
+        <label><!-- Message --></label>
+        <name>echosign_dev1__Message__c</name>
+    </fields>
+    <fields>
+        <help>계약의 이름을 입력합니다.</help>
+        <label><!-- Agreement Name --></label>
+        <name>echosign_dev1__Name__c</name>
+    </fields>
+    <fields>
+        <help>계약이 검색해야 할 기회 레코드의 Salesforce ID를 설정합니다.</help>
+        <label><!-- Opportunity --></label>
+        <name>echosign_dev1__Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>수신자가 입력하도록 할 암호를 입력합니다.</help>
+        <label><!-- View Password --></label>
+        <name>echosign_dev1__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect Delay (seconds) --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_Delay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect URL --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_URL__c</name>
+    </fields>
+    <fields>
+        <help>서명을 위해 계약을 전송하기 전에 서명자가 문서의 필드를 미리 보고 위치를 지정할 수 있도록 합니다.</help>
+        <label><!-- Enable Preview and Position Fields --></label>
+        <name>echosign_dev1__Preview_Position__c</name>
+    </fields>
+    <fields>
+        <help>활성화하면 계약 또는 문서가 발신자에게만 서명할 수 있도록 전송됩니다.</help>
+        <label><!-- Sender Signs Only --></label>
+        <name>echosign_dev1__Sender_Signs_Only__c</name>
+    </fields>
+    <fields>
+        <help>계약이 자동으로 전송되거나 자동화된 워크플로를 사용하여 전송되는 경우, 이 필드에서 지정한 사용자를 대신하여 계약이 전송됩니다. 지정하지 않은 경우에는 일반적으로 현재 컨텍스트 사용자가 사용됩니다.</help>
+        <label><!-- Send On Behalf Of --></label>
+        <name>echosign_dev1__Sender_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign External Password --></label>
+        <name>echosign_dev1__Sign_External_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Internal Password --></label>
+        <name>echosign_dev1__Sign_Internal_Password__c</name>
+    </fields>
+    <fields>
+        <help>수신자가 계약에 서명하기 위해 입력해야 할 암호를 설정합니다.</help>
+        <label><!-- Password to Sign Agreement --></label>
+        <name>echosign_dev1__Sign_Password__c</name>
+    </fields>
+    <fields>
+        <help>문서에 서명할 수신자 순서 설정.</help>
+        <label><!-- Signature Flow --></label>
+        <name>echosign_dev1__Signature_Flow__c</name>
+        <picklistValues>
+            <masterLabel>Recipients sign in any order</masterLabel>
+            <translation>순서에 관계없이 수신자 서명</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recipients sign in order</masterLabel>
+            <translation>수신자 서명 순서</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>서명 순서를 선택하여 전송자도 계약에 서명할 수 있도록 합니다.</help>
+        <label><!-- Sender Signature Order --></label>
+        <name>echosign_dev1__Signature_Order__c</name>
+        <picklistValues>
+            <masterLabel>Recipients sign first, then sender signs</masterLabel>
+            <translation>수신자가 먼저 서명한 후 전송자가 서명</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sender signs first, then recipients sign</masterLabel>
+            <translation>전송자가 먼저 서명한 후 수신자가 서명</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>전자 서명을 보내거나 자필 서명을 요청합니다.</help>
+        <label><!-- Signature Type --></label>
+        <name>echosign_dev1__Signature_Type__c</name>
+        <picklistValues>
+            <masterLabel>Written Signature</masterLabel>
+            <translation>자필 서명</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-Signature</masterLabel>
+            <translation>전자 서명</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>모든 당사자에게 전송되는 서명된 PDF는 암호화되며, PDF를 열려면 이 암호가 필요합니다. 암호는 복구할 수 없으므로 분실하지 마십시오.</help>
+        <label><!-- Password protect the signed document --></label>
+        <name>echosign_dev1__View_Password__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>계약 템플릿</value>
+    </caseValues>
+    <nameFieldLabel>계약 템플릿 이름</nameFieldLabel>
+    <layouts>
+        <layout>Agreement Template Layout</layout>
+        <sections>
+            <label>계약 정보</label>
+            <section>Agreement Information</section>
+        </sections>
+        <sections>
+            <label>계약 옵션</label>
+            <section>Agreement Options</section>
+        </sections>
+        <sections>
+            <label>계약 보안 옵션</label>
+            <section>Agreement Security Options</section>
+        </sections>
+        <sections>
+            <label>사용자 정의 링크</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>매핑 설정</label>
+            <section>Mapping Settings</section>
+        </sections>
+        <sections>
+            <label>참조된 개체</label>
+            <section>Referenced Objects</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Confirm password does not match the password that you want the recipient to input. --></errorMessage>
+        <name>echosign_dev1__Confirm_Password</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter a password that you want the recipient to input. --></errorMessage>
+        <name>echosign_dev1__Enabled_Password_Set</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There is a maximum of 180 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Maximum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There is a minimum of 1 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Minimum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enabling in-person or preview/position fields is not allowed with auto send enabled. --></errorMessage>
+        <name>echosign_dev1__Preview_Hosted_With_Auto_Send</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Suggesting revisions is not possible with a written signature. --></errorMessage>
+        <name>echosign_dev1__Written_Without_Revisions</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Generate feedback or patient insights</fullName>
+        <default>false</default>
+        <label>Generate feedback or patient insights</label>
+    </customValue>
+    <customValue>
+        <fullName>Understand persistence / compliance drivers</fullName>
+        <default>false</default>
+        <label>Understand persistence / compliance drivers</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient centricity</fullName>
+        <default>false</default>
+        <label>Patient centricity</label>
+    </customValue>
+    <customValue>
+        <fullName>Personalized medicine</fullName>
+        <default>false</default>
+        <label>Personalized medicine</label>
+    </customValue>
+    <masterLabel>Patient Experience</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cached Input Type --></label>
+        <name>echosign_dev1__Cached_Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>목록</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation>텍스트</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>전송된 모든 계약에 대해 기본적으로 이 데이터 매핑을 실행하려면 이 확인란을 선택합니다. 특정 계약 또는 계약 템플릿에 다른 데이터 매핑을 지정하면 기본값을 무시할 수 있습니다.</help>
+        <label><!-- Default Data Mapping? --></label>
+        <name>echosign_dev1__Default_Data_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>echosign_dev1__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Field CSV --></label>
+        <name>echosign_dev1__Merge_Field_CSV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify User of Errors --></label>
+        <name>echosign_dev1__Notify_User_of_Errors__c</name>
+        <relationshipLabel><!-- Data Mappings --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>데이터 매핑</value>
+    </caseValues>
+    <nameFieldLabel>데이터 매핑 이름</nameFieldLabel>
+    <layouts>
+        <layout>Process Template Layout</layout>
+        <sections>
+            <label>사용자 정의 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

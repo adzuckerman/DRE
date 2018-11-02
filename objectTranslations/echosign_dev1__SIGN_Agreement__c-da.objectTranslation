@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- PICO ID / Project Name --></label>
+        <name>PICO_ID_Project_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Vendor Name --></label>
+        <name>Preferred_Vendor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Vendor Request --></label>
+        <name>Preferred_Vendor_Request__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SFID / Opportunity ID --></label>
+        <name>SFID_Opportunity_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Estimated Fees --></label>
+        <name>Total_Estimated_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>echosign_dev1__Account__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Options --></label>
+        <name>echosign_dev1__AdditionalOptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 1 (User) --></label>
+        <name>echosign_dev1__Additional_Recipient_1_User__c</name>
+        <relationshipLabel><!-- Agreements (Additional Recipient 1 (User)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 2 (User) --></label>
+        <name>echosign_dev1__Additional_Recipient_2_User__c</name>
+        <relationshipLabel><!-- Agreements (Additional Recipient 2 (User)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 3 (User) --></label>
+        <name>echosign_dev1__Additional_Recipient_3_User__c</name>
+        <relationshipLabel><!-- Agreements (Additional Recipient 3 (User)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Vælg modtagernes sprog.</help>
+        <label><!-- Language --></label>
+        <name>echosign_dev1__AgreementLocale__c</name>
+        <picklistValues>
+            <masterLabel>Chinese (China)</masterLabel>
+            <translation>Kinesisk (Kina)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Taiwan)</masterLabel>
+            <translation>Kinesisk (Taiwan)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech (Czech Republic)</masterLabel>
+            <translation>Tjekkisk (Tjekkiet)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish (Denmark)</masterLabel>
+            <translation>Dansk (Danmark)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch (Netherlands)</masterLabel>
+            <translation>Nederlandsk (Nederlandene)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United Kingdom)</masterLabel>
+            <translation>Engelsk (Storbritannien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United States)</masterLabel>
+            <translation>Engelsk (USA)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish (Finland)</masterLabel>
+            <translation>Finsk (Finland)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French (France)</masterLabel>
+            <translation>Fransk (Frankrig)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German (Germany)</masterLabel>
+            <translation>Tysk (Tyskland)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Icelandic (Iceland)</masterLabel>
+            <translation>Islandsk (Island)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian (Indonesia)</masterLabel>
+            <translation>Indonesisk (Indonesien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian (Italy)</masterLabel>
+            <translation>Italiensk (Italien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese (Japan)</masterLabel>
+            <translation>Japansk (Japan)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean (South Korea)</masterLabel>
+            <translation>Koreansk (Sydkorea)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malay (Malaysia)</masterLabel>
+            <translation>Malaysisk (Malaysia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian (Norway)</masterLabel>
+            <translation>Norsk (Norge)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish (Poland)</masterLabel>
+            <translation>Polsk (Polen)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Brazil)</masterLabel>
+            <translation>Portugisisk (Brasilien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Portugal)</masterLabel>
+            <translation>Portugisisk (Portugal)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian (Russia)</masterLabel>
+            <translation>Russisk (Rusland)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Spain)</masterLabel>
+            <translation>Spansk (Spanien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish (Sweden)</masterLabel>
+            <translation>Svensk (Sverige)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai (Thailand)</masterLabel>
+            <translation><!-- Thai (Thailand) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish (Turkey)</masterLabel>
+            <translation>Tyrkisk (Tyrkiet)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese (Vietnam)</masterLabel>
+            <translation>Vietnamesisk (Vietnam)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agreement Type --></label>
+        <name>echosign_dev1__Agreement_Type__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>(Valgfrit) Angiv en liste over kommaseparerede id'er for vedhæftede filer i den rækkefølge, de skal vises.</help>
+        <label><!-- Attachment ID Order --></label>
+        <name>echosign_dev1__Attachment_ID_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment Service Invocation Count --></label>
+        <name>echosign_dev1__Attachment_Service_Invocation_Count__c</name>
+    </fields>
+    <fields>
+        <help>Vis dokumentet, eller træk og slip formularfelter eller signaturfelter i dokumentet, før det sendes til underskrivning.</help>
+        <label><!-- Preview or Position Signature Fields --></label>
+        <name>echosign_dev1__Authoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Update --></label>
+        <name>echosign_dev1__AutoUpdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background Action --></label>
+        <name>echosign_dev1__Background_Action__c</name>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation>Annuller</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete</masterLabel>
+            <translation>Slet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remind</masterLabel>
+            <translation>Påmind</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send</masterLabel>
+            <translation><!-- Send --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update</masterLabel>
+            <translation>Opdater</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notify Signer --></label>
+        <name>echosign_dev1__Cancel_Delete_Notify_Signer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Delete Reason --></label>
+        <name>echosign_dev1__Cancel_Delete_Reason__c</name>
+    </fields>
+    <fields>
+        <help>Send en ekstra kopi af underskrevne aftaler til disse e-mailadresser.</help>
+        <label><!-- Send email copies to --></label>
+        <name>echosign_dev1__Cc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>echosign_dev1__Contract__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Data Mapping Error --></label>
+        <name>echosign_dev1__Data_Mapping_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Mapping Result --></label>
+        <name>echosign_dev1__Data_Mapping_Result__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Fuldført</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>Mislykkedes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Bearbejder</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Sent (Date) --></label>
+        <name>echosign_dev1__DateSentDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent --></label>
+        <name>echosign_dev1__DateSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Signed (Date) --></label>
+        <name>echosign_dev1__DateSignedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Signed --></label>
+        <name>echosign_dev1__DateSigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Viewed (Date) --></label>
+        <name>echosign_dev1__DateViewedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Viewed --></label>
+        <name>echosign_dev1__DateViewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Unsigned --></label>
+        <name>echosign_dev1__DaysUnsigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Until Signed --></label>
+        <name>echosign_dev1__DaysUntilSigned__c</name>
+    </fields>
+    <fields>
+        <help>Angiv antallet af dage, indtil aftalen udløber og ikke længere kan underskrives.</help>
+        <label><!-- Expire document in X days --></label>
+        <name>echosign_dev1__DaysUntilSigningDeadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Key --></label>
+        <name>echosign_dev1__Document_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document --></label>
+        <name>echosign_dev1__Document__c</name>
+    </fields>
+    <fields>
+        <help>Send automatisk en ugentlig eller daglig påmindelse til modtagerne.</help>
+        <label><!-- Enable Automatic Reminders --></label>
+        <name>echosign_dev1__Enable_Automatic_Reminders__c</name>
+    </fields>
+    <fields>
+        <help>Værtsbaseret underskrivning for at få personlige signaturer fra din computer eller enhed.</help>
+        <label><!-- Host signing for the first signer --></label>
+        <name>echosign_dev1__Enable_Hosted_Signing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encoded Password --></label>
+        <name>echosign_dev1__EncodedPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>echosign_dev1__ErrorMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign External Password --></label>
+        <name>echosign_dev1__External_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Signers Verification Method --></label>
+        <name>echosign_dev1__External_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>Vidensbaseret godkendelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>Adgangskode til underskrivning af aftale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>Godkendelse af webidentitet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fill &amp; Sign --></label>
+        <name>echosign_dev1__Fill_Sign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Internal Password --></label>
+        <name>echosign_dev1__Internal_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Signers Verification Method --></label>
+        <name>echosign_dev1__Internal_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>Vidensbaseret godkendelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>Adgangskode til underskrivning af aftale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>Godkendelse af webidentitet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- LastEventId --></label>
+        <name>echosign_dev1__LastEventId__c</name>
+    </fields>
+    <fields>
+        <help>I dette felt gemmes post-id'et for poster, der er konverteret fra den ikke-administrerede pakke.</help>
+        <label><!-- Legacy Record ID --></label>
+        <name>echosign_dev1__Legacy_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Mapping Error --></label>
+        <name>echosign_dev1__Merge_Mapping_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Mapping Result --></label>
+        <name>echosign_dev1__Merge_Mapping_Result__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Fuldført</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>Mislykkedes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Bearbejder</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Merge Mapping --></label>
+        <name>echosign_dev1__Merge_Mapping__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Angiv en meddelelse til modtagerne.</help>
+        <label><!-- Message --></label>
+        <name>echosign_dev1__Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minutes Until Signed --></label>
+        <name>echosign_dev1__Minutes_Until_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipients (Email) --></label>
+        <name>echosign_dev1__More_Recipients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>echosign_dev1__NewPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Load Action --></label>
+        <name>echosign_dev1__On_Load_Action__c</name>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation>Annuller</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete</masterLabel>
+            <translation>Slet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remind</masterLabel>
+            <translation>Påmind</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send</masterLabel>
+            <translation><!-- Send --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update</masterLabel>
+            <translation>Opdater</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>View</masterLabel>
+            <translation>Vis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>echosign_dev1__Opportunity__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Server URL --></label>
+        <name>echosign_dev1__Partner_Server_URL__c</name>
+    </fields>
+    <fields>
+        <help>Den underskrevne PDF-fil, som er sendt til alle parter, er krypteret, og denne adgangskode er påkrævet for at åbne den. Mist ikke adgangskoden, da den ikke kan gendannes.</help>
+        <label><!-- Password required to view PDF --></label>
+        <name>echosign_dev1__PasswordProtectPDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password required to sign --></label>
+        <name>echosign_dev1__PasswordProtectSign__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Password --></label>
+        <name>echosign_dev1__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Signed --></label>
+        <name>echosign_dev1__Percent_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect Delay (seconds) --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_Delay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect URL --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_URL__c</name>
+    </fields>
+    <fields>
+        <help>Når dette felt markeres, sender Document Cloud dokumentet til kontaktens faxnummer. Hvis kontaktens faxnummer er tomt, sender Document Cloud dokumentet til kontaktens e-mailadresse.</help>
+        <label><!-- Send written signatures to fax number --></label>
+        <name>echosign_dev1__PreferFax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Mapping --></label>
+        <name>echosign_dev1__Process_Template__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indstil dette felt for at tvinge den grundlæggende Document Cloud-aftale og de avancerede Document Cloud-aftalesider til at genoprette den relaterede modtagerliste ved hjælp af opslagsfelter på Aftale-posten.</help>
+        <label><!-- Rebuild Recipient List --></label>
+        <name>echosign_dev1__Rebuild_Recipient_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 1 (Contact) --></label>
+        <name>echosign_dev1__Recipient2__c</name>
+        <relationshipLabel><!-- Related Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 2 (Contact) --></label>
+        <name>echosign_dev1__Recipient3__c</name>
+        <relationshipLabel><!-- Related Agreements (2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 3 (Contact) --></label>
+        <name>echosign_dev1__Recipient4__c</name>
+        <relationshipLabel><!-- Related Agreements (3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recipient Addresses --></label>
+        <name>echosign_dev1__Recipient_Addresses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 1 (Lead) --></label>
+        <name>echosign_dev1__Recipient_Lead2__c</name>
+        <relationshipLabel><!-- Related Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 2 (Lead) --></label>
+        <name>echosign_dev1__Recipient_Lead3__c</name>
+        <relationshipLabel><!-- Related Agreements (2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 3 (Lead) --></label>
+        <name>echosign_dev1__Recipient_Lead4__c</name>
+        <relationshipLabel><!-- Related Agreements (3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Aftale skal sendes til den e-mailadresse, der er knyttet til emnet</help>
+        <label><!-- Recipient (Lead) --></label>
+        <name>echosign_dev1__Recipient_Lead__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recipient (User) --></label>
+        <name>echosign_dev1__Recipient_User__c</name>
+        <relationshipLabel><!-- Agreements (Recipient (User)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recipient (Contact) --></label>
+        <name>echosign_dev1__Recipient__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remind recipient to sign --></label>
+        <name>echosign_dev1__RemindRecipient__c</name>
+        <picklistValues>
+            <masterLabel>Every Day, Until Signed</masterLabel>
+            <translation>Hver dag indtil underskrivelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Week, Until Signed</masterLabel>
+            <translation>Hver uge indtil underskrivelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>Aldrig</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>echosign_dev1__Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- ReturnURL_Text --></label>
+        <name>echosign_dev1__ReturnURL_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- ReturnURL --></label>
+        <name>echosign_dev1__ReturnURL__c</name>
+    </fields>
+    <fields>
+        <help>Markér denne indstilling, hvis du også skal underskrive denne aftale. Vælg derefter, om du skal underskrive først, eller om dine modtagere skal underskrive først.</help>
+        <label><!-- I also need to sign this document --></label>
+        <name>echosign_dev1__SenderSigns__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender Recorded --></label>
+        <name>echosign_dev1__Sender_Recorded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender Signs Only --></label>
+        <name>echosign_dev1__Sender_Signs_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send On Behalf Of --></label>
+        <name>echosign_dev1__Sender_User__c</name>
+        <relationshipLabel><!-- Agreements (Send On Behalf Of) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Signature Order --></label>
+        <name>echosign_dev1__SignatureOrder__c</name>
+        <picklistValues>
+            <masterLabel>I sign, then the Recipient signs</masterLabel>
+            <translation>Jeg underskriver, og derefter underskriver modtageren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recipient signs, then I sign</masterLabel>
+            <translation>Modtageren underskriver, og derefter underskriver jeg</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Signature Type --></label>
+        <name>echosign_dev1__SignatureType__c</name>
+        <picklistValues>
+            <masterLabel>Written Signature</masterLabel>
+            <translation>Håndskreven underskrift</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-Signature</masterLabel>
+            <translation>e-signatur</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recipients sign in --></label>
+        <name>echosign_dev1__Signature_Flow__c</name>
+        <picklistValues>
+            <masterLabel>Any Order</masterLabel>
+            <translation>Enhver rækkefølge</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Entered</masterLabel>
+            <translation>Rækkefølge angivet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Signed PDF --></label>
+        <name>echosign_dev1__SignedPDF__c</name>
+    </fields>
+    <fields>
+        <help>Angiv datoen for, hvornår aftalen udløber og ikke længere kan underskrives.</help>
+        <label><!-- Signing Deadline --></label>
+        <name>echosign_dev1__Signing_Deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signing URL --></label>
+        <name>echosign_dev1__Signing_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>echosign_dev1__StatusVisible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Status --></label>
+        <name>echosign_dev1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation>Accepteret</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Godkendt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled / Declined</masterLabel>
+            <translation>Annulleret/afvist</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation>Oprettet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation>Leveret</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Udkast</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>Udløbet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form-Filled</masterLabel>
+            <translation>Formular udfyldt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Acceptance</masterLabel>
+            <translation>Sendt til accept</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Approval</masterLabel>
+            <translation>Sendt til godkendelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Delivery</masterLabel>
+            <translation>Sendt til levering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Form-Filling</masterLabel>
+            <translation>Sendt til formularudfyldning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Signature</masterLabel>
+            <translation>Sendt til underskrivelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Send</masterLabel>
+            <translation>Før afsendelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send in Progress</masterLabel>
+            <translation>Afsendelse i gang</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation>Underskrevet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Acceptance</masterLabel>
+            <translation>Venter på modaccept</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Approval</masterLabel>
+            <translation>Venter på modgodkendelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Delivery</masterLabel>
+            <translation>Venter på modlevering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Form-Filling</masterLabel>
+            <translation>Venter på modformularudfyldning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Signature</masterLabel>
+            <translation>Venter på modunderskrift</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync Data Mapping --></label>
+        <name>echosign_dev1__Sync_Data_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trigger Data Mapping --></label>
+        <name>echosign_dev1__Trigger_Process_Template__c</name>
+    </fields>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Aftale</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Aftale</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Aftale</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Aftale</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Aftale</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Aftale</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Additional Fields --></label>
+        <name>AdditionalFieldSet</name>
+    </fieldSets>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Aftalenavn</nameFieldLabel>
+    <layouts>
+        <layout>Agreement Layout Enterprise / Unlimited</layout>
+        <sections>
+            <label>EchoSign-funktioner</label>
+            <section>EchoSign Functions</section>
+        </sections>
+        <sections>
+            <label>EchoSign-indstillinger</label>
+            <section>EchoSign Options</section>
+        </sections>
+        <sections>
+            <label>Meddelelse</label>
+            <section>Message</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agreement Layout Professional</layout>
+        <sections>
+            <label>EchoSign-funktioner</label>
+            <section>EchoSign Functions</section>
+        </sections>
+        <sections>
+            <label>Interne EchoSign-felter - REDIGER IKKE</label>
+            <section>EchoSign Internal Fields - DO NOT EDIT</section>
+        </sections>
+        <sections>
+            <label>EchoSign-indstillinger</label>
+            <section>EchoSign Options</section>
+        </sections>
+        <sections>
+            <label>Meddelelse</label>
+            <section>Message</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- There is a maximum of 180 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Maximum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The signing deadline date must not be in the past. --></errorMessage>
+        <name>echosign_dev1__Signing_Deadline_Future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Positioning fields and signatures is not possible with a written signature. --></errorMessage>
+        <name>echosign_dev1__WrittenWithoutPosition</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Suggesting revisions is not possible with a written signature. --></errorMessage>
+        <name>echosign_dev1__Written_Without_Revisions</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Cancel_Agreement_Bulk --></label>
+        <name>echosign_dev1__Cancel_Agreement_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Agreement --></label>
+        <name>echosign_dev1__Delete_Agreement</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Agreement_Bulk --></label>
+        <name>echosign_dev1__Delete_Agreement_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshStatus --></label>
+        <name>echosign_dev1__RefreshStatus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendReminder --></label>
+        <name>echosign_dev1__SendReminder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Agreement_Bulk --></label>
+        <name>echosign_dev1__Send_Agreement_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Reminder_Bulk --></label>
+        <name>echosign_dev1__Send_Reminder_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendforSignature --></label>
+        <name>echosign_dev1__SendforSignature</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SetAgreementPassword --></label>
+        <name>echosign_dev1__SetAgreementPassword</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_Agreement_Bulk --></label>
+        <name>echosign_dev1__Update_Agreement_Bulk</name>
+    </webLinks>
+</CustomObjectTranslation>

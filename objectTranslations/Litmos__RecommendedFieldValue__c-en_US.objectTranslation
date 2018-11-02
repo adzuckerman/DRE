@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- FieldApiName --></label>
+        <name>Litmos__FieldApiName__c</name>
+    </fields>
+    <fields>
+        <label><!-- FieldName --></label>
+        <name>Litmos__FieldName__c</name>
+    </fields>
+    <fields>
+        <label><!-- FieldType --></label>
+        <name>Litmos__FieldType__c</name>
+        <picklistValues>
+            <masterLabel>Decimal</masterLabel>
+            <translation><!-- Decimal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Picklist</masterLabel>
+            <translation><!-- Picklist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation><!-- Text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Record Assignment --></label>
+        <name>Litmos__RecordAssignmentId__c</name>
+        <relationshipLabel><!-- RecommendedFieldValues --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

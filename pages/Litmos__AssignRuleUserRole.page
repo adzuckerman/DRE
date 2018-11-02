@@ -1,0 +1,59 @@
+<apex:page standardController="Litmos__RuleUserRole__c" extensions="Litmos.AssignRuleUserRoleController" tabStyle="Litmos__Rule__c">
+<style>
+        .custPopup{
+         left:45%;
+         top=57%;
+         z-index: 9999;
+         position:absolute; 
+         } 
+        
+        .popupBackground{ background-color:black;
+         opacity: 0.30;
+         filter: alpha(opacity = 30);
+         position:absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         z-index: 9998; }
+    
+</style>     
+    <apex:form id="frm">
+    <apex:actionFunction name="saveRoles" action="{!saveRoles}" rerender="frm" status="roleStatus"/>
+    <apex:sectionHeader title="Rule" subtitle="{!ruleName}"/>
+    <apex:pageBlock title="Assign Roles">
+        
+        <apex:pageBlockSection title="Select Roles">
+            
+            
+                <apex:outputPanel style="margin-left:50%">
+                     <apex:actionStatus id="roleStatus">
+                        <apex:facet name="start"> 
+                             <apex:outputPanel id="tstpopup"> 
+                                    <apex:outputPanel styleClass="popupBackground" layout="block" style="width:100%"/> 
+                                    <apex:outputPanel styleClass="custPopup" layout="block"> 
+                                        <img src="http://jimpunk.net/Loading/wp-content/uploads/loading45.gif" style="vertical-align:middle; horizontal-align:middle;height:100px;width:130px"/> 
+                                        <!--<span>Please wait...</span>--> 
+                                    </apex:outputPanel> 
+                             </apex:outputPanel> 
+                        </apex:facet> 
+                      </apex:actionStatus>
+                    
+                      <c:MultiselectPicklist leftLabel="Available Roles"
+                        leftOption="{!availableRoleList}"
+                        rightLabel="Selected Roles"
+                        rightOption="{!selectedRoleList}"
+                        size="16"
+                        width="150px"/>
+                       
+                </apex:outputPanel>
+                 
+        </apex:pageBlockSection>
+        <apex:pageBlockButtons >
+            <apex:commandButton value="Save" onclick="saveRoles(); return false" />
+            <apex:commandButton value="Cancel" action="{!cancel}"/>
+            <apex:commandButton value="Return To Rule" action="{!cancel}"/>
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+    </apex:form>      
+</apex:page>

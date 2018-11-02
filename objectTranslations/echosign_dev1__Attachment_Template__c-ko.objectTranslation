@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Agreement Template --></label>
+        <name>echosign_dev1__Agreement_Template__c</name>
+        <relationshipLabel><!-- Add File Attachments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attachment Documents --></label>
+        <name>echosign_dev1__Attachment_Document_Names__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment Document ID&apos;s --></label>
+        <name>echosign_dev1__Attachment_Document__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selection Determined By --></label>
+        <name>echosign_dev1__Attachment_Selection_Field__c</name>
+        <picklistValues>
+            <masterLabel>Created Date</masterLabel>
+            <translation>생성일</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Modified Date</masterLabel>
+            <translation>마지막 수정 날짜</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- File Selection from Master Object --></label>
+        <name>echosign_dev1__Attachment_Selection_Type__c</name>
+        <picklistValues>
+            <masterLabel>All Documents</masterLabel>
+            <translation>모든 문서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latest Document</masterLabel>
+            <translation>최신 문서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oldest Document</masterLabel>
+            <translation>가장 오래된 문서</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Index --></label>
+        <name>echosign_dev1__Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment Source Type --></label>
+        <name>echosign_dev1__Master_Source_Type__c</name>
+        <picklistValues>
+            <masterLabel>Attachments</masterLabel>
+            <translation>첨부</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Files</masterLabel>
+            <translation>파일</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quote Document Selection Determined By --></label>
+        <name>echosign_dev1__Quote_Document_Selection_Field__c</name>
+        <picklistValues>
+            <masterLabel>Created Date</masterLabel>
+            <translation>생성일</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Modified Date</masterLabel>
+            <translation>마지막 수정 날짜</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quote Document Selection from Quote --></label>
+        <name>echosign_dev1__Quote_Document_Selection_Type__c</name>
+        <picklistValues>
+            <masterLabel>All Documents</masterLabel>
+            <translation>모든 문서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latest Document</masterLabel>
+            <translation>최신 문서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oldest Document</masterLabel>
+            <translation>가장 오래된 문서</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quote Selection Determined By --></label>
+        <name>echosign_dev1__Quote_Selection_Field__c</name>
+        <picklistValues>
+            <masterLabel>Created Date</masterLabel>
+            <translation>생성일</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Modified Date</masterLabel>
+            <translation>마지막 수정 날짜</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quote Selection from Opportunity --></label>
+        <name>echosign_dev1__Quote_Selection_Type__c</name>
+        <picklistValues>
+            <masterLabel>Latest Quote</masterLabel>
+            <translation>최신 견적서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oldest Quote</masterLabel>
+            <translation>가장 오래된 견적서</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related Recipient Relationship --></label>
+        <name>echosign_dev1__Related_Recipient_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Selection Field --></label>
+        <name>echosign_dev1__Related_Selection_Field__c</name>
+        <picklistValues>
+            <masterLabel>Created Date</masterLabel>
+            <translation>생성일</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Modified Date</masterLabel>
+            <translation>마지막 수정 날짜</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related Selection Type --></label>
+        <name>echosign_dev1__Related_Selection_Type__c</name>
+        <picklistValues>
+            <masterLabel>Latest</masterLabel>
+            <translation>최신 항목</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oldest</masterLabel>
+            <translation>가장 오래된 항목</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attachment Type --></label>
+        <name>echosign_dev1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Document from Content</masterLabel>
+            <translation>내용의 문서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document from EchoSign Library</masterLabel>
+            <translation>EchoSign 라이브러리의 문서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document from Library</masterLabel>
+            <translation>라이브러리의 문서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document from Master Object</masterLabel>
+            <translation>마스터 개체의 문서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Document from Master Quote</masterLabel>
+            <translation>마스터 견적서의 견적서 문서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Document from Opportunity Quote</masterLabel>
+            <translation>기회 견적서의 견적서 문서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Runtime Variable</masterLabel>
+            <translation>런타임 변수</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Variable Name --></label>
+        <name>echosign_dev1__Variable_Name__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>파일 첨부 추가</value>
+    </caseValues>
+    <nameFieldLabel>파일 첨부 이름 추가</nameFieldLabel>
+    <layouts>
+        <layout>Add File Attachment Layout</layout>
+        <sections>
+            <label>사용자 정의 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

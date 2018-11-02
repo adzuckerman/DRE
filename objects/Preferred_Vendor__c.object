@@ -224,6 +224,468 @@
         <trackTrending>false</trackTrending>
         <type>Url</type>
     </fields>
+    <fields>
+        <fullName>Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Extraction__c</fullName>
+        <description>Data Extraction (Data &amp; Evidence Tables)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Data Extraction (Data &amp; Evidence Tables)</inlineHelpText>
+        <label>Data Extraction</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes - Primary</fullName>
+                    <default>false</default>
+                    <label>Yes - Primary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Secondary</fullName>
+                    <default>false</default>
+                    <label>Yes - Secondary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Tertiary</fullName>
+                    <default>false</default>
+                    <label>Yes - Tertiary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Capable</fullName>
+                    <default>false</default>
+                    <label>Yes - Capable</label>
+                </value>
+                <value>
+                    <fullName>Yes - Can Get Resources</fullName>
+                    <default>false</default>
+                    <label>Yes - Can Get Resources</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Health_Econ_Modeling_Pub__c</fullName>
+        <description>Health Economics Modeling / Publication</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Health Economics Modeling / Publication</inlineHelpText>
+        <label>Health Econ Modeling / Pub</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes - Primary</fullName>
+                    <default>false</default>
+                    <label>Yes - Primary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Secondary</fullName>
+                    <default>false</default>
+                    <label>Yes - Secondary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Tertiary</fullName>
+                    <default>false</default>
+                    <label>Yes - Tertiary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Capable</fullName>
+                    <default>false</default>
+                    <label>Yes - Capable</label>
+                </value>
+                <value>
+                    <fullName>Yes - Can Get Resources</fullName>
+                    <default>false</default>
+                    <label>Yes - Can Get Resources</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Health_Policy_Report_Pub__c</fullName>
+        <description>Health Policy Report / Publication</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Health Policy Report / Publication</inlineHelpText>
+        <label>Health Policy Report / Pub</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes - Primary</fullName>
+                    <default>false</default>
+                    <label>Yes - Primary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Secondary</fullName>
+                    <default>false</default>
+                    <label>Yes - Secondary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Tertiary</fullName>
+                    <default>false</default>
+                    <label>Yes - Tertiary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Capable</fullName>
+                    <default>false</default>
+                    <label>Yes - Capable</label>
+                </value>
+                <value>
+                    <fullName>Yes - Can Get Resources</fullName>
+                    <default>false</default>
+                    <label>Yes - Can Get Resources</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quality_Appraisal__c</fullName>
+        <description>Quality Appraisal (e.g. RoB)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quality Appraisal (e.g. RoB)</inlineHelpText>
+        <label>Quality Appraisal</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes - Primary</fullName>
+                    <default>false</default>
+                    <label>Yes - Primary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Secondary</fullName>
+                    <default>false</default>
+                    <label>Yes - Secondary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Tertiary</fullName>
+                    <default>false</default>
+                    <label>Yes - Tertiary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Capable</fullName>
+                    <default>false</default>
+                    <label>Yes - Capable</label>
+                </value>
+                <value>
+                    <fullName>Yes - Can Get Resources</fullName>
+                    <default>false</default>
+                    <label>Yes - Can Get Resources</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>State_Province__c</fullName>
+        <externalId>false</externalId>
+        <label>State/Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Statistics_Analysis__c</fullName>
+        <description>Statistics / Analysis</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Statistics / Analysis</inlineHelpText>
+        <label>Statistics / Analysis</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes - Primary</fullName>
+                    <default>false</default>
+                    <label>Yes - Primary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Secondary</fullName>
+                    <default>false</default>
+                    <label>Yes - Secondary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Tertiary</fullName>
+                    <default>false</default>
+                    <label>Yes - Tertiary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Capable</fullName>
+                    <default>false</default>
+                    <label>Yes - Capable</label>
+                </value>
+                <value>
+                    <fullName>Yes - Can Get Resources</fullName>
+                    <default>false</default>
+                    <label>Yes - Can Get Resources</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tech_Report_Feas_Assmt_Pub__c</fullName>
+        <description>Technical Report / Feasibility Assessment / Publication Medical-Clinical (Includes Biostats)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Technical Report / Feasibility Assessment / Publication Medical-Clinical (Includes Biostats)</inlineHelpText>
+        <label>Tech Report / Feas Assmt / Pub Med-Clin</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes - Primary</fullName>
+                    <default>false</default>
+                    <label>Yes - Primary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Secondary</fullName>
+                    <default>false</default>
+                    <label>Yes - Secondary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Tertiary</fullName>
+                    <default>false</default>
+                    <label>Yes - Tertiary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Capable</fullName>
+                    <default>false</default>
+                    <label>Yes - Capable</label>
+                </value>
+                <value>
+                    <fullName>Yes - Can Get Resources</fullName>
+                    <default>false</default>
+                    <label>Yes - Can Get Resources</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tech_Report_Pub_Diag_Prog__c</fullName>
+        <description>Technical Report / Publication (Diagnostic / Prognostic)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Technical Report / Publication (Diagnostic / Prognostic)</inlineHelpText>
+        <label>Tech Report / Pub (Diag / Prog)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes - Primary</fullName>
+                    <default>false</default>
+                    <label>Yes - Primary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Secondary</fullName>
+                    <default>false</default>
+                    <label>Yes - Secondary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Tertiary</fullName>
+                    <default>false</default>
+                    <label>Yes - Tertiary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Capable</fullName>
+                    <default>false</default>
+                    <label>Yes - Capable</label>
+                </value>
+                <value>
+                    <fullName>Yes - Can Get Resources</fullName>
+                    <default>false</default>
+                    <label>Yes - Can Get Resources</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tech_Report_Pub_Epi_Clinical__c</fullName>
+        <description>Technical Report / Publication (Epi / Clinical)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Technical Report / Publication (Epi / Clinical)</inlineHelpText>
+        <label>Tech Report / Pub (Epi / Clinical)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes - Primary</fullName>
+                    <default>false</default>
+                    <label>Yes - Primary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Secondary</fullName>
+                    <default>false</default>
+                    <label>Yes - Secondary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Tertiary</fullName>
+                    <default>false</default>
+                    <label>Yes - Tertiary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Capable</fullName>
+                    <default>false</default>
+                    <label>Yes - Capable</label>
+                </value>
+                <value>
+                    <fullName>Yes - Can Get Resources</fullName>
+                    <default>false</default>
+                    <label>Yes - Can Get Resources</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tech_Report_Pub_Health_Econ__c</fullName>
+        <description>Technical Report / Publication (Health Economic)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Technical Report / Publication (Health Economic)</inlineHelpText>
+        <label>Tech Report / Pub (Health Econ)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes - Primary</fullName>
+                    <default>false</default>
+                    <label>Yes - Primary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Secondary</fullName>
+                    <default>false</default>
+                    <label>Yes - Secondary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Tertiary</fullName>
+                    <default>false</default>
+                    <label>Yes - Tertiary</label>
+                </value>
+                <value>
+                    <fullName>Yes - Capable</fullName>
+                    <default>false</default>
+                    <label>Yes - Capable</label>
+                </value>
+                <value>
+                    <fullName>Yes - Can Get Resources</fullName>
+                    <default>false</default>
+                    <label>Yes - Can Get Resources</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Zip_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Zip/Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -247,6 +709,19 @@
     <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>DRE_Point_of_Contact__c</columns>
+        <columns>Rate_Type__c</columns>
+        <columns>Hourly_Rate__c</columns>
+        <columns>Data_Extraction__c</columns>
+        <columns>Quality_Appraisal__c</columns>
+        <columns>Tech_Report_Pub_Epi_Clinical__c</columns>
+        <columns>Tech_Report_Pub_Diag_Prog__c</columns>
+        <columns>Tech_Report_Pub_Health_Econ__c</columns>
+        <columns>Tech_Report_Feas_Assmt_Pub__c</columns>
+        <columns>Health_Econ_Modeling_Pub__c</columns>
+        <columns>Health_Policy_Report_Pub__c</columns>
+        <columns>Statistics_Analysis__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

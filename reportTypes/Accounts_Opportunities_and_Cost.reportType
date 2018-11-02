@@ -295,17 +295,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Disclosure_Agreement_Start_Date__c</field>
+            <field>Confidentiality_Agreement_Start_Date__c</field>
             <table>Account</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Disclosure_Agreement_End_Date__c</field>
+            <field>Confidentiality_Agreement_End_Date__c</field>
             <table>Account</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Disclosure_Agreement_Type__c</field>
+            <field>Confidentiality_Agreement_Type__c</field>
             <table>Account</table>
         </columns>
         <columns>

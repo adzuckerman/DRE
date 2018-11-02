@@ -28,6 +28,7 @@ public class TASKRAYProjectAllHandlerTest {
         
         TASKRAY__Project__c tProject = new TASKRAY__Project__c();
         tProject.TASKRAY__trAccount__c = acc.Id;
+        tProject.Toggl_Id__c = 'A';
         insert tProject;
         
         TASKRAY__Project__c currentTProject = [SELECT Id, Project_Stage_New__c FROM TASKRAY__Project__c WHERE Id =: tProject.Id];
@@ -53,6 +54,7 @@ public class TASKRAYProjectAllHandlerTest {
         
         TASKRAY__Project__c tProject = new TASKRAY__Project__c();
         tProject.TASKRAY__trAccount__c = acc.Id;
+        tProject.Toggl_Id__c = 'A';
         insert tProject;
         
         TASKRAY__Project__c currentTProject = [SELECT Id, Project_Stage_New__c FROM TASKRAY__Project__c WHERE Id =: tProject.Id];
@@ -77,6 +79,7 @@ public class TASKRAYProjectAllHandlerTest {
         
         TASKRAY__Project__c tProject = new TASKRAY__Project__c();
         tProject.TASKRAY__trAccount__c = acc.Id;
+        tProject.Toggl_Id__c = 'A';
         insert tProject;
         
         TASKRAY__Project__c currentTProject = [SELECT Id, Project_Stage_New__c FROM TASKRAY__Project__c WHERE Id =: tProject.Id];
@@ -101,6 +104,7 @@ public class TASKRAYProjectAllHandlerTest {
         
         TASKRAY__Project__c tProject = new TASKRAY__Project__c();
         tProject.TASKRAY__trAccount__c = acc.Id;
+        tProject.Toggl_Id__c = 'A';
         insert tProject;
         
         TASKRAY__Project__c currentTProject = [SELECT Id, Project_Stage_New__c FROM TASKRAY__Project__c WHERE Id =: tProject.Id];
@@ -127,6 +131,7 @@ public class TASKRAYProjectAllHandlerTest {
         tProject.TASKRAY__trAccount__c = acc.Id;
         tProject.Secondary_Project_Name__c = 'Seconday Project Name';
         tProject.Toggl_Auto_Creation_Approved__c = true;
+        tProject.Toggl_Id__c = 'A';
         
         Test.StartTest();
             insert tProject;
@@ -142,6 +147,7 @@ public class TASKRAYProjectAllHandlerTest {
         TASKRAY__Project__c tProject = new TASKRAY__Project__c();
         tProject.TASKRAY__trAccount__c = acc.Id;
         tProject.Secondary_Project_Name__c = 'Seconday Project Name';
+        tProject.Toggl_Id__c = 'A';
         insert tProject;
         
         TASKRAY__Project__c currentTProject = [SELECT Id, Toggl_Auto_Creation_Approved__c  FROM TASKRAY__Project__c WHERE Id =: tProject.Id];
@@ -161,6 +167,7 @@ public class TASKRAYProjectAllHandlerTest {
         TASKRAY__Project__c tProject = new TASKRAY__Project__c();
         tProject.TASKRAY__trAccount__c = acc.Id;
         tProject.Secondary_Project_Name__c = 'Seconday Project Name';
+        tProject.Toggl_Id__c = 'A';
         insert tProject;
         
         TASKRAY__Project__c currentTProject = [SELECT Id, Toggl_Auto_Creation_Approved__c  FROM TASKRAY__Project__c WHERE Id =: tProject.Id];
@@ -186,17 +193,20 @@ public class TASKRAYProjectAllHandlerTest {
         tProject.TASKRAY__trAccount__c = acc.Id;
         tProject.Name = 'Test Name';
         tProject.Secondary_Project_Name__c = 'Seconday Project Name';
+        tProject.Toggl_Id__c = 'A';
         tpList.add(tProject);
         
         TASKRAY__Project__c tProject1 = new TASKRAY__Project__c();
         tProject1.TASKRAY__trAccount__c = acc.Id;
         tProject1.Name = 'Test Name';
         tProject1.Secondary_Project_Name__c = 'Seconday Project Name';
+        tProject.Toggl_Id__c = 'A';
         
         TASKRAY__Project__c tProject2 = new TASKRAY__Project__c();
         tProject2.TASKRAY__trAccount__c = acc.Id;
         tProject2.Name = 'Test Name1';
         tProject2.Secondary_Project_Name__c = 'Seconday Project Name';
+        tProject.Toggl_Id__c = 'A';
         tpList.add(tProject2);
         
         insert tpList;

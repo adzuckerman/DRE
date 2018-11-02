@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The total emails sent during the hour --></help>
+        <label><!-- Emails Sent --></label>
+        <name>MC4SF__Emails_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- MC Campaign --></label>
+        <name>MC4SF__MC_Campaign__c</name>
+        <relationshipLabel><!-- MC Campaign Hourly Stats --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Unique clicks seen during the hour --></help>
+        <label><!-- Recipients Click --></label>
+        <name>MC4SF__Recipients_Click__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statistics Hour --></label>
+        <name>MC4SF__Statistics_Hour__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique opens seen during the hour --></help>
+        <label><!-- Unique Opens --></label>
+        <name>MC4SF__Unique_Opens__c</name>
+    </fields>
+    <layouts>
+        <layout>MC Campaign Hourly Stats Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Litmos__UserModuleResult__c$Name</field>
+    </columns>
+    <columns>
+        <field>Litmos__UserModuleResult__c$Litmos__Program_Name__c</field>
+    </columns>
+    <columns>
+        <field>Litmos__UserModuleResult__c$Litmos__ModuleNewID__c.Name</field>
+    </columns>
+    <columns>
+        <field>Litmos__UserModuleResult__c$Litmos__ModuleNewID__c.Litmos__Type__c</field>
+    </columns>
+    <columns>
+        <field>Litmos__UserModuleResult__c$Litmos__ModuleNewID__c.Id</field>
+    </columns>
+    <columns>
+        <field>Litmos__UserModuleResult__c$Litmos__AttemptNumber__c</field>
+    </columns>
+    <columns>
+        <field>Litmos__UserModuleResult__c$Litmos__Score__c</field>
+    </columns>
+    <columns>
+        <field>Litmos__UserModuleResult__c$Litmos__TimeTaken__c</field>
+    </columns>
+    <columns>
+        <field>Litmos__UserModuleResult__c$LastModifiedDate</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Course &amp; Modules</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Litmos__SFDC_User_Module_Results__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Litmos__UserModuleResult__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

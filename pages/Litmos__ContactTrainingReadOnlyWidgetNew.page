@@ -1,0 +1,191 @@
+<apex:page docType="html-5.0" standardController="contact" extensions="Litmos.ContactTrainingReadOnlyController" tabStyle="contact" standardStylesheets="true" sidebar="false">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no"/> 
+</head>
+
+<apex:form >
+<apex:pageBlock >
+<div class="tooltip">This graphic calculates assignments and completions for courses.</div>
+<h1 title="" style="width: 100%; position: relative; display: block;">Training</h1>
+
+<div class="three-widget">
+  <apex:pageBlocksection rendered="{!!showSyncError}" title="" columns="3" collapsible="false" >
+ 
+    <apex:outputPanel styleClass="Training_container">
+           <c:LargeNumberDisplay dataSource="{!assignedlargeNum}"/>
+    </apex:outputPanel>
+
+    <apex:outputPanel styleClass="Training_container">
+      <c:LargeNumberDisplay dataSource="{!completedlargeNum}"/>
+    </apex:outputPanel>
+    
+    <apex:outputPanel styleClass="Training_container"  >
+      <c:D3Gauge dataSource="{!completedPercGauge}"/>
+    </apex:outputPanel>
+
+  </apex:pageBlocksection>
+
+  <apex:outputPanel rendered="{!showSyncError}">
+    <d class="no-content">{!$Label.litmos__sync_error_message}</d>
+  </apex:outputPanel>
+ 
+  </div> 
+  </apex:pageBlock>
+  
+  
+
+   </apex:form>  
+   
+   
+   <style>
+
+p.no-content {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #676767;
+    padding: 40px;
+}
+d.no-content {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #676767;
+    padding: 40px;
+}
+   
+   body .bPageBlock .pbBody .dataCol{
+    background:#fff;
+}
+.Training_container{
+    
+    margin:10px;
+    display: block;
+    border-radius: 3px;
+    background: #F8F8F8;
+    border: #D5D5D5 1px solid;
+    padding: 20px;
+    min-height:231px;
+    align: middle;
+}
+
+.tooltip {
+      content: attr(title);
+      padding: 8px;
+      
+      color: #000;
+        -ms-border-radius: 4px;
+       -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      display:none;
+      z-index:99;
+      position: absolute;
+      top: 0px;
+      left: 20%;
+      width: 50%;
+      float: right;
+      text-align: center;
+  }
+  
+.pbBody {
+    position:relative;
+  }
+
+.pbBody:hover .tooltip {
+    display:block;
+}
+  
+@media (max-width:567px){
+    .three-widget{
+        width:360px;
+        overflow:auto;
+    }
+    .apexp{
+        width: 360px !important;
+        overflow:auto;
+    }
+    .three-widget .detailList td{
+        display:block;
+        
+    }
+    
+    .bPageBlock .detailList .dataCol{
+         width: 360px;
+        overflow:hidden;
+    }
+     .piechart{
+        width:300px !important; 
+    }
+    .Training_container{
+        margin:0px !important;
+        pading:0px !important;
+        
+    }
+}
+
+@media (max-width:600px){
+    .three-widget{
+        width:100%;
+        overflow:hidden;
+    }
+    .bPageBlock .detailList .dataCol{width:auto;}
+    .apexp{
+        width: 400px!important;
+        overflow:auto;
+        position:absolute;
+        right:0;
+        left:5%;
+    }
+    .three-widget .detailList td{
+        display:block;
+        
+    }
+    
+    .bPageBlock .detailList .dataCol{
+         width: 400px;
+        overflow:hidden;
+    }
+     .piechart{
+        width:300px !important; 
+    }
+    .Training_container{
+        margin:0px !important;
+        pading:0px !important;
+        width:58%;
+    }
+   
+    .three-widget{
+    width:100%;}
+    .contactBlock{
+    width:80%;
+    }
+    .gauge_container svg{
+    width:90%;
+    }
+}
+.contactBlock h1{
+        line-height:25px;
+    }
+.ng-scope{
+    text-align:center;
+}    
+.apexp .bPageBlock p {
+    margin-bottom: 0;
+    display: table-cell;
+    vertical-align: middle;
+    height: 160px;
+    text-align: center;
+    width: 25%;
+}
+.apexp .bPageBlock d {
+    margin-bottom: 0;
+    display: table-cell;
+    vertical-align: middle;
+    height: 160px;
+    text-align: center;
+    width: 25%;
+}
+
+</style>  
+</apex:page>

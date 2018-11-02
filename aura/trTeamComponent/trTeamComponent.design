@@ -1,6 +1,1 @@
-<design:component label="TaskRay Team">
-  <design:attribute name="customMinHeight" label="Custom Min Height" default="360px" />
-  <sfdc:objects>
-    <sfdc:object>TASKRAY__Project__c</sfdc:object>
-  </sfdc:objects>
-</design:component>
+(hidden)

@@ -43,6 +43,9 @@
     <columns>
         <field>CUST_OWNER_NAME</field>
     </columns>
+    <columns>
+        <field>TASKRAY__Project__c.Contracted_Service__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>TASKRAY__Project__c.TASKRAY__Status__c</column>

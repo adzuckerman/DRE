@@ -1,4 +1,1 @@
-<aura:event type="COMPONENT" description="Generic Component Event">
-  <aura:attribute name="actionType" type="String"/>
-  <aura:attribute name="payload" type="Object"/>
-</aura:event>
+(hidden)

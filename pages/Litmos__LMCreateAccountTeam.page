@@ -1,0 +1,16 @@
+<apex:page StandardController="Account" extensions="Litmos.LMCreateAccountTeamController">
+    <apex:form >
+        <apex:actionFunction action="{!cancelAccount}" name="cancel"/>
+        <apex:actionFunction action="{!createLitmosData}" name="createLitmos"/>
+    </apex:form>
+    <script src="/soap/ajax/28.0/connection.js" type="text/javascript"></script>
+    <script src="/soap/ajax/28.0/apex.js" type="text/javascript"></script>
+     <script>
+        if("{!Account.Litmos_Id__c}" != ""){ 
+            //alert("A Team already exists for this Account"); 
+            //cancel();
+        }else{
+             //createLitmos();
+        }
+    </script> 
+</apex:page>

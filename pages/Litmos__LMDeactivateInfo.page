@@ -1,0 +1,3 @@
+<apex:page >
+  <b><apex:outputLabel value="Your account is set as deactivated, please contact your Litmos Administrator." /></b>
+</apex:page>

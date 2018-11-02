@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
         <fullName>Email_PC_Team_to_Review_Modify_Project_Request_Upon_Submission</fullName>
-        <ccEmails>kphan@doctorevidence.com</ccEmails>
+        <ccEmails>pc@doctorevidence.com</ccEmails>
+        <ccEmails>adam@omnivodigital.com</ccEmails>
         <ccEmails>rkoretoff@doctorevidence.com</ccEmails>
+        <ccEmails>ce@doctorevidence.com</ccEmails>
         <description>Email PC Team to Review / Modify Project Request Upon Submission</description>
         <protected>false</protected>
         <senderType>CurrentUser</senderType>

@@ -33,12 +33,6 @@
     <columns>
         <field>TASKRAY__Project__c.Contracted_Service__c</field>
     </columns>
-    <columns>
-        <field>TASKRAY__Project__c.Operations_Deliverable__c</field>
-    </columns>
-    <columns>
-        <field>TASKRAY__Project__c.Client_Deliverable__c</field>
-    </columns>
     <filter>
         <criteriaItems>
             <column>TASKRAY__Project__c.Client_Delivered_Date__c</column>

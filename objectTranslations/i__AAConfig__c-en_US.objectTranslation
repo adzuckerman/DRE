@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- SysLog Lifespan --></label>
+        <name>i__AALogLifespan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do internal emails to Email-to-Case addresses create new cases? --></help>
+        <label><!-- Allow internal Email-to-Case --></label>
+        <name>i__AllowInternalMail2Case__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are portal users allowed to access Absolute Automation pages and snippets? --></help>
+        <label><!-- Allow UI Access for Portal Users --></label>
+        <name>i__AllowPortalAccess__c</name>
+    </fields>
+    <fields>
+        <label><!-- Don&apos;t filter attachments for case emails --></label>
+        <name>i__AttKeepAllForCases__c</name>
+    </fields>
+    <fields>
+        <help><!-- Skip image attachments smaller than this many KB --></help>
+        <label><!-- Min size for image attachments --></label>
+        <name>i__AttMinImgSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skippable Attachment types --></label>
+        <name>i__AttSkipExts__c</name>
+    </fields>
+    <fields>
+        <help><!-- The base URL of the salesforce.com instance, for example &quot;https://na5.salesforce.com&quot; --></help>
+        <label><!-- Base URL --></label>
+        <name>i__BaseURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Patterns --></label>
+        <name>i__CasePatterns__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check for custom page overrides? --></help>
+        <label><!-- Check for custom page overrides? --></label>
+        <name>i__CheckCustomPages__c</name>
+    </fields>
+    <fields>
+        <help><!-- When copying Emails to Tasks, copy the Email Attachments too? --></help>
+        <label><!-- Copy Attachments to Tasks with Emails? --></label>
+        <name>i__CopyAttachmentsToTasks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copy Emails to Tasks? --></help>
+        <label><!-- Copy Emails to Tasks? --></label>
+        <name>i__CopyEmailsToTasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- deleted field --></label>
+        <name>i__DataVersion__c</name>
+    </fields>
+    <fields>
+        <help><!-- Apply the Email Lifespan to Emails hard-linked to Cases or Opps? --></help>
+        <label><!-- Email Lifespan on Linked Emails? --></label>
+        <name>i__EmailLifespanOnLinked__c</name>
+    </fields>
+    <fields>
+        <help><!-- Emails directly linked to other objects (Cases, Opps) are not deleted --></help>
+        <label><!-- Email Lifespan --></label>
+        <name>i__EmailLifespan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Lookups --></label>
+        <name>i__EmailLookups__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default priority for Email-to-Task --></help>
+        <label><!-- Default priority for Email-to-Task --></label>
+        <name>i__EmailToTaskPriority__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default status for Email-to-Task --></help>
+        <label><!-- Default status for Email-to-Task --></label>
+        <name>i__EmailToTaskStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email-To-Task Target --></label>
+        <name>i__EmailToTaskTarget__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacts</masterLabel>
+            <translation><!-- Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads</masterLabel>
+            <translation><!-- Leads --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Default type for Email-to-Task --></help>
+        <label><!-- Default type for Email-to-Task --></label>
+        <name>i__EmailToTaskType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypt linked msgs --></label>
+        <name>i__EncryptLinkedMsgs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encryption Key --></label>
+        <name>i__EncryptionKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- ISP Domains --></label>
+        <name>i__ISPDomains__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last lead processed --></label>
+        <name>i__InstallContacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last contact processed --></label>
+        <name>i__InstallLeads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Page layout install progress --></label>
+        <name>i__InstallPageLayouts__c</name>
+    </fields>
+    <fields>
+        <label><!-- deleted field --></label>
+        <name>i__InstallPages__c</name>
+    </fields>
+    <fields>
+        <label><!-- deleted field --></label>
+        <name>i__InstallSkipAddrs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last user processed --></label>
+        <name>i__InstallUsers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Domains --></label>
+        <name>i__InternalDomains__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Data Maintenance --></label>
+        <name>i__LastMaintenance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Usage Ping --></label>
+        <name>i__LastUsagePing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email-to-Case Addresses --></label>
+        <name>i__Mail2CaseAddrs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Cron Id --></label>
+        <name>i__MaintenanceCronId__c</name>
+    </fields>
+    <fields>
+        <help><!-- When Email-to-Case creates a Case, should auto-response emails be triggered? --></help>
+        <label><!-- Send AutoResponse emails for new Cases --></label>
+        <name>i__NewCase_triggerAutoResponseEmail__c</name>
+    </fields>
+    <fields>
+        <help><!-- When Email-to-Case creates a Case, should user emails be triggered? --></help>
+        <label><!-- Send User emails for new Cases --></label>
+        <name>i__NewCase_triggerUserEmail__c</name>
+    </fields>
+    <fields>
+        <help><!-- When Email-to-Case creates a Case, should the default AssignmentRule be applied --></help>
+        <label><!-- Use Default AssignmentRule for new Cases --></label>
+        <name>i__NewCase_useDefaultAssignmentRule__c</name>
+    </fields>
+    <fields>
+        <help><!-- When Leads are created in the &quot;Pending&quot; page, should auto-response emails be triggered? --></help>
+        <label><!-- Send AutoResponse emails for new Leads --></label>
+        <name>i__NewLead_triggerAutoResponseEmail__c</name>
+    </fields>
+    <fields>
+        <help><!-- When Leads are created in the &quot;Pending&quot; page, should user emails be triggered? --></help>
+        <label><!-- Send User emails for new Leads --></label>
+        <name>i__NewLead_triggerUserEmail__c</name>
+    </fields>
+    <fields>
+        <help><!-- When Leads are created in the &quot;Pending&quot; page, should the default AssignmentRule be applied? --></help>
+        <label><!-- Use Default AssignmentRule for new Leads --></label>
+        <name>i__NewLead_useDefaultAssignmentRule__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the &quot;Skip email content&quot; field static (vs. regexp)? --></help>
+        <label><!-- Is NoLogContent static? --></label>
+        <name>i__NoLogContentStatic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skip email if content contains --></label>
+        <name>i__NoLogContent__c</name>
+    </fields>
+    <fields>
+        <help><!-- deleted field --></help>
+        <label><!-- deleted field --></label>
+        <name>i__NoPending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pending Lifespan --></label>
+        <name>i__PendingLifespan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Set Last Email fields --></label>
+        <name>i__SetLastEmailFields__c</name>
+    </fields>
+    <fields>
+        <help><!-- deleted field --></help>
+        <label><!-- deleted field --></label>
+        <name>i__ShowOpportunityLinkage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show the Opportunity lookup field on Email view/edit pages? --></help>
+        <label><!-- Show Opportunity lookup on Email pages --></label>
+        <name>i__ShowOpportunityLookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skip Body RE --></label>
+        <name>i__SkipBodyRE__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter skip-causing expressions here, one per line.  Enabled regular expressions if desired. --></help>
+        <label><!-- Skip Body --></label>
+        <name>i__SkipBody__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skip Headers RE --></label>
+        <name>i__SkipHdrsRE__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter skip-causing expressions here, one per line.  Enabled regular expressions if desired. --></help>
+        <label><!-- Skip Headers --></label>
+        <name>i__SkipHdrs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skip Subj RE --></label>
+        <name>i__SkipSubjRE__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter skip-causing expressions here, one per line.  Enabled regular expressions if desired. --></help>
+        <label><!-- Skip Subj --></label>
+        <name>i__SkipSubj__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skippable AccountContactRoles --></label>
+        <name>i__SkippableAccContactRoles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skippable OpportunityContactRoles --></label>
+        <name>i__SkippableOppContactRoles__c</name>
+    </fields>
+    <fields>
+        <label><!-- iHance UI Key --></label>
+        <name>i__UIKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- When Email-to-Case updates a Case Contact, should other emails be triggered? --></help>
+        <label><!-- Send &quot;Other Emails&quot; when updating Cases? --></label>
+        <name>i__UpdCase_triggerOtherEmail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include AccountContactRoles in Account &quot;Emails&quot; snippets? --></help>
+        <label><!-- Use AccountContactRoles --></label>
+        <name>i__UseAccContactRoles__c</name>
+    </fields>
+    <layouts>
+        <layout>AAConfig Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

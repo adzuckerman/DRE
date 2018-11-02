@@ -58,19 +58,6 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Monthly_Revenue_Schedule__c</fullName>
-        <externalId>false</externalId>
-        <label>Monthly Revenue Schedule</label>
-        <referenceTo>Monthly_Revenue_Schedule__c</referenceTo>
-        <relationshipLabel>Product Revenue Schedules</relationshipLabel>
-        <relationshipName>Product_Revenue_Schedules</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields>
         <fullName>Opportunity__c</fullName>
         <externalId>false</externalId>
         <formula>Monthly_Revenue_Schedule__r.Opportunity__c</formula>
@@ -137,6 +124,54 @@ Product__r.Name = 'DOC Data Licensing'
         <scale>2</scale>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Offering_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Product__r.Offering__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Offering Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Revenue_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Revenue Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Services</fullName>
+                    <default>false</default>
+                    <label>Services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Monthly_Revenue_Schedule__c</fullName>
+        <externalId>false</externalId>
+        <label>Monthly Revenue Schedule</label>
+        <referenceTo>Monthly_Revenue_Schedule__c</referenceTo>
+        <relationshipLabel>Product Revenue Schedules</relationshipLabel>
+        <relationshipName>Product_Revenue_Schedules</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>

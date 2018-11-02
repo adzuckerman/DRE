@@ -1,0 +1,89 @@
+<apex:page StandardController="Contact" extensions="Litmos.CreateLitmosContactAssignController">
+    <apex:form >
+        <apex:actionFunction action="{!createLitmosContactSync}" name="createContactWithSendMessage"/>
+        <apex:actionFunction action="{!createLitmosContactWithoutMessageSync}" name="createContactWithoutSendMessage"/>
+        <apex:actionFunction action="{!cancelContact}" name="cancel"/>
+        <apex:actionFunction action="{!syncLitmosData}" name="syncLitmos"/>
+    </apex:form>
+<apex:includeScript value="{!$Resource.Litmos__jquery_min}"/>
+<apex:includeScript value="{!$Resource.Litmos__jqueryuimin}"/>
+<apex:stylesheet value="{!$Resource.Litmos__jqueryui}"/>
+        <div id="dialoge" title="Alert message" style="display: none">
+            <div class="ui-dialog-content ui-widget-content">
+                <p>
+                    <span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0"></span>
+                    <label id="lblMessage">
+                    </label>
+                </p>
+            </div>
+        </div> 
+     <script>
+        if("{!Contact.LitmosID__c}" == "" && "{!Contact.Litmos_Activated__c}" == "false"){ 
+            var r = confirm("No training profile exists for this Contact. Would you like to create one?"); 
+            if(r == true){
+                //window.parent.location.href='/apex/CreateLitmosContact?id={!Contact.Id}' 
+                ShowCustomDialog();
+            }else{
+                //window.parent.location.href='/{!Contact.Id}' 
+                cancel();
+            } 
+        }else{
+            //window.parent.location.href='/apex/CustomContactTrainingWidget?Id={!Contact.Id}'
+             syncLitmos();
+        }
+        
+        function ShowCustomDialog()
+            {
+                ShowDialogBox('Confirm','Would you like to send this person a login email?','Yes','No', 'GoToAssetList',null);
+            }
+
+            function ShowDialogBox(title, content, btn1text, btn2text, functionText, parameterList) {
+                var btn1css;
+                var btn2css;
+                
+                if (btn1text == '') {
+                    btn1css = "hidecss";
+                } else {
+                    btn1css = "showcss";
+                }
+
+                if (btn2text == '') {
+                    btn2css = "hidecss";
+                } else {
+                    btn2css = "showcss";
+                }
+                $("#lblMessage").html(content);
+
+                $("#dialoge").dialog({
+               
+                    resizable: false,
+                    title: title,
+                    modal: true,
+                    width: '400px',
+                    height: 'auto',
+                    bgiframe: false,
+                    hide: { effect: 'scale', duration: 400 },
+            
+                    buttons: [
+                                    {
+                                        text: btn1text,
+                                        "class": btn1css,
+                                        click: function () {
+                                                                          
+                                            createContactWithSendMessage();
+
+                                        }
+                                    },
+                                    {
+                                        text: btn2text,
+                                        "class": btn2css,
+                                        click: function () {
+                                             createContactWithoutSendMessage();
+                                        }
+                                    }
+                                ]
+                });
+            } 
+    </script> 
+    
+</apex:page>

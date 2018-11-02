@@ -37,14 +37,18 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Opportunity_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <businessProcesses>
         <fullName>Default Sales Process</fullName>
         <description>Sales process for default</description>
         <isActive>true</isActive>
         <values>
-            <fullName>Capabilities Presentation %2F Demo</fullName>
+            <fullName>Capabilities Presentation</fullName>
             <default>false</default>
         </values>
         <values>
@@ -88,6 +92,10 @@
         <fullName>Renewal Sales Process</fullName>
         <description>Sales process for renewal.</description>
         <isActive>true</isActive>
+        <values>
+            <fullName>Capabilities Presentation</fullName>
+            <default>false</default>
+        </values>
         <values>
             <fullName>Closed Lost</fullName>
             <default>false</default>
@@ -170,103 +178,6 @@
                     <label>&lt; $100M</label>
                 </value>
             </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Asset_Type__c</fullName>
-        <description>Condition of the current content asset</description>
-        <externalId>false</externalId>
-        <label>DOC Data Asset Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <controllingField>Product_Category__c</controllingField>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>New</fullName>
-                    <default>false</default>
-                    <label>New</label>
-                </value>
-                <value>
-                    <fullName>High Renovation</fullName>
-                    <default>false</default>
-                    <label>High Renovation</label>
-                </value>
-                <value>
-                    <fullName>Low Renovation</fullName>
-                    <default>false</default>
-                    <label>Low Renovation</label>
-                </value>
-                <value>
-                    <fullName>Subscription</fullName>
-                    <default>false</default>
-                    <label>Subscription</label>
-                </value>
-                <value>
-                    <fullName>SaaS</fullName>
-                    <default>false</default>
-                    <label>SaaS</label>
-                </value>
-                <value>
-                    <fullName>N/A</fullName>
-                    <default>false</default>
-                    <label>N/A</label>
-                </value>
-            </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>DOC Label</controllingFieldValue>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>ASCO DOC Search</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>N/A</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>New</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>High Renovation</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Low Renovation</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Subscription</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>SaaS</valueName>
-            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -845,731 +756,6 @@
         <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>Disease_State__c</fullName>
-        <externalId>false</externalId>
-        <label>Disease State</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <controllingField>Product_Category__c</controllingField>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Abdominal Aortic Aneurysm</fullName>
-                    <default>false</default>
-                    <label>Abdominal Aortic Aneurysm</label>
-                </value>
-                <value>
-                    <fullName>Age-Related Macular Degeneration</fullName>
-                    <default>false</default>
-                    <label>Age-Related Macular Degeneration</label>
-                </value>
-                <value>
-                    <fullName>Anesthesia</fullName>
-                    <default>false</default>
-                    <label>Anesthesia</label>
-                </value>
-                <value>
-                    <fullName>Aortic Valve Regurgitation/Stenosis</fullName>
-                    <default>false</default>
-                    <label>Aortic Valve Regurgitation/Stenosis</label>
-                </value>
-                <value>
-                    <fullName>Asthma</fullName>
-                    <default>false</default>
-                    <label>Asthma</label>
-                </value>
-                <value>
-                    <fullName>Bradycardia</fullName>
-                    <default>false</default>
-                    <label>Bradycardia</label>
-                </value>
-                <value>
-                    <fullName>Cancer</fullName>
-                    <default>false</default>
-                    <label>Cancer</label>
-                </value>
-                <value>
-                    <fullName>Chronic Lymphocytic Leukemia</fullName>
-                    <default>false</default>
-                    <label>Chronic Lymphocytic Leukemia</label>
-                </value>
-                <value>
-                    <fullName>COPD</fullName>
-                    <default>false</default>
-                    <label>COPD</label>
-                </value>
-                <value>
-                    <fullName>Coronary Artery Disease</fullName>
-                    <default>false</default>
-                    <label>Coronary Artery Disease</label>
-                </value>
-                <value>
-                    <fullName>Cystic Fibrosis</fullName>
-                    <default>false</default>
-                    <label>Cystic Fibrosis</label>
-                </value>
-                <value>
-                    <fullName>Diabetes Type 1 &amp; 2</fullName>
-                    <default>false</default>
-                    <label>Diabetes Type 1 &amp; 2</label>
-                </value>
-                <value>
-                    <fullName>Diabetes Type 2</fullName>
-                    <default>false</default>
-                    <label>Diabetes Type 2</label>
-                </value>
-                <value>
-                    <fullName>Diabetic Macular Edema</fullName>
-                    <default>false</default>
-                    <label>Diabetic Macular Edema</label>
-                </value>
-                <value>
-                    <fullName>Dyslipidemia</fullName>
-                    <default>false</default>
-                    <label>Dyslipidemia</label>
-                </value>
-                <value>
-                    <fullName>Endometriosis</fullName>
-                    <default>false</default>
-                    <label>Endometriosis</label>
-                </value>
-                <value>
-                    <fullName>Gastric Cancer</fullName>
-                    <default>false</default>
-                    <label>Gastric Cancer</label>
-                </value>
-                <value>
-                    <fullName>Heart Failure</fullName>
-                    <default>false</default>
-                    <label>Heart Failure</label>
-                </value>
-                <value>
-                    <fullName>Hepatitis C</fullName>
-                    <default>false</default>
-                    <label>Hepatitis C</label>
-                </value>
-                <value>
-                    <fullName>HIV-1</fullName>
-                    <default>false</default>
-                    <label>HIV-1</label>
-                </value>
-                <value>
-                    <fullName>Hypertension</fullName>
-                    <default>false</default>
-                    <label>Hypertension</label>
-                </value>
-                <value>
-                    <fullName>Hypogonadism</fullName>
-                    <default>false</default>
-                    <label>Hypogonadism</label>
-                </value>
-                <value>
-                    <fullName>Lung Cancer</fullName>
-                    <default>false</default>
-                    <label>Lung Cancer</label>
-                </value>
-                <value>
-                    <fullName>Malignant Pleural Effusion</fullName>
-                    <default>false</default>
-                    <label>Malignant Pleural Effusion</label>
-                </value>
-                <value>
-                    <fullName>Melanoma</fullName>
-                    <default>false</default>
-                    <label>Melanoma</label>
-                </value>
-                <value>
-                    <fullName>Miscellaneous</fullName>
-                    <default>false</default>
-                    <label>Miscellaneous</label>
-                </value>
-                <value>
-                    <fullName>Mixed Cancers</fullName>
-                    <default>false</default>
-                    <label>Mixed Cancers</label>
-                </value>
-                <value>
-                    <fullName>Mixed Cardiac Diseases</fullName>
-                    <default>false</default>
-                    <label>Mixed Cardiac Diseases</label>
-                </value>
-                <value>
-                    <fullName>Mixed Immunology</fullName>
-                    <default>false</default>
-                    <label>Mixed Immunology</label>
-                </value>
-                <value>
-                    <fullName>Mixed Neurology</fullName>
-                    <default>false</default>
-                    <label>Mixed Neurology</label>
-                </value>
-                <value>
-                    <fullName>Mixed Opthamology</fullName>
-                    <default>false</default>
-                    <label>Mixed Opthamology</label>
-                </value>
-                <value>
-                    <fullName>Mixed Respiratory</fullName>
-                    <default>false</default>
-                    <label>Mixed Respiratory</label>
-                </value>
-                <value>
-                    <fullName>Multiple Sclerosis</fullName>
-                    <default>false</default>
-                    <label>Multiple Sclerosis</label>
-                </value>
-                <value>
-                    <fullName>N/A</fullName>
-                    <default>false</default>
-                    <label>N/A</label>
-                </value>
-                <value>
-                    <fullName>Obesity</fullName>
-                    <default>false</default>
-                    <label>Obesity</label>
-                </value>
-                <value>
-                    <fullName>Pigment Epithelial Detachment</fullName>
-                    <default>false</default>
-                    <label>Pigment Epithelial Detachment</label>
-                </value>
-                <value>
-                    <fullName>Polypoidal Choroidal Vasculopathy</fullName>
-                    <default>false</default>
-                    <label>Polypoidal Choroidal Vasculopathy</label>
-                </value>
-                <value>
-                    <fullName>Psychosis</fullName>
-                    <default>false</default>
-                    <label>Psychosis</label>
-                </value>
-                <value>
-                    <fullName>Radiculopathy/Spinal Stenosis</fullName>
-                    <default>false</default>
-                    <label>Radiculopathy/Spinal Stenosis</label>
-                </value>
-                <value>
-                    <fullName>Renal Cell Carcinoma</fullName>
-                    <default>false</default>
-                    <label>Renal Cell Carcinoma</label>
-                </value>
-                <value>
-                    <fullName>Respiratory Syncytial Virus</fullName>
-                    <default>false</default>
-                    <label>Respiratory Syncytial Virus</label>
-                </value>
-                <value>
-                    <fullName>Rheumatoid Arthritis</fullName>
-                    <default>false</default>
-                    <label>Rheumatoid Arthritis</label>
-                </value>
-                <value>
-                    <fullName>Soft Tissue Sarcoma</fullName>
-                    <default>false</default>
-                    <label>Soft Tissue Sarcoma</label>
-                </value>
-                <value>
-                    <fullName>Spondyloarthritis</fullName>
-                    <default>false</default>
-                    <label>Spondyloarthritis</label>
-                </value>
-                <value>
-                    <fullName>Stroke</fullName>
-                    <default>false</default>
-                    <label>Stroke</label>
-                </value>
-                <value>
-                    <fullName>Syncope</fullName>
-                    <default>false</default>
-                    <label>Syncope</label>
-                </value>
-                <value>
-                    <fullName>Thyroid Cancer</fullName>
-                    <default>false</default>
-                    <label>Thyroid Cancer</label>
-                </value>
-            </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>DOC Label</controllingFieldValue>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>ASCO DOC Search</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>N/A</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Abdominal Aortic Aneurysm</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Age-Related Macular Degeneration</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Anesthesia</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Aortic Valve Regurgitation/Stenosis</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Asthma</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Bradycardia</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Cancer</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Chronic Lymphocytic Leukemia</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>COPD</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Coronary Artery Disease</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Cystic Fibrosis</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Diabetes Type 1 &amp; 2</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Diabetes Type 2</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Diabetic Macular Edema</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Dyslipidemia</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Endometriosis</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Gastric Cancer</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Heart Failure</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Hepatitis C</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>HIV-1</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Hypertension</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Hypogonadism</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Lung Cancer</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Malignant Pleural Effusion</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Melanoma</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Miscellaneous</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Mixed Cancers</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Mixed Cardiac Diseases</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Mixed Immunology</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Mixed Neurology</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Mixed Opthamology</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Mixed Respiratory</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Multiple Sclerosis</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Obesity</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Pigment Epithelial Detachment</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Polypoidal Choroidal Vasculopathy</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Psychosis</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Radiculopathy/Spinal Stenosis</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Renal Cell Carcinoma</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Respiratory Syncytial Virus</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Rheumatoid Arthritis</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Soft Tissue Sarcoma</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Spondyloarthritis</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Stroke</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Syncope</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Thyroid Cancer</valueName>
-            </valueSettings>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Doc_Library_Asset_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>DOC Library Asset Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <controllingField>Product_Category__c</controllingField>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>New</fullName>
-                    <default>false</default>
-                    <label>New</label>
-                </value>
-                <value>
-                    <fullName>High Renovation</fullName>
-                    <default>false</default>
-                    <label>High Renovation</label>
-                </value>
-                <value>
-                    <fullName>Low Renovation</fullName>
-                    <default>false</default>
-                    <label>Low Renovation</label>
-                </value>
-                <value>
-                    <fullName>Subscription</fullName>
-                    <default>false</default>
-                    <label>Subscription</label>
-                </value>
-                <value>
-                    <fullName>SaaS</fullName>
-                    <default>false</default>
-                    <label>SaaS</label>
-                </value>
-                <value>
-                    <fullName>N/A</fullName>
-                    <default>false</default>
-                    <label>N/A</label>
-                </value>
-            </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>DOC Label</controllingFieldValue>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>ASCO DOC Search</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>N/A</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>New</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>High Renovation</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Low Renovation</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>Subscription</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>DOC Track</controllingFieldValue>
-                <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>Data Hub</controllingFieldValue>
-                <valueName>SaaS</valueName>
-            </valueSettings>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Drug_Class__c</fullName>
         <externalId>false</externalId>
         <label>Drug Class</label>
@@ -2006,61 +1192,6 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
-    </fields>
-    <fields>
-        <fullName>Product_Category__c</fullName>
-        <externalId>false</externalId>
-        <label>Offering</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Data Hub</fullName>
-                    <default>true</default>
-                    <label>Data Hub</label>
-                </value>
-                <value>
-                    <fullName>Services</fullName>
-                    <default>false</default>
-                    <label>Services</label>
-                </value>
-                <value>
-                    <fullName>DOC Label</fullName>
-                    <default>false</default>
-                    <label>DOC Label</label>
-                </value>
-                <value>
-                    <fullName>DOC Track</fullName>
-                    <default>false</default>
-                    <label>DOC Track</label>
-                </value>
-                <value>
-                    <fullName>GROWTH</fullName>
-                    <default>false</default>
-                    <label>GROWTH</label>
-                </value>
-                <value>
-                    <fullName>IHME</fullName>
-                    <default>false</default>
-                    <label>IHME</label>
-                </value>
-                <value>
-                    <fullName>ASCO DOC Search</fullName>
-                    <default>false</default>
-                    <label>ASCO DOC Search</label>
-                </value>
-                <value>
-                    <fullName>Service Project Platform</fullName>
-                    <default>false</default>
-                    <label>Service Project Platform</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>Product_Generic_Name__c</fullName>
@@ -2661,18 +1792,6 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Services_Percentage__c</fullName>
-        <externalId>false</externalId>
-        <label>Services</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
-    </fields>
-    <fields>
         <fullName>Services_Start_Date__c</fullName>
         <externalId>false</externalId>
         <label>Services: Start Date</label>
@@ -2681,19 +1800,6 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Services__c</fullName>
-        <description>Services</description>
-        <externalId>false</externalId>
-        <label>Services</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Signed_MSA__c</fullName>
@@ -2772,18 +1878,6 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Subscription_Percentage__c</fullName>
-        <externalId>false</externalId>
-        <label>Subscription</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
-    </fields>
-    <fields>
         <fullName>Subscription__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -2804,6 +1898,958 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalOpportunityQuantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Upcoming_Demo__c</fullName>
+        <externalId>false</externalId>
+        <label>Upcoming Demo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X2015_Plan__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Part of original 2015 Plan</description>
+        <externalId>false</externalId>
+        <label>2015 Plan</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>of_Calls__c</fullName>
+        <externalId>false</externalId>
+        <label># of Calls</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>of_Emails__c</fullName>
+        <externalId>false</externalId>
+        <label># of Emails</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>of_Meetings__c</fullName>
+        <externalId>false</externalId>
+        <label># of Meetings</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset_Type__c</fullName>
+        <description>Condition of the current content asset</description>
+        <externalId>false</externalId>
+        <label>DOC Data Asset Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Product_Category__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>High Renovation</fullName>
+                    <default>false</default>
+                    <label>High Renovation</label>
+                </value>
+                <value>
+                    <fullName>Low Renovation</fullName>
+                    <default>false</default>
+                    <label>Low Renovation</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>SaaS</fullName>
+                    <default>false</default>
+                    <label>SaaS</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>DOC Label</controllingFieldValue>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>ASCO DOC Search</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <valueName>N/A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <valueName>New</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <valueName>High Renovation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <valueName>Low Renovation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <valueName>Subscription</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <valueName>SaaS</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Disease_State__c</fullName>
+        <externalId>false</externalId>
+        <label>Disease State</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Product_Category__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Abdominal Aortic Aneurysm</fullName>
+                    <default>false</default>
+                    <label>Abdominal Aortic Aneurysm</label>
+                </value>
+                <value>
+                    <fullName>Age-Related Macular Degeneration</fullName>
+                    <default>false</default>
+                    <label>Age-Related Macular Degeneration</label>
+                </value>
+                <value>
+                    <fullName>Anesthesia</fullName>
+                    <default>false</default>
+                    <label>Anesthesia</label>
+                </value>
+                <value>
+                    <fullName>Aortic Valve Regurgitation/Stenosis</fullName>
+                    <default>false</default>
+                    <label>Aortic Valve Regurgitation/Stenosis</label>
+                </value>
+                <value>
+                    <fullName>Asthma</fullName>
+                    <default>false</default>
+                    <label>Asthma</label>
+                </value>
+                <value>
+                    <fullName>Bradycardia</fullName>
+                    <default>false</default>
+                    <label>Bradycardia</label>
+                </value>
+                <value>
+                    <fullName>Cancer</fullName>
+                    <default>false</default>
+                    <label>Cancer</label>
+                </value>
+                <value>
+                    <fullName>Chronic Lymphocytic Leukemia</fullName>
+                    <default>false</default>
+                    <label>Chronic Lymphocytic Leukemia</label>
+                </value>
+                <value>
+                    <fullName>COPD</fullName>
+                    <default>false</default>
+                    <label>COPD</label>
+                </value>
+                <value>
+                    <fullName>Coronary Artery Disease</fullName>
+                    <default>false</default>
+                    <label>Coronary Artery Disease</label>
+                </value>
+                <value>
+                    <fullName>Cystic Fibrosis</fullName>
+                    <default>false</default>
+                    <label>Cystic Fibrosis</label>
+                </value>
+                <value>
+                    <fullName>Diabetes Type 1 &amp; 2</fullName>
+                    <default>false</default>
+                    <label>Diabetes Type 1 &amp; 2</label>
+                </value>
+                <value>
+                    <fullName>Diabetes Type 2</fullName>
+                    <default>false</default>
+                    <label>Diabetes Type 2</label>
+                </value>
+                <value>
+                    <fullName>Diabetic Macular Edema</fullName>
+                    <default>false</default>
+                    <label>Diabetic Macular Edema</label>
+                </value>
+                <value>
+                    <fullName>Dyslipidemia</fullName>
+                    <default>false</default>
+                    <label>Dyslipidemia</label>
+                </value>
+                <value>
+                    <fullName>Endometriosis</fullName>
+                    <default>false</default>
+                    <label>Endometriosis</label>
+                </value>
+                <value>
+                    <fullName>Gastric Cancer</fullName>
+                    <default>false</default>
+                    <label>Gastric Cancer</label>
+                </value>
+                <value>
+                    <fullName>Heart Failure</fullName>
+                    <default>false</default>
+                    <label>Heart Failure</label>
+                </value>
+                <value>
+                    <fullName>Hepatitis C</fullName>
+                    <default>false</default>
+                    <label>Hepatitis C</label>
+                </value>
+                <value>
+                    <fullName>HIV-1</fullName>
+                    <default>false</default>
+                    <label>HIV-1</label>
+                </value>
+                <value>
+                    <fullName>Hypertension</fullName>
+                    <default>false</default>
+                    <label>Hypertension</label>
+                </value>
+                <value>
+                    <fullName>Hypogonadism</fullName>
+                    <default>false</default>
+                    <label>Hypogonadism</label>
+                </value>
+                <value>
+                    <fullName>Lung Cancer</fullName>
+                    <default>false</default>
+                    <label>Lung Cancer</label>
+                </value>
+                <value>
+                    <fullName>Malignant Pleural Effusion</fullName>
+                    <default>false</default>
+                    <label>Malignant Pleural Effusion</label>
+                </value>
+                <value>
+                    <fullName>Melanoma</fullName>
+                    <default>false</default>
+                    <label>Melanoma</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Mixed Cancers</fullName>
+                    <default>false</default>
+                    <label>Mixed Cancers</label>
+                </value>
+                <value>
+                    <fullName>Mixed Cardiac Diseases</fullName>
+                    <default>false</default>
+                    <label>Mixed Cardiac Diseases</label>
+                </value>
+                <value>
+                    <fullName>Mixed Immunology</fullName>
+                    <default>false</default>
+                    <label>Mixed Immunology</label>
+                </value>
+                <value>
+                    <fullName>Mixed Neurology</fullName>
+                    <default>false</default>
+                    <label>Mixed Neurology</label>
+                </value>
+                <value>
+                    <fullName>Mixed Opthamology</fullName>
+                    <default>false</default>
+                    <label>Mixed Opthamology</label>
+                </value>
+                <value>
+                    <fullName>Mixed Respiratory</fullName>
+                    <default>false</default>
+                    <label>Mixed Respiratory</label>
+                </value>
+                <value>
+                    <fullName>Multiple Sclerosis</fullName>
+                    <default>false</default>
+                    <label>Multiple Sclerosis</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>Obesity</fullName>
+                    <default>false</default>
+                    <label>Obesity</label>
+                </value>
+                <value>
+                    <fullName>Pigment Epithelial Detachment</fullName>
+                    <default>false</default>
+                    <label>Pigment Epithelial Detachment</label>
+                </value>
+                <value>
+                    <fullName>Polypoidal Choroidal Vasculopathy</fullName>
+                    <default>false</default>
+                    <label>Polypoidal Choroidal Vasculopathy</label>
+                </value>
+                <value>
+                    <fullName>Psychosis</fullName>
+                    <default>false</default>
+                    <label>Psychosis</label>
+                </value>
+                <value>
+                    <fullName>Radiculopathy/Spinal Stenosis</fullName>
+                    <default>false</default>
+                    <label>Radiculopathy/Spinal Stenosis</label>
+                </value>
+                <value>
+                    <fullName>Renal Cell Carcinoma</fullName>
+                    <default>false</default>
+                    <label>Renal Cell Carcinoma</label>
+                </value>
+                <value>
+                    <fullName>Respiratory Syncytial Virus</fullName>
+                    <default>false</default>
+                    <label>Respiratory Syncytial Virus</label>
+                </value>
+                <value>
+                    <fullName>Rheumatoid Arthritis</fullName>
+                    <default>false</default>
+                    <label>Rheumatoid Arthritis</label>
+                </value>
+                <value>
+                    <fullName>Soft Tissue Sarcoma</fullName>
+                    <default>false</default>
+                    <label>Soft Tissue Sarcoma</label>
+                </value>
+                <value>
+                    <fullName>Spondyloarthritis</fullName>
+                    <default>false</default>
+                    <label>Spondyloarthritis</label>
+                </value>
+                <value>
+                    <fullName>Stroke</fullName>
+                    <default>false</default>
+                    <label>Stroke</label>
+                </value>
+                <value>
+                    <fullName>Syncope</fullName>
+                    <default>false</default>
+                    <label>Syncope</label>
+                </value>
+                <value>
+                    <fullName>Thyroid Cancer</fullName>
+                    <default>false</default>
+                    <label>Thyroid Cancer</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>DOC Label</controllingFieldValue>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>ASCO DOC Search</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>N/A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Abdominal Aortic Aneurysm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Age-Related Macular Degeneration</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Anesthesia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Aortic Valve Regurgitation/Stenosis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Asthma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Bradycardia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Cancer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Chronic Lymphocytic Leukemia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>COPD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Coronary Artery Disease</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Cystic Fibrosis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Diabetes Type 1 &amp; 2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Diabetes Type 2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Diabetic Macular Edema</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Dyslipidemia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Endometriosis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Gastric Cancer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Heart Failure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Hepatitis C</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>HIV-1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Hypertension</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Hypogonadism</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Lung Cancer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Malignant Pleural Effusion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Melanoma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Miscellaneous</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Mixed Cancers</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Mixed Cardiac Diseases</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Mixed Immunology</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Mixed Neurology</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Mixed Opthamology</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Mixed Respiratory</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Multiple Sclerosis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Obesity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Pigment Epithelial Detachment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Polypoidal Choroidal Vasculopathy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Psychosis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Radiculopathy/Spinal Stenosis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Renal Cell Carcinoma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Respiratory Syncytial Virus</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Rheumatoid Arthritis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Soft Tissue Sarcoma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Spondyloarthritis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Stroke</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Syncope</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Thyroid Cancer</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Doc_Library_Asset_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>DOC Library Asset Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Product_Category__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>High Renovation</fullName>
+                    <default>false</default>
+                    <label>High Renovation</label>
+                </value>
+                <value>
+                    <fullName>Low Renovation</fullName>
+                    <default>false</default>
+                    <label>Low Renovation</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>SaaS</fullName>
+                    <default>false</default>
+                    <label>SaaS</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>DOC Label</controllingFieldValue>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>ASCO DOC Search</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>N/A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>New</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>High Renovation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Low Renovation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>Subscription</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DOC Track</controllingFieldValue>
+                <controllingFieldValue>GROWTH</controllingFieldValue>
+                <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <valueName>SaaS</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Is_Proposal_Submitted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Proposal Submitted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Product_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Offering</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ASCO DOC Search</fullName>
+                    <default>false</default>
+                    <label>ASCO DOC Search</label>
+                </value>
+                <value>
+                    <fullName>ASH DOC Search</fullName>
+                    <default>false</default>
+                    <label>ASH DOC Search</label>
+                </value>
+                <value>
+                    <fullName>Data Hub</fullName>
+                    <default>true</default>
+                    <label>Data Hub</label>
+                </value>
+                <value>
+                    <fullName>DOC Label</fullName>
+                    <default>false</default>
+                    <label>DOC Label</label>
+                </value>
+                <value>
+                    <fullName>DOC Search</fullName>
+                    <default>false</default>
+                    <label>DOC Search</label>
+                </value>
+                <value>
+                    <fullName>DOC Track</fullName>
+                    <default>false</default>
+                    <label>DOC Track</label>
+                </value>
+                <value>
+                    <fullName>GROWTH</fullName>
+                    <default>false</default>
+                    <label>GROWTH</label>
+                </value>
+                <value>
+                    <fullName>IHME</fullName>
+                    <default>false</default>
+                    <label>IHME</label>
+                </value>
+                <value>
+                    <fullName>Project</fullName>
+                    <default>false</default>
+                    <label>Project</label>
+                </value>
+                <value>
+                    <fullName>Service Project Platform</fullName>
+                    <default>false</default>
+                    <label>Service Project Platform</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Record_Locked__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Record Locked ?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Services_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Services</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>15</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Services__c</fullName>
+        <description>Services</description>
+        <externalId>false</externalId>
+        <label>Services</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Subscription_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Subscription</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>15</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
     </fields>
     <fields>
         <fullName>Therapeutic_Area__c</fullName>
@@ -2918,230 +2964,188 @@
                 <controllingFieldValue>DOC Label</controllingFieldValue>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
-                <controllingFieldValue>ASCO DOC Search</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>DOC Search</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>N/A</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Biosimilars</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Cardiology/Vascular Diseases</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Dermatology</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Endocrine/Metabolic</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Gastroenterology</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Gynecology/Obstetrics</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Hematology</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Immunology/Rheumatology</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Infections/Infectious Diseases</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Miscellaneous</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Musculoskeletal</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Nephrology/Urology</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Neurology</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
+                <controllingFieldValue>ASCO DOC Search</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
+                <controllingFieldValue>ASH DOC Search</controllingFieldValue>
                 <valueName>Oncology</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Ophthalmology</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Psychiatry/Psychology</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Pulmonary/Respiratory Diseases</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>IHME</controllingFieldValue>
-                <controllingFieldValue>Services</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
+                <controllingFieldValue>IHME</controllingFieldValue>
+                <controllingFieldValue>Service Project Platform</controllingFieldValue>
+                <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>Radiology</valueName>
             </valueSettings>
         </valueSet>
     </fields>
     <fields>
-        <fullName>TotalOpportunityQuantity</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-    </fields>
-    <fields>
-        <fullName>Type</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>Upcoming_Demo__c</fullName>
+        <fullName>Use_New_Forecasting_Algorithm__c</fullName>
+        <defaultValue>true</defaultValue>
         <externalId>false</externalId>
-        <label>Upcoming Demo</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>X2015_Plan__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Part of original 2015 Plan</description>
-        <externalId>false</externalId>
-        <label>2015 Plan</label>
+        <label>Use New Forecasting Algorithm</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>of_Calls__c</fullName>
-        <externalId>false</externalId>
-        <label># of Calls</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>of_Emails__c</fullName>
-        <externalId>false</externalId>
-        <label># of Emails</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>of_Meetings__c</fullName>
-        <externalId>false</externalId>
-        <label># of Meetings</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
@@ -3163,7 +3167,7 @@
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Opportunity_ID__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
@@ -3899,29 +3903,7 @@
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Level__c</picklist>
             <values>
@@ -4034,7 +4016,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>ASH DOC Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>DOC Label</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DOC Search</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4054,11 +4044,11 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Service Project Platform</fullName>
+                <fullName>Project</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Services</fullName>
+                <fullName>Service Project Platform</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4729,29 +4719,7 @@
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Level__c</picklist>
             <values>
@@ -4860,6 +4828,10 @@
         <picklistValues>
             <picklist>Product_Category__c</picklist>
             <values>
+                <fullName>ASCO DOC Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>DOC Label</fullName>
                 <default>false</default>
             </values>
@@ -4880,7 +4852,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Services</fullName>
+                <fullName>Project</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -5551,29 +5523,7 @@
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>ForecastCategoryName</picklist>
-            <values>
-                <fullName>Best Case</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Closed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Commit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Omitted</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pipeline</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        
         <picklistValues>
             <picklist>Forecast_Level__c</picklist>
             <values>
@@ -5708,7 +5658,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>ASH DOC Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>DOC Label</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DOC Search</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -5728,11 +5686,11 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Service Project Platform</fullName>
+                <fullName>Project</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Services</fullName>
+                <fullName>Service Project Platform</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

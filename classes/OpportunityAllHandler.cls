@@ -1,5 +1,6 @@
 /********************************************************************************************************
 *    Handler Name:  OpportunityAllHandler.cls
+*    Author: OMNIVO DIGITAL (www.omnivodigital.com)
 *    Date:  9/24/2018
 *    
 *    Trigger: OpportunityAll.trigger
@@ -85,7 +86,7 @@ public class OpportunityAllHandler {
                     
                     if(timeEntry.Account__r.Name != 'Doctor Evidence' && timeEntry.Account__r.Name != 'DRE Tech')
                     {
-                        if(taskrayType == 'Contract ID' || taskrayType == 'PICO ID')
+                        if(taskrayType == 'Contract ID' || taskrayType == 'PICO ID' || timeEntry.Project__r.Name == 'DOC Label' || timeEntry.Project__r.Name == 'Data Hub')
                         {
                             if(StageName != 'Closed Won' && StageName != 'Closed Lost')
                             {
@@ -95,6 +96,9 @@ public class OpportunityAllHandler {
                                 timeEntry.GAAP_Class__c = 'Cost of Revenue';
                             if(StageName == 'Closed Lost')   
                                 timeEntry.GAAP_Class__c = 'Sales & Marketing';
+                        }
+                        else if (timeEntry.Project__r.Name == 'Pre-Sale'){
+                            timeEntry.GAAP_Class__c = 'Sales & Marketing';
                         }
                     } else {
                         if(timeEntry.Account__r.Name == 'Doctor Evidence')

@@ -1,5 +1,6 @@
 /********************************************************************************************************
 *    Name:  OpportunityAll.trigger
+*    Author: OMNIVO DIGITAL (www.omnivodigital.com)
 *    Date:  9/24/2018
 *    
 *    Handler class: OpportunityAllHandler.cls

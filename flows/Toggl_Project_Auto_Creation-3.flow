@@ -4,7 +4,7 @@
         <processMetadataValues>
             <name>processSelection</name>
             <value>
-                <stringValue>Approve Toggl Project Creation - Approve_Toggl_Project_Creation</stringValue>
+                <stringValue>Approve Toggl Project Creation v2 - Approve_Toggl_Project_Creation_v2</stringValue>
             </value>
         </processMetadataValues>
         <processMetadataValues>
@@ -20,7 +20,7 @@
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>Toggle Project Auto-Creation</label>
+        <label>Toggl Project Auto-Creation</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <actionName>submit</actionName>
@@ -34,13 +34,13 @@
         <inputParameters>
             <name>comment</name>
             <value>
-                <stringValue>The TaskRay Project has been submitted for Toggl Project Auto-Creation.</stringValue>
+                <stringValue>This project request is submitted for Toggl project creation.</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
             <name>processDefinitionNameOrId</name>
             <value>
-                <stringValue>Approve_Toggl_Project_Creation</stringValue>
+                <stringValue>Approve_Toggl_Project_Creation_v2</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -82,8 +82,38 @@
             <name>myRule_1</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>formula_myRule_1</leftValueReference>
-                <operator>EqualTo</operator>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideReferenceTo</name>
+                    <value>
+                        <stringValue>TASKRAY__Project__c</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>ID</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.TASKRAY__Project_Parent__c</leftValueReference>
+                <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
                 </rightValue>
@@ -91,14 +121,9 @@
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
-            <label>TR Project Created</label>
+            <label>TR Project Created and Parent Project</label>
         </rules>
     </decisions>
-    <formulas>
-        <name>formula_myRule_1</name>
-        <dataType>Boolean</dataType>
-        <expression>true</expression>
-    </formulas>
     <interviewLabel>Toggl_Project_Auto_Creation-3_InterviewLabel</interviewLabel>
     <label>Toggl Project Auto-Creation</label>
     <processMetadataValues>

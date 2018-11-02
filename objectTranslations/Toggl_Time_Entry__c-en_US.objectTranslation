@@ -92,13 +92,11 @@
         <name>User__c</name>
         <relationshipLabel><!-- Toggl Time Entries --></relationshipLabel>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Toggl Time Entry</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Toggl Time Entries</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Toggl Time Entry Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
 </CustomObjectTranslation>

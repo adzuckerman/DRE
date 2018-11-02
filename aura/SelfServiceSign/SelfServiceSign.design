@@ -1,9 +1,1 @@
-<design:component label="Adobe Self Service Sign">
-	<design:attribute name="templateId" datasource="apex://echosign_dev1.SelfSignAgreementTemplatePicklist" label="Agreement Template" description="The agreement templates to load the agreement from."/>
-    <!-- <design:attribute name="templateId" label="Agreement Template" description="The agreement templates to load the agreement from."/> -->
-    <design:attribute name="agreementScope" datasource="apex://echosign_dev1.SelfServiceAgreementScopePicklist" label="Agreement Scope" description="The scope of the agreement to check."/>
-    <design:attribute name="signingDeadline" label="Signing Deadline" description="Date when this agreement must be signed." />
-    <design:attribute name="renewalDays" label="Renewal Days" description="The number of days after which this agreement must be renewed." />
-    <design:attribute name="headerTitle" label="Header Title" description="The title to display in the header panel." />
-    <design:attribute name="hideHeaderLogo" label="Hide Header Logo" description="Hide the Adobe logo in the header panel." />
-</design:component>
+(hidden)

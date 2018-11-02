@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cached Input Type --></label>
+        <name>echosign_dev1__Cached_Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Liste</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation>Tekst</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Markér dette felt, hvis du ønsker, at denne datatilknytning skal køre som standard for alle sendte aftaler. Du kan tilsidesætte standardindstillingen, hvis du angiver, at der skal bruges en anden datatilknytning med en bestemt aftale eller aftaleskabelon.</help>
+        <label><!-- Default Data Mapping? --></label>
+        <name>echosign_dev1__Default_Data_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>echosign_dev1__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Field CSV --></label>
+        <name>echosign_dev1__Merge_Field_CSV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify User of Errors --></label>
+        <name>echosign_dev1__Notify_User_of_Errors__c</name>
+        <relationshipLabel><!-- Data Mappings --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Datatilknytning</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Datatilknytning</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Datatilknytning</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Datatilknytninger</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Datatilknytninger</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Datatilknytninger</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Navn på datatilknytning</nameFieldLabel>
+    <layouts>
+        <layout>Process Template Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

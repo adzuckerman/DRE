@@ -1,6 +1,1 @@
-<aura:documentation>
-  <aura:description>TaskRay Team Component</aura:description>
-  <aura:example name="ExampleName" ref="exampleComponentName" label="Label">
-    This component is available only on the TaskRay Project Record Home page. It shows the TaskRay Project team members.
-  </aura:example>
-</aura:documentation>
+(hidden)

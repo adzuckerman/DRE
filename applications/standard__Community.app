@@ -14,4 +14,6 @@
     <tabs>Kbase__c</tabs>
     <tabs>Contract_and_Revenue__c</tabs>
     <tabs>Project_Request__c</tabs>
+    <tabs>Department_Revenue_Schedule__c</tabs>
+    <tabs>Department_Costs__c</tabs>
 </CustomApplication>

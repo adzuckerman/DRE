@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_ACTIVITY</field>
+    </columns>
+    <columns>
+        <field>FK_$i__Email__c.i__Type__c</field>
+    </columns>
+    <columns>
+        <field>Contact.i__DaysSinceLastMail__c</field>
+    </columns>
+    <columns>
+        <field>Contact.i__LastInboundSent__c</field>
+    </columns>
+    <columns>
+        <field>Contact.i__LastOutboundSent__c</field>
+    </columns>
+    <columns>
+        <field>Contact.i__LastMailTimeDelta__c</field>
+    </columns>
+    <columns>
+        <field>Contact.i__LastInboundMail__c</field>
+    </columns>
+    <columns>
+        <field>Contact.i__LastOutboundMail__c</field>
+    </columns>
+    <description>Shows details of last inbound/outbound email, by Contact. Requires the &quot;Last Email fields&quot; feature.</description>
+    <format>Tabular</format>
+    <name>Last Email by Contact</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList@Contact.i__LastMail__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact.i__LastMailSent__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

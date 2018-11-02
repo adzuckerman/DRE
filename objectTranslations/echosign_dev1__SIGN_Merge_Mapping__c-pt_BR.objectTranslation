@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cached Input Type --></label>
+        <name>echosign_dev1__Cached_Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Lista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation>Texto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Marque esta caixa se deseja executar o mapeamento mesclado como padrão em todos os contratos enviados. Você pode substituir o padrão se especificar um outro mapeamento mesclado a ser utilizado em um contrato ou modelo de contrato específicos.</help>
+        <label><!-- Default Merge Mapping? --></label>
+        <name>echosign_dev1__Default__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>echosign_dev1__Description__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Mapeamento de mesclagem</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mapeamentos de mesclagem</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome de mapeamento de mesclagem</nameFieldLabel>
+    <layouts>
+        <layout>EchoSign Merge Mapping Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

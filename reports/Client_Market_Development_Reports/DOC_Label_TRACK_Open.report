@@ -4,6 +4,12 @@
         <field>ACCOUNT_OWNER</field>
     </columns>
     <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
         <field>Opportunity.In_Forecast__c</field>
     </columns>
     <columns>
@@ -20,9 +26,6 @@
     </columns>
     <columns>
         <field>Opportunity.Opportunity_ID__c</field>
-    </columns>
-    <columns>
-        <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
         <field>CLOSE_DATE</field>
@@ -95,7 +98,7 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>ACCOUNT_NAME</sortColumn>
+    <sortColumn>CLOSE_DATE</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>

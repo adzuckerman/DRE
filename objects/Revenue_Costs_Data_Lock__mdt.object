@@ -42,4 +42,14 @@
     <label>Revenue &amp; Costs Data Lock</label>
     <pluralLabel>Revenue &amp; Costs Data Locks</pluralLabel>
     <visibility>Public</visibility>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>Type__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
 </CustomObject>

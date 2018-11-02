@@ -13,15 +13,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Case__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>TaskRay_Project__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Kbases_Name__c</field>
+                <behavior>Edit</behavior>
+                <field>Case__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>

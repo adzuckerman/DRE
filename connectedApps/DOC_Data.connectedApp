@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
     <contactEmail>cfroehlich@doctorevidence.com</contactEmail>
     <label>DOC Data</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com/services/oauth2/success
 http://localhost</callbackUrl>
-        <consumerKey>3MVG9aFryxgomHTZBf2tPqyBm7e5ioVaO07Rt_MfDgE9I51SL3fzYYe1.pu.KaZna.umUYyCgExY4qaa.Nh7A</consumerKey>
+        
         <scopes>Basic</scopes>
         <scopes>Api</scopes>
         <scopes>Web</scopes>

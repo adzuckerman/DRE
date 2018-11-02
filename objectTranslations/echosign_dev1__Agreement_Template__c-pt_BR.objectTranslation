@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Defina a ID do Salesforce do registro da conta pelo qual o contrato deve pesquisar.</help>
+        <label><!-- Account --></label>
+        <name>echosign_dev1__Account__c</name>
+    </fields>
+    <fields>
+        <help>Quando marcado, indica que o Modelo de contrato está visível. Caso contrário, o modelo não está visível.</help>
+        <label><!-- Active --></label>
+        <name>echosign_dev1__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Type --></label>
+        <name>echosign_dev1__Agreement_Type__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Envia automaticamente o contrato sem exibir a página de envio (por exemplo, fluxos de trabalho disparados). Certifique-se de adicionar um destinatário e um anexo se estiver usando essa opção.</help>
+        <label><!-- Auto Send --></label>
+        <name>echosign_dev1__Auto_Send__c</name>
+    </fields>
+    <fields>
+        <help>Envie lembretes automáticos para signatários.</help>
+        <label><!-- Automatic Reminders --></label>
+        <name>echosign_dev1__Automatic_Reminders__c</name>
+        <picklistValues>
+            <masterLabel>Every Day, Until Signed</masterLabel>
+            <translation>Todos os dias até ser assinado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Week, Until Signed</masterLabel>
+            <translation>Toda semana até ser assinado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>Nunca</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>No registro do objeto Principal, disponibilize esse modelo de contrato para os remetentes por meio do Chatter Feed do Adobe Sign da ação de enviar para assinatura.</help>
+        <label><!-- Available for Publisher Actions --></label>
+        <name>echosign_dev1__Available_Publisher_Actions__c</name>
+    </fields>
+    <fields>
+        <help>Confirme a senha a qual você deseja que o destinatário digite.</help>
+        <label><!-- Confirm Password --></label>
+        <name>echosign_dev1__Confirm_Password__c</name>
+    </fields>
+    <fields>
+        <help>Defina a ID do Salesforce do registro do contrato pelo qual o contrato deve pesquisar.</help>
+        <label><!-- Contract --></label>
+        <name>echosign_dev1__Contract__c</name>
+    </fields>
+    <fields>
+        <help>Selecione o mapeamento de dados para mapear as entradas de campo do Adobe Sign a partir do contrato assinado até o Salesforce.</help>
+        <label><!-- Data Mapping --></label>
+        <name>echosign_dev1__Data_Mapping__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Defina o número de dias antes da expiração do contrato.</help>
+        <label><!-- Days Until Expiration --></label>
+        <name>echosign_dev1__Days_Until_Expiration__c</name>
+    </fields>
+    <fields>
+        <help>Defina o modelo padrão para novos contratos.</help>
+        <label><!-- Default --></label>
+        <name>echosign_dev1__Default__c</name>
+    </fields>
+    <fields>
+        <help>Envie cópias do contrato para o endereço de e-mail especificado.</help>
+        <label><!-- Email Copy To --></label>
+        <name>echosign_dev1__Email_Copy_To__c</name>
+    </fields>
+    <fields>
+        <help>Certifique-se de que antes dos signatários externos poderem exibir ou assinar o documento é necessário verificar a identidade.</help>
+        <label><!-- External Signers Verification Method --></label>
+        <name>echosign_dev1__External_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>Autenticação com base em conhecimento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>Senha para assinar o contrato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>Autenticação por identidade Web</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Quando habilitado, o contrato ou documento é apresentado apenas para o destinatário para preenchimento e assinatura. A página de Pós envio pode ser usada para encaminhar o documento assinado.</help>
+        <label><!-- Fill &amp; Sign --></label>
+        <name>echosign_dev1__Fill_Sign__c</name>
+    </fields>
+    <fields>
+        <help>Ativar assinatura presencial hospedada</help>
+        <label><!-- Enable Hosted Signing --></label>
+        <name>echosign_dev1__Hosted_Signing__c</name>
+    </fields>
+    <fields>
+        <help>Certifique-se de que antes dos signatários internos poderem exibir ou assinar o documento é possível verificar suas identidades.</help>
+        <label><!-- Internal Signers Verification Method --></label>
+        <name>echosign_dev1__Internal_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>Autenticação com base em conhecimento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>Senha para assinar o contrato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>Autenticação por identidade Web</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Selecione o idioma dos destinatários.</help>
+        <label><!-- Language --></label>
+        <name>echosign_dev1__Language__c</name>
+        <picklistValues>
+            <masterLabel>Chinese (China)</masterLabel>
+            <translation>Chinês (China)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Taiwan)</masterLabel>
+            <translation>Chinês (Taiwan)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech (Czech Republic)</masterLabel>
+            <translation>Tcheco (República Tcheca)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish (Denmark)</masterLabel>
+            <translation>Dinamarquês (Dinamarca)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch (Netherlands)</masterLabel>
+            <translation>Holandês (Holanda)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United Kingdom)</masterLabel>
+            <translation>Inglês (Reino Unido)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United States)</masterLabel>
+            <translation>Inglês (Estados Unidos)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish (Finland)</masterLabel>
+            <translation>Finlandês (Finlândia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French (France)</masterLabel>
+            <translation>Francês (França)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German (Germany)</masterLabel>
+            <translation>Alemão (Alemanha)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Icelandic (Iceland)</masterLabel>
+            <translation>Islandês (Islândia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian (Indonesia)</masterLabel>
+            <translation>Indonésio (Indonésia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian (Italy)</masterLabel>
+            <translation>Italiano (Itália)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese (Japan)</masterLabel>
+            <translation>Japonês (Japão)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean (South Korea)</masterLabel>
+            <translation>Coreano (Coreia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malay (Malaysia)</masterLabel>
+            <translation>Malaio (Malásia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian (Norway)</masterLabel>
+            <translation>Norueguês (Noruega)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish (Poland)</masterLabel>
+            <translation>Polonês (Polônia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Brazil)</masterLabel>
+            <translation>Português (Brasil)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Portugal)</masterLabel>
+            <translation>Português (Portugal)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian (Russia)</masterLabel>
+            <translation>Russo (Rússia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Spain)</masterLabel>
+            <translation>Espanhol (Espanha)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish (Sweden)</masterLabel>
+            <translation>Sueco (Suécia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai (Thailand)</masterLabel>
+            <translation>Tailandês (Tailândia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish (Turkey)</masterLabel>
+            <translation>Turco (Turquia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese (Vietnam)</masterLabel>
+            <translation>Vietnamita (Vietnã)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Especifique o objeto do Salesforce que será referenciado nesse modelo de contrato. (por exemplo: Opportunity, Lead)</help>
+        <label><!-- Master Object Type --></label>
+        <name>echosign_dev1__Master_Object_Type__c</name>
+    </fields>
+    <fields>
+        <help>Selecione o mapeamento de mesclagem para mesclar os campos do Salesforce com o contrato do Adobe Sign antes de enviá-lo para assinatura.</help>
+        <label><!-- Merge Mapping --></label>
+        <name>echosign_dev1__Merge_Mapping__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Insira uma mensagem que será enviada para os destinatários.</help>
+        <label><!-- Message --></label>
+        <name>echosign_dev1__Message__c</name>
+    </fields>
+    <fields>
+        <help>Digite um nome para o contrato.</help>
+        <label><!-- Agreement Name --></label>
+        <name>echosign_dev1__Name__c</name>
+    </fields>
+    <fields>
+        <help>Defina a ID do Salesforce do registro da oportunidade pela qual o contrato deverá procurar.</help>
+        <label><!-- Opportunity --></label>
+        <name>echosign_dev1__Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>Digite uma senha a qual você deseja que o destinatário insira.</help>
+        <label><!-- View Password --></label>
+        <name>echosign_dev1__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect Delay (seconds) --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_Delay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect URL --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_URL__c</name>
+    </fields>
+    <fields>
+        <help>Ative os campos de visualização e posição no documento antes de enviar o contrato para assinatura.</help>
+        <label><!-- Enable Preview and Position Fields --></label>
+        <name>echosign_dev1__Preview_Position__c</name>
+    </fields>
+    <fields>
+        <help>Quando habilitado, o contrato ou documento é apresentado somente ao destinatário para ser assinado.</help>
+        <label><!-- Sender Signs Only --></label>
+        <name>echosign_dev1__Sender_Signs_Only__c</name>
+    </fields>
+    <fields>
+        <help>Quando o contrato está como envio automático ou enviado usando um fluxo de trabalho automatizado, o contrato será enviado em nome do usuário especificado pelo campo. Se não for especificado, o usuário do contexto atual será usado da forma normal.</help>
+        <label><!-- Send On Behalf Of --></label>
+        <name>echosign_dev1__Sender_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign External Password --></label>
+        <name>echosign_dev1__Sign_External_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Internal Password --></label>
+        <name>echosign_dev1__Sign_Internal_Password__c</name>
+    </fields>
+    <fields>
+        <help>Defina a senha que o destinatário deve inserir para assinar o contrato.</help>
+        <label><!-- Password to Sign Agreement --></label>
+        <name>echosign_dev1__Sign_Password__c</name>
+    </fields>
+    <fields>
+        <help>Ajustar a ordem de assinatura dos destinatários.</help>
+        <label><!-- Signature Flow --></label>
+        <name>echosign_dev1__Signature_Flow__c</name>
+        <picklistValues>
+            <masterLabel>Recipients sign in any order</masterLabel>
+            <translation>Os destinatários assinam em qualquer ordem</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recipients sign in order</masterLabel>
+            <translation>Os destinatários assinam em ordem</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Permita que o remetente também assine o contrato selecionando uma ordem de assinatura.</help>
+        <label><!-- Sender Signature Order --></label>
+        <name>echosign_dev1__Signature_Order__c</name>
+        <picklistValues>
+            <masterLabel>Recipients sign first, then sender signs</masterLabel>
+            <translation>Os destinatários assinam primeiro, em seguida, o remetente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sender signs first, then recipients sign</masterLabel>
+            <translation>O remetente assina primeiro, em seguida, os destinatários</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Enviar para assinatura eletrônica ou solicitar assinatura manuscrita.</help>
+        <label><!-- Signature Type --></label>
+        <name>echosign_dev1__Signature_Type__c</name>
+        <picklistValues>
+            <masterLabel>Written Signature</masterLabel>
+            <translation>Assinatura manual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-Signature</masterLabel>
+            <translation>Assinatura eletrônica</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>O PDF assinado e enviado para todas as partes está criptografado e requer uma senha para abrir. Não perca a senha, pois não é possível recuperá-la.</help>
+        <label><!-- Password protect the signed document --></label>
+        <name>echosign_dev1__View_Password__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Modelo de contrato</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Modelos de contrato</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome do modelo de contrato</nameFieldLabel>
+    <layouts>
+        <layout>Agreement Template Layout</layout>
+        <sections>
+            <label>Informações do contrato</label>
+            <section>Agreement Information</section>
+        </sections>
+        <sections>
+            <label>Opções do contrato</label>
+            <section>Agreement Options</section>
+        </sections>
+        <sections>
+            <label>Opções de segurança do contrato</label>
+            <section>Agreement Security Options</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Configurações de mapeamento</label>
+            <section>Mapping Settings</section>
+        </sections>
+        <sections>
+            <label>Objetos referenciados</label>
+            <section>Referenced Objects</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Confirm password does not match the password that you want the recipient to input. --></errorMessage>
+        <name>echosign_dev1__Confirm_Password</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter a password that you want the recipient to input. --></errorMessage>
+        <name>echosign_dev1__Enabled_Password_Set</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There is a maximum of 180 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Maximum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There is a minimum of 1 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Minimum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enabling in-person or preview/position fields is not allowed with auto send enabled. --></errorMessage>
+        <name>echosign_dev1__Preview_Hosted_With_Auto_Send</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Suggesting revisions is not possible with a written signature. --></errorMessage>
+        <name>echosign_dev1__Written_Without_Revisions</name>
+    </validationRules>
+</CustomObjectTranslation>

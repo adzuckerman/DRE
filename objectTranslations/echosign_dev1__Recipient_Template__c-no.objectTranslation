@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Contact Role --></label>
+        <name>echosign_dev1__Account_Contact_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Template --></label>
+        <name>echosign_dev1__Agreement_Template__c</name>
+        <relationshipLabel><!-- Add Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recipient - Contact --></label>
+        <name>echosign_dev1__Contact_Recipient__c</name>
+        <relationshipLabel><!-- Add Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Kryss av i denne boksen hvis du ikke ønsker at det skal opprettes en blank plassholdermottaker på avtalesiden når det ikke blir funnet noen post på grunnlag av de valgte kriteriene.</help>
+        <label><!-- Do Not Create Blank Recipient Row --></label>
+        <name>echosign_dev1__Do_Not_Create_Empty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>echosign_dev1__Email_Recipient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient - Group --></label>
+        <name>echosign_dev1__Group_Recipient__c</name>
+    </fields>
+    <fields>
+        <help>Angi indeks for signeringsrekkefølge for mottakeren som genereres av denne malen. Hvis samme indeksnummer angis for flere mottakermaler, blir det generert hybridmottakere.</help>
+        <label><!-- Index --></label>
+        <name>echosign_dev1__Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient - Lead --></label>
+        <name>echosign_dev1__Lead_Recipient__c</name>
+        <relationshipLabel><!-- Add Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Contact Role --></label>
+        <name>echosign_dev1__Opportunity_Contact_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>echosign_dev1__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Verification Country Code --></label>
+        <name>echosign_dev1__Phone_Verification_Country_Code__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>27</masterLabel>
+            <translation><!-- 27 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31</masterLabel>
+            <translation><!-- 31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>32</masterLabel>
+            <translation><!-- 32 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>33</masterLabel>
+            <translation><!-- 33 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>34</masterLabel>
+            <translation><!-- 34 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>351</masterLabel>
+            <translation><!-- 351 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>353</masterLabel>
+            <translation><!-- 353 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>354</masterLabel>
+            <translation><!-- 354 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>358</masterLabel>
+            <translation><!-- 358 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36</masterLabel>
+            <translation><!-- 36 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380</masterLabel>
+            <translation><!-- 380 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>39</masterLabel>
+            <translation><!-- 39 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40</masterLabel>
+            <translation><!-- 40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>41</masterLabel>
+            <translation><!-- 41 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>420</masterLabel>
+            <translation><!-- 420 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>421</masterLabel>
+            <translation><!-- 421 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>43</masterLabel>
+            <translation><!-- 43 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>44</masterLabel>
+            <translation><!-- 44 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45</masterLabel>
+            <translation><!-- 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>46</masterLabel>
+            <translation><!-- 46 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>47</masterLabel>
+            <translation><!-- 47 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48</masterLabel>
+            <translation><!-- 48 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>49</masterLabel>
+            <translation><!-- 49 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>504</masterLabel>
+            <translation><!-- 504 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>52</masterLabel>
+            <translation><!-- 52 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>54</masterLabel>
+            <translation><!-- 54 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>55</masterLabel>
+            <translation><!-- 55 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>56</masterLabel>
+            <translation><!-- 56 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>57</masterLabel>
+            <translation><!-- 57 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>593</masterLabel>
+            <translation><!-- 593 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>61</masterLabel>
+            <translation><!-- 61 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>62</masterLabel>
+            <translation><!-- 62 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>63</masterLabel>
+            <translation><!-- 63 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>64</masterLabel>
+            <translation><!-- 64 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65</masterLabel>
+            <translation><!-- 65 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>66</masterLabel>
+            <translation><!-- 66 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>686</masterLabel>
+            <translation><!-- 686 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>81</masterLabel>
+            <translation><!-- 81 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>84</masterLabel>
+            <translation><!-- 84 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>852</masterLabel>
+            <translation><!-- 852 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>86</masterLabel>
+            <translation><!-- 86 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>886</masterLabel>
+            <translation><!-- 886 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>91</masterLabel>
+            <translation><!-- 91 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>972</masterLabel>
+            <translation><!-- 972 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>976</masterLabel>
+            <translation><!-- 976 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone Verification Phone Number --></label>
+        <name>echosign_dev1__Phone_Verification_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Select Source Field from Master Object --></label>
+        <name>echosign_dev1__Recipient_Field__c</name>
+    </fields>
+    <fields>
+        <help>Angi en unik melding for mottakeren.</help>
+        <label><!-- Recipient Message --></label>
+        <name>echosign_dev1__Recipient_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient Role --></label>
+        <name>echosign_dev1__Recipient_Role__c</name>
+        <picklistValues>
+            <masterLabel>Acceptor</masterLabel>
+            <translation>Godtaker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approver</masterLabel>
+            <translation>Godkjenner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certified Recipient</masterLabel>
+            <translation>Sertifisert mottaker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegate to Acceptor</masterLabel>
+            <translation>Deleger til godtaker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegate to Approver</masterLabel>
+            <translation>Deleger til godkjenner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegate to Certified Recipient</masterLabel>
+            <translation>Deleger til sertifisert mottaker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegate to Form Filler</masterLabel>
+            <translation>Deleger til skjemautfyller</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegate to Signer</masterLabel>
+            <translation>Deleger til underskriver</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form Filler</masterLabel>
+            <translation>Skjemautfyller</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signer</masterLabel>
+            <translation>Signatar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recipient Type --></label>
+        <name>echosign_dev1__Recipient_Type__c</name>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation>Kontakt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>E-post</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>Gruppe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation>Salgsemne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User</masterLabel>
+            <translation>Bruker</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related Recipient Relationship --></label>
+        <name>echosign_dev1__Related_Recipient_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Selection Field --></label>
+        <name>echosign_dev1__Related_Selection_Field__c</name>
+        <picklistValues>
+            <masterLabel>Created Date</masterLabel>
+            <translation>Opprettingsdato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Modified Date</masterLabel>
+            <translation>Dato for siste endring</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related Selection Type --></label>
+        <name>echosign_dev1__Related_Selection_Type__c</name>
+        <picklistValues>
+            <masterLabel>Latest</masterLabel>
+            <translation>Nyeste</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oldest</masterLabel>
+            <translation>Eldste</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Signer Verification Method --></label>
+        <name>echosign_dev1__Signer_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>E-post</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KBA</masterLabel>
+            <translation>KBA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password</masterLabel>
+            <translation>Passord</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation>Telefonnummer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social</masterLabel>
+            <translation>Sosial</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source of Recipient --></label>
+        <name>echosign_dev1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Account Contact Role</masterLabel>
+            <translation>Kontaktrolle for konto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Primary Contact Role</masterLabel>
+            <translation>Primær kontaktrolle for konto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All Account Contact Roles</masterLabel>
+            <translation>Alle kontaktroller for konto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All Opportunity Contact Roles</masterLabel>
+            <translation>Alle kontaktroller for salgsmulighet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Look Up Based on Master Object Field</masterLabel>
+            <translation>Oppslag basert på hovedobjektfelt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Contact Role</masterLabel>
+            <translation>Kontaktrolle for salgsmulighet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Primary Contact Role</masterLabel>
+            <translation>Primær kontaktrolle for salgsmulighet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Predefine the Recipient</masterLabel>
+            <translation>Forhåndsdefiner mottakeren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Runtime Variable</masterLabel>
+            <translation>Kjøretidsvariabel</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Aktiver dette alternativet for å angi samme indeks for en mal som genererer flere mottakere, slik at de blir hybridmottakere.</help>
+        <label><!-- Uniform Index --></label>
+        <name>echosign_dev1__Uniform_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient - User --></label>
+        <name>echosign_dev1__User_Recipient__c</name>
+        <relationshipLabel><!-- Add Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Variable Name --></label>
+        <name>echosign_dev1__Variable_Name__c</name>
+    </fields>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Legg til mottaker</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Legg til mottaker</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Legg til mottaker</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Legg til mottakere</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Legg til mottakere</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Legg til mottakere</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Legg til mottakernavn</nameFieldLabel>
+    <layouts>
+        <layout>Add Recipient Layout</layout>
+        <sections>
+            <label>Tilpassede koblinger</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Recipient Template Layout</layout>
+        <sections>
+            <label>Tilpassede koblinger</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -4,9 +4,6 @@
         <field>Opportunity.Opportunity_ID__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Contract_ID__c</field>
-    </columns>
-    <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
@@ -14,9 +11,6 @@
     </columns>
     <columns>
         <field>Opportunity.Product_Category__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Therapeutic_Area__c</field>
     </columns>
     <columns>
         <field>ACCOUNT_OWNER</field>
@@ -33,6 +27,9 @@
     </columns>
     <columns>
         <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.In_Forecast__c</field>
     </columns>
     <columns>
         <field>Opportunity.Sales_Type__c</field>
@@ -76,6 +73,7 @@
         <value>1</value>
     </params>
     <reportType>Opportunity</reportType>
+    <roleHierarchyFilter>Chief_Commercial_Officer</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

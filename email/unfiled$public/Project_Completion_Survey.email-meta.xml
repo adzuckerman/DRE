@@ -6,21 +6,21 @@
     <name>Project Completion Survey</name>
     <style>none</style>
     <subject>Project Feedback</subject>
-    <textOnly>Dear {!Project_Request__c.Requester_First_Name__c},
+    <textOnly>Dear {!TASKRAY__Project__c.Requester_First_Name__c},
 
-I am reaching out to you because you recently received the final deliverable for a project in collaboration with Doctor Evidence, “{!Project_Request__c.Project_Name__c}.”
+I am reaching out to you because you recently received the final deliverable for a project in collaboration with Doctor Evidence, “{!TASKRAY__Project__c.Project_Name__c}.”
 
 Sanofi has asked us to collect feedback regarding the project process and outputs, and we would like to ask for just a few minutes of your time to fill out the brief survey below:
 
-https://reports.doctorevidence.com/pages/Client/Survey.aspx?surveyId={!Project_Request__c.TaskRay_ProjectId__c}
+https://reports.doctorevidence.com/pages/Client/Survey.aspx?surveyId={!TASKRAY__Project__c.Id}
 
-Thank you for your valuable insight into our collaboration. If you have received this email in error, please contact {!Project_Request__c.Principal_Consultant_Email__c}.
+Thank you for your valuable insight into our collaboration. If you have received this email in error, please contact {!TASKRAY__Project__c.Principal_Consultant_Email__c}.
 
-{!Project_Request__c.Principal_Consultant__c}
-{!Project_Request__c.Principal_Consultant_Title__c}
+{!TASKRAY__Project__c.Principal_Scientist__c}
+{!TASKRAY__Project__c.Principal_Consultant_Title__c}
 Doctor Evidence
 
-{!Project_Request__c.Principle_Consultant_Phone__c}
+{!TASKRAY__Project__c.Principle_Consultant_Phone__c}
 www.doctorevidence.com
 301 Arizona Ave, Suite 301, Santa Monica, CA 90401</textOnly>
     <type>custom</type>

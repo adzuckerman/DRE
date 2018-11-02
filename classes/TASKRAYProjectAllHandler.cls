@@ -33,6 +33,7 @@ public class TASKRAYProjectAllHandler {
     //Handler for after Deletes methods
     //public void onAfterDelete(list<TASKRAY__Project__c> oldList , map<id, TASKRAY__Project__c> oldMap) {}
     
+    private static integer NumberOfCallouts = 50;
     
     private void CreateToggleProjet(list<TASKRAY__Project__c>newList, list<TASKRAY__Project__c>oldList, map<id, TASKRAY__Project__c> newMap, map<id, TASKRAY__Project__c> oldMap) {
         Set<Id> TProjectIds = new Set<Id>();
@@ -51,7 +52,7 @@ public class TASKRAYProjectAllHandler {
         if(TProjectIds.size() > 0)
         {
             
-            // Limit: 10 callouts per transaction
+            // Limit of callouts per transaction
             Map<Integer, Set<Id>> SetsMap = new Map<Integer, Set<Id>>();
             
             Integer i = 0;
@@ -61,7 +62,7 @@ public class TASKRAYProjectAllHandler {
             {
                 if(i == 0)
                    newSet = new Set<Id>();
-                if(i <= 10) {
+                if(i <= NumberOfCallouts) {
                    if(!SetsMap.containsKey(j))
                    {
                        newSet.add(s);
@@ -73,7 +74,7 @@ public class TASKRAYProjectAllHandler {
                    }
                 }
                 i++;
-                if(i == 10) { 
+                if(i == NumberOfCallouts) { 
                     j++;
                     i = 0;
                 }
@@ -96,35 +97,40 @@ public class TASKRAYProjectAllHandler {
     
     // Add Toggle Project to Archive (Active = false) when Salesforce TASKRAY__Project is archived
     private void AutoArchiveTogglProject(list<TASKRAY__Project__c>newList, list<TASKRAY__Project__c>oldList, map<id, TASKRAY__Project__c> newMap, map<id, TASKRAY__Project__c> oldMap) {
-        Set<Id> TProjectName = new Set<Id>();
+        Set<String> TProjectIds = new Set<String>();
         for(TASKRAY__Project__c proj : newList) {
             TASKRAY__Project__c oldProject = oldMap.get(proj.Id);
-            if( oldProject.Archived_Date__c == null && proj.Archived_Date__c != null)
-                TProjectName.add(proj.Id);
+            if( oldProject.Archived_Date__c == null && proj.Archived_Date__c != null) {
+                if (proj.Toggl_Id__c != null && proj.Toggl_Id__c != '') {
+                	TProjectIds.add(proj.Toggl_Id__c); 
+                }else {
+                    // TODO: Error handling ?
+                }
+            }
         }
         
-        if(TProjectName.size() > 0)
+        if(TProjectIds.size() > 0)
         {
-            List<Toggl_Time_Entry__c> TogglTimeEntry = [SELECT Id, Toggl_Id__c FROM Toggl_Time_Entry__c WHERE Project__c IN: TProjectName];
+            //List<Toggl_Time_Entry__c> TogglTimeEntry = [SELECT Id, Toggl_Id__c FROM Toggl_Time_Entry__c WHERE Project__c IN: TProjectName];
             
-            Set<String> ToggleProgIds = new Set<String>();
-            for(Toggl_Time_Entry__c tte: TogglTimeEntry )
-            {
-                ToggleProgIds.add(tte.Toggl_Id__c);
-            }
+            //Set<String> ToggleProgIds = new Set<String>();
+            //for(Toggl_Time_Entry__c tte: TogglTimeEntry )
+            //{
+            //    ToggleProgIds.add(tte.Toggl_Id__c);
+            //}
             
-            // Limit: 10 callouts per transaction
+            // Limit of callouts per transaction
             Map<Integer, Set<String>> SetsMap = new Map<Integer, Set<String>>();
-            if(ToggleProgIds.size() > 0)
+            if(TProjectIds.size() > 0)
             {
                 Integer i = 0;
                 Integer j = 1;
                 Set<String> newSet;
-                for(String s: ToggleProgIds)
+                for(String s: TProjectIds)
                 {
                     if(i == 0)
                        newSet = new Set<String>();
-                    if(i <= 10) {
+                    if(i <= NumberOfCallouts) {
                        if(!SetsMap.containsKey(j))
                        {
                            newSet.add(s);
@@ -136,7 +142,7 @@ public class TASKRAYProjectAllHandler {
                        }
                     }
                     i++;
-                    if(i == 10) { 
+                    if(i == NumberOfCallouts) { 
                         j++;
                         i = 0;
                     }

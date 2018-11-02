@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Stel de Salesforce-id in van de accountrecord waarin de overeenkomst moet worden opgezocht.</help>
+        <label><!-- Account --></label>
+        <name>echosign_dev1__Account__c</name>
+    </fields>
+    <fields>
+        <help>Indien ingeschakeld, is de overeenkomstsjabloon zichtbaar, anders niet.</help>
+        <label><!-- Active --></label>
+        <name>echosign_dev1__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Type --></label>
+        <name>echosign_dev1__Agreement_Type__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>De overeenkomst automatisch verzenden zonder de verzendpagina weer te geven (d.w.z. getriggerde workflows). Vergeet niet een ontvanger en een bestandsbijlage toe te voegen als u deze optie gebruikt.</help>
+        <label><!-- Auto Send --></label>
+        <name>echosign_dev1__Auto_Send__c</name>
+    </fields>
+    <fields>
+        <help>Verzend automatische herinneringen naar ondertekenaars.</help>
+        <label><!-- Automatic Reminders --></label>
+        <name>echosign_dev1__Automatic_Reminders__c</name>
+        <picklistValues>
+            <masterLabel>Every Day, Until Signed</masterLabel>
+            <translation>Elke dag, tot ondertekening heeft plaatsgevonden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Week, Until Signed</masterLabel>
+            <translation>Elke week, tot ondertekening heeft plaatsgevonden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>Nooit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Stel deze overeenkomstsjabloon in de hoofdobjectrecord ter beschikking van afzenders via de Chatter-feedhandeling Verzenden ter ondertekening in Adobe Sign.</help>
+        <label><!-- Available for Publisher Actions --></label>
+        <name>echosign_dev1__Available_Publisher_Actions__c</name>
+    </fields>
+    <fields>
+        <help>Bevestig het wachtwoord dat de ontvanger dient in te voeren.</help>
+        <label><!-- Confirm Password --></label>
+        <name>echosign_dev1__Confirm_Password__c</name>
+    </fields>
+    <fields>
+        <help>Stel de Salesforce-id in van de contractrecord waarin de overeenkomst moet worden opgezocht.</help>
+        <label><!-- Contract --></label>
+        <name>echosign_dev1__Contract__c</name>
+    </fields>
+    <fields>
+        <help>Selecteer de gegevenstoewijzing om Adobe Sign-veldinvoer uit de ondertekende overeenkomst weer toe te wijzen aan Salesforce.</help>
+        <label><!-- Data Mapping --></label>
+        <name>echosign_dev1__Data_Mapping__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Stel het aantal dagen in voordat de overeenkomst verloopt.</help>
+        <label><!-- Days Until Expiration --></label>
+        <name>echosign_dev1__Days_Until_Expiration__c</name>
+    </fields>
+    <fields>
+        <help>Instellen als standaardsjabloon voor nieuwe overeenkomsten.</help>
+        <label><!-- Default --></label>
+        <name>echosign_dev1__Default__c</name>
+    </fields>
+    <fields>
+        <help>Verzend kopieën van de overeenkomst naar de opgegeven e-mailadressen.</help>
+        <label><!-- Email Copy To --></label>
+        <name>echosign_dev1__Email_Copy_To__c</name>
+    </fields>
+    <fields>
+        <help>Zorg ervoor dat externe ondertekenaars hun identiteit moeten verifiëren voordat ze het document kunnen weergeven of ondertekenen.</help>
+        <label><!-- External Signers Verification Method --></label>
+        <name>echosign_dev1__External_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>KBA-verificatie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>Wachtwoord voor het ondertekenen van de overeenkomst</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>Webidentiteitsverificatie</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Als deze optie is ingeschakeld, wordt de overeenkomst of het document alleen aan de afzender gepresenteerd voor invulling en ondertekening. Via de pagina Na verzending kunt u het ondertekende document doorsturen.</help>
+        <label><!-- Fill &amp; Sign --></label>
+        <name>echosign_dev1__Fill_Sign__c</name>
+    </fields>
+    <fields>
+        <help>Schakel persoonlijke gehoste ondertekening in.</help>
+        <label><!-- Enable Hosted Signing --></label>
+        <name>echosign_dev1__Hosted_Signing__c</name>
+    </fields>
+    <fields>
+        <help>Zorg ervoor dat interne ondertekenaars hun identiteit moeten verifiëren voordat ze het document kunnen weergeven of ondertekenen.</help>
+        <label><!-- Internal Signers Verification Method --></label>
+        <name>echosign_dev1__Internal_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>KBA-verificatie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>Wachtwoord voor het ondertekenen van de overeenkomst</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>Webidentiteitsverificatie</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Selecteer de taal van de ontvangers.</help>
+        <label><!-- Language --></label>
+        <name>echosign_dev1__Language__c</name>
+        <picklistValues>
+            <masterLabel>Chinese (China)</masterLabel>
+            <translation>Chinees (China)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Taiwan)</masterLabel>
+            <translation>Chinees (Taiwan)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech (Czech Republic)</masterLabel>
+            <translation>Tsjechisch (Tsjechische Republiek)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish (Denmark)</masterLabel>
+            <translation>Deens (Denemarken)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch (Netherlands)</masterLabel>
+            <translation>Nederlands (Nederland)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United Kingdom)</masterLabel>
+            <translation>Engels (Verenigd Koninkrijk)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United States)</masterLabel>
+            <translation>Engels (Verenigde Staten)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish (Finland)</masterLabel>
+            <translation>Fins (Finland)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French (France)</masterLabel>
+            <translation>Frans (Frankrijk)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German (Germany)</masterLabel>
+            <translation>Duits (Duitsland)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Icelandic (Iceland)</masterLabel>
+            <translation>IJslands (IJsland)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian (Indonesia)</masterLabel>
+            <translation>Indonesisch (Indonesië)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian (Italy)</masterLabel>
+            <translation>Italiaans (Italië)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese (Japan)</masterLabel>
+            <translation>Japans (Japan)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean (South Korea)</masterLabel>
+            <translation>Koreaans (Zuid-Korea)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malay (Malaysia)</masterLabel>
+            <translation>Maleis (Maleisië)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian (Norway)</masterLabel>
+            <translation>Noors (Noorwegen)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish (Poland)</masterLabel>
+            <translation>Pools (Polen)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Brazil)</masterLabel>
+            <translation>Portugees (Brazilië)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Portugal)</masterLabel>
+            <translation>Portugees (Portugal)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian (Russia)</masterLabel>
+            <translation>Russisch (Rusland)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Spain)</masterLabel>
+            <translation>Spaans (Spanje)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish (Sweden)</masterLabel>
+            <translation>Zweeds (Zweden)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai (Thailand)</masterLabel>
+            <translation>Thais (Thailand)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish (Turkey)</masterLabel>
+            <translation>Turks (Turkije)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese (Vietnam)</masterLabel>
+            <translation>Vietnamees (Vietnam)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geef het Salesforce-object op waarnaar voor deze overeenkomstsjabloon wordt verwezen (d.w.z. Opportunity, Lead)</help>
+        <label><!-- Master Object Type --></label>
+        <name>echosign_dev1__Master_Object_Type__c</name>
+    </fields>
+    <fields>
+        <help>Selecteer Toewijzing samenvoegen om Salesforce-velden samen te voegen in de Adobe Sign-overeenkomst voordat deze ter ondertekening wordt verzonden.</help>
+        <label><!-- Merge Mapping --></label>
+        <name>echosign_dev1__Merge_Mapping__c</name>
+        <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Voer een bericht in dat naar de ontvangers wordt verzonden.</help>
+        <label><!-- Message --></label>
+        <name>echosign_dev1__Message__c</name>
+    </fields>
+    <fields>
+        <help>Voer een naam in voor de overeenkomst.</help>
+        <label><!-- Agreement Name --></label>
+        <name>echosign_dev1__Name__c</name>
+    </fields>
+    <fields>
+        <help>Stel de Salesforce-id in van de opportunityrecord waarin de overeenkomst moet worden opgezocht.</help>
+        <label><!-- Opportunity --></label>
+        <name>echosign_dev1__Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>Voer het wachtwoord in dat de ontvanger moet invoeren.</help>
+        <label><!-- View Password --></label>
+        <name>echosign_dev1__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect Delay (seconds) --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_Delay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect URL --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_URL__c</name>
+    </fields>
+    <fields>
+        <help>Stel ondertekenaars in staat om het document voor te vertonen en velden te positioneren voordat de overeenkomst ter ondertekening wordt verzonden.</help>
+        <label><!-- Enable Preview and Position Fields --></label>
+        <name>echosign_dev1__Preview_Position__c</name>
+    </fields>
+    <fields>
+        <help>Als deze optie is ingeschakeld, wordt de overeenkomst of het document alleen aan de afzender verzonden ter ondertekening.</help>
+        <label><!-- Sender Signs Only --></label>
+        <name>echosign_dev1__Sender_Signs_Only__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer de overeenkomst automatisch of via een geautomatiseerde workflow wordt verzonden, wordt de overeenkomst verzonden uit naam van de in dit veld opgegeven gebruiker. Als hier niets wordt ingevuld, wordt de actuele contextgebruiker gebruikt.</help>
+        <label><!-- Send On Behalf Of --></label>
+        <name>echosign_dev1__Sender_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign External Password --></label>
+        <name>echosign_dev1__Sign_External_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Internal Password --></label>
+        <name>echosign_dev1__Sign_Internal_Password__c</name>
+    </fields>
+    <fields>
+        <help>Stel een wachtwoord in dat de ontvanger moet invoeren om de overeenkomst te kunnen ondertekenen.</help>
+        <label><!-- Password to Sign Agreement --></label>
+        <name>echosign_dev1__Sign_Password__c</name>
+    </fields>
+    <fields>
+        <help>Stel de volgorde in waarin ontvangers het document moeten ondertekenen.</help>
+        <label><!-- Signature Flow --></label>
+        <name>echosign_dev1__Signature_Flow__c</name>
+        <picklistValues>
+            <masterLabel>Recipients sign in any order</masterLabel>
+            <translation>Ontvangers ondertekenen in willekeurige volgorde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recipients sign in order</masterLabel>
+            <translation>Ontvangers ondertekenen in juiste volgorde</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Stel de afzender in staat de overeenkomst mede te ondertekenen door een handtekeningenvolgorde te selecteren.</help>
+        <label><!-- Sender Signature Order --></label>
+        <name>echosign_dev1__Signature_Order__c</name>
+        <picklistValues>
+            <masterLabel>Recipients sign first, then sender signs</masterLabel>
+            <translation>Ontvangers ondertekenen eerst, daarna ondertekent de afzender</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sender signs first, then recipients sign</masterLabel>
+            <translation>Afzender ondertekent eerst, daarna ondertekenen ontvangers</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Verstuur voor elektronische ondertekening of vraag om een geschreven handtekening.</help>
+        <label><!-- Signature Type --></label>
+        <name>echosign_dev1__Signature_Type__c</name>
+        <picklistValues>
+            <masterLabel>Written Signature</masterLabel>
+            <translation>Schriftelijke handtekening</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-Signature</masterLabel>
+            <translation>e-handtekening</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>De ondertekende PDF die naar alle partijen wordt verzonden, wordt gecodeerd en dit wachtwoord is vereist om het te openen. Raak dit wachtwoord niet kwijt, want het kan niet worden hersteld.</help>
+        <label><!-- Password protect the signed document --></label>
+        <name>echosign_dev1__View_Password__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Overeenkomstsjabloon</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Overeenkomstsjablonen</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Naam overeenkomstsjabloon</nameFieldLabel>
+    <layouts>
+        <layout>Agreement Template Layout</layout>
+        <sections>
+            <label>Overeenkomstinformatie</label>
+            <section>Agreement Information</section>
+        </sections>
+        <sections>
+            <label>Overeenkomstopties</label>
+            <section>Agreement Options</section>
+        </sections>
+        <sections>
+            <label>Beveiligingsopties overeenkomst</label>
+            <section>Agreement Security Options</section>
+        </sections>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Toewijzingsinstellingen</label>
+            <section>Mapping Settings</section>
+        </sections>
+        <sections>
+            <label>Verwijsobjecten</label>
+            <section>Referenced Objects</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Confirm password does not match the password that you want the recipient to input. --></errorMessage>
+        <name>echosign_dev1__Confirm_Password</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter a password that you want the recipient to input. --></errorMessage>
+        <name>echosign_dev1__Enabled_Password_Set</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There is a maximum of 180 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Maximum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There is a minimum of 1 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Minimum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enabling in-person or preview/position fields is not allowed with auto send enabled. --></errorMessage>
+        <name>echosign_dev1__Preview_Hosted_With_Auto_Send</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Suggesting revisions is not possible with a written signature. --></errorMessage>
+        <name>echosign_dev1__Written_Without_Revisions</name>
+    </validationRules>
+</CustomObjectTranslation>

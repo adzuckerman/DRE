@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Form Field --></label>
+        <name>MC4SF__Form_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- MC List --></label>
+        <name>MC4SF__MC_List__c</name>
+        <relationshipLabel><!-- MC Interest Groupings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MailChimp ID --></label>
+        <name>MC4SF__MailChimpID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MailChimp ID --></label>
+        <name>MC4SF__MailChimp_ID__c</name>
+    </fields>
+    <layouts>
+        <layout>Interest Grouping Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

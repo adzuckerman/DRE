@@ -1,0 +1,31 @@
+<apex:page docType="html-5.0"  showHeader="false"  standardController="Contact"  tabStyle="Contact"  extensions="Litmos.ContactTrainingListController" sidebar="false" >
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+    $('#errorDiv').hide();
+    if('{!type}' == 'learningPath'){
+      assignToLearningPath();
+    }
+    
+    
+});
+
+function openLitmosDialog(tkn , litmosType){
+  if('{!currentContact.Litmos_Activated__c}' == 'true'){
+     //$('[id$=pathFrame]').attr("src","https://dev.litmos.com/account/oauthlogin?auth_referer=sfdc&access_token="+tkn+"&sfdcIdLP={!selectedId}");
+     $('[id$=pathFrame]').attr("src","{!baseAPPURL}account/oauthlogin?auth_referer=sfdc&access_token="+tkn+"&sfdcIdLP={!selectedId}");
+     
+  }else{
+     $('#errorDiv').show();
+  }
+}
+</script>
+    <apex:form id="frm">
+    <apex:actionFunction name="assignToLearningPath" action="{!assignTraining}" rerender="false" oncomplete="openLitmosDialog('{!token}','AssignToLearningPath');"/>
+      <apex:iframe id="pathFrame" src=""  scrolling="false" width="630px" height="620px" title="Litmos"/> 
+    <div id="errorDiv">
+      {!$Label.litmos__sync_error_message}
+    </div>
+    </apex:form>
+    </apex:page>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Seleccionar campo de acuerdo de destino.</help>
+        <label><!-- Target Agreement Field --></label>
+        <name>echosign_dev1__Agreement_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Template --></label>
+        <name>echosign_dev1__Agreement_Template__c</name>
+        <relationshipLabel><!-- Map Data into Agreement Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Introduzca un valor para el campo de destino.</help>
+        <label><!-- Target Field Value --></label>
+        <name>echosign_dev1__Constant_Value__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione un campo desde el objeto maestro para que sea el campo de origen.</help>
+        <label><!-- Select Source Field from Master Object --></label>
+        <name>echosign_dev1__Field_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapping Method --></label>
+        <name>echosign_dev1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Input Specific Value</masterLabel>
+            <translation>Valor específico de entrada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select Master Object Field</masterLabel>
+            <translation>Seleccionar campo de objeto maestro</translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Asignar datos al campo Acuerdo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Asignar datos en campos de acuerdo</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Asignar datos al nombre del campo Acuerd</nameFieldLabel>
+    <layouts>
+        <layout>Map Data into Agreement Field Layout</layout>
+        <sections>
+            <label>Personalización de vínculos</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

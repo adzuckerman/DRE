@@ -1,0 +1,4 @@
+<apex:page controller="Litmos.BaseController" sidebar="false" action="{!SetupCheck}" >
+    
+    <apex:iframe src="{!ApiBaseUri}/account/oauthlogin?auth_referer=sfdc&access_token={!AccessToken}&courseToDo=true" rendered="true" scrolling="true" height="1800px" />
+</apex:page>

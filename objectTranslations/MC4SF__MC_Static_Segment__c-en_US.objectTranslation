@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>MC4SF__Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Reset --></label>
+        <name>MC4SF__Last_Reset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Update --></label>
+        <name>MC4SF__Last_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- MC List --></label>
+        <name>MC4SF__MC_List__c</name>
+        <relationshipLabel><!-- MC Static Segments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MailChimp ID --></label>
+        <name>MC4SF__MailChimp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Count --></label>
+        <name>MC4SF__Member_Count__c</name>
+    </fields>
+    <layouts>
+        <layout>MC Static Segment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

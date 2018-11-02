@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Customer Product --></label>
+        <name>Customer_Product__c</name>
+        <relationshipLabel><!-- Booking Months --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoice Percent --></label>
+        <name>Invoice_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Booking Month</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Booking Months</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Booking Month Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

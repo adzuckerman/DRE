@@ -7,6 +7,14 @@
         <value xsi:type="xsd:string">97daed19d2f18437cdc84c1161ff0c14</value>
     </values>
     <values>
+        <field>Days__c</field>
+        <value xsi:type="xsd:double">15.0</value>
+    </values>
+    <values>
+        <field>Delete_Logs_After_Days__c</field>
+        <value xsi:type="xsd:double">90.0</value>
+    </values>
+    <values>
         <field>New_User_Profile_Name__c</field>
         <value xsi:type="xsd:string">Force User</value>
     </values>

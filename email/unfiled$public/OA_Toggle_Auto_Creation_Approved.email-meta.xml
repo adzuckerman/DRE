@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>OA Toggle Auto Creation Approved</name>
+    <style>none</style>
+    <subject>OA Approved Toggl Project Auto-Creation for {!TASKRAY__Project__c.Name}</subject>
+    <textOnly>To Whom It May Concern:
+
+Please be advised that OA approved Toggl Project Auto-Creation has been approved for the TaskRay Project {!TASKRAY__Project__c.Name}:
+
+https://doctorevidence.my.salesforce.com/{!TASKRAY__Project__c.Id}
+
+No further action is required by any other OA approver at this time.
+
+Thanks,
+System Administrator</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

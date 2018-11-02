@@ -1,0 +1,198 @@
+<apex:page controller="Litmos.ActiveUserListController" id="page" standardStylesheets="false" >
+<!--<apex:page controller="ActiveUserListController" id="page" tabStyle="My_Users__tab" standardStylesheets="false">-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<style>
+    .custPopup{
+     left:45%;
+     top=57%;
+     z-index: 9999;
+     position:absolute; 
+     } 
+    .apexp .bPageBlock .pbHeader .btn{
+        margin-left: 120px !important;
+    }
+    .popupBackground{ background-color:black;
+     opacity: 0.30;
+     filter: alpha(opacity = 30);
+     position:absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     z-index: 9998; }
+     
+     .apexp .bPageBlock.apexDefaultPageBlock .pbBody .pbSubheader h3 {
+        font-size: 1.1em;
+        color:#000000 !important;
+    }
+span.nav {
+    float: right;
+    display: block;
+    }
+    span.nav a {
+    display: inline-block;
+    padding: 0.5em;
+}
+</style>     
+    
+<!--<script src="{!URLFOR($resource.litmos_resources,'litmos_resources/js/jquery-1.11.3.js')}"></script>-->
+
+<script>
+    function FlagError(flagged){
+        if($(".check:checked").length > 0){
+            if(flagged==true)
+                CheckForFlag();
+            else
+                CheckForUnflag();
+        }else{
+            alert('You must have to select atleast one user');
+        }
+        
+    }
+    function checkError(){
+        if($(".check:checked").length > 0)
+            assignCourses();
+        else
+            alert('You must have to select atleast one user');
+    }
+    function confirmation(flagged){
+       var conf;
+       var length = $(".check:checked").length;
+       if(flagged==true)
+           conf=confirm(length +" Users have been selected for provisioning. Please confirm before proceeding.");
+       else
+           conf=confirm(length +" Users have been selected to be unflagged for Litmos Sync.Please confirm?");
+       if(conf==true){
+         updateUsers(flagged);
+       }
+           
+    } 
+    function checkedOrUncheckedAll(){
+            if($(".checkAll").is(':checked'))
+                $(".check").prop('checked',true);
+            else
+                $(".check").prop('checked',false);
+        
+    }
+    function selectOrDeselectAll(){
+        if($(".check:checked").length == $(".check").length)
+            $(".checkAll").prop('checked',true);
+        else
+            $(".checkAll").prop('checked',false);        
+    }
+</script>
+    <apex:form id="frm">
+
+    <apex:actionStatus id="status">
+        <apex:facet name="start"> 
+             <apex:outputPanel id="tstpopup"> 
+                    <apex:outputPanel styleClass="popupBackground" layout="block" style="width:100%"/> 
+                    <apex:outputPanel styleClass="custPopup" layout="block"> 
+                        <img src="http://jimpunk.net/Loading/wp-content/uploads/loading45.gif" style="horizontal-align:middle;height:100px;width:130px;margin-top:120%"/> 
+                        <!--<span>Please wait...</span>--> 
+                    </apex:outputPanel> 
+             </apex:outputPanel> 
+        </apex:facet> 
+      </apex:actionStatus>
+      
+    
+    <apex:sectionHeader title="User" subtitle="Setup"/>
+    <apex:pageMessages ></apex:pageMessages> 
+    <apex:actionFunction name="CheckForFlag" oncomplete="confirmation(true);" action="{!checkForFlag}"  rerender="frm" status="status"/>
+    <apex:actionFunction name="CheckForUnflag" oncomplete="confirmation(false);" action="{!checkForUnflag}"  rerender="frm" status="status"/>
+    <apex:actionFunction name="search" action="{!search}"  rerender="frm" status="status"/>
+    
+    <apex:actionFunction name="updateUsers" action="{!updateUsers}" rerender="frm">
+      <apex:param name="flagged" value=""  assignTo="{!isFlagged}" />
+    </apex:actionFunction>
+    <apex:actionFunction name="assignCourses" action="{!assignCourses}" rerender="frm"/>
+       <apex:pageBlock title="Search Users">
+          
+           <table width="100%">
+               
+               <tr>
+                   <td width="5%"></td>
+                   <td width="20%"> 
+                       <apex:inputText value="{!fName}" html-placeholder="Enter First Name" style="height:25px;width:80%;border-radius:5px;"/>
+                        <apex:commandButton value="Go!" style="background:#9CCC49;color:white;height:30px;font-size:13px" onclick="search(); return false"/>
+                   </td>
+                   <td width="3%"></td>
+                   <td width="20%"> 
+                       <apex:inputText value="{!lName}" html-placeholder="Enter Last Name" style="height:25px;width:80%;border-radius:5px;"/>
+                       <apex:commandButton value="Go!" style="background:#9CCC49;color:white;height:30px;font-size:13px" onclick="search(); return false"/>
+                   </td>
+                   <td width="3%"></td>
+                   <td width="20%"> 
+                       <apex:inputText value="{!role}" html-placeholder="Enter Role" style="height:25px;width:80%;border-radius:5px;"/>
+                       <apex:commandButton value="Go!" style="background:#9CCC49;color:white;height:30px;font-size:13px" onclick="search(); return false"/>
+                   </td>
+                   <td width="3%"></td>
+                   <td width="20%"> 
+                       <apex:inputText value="{!profile}" html-placeholder="Enter Profile" style="height:25px;width:80%;border-radius:5px;"/>
+                       <apex:commandButton value="Go!" style="background:#9CCC49;color:white;height:30px;font-size:13px" onclick="search(); return false"/>
+                   </td>
+                   <td width="14%"></td>
+                   
+               </tr>
+           </table>
+       </apex:pageBlock>
+       <apex:pageBlock title="Select Users">
+            <apex:pageBlockSection columns="1" title="Active Users">
+                <apex:outputPanel rendered="{!userModelList.size == 0}">
+                    No User Found!
+                </apex:outputPanel>
+                <apex:outputPanel >
+                <apex:pageBlockTable value="{!userModelList}" id="activeUserSection" var="user" rendered="{!userModelList.size > 0}">
+                    <apex:column headerValue="Action">
+                        <apex:facet name="header">
+                            <input class="checkAll" type="checkbox" style="vertical-align:middle" onChange="checkedOrUncheckedAll(); return false"/>
+                        </apex:facet>
+                        <apex:inputCheckbox styleClass="check" onChange="selectOrDeselectAll(); return false" value="{!user.flag}" style="vertical-align:middle"/>
+                        <!--<apex:commandLink value="Edit"/>&nbsp;
+                        <apex:commandLink value="Login"/>-->
+                        
+                    </apex:column>
+                    
+                    <apex:column value="{!user.userObj.name}" headerValue="Full Name"/>
+                    <apex:column value="{!user.userObj.alias}"/>
+                    <apex:column value="{!user.userObj.username}"/>
+                    <apex:column value="{!user.userObj.LastLoginDate}"/>
+                    <apex:column value="{!user.userObj.userrole.name}" headerValue="Role"/>
+                    <apex:column value="{!user.userObj.isActive}"/>
+                    <apex:column value="{!user.userObj.profile.name}" headerValue="Profile"/>
+                    <apex:column value="{!user.userObj.Litmos__Sync_Litmos__c}"/>
+                    <apex:column value="{!user.userObj.Litmos__Litmos_Activated__c}"/>
+                    <!--<apex:column value="{!user.userObj.manager.name}" headerValue="Manager"/>-->
+                    <!--<apex:column >
+                        <apex:commandLink value="View Courses" action="/apex/AssignCoursesToUsers?uIds={!user.userObj.id}&viewCourses=1" rendered="{!user.userObj.Sync_Litmos__c == true && user.userObj.LitmosUserId__c != null}"/>
+                    </apex:column>-->
+                    
+                </apex:pageBlockTable>
+                
+                <apex:outputPanel id="gridId" styleClass="nav">
+                  <apex:commandLink action="{!previous}" rendered="{!showPrevious}" reRender="activeUserSection,gridId" status="actStatusId">Previous</apex:commandlink>
+                  <apex:commandLink action="{!next}" rendered="{!showNext}" reRender="activeUserSection,gridId" status="actStatusId">Next</apex:commandlink>
+                  
+                  <apex:actionStatus id="actStatusId" >
+                        <apex:facet name="start" >
+                          <img src="{!$Resource.loading}" />                    
+                        </apex:facet>
+                  </apex:actionStatus>
+                
+                </apex:outputPanel>
+                
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Provision to Litmos"  onclick="FlagError(true); return false;" style="background:#9CCC49;color:white;text-align:center;height:30px;font-size:13px"/>
+                <!--<apex:commandButton value="Unflag For Litmos" onclick="FlagError(false); return false;" style="background:#9CCC49;color:white;height:30px;font-size:13px"/>
+                <apex:commandButton value="Assign Courses" onclick="checkError(); return false" style="background:#9CCC49;color:white;height:30px;font-size:13px"/>-->
+                
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

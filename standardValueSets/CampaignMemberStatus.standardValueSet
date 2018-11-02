@@ -12,6 +12,16 @@
         <label>Account Created, no further activity</label>
     </standardValue>
     <standardValue>
+        <fullName>Attended 1st Meeting</fullName>
+        <default>false</default>
+        <label>Attended 1st Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended 2nd Meeting</fullName>
+        <default>false</default>
+        <label>Attended 2nd Meeting</label>
+    </standardValue>
+    <standardValue>
         <fullName>Attended Once</fullName>
         <default>false</default>
         <label>Attended Once</label>
@@ -72,9 +82,24 @@
         <label>Enoxaparin for ACS and VTE w/ Severe RF</label>
     </standardValue>
     <standardValue>
+        <fullName>Enrolled in 1st Meeting</fullName>
+        <default>false</default>
+        <label>Enrolled in 1st Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Enrolled in 2nd Meeting</fullName>
+        <default>false</default>
+        <label>Enrolled in 2nd Meeting</label>
+    </standardValue>
+    <standardValue>
         <fullName>ICER Replication: Multiple Sclerosis</fullName>
         <default>false</default>
         <label>ICER Replication: Multiple Sclerosis</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Interested</fullName>
+        <default>false</default>
+        <label>Interested</label>
     </standardValue>
     <standardValue>
         <fullName>Invitation Sent - Confirmed Response</fullName>
@@ -87,6 +112,11 @@
         <label>Invitation Sent - No Response</label>
     </standardValue>
     <standardValue>
+        <fullName>Invited</fullName>
+        <default>false</default>
+        <label>Invited</label>
+    </standardValue>
+    <standardValue>
         <fullName>lms.doctorevidence.com</fullName>
         <default>false</default>
         <label>lms.doctorevidence.com</label>
@@ -95,6 +125,11 @@
         <fullName>No Response</fullName>
         <default>false</default>
         <label>No Response</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Interested</fullName>
+        <default>false</default>
+        <label>Not Interested</label>
     </standardValue>
     <standardValue>
         <fullName>Patient Profiles in Hypertension</fullName>

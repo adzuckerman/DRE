@@ -1,0 +1,127 @@
+<apex:page standardController="Lead" extensions="Litmos.LMRecommendedCoursesForLeadController">
+<apex:includeScript value="{!$Resource.Litmos__jquerymin}"/>
+<apex:includeScript value="{!$Resource.Litmos__owlcarouseljs}"/>
+<apex:stylesheet value="{!$Resource.Litmos__owlcarouselcss}" />
+
+<style type="text/css">
+.owl-carousel{
+display:block;
+
+}
+.owl-carousel .owl-item img { width:150px; height:150px; }
+.owl-carousel .item {
+    /* background: #4DC7A0; */
+    padding: 1rem;
+    width: 141px;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    .owl-container{
+       position: relative;
+       height: 300px;
+       overflow: scroll;
+    }
+     .owl-controls {
+    margin-top: -10px;
+    text-align: left;
+    -webkit-tap-highlight-color: transparent;
+}
+.owl-controls .owl-nav [class*=owl-] {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 5px;
+    padding: 4px 7px;
+    background: #7d7d84;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.owl-controls .owl-nav .owl-prev:hover {
+    background: #666;
+}
+.owl-controls .owl-nav .owl-next:hover {
+    background: #666;
+}
+
+span.visible-xs{
+    display:block;
+}
+d.no-content {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #676767;
+    padding: 40px;
+}
+</style>
+
+<script>
+
+function showPopup(litmosId,programId){
+    var url = '{!ApiBaseUri}/account/oauthlogin?auth_referer=sfdcTile&access_token={!AccessToken}&c='+litmosId;
+    var myWindow = window.open(url, "", "width=700, height=600");
+    clickedOnRecommendedCourseFn(programId);
+}
+$(document).ready(function(){
+$('.owl-carousel').owlCarousel({
+    nav:true,
+    navText:['Previous','Next'],
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:2,
+            nav:false
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        },
+        1300:{
+            items:6,
+            nav:true,
+            loop:false
+        }
+    }
+});
+
+});
+
+</script>
+<apex:form id="formId" rendered="{!showRecommendedCourses}">
+<apex:actionFunction name="clickedOnRecommendedCourseFn" action="{!clickedOnRecommendedCourse}" reRender="">
+    <apex:param value="" name="programId" assignTo="{!programIdVal}"/>
+</apex:actionFunction>
+
+<div class="owl-contianer">
+<div class="owl-carousel">
+
+<apex:repeat value="{!modelList}" var="f">
+<div class="item">
+        
+                    <apex:commandLink onclick="showPopup('{!f.litmosId}','{!f.programId}');return false;"><apex:image onclick="" value="{! if(f.imageUrl!='',ApiBaseUri+'/mic/courseimage?imageUrl='+f.imageUrl,$Resource.noImage)}" alt="{!f.programName}" title="{!f.programName}"/></apex:commandLink>
+                
+              
+                     <b><apex:outputLabel value="{!f.programName}"></apex:outputLabel></b>
+                             
+</div>    
+</apex:repeat>    
+</div>
+</div>
+<span class="visible-xs">Scroll to view all </span>
+</apex:form>  
+
+<apex:outputPanel rendered="{!!showRecommendedCourses}">
+    <div class="item"><span class="visible-xs">Scroll to view all</span></div>
+</apex:outputPanel> 
+</apex:page>

@@ -1,0 +1,113 @@
+<apex:page docType="html-5.0" standardController="Contact" tabStyle="contact" standardStylesheets="true" extensions="Litmos.ContactTrainingWidgetControllerNew" sidebar="false">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no"/> 
+</head>
+
+    <apex:form id="frm">
+    
+        <apex:pageBlock id="table" >
+        <h1>Training</h1>
+        <div class="ft-wrapper">
+            
+    
+            
+            <apex:outputPanel rendered="{!AND(!showSyncError , modelList.size>0)}">
+            <table border="1" class="training-widget large" >
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Assigned Date</th>
+                    <th>Due Date</th>
+                    <th>Completed Date</th>
+                    <th>Completed</th>
+                    <th>Percentage Completed</th>
+                    <th>Compliant Untill</th>
+                </tr>
+                <apex:repeat value="{!modelList}" var="m">
+                       <apex:outputPanel rendered="{!AND(!showSyncError , modelList.size>0)}" layout="none">
+                       <tr> 
+                        <td>{!m.name}</td>
+                        <td>{!m.type}</td>
+                        <td>{!m.assignedDate}</td>
+                        <td>{!m.dueDate}</td>
+                        <td>{!m.completedDate}</td>
+                        <td><apex:inputCheckbox disabled="true" value="{!m.completedBoolean}"/></td>
+                        <td>{!m.completed}%</td>
+                        <td>{!m.compliantUntillDate}</td>
+                       </tr> 
+                    </apex:outputPanel>
+                </apex:repeat>    
+            </table>
+            </apex:outputPanel>
+            </div>
+            <apex:outputPanel rendered="{!AND(!showSyncError, modelList.size==0)}">
+               <p class="no-content">{!$Label.litmos__no_course_and_learnings}</p>
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!showSyncError}">
+              <p class="no-content">{!$Label.litmos__sync_error_message}</p>
+            </apex:outputPanel>
+
+        </apex:pageBlock> 
+    </apex:form>
+<style>
+p.no-content {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #676767;
+    padding: 40px;
+}
+
+.apexp .bPageBlock p {
+    margin-bottom: 0;
+    display: table-cell;
+    vertical-align: middle;
+    height: 65px;
+    text-align: center;
+    width: 25%;
+}
+
+    .ui-dialog,
+    #dialog {
+        width:630px !important;
+    }
+   table.training-widget {
+        table-layout:fixed;
+        width:100%;
+        overflow: auto;
+        border-spacing: 0px;
+        border: none;
+        background: #fff;
+        border-style: solid;
+        border-width: 0px;
+    }
+    
+    table.training-widget td {
+        border: 0px;
+        border-bottom: #E4E4E4 1px solid;
+        padding: 4px 5px;
+        color:#676767;
+    }
+    table.training-widget th {
+        padding: 5px;
+        border: 0px;
+        font-weight:bold;
+        color:#676767;
+        border-bottom: #DDDDDD 1px solid;
+         white-space: normal;
+    }
+    @media(max-width:768px){
+        .ft-wrapper {
+            width: 360px;
+            overflow: auto;
+        }
+        .ft-wrapper table.training-widget{
+            width:900px;
+        }
+    }
+    .contactBlock h1{
+        line-height:25px;
+    }
+</style>
+    
+</apex:page>

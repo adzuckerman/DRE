@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>Litmos__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Litmos__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- LitmosID --></label>
+        <name>Litmos__LitmosID__c</name>
+    </fields>
+    <fields>
+        <label><!-- ModuleTypeDesc --></label>
+        <name>Litmos__ModuleTypeDesc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Passmark --></label>
+        <name>Litmos__Passmark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Litmos__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- UpdatedDate --></label>
+        <name>Litmos__UpdatedDate__c</name>
+    </fields>
+</CustomObjectTranslation>

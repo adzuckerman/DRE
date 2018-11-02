@@ -14,14 +14,28 @@
 @isTest
 global class HTTPMockCallout implements HttpCalloutMock {
     
+    global boolean positive = true;
+    global HTTPMockCallout() {
+    }
+    global HTTPMockCallout(boolean positiveReturn) {
+        positive = positiveReturn;
+    }
+    
     global HTTPResponse respond(HTTPRequest req) {
         
-        HttpResponse res = new HttpResponse();
-        res.setHeader('Content-Type', 'application/json');
-        string jsonResBody = '{"data": {"id":912345678, "wid":777, "cid":123456, "name":"sa4-test-WXYZ", "billable":false, "active":false, "at":"2013-03-06T12:15:37+00:00", "template":true, "color":"6"}}';
-        res.setBody(jsonResBody);
-        res.setStatusCode(200);
-        return res;
+        if (positive) {
+            HttpResponse res = new HttpResponse();
+            res.setHeader('Content-Type', 'application/json');
+            string jsonResBody = '{"data": {"id":912345678, "wid":777, "cid":123456, "name":"sa4-test-WXYZ", "billable":false, "active":false, "at":"2013-03-06T12:15:37+00:00", "template":true, "color":"6"}}';
+            res.setBody(jsonResBody);
+            res.setStatusCode(200);
+            return res;
+        } else {
+            HttpResponse res = new HttpResponse();
+            res.setBody('Bad request');
+            res.setStatusCode(400);
+            return res;
+        }
     
     }
 }

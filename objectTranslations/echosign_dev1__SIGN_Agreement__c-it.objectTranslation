@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- PICO ID / Project Name --></label>
+        <name>PICO_ID_Project_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Vendor Name --></label>
+        <name>Preferred_Vendor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Vendor Request --></label>
+        <name>Preferred_Vendor_Request__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SFID / Opportunity ID --></label>
+        <name>SFID_Opportunity_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Estimated Fees --></label>
+        <name>Total_Estimated_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>echosign_dev1__Account__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Options --></label>
+        <name>echosign_dev1__AdditionalOptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 1 (User) --></label>
+        <name>echosign_dev1__Additional_Recipient_1_User__c</name>
+        <relationshipLabel><!-- Agreements (Additional Recipient 1 (User)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 2 (User) --></label>
+        <name>echosign_dev1__Additional_Recipient_2_User__c</name>
+        <relationshipLabel><!-- Agreements (Additional Recipient 2 (User)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 3 (User) --></label>
+        <name>echosign_dev1__Additional_Recipient_3_User__c</name>
+        <relationshipLabel><!-- Agreements (Additional Recipient 3 (User)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Consente di selezionare la lingua dei destinatari.</help>
+        <label><!-- Language --></label>
+        <name>echosign_dev1__AgreementLocale__c</name>
+        <picklistValues>
+            <masterLabel>Chinese (China)</masterLabel>
+            <translation>Cinese (Cina)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Taiwan)</masterLabel>
+            <translation>Cinese (Taiwan)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech (Czech Republic)</masterLabel>
+            <translation>Ceco (Repubblica Ceca)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish (Denmark)</masterLabel>
+            <translation>Danese (Danimarca)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch (Netherlands)</masterLabel>
+            <translation>Olandese (Paesi Bassi)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United Kingdom)</masterLabel>
+            <translation>Inglese (Regno Unito)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United States)</masterLabel>
+            <translation>Inglese (Stati Uniti)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish (Finland)</masterLabel>
+            <translation>Finlandese (Finlandia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French (France)</masterLabel>
+            <translation>Francese (Francia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German (Germany)</masterLabel>
+            <translation>Tedesco (Germania)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Icelandic (Iceland)</masterLabel>
+            <translation>Islandese (Islanda)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian (Indonesia)</masterLabel>
+            <translation>Indonesiano (Indonesia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian (Italy)</masterLabel>
+            <translation>Italiano (Italia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese (Japan)</masterLabel>
+            <translation>Giapponese (Giappone)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean (South Korea)</masterLabel>
+            <translation>Coreano (Corea del Sud)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malay (Malaysia)</masterLabel>
+            <translation>Malese (Malesia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian (Norway)</masterLabel>
+            <translation>Norvegese (Norvegia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish (Poland)</masterLabel>
+            <translation>Polacco (Polonia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Brazil)</masterLabel>
+            <translation>Portoghese (Brasile)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Portugal)</masterLabel>
+            <translation>Portoghese (Portogallo)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian (Russia)</masterLabel>
+            <translation>Russo (Russia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Spain)</masterLabel>
+            <translation>Spagnolo (Spagna)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish (Sweden)</masterLabel>
+            <translation>Svedese (Svezia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai (Thailand)</masterLabel>
+            <translation>Tailandese (Tailandia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish (Turkey)</masterLabel>
+            <translation>Turco (Turchia)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese (Vietnam)</masterLabel>
+            <translation>Vietnamita (Vietnam)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agreement Type --></label>
+        <name>echosign_dev1__Agreement_Type__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>(Facoltativo) Inserite un elenco degli ID degli allegati separati da virgola nell'ordine in cui devono essere visualizzati.</help>
+        <label><!-- Attachment ID Order --></label>
+        <name>echosign_dev1__Attachment_ID_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment Service Invocation Count --></label>
+        <name>echosign_dev1__Attachment_Service_Invocation_Count__c</name>
+    </fields>
+    <fields>
+        <help>Consente di visualizzare in anteprima il documento o di trascinare e rilasciare i campi modulo o firma sul documento prima dell'invio per la firma.</help>
+        <label><!-- Preview or Position Signature Fields --></label>
+        <name>echosign_dev1__Authoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Update --></label>
+        <name>echosign_dev1__AutoUpdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background Action --></label>
+        <name>echosign_dev1__Background_Action__c</name>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation>Annulla</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete</masterLabel>
+            <translation>Elimina</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remind</masterLabel>
+            <translation>Promem.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send</masterLabel>
+            <translation>Invia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update</masterLabel>
+            <translation>Aggiorna</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notify Signer --></label>
+        <name>echosign_dev1__Cancel_Delete_Notify_Signer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Delete Reason --></label>
+        <name>echosign_dev1__Cancel_Delete_Reason__c</name>
+    </fields>
+    <fields>
+        <help>Invia una copia extra dell'accordo firmato a questi indirizzi e-mail.</help>
+        <label><!-- Send email copies to --></label>
+        <name>echosign_dev1__Cc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>echosign_dev1__Contract__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Data Mapping Error --></label>
+        <name>echosign_dev1__Data_Mapping_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Mapping Result --></label>
+        <name>echosign_dev1__Data_Mapping_Result__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Completato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>Errore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Elaborazione in corso</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Sent (Date) --></label>
+        <name>echosign_dev1__DateSentDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent --></label>
+        <name>echosign_dev1__DateSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Signed (Date) --></label>
+        <name>echosign_dev1__DateSignedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Signed --></label>
+        <name>echosign_dev1__DateSigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Viewed (Date) --></label>
+        <name>echosign_dev1__DateViewedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Viewed --></label>
+        <name>echosign_dev1__DateViewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Unsigned --></label>
+        <name>echosign_dev1__DaysUnsigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Until Signed --></label>
+        <name>echosign_dev1__DaysUntilSigned__c</name>
+    </fields>
+    <fields>
+        <help>Specifica il numero di giorni alla scadenza dell'accordo. Raggiunta la scadenza, non sarà più possibile firmare l'accordo.</help>
+        <label><!-- Expire document in X days --></label>
+        <name>echosign_dev1__DaysUntilSigningDeadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Key --></label>
+        <name>echosign_dev1__Document_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document --></label>
+        <name>echosign_dev1__Document__c</name>
+    </fields>
+    <fields>
+        <help>Invia automaticamente ai destinatari un promemoria settimanale o giornaliero.</help>
+        <label><!-- Enable Automatic Reminders --></label>
+        <name>echosign_dev1__Enable_Automatic_Reminders__c</name>
+    </fields>
+    <fields>
+        <help>Firma in hosting per ottenere le firme manuali dal computer o dal dispositivo in uso.</help>
+        <label><!-- Host signing for the first signer --></label>
+        <name>echosign_dev1__Enable_Hosted_Signing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encoded Password --></label>
+        <name>echosign_dev1__EncodedPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>echosign_dev1__ErrorMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign External Password --></label>
+        <name>echosign_dev1__External_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Signers Verification Method --></label>
+        <name>echosign_dev1__External_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>Autenticazione basata su conoscenza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>Password per la firma dell'accordo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>Autenticazione identità Web</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fill &amp; Sign --></label>
+        <name>echosign_dev1__Fill_Sign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Internal Password --></label>
+        <name>echosign_dev1__Internal_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Signers Verification Method --></label>
+        <name>echosign_dev1__Internal_Signers_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Knowledge based authentication</masterLabel>
+            <translation>Autenticazione basata su conoscenza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password to sign agreement</masterLabel>
+            <translation>Password per la firma dell'accordo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web identity authentication</masterLabel>
+            <translation>Autenticazione identità Web</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- LastEventId --></label>
+        <name>echosign_dev1__LastEventId__c</name>
+    </fields>
+    <fields>
+        <help>Questo campo archivia l'ID del record di tutti i record convertiti dai pacchetti non gestiti.</help>
+        <label><!-- Legacy Record ID --></label>
+        <name>echosign_dev1__Legacy_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Mapping Error --></label>
+        <name>echosign_dev1__Merge_Mapping_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Mapping Result --></label>
+        <name>echosign_dev1__Merge_Mapping_Result__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Completato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>Errore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Elaborazione in corso</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Merge Mapping --></label>
+        <name>echosign_dev1__Merge_Mapping__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Specifica un messaggio ai destinatari.</help>
+        <label><!-- Message --></label>
+        <name>echosign_dev1__Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minutes Until Signed --></label>
+        <name>echosign_dev1__Minutes_Until_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipients (Email) --></label>
+        <name>echosign_dev1__More_Recipients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>echosign_dev1__NewPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Load Action --></label>
+        <name>echosign_dev1__On_Load_Action__c</name>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation>Annulla</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete</masterLabel>
+            <translation>Elimina</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remind</masterLabel>
+            <translation>Promem.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send</masterLabel>
+            <translation>Invia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update</masterLabel>
+            <translation>Aggiorna</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>View</masterLabel>
+            <translation>Vista</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>echosign_dev1__Opportunity__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Server URL --></label>
+        <name>echosign_dev1__Partner_Server_URL__c</name>
+    </fields>
+    <fields>
+        <help>Il file PDF firmato inviato a tutte le parti è crittografato e verrà richiesta questa password per aprirlo. La password non è recuperabile, pertanto fate attenzione a non perderla.</help>
+        <label><!-- Password required to view PDF --></label>
+        <name>echosign_dev1__PasswordProtectPDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password required to sign --></label>
+        <name>echosign_dev1__PasswordProtectSign__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Password --></label>
+        <name>echosign_dev1__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Signed --></label>
+        <name>echosign_dev1__Percent_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect Delay (seconds) --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_Delay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Sign Redirect URL --></label>
+        <name>echosign_dev1__Post_Sign_Redirect_URL__c</name>
+    </fields>
+    <fields>
+        <help>Se questa casella è selezionata, Document Cloud invierà il documento al numero di fax del referente. Se il numero di fax del referente non viene specificato, Document Cloud invierà il documento all'indirizzo e-mail del referente.</help>
+        <label><!-- Send written signatures to fax number --></label>
+        <name>echosign_dev1__PreferFax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Mapping --></label>
+        <name>echosign_dev1__Process_Template__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Imposta questo campo affinché nelle pagine di base e avanzata per l'accordo Document Cloud venga rigenerato il relativo elenco dei destinatari utilizzando i campi di consultazione nel record Accordo.</help>
+        <label><!-- Rebuild Recipient List --></label>
+        <name>echosign_dev1__Rebuild_Recipient_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 1 (Contact) --></label>
+        <name>echosign_dev1__Recipient2__c</name>
+        <relationshipLabel><!-- Related Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 2 (Contact) --></label>
+        <name>echosign_dev1__Recipient3__c</name>
+        <relationshipLabel><!-- Related Agreements (2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 3 (Contact) --></label>
+        <name>echosign_dev1__Recipient4__c</name>
+        <relationshipLabel><!-- Related Agreements (3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recipient Addresses --></label>
+        <name>echosign_dev1__Recipient_Addresses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 1 (Lead) --></label>
+        <name>echosign_dev1__Recipient_Lead2__c</name>
+        <relationshipLabel><!-- Related Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 2 (Lead) --></label>
+        <name>echosign_dev1__Recipient_Lead3__c</name>
+        <relationshipLabel><!-- Related Agreements (2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Recipient 3 (Lead) --></label>
+        <name>echosign_dev1__Recipient_Lead4__c</name>
+        <relationshipLabel><!-- Related Agreements (3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>L'accordo verrà inviato all'indirizzo e-mail associato al lead</help>
+        <label><!-- Recipient (Lead) --></label>
+        <name>echosign_dev1__Recipient_Lead__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recipient (User) --></label>
+        <name>echosign_dev1__Recipient_User__c</name>
+        <relationshipLabel><!-- Agreements (Recipient (User)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recipient (Contact) --></label>
+        <name>echosign_dev1__Recipient__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remind recipient to sign --></label>
+        <name>echosign_dev1__RemindRecipient__c</name>
+        <picklistValues>
+            <masterLabel>Every Day, Until Signed</masterLabel>
+            <translation>Ogni giorno, fino alla firma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Week, Until Signed</masterLabel>
+            <translation>Ogni settimana, fino alla firma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>Mai</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>echosign_dev1__Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- ReturnURL_Text --></label>
+        <name>echosign_dev1__ReturnURL_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- ReturnURL --></label>
+        <name>echosign_dev1__ReturnURL__c</name>
+    </fields>
+    <fields>
+        <help>Selezionate questa opzione se anche voi dovete firmare l'accordo. Quindi, selezionate chi deve firmare prima tra voi e i destinatari.</help>
+        <label><!-- I also need to sign this document --></label>
+        <name>echosign_dev1__SenderSigns__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender Recorded --></label>
+        <name>echosign_dev1__Sender_Recorded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender Signs Only --></label>
+        <name>echosign_dev1__Sender_Signs_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send On Behalf Of --></label>
+        <name>echosign_dev1__Sender_User__c</name>
+        <relationshipLabel><!-- Agreements (Send On Behalf Of) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Signature Order --></label>
+        <name>echosign_dev1__SignatureOrder__c</name>
+        <picklistValues>
+            <masterLabel>I sign, then the Recipient signs</masterLabel>
+            <translation>Firmo io e in seguito il destinatario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recipient signs, then I sign</masterLabel>
+            <translation>Firma il destinatario e in seguito io</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Signature Type --></label>
+        <name>echosign_dev1__SignatureType__c</name>
+        <picklistValues>
+            <masterLabel>Written Signature</masterLabel>
+            <translation>Firma manuale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-Signature</masterLabel>
+            <translation>Firma elettronica</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recipients sign in --></label>
+        <name>echosign_dev1__Signature_Flow__c</name>
+        <picklistValues>
+            <masterLabel>Any Order</masterLabel>
+            <translation>Qualsiasi ordine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Entered</masterLabel>
+            <translation>Ordine di inserimento</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Signed PDF --></label>
+        <name>echosign_dev1__SignedPDF__c</name>
+    </fields>
+    <fields>
+        <help>Specifica la data di scadenza dell'accordo a partire dalla quale non potrà più essere firmato.</help>
+        <label><!-- Signing Deadline --></label>
+        <name>echosign_dev1__Signing_Deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signing URL --></label>
+        <name>echosign_dev1__Signing_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>echosign_dev1__StatusVisible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Status --></label>
+        <name>echosign_dev1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation>Accettato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Approvato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled / Declined</masterLabel>
+            <translation>Annullato/Rifiutato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation>Creato il</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation>Consegnato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Bozza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>Scaduto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form-Filled</masterLabel>
+            <translation>Compilato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Acceptance</masterLabel>
+            <translation>Inviato per accettazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Approval</masterLabel>
+            <translation>Inviato per approvazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Delivery</masterLabel>
+            <translation>Inviato per consegna</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Form-Filling</masterLabel>
+            <translation>Inviato per compilazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out for Signature</masterLabel>
+            <translation>Inviato per firma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Send</masterLabel>
+            <translation>Pre-invio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send in Progress</masterLabel>
+            <translation>Invio in corso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation>Firmato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Acceptance</masterLabel>
+            <translation>In attesa di contro accettazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Approval</masterLabel>
+            <translation>In attesa della controapprovazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Delivery</masterLabel>
+            <translation>In attesa di contro consegna</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Form-Filling</masterLabel>
+            <translation>In attesa di contro compilazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Counter-Signature</masterLabel>
+            <translation>In attesa della controfirma</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sync Data Mapping --></label>
+        <name>echosign_dev1__Sync_Data_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trigger Data Mapping --></label>
+        <name>echosign_dev1__Trigger_Process_Template__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Accordo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Accordi</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Additional Fields --></label>
+        <name>AdditionalFieldSet</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome accordo</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Agreement Layout Enterprise / Unlimited</layout>
+        <sections>
+            <label>Funzioni di EchoSign</label>
+            <section>EchoSign Functions</section>
+        </sections>
+        <sections>
+            <label>Opzioni di EchoSign</label>
+            <section>EchoSign Options</section>
+        </sections>
+        <sections>
+            <label>Messaggio</label>
+            <section>Message</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agreement Layout Professional</layout>
+        <sections>
+            <label>Funzioni di EchoSign</label>
+            <section>EchoSign Functions</section>
+        </sections>
+        <sections>
+            <label>Campo interni di EchoSign - NON MODIFICARE</label>
+            <section>EchoSign Internal Fields - DO NOT EDIT</section>
+        </sections>
+        <sections>
+            <label>Opzioni di EchoSign</label>
+            <section>EchoSign Options</section>
+        </sections>
+        <sections>
+            <label>Messaggio</label>
+            <section>Message</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- There is a maximum of 180 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Maximum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The signing deadline date must not be in the past. --></errorMessage>
+        <name>echosign_dev1__Signing_Deadline_Future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Positioning fields and signatures is not possible with a written signature. --></errorMessage>
+        <name>echosign_dev1__WrittenWithoutPosition</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Suggesting revisions is not possible with a written signature. --></errorMessage>
+        <name>echosign_dev1__Written_Without_Revisions</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Cancel_Agreement_Bulk --></label>
+        <name>echosign_dev1__Cancel_Agreement_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Agreement --></label>
+        <name>echosign_dev1__Delete_Agreement</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Agreement_Bulk --></label>
+        <name>echosign_dev1__Delete_Agreement_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshStatus --></label>
+        <name>echosign_dev1__RefreshStatus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendReminder --></label>
+        <name>echosign_dev1__SendReminder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Agreement_Bulk --></label>
+        <name>echosign_dev1__Send_Agreement_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Reminder_Bulk --></label>
+        <name>echosign_dev1__Send_Reminder_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendforSignature --></label>
+        <name>echosign_dev1__SendforSignature</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SetAgreementPassword --></label>
+        <name>echosign_dev1__SetAgreementPassword</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_Agreement_Bulk --></label>
+        <name>echosign_dev1__Update_Agreement_Bulk</name>
+    </webLinks>
+</CustomObjectTranslation>

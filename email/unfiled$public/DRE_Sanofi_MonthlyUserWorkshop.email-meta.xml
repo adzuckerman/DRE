@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>invite re: Sanofi Monthly User Forum</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DRE-Sanofi-MonthlyUserWorkshop</name>
+    <style>none</style>
+    <subject>DOCTOR EVIDENCE TRAINING INVITATION</subject>
+    <textOnly>*|Doctor Evidence Upcoming DOC Search Trainings|*
+
+Dear {!Contact.FirstName},
+Are you interested in learning how to maximize your use of the Doctor Evidence platforms? Attend our Monthly User Workshop for hands-on assistance on any of the Doctor Evidence platforms.
+ 
+Learn to:
+Use DOC Search to conduct Rapid Assessments, monitor new literature for adverse events, identify research gaps, create feasibility reports on a research project, create signals for daily literature surveillance and more.
+Use DOC Label to search, browse, and compare labels with simple or complex keywords, create automatic alerts, and view side-by-side results of multiple labels in an interactive search environment.
+Use DOC Library to access, annotate, rate and share custom library packages.
+Use DOC Data to filter relevant variables in preparation for analysis, to create evidence tables and to export data for presentations and other uses.
+SCHEDULE:
+2 Aug 2018 | 10-11 AM EST | 4-5 PM CET |
+13 Sept 2018 | 10-11 AM EST | 4-5 PM CET |
+4 Oct 2018 | 10-11 AM EST | 4-5 PM CET |
+
+ASIA TIME ZONE: 21 Sept 2018 | 9-10 AM GMT+8| 
+
+Please respond to this invitation with the date(s) of the workshops you would like to attend. You will receive a calendar invite for as many events as you would like. Feel free to drop in!.
+
+
+Kind Regards,
+
+Nancy Morgan
+Vice President, Learning and Development
+301 Arizona Ave Suite 301 Santa Monica CA 90401
+Doctor Evidence
+
+Doctor Evidence (DRE) is a technology and research services company that finds, synthesizes and analyzes information from published sources. We will work with you--at no cost--to create deliverables such as Systematic Literature Reviews, Meta-Analyses, Landscape Analyses, Comparative Safety Assessments, and Regulatory Responses across several therapeutic areas:  Cardiovascular, Diabetes, Immunology, Multiple Sclerosis, General Medicines (including Consumer Health), Vaccines and Oncology.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

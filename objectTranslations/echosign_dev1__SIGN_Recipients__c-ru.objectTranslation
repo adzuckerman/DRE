@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Agreement --></label>
+        <name>echosign_dev1__Agreement__c</name>
+        <relationshipLabel><!-- Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>echosign_dev1__Contact__c</name>
+        <relationshipLabel><!-- EchoSign Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date/Time Completed --></label>
+        <name>echosign_dev1__Date_Time_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>echosign_dev1__Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>echosign_dev1__Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>echosign_dev1__Lead__c</name>
+        <relationshipLabel><!-- Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>echosign_dev1__Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>echosign_dev1__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Account --></label>
+        <name>echosign_dev1__Person_Account__c</name>
+        <relationshipLabel><!-- Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Phone Verification Country Code --></label>
+        <name>echosign_dev1__Phone_Verification_Country_Code__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>27</masterLabel>
+            <translation><!-- 27 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31</masterLabel>
+            <translation><!-- 31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>32</masterLabel>
+            <translation><!-- 32 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>33</masterLabel>
+            <translation><!-- 33 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>34</masterLabel>
+            <translation><!-- 34 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>351</masterLabel>
+            <translation><!-- 351 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>353</masterLabel>
+            <translation><!-- 353 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>354</masterLabel>
+            <translation><!-- 354 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>358</masterLabel>
+            <translation><!-- 358 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36</masterLabel>
+            <translation><!-- 36 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>380</masterLabel>
+            <translation><!-- 380 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>39</masterLabel>
+            <translation><!-- 39 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40</masterLabel>
+            <translation><!-- 40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>41</masterLabel>
+            <translation><!-- 41 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>420</masterLabel>
+            <translation><!-- 420 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>421</masterLabel>
+            <translation><!-- 421 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>43</masterLabel>
+            <translation><!-- 43 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>44</masterLabel>
+            <translation><!-- 44 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45</masterLabel>
+            <translation><!-- 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>46</masterLabel>
+            <translation><!-- 46 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>47</masterLabel>
+            <translation><!-- 47 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48</masterLabel>
+            <translation><!-- 48 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>49</masterLabel>
+            <translation><!-- 49 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>504</masterLabel>
+            <translation><!-- 504 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>52</masterLabel>
+            <translation><!-- 52 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>54</masterLabel>
+            <translation><!-- 54 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>55</masterLabel>
+            <translation><!-- 55 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>56</masterLabel>
+            <translation><!-- 56 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>57</masterLabel>
+            <translation><!-- 57 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>593</masterLabel>
+            <translation><!-- 593 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>61</masterLabel>
+            <translation><!-- 61 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>62</masterLabel>
+            <translation><!-- 62 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>63</masterLabel>
+            <translation><!-- 63 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>64</masterLabel>
+            <translation><!-- 64 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65</masterLabel>
+            <translation><!-- 65 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>66</masterLabel>
+            <translation><!-- 66 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>686</masterLabel>
+            <translation><!-- 686 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>81</masterLabel>
+            <translation><!-- 81 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>84</masterLabel>
+            <translation><!-- 84 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>852</masterLabel>
+            <translation><!-- 852 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>86</masterLabel>
+            <translation><!-- 86 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>886</masterLabel>
+            <translation><!-- 886 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>91</masterLabel>
+            <translation><!-- 91 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>972</masterLabel>
+            <translation><!-- 972 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>976</masterLabel>
+            <translation><!-- 976 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone Verification Phone Number --></label>
+        <name>echosign_dev1__Phone_Verification_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient Message --></label>
+        <name>echosign_dev1__Recipient_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient Role --></label>
+        <name>echosign_dev1__Recipient_Role__c</name>
+        <picklistValues>
+            <masterLabel>Acceptor</masterLabel>
+            <translation>Принимающий</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approver</masterLabel>
+            <translation>Утверждающая сторона</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certified Recipient</masterLabel>
+            <translation>Получатель</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegate to Acceptor</masterLabel>
+            <translation>Передать принимающему</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegate to Approver</masterLabel>
+            <translation>Делегировать утверждающему</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegate to Certified Recipient</masterLabel>
+            <translation>Передать получателю</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegate to Form Filler</masterLabel>
+            <translation>Передать заполняющему</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delegate to Signer</masterLabel>
+            <translation>Передать подписывающему</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form Filler</masterLabel>
+            <translation>Заполняющий</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signer</masterLabel>
+            <translation>Подписывающая сторона</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recipient Type --></label>
+        <name>echosign_dev1__Recipient_Type__c</name>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation>Контакт</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>Эл. почта</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>Группа</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation>Интерес</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User</masterLabel>
+            <translation>Пользователь</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Replaced --></label>
+        <name>echosign_dev1__Replaced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signer Verification Method --></label>
+        <name>echosign_dev1__Signer_Verification_Method__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>Эл. почта</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KBA</masterLabel>
+            <translation>Контрольные вопросы</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password</masterLabel>
+            <translation>Пароль</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation>Телефон</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social</masterLabel>
+            <translation>Соц. сеть</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source Recipient --></label>
+        <name>echosign_dev1__Source_Recipient__c</name>
+        <relationshipLabel><!-- Alternate Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>echosign_dev1__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation>Принято</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Утверждено</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation>Отклонено</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation>Доставлено</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form-Filled</masterLabel>
+            <translation>Заполнено</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replaced</masterLabel>
+            <translation>Замененный</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation>Подписано</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Acceptance</masterLabel>
+            <translation>Ожидание принятия</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Approval</masterLabel>
+            <translation>Ожидание утверждения</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Delivery</masterLabel>
+            <translation>Ожидание доставки</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Form-Filling</masterLabel>
+            <translation>Ожидание заполнения</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Signature</masterLabel>
+            <translation>Ожидание подписи</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>echosign_dev1__User__c</name>
+        <relationshipLabel><!-- Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- useEmailAddress --></label>
+        <name>echosign_dev1__useEmailAddress__c</name>
+    </fields>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Recipient --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Recipient --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Recipient --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Recipient --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Recipient --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Recipient --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Recipient --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Recipient --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value><!-- Recipient --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value><!-- Recipient --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value><!-- Recipient --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value><!-- Recipient --></value>
+    </caseValues>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Recipient Name --></nameFieldLabel>
+    <layouts>
+        <layout>Echosign Recipient Layout</layout>
+        <sections>
+            <label>Пользовательские ссылки</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

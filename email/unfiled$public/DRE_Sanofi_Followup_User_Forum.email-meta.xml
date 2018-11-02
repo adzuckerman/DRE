@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>follow up User Forum template to be adapted to individual Sanofi training</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>blankletterhead</letterhead>
+    <name>DRE-Sanofi-Follow-up User Forum</name>
+    <style>freeForm</style>
+    <subject>Doctor Evidence-Sanofi Post Training</subject>
+    <textOnly>Dear {!Contact.FirstName},
+Thank you for participating in the Doctor Evidence User Workshop. Attached please find the DOC Search Quickguides. If you need support using DOC Label, please feel free to contact Ashwani Srivastava at asrivastava@doctorevidence.com. 
+
+Some brief information:
+
+To view videos on navigating the Doctor Evidence platforms, please visit https://dre.litmos.com/self-signup/ . Enter the code “Sanofi” when you create your account. 
+Access the Doctor Evidence platforms at https://sanofi.doctorevidence.com.
+To initiate a project with DRE, please sign in using the link above, and then complete this brief form: https://reports.doctorevidence.com/pages/Client/ServiceProject.aspx.
+Contact sanofi.support@doctorevidence.com if you need support in using the platforms or for further training. 
+
+We look forward to fulfilling your needs!
+
+Sincerely,
+Nancy Morgan						
+Vice President, Learning and Development
+Doctor Evidence
+847.507.1451</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,15 @@
+<apex:page standardController="Contact" extensions="Litmos.SyncLitmosDataController" action="{!getLitmosData}" >
+<apex:form >
+  <apex:pageBlock title="On Demand Sync Status">
+      <apex:pageBlockButtons location="top" >
+        <apex:commandButton value="Back" action="{!back}"/>
+      </apex:pageBlockButtons>
+      <apex:pageBlockSection rendered="{!showSyncStatus}">
+         The training data for this user is being sycned and will update momentarily.
+      </apex:pageBlockSection>
+      <apex:pageBlockSection rendered="{!!showSyncStatus}">
+        The selected user is not Litmos activated.
+      </apex:pageBlockSection>
+  </apex:pageBlock>
+</apex:form>
+</apex:page>

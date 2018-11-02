@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>Litmos__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Code --></label>
+        <name>Litmos__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliant Until --></label>
+        <name>Litmos__CompliantTillDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliant Days Remaining --></label>
+        <name>Litmos__CompliantTillDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deleted --></label>
+        <name>Litmos__Deleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course Description --></label>
+        <name>Litmos__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- DisplayOrder --></label>
+        <name>Litmos__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course Fee --></label>
+        <name>Litmos__Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image URL --></label>
+        <name>Litmos__Image_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- IncludeInLibrary --></label>
+        <name>Litmos__IncludeInLibrary__c</name>
+    </fields>
+    <fields>
+        <label><!-- LitmosID --></label>
+        <name>Litmos__LitmosID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percentage Complete --></label>
+        <name>Litmos__Percentage_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Litmos__TimeLimitDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days until Due Date --></label>
+        <name>Litmos__TimeLimitDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Sum Percentages --></label>
+        <name>Litmos__Total_Sum_Percentages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated --></label>
+        <name>Litmos__UpdatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Assigned --></label>
+        <name>Litmos__Users_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Completed --></label>
+        <name>Litmos__Users_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- p_Percentage Complete --></label>
+        <name>Litmos__p_Percentage_Complete__c</name>
+    </fields>
+    <layouts>
+        <layout>Program Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Module Details --></label>
+            <section>Module Details</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -24,7 +24,55 @@ public with sharing class TogglToSalesforce {
         }
     }
 
-    public void getTimeEntriesLast45Days(Integer page) {
+    public void getTimeEntriesLastNDays(Integer page, Integer days) {
+        Date until = Date.today();
+        Date since = until.addDays(-days);
+        String untilString = Datetime.newInstance(until.year(), until.month(), until.day()).format('YYYY-MM-d');
+        String sinceString = Datetime.newInstance(since.year(), since.month(), since.day()).format('YYYY-MM-d');
+
+        String requestUrl = this.apiReporstsUrl + '/details?workspace_id=' + this.WORKSPACE_ID + '&user_agent=' + this.authenticator.username
+            + '&since=' + sinceString + '&until=' + untilString + '&page=' + String.valueOf(page);
+        HttpResponse resp = this.invokeCallout(requestUrl, '', 'GET', new Map<String, String>());
+
+        if (resp.getStatusCode() == 400) {
+            resp = this.invokeCallout(requestUrl, '', 'GET', new Map<String, String>());
+
+            if (resp.getStatusCode() == 400) {
+                List<Toggl_Custom_Log__c> sameLogs = [SELECT Id FROM Toggl_Custom_Log__c WHERE URL__c = :requestUrl];
+
+                if (sameLogs.isEmpty()) {
+                    Toggl_Custom_Log__c customLog = new Toggl_Custom_Log__c(
+                        URL__c = requestUrl
+                    );
+                    insert customLog;
+                }
+                return;
+            }
+        }
+
+        ReportDetailsWrapper reportDetails = (ReportDetailsWrapper) JSON.deserialize(resp.getBody(), ReportDetailsWrapper.class);
+
+        this.handleTimeEntries(reportDetails, new List<Toggl_Custom_Log__c>());
+    }
+
+    public void getFailedTimeEntry(String url) {
+        HttpResponse resp = this.invokeCallout(url, '', 'GET', new Map<String, String>());
+
+        if (resp.getStatusCode() == 400) {
+            resp = this.invokeCallout(url, '', 'GET', new Map<String, String>());
+
+            if (resp.getStatusCode() == 400) {
+                return;
+            }
+        }
+
+        List<Toggl_Custom_Log__c> logsToDelete = [SELECT Id FROM Toggl_Custom_Log__c WHERE URL__c = :url];
+
+        ReportDetailsWrapper reportDetails = (ReportDetailsWrapper) JSON.deserialize(resp.getBody(), ReportDetailsWrapper.class);
+        this.handleTimeEntries(reportDetails, logsToDelete);
+    }
+
+    private void handleTimeEntries(ReportDetailsWrapper reportDetails, List<Toggl_Custom_Log__c> logsToDelete) {
         List<Profile> profiles = [SELECT Id, Name FROM Profile WHERE Name = :this.NEW_USER_PROFILE_NAME];
         if (profiles.isEmpty()) {
             throw new RequiredFeatureMissingException('There is no required profile on the org');
@@ -39,16 +87,6 @@ public with sharing class TogglToSalesforce {
             userEmails.put(userDetails.email, userDetails.uid);
         }
 
-        //Date until = Date.today();
-        //Date since = until.addDays(-115);
-        String untilString = '2018-04-30';//Datetime.newInstance(until.year(), until.month(), until.day()).format('YYYY-MM-d');
-        String sinceString = '2018-04-1';//Datetime.newInstance(since.year(), since.month(), since.day()).format('YYYY-MM-d');
-
-        resp = this.invokeCallout(this.apiReporstsUrl + '/details?workspace_id=' + this.WORKSPACE_ID + '&user_agent=' + this.authenticator.username
-            + '&since=' + sinceString + '&until=' + untilString + '&page=' + String.valueOf(page), '', 'GET', new Map<String, String>());
-
-        ReportDetailsWrapper reportDetails = (ReportDetailsWrapper) JSON.deserialize(resp.getBody(), ReportDetailsWrapper.class);
-
         List<Toggl_Time_Entry__c> timeEnriesToCreate = new List<Toggl_Time_Entry__c>();
         Map<String, User> usersToCreate = new Map<String, User>();
         Map<String, Account> accountsToCreate = new Map<String, Account>();
@@ -62,6 +100,7 @@ public with sharing class TogglToSalesforce {
             TASKRAYProjectsMap.put(timeEntry.project, null); 
             TASKRAYProjectsStageMap.put(timeEntry.project, ''); 
         }
+
         System.debug('TASKRAYProjectsMap 1 ====> ' + TASKRAYProjectsMap);
         // get existing TASKRAY Projects and related opportunities
         List<TASKRAY__Project__c> existingTASKRAYProjects = [SELECT Id, Name, TASKRAY__trOpportunity__c, TASKRAY__trOpportunity__r.StageName FROM TASKRAY__Project__c WHERE Name IN: TASKRAYProjectsMap.keySet()];
@@ -80,8 +119,6 @@ public with sharing class TogglToSalesforce {
         for (Account existingAccount : existingAccounts) {
             accountsToCreate.put(existingAccount.Name, existingAccount);
         }
-        
-        
 
         for(TimeEntryWrapper timeEntry : reportDetails.data) {
             if (accountsToCreate.get(timeEntry.client) == null) {
@@ -147,11 +184,14 @@ public with sharing class TogglToSalesforce {
                 
                 if(accountName != 'Doctor Evidence' && accountName != 'DRE Tech')
                 {
-                    if(taskrayType == 'Contract ID' || taskrayType == 'PICO ID')
+                    if(taskrayType == 'Contract ID' || taskrayType == 'PICO ID' || projectName == 'Doc Label' || projectName == 'Data Hub')
                     {
                         if(opportunityStageName != 'Closed Won' && opportunityStageName != 'Closed Lost') GAAPClass = 'Work In Progress';  
                         if(opportunityStageName == 'Closed Won') GAAPClass = 'Cost of Revenue';
                         if(opportunityStageName == 'Closed Lost') GAAPClass = 'Sales & Marketing';
+                    }
+                    else if(projectName == 'Pre-Sale') {
+                        GAAPClass = 'Sales & Marketing';
                     }
                 } else {
                     if(accountName == 'Doctor Evidence')
@@ -162,7 +202,7 @@ public with sharing class TogglToSalesforce {
                     } else {
                         if(accountName == 'DRE Tech')
                         {
-                            if(projectName == 'DRE Tech_Admin/Internal' || projectName == 'DRE Tech_Platform Maintenance') {
+                            if(projectName == 'Admin/Internal' || projectName == 'Platform Maintenance') {
                                 GAAPClass = 'Research & Development';
                             } else { GAAPClass = '2.0 Cap'; }
                         }
@@ -179,7 +219,7 @@ public with sharing class TogglToSalesforce {
                     projectId = TASKRAYProjectsMap.get(timeEntry.project).Id;
                     opportunityId = TASKRAYProjectsMap.get(timeEntry.project).TASKRAY__trOpportunity__c;
                 }
-            }   
+            }
             timeEnriesToCreate.add(new Toggl_Time_Entry__c(
                 Billable__c = timeEntry.is_billable,
                 Description__c = timeEntry.description,
@@ -198,19 +238,22 @@ public with sharing class TogglToSalesforce {
         }
 
         for(Toggl_Time_Entry__c e : timeEnriesToCreate) {
-            
-            
             System.debug(e);
         }
         Schema.SObjectField f = Toggl_Time_Entry__c.Fields.Toggl_Id__c;
         System.debug(Database.upsert(timeEnriesToCreate, f));
+        System.debug(Database.delete(logsToDelete));
     }
 
-    public Integer getTimeEntryCount() {
-        //Date until = Date.today();
-        //Date since = until.addDays(-115);
-        String untilString = '2018-04-30';//Datetime.newInstance(until.year(), until.month(), until.day()).format('YYYY-MM-d');
-        String sinceString = '2018-04-1';//Datetime.newInstance(since.year(), since.month(), since.day()).format('YYYY-MM-d');
+    public Integer getTimeEntryCount(Integer days, Date untilDate, Date sinceDate) {
+        Date until = Date.today();
+        if(untilDate != null)
+            until = untilDate;
+        Date since = until.addDays(-days);
+        if(sinceDate != null)
+            since = sinceDate;
+        String untilString = Datetime.newInstance(until.year(), until.month(), until.day()).format('YYYY-MM-d');
+        String sinceString = Datetime.newInstance(since.year(), since.month(), since.day()).format('YYYY-MM-d');
 
         HttpResponse resp = this.invokeCallout(this.apiReporstsUrl + '/details?workspace_id=' + this.WORKSPACE_ID + '&user_agent=' + this.authenticator.username + '&since=' + sinceString + '&until=' + untilString, '', 'GET', new Map<String, String>());
         system.debug('Response---' + resp.getBody());
@@ -218,11 +261,12 @@ public with sharing class TogglToSalesforce {
         return detailWrapper.total_count;
     }
 
-    private HttpResponse invokeCallout(String endpoint, String body, String method, Map<String, String> headers) {
+    public HttpResponse invokeCallout(String endpoint, String body, String method, Map<String, String> headers) {
         HttpRequest request = new HttpRequest();
         System.debug('--- endpoint: ' + endpoint);
         request.setEndpoint(endpoint);
         request.setMethod(method);
+        request.setTimeout(20000);
         if (String.isNotBlank(body)) {
             request.setBody(body);
         }
@@ -275,13 +319,13 @@ public with sharing class TogglToSalesforce {
         }
     }
 
-    private class ReportDetailsWrapper {
+    public class ReportDetailsWrapper {
         public Integer total_count;
         public Integer per_page;
         public List<TimeEntryWrapper> data;
     }
 
-    private class TimeEntryWrapper {
+    public class TimeEntryWrapper {
         public Integer id;
         public Integer pid;
         public Integer tid;

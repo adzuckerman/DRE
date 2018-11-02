@@ -26,7 +26,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Opportunities$Contract_ID__c</field>
+        <field>Account.Opportunities$Name</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Cost of Revenue | 2018</name>

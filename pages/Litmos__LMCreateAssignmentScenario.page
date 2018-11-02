@@ -1,0 +1,262 @@
+<apex:page >
+<!--<apex:page standardController="Opportunity" extensions="LMRecordAssignmentController">
+ <!--<style>
+
+.assignItemBox .assign-header {
+   background-color: #f8f8f8;
+     border-radius: 5px 5px 0px 0px;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    
+    border-top: 3px solid #1797c0;
+}
+.assignItemBox table.item-page-list {
+    border: 1px solid #EEE;
+padding:0px !important;}
+.assignItemBox h2,
+.assignItemBox table.item-page-list h2{
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 100;
+     border-bottom: 1px solid #dbdbdb;
+    display: block;
+    padding: 1em;
+}
+.assignItemBox .assign-header .assign-search{
+padding: 1em;
+
+}
+.ct-box{
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px;
+    height: 32px;
+   /* margin-bottom: 20px;*/
+  }
+
+.ct-box h1{color: #000;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-top:8px;
+    display: block;}
+   
+.assignItemBox .assign-header .field-help-box label {
+    position: absolute;
+    top: 18px;
+    left: 3px;
+    padding-left: 35px;
+    color: #888;
+    z-index: 9000;
+    }
+.assignItemBox .assign-header input[type="text"]{
+    width:30%;
+    font-size: 17px;
+    border: 1px solid #e0e3e5;
+    border-radius: 4px;
+    padding:5px 8px 5px 5px;
+    color: #666;
+    z-index: 999;
+}
+select[size], select[multiple], select[size][multiple]{
+    width:32%;
+    font-size: 17px;
+    border: 1px solid #e0e3e5;
+    border-radius: 4px;
+    padding:5px 8px 5px 5px;
+    color: #666;
+    z-index: 999;
+}
+.assignItemBox .assign-header input[type="submit"],.assignItemBox input[type="submit"]{
+background-color: #9CCC49;
+border-color: #b5b5b5;
+border-bottom-color:#7f7f7f
+    display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0px;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.42857;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+-moz-user-select: none;
+color:#fff;
+
+}
+.assignItemBox table{
+width:100%;
+}
+
+.assignItemBox table.item-page-list{
+   background-color:#fff;
+    border-collapse: collapse;
+}
+.assignItemBox table.item-page-list tr td,
+.assignItemBox table.item-page-list tr th{
+     padding:0 1em;
+     }
+.assignItemBox table.item-page-list tr td a{
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+    font-size: 1em;
+    margin:0px;
+    
+}
+ .assignItemBox .assignResults {
+    /*height: 400px;
+    overflow: auto;*/
+    padding: 10px;
+    }
+    .assignItemBox .assignResults table.item-page-list {
+     width: 100%;
+    border-spacing: 0px !important;
+    
+    }
+    
+.assignItemBox .assignResults table.item-page-list tr {
+    background-image: linear-gradient(#FFF, #FFF);
+    height: 55px;
+}
+.assignItemBox .assignResults table.item-page-list tr td {
+    padding: 10px;
+    border-bottom: 1px solid #EEE;
+    vertical-align: middle;
+    cursor:pointer;
+    }
+    
+    table.item-page-list tr td.main-col, table.grid tr td.main-col, .main-col {
+    width: 100%;
+    }
+    .assignItemBox div.title, .assignItemBox div.title a, .assignItemBox div.title a:link, .assignItemBox div.title:visited, label.title {
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+    font-size: 1em;
+    }
+    .assignItemBox .assignResults table.item-page-list tr td label{
+    display: inline-block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+    .assignItemBox .assign-footer-opt {
+    background-color: #cfeef8;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #cfeef8;
+   
+    padding: 0.8em 1.1em;
+    }
+     .assignItemBox .assign-footer {
+    border-top: 1px solid #CCC;
+    padding: 10px;
+    }
+    
+.assignItemBox table.item-page-list tr th{
+
+padding:0px;}
+   .assignItemBox table.item-page-list tr td:first-child {
+   padding-left:15px;width:30px;
+   }
+  .assignItemBox .assign-header input[type="submit"].success{
+   
+color: #FFF;
+background-color: #9CCC49;
+border-color: #b5b5b5;
+border-bottom-color:#7f7f7f;
+ 
+    }
+    
+    .assignItemBox .centered input[type="submit"].success{
+     margin:0px 0px 0px 9em !important;}
+    .float-left {
+    float: left;
+}
+
+.assignItemBox .assign-header input[type="submit"], .assignItemBox input[type="submit"].loadmore{
+    background-color: #AFB5A5;
+border-color: #b5b5b5;
+border-bottom-color:#7f7f7f
+    display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0px;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.42857;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+-moz-user-select: none;
+color:#fff;
+}
+    .assignItemBox table.item-page-list tr td {
+    padding: 10px 0px 10px 10px;
+    border-bottom: 1px solid #EEE;
+    vertical-align: middle;
+    }
+    .centerd{
+    text-align:center;
+    padding:1.2em 0 ;
+   }
+   
+      .ct-box #assignResults{
+      
+      padding:5.5em;}
+      .check-all{
+          background-color: #cfeef8;
+        color: #000;
+        font-weight: bold;
+        border: 1px solid #cfeef8;
+        padding: 0.8em 1.1em 0.8em 2.7em;
+        border-bottom: 1px solid #dbdbdb;
+      }
+      .check-all label{padding-left:17px;}
+      .pull-right{float:right;}
+      .pull-left{float:left;}
+      .assignItemBox table.item-page-list tr td:first-child{
+          width:100px !important;
+      }
+</style>
+<div class="assignItemBox">
+<div class="assign-header">
+  <apex:form >
+      <div class="ct-box clearfix" >
+          <h1>New Assignment Scenario</h1>
+      </div>
+      
+      <div class="assignResults">
+          <table border="0" class="item-page-list"  >
+                      <tr>
+                        <td>
+                            <apex:outputLabel style="margin-bottom:10px;" value="Name:" />
+                        </td> 
+                        <td>
+                            <apex:inputText value="{!Name}"/>
+                        </td>
+                      </tr>  
+
+                      <tr>
+                        <td>
+                            
+                        </td> 
+                        <td>
+                            <apex:commandButton styleClass="success" value="Create" action="{!createNewAssignmentScenario}"/>
+                        </td>
+                      </tr>    
+  
+          </table>   
+      </div> 
+      
+  </apex:form>
+</div>
+</div>  -->
+</apex:page>

@@ -26,11 +26,6 @@
         <label>Learning &amp; Development</label>
     </customValue>
     <customValue>
-        <fullName>Librarian Lead</fullName>
-        <default>false</default>
-        <label>Librarian Lead</label>
-    </customValue>
-    <customValue>
         <fullName>Methodologist</fullName>
         <default>false</default>
         <label>Methodologist</label>
@@ -61,10 +56,33 @@
         <label>Sr. Clinical Data Specialist</label>
     </customValue>
     <customValue>
-        <fullName>GH QMI</fullName>
+        <fullName>Sr. Search Strategist</fullName>
+        <default>false</default>
+        <label>Sr. Search Strategist</label>
+    </customValue>
+    <customValue>
+        <fullName>Ontology Manager</fullName>
         <default>false</default>
         <isActive>false</isActive>
-        <label>GH QMI</label>
+        <label>Ontology Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>VP Consulting Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>VP Consulting Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Meth Rep #3</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Meth Rep #3</label>
+    </customValue>
+    <customValue>
+        <fullName>Head of Clinical Ops and Data Integrity</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Head of Clinical Ops and Data Integrity</label>
     </customValue>
     <customValue>
         <fullName>Data Integrity Team Lead</fullName>
@@ -91,34 +109,22 @@
         <label>Head of Library Operations</label>
     </customValue>
     <customValue>
-        <fullName>VP Consulting Services</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>VP Consulting Services</label>
-    </customValue>
-    <customValue>
         <fullName>VP Client Services</fullName>
         <default>false</default>
         <isActive>false</isActive>
         <label>VP Client Services</label>
     </customValue>
     <customValue>
-        <fullName>Head of Clinical Ops and Data Integrity</fullName>
+        <fullName>Librarian Lead</fullName>
         <default>false</default>
         <isActive>false</isActive>
-        <label>Head of Clinical Ops and Data Integrity</label>
+        <label>Librarian Lead</label>
     </customValue>
     <customValue>
-        <fullName>Ontology Manager</fullName>
+        <fullName>GH QMI</fullName>
         <default>false</default>
         <isActive>false</isActive>
-        <label>Ontology Manager</label>
-    </customValue>
-    <customValue>
-        <fullName>Meth Rep #3</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Meth Rep #3</label>
+        <label>GH QMI</label>
     </customValue>
     <masterLabel>TaskRay Roles</masterLabel>
     <sorted>false</sorted>

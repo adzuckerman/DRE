@@ -1,0 +1,109 @@
+<apex:page controller="Litmos.AssignCoursesToUsersController" standardStylesheets="false">
+    <style>
+        .custPopup{
+         left:45%;
+         top=57%;
+         z-index: 9999;
+         position:absolute; 
+         } 
+        
+        .popupBackground{ background-color:black;
+         opacity: 0.30;
+         filter: alpha(opacity = 30);
+         position:absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         z-index: 9998; }
+    
+    </style>     
+    <script src="{!URLFOR($resource.litmos_resources,'litmos_resources/js/jquery-1.11.3.js')}"></script>
+
+    <script>
+        
+        function check(status){
+            
+            if({!userIdSet.size == 0} ){
+                alert('You must have to select atleast one user!');
+            }else{
+                if(status == 'course'){
+                    
+                        add();
+                   
+                }else if(status == 'learningpath'){
+                    
+                        addLP();
+                    
+                }/*else if(status == 'aftercomplete'){
+                    if({!lookupObjLP.learningPathID__c != null || lookupObj.ProgramID__c != null})
+                        alert('Assign Successful.');
+                }*/
+                
+            }                                                    
+        }
+    </script>   
+    <apex:form id="frm">
+     <apex:actionStatus id="status">
+        <apex:facet name="start"> 
+             <apex:outputPanel id="tstpopup"> 
+                    <apex:outputPanel styleClass="popupBackground" layout="block" style="width:100%"/> 
+                    <apex:outputPanel styleClass="custPopup" layout="block"> 
+                        <img src="http://jimpunk.net/Loading/wp-content/uploads/loading45.gif" style="horizontal-align:middle;height:100px;width:130px;margin-top:120%"/> 
+                        <!--<span>Please wait...</span>--> 
+                    </apex:outputPanel> 
+             </apex:outputPanel> 
+        </apex:facet> 
+      </apex:actionStatus>
+    <apex:actionFunction name="add" action="{!add}" rerender="resultPanel" oncomplete="check('aftercomplete')" status="status"/>
+    <apex:actionFunction name="addLP" action="{!addLP}" rerender="resultPanel" status="status"/>
+    
+    <apex:sectionHeader title="Assign" subtitle="Courses"/>
+        <apex:pageBlock title="Select Learning Paths / Courses">
+            <apex:pageBlockButtons location="top" style="float:right">
+                <apex:commandButton value="Back To Users" action="/apex/ActiveUserList"/>    
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="2">
+                <apex:facet name="header">
+                    <span style="font-size:14px;margin-left:8%">Select Course</span>
+                    <span style="font-size:14px;margin-left:41%">Select Learning Path</span>
+                    
+                </apex:facet>
+                <apex:pageBlockSectionItem >
+                
+                    <apex:inputfield value="{!lookupObj.Litmos__ProgramID__c}"/>
+                    <apex:commandButton value="Assign" onclick="check('course'); return false"/>
+                    
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                
+                    <apex:inputfield value="{!lookupObjLP.Litmos__LearningPathID__c}"/>
+                    <apex:commandButton value="Assign" onclick="check('learningpath'); return false"/>
+                    
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:outputPanel id="resultPanel">
+            <apex:pageblock title="Assign Learning Paths / Courses" rendered="{!rendered}">
+                <apex:pageBlockTable value="{!modelList}" var="m" rendered="{!modelList.size > 0}">
+                    <apex:column value="{!m.name}" headerValue="Title"/>
+                    <apex:column value="{!m.Type}" headerValue="Type"/>
+                    <apex:column value="{!m.uname}" headerValue="User Name"/>
+                    
+                    <apex:column value="{!m.description}" headerValue="Description"/>
+                    
+                    <apex:column value="{!m.Assigned}" headerValue="Assigned"/>
+                    <apex:column value="{!m.Completed}" headerValue="Completed"/>
+                    
+                </apex:pageBlockTable>  
+                <apex:outputPanel rendered="{!modelList.size == 0}">
+                    No Course Or Learning Path Assigned!
+                </apex:outputPanel>    
+            </apex:pageblock>
+            <apex:outputPanel rendered="{!not(rendered)}">
+                No Course Or Learning Path Assigned!
+            </apex:outputPanel>
+
+        </apex:outputPanel>
+    </apex:form>  
+</apex:page>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_ACTIVITY</field>
+    </columns>
+    <columns>
+        <field>FK_$i__Email__c.i__Type__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.i__DaysSinceLastMail__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.i__LastInboundSent__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.i__LastOutboundSent__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.i__LastMailTimeDelta__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.i__LastInboundMail__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.i__LastOutboundMail__c</field>
+    </columns>
+    <description>Shows details of last inbound/outbound email, by Opportunity. Requires the &quot;Last Email fields&quot; feature.</description>
+    <format>Tabular</format>
+    <name>Last Email by Opportunity</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity@Opportunity.i__LastMail__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.i__LastMailSent__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

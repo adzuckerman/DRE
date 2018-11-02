@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Agreement --></label>
+        <name>echosign_dev1__Agreement__c</name>
+        <relationshipLabel><!-- Form Field Imports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Salesforce to Adobe Sign Data Mapping --></label>
+        <name>echosign_dev1__Data_Mapping__c</name>
+        <relationshipLabel><!-- Form Field Imports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document Key --></label>
+        <name>echosign_dev1__Document_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duplicate Form Fields --></label>
+        <name>echosign_dev1__Duplicate_Form_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Form Fields --></label>
+        <name>echosign_dev1__Form_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>echosign_dev1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Agreement</masterLabel>
+            <translation>Соглашение</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text Entry</masterLabel>
+            <translation>Текстовая запись</translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Form Field Import --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Form Field Import --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Form Field Import --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Form Field Import --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Form Field Import --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Form Field Import --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Form Field Import --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Form Field Import --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value><!-- Form Field Import --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value><!-- Form Field Import --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value><!-- Form Field Import --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value><!-- Form Field Import --></value>
+    </caseValues>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Form Field Import Name --></nameFieldLabel>
+    <layouts>
+        <layout>EchoSign Form Field Import Layout</layout>
+        <sections>
+            <label>Пользовательские ссылки</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

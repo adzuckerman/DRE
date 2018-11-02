@@ -79,7 +79,7 @@
             <column>Opportunity.Product_Category__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value></value>
+            <value>IHME Data Mart</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

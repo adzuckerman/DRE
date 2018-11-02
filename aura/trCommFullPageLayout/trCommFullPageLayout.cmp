@@ -1,12 +1,1 @@
-<aura:component access="global">
-  <!-- implements="forceCommunity:layout" -->
-  <aura:attribute name="column1" type="Aura.Component[]" required="false"></aura:attribute>
-
-  <div class="container">
-    <div class='contentPanel'>
-      <div class='full'>
-        {!v.column1}
-      </div>
-    </div>
-  </div>
-</aura:component>
+(hidden)

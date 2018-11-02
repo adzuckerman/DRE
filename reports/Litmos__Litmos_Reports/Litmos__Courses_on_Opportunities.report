@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Litmos__Courses_on_Opportunities__c$Litmos__Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>Litmos__Courses_on_Opportunities__c$Litmos__Course__c</field>
+    </columns>
+    <columns>
+        <field>Litmos__Courses_on_Opportunities__c$Owner</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Courses on Opportunities</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Litmos__Courses_on_Opportunities__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Litmos__Courses_on_Opportunities__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

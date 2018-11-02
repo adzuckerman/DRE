@@ -12,7 +12,7 @@ trigger OpportunityLineItemRecalculation on OpportunityLineItem (before insert, 
         /*
          * Opportunity line items and schedules calculations
          */
-        if (!RevenueCalculationUtil.isTriggerEnabled) {
+        if (!RevenueCalculationUtil.isTriggerEnabled || !RevenueCalculationUtil2.isTriggerEnabled) {
             return;
         } 
         
@@ -22,15 +22,27 @@ trigger OpportunityLineItemRecalculation on OpportunityLineItem (before insert, 
         }
         
         Set<Id> refinedOppoIds = new Set<Id>();
-        List<Opportunity> oppos = [SELECT Automatic_Calculation__c, In_Forecast__c FROM Opportunity WHERE Id IN :oppoIds];
+        Set<Id> refinedOppoIds2 = new Set<Id>();
+        List<Opportunity> oppos = [SELECT Automatic_Calculation__c, In_Forecast__c, Use_New_Forecasting_Algorithm__c FROM Opportunity WHERE Id IN :oppoIds];
         for (Opportunity oppo : oppos) {
             if (!oppo.Automatic_Calculation__c || oppo.In_Forecast__c) {
                 continue;
             }
-            refinedOppoIds.add(oppo.Id);
+            if (oppo.Use_New_Forecasting_Algorithm__c)
+            	refinedOppoIds2.add(oppo.Id);
+            else
+            	refinedOppoIds.add(oppo.Id);
         }
         
         RevenueCalculationUtil.calculateOpportunity([
+            SELECT Amount, Product_Category__c, Contract_Start__c, Contract_End__c, Pricebook2Id, DOC_Data_Configuration__c, 
+                DOC_Data_Licensing__c, DOC_Library_Configuration__c, DOC_Library_Licensing__c, Services_Percentage__c, 
+                Subscription_Percentage__c, Override_Allocations__c
+            FROM Opportunity 
+            WHERE Id IN :refinedOppoIds
+        ]);
+        
+        RevenueCalculationUtil2.calculateOpportunity([
             SELECT Amount, Product_Category__c, Contract_Start__c, Contract_End__c, Pricebook2Id, DOC_Data_Configuration__c, 
                 DOC_Data_Licensing__c, DOC_Library_Configuration__c, DOC_Library_Licensing__c, Services_Percentage__c, 
                 Subscription_Percentage__c, Override_Allocations__c

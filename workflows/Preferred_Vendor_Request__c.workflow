@@ -1,35 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
-        <fullName>Approval_Email_Notification</fullName>
-        <ccEmails>projectmanagement@doctorevidence.com</ccEmails>
-        <ccEmails>accountspayable@doctorevidence.com</ccEmails>
-        <ccEmails>adam@cloudmineconsulting.com</ccEmails>
-        <description>Approval Email Notification</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>bob@doctorevidence.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>hkim@doctorevidence.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mdelaguila@doctorevidence.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>mnewton@doctorevidence.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <field>DRE_Point_of_Contact__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>unfiled$public/Approval_Email_Notification</template>
-    </alerts>
-    <alerts>
         <fullName>Finance_Email_Notification_for_internal_approval</fullName>
         <description>Finance Email Notification – for internal approval</description>
         <protected>false</protected>
@@ -97,27 +67,6 @@
         <template>unfiled$public/Ops_Science_Finance_Email_Notification_Notice_Only</template>
     </alerts>
     <alerts>
-        <fullName>PO_No_Request_Notication</fullName>
-        <ccEmails>finance@doctorevidence.com</ccEmails>
-        <description>PO No. Request Notication</description>
-        <protected>false</protected>
-        <senderType>CurrentUser</senderType>
-        <template>unfiled$public/PO_Requested_Email_Notification</template>
-    </alerts>
-    <alerts>
-        <fullName>Rejection_Email_Notification</fullName>
-        <ccEmails>projectmanagement@doctorevidence.com</ccEmails>
-        <ccEmails>adam@cloudmineconsulting.com</ccEmails>
-        <description>Rejection Email Notification</description>
-        <protected>false</protected>
-        <recipients>
-            <field>DRE_Point_of_Contact__c</field>
-            <type>userLookup</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>unfiled$public/Rejection_Email_Notification</template>
-    </alerts>
-    <alerts>
         <fullName>Science_Email_Notification_for_internal_approval</fullName>
         <description>Science Email Notification – for internal approval</description>
         <protected>false</protected>
@@ -127,6 +76,49 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/Ops_Science_Finance_Email_Notification_Notice_Only</template>
+    </alerts>
+    <alerts>
+        <fullName>Approval_Email_Notification</fullName>
+        <ccEmails>accountspayable@doctorevidence.com</ccEmails>
+        <description>Approval Email Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>hkim@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jpark@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mdelaguila@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>DRE_Point_of_Contact__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Approval_Email_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>PO_No_Request_Notication</fullName>
+        <ccEmails>accountspayable@doctorevidence.com</ccEmails>
+        <description>PO No. Request Notication</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/PO_Requested_Email_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Rejection_Email_Notification</fullName>
+        <description>Rejection Email Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DRE_Point_of_Contact__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Rejection_Email_Notification</template>
     </alerts>
     <fieldUpdates>
         <fullName>Approved_Status</fullName>

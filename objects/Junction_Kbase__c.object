@@ -51,18 +51,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Case__c</fullName>
-        <deleteConstraint>Restrict</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Case</label>
-        <referenceTo>Case</referenceTo>
-        <relationshipLabel>Junction Kbases</relationshipLabel>
-        <relationshipName>Sub_Kbases</relationshipName>
-        <required>true</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Contract_ID__c</fullName>
         <externalId>false</externalId>
         <formula>Case__r.Opportunity_Name__r.Contract_ID__c</formula>
@@ -520,19 +508,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Kbases__c</fullName>
-        <externalId>false</externalId>
-        <label>Ref ID</label>
-        <referenceTo>Kbase__c</referenceTo>
-        <relationshipLabel>Junction Kbases</relationshipLabel>
-        <relationshipName>Sub_Kbases</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields>
         <fullName>LMS_Bucket__c</fullName>
         <externalId>false</externalId>
         <label>LMS Bucket</label>
@@ -656,29 +631,6 @@
         <type>Url</type>
     </fields>
     <fields>
-        <fullName>TaskRay_Project__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>TaskRay Sub-Project</label>
-        <lookupFilter>
-            <active>true</active>
-            <errorMessage>Project must be a sub-project.</errorMessage>
-            <filterItems>
-                <field>TASKRAY__Project__c.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>Sub-Project</value>
-            </filterItems>
-            <infoMessage>Please select a sub-project.</infoMessage>
-            <isOptional>false</isOptional>
-        </lookupFilter>
-        <referenceTo>TASKRAY__Project__c</referenceTo>
-        <relationshipLabel>Junction Kbases</relationshipLabel>
-        <relationshipName>Junction_Kbases</relationshipName>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Team_Lead_Name__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -769,6 +721,54 @@
         </valueSet>
         <visibleLines>4</visibleLines>
     </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Junction Kbases</relationshipLabel>
+        <relationshipName>Sub_Kbases</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TaskRay_Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>TaskRay Sub-Project</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Project must be a sub-project.</errorMessage>
+            <filterItems>
+                <field>TASKRAY__Project__c.TASKRAY__Project_Parent__c</field>
+                <operation>notEqual</operation>
+                <value></value>
+            </filterItems>
+            <infoMessage>Please select a sub-project.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>TASKRAY__Project__c</referenceTo>
+        <relationshipLabel>Junction Kbases</relationshipLabel>
+        <relationshipName>Junction_Kbases</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Kbases__c</fullName>
+        <externalId>false</externalId>
+        <label>Ref ID</label>
+        <referenceTo>Kbase__c</referenceTo>
+        <relationshipLabel>Junction Kbases</relationshipLabel>
+        <relationshipName>Sub_Kbases</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -783,7 +783,7 @@
     <enableStreamingApi>true</enableStreamingApi>
     <label>Junction Kbase</label>
     <nameField>
-        <label>Case to Ref ID</label>
+        <label>Name</label>
         <type>Text</type>
     </nameField>
     <pluralLabel>Junction Kbases</pluralLabel>

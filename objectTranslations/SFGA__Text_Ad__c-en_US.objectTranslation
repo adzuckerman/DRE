@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Lead --></label>
+        <name>SFGA__Lead__c</name>
+        <relationshipLabel><!-- Text Ads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>SFGA__Opportunity__c</name>
+        <relationshipLabel><!-- Text Ads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Text Ad Description 1 --></label>
+        <name>SFGA__Text_Ad_Description_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Ad Description 2 --></label>
+        <name>SFGA__Text_Ad_Description_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Ad Destination URL --></label>
+        <name>SFGA__Text_Ad_Destination_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Ad Display URL --></label>
+        <name>SFGA__Text_Ad_Display_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Ad ID --></label>
+        <name>SFGA__Text_Ad_ID__c</name>
+    </fields>
+</CustomObjectTranslation>

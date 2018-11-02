@@ -1,0 +1,41 @@
+<apex:page controller="Litmos.QueueListController">
+<c:PageBlockTableEnhancer targetPbTableIds="queueTable,batchTable,contactTable" paginate="true" defaultPageSize="20" pageSizeOptions="5,10,20,30,40,50,100"/> 
+    <apex:sectionHeader subtitle="Sync Logs" title="Litmos Setup"/>
+
+    <apex:form >
+        <apex:pageBlock title="Queue Logs">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Back" styleClass="sft" action="{!back}" style="background: rgb(150,201,61);color: white;margin-right:1%;" />
+            </apex:pageBlockButtons>
+            <apex:pageblocktable id="queueTable"  value="{!queueList}"  var="queue">
+                <apex:column headervalue="Queue Id" value="{!queue.Name}"/>
+                <apex:column headervalue="Created Date" value="{!queue.createdDate}"/>
+                <apex:column headervalue="Updated Date" value="{!queue.lastModifiedDate}"/>
+                <apex:column headervalue="User ID"><apex:outputField value="{!queue.Litmos__UserID__c}"/></apex:column>
+                <apex:column headervalue="User Name" value="{!queue.UserID__r.Name}"/>
+                <apex:column headervalue="Contact Name" value="{!queue.ContactID__r.Name}"/>
+                <apex:column headervalue="Learning Path"><apex:outputField value="{!queue.LearningPathID__r.Name}"/></apex:column>
+                <apex:column headervalue="Program"><apex:outputField value="{!queue.ProgramID__r.Name}"/></apex:column>
+                <apex:column headervalue="Module"><apex:outputField value="{!queue.ModuleNewID__r.Name}"/></apex:column>
+                <apex:column headervalue="Record Type" value="{!queue.Litmos__RecordType__c}"/>
+                <apex:column headervalue="Record Status" value="{!queue.Litmos__RecordStatus__c}"/>
+                <apex:column headervalue="Message" value="{!queue.Litmos__Message__c}"/>
+            </apex:pageblocktable>
+        </apex:pageBlock>
+        <apex:pageBlock title="Batch Logs">
+            <apex:pageblocktable id="batchTable"  value="{!batchList}"  var="batch">
+                <apex:column headervalue="Batch Status Id" value="{!batch.Id}"/>
+                <apex:column headervalue="Invoked Class Name" value="{!batch.Litmos__Batch_Invoked__c}"/>
+                <apex:column headervalue="Error Message"><apex:outputField value="{!batch.Litmos__Error_Message__c}"/></apex:column>
+                <apex:column headervalue="Role/ User name" value="{!batch.Litmos__Role_Name__c}"/> 
+            </apex:pageblocktable>
+        </apex:pageBlock>
+        <apex:pageBlock title="Contact Real Time Logs">
+            <apex:pageblocktable id="contactTable"  value="{!contactList}"  var="contact">
+                <apex:column headervalue="Contact Id" value="{!contact.Id}"/>
+                <apex:column headervalue="Contact Last Name" value="{!contact.Litmos__Batch_Invoked__c}"/>
+                <apex:column headervalue="Message"><apex:outputField value="{!contact.Litmos__Error_Message__c}"/></apex:column>
+            </apex:pageblocktable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

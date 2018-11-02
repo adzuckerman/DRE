@@ -1,7 +1,1 @@
-<aura:documentation>
-  <aura:description>TaskRay Checklist Component</aura:description>
-  <aura:example name="ExampleName" ref="exampleComponentName" label="Label">
-    This component is available only on the TaskRay Task Record Home page. It shows the checklists that belong to the TaskRay
-    Task.
-  </aura:example>
-</aura:documentation>
+(hidden)

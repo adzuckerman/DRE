@@ -1,0 +1,314 @@
+<apex:page standardController="Contact" tabStyle="Contact" extensions="Litmos.LMCourseListController" >
+<script type="text/javascript">
+   function selectAllCheckboxes(obj,receivedInputID){
+       var inputCheckBox = document.getElementsByTagName("input");                  
+       for(var i=0; i<inputCheckBox.length; i++){          
+           if(inputCheckBox[i].id.indexOf(receivedInputID)!=-1){                                     
+               inputCheckBox[i].checked = obj.checked;
+           }
+       }
+   }
+   function assignCourse(){
+       asssignCourse();
+   }
+ 
+</script>
+<style>
+
+.assignItemBox .assign-header {
+   background-color: #f8f8f8;
+     border-radius: 5px 5px 0px 0px;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    
+    border-top: 3px solid #1797c0;
+}
+
+
+
+
+
+}
+.assignItemBox table.item-page-list {
+
+padding:0px !important;}
+.assignItemBox h2,
+.assignItemBox table.item-page-list h2{
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 100;
+     border-bottom: 1px solid #dbdbdb;
+    display: block;
+    padding: 1em;
+}
+.assign-search{
+padding: 1em;
+
+}
+.assignItemBox .assign-header .field-help-box label {
+    position: absolute;
+    top: 18px;
+    left: 3px;
+    padding-left: 35px;
+    color: #888;
+    z-index: 9000;
+    }
+.assign-search input[type="text"]{
+    width:50%;
+    font-size: 17px;
+    border: 1px solid #e0e3e5;
+    border-radius: 4px;
+    background: #FFF url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAA6ElEQVQokZXSvUqDQRCF4UfBwp/CQhDBq7DQNkXEIp3egDYKegMxt5JGrOwitiKS2laLgEUqiWCidiqiFt+IcdkVPLAsy8w7e2YYftTABT7HzilqCppCayz5HB104/2CvRzYiIRbbGIWk5jHNgZ4w2oKXuIdWwVHB1H4JA1825sugAu4wXMO7IS9nGZwhacc2MVcAVxCD8M0cBbwTgE8xAfaaaCmGvkd9rGomuwymniIws0UnMAuXiPhOnrq+b0MfdRzltZUIx/iMe62ajn6AQ+wUWgpqzruAx6Vfv4LHgV8/B8Q1nGElS9G/kG2ATO2dQAAAABJRU5ErkJggg==") no-repeat scroll 10px 9px;
+    padding:5px 8px 5px 36px;
+    color: #666;
+    z-index: 999;
+}
+.assign-search input[type="submit"],.assignItemBox input[type="submit"]{
+background-color: #9CCC49;
+border-color: #b5b5b5;
+border-bottom-color:#7f7f7f
+    display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0px;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.42857;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+-moz-user-select: none;
+color:#fff;
+
+}
+.assignItemBox table{
+width:100%;
+}
+
+.assignItemBox table.item-page-list{
+   background-color:#fff;
+    border-collapse: collapse;
+    border: 1px solid #EEE;
+}
+.assignItemBox table.item-page-list tr td,
+.assignItemBox table.item-page-list tr th{
+     padding:0 1em;
+     }
+
+ .assignItemBox .assignResults {
+    height: 400px;
+    overflow: auto;
+    padding: 10px;
+    }
+    .assignItemBox .assignResults table.item-page-list {
+     width: 100%;
+    border-spacing: 0px !important;
+    
+    }
+    
+.assignItemBox .assignResults table.item-page-list tr {
+    background-image: linear-gradient(#FFF, #FFF);
+    height: 55px;
+}
+.assignItemBox .assignResults table.item-page-list tr td {
+    padding: 10px 0px !important;
+    border-bottom: 1px solid #EEE;
+    vertical-align: middle;
+    cursor:pointer;
+    }
+    
+    table.item-page-list tr td.main-col, table.grid tr td.main-col, .main-col {
+    width: 100%;
+    }
+    .assignItemBox div.title, .assignItemBox div.title a, .assignItemBox div.title a:link, .assignItemBox div.title:visited, label.title {
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+    font-size: 1em;
+    }
+    .assignItemBox .assignResults table.item-page-list tr td label{
+    display: inline-block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+    .assignItemBox .assign-footer-opt {
+    background-color: #cfeef8;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #cfeef8;
+   
+    padding: 0.8em 1.1em;
+    }
+     .assignItemBox .assign-footer {
+    border-top: 1px solid #CCC;
+    padding: 10px;
+    }
+    
+.assignItemBox table.item-page-list tr th{
+
+padding:0px;}
+   .assignItemBox table.item-page-list tr td:first-child {
+   padding-left:15px;width:30px;
+   }
+  .assignItemBox .assign-header input[type="submit"].success{
+   
+color: #FFF;
+background-color: #9CCC49;
+border-color: #b5b5b5;
+border-bottom-color:#7f7f7f;
+    margin-top: -6px;
+    margin-left: 10px;
+    }
+    
+    .assignItemBox .centered input[type="submit"].success{
+     margin:0px 0px 0px 9em !important;}
+    .float-left {
+    float: left;
+}
+.assignItemBox .assign-header input[type="submit"], .assignItemBox input[type="submit"].loadmore{
+    background-color: #AFB5A5;
+border-color: #b5b5b5;
+border-bottom-color:#7f7f7f
+    display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0px;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.42857;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+-moz-user-select: none;
+color:#fff;
+}
+    .assignItemBox table.item-page-list tr td {
+    padding: 10px 0px 10px 10px;
+    border-bottom: 1px solid #EEE;
+    vertical-align: middle;
+    }
+    .centerd{
+    text-align:center;
+    padding:1.2em 0 ;
+   }
+   .ct-box{
+    border-radius: 5px 5px 0px 0px;
+    border-top: 3px solid #1797c0;
+    background-color:#f8f8f8;
+        border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+   }
+      .ct-box #assignResults{
+      
+      padding:1.5em;}
+      .check-all{
+          background-color: #cfeef8;
+        color: #000;
+        font-weight: bold;
+        border: 1px solid #cfeef8;
+        padding: 0.8em 1.1em 0.8em 2.7em;
+            border-bottom: 1px solid #dbdbdb;
+      }
+      .check-all label{padding-left:17px;}
+      table.item-page-list th {
+            padding: 10px !important;
+        }
+       
+</style>
+
+<apex:includeScript value="{!$Resource.Litmos__jquery_min}"/>
+
+<script>
+        $( document ).ready(function() {
+            $("input.notallowed").each(function(){
+    
+                $(this).parents('tr').first().css("cursor","not-allowed");
+    
+                $(this).parents('tr').first().find('label').css("cursor","not-allowed");
+            });
+        });
+                    
+        function alertMethod(){
+            alert('You do not have permission to assign courses or learning paths to a contact.');    
+        }
+</script>
+<apex:outputText value="{!scriptfun}" escape="false"></apex:outputText>
+<apex:form id="frm">
+<apex:pageMessages />
+<div class="assignItemBox">
+<div class="assign-header">
+<h2>Search Courses</h2>
+          <div class="assign-search">
+ 
+ <div class="clearfix">
+<apex:inputText value="{!searchstring}" html-placeholder="Search for a course" id="theSearchstring" maxlength="100" size="110" />
+<apex:commandButton value="Go" styleClass="success" action="{!filterAvailableCourseList}"/>
+</div>
+ 
+ </div>
+ </div>
+ <div class="centerd">
+  
+  <apex:actionFunction name="asssignCourse"  action="{!asssignCourseToUser}"  status="status"/>
+  <apex:commandButton value="Assign" styleClass="success" onclick="assignCourse(); return false;"/>
+    <apex:commandButton value="Back" styleClass="success" action="{!back}"/>
+   <br/>
+   <span style="color:green; display:none;" id="success">Course(s) Assigned to Contact</span>
+</div>
+
+ 
+ 
+  
+       <div class="ct-box">
+           <h2>Course List</h2>
+           
+           
+           <div class="check-all">
+            
+        <apex:inputCheckbox onclick="selectAllCheckboxes(this,'inputId')"/> <apex:outputLabel value="Name"/>  
+        <apex:inputCheckbox value="{!sendEmailNotification}" style="float:right;    margin-left: 11px;"/> <apex:outputLabel value="Send Email" style="float:right;"/>
+        
+        </div>
+        
+        
+        <div id="assignResults" style="display:block; overflow-x:auto; max-height:300px">
+      
+    <table border="0" class="item-page-list"  >
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Course Library</th>
+                </tr> 
+                <apex:outputPanel rendered="{!courseResponseList.size>0}"  >
+                    <apex:repeat value="{!courseResponseList}" var="courseItem">
+                   
+                       <tr> 
+                        <td><apex:inputCheckbox value="{!courseItem.isAssigned}" disabled="{! IF(courseItem.isAssigned || !courseItem.courseLibrary,true,false)}" styleClass="{!IF(!courseItem.courseLibrary,'notallowed','allowed')}" id="inputId"/></td>
+                        <td><div class="title"><label>{!courseItem.name}</label></div></td>
+                        <td><div class="title"><label><apex:outputLabel value="{! if(courseItem.courseLibrary,'Yes','No')}"></apex:outputLabel></label></div></td>
+                       </tr> 
+                    
+                </apex:repeat>    
+                </apex:outputPanel>
+            </table>
+            </div>
+            
+            <div class="assign-footer-opt clearfix" style="text-align:center">
+        <apex:commandButton action="{!clickMoreButton}" styleClass="loadmore" value="Load More"/>  
+        </div>
+        
+    
+    
+    </div>
+    </div>
+    </apex:form>
+</apex:page>

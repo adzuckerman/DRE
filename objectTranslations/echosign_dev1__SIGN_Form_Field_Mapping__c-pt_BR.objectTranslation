@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Salesforce to Adobe Sign Data Mapping --></label>
+        <name>echosign_dev1__Data_Mapping__c</name>
+        <relationshipLabel><!-- Adobe Sign Form Field Mappings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Disable --></label>
+        <name>echosign_dev1__Disable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Document Field --></label>
+        <name>echosign_dev1__Form_Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Index --></label>
+        <name>echosign_dev1__Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Input Type --></label>
+        <name>echosign_dev1__Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Lista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation>Texto</translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Form Field Mapping --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Form Field Mapping --></value>
+    </caseValues>
+    <gender><!-- Feminine --></gender>
+    <nameFieldLabel><!-- Target Field --></nameFieldLabel>
+    <layouts>
+        <layout>EchoSign Form Field Mapping Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

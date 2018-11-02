@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Keyword ID --></label>
+        <name>SFGA__Keyword_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>SFGA__Lead__c</name>
+        <relationshipLabel><!-- Keywords --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>SFGA__Opportunity__c</name>
+        <relationshipLabel><!-- Keywords --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

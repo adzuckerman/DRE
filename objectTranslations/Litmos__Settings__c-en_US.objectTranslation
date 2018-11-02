@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- API Key --></label>
+        <name>Litmos__API_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- API V1 Endpoint --></label>
+        <name>Litmos__API_V1_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- API --></label>
+        <name>Litmos__API__c</name>
+    </fields>
+    <fields>
+        <label><!-- AccountOwner --></label>
+        <name>Litmos__AccountOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Base Uri --></label>
+        <name>Litmos__Application_Base_Uri__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Base Url --></label>
+        <name>Litmos__Application_Base_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastSync --></label>
+        <name>Litmos__LastSync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Litmos Account Connected --></label>
+        <name>Litmos__LitmosAccountConnected__c</name>
+    </fields>
+    <fields>
+        <label><!-- OAuthEnabled --></label>
+        <name>Litmos__OAuthEnabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- OAuth Endpoint --></label>
+        <name>Litmos__OAuth_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- OAuth Endpoint --></label>
+        <name>Litmos__OAuth__c</name>
+    </fields>
+</CustomObjectTranslation>

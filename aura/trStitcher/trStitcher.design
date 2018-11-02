@@ -1,6 +1,1 @@
-<design:component label="TaskRay Stitcher">
-  <design:attribute name="overrideRecordId" label="Context Record ID" description="This can be the Id of an object like Account which has a related list of TaskRay projects, or the Id of a TaskRay project itself"
-  />
-  <design:attribute name="templateRestrictions" label="Template Ids (optional)" description="If populated, this attribute will restrict template choices to a set of comma delimited template project ids"
-  />
-</design:component>
+(hidden)

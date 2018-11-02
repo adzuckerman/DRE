@@ -1,0 +1,5 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <b><apex:outputLabel value="Unable To Connect To Litmos, please contact your Litmos Administrator." /></b>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

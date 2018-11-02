@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>DOCTOR EVIDENCE Webinar: April 27, 2016
+at 12:00 pm Pacific | 2:00 pm Central | 3:00 pm Eastern
+- Click here to register now! -</description>
+    <internalUseOnly>false</internalUseOnly>
+    <name>Webinar-Ispor</name>
+    <public>true</public>
+</Document>

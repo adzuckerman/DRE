@@ -33,8 +33,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Account.Opportunities.Monthly_Revenue_Schedules__r$Date__c</dateColumn>
-        <endDate>2016-12-31</endDate>
+        <endDate>2018-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-01-01</startDate>
+        <startDate>2018-01-01</startDate>
     </timeFrameFilter>
 </Report>

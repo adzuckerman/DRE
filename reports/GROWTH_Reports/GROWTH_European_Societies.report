@@ -7,11 +7,12 @@
         <field>ADDRESS1_COUNTRY</field>
     </columns>
     <filter>
+        <booleanFilter>(1 OR 9) AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8</booleanFilter>
         <criteriaItems>
             <column>ACCOUNT_OWNER_NAME</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>GROWTH Account</value>
+            <value>Sandra Zelman Lewis</value>
         </criteriaItems>
         <criteriaItems>
             <column>ADDRESS1_COUNTRY</column>
@@ -55,6 +56,12 @@
             <operator>notEqual</operator>
             <value>Saudi Arabia</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_OWNER_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Melanie Golob</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -82,7 +89,7 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
-        <endDate>2017-02-09</endDate>
+        <endDate>2024-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2013-01-01</startDate>
     </timeFrameFilter>

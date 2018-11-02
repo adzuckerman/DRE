@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cached Input Type --></label>
+        <name>echosign_dev1__Cached_Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>列表</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation>文本</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>如果希望默认对所有发送的协议运行此合并映射，可选中此框。如果对特定的协议或协议模板指定使用另外的合并映射，则可以覆盖默认设置。</help>
+        <label><!-- Default Merge Mapping? --></label>
+        <name>echosign_dev1__Default__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>echosign_dev1__Description__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>合并映射</value>
+    </caseValues>
+    <nameFieldLabel>合并映射名称</nameFieldLabel>
+    <layouts>
+        <layout>EchoSign Merge Mapping Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

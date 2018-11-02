@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Batch Invoked --></label>
+        <name>Litmos__Batch_Invoked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>Litmos__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role Name --></label>
+        <name>Litmos__Role_Name__c</name>
+    </fields>
+</CustomObjectTranslation>

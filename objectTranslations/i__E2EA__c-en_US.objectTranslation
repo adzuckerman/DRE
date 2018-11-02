@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- BothIds --></label>
+        <name>i__BothIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- EmailAddr --></label>
+        <name>i__EmailAddr__c</name>
+        <relationshipLabel><!-- E2EAs (EmailAddr) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>i__Email__c</name>
+        <relationshipLabel><!-- E2EAs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MsgDigest --></label>
+        <name>i__MsgDigest__c</name>
+    </fields>
+    <fields>
+        <label><!-- PenPal --></label>
+        <name>i__PenPal__c</name>
+        <relationshipLabel><!-- E2EAs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sender --></label>
+        <name>i__Sender__c</name>
+        <relationshipLabel><!-- E2EAs (Sender) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sent --></label>
+        <name>i__Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- What role did the email address play in the email? --></help>
+        <label><!-- Type --></label>
+        <name>i__Type__c</name>
+        <picklistValues>
+            <masterLabel>Cc</masterLabel>
+            <translation><!-- Cc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From</masterLabel>
+            <translation><!-- From --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To</masterLabel>
+            <translation><!-- To --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

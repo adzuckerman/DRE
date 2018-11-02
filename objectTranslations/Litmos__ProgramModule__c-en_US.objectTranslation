@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- DisplayOrder --></label>
+        <name>Litmos__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Module New --></label>
+        <name>Litmos__ModuleNewID__c</name>
+        <relationshipLabel><!-- Course Modules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Course --></label>
+        <name>Litmos__ProgramID__c</name>
+        <relationshipLabel><!-- Course Modules --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Course Module Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

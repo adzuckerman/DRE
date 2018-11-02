@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- BothIds --></label>
+        <name>i__BothIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- deleted field --></label>
+        <name>i__LastMsgDigest__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastSent --></label>
+        <name>i__LastSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Msg Digest --></label>
+        <name>i__LatestMsgDigest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recip Link Count --></label>
+        <name>i__RecipLinkCt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recip --></label>
+        <name>i__Recip__c</name>
+        <relationshipLabel><!-- PenPals (Recip) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sender Link Count --></label>
+        <name>i__SenderLinkCt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender --></label>
+        <name>i__Sender__c</name>
+        <relationshipLabel><!-- PenPals (Sender) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>PenPal Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

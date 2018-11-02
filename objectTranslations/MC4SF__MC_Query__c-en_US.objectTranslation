@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Campaign Id --></label>
+        <name>MC4SF__Campaign_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Members SOQL --></label>
+        <name>MC4SF__Campaign_Members_SOQL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Members --></label>
+        <name>MC4SF__Campaign_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contacts SOQL --></label>
+        <name>MC4SF__Contacts_SOQL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contacts --></label>
+        <name>MC4SF__Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>MC4SF__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interests --></label>
+        <name>MC4SF__Interests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Run As --></label>
+        <name>MC4SF__Last_Run_As__c</name>
+        <relationshipLabel><!-- MC Queries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Run --></label>
+        <name>MC4SF__Last_Run__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leads SOQL --></label>
+        <name>MC4SF__Leads_SOQL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leads --></label>
+        <name>MC4SF__Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- MC List --></label>
+        <name>MC4SF__MC_List__c</name>
+        <relationshipLabel><!-- MC Queries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Run Daily At --></label>
+        <name>MC4SF__Run_Daily_At__c</name>
+        <picklistValues>
+            <masterLabel>10:00 AM</masterLabel>
+            <translation><!-- 10:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10:00 PM</masterLabel>
+            <translation><!-- 10:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:00 AM</masterLabel>
+            <translation><!-- 11:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:00 PM</masterLabel>
+            <translation><!-- 11:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:00 AM</masterLabel>
+            <translation><!-- 12:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:00 PM</masterLabel>
+            <translation><!-- 12:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:00 AM</masterLabel>
+            <translation><!-- 1:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:00 PM</masterLabel>
+            <translation><!-- 1:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:00 AM</masterLabel>
+            <translation><!-- 2:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:00 PM</masterLabel>
+            <translation><!-- 2:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:00 AM</masterLabel>
+            <translation><!-- 3:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:00 PM</masterLabel>
+            <translation><!-- 3:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:00 AM</masterLabel>
+            <translation><!-- 4:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:00 PM</masterLabel>
+            <translation><!-- 4:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:00 AM</masterLabel>
+            <translation><!-- 5:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:00 PM</masterLabel>
+            <translation><!-- 5:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6:00 AM</masterLabel>
+            <translation><!-- 6:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6:00 PM</masterLabel>
+            <translation><!-- 6:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:00 AM</masterLabel>
+            <translation><!-- 7:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:00 PM</masterLabel>
+            <translation><!-- 7:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:00 AM</masterLabel>
+            <translation><!-- 8:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:00 PM</masterLabel>
+            <translation><!-- 8:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:00 AM</masterLabel>
+            <translation><!-- 9:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:00 PM</masterLabel>
+            <translation><!-- 9:00 PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Static Segments --></label>
+        <name>MC4SF__Static_Segments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>MC4SF__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filters Defined</masterLabel>
+            <translation><!-- Filters Defined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previewed</masterLabel>
+            <translation><!-- Previewed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subscribers Added(last run) --></label>
+        <name>MC4SF__Subscribers_Added_last_run__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Contacts Only --></label>
+        <name>MC4SF__User_Contacts_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Leads Only --></label>
+        <name>MC4SF__User_Leads_Only__c</name>
+    </fields>
+    <fieldSets>
+        <label><!-- QueryDetailOverride --></label>
+        <name>QueryDetailOverride</name>
+    </fieldSets>
+    <layouts>
+        <layout>MC Query Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Wide --></label>
+            <section>Wide</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

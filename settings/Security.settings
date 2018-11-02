@@ -14,26 +14,12 @@
             <start>207.97.227.112</start>
         </ipRanges>
         <ipRanges>
-            <end>188.25.224.93</end>
-            <start>188.25.224.93</start>
-        </ipRanges>
-        <ipRanges>
-            <description>Madalin&apos;s IP</description>
-            <end>188.25.194.95</end>
-            <start>188.25.194.95</start>
-        </ipRanges>
-        <ipRanges>
             <end>184.99.126.139</end>
             <start>184.99.126.139</start>
         </ipRanges>
         <ipRanges>
             <end>166.78.79.127</end>
             <start>166.78.79.112</start>
-        </ipRanges>
-        <ipRanges>
-            <description>Kevin Phan&apos;s IP</description>
-            <end>108.64.59.128</end>
-            <start>108.64.59.90</start>
         </ipRanges>
         <ipRanges>
             <description>CloudMine - LA North</description>
@@ -50,9 +36,9 @@
             <start>96.18.167.236</start>
         </ipRanges>
         <ipRanges>
-            <description>Cloud Mine - Lucian</description>
-            <end>86.124.81.1</end>
-            <start>86.124.81.1</start>
+            <description>Michelle - Omnivo London</description>
+            <end>86.20.95.28</end>
+            <start>86.20.95.28</start>
         </ipRanges>
         <ipRanges>
             <description>Cloud Mine LA</description>

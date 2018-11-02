@@ -1,0 +1,364 @@
+<!--<apex:page controller="LitmosSetupController" tabStyle="Litmos_Setup__tab" action="{!verify}">-->
+<apex:page controller="Litmos.LitmosSetupController" action="{!verify}">
+    <style>
+        .detailList tr td, .detailList tr th{
+            border-bottom: none !important;
+        }
+        .detailList{
+            width: 70% !important;
+        }
+        table.global td {
+    text-align: left !important;
+}
+    </style>
+    <apex:includeScript value="{!$Resource.Litmos__jquery_min}"/>
+    <apex:form id="frm">
+    <script>
+        $( document ).ready(function() {
+            $("input.notallowed").each(function(){
+    
+                $(this).parents('tr').first().css("cursor","not-allowed");
+    
+                $(this).parents('tr').first().find('label').css("cursor","not-allowed");
+                $(this).css("cursor","not-allowed");
+                //$(this).attr('disabled', true);
+            });
+        });        
+        /*function redirectToReport(){
+            window.open("/{!repObj.id}","_blank","fullscreen=1");
+        } */ 
+    </script>
+
+    <apex:actionfunction name="verify" action="{!verify}" rerender="frm" />
+    <apex:actionfunction name="step4Save" action="{!step4Save}" rerender="frm" />
+    <apex:actionfunction name="step4Edit" action="{!step4Edit}" rerender="frm" />
+    <apex:actionfunction name="checkFrequency" action="{!checkFrequency}" rerender="step4Panel"/>
+        
+   
+    <apex:sectionHeader title="Litmos Setup" subtitle="Sync Setting"/>
+        <apex:pagemessages ></apex:pagemessages>
+         <input id="hiddenElement" type="hidden" />
+
+        <script type="text/javascript">
+          window.onload = setFocus
+          function setFocus() {
+            document.getElementById("hiddenElement").focus();
+          }
+        </script>
+         <!--Step1 output block show -->
+        <apex:pageBlock title="Connection Settings">
+            <!--<apex:pageBlockButtons location="top">
+                <apex:commandButton value="Edit" action="/apex/settings"  style="width: 60px;height: 26px; font-size: 13px;"/>
+                
+            </apex:pageBlockButtons>-->
+           
+                   <table border="0" width="100%" class="global">
+                       <tr>
+                         
+                         <td width="30%" valign="top" style="text-align: right;  height: 25px;" >UserName </td>
+                         <td><apex:outputText value="{!configObj.Litmos__User_Name__c}" /></td>
+                     </tr>  
+                     <tr>
+                         
+                         <td width="30%" valign="top" style="text-align: right;  height: 25px;" >API Key</td>
+                         <td><apex:outputText value="{!maskedApiKey}" /></td>
+                     </tr>  
+                     
+                     <tr>
+                         
+                         <td width="30%" valign="top" style="text-align: right;  height: 25px;" >Litmos URL</td>
+                         <td><apex:outputText value="{!configObj.Litmos__Litmos_website_address__c}" /></td>
+                     </tr>  
+                                          
+                    <tr>
+                         
+                         <td width="30%" valign="top" style="text-align: right;  height: 25px;" >Litmos Connection</td>
+                         <td><apex:commandLink value="Litmos Connection" action="{!redirectToSettings}"/></td>
+                     </tr>  
+
+                     <tr>
+                         
+                         <td width="30%" valign="top" style="text-align: right;  height: 25px;" >Verify</td>
+                         <td><apex:outputPanel >
+                            <table style="margin-top: -7px;">
+                                <tr>
+                                    <td valign="top"><apex:image styleClass="imgVerified" url="{!URLFOR($Resource.Litmos__litmos_resources,'litmos_resources/images/verify.png')}" rendered="{!verifyImage}"/></td>
+                                    <td valign="top"> <apex:image styleClass="imgUnverified" url="{!URLFOR($Resource.Litmos__litmos_resources,'litmos_resources/images/unverify.png')}" rendered="{!not(verifyImage)}"/></td>
+                                    <td valign="top"><apex:commandButton value="Verify" style="width: 58px;height: 27px;font-size: 13px;" onclick="verify(); return false;" rendered="{!verifyButton}"/></td>
+                                </tr>
+                            </table>
+                        </apex:outputPanel></td>
+                     </tr>  
+          
+             </table>
+              
+               
+        </apex:pageBlock>
+               
+        
+        
+        <apex:pageBlock title="User Provisioning" >
+             <table border="0" width="100%" class="global">
+                 <tr>
+                     <td width="30%" valign="top" style="text-align: right;  height: 25px;" ><apex:commandButton style="width:150px;" value="Go to User Setup" action="{!goToUserSetup}"/></td>
+                     <td valign="top">
+                         <p style="margin-left: 10px;margin-right: 138px;margin-top: 0px;">Salesforce users can be provisioned to Litmos for training. In order to specify which Salesforce users will have access to Litmos, please go to the User Setup and "Provision" users for provisioning.
+                             <br/><br/> 
+                            
+                         </p>
+                     </td>
+                 </tr>
+             </table>
+        </apex:pageBlock>
+                
+        
+          <apex:pageBlock title="Contact Provisioning" >
+             <table border="0" width="100%" class="global">
+                 <tr>
+                     <td width="30%" valign="top" style="text-align: right;  height: 25px;" ><apex:commandButton style="width:150px;" value="Go to Contact Setup" action="{!goToContacts}"/></td>
+                     <td valign="top">
+                         <p style="margin-left: 10px;margin-right: 138px;margin-top: 0px;">Salesforce contacts can be provisioned to Litmos for training. In order to specify which Salesforce contacts will have access to Litmos, please go to the Contact Setup and "Provision" contacts for provisioning. 
+                              <br/><br/> 
+                             
+                         </p>
+                     </td>
+                 </tr>
+             </table>
+        </apex:pageBlock>
+        
+        
+        <apex:outputPanel id="step4Panel">
+            <!-- Output block -->
+           
+             <apex:pageBlock title="Global Settings" rendered="{!step4Rendered}">
+                <apex:pageBlockButtons location="top">
+                    <apex:commandButton value="Edit"  styleClass="step4Edit" onclick="step4Edit(); return false;"   style="width: 60px;height: 26px; font-size: 13px;"/>
+                    <!--<a href="/{!repObj.id}" target="_blank" style="float:right">View Sync Log</a>-->
+                    <apex:commandLink value="View Sync Log" action="{!redirectToQueueView}" style="float:right"/>
+                </apex:pageBlockButtons>
+                <table border="0" width="100%" class="global">
+                       <tr>
+                         
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;" >Enable Tile View</td>
+                         <td><apex:inputCheckbox styleclass="disableInputStep4" disabled="true" value="{!configObj.Litmos__Enable_Tile_View__c}"/></td>
+                     </tr>  
+                     
+                     <tr>
+                         
+                         <!-- <td width="20%" valign="top" style="text-align: right;  height: 25px;" >Add Users Based On Role</td>
+                         <td><apex:inputCheckbox styleclass="disableInputStep4" disabled="true" value="{!configObj.Add_Users_Based_On_Role__c}"/></td> -->
+                     </tr>  
+                     
+                     <tr>
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;">Enable Automated Provisioning of New Users</td>
+                         <td>
+                             <apex:inputCheckbox styleclass="disableInputStep4" disabled="true" value="{!configObj.Litmos__Auto_Provisioning__c}"/>
+                         </td>
+                     </tr>
+                     
+                       <tr>
+                         
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;" >Enable Course Result Summary</td>
+                         <td><apex:inputCheckbox styleclass="disableInputStep4" disabled="true" value="{!configObj.Litmos__enableCourseResultSummary__c}"/></td>
+                     </tr> 
+
+                       <tr>
+                         
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;" >Enable Learning Result Summary</td>
+                         <td><apex:inputCheckbox styleclass="disableInputStep4" disabled="true" value="{!configObj.Litmos__enableLearningResultSummary__c}"/></td>
+                     </tr> 
+
+                     
+                     <tr>
+                         
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;" >Calculation Frequency</td>
+                         <td><apex:outputField styleclass="disableInputStep4" value="{!configObj.Litmos__PercentageCalculationFrequency__c}"/></td>
+                     </tr> 
+                                                                                                                                    
+                    <!--  <tr>
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;">Sync Frequency</td>
+                         <td>
+                             <apex:outputText value="{!configObj.Litmos__Sync_Frequency__c}"/>
+                         </td>
+                     </tr> -->
+                      <tr class="dailySync">
+                                 
+                                 <td width="20%" valign="top" style="text-align: right;">
+                                     <apex:outputLabel value="Daily Sync Time" rendered="{!dailySyncRendered}"/>
+                                 </td>
+                                 <td>
+                                     
+                                     <apex:outputField value="{!configObj.Litmos__Daily_Sync_Time__c}" rendered="{!dailySyncRendered}"/>
+                                 </td>
+                          
+                      </tr>
+                      <tr>
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;">Last Sync Completed</td>
+                         <td >
+                             {!lastSyncTime}
+                         </td>
+                      </tr>
+                      <tr>
+                         <td width="20%" valign="top" style="text-align: right;height:25px;  ">Sync Status</td>
+                         <td >
+                             <apex:outputText value="{!configObj.Litmos__Sync_Status__c}"/>
+                         </td>
+                      </tr>
+                     <!--<tr>
+                         <td width="20%" valign="top" style="text-align: right;height:25px;  ">Enable Chatter Achievement Posts</td>
+                         <td >
+                             <apex:inputCheckbox styleclass="disableInputStep4" disabled="true" value="{!configObj.Enable_Chatter_Post__c}"/>
+                         </td>
+                      </tr>-->
+
+                     <tr>
+                        <td width="30%" valign="top" style="text-align: right;"><apex:commandButton style="width:220px;" rendered="{!configObj.Litmos__Enable_RoleSync__c}" styleClass="{!IF(!configObj.Litmos__Enable_RoleSync__c,'notallowed','allowed')}" value="Sync Salesforce Role Hierarchy" onclick="return confirm('Please confirm that you want to push your organization’s Salesforce Role Hierarchy into Litmos. This will create a brand new team structure in Litmos. Course assignments and user assignments will need to be performed.');" action="{!syncRoleToLitmos}"/>
+                        <apex:commandButton style="width:220px;" rendered="{!!configObj.Litmos__Enable_RoleSync__c}" styleClass="{!IF(!configObj.Litmos__Enable_RoleSync__c,'notallowed','allowed')}" value="Sync Salesforce Role Hierarchy" onclick="return alert('Please contact Litmos to enable these features.');" reRender="false" /></td>
+                        <td valign="top">
+                             <p style="margin-left: 10px;margin-right: 138px;margin-top: 0px;">This organization's Salesforce role hierarchy can be synced to Litmos. When the role hierarchy sync is initiated, teams and associated subteams will be created in Litmos to mirror every role in this organization's role hierarchy.
+                                 <br/><br/> 
+                             </p>
+                        </td>
+                    </tr>
+                 <tr>
+                     <td width="30%" valign="top" style="text-align: right;"><apex:commandButton style="width:220px;" rendered="{!configObj.Litmos__Enable_RoleSync__c}"  styleClass="{!IF(!configObj.Litmos__Enable_RoleSync__c,'notallowed','allowed')}" value="Sync Salesforce Role Assignment" onclick="return confirm('Please confirm that you want to push users into team roles in Litmos. This will assign Salesforce users to teams in Litmos that match their current roles in your Salesforce organization.');" action="{!assignUsersToTeamLitmos}"/>
+                     <apex:commandButton style="width:220px;" rendered="{!!configObj.Litmos__Enable_RoleSync__c}"  styleClass="{!IF(!configObj.Litmos__Enable_RoleSync__c,'notallowed','allowed')}" value="Sync Salesforce Role Assignment" onclick="return alert('Please contact Litmos to enable these features.');" reRender="false"/></td>
+                     <td valign="top">
+                        <p style="margin-left: 10px;margin-right: 138px;margin-top: 0px;">This organization's role hierarchy assignment can be synced to Litmos. When the role hierarchy assignment is initiated, users will be assigned to teams and subteams in Litmos to mirror this organization's role hierarchy assignment. If this organization's role hierarchy assignment was previously synced to Litmos, executing this sync again could add and remove users from teams from Litmos if there have been any updates to user roles in this organization's role hierarchy.  
+                            <br/><br/> 
+                        </p>
+                    </td>
+                 </tr>
+
+                 </table>
+            </apex:pageBlock>
+          
+            <!-- input block -->
+         
+            <apex:pageBlock title="Global Settings" rendered="{!not(step4Rendered)}">
+                <apex:pageBlockButtons location="top">
+                   <apex:commandButton value="Save"  styleClass="step4Save" onclick="step4Save(); return false;"  style="width: 60px;height: 26px; font-size: 13px;"/>
+                    <!--<a href="/{!repObj.id}" target="_blank" style="float:right">View Sync Log</a>-->
+                    <apex:commandLink value="View Sync Log" action="{!redirectToQueueView}" style="float:right"/>
+                </apex:pageBlockButtons>
+                <table border="0" width="100%" class="global">
+                    <tr>
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;" >Enable Tile View</td>
+                         <td><apex:inputCheckbox value="{!configObj.Litmos__Enable_Tile_View__c}" disabled="{!if(verifyImage==true,false,true)}"/></td>
+                     </tr>                     
+                     
+                     <!-- <tr>
+                         
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;" >Add Users Based On Role</td>
+                         <td><apex:inputCheckbox value="{!configObj.Add_Users_Based_On_Role__c}"/></td>
+                     </tr>   -->
+                     
+                     <tr>
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;">Enable Automated Provisioning of New Users</td>
+                         <td>
+                             <apex:inputCheckbox value="{!configObj.Litmos__Auto_Provisioning__c}"/>
+                         </td>
+                     </tr>
+                     
+                    <tr>
+                         
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;" >Enable Course Result Summary</td>
+                         <td><apex:inputCheckbox styleclass="disableInputStep4" value="{!configObj.Litmos__enableCourseResultSummary__c}"/></td>
+                     </tr> 
+
+                       <tr>
+                         
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;" >Enable Learning Result Summary</td>
+                         <td><apex:inputCheckbox styleclass="disableInputStep4" value="{!configObj.Litmos__enableLearningResultSummary__c}"/></td>
+                     </tr> 
+
+    
+                     <tr>
+                         
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;" >Calculation Frequency</td>
+                         <td><apex:selectList size="1" value="{!configObj.Litmos__PercentageCalculationFrequency__c}"><apex:selectOptions value="{!statusOptions}" ></apex:selectOptions></apex:selectList></td>
+                     </tr> 
+                                      
+                     <tr>
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;">Sync Frequency</td>
+                         <td><!--<apex:selectList id="syncFreId" onchange="checkFrequency(); return false"  multiselect="false" styleclass="disableInputStep4" size="1" value="{!frequency}">
+                                 <apex:selectOption itemValue="Every 15 Minutes" itemLabel="Every 15 Minutes"></apex:selectOption>
+                                 <apex:selectOption itemValue="Every 30 Minutes" itemLabel="Every 30 Minutes"></apex:selectOption>
+                                 <apex:selectOption itemValue="Every 1 Hour" itemLabel="Every 1 Hour"></apex:selectOption>
+                                 <apex:selectOption itemValue="Every 4 Hour" itemLabel="Every 4 Hour"></apex:selectOption>
+                                 <apex:selectOption itemValue="Once Daily" itemLabel="Once Daily"></apex:selectOption>
+                             </apex:selectlist>-->
+                             <!--<apex:inputField value="{!configObj.Litmos__Sync_Frequency__c}" onchange="checkFrequency(); return false"/>-->
+                             <apex:outputText value="{!configObj.Litmos__Sync_Frequency__c}"/>
+                         </td>
+                     </tr>
+                     <tr class="dailySync">
+                                 
+                                 <td width="20%" valign="top" style="text-align: right;">
+                                     <apex:outputLabel value="Daily Sync Time" rendered="{!dailySyncRendered}"/>
+                                 </td>
+                                 <td style="margin-left:10px">
+                                     
+                                     <apex:inputField value="{!configObj.Litmos__Daily_Sync_Time__c}" rendered="{!dailySyncRendered}"/>
+                                 </td>
+                          
+                         </tr>
+                     <tr>
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;">Last Sync Completed</td>
+                         <td >
+                             {!lastSyncTime}
+                         </td>
+                     </tr>
+                     <tr>
+                         <td width="20%" valign="top" style="text-align: right;  height: 25px;">Sync Status</td>
+                         <td >
+                             <apex:outputText value="{!configObj.Litmos__Sync_Status__c}"/>
+                         </td>
+                     </tr>
+                     <!--<tr>
+                         <td width="20%" valign="top" style="text-align: right;height:25px;  ">Enable Chatter Achievement Posts</td>
+                         <td >
+                              <apex:inputCheckbox value="{!configObj.Enable_Chatter_Post__c}"/>
+                         </td>
+                      </tr>--->
+                 </table>
+            </apex:pageBlock>
+        <apex:pageBlock title="Recommended Course List Setup" >
+             <apex:pageBlockButtons location="top">
+                 <apex:outputPanel id="editButtonPanel"><apex:outputPanel rendered="{!!editButtonClicked}"><apex:commandButton style="width: 60px;height: 26px; font-size: 13px;" value="Edit" action="{!EditButtonClick}" reRender="editCheckboxPanel,editButtonPanel,saveButtonPanel"/></apex:outputPanel></apex:outputPanel>
+                 <apex:outputPanel id="saveButtonPanel"><apex:outputPanel rendered="{!editButtonClicked}"><apex:commandButton style="width: 60px;height: 26px; font-size: 13px;" value="Save" action="{!SaveButtonClick}" reRender="editCheckboxPanel,saveButtonPanel,editButtonPanel"/></apex:outputPanel></apex:outputPanel>
+             </apex:pageBlockButtons>
+                     
+             <table border="0" width="100%" class="global">
+                 <tr>
+                     <td width="30%" valign="top" style="text-align: right;  height: 25px;" ><apex:commandButton style="width:220px;" value="Create Recommended Course Lists" action="{!goToRecommendedCourseList}"/></td>
+                     <td valign="top">
+                         <p style="margin-left: 10px;margin-right: 138px;margin-top: 0px;">Courses can be recommended to record owners of Cases, Leads and Opportunities. These courses can be seen and accessed on the actual record in Salesforce. In order to recommended courses to owners of each record type, please create recommended course list mappings that map Litmos courses with certain record field values. First, please customize the record fields.
+                              <br/><br/> 
+                             
+                         </p>
+                     </td>
+                 </tr>
+
+                 <tr>
+                     <td width="30%" valign="top" style="text-align: right;  height: 25px;" ><apex:commandButton style="width:220px;" value="Customize Fields" action="{!goToAddFieldValues}"/></td>
+                      <td valign="top">
+                        <p style="margin-left: 10px;margin-right: 138px;margin-top: 0px;">In order to create Recommended Course Lists for Cases, Leads and Opportunities, fields must be added to the mapping index of each record type. This must be done before Recommended Course List mappings can be created.
+                              <br/><br/> 
+                         </p>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td width="30%" valign="top" style="text-align: right;">Enable Self-Provisioning through Recommended Courses</td>
+                     <td valign="top">
+                        <apex:outputPanel id="editCheckboxPanel"> 
+                            <apex:inputCheckbox disabled="{!!editButtonClicked}" value="{!configObj.Litmos__Enable_RecommendedCourse_Provisioning__c}"/>
+                        </apex:outputPanel> 
+                     </td>
+                 </tr>  
+             </table>
+        </apex:pageBlock>
+            
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

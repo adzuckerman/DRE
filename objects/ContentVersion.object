@@ -47,6 +47,14 @@
         <fullName>Title</fullName>
         <trackHistory>false</trackHistory>
     </fields>
+    <fields>
+        <fullName>Is_a_Proposal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is a Proposal?</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <searchLayouts>

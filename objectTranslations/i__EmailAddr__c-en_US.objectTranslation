@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Number of contacts with this email address. --></help>
+        <label><!-- Contact Count --></label>
+        <name>i__ContactCt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Domain --></label>
+        <name>i__Domain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Count --></label>
+        <name>i__EmailCt__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>i__FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>i__FullAddr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inbound Email Count --></label>
+        <name>i__InboundEmailCt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>i__LastName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of leads with this email address. --></help>
+        <label><!-- Lead Count --></label>
+        <name>i__LeadCt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link Count --></label>
+        <name>i__LinkCt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-User Count --></label>
+        <name>i__NonUserCt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outbound Email Count --></label>
+        <name>i__OutboundEmailCt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of users with this email address. --></help>
+        <label><!-- User Count --></label>
+        <name>i__UserCt__c</name>
+    </fields>
+</CustomObjectTranslation>

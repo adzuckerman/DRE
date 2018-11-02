@@ -1,3 +1,1 @@
-({
-  doInit: function(component, event, helper) {}
-});
+(hidden)

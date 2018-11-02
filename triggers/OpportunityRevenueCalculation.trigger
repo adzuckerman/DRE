@@ -4,7 +4,7 @@ trigger OpportunityRevenueCalculation on Opportunity (before insert, before upda
         /*
          * Opportunity pricebook setting
          */
-        if (!RevenueCalculationUtil.isTriggerEnabled) {
+        if (!RevenueCalculationUtil.isTriggerEnabled || !RevenueCalculationUtil2.isTriggerEnabled) {
             return;
         } 
         
@@ -56,12 +56,14 @@ trigger OpportunityRevenueCalculation on Opportunity (before insert, before upda
         /*
          * Opportunity schedules calculations
          */
-        if (!RevenueCalculationUtil.isTriggerEnabled) {
+        if (!RevenueCalculationUtil.isTriggerEnabled || !RevenueCalculationUtil2.isTriggerEnabled) {
             return;
         } 
         
         List<Opportunity> oppsToSchedule = new List<Opportunity>();
+        List<Opportunity> oppsToSchedule2 = new List<Opportunity>();
         List<Opportunity> oppsToForecast = new List<Opportunity>();
+        List<Opportunity> oppsToForecast2 = new List<Opportunity>();
         
         for (Opportunity opp : Trigger.new) {
             if (!opp.Automatic_Calculation__c) {
@@ -86,17 +88,25 @@ trigger OpportunityRevenueCalculation on Opportunity (before insert, before upda
                 || Trigger.oldMap.get(opp.Id).Subscription_Percentage__c != opp.Subscription_Percentage__c);
         
             if (opp.In_Forecast__c && !opp.IsClosed && opp.Product_Category__c != null && opp.CloseDate != null) {
-                oppsToForecast.add(opp);
+                if (opp.Use_New_Forecasting_Algorithm__c == true)
+                	oppsToForecast2.add(opp);
+                else
+                	oppsToForecast.add(opp);
             }
             else if (opp.isClosed && (isOpportunityNew || isForecastingChanged || isOfferingChanged || isAmountChanged 
                 || isStageChanged || isContractEndChanged || isContractStartChanged || isPercentageChanged || isPercentageSettingChanged)) {
                 
-                oppsToSchedule.add(opp);
+                if (opp.Use_New_Forecasting_Algorithm__c == true)
+                	oppsToSchedule2.add(opp);
+                else
+                	oppsToSchedule.add(opp);
             }
         }
         
         RevenueCalculationUtil.calculateOpportunity(oppsToSchedule);
+        RevenueCalculationUtil2.calculateOpportunity(oppsToSchedule2);
         RevenueForecastingUtil.forecastOpportunity(oppsToForecast);
+        RevenueForecastingUtil2.forecastOpportunity(oppsToForecast2);
     }
 
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cached Input Type --></label>
+        <name>echosign_dev1__Cached_Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>รายการ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation>ข้อความ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ทำเครื่องหมายในช่องนี้ถ้าคุณต้องการให้การแมปข้อมูลนี้ทำงานตามค่าเริ่มต้นสำหรับทุกข้อตกลงที่ส่ง คุณสามารถแทนที่ค่าเริ่มต้นได้หากคุณระบุการแมปข้อมูลอื่นเพื่อใช้กับข้อตกลงที่ระบุหรือแม่แบบข้อตกลง</help>
+        <label><!-- Default Data Mapping? --></label>
+        <name>echosign_dev1__Default_Data_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>echosign_dev1__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Field CSV --></label>
+        <name>echosign_dev1__Merge_Field_CSV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify User of Errors --></label>
+        <name>echosign_dev1__Notify_User_of_Errors__c</name>
+        <relationshipLabel><!-- Data Mappings --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>การแมปข้อมูล</value>
+    </caseValues>
+    <nameFieldLabel>ชื่อการแมปข้อมูล</nameFieldLabel>
+    <layouts>
+        <layout>Process Template Layout</layout>
+        <sections>
+            <label>ลิงค์แบบกำหนดเอง</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>
