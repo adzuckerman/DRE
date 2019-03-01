@@ -2,4 +2,9 @@
     <description>Permission set created for authorized individuals to approve Toggl Project creation.</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Toggl Project Approve</label>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TASKRAY__Project__c.Toggl_Auto_Creation_Approved__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
 </PermissionSet>

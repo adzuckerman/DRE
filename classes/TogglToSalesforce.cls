@@ -91,27 +91,55 @@ public with sharing class TogglToSalesforce {
         Map<String, User> usersToCreate = new Map<String, User>();
         Map<String, Account> accountsToCreate = new Map<String, Account>();
         Map<String, TASKRAY__Project__c> TASKRAYProjectsMap = new Map<String, TASKRAY__Project__c>();
-        Map<String, String> TASKRAYProjectsStageMap = new Map<String, String>();
+        Map<String, Opportunity> TASKRAYProjectsOpps = new Map<String, Opportunity>();
+        Map<String, Opportunity> OpportunityMap = new Map<String, Opportunity>();
         
         Map<Integer, Integer> timeEntryToCid = new Map<Integer, Integer>();
         for(TimeEntryWrapper timeEntry : reportDetails.data) {
-            accountsToCreate.put(timeEntry.client, null);
-            // taskrey project names map
-            TASKRAYProjectsMap.put(timeEntry.project, null); 
-            TASKRAYProjectsStageMap.put(timeEntry.project, ''); 
+            if (timeEntry.client != null && timeEntry.client != '') {
+                accountsToCreate.put(timeEntry.client, null);
+                // taskray project names map
+                //TASKRAYProjectsMap.put(timeEntry.project, null); 
+                //TASKRAYProjectsStageMap.put(timeEntry.project, '');
+                
+                String projectName = timeEntry.project;
+                string oppId = null;
+                if(projectName.contains('|'))
+                {
+                    String[] pName = projectName.split('\\|');
+                    string firstPart = pName[0].trim();
+                    projectName = firstPart;//pName[1].trim();
+                    if (firstPart.length() >= 3) {
+                        if (firstPart.startsWith('SF') && firstPart.substring(2).isNumeric()) {
+                            oppId = firstPart;
+                        }
+                    }
+                }
+                if (oppId != null) {
+                    OpportunityMap.put(oppId, null);
+                }
+                TASKRAYProjectsMap.put(projectName, null); 
+                TASKRAYProjectsOpps.put(projectName, null);
+            }
         }
 
         System.debug('TASKRAYProjectsMap 1 ====> ' + TASKRAYProjectsMap);
         // get existing TASKRAY Projects and related opportunities
-        List<TASKRAY__Project__c> existingTASKRAYProjects = [SELECT Id, Name, TASKRAY__trOpportunity__c, TASKRAY__trOpportunity__r.StageName FROM TASKRAY__Project__c WHERE Name IN: TASKRAYProjectsMap.keySet()];
+        List<TASKRAY__Project__c> existingTASKRAYProjects = [SELECT Id, Name, Client_Delivered_Date__c, TASKRAY__trOpportunity__r.First_non_NA_Invoice_Date__c, TASKRAY__trOpportunity__c, 
+        															TASKRAY__trOpportunity__r.StageName, TASKRAY__trOpportunity__r.CloseDate, POC__c
+        														FROM TASKRAY__Project__c WHERE Name IN: TASKRAYProjectsMap.keySet()];
         for (TASKRAY__Project__c existingProject : existingTASKRAYProjects) {
             TASKRAYProjectsMap.put(existingProject.Name, existingProject);
-            TASKRAYProjectsStageMap.put(existingProject.Name, existingProject.TASKRAY__trOpportunity__r.StageName);
+            TASKRAYProjectsOpps.put(existingProject.Name, existingProject.TASKRAY__trOpportunity__r);
         }
-        System.debug('TASKRAYProjectsMap 2 ====> ' + TASKRAYProjectsStageMap);
+        
         List<User> existingUsers = [SELECT Id, FirstName, LastName, Email FROM User WHERE Email IN :userEmails.keySet()];
         for (User existingUser : existingUsers) {
             usersToCreate.put(String.valueOf(userEmails.get(existingUser.Email)), existingUser);
+        }
+        
+        for (Opportunity opp : [SELECT Opportunity_ID__c, StageName, CloseDate FROM Opportunity WHERE Opportunity_ID__c IN :OpportunityMap.keyset()]) {
+            OpportunityMap.put(opp.Opportunity_ID__c, opp);
         }
 
         System.debug(timeEntryToCid);
@@ -121,120 +149,139 @@ public with sharing class TogglToSalesforce {
         }
 
         for(TimeEntryWrapper timeEntry : reportDetails.data) {
-            if (accountsToCreate.get(timeEntry.client) == null) {
-                accountsToCreate.put(timeEntry.client, new Account(
-                    Toggl_ID__c = String.valueOf(timeEntryToCid.get(timeEntry.id)),
-                    Name = timeEntry.client
-                ));
-            }
-            if (!usersToCreate.containsKey(String.valueOf(timeEntry.uid))) {
-                String alias;
-                if (userWrappers.get(timeEntry.uid).name.length() > 8) {
-                    alias = userWrappers.get(timeEntry.uid).name.substring(0, 7);
-                } else {
-                    alias = userWrappers.get(timeEntry.uid).name;
+            if (timeEntry.client != null && timeEntry.client != '') {
+                if (accountsToCreate.get(timeEntry.client) == null) {
+                    accountsToCreate.put(timeEntry.client, new Account(
+                        Toggl_ID__c = String.valueOf(timeEntryToCid.get(timeEntry.id)),
+                        Name = timeEntry.client
+                    ));
                 }
-                System.debug('User Email---' + userWrappers.get(timeEntry.uid).email);
-                usersToCreate.put(String.valueOf(timeEntry.uid),
-                    new User(
-                        LastName = userWrappers.get(timeEntry.uid).name,
-                        Email = userWrappers.get(timeEntry.uid).email,
-                        ProfileId = newUserProfileId,
-                        IsActive = false,
-                        Username = userWrappers.get(timeEntry.uid).email,
-                        Alias = alias,
-                        CommunityNickname = userWrappers.get(timeEntry.uid).email,
-                        TimeZoneSidKey = 'GMT',
-                        LocaleSidKey = 'en_US',
-                        EmailEncodingKey = 'UTF-8',
-                        LanguageLocaleKey = 'en_US'
-                    )
-                );
+                if (!usersToCreate.containsKey(String.valueOf(timeEntry.uid))) {
+                    String alias;
+                    if (userWrappers.get(timeEntry.uid).name.length() > 8) {
+                        alias = userWrappers.get(timeEntry.uid).name.substring(0, 7);
+                    } else {
+                        alias = userWrappers.get(timeEntry.uid).name;
+                    }
+                    System.debug('User Email---' + userWrappers.get(timeEntry.uid).email);
+                    
+                    usersToCreate.put(String.valueOf(timeEntry.uid),
+                        new User(
+                            LastName = userWrappers.get(timeEntry.uid).name,
+                            Email = userWrappers.get(timeEntry.uid).email,
+                            ProfileId = newUserProfileId,
+                            IsActive = false,
+                            Username = userWrappers.get(timeEntry.uid).email, //UserInfo.getUserName().substringAfterLast('.com') == null ? userWrappers.get(timeEntry.uid).email : userWrappers.get(timeEntry.uid).email + '.' + UserInfo.getUserName().substringAfterLast('.com'),
+                            Alias = alias,
+                            CommunityNickname = userWrappers.get(timeEntry.uid).email, //UserInfo.getUserName().substringAfterLast('.com') == null ? userWrappers.get(timeEntry.uid).email : userWrappers.get(timeEntry.uid).email + '.' + UserInfo.getUserName().substringAfterLast('.com'),
+                            Department = 'Department',
+                            Division = 'Division', 
+                            Title = 'Title',
+                            TimeZoneSidKey = 'GMT',
+                            LocaleSidKey = 'en_US',
+                            EmailEncodingKey = 'UTF-8',
+                            LanguageLocaleKey = 'en_US'
+                        )
+                    );
+                }
             }
         }
         System.debug('Account to create---' + accountsToCreate.values());
-        System.debug('Users to create---' + accountsToCreate.values());
+        System.debug('Users to create---' + usersToCreate.values());
         System.debug(Database.upsert(accountsToCreate.values()));
-        System.debug(Database.upsert(usersToCreate.values()));
+        List<User> usersInsert = new List<User>();
+        for (User u : usersToCreate.values()) {
+            if (u.Id == null) {
+                usersInsert.add(u);
+            }
+        }
+        System.debug(Database.upsert(usersInsert));
 
         for (TimeEntryWrapper timeEntry : reportDetails.data) {
-            System.debug('timeEntry ====> ' + timeEntry);
-            // set GAAP_Class__c field
-            String projectName = timeEntry.project;
-            String accountName = timeEntry.client;
-            String opportunityStageName = '';
-            String GAAPClass = '';
-            String taskrayType = '';
-            
-                
-            if(TASKRAYProjectsMap.containsKey(timeEntry.project))
-                opportunityStageName = TASKRAYProjectsStageMap.get(timeEntry.project);
-            
-            if(!String.isEmpty(projectName) && !String.isEmpty(opportunityStageName) && !String.isEmpty(accountName))
-            {
-                if(projectName.contains('-'))
+            if (timeEntry.client != null && timeEntry.client != '') {
+                System.debug('timeEntry ====> ' + timeEntry);
+                // set GAAP_Class__c field
+                String projectName = timeEntry.project;
+                String projectName2 = null;
+                string oppId = null;
+                if(projectName.contains('|'))
                 {
-                    String[] splitProject = projectName.split('-');
-                    if(splitProject[2] != null && splitProject[2] != '')
-                    {
-                        if(splitProject[2].length() == 3) taskrayType = 'PICO ID';
-                        if(splitProject[2].length() == 4) taskrayType = 'Contract ID';
-                    }
-                }
-                
-                if(accountName != 'Doctor Evidence' && accountName != 'DRE Tech')
-                {
-                    if(taskrayType == 'Contract ID' || taskrayType == 'PICO ID' || projectName == 'Doc Label' || projectName == 'Data Hub')
-                    {
-                        if(opportunityStageName != 'Closed Won' && opportunityStageName != 'Closed Lost') GAAPClass = 'Work In Progress';  
-                        if(opportunityStageName == 'Closed Won') GAAPClass = 'Cost of Revenue';
-                        if(opportunityStageName == 'Closed Lost') GAAPClass = 'Sales & Marketing';
-                    }
-                    else if(projectName == 'Pre-Sale') {
-                        GAAPClass = 'Sales & Marketing';
-                    }
-                } else {
-                    if(accountName == 'Doctor Evidence')
-                    {
-                        if(projectName == 'CE Admin/Internal' || projectName == 'CS Admin/Internal') {
-                            GAAPClass = 'Sales & Marketing';
-                        } else { GAAPClass = 'General & Administrative'; }
-                    } else {
-                        if(accountName == 'DRE Tech')
-                        {
-                            if(projectName == 'Admin/Internal' || projectName == 'Platform Maintenance') {
-                                GAAPClass = 'Research & Development';
-                            } else { GAAPClass = '2.0 Cap'; }
+                    String[] pName = projectName.split('\\|');
+                    string firstPart = pName[0].trim();
+                    projectName = firstPart;
+                    projectName2 = pName[1].trim();
+                    if (firstPart.length() >= 3) {
+                        if (firstPart.startsWith('SF') && firstPart.substring(2).isNumeric()) {
+                            oppId = firstPart;
                         }
                     }
                 }
-            }
-            Id projectId = null;
-            Id opportunityId = null;
-            if(TASKRAYProjectsMap.containsKey(timeEntry.project))
-            {
-                TASKRAY__Project__c trp = TASKRAYProjectsMap.get(timeEntry.project);
-                if(trp != null)
-                {
-                    projectId = TASKRAYProjectsMap.get(timeEntry.project).Id;
-                    opportunityId = TASKRAYProjectsMap.get(timeEntry.project).TASKRAY__trOpportunity__c;
+                String accountName = timeEntry.client;
+                String opportunityStageName = '';
+                Date opportunityCloseDate = null;
+                    
+                if (TASKRAYProjectsOpps.containsKey(projectName) && TASKRAYProjectsOpps.get(projectName) != null) {
+                    opportunityStageName = TASKRAYProjectsOpps.get(projectName).StageName;
+                    opportunityCloseDate = TASKRAYProjectsOpps.get(projectName).CloseDate;
                 }
+                
+                if (oppId != null && OpportunityMap.containsKey(oppId) && OpportunityMap.get(oppId) != null) {
+                    opportunityStageName = OpportunityMap.get(oppId).StageName;
+                    opportunityCloseDate = OpportunityMap.get(oppId).CloseDate;
+                }
+                
+                Boolean notPOC = false;
+                if(TASKRAYProjectsMap.containsKey(projectName)) {
+                    notPOC = true;
+                	TASKRAY__Project__c trp = TASKRAYProjectsMap.get(projectName);
+                    if (trp == null) {
+                        notPOC = false;
+                    } else {
+                        if (trp.POC__c != 'Not POC')
+                            notPOC = false;
+                        if (trp.Client_Delivered_Date__c == null)
+                            notPOC = false;
+                        if (trp.TASKRAY__trOpportunity__r.First_non_NA_Invoice_Date__c == null)
+                            notPOC = false;
+                        else if (timeEntry.start > trp.TASKRAY__trOpportunity__r.First_non_NA_Invoice_Date__c)
+                            notPOC = false;
+                    }
+                }
+                
+                String GAAPClass = GetGAAPClass(projectName, projectName2, accountName, opportunityStageName, opportunityCloseDate, timeEntry.start == null ? null : timeEntry.start.date(), notPOC);
+                
+                Id projectId = null;
+                Id opportunityId = null;
+                if(TASKRAYProjectsMap.containsKey(projectName))
+                {
+                    TASKRAY__Project__c trp = TASKRAYProjectsMap.get(projectName);
+                    if(trp != null)
+                    {
+                        projectId = TASKRAYProjectsMap.get(projectName).Id;
+                        opportunityId = TASKRAYProjectsMap.get(projectName).TASKRAY__trOpportunity__c;
+                    }
+                    
+                }
+                if (oppId != null && OpportunityMap.containsKey(oppId) && OpportunityMap.get(oppId) != null) {
+                    opportunityId = OpportunityMap.get(oppId).Id;
+                }
+                
+                timeEnriesToCreate.add(new Toggl_Time_Entry__c(
+                    Billable__c = timeEntry.is_billable,
+                    Description__c = timeEntry.description,
+                    Start_Date__c = timeEntry.start,
+                    End_Date__c = timeEntry.start.addSeconds(timeEntry.dur/1000),
+                    Toggl_Id__c = String.valueOf(timeEntry.id),
+                    Tags__c = String.join(timeEntry.tags, ','),
+                    Account__c = accountsToCreate.get(timeEntry.client).Id,
+                    Project_Name__c = timeEntry.project,
+                    Project__c = projectId,
+                    Opportunity__c = opportunityId,
+                    GAAP_Class__c = GAAPClass,
+                    User__c = usersToCreate.get(String.valueOf(timeEntry.uid)).Id,
+                    Duration__c = timeEntry.dur
+                ));
             }
-            timeEnriesToCreate.add(new Toggl_Time_Entry__c(
-                Billable__c = timeEntry.is_billable,
-                Description__c = timeEntry.description,
-                Start_Date__c = timeEntry.start,
-                End_Date__c = timeEntry.start.addSeconds(timeEntry.dur/1000),
-                Toggl_Id__c = String.valueOf(timeEntry.id),
-                Tags__c = String.join(timeEntry.tags, ','),
-                Account__c = accountsToCreate.get(timeEntry.client).Id,
-                Project_Name__c = timeEntry.project,
-                Project__c = projectId,
-                Opportunity__c = opportunityId,
-                GAAP_Class__c = GAAPClass,
-                User__c = usersToCreate.get(String.valueOf(timeEntry.uid)).Id,
-                Duration__c = timeEntry.dur
-            ));
         }
 
         for(Toggl_Time_Entry__c e : timeEnriesToCreate) {
@@ -243,6 +290,102 @@ public with sharing class TogglToSalesforce {
         Schema.SObjectField f = Toggl_Time_Entry__c.Fields.Toggl_Id__c;
         System.debug(Database.upsert(timeEnriesToCreate, f));
         System.debug(Database.delete(logsToDelete));
+    }
+    
+    public static string GetGAAPClass(string projectName, string projectName2, string accountName, string opportunityStageName, Date opportunityCloseDate, Date timeEntryStartDate, boolean notPOC) {
+        
+        if (notPOC) {
+        	return 'Work in Progress';
+        } else {
+	        String taskrayType = '';
+	        string GAAPClass = '';
+	        
+	        if(!String.isEmpty(projectName) && !String.isEmpty(accountName))
+	        {
+	            if(projectName.contains('-'))
+	            {
+	                String[] splitProject = projectName.split('-');
+	                if(splitProject.size() == 3 && splitProject[2] != null && splitProject[2] != '')
+	                {
+	                    if(splitProject[2].length() == 3) taskrayType = 'PICO ID';
+	                    if(splitProject[2].length() == 4) taskrayType = 'Contract ID';
+	                }
+	            }
+	            
+	            if (projectName.length() >= 3) {
+	                if (projectName.startsWith('SF') && projectName.substring(2).isNumeric()) {
+	                    taskrayType = 'SFID';
+	                }
+	            }
+	            
+	            if(accountName != 'Doctor Evidence' && accountName != 'DRE Tech')
+	            {
+	                if (taskrayType == 'SFID' && projectName2 == 'Pre-Sale') {
+	                    GAAPClass = 'Sales & Marketing';
+	                } 
+	                else if (taskrayType == 'PICO ID' && projectName.startsWith('DRE') && opportunityStageName == 'Closed Won') {
+	                	GAAPClass = 'Sales & Marketing';
+	                }
+	                else if(taskrayType == 'Contract ID' || taskrayType == 'PICO ID' || taskRayType == 'SFID' || projectName == 'Doc Label' || projectName == 'Data Hub')
+	                {
+	                    if (!String.isEmpty(opportunityStageName)) {
+	                        if(opportunityStageName != 'Closed Won' && opportunityStageName != 'Closed Lost') 
+	                            GAAPClass = 'Work In Progress';  
+	                        if(opportunityStageName == 'Closed Won') {
+	                            if (opportunityCloseDate != null && timeEntryStartDate != null) {
+	                                if (timeEntryStartDate < opportunityCloseDate) {
+	                                    GAAPClass = 'Work In Progress';
+	                                } else {
+	                                    GAAPClass = 'Cost of Revenue';
+	                                }
+	                            } else {
+	                            	GAAPClass = 'Cost of Revenue';
+	                            }
+	                        }
+	                        if(opportunityStageName == 'Closed Lost') 
+	                            if (opportunityCloseDate != null && timeEntryStartDate != null) {
+	                                if (timeEntryStartDate < opportunityCloseDate) {
+	                                    GAAPClass = 'Work In Progress';
+	                                } else {
+	                                    GAAPClass = 'Sales & Marketing';
+	                                }
+	                            } else {
+	                            	GAAPClass = 'Sales & Marketing';
+	                            }
+	                    }
+	                }
+	                else if (projectName == 'Pre-Sale') {
+	                    GAAPClass = 'Sales & Marketing';
+	                }
+	            } else {
+	                if(accountName == 'Doctor Evidence')
+	                {
+	                    if (projectName == 'CE Admin/Internal' || projectName == 'CS Admin/Internal') {
+	                        GAAPClass = 'Sales & Marketing';
+	                    } else if (projectName == 'Admin/Internal' && (projectName2 == 'Tech Issues' || projectName2 == 'Audit')) {
+	                    	GAAPClass = 'Research & Development';
+	                    } else if (projectName == 'Guidelines/GROWTH' && opportunityStageName == 'Closed Won') {
+	                    	GAAPClass = 'Sales & Marketing';
+	                    } else if (projectName == 'Patient Project' && opportunityStageName == 'Closed Won') {
+	                    	GAAPClass = 'Sales & Marketing';
+	                    } else { 
+	                        GAAPClass = 'General & Administrative'; 
+	                    }
+	                } else {
+	                    if(accountName == 'DRE Tech')
+	                    {
+	                        if(projectName == 'Admin/Internal' || projectName == 'Platform Maintenance') {
+	                            GAAPClass = 'Research & Development';
+	                        } else { 
+	                            GAAPClass = '2.0 Cap'; 
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	        
+	        return GAAPClass;
+        }
     }
 
     public Integer getTimeEntryCount(Integer days, Date untilDate, Date sinceDate) {

@@ -153,4 +153,12 @@
         <label><!-- Sync_EchoSign_User --></label>
         <name>echosign_dev1__Sync_EchoSign_User</name>
     </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
 </CustomObjectTranslation>

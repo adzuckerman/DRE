@@ -616,4 +616,15 @@ ISBLANK(Flat_Rate__c),true,
         <showsStatus>false</showsStatus>
         <url>/apex/echosign_dev1__AgreementTemplateProcess?masterId={!Preferred_Vendor_Request__c.Id}&amp;templateId=a2A0f000017slz5</url>
     </webLinks>
+    <webLinks>
+        <fullName>SOW_Adobe_Sign2</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>SOW Adobe Sign2</masterLabel>
+        <openType>sidebar</openType>
+        <page>SOW_AdobeSign</page>
+        <protected>false</protected>
+    </webLinks>
 </CustomObject>

@@ -5,7 +5,7 @@ public class ClientFeedbackRequestedBtn {
 
     public ClientFeedbackRequestedBtn(ApexPages.StandardController stdController) {
         this.TASKRAYproj = (TASKRAY__Project__c)stdController.getRecord();
-        currentTASKRAYProject = [SELECT Id, Contact_Name__c, Contact_Name__r.Id, Client_Feedback_Requested__c FROM TASKRAY__Project__c WHERE Id =: TASKRAYproj.Id LIMIT 1];   
+        currentTASKRAYProject = [SELECT Id, Contact_Name__c, Contact_Name__r.Id, Contact_Name__r.Email, Client_Feedback_Requested__c FROM TASKRAY__Project__c WHERE Id =: TASKRAYproj.Id LIMIT 1];   
     }
 
     public void SendEmail() {
@@ -17,8 +17,26 @@ public class ClientFeedbackRequestedBtn {
             String templateUniqueName = RMEValueFramework[0].Template_Unique_Name__c;
             List<EmailTemplate> emailtemplateList = [SELECT Id FROM EmailTemplate WHERE DeveloperName =: templateUniqueName ];
     
-            if(currentTASKRAYProject.size() > 0 /*&& currentTASKRAYProject[0].Client_Feedback_Requested__c == false*/ && currentTASKRAYProject.size() > 0 && currentTASKRAYProject[0].Contact_Name__c != null && emailtemplateList.size() > 0)
-            { 
+            if(currentTASKRAYProject.size() > 0 && emailtemplateList.size() > 0)
+            {
+                if (currentTASKRAYProject[0].Client_Feedback_Requested__c == true) {
+                    ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.ERROR, 'Email Previously Sent.');
+                    ApexPages.addMessage(myMsg);
+                    return;
+                }
+                
+                if (currentTASKRAYProject[0].Contact_Name__c == null) {
+                    ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.ERROR, 'Primary Contact Name is not set.');
+                    ApexPages.addMessage(myMsg);
+                    return;
+                }
+                
+                if (currentTASKRAYProject[0].Contact_Name__r.Email == null) {
+                    ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.ERROR, 'Primary Contact Name does not have an email.');
+                    ApexPages.addMessage(myMsg);
+                    return;
+                }
+                
                 try {
                     Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
         

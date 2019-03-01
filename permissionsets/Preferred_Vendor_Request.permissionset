@@ -253,6 +253,15 @@
         <object>Preferred_Vendor__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>TASKRAY__Project__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
     <tabSettings>
         <tab>Preferred_Vendor_Request__c</tab>
         <visibility>Visible</visibility>

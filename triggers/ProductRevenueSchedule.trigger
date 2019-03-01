@@ -49,6 +49,7 @@ trigger ProductRevenueSchedule on Product_Revenue_Schedule__c (before update, af
         }
         
         Id opportunityId = monthlySchedule.Opportunity__c;
+        Date currentPRSDate = Trigger.New.get(0).Date__c;
         
         if (monthlySchedule.Opportunity__r.Use_New_Forecasting_Algorithm__c != true) {
 	        RevenueCalculationUtil.calculateSchedules([
@@ -77,13 +78,13 @@ trigger ProductRevenueSchedule on Product_Revenue_Schedule__c (before update, af
         } else {
         	RevenueCalculationUtil2.calculateSchedules([
 	            SELECT POC__c, Revenue__c, Date__c, Product__c, Product__r.Name, Monthly_Revenue_Schedule__r.Opportunity__r.Amount, 
-	                Monthly_Revenue_Schedule__r.Opportunity__r.Product_Category__c, Monthly_Revenue_Schedule__r.Opportunity__c, Revenue_Type__c, Monthly_Revenue_Schedule__r.Costs__c, Monthly_Revenue_Schedule__r.Gross__c
+	                Monthly_Revenue_Schedule__r.Opportunity__r.Product_Category__c, Monthly_Revenue_Schedule__r.Opportunity__r.Unlock_Future_Revenue__c, Monthly_Revenue_Schedule__r.Opportunity__c, Revenue_Type__c, Monthly_Revenue_Schedule__r.Costs__c, Monthly_Revenue_Schedule__r.Gross__c
 	            FROM Product_Revenue_Schedule__c
 	            WHERE Monthly_Revenue_Schedule__r.Opportunity__c = :opportunityId
 	                AND Product__c = :Trigger.new.get(0).Product__c
 	                AND Monthly_Revenue_Schedule__r.Opportunity__r.Use_New_Forecasting_Algorithm__c = true
 	            ORDER BY Date__c ASC
-	        ]);
+	        ], currentPRSDate);
 	        
 	        RevenueCalculationUtil2.calculateInvoicesBySchedules([
 	            SELECT POC__c, Revenue__c, Date__c, Product__c, Product__r.Name, Monthly_Revenue_Schedule__r.Opportunity__r.Amount, 

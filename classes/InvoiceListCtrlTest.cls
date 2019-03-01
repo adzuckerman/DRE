@@ -76,7 +76,8 @@ private class InvoiceListCtrlTest {
             Amount = 100000,
             StageName = 'Closed Lost',
             AccountId = [SELECT Id FROM Account LIMIT 1].Id,
-            Pricebook2Id = [SELECT Id FROM Pricebook2 WHERE Name = :RevenueCalculationUtil.PRICEBOOK_NAME LIMIT 1].Id
+            Pricebook2Id = [SELECT Id FROM Pricebook2 WHERE Name = :RevenueCalculationUtil.PRICEBOOK_NAME LIMIT 1].Id,
+            Use_New_Forecasting_Algorithm__c = false
         );
     }
 

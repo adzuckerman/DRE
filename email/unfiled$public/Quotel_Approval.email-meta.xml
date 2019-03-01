@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Quote Approval</name>
+    <style>none</style>
+    <subject>APPROVAL REQUESTED: Quote for {!Quote.Account_Name__c}</subject>
+    <textOnly>Dear {!ApprovalRequest.Process_Assignee},
+
+Approval has been requested for a proposal.
+
+To view the Proposal, please click here:
+https://na63.salesforce.com/{!Quote.Id}
+
+To view the related Opportunity, please click here:
+https://na63.salesforce.com/{!Quote.Opportunity_Id__c}
+
+The project has been described as follows:
+
+Literature search only: {!Quote.Literature_search_only__c}
+Lit search, screening and report: {!Quote.Lit_search_screening_and_report__c}
+Update cycle, if any: {!Quote.Update_cycle_if_any__c	}
+Database work: {!Quote.Database_work__c}
+Analysis work: {!Quote.Analysis_work__c}
+Report work from analysis: {!Quote.Report_work_from_analysis__c}
+Therapeutic Area: {!Quote.Therapeutic_Area__c}
+Disease State: {!Quote.Disease_State__c}
+Indication: {!Quote.Indication__c}
+Types of DRE products used: {!Quote.Types_o_DRE_products_used__c}
+Expressed or know budget constraints: {!Quote.Expressed_or_known_budget_constraints__c}
+Timeline (or timeline restrictions): {!Quote.Timeline_or_timeline_restrictions__c}
+
+To APPROVE or REJECT this request, please click here:
+{!ApprovalRequest.Internal_URL}
+
+Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

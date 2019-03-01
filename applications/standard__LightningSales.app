@@ -22,5 +22,6 @@
     <tabs>Project_Request__c</tabs>
     <tabs>Preferred_Vendor_Request__c</tabs>
     <tabs>Department_Costs__c</tabs>
+    <tabs>standard-Quote</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

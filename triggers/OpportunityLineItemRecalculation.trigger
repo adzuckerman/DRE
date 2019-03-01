@@ -29,9 +29,9 @@ trigger OpportunityLineItemRecalculation on OpportunityLineItem (before insert, 
                 continue;
             }
             if (oppo.Use_New_Forecasting_Algorithm__c)
-            	refinedOppoIds2.add(oppo.Id);
+                refinedOppoIds2.add(oppo.Id);
             else
-            	refinedOppoIds.add(oppo.Id);
+                refinedOppoIds.add(oppo.Id);
         }
         
         RevenueCalculationUtil.calculateOpportunity([
@@ -47,7 +47,7 @@ trigger OpportunityLineItemRecalculation on OpportunityLineItem (before insert, 
                 DOC_Data_Licensing__c, DOC_Library_Configuration__c, DOC_Library_Licensing__c, Services_Percentage__c, 
                 Subscription_Percentage__c, Override_Allocations__c
             FROM Opportunity 
-            WHERE Id IN :refinedOppoIds
+            WHERE Id IN :refinedOppoIds2
         ]);
     }
 

@@ -8,12 +8,22 @@
 global with sharing class TogglToSalesforceBatch implements Database.Batchable<String>, Database.AllowsCallouts {
 
     //Get number of days to get Toggl Time Entries from custom metadata.
-    List<ToggleAccount__mdt> dayMdt = [SELECT Days__c FROM ToggleAccount__mdt];
-    global Integer days = Integer.valueOf(dayMdt[0].Days__c);
+    //List<ToggleAccount__mdt> dayMdt = [SELECT Days__c FROM ToggleAccount__mdt];
+    //global Integer days = Integer.valueOf(dayMdt[0].Days__c);
+    global Integer days; 
+    global Date untilDate; 
+    global Date sinceDate; 
+    
+    public TogglToSalesforceBatch(Integer noOfDays, Date uDate, Date sDate) {
+        days = noOfDays;
+        untilDate = uDate;
+        sinceDate = sDate;
+    }
         
     global List<String> start(Database.BatchableContext BC) {
         TogglToSalesforce api = new TogglToSalesforce();
-        Integer cnt = api.getTimeEntryCount(days, null, null);
+        System.debug('days====>'+days);
+        Integer cnt = api.getTimeEntryCount(days, untilDate, sinceDate);
         List<String> pages = new List<String>();
         for(Integer i = 1; i <= (cnt / 50) + 1; i++) {
             pages.add(String.valueOf(i));

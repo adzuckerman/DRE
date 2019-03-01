@@ -27,6 +27,15 @@
         <label><!-- ROB Complete --></label>
         <name>ROB_Complete__c</name>
     </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Kbase</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Kbases</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
     <layouts>
         <layout>Kbase Layout</layout>
         <sections>

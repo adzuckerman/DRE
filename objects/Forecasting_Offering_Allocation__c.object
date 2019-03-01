@@ -23,4 +23,12 @@
     <enableFeeds>false</enableFeeds>
     <label>Forecasting Offering Allocation</label>
     <visibility>Public</visibility>
+    <listViews>
+        <fullName>Forecasting_Offering_Allocation</fullName>
+        <columns>NAME</columns>
+        <columns>Services__c</columns>
+        <columns>Subscription__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Forecasting Offering Allocation</label>
+    </listViews>
 </CustomObject>

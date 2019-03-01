@@ -34,4 +34,13 @@
         <label><!-- Opportunity ID --></label>
         <name>Opportunity_ID__c</name>
     </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Department Revenue Schedule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Department Revenue Schedules</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

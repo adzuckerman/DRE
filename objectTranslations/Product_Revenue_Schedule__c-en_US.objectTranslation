@@ -49,6 +49,15 @@
             <translation><!-- Subscription --></translation>
         </picklistValues>
     </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Revenue Schedule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Revenue Schedules</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
     <layouts>
         <layout>Product Revenue Schedule Layout</layout>
         <sections>

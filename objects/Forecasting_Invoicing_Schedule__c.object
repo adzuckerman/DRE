@@ -79,6 +79,66 @@
         <trackTrending>false</trackTrending>
         <type>Percent</type>
     </fields>
+    <fields>
+        <fullName>Booking_Month_10__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking_Month +10</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Booking_Month_11__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking_Month +11</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Booking_Month_12__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking_Month +12</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Booking_Month_7__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking_Month +7</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Booking_Month_8__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking_Month +8</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Booking_Month_9__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking_Month +9</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
     <customSettingsType>List</customSettingsType>
     <enableFeeds>false</enableFeeds>
     <label>Forecasting Invoicing Schedule</label>
@@ -94,6 +154,12 @@
         <columns>Booking_Month_4__c</columns>
         <columns>Booking_Month_5__c</columns>
         <columns>Booking_Month_6__c</columns>
+        <columns>Booking_Month_7__c</columns>
+        <columns>Booking_Month_8__c</columns>
+        <columns>Booking_Month_9__c</columns>
+        <columns>Booking_Month_10__c</columns>
+        <columns>Booking_Month_11__c</columns>
+        <columns>Booking_Month_12__c</columns>
         <filterScope>Everything</filterScope>
         <label>Invoicing Schedule</label>
     </listViews>

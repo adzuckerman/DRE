@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission set providing basic access to Composer objects and functionality</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Composer User</label>
+    <classAccesses>
+        <apexClass>APXTConga4__ComposerPageController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>APXTConga4__ComposerPageControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>APXTConga4__NSUtil</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <pageAccesses>
+        <apexPage>APXTConga4__Conga_Composer</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>APXTConga4__Conga_Composer_Sf1</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <applicationVisibilities>
+        <application>APXTConga4__CongaMerge</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <tabSettings>
+        <tab>APXTConga4__About_Conga_Composer</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>APXTConga4__Composer_QuickMerge__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>APXTConga4__CongaMerge</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>APXTConga4__Conga_Email_Template__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>APXTConga4__Conga_Merge_Query__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>APXTConga4__Conga_Solution__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>APXTConga4__Conga_Template__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

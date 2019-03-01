@@ -1,0 +1,27 @@
+<p>Dear {!ApprovalRequest.Process_Assignee},</p>
+
+<p>Approval has been requested for a quote for {!Quote.Account_Name__c}.</p>
+
+<p>To view the <b>Quote</b>, please click <a href="doctorevidence--redev.cs91.my.salesforce.com/{!Quote.Id}">here</a><br/>
+To view the related <b>Opportunity</b>, please click <a href="doctorevidence--redev.cs91.my.salesforce.com/{!Quote.Opportunity_Id__c}">here</a>.</p>
+
+<p>The project has been described as follows:</p>
+<ul>
+    <li><b>Literature search only:</b> {!Quote.Literature_search_only__c}</li>
+    <li><b>Lit search, screening and report:</b> {!Quote.Lit_search_screening_and_report__c}</li>
+    <li><b>Update cycle, if any:</b> {!Quote.Update_cycle_if_any__c	
+}</li>
+    <li><b>Database work:</b> {!Quote.Database_work__c}</li>
+    <li><b>Analysis work:</b> {!Quote.Analysis_work__c}</li>
+    <li><b>Report work from analysis:</b> {!Quote.Report_work_from_analysis__c}</li>
+    <li><b>Therapeutic Area:</b> {!Quote.Therapeutic_Area__c}</li>
+    <li><b>Disease State:</b> {!Quote.Disease_State__c}</li>
+    <li><b>Indication:</b> {!Quote.Indication__c}</li>
+    <li><b>Types of DRE products used:</b> {!Quote.Types_o_DRE_products_used__c}</li>
+    <li><b>Expressed or know budget constraints:</b> {!Quote.Expressed_or_known_budget_constraints__c}</li>
+    <li><b>Timeline (or timeline restrictions):</b> {!Quote.Timeline_or_timeline_restrictions__c}</li>
+</ul>
+
+<p>To <b>APPROVE</b> or <b>REJECT</b> this request, please click <a href="{!ApprovalRequest.Internal_URL}">here</a>.</p> 
+
+<p>Thank you.</p>

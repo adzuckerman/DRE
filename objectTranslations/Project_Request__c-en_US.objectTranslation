@@ -449,6 +449,15 @@
         <name>TaskRay_Project__c</name>
         <relationshipLabel><!-- Project Requests --></relationshipLabel>
     </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Project Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project Requests</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
     <layouts>
         <layout>Project Request Layout</layout>
         <sections>

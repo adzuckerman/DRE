@@ -240,6 +240,18 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Opportunity_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Amount</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>Opportunity__c</fullName>
         <externalId>false</externalId>
         <label>Opportunity</label>
@@ -275,4 +287,10 @@
     <sharingModel>ControlledByParent</sharingModel>
     <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>
+    <validationRules>
+        <fullName>Cumulative_Inv_Opp_Amount</fullName>
+        <active>false</active>
+        <errorConditionFormula>Cumulative_Invoices__c &gt; Opportunity__r.Amount</errorConditionFormula>
+        <errorMessage>Cumulative invoices exceed the opportunity amount. Please verify the invoice amounts.</errorMessage>
+    </validationRules>
 </CustomObject>

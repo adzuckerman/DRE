@@ -1,0 +1,9 @@
+<p>Dear Dallas,</p>
+
+<p>Sales approval has been requested for a proposal.</p>
+
+<p>To view the <b>Proposal</b>, please click <a href="https://na63.salesforce.com/{!Quote.Id}">here</a>.</p>
+
+<p>To <b>APPROVE</b> or <b>REJECT</b> this request, please click <a href="{!ApprovalRequest.Internal_URL}">here</a>.</p> 
+
+<p>Thank you.</p>

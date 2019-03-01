@@ -423,6 +423,15 @@
         <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_In_Forecast</fullName>
+        <field>In_Forecast__c</field>
+        <literalValue>1</literalValue>
+        <name>Update In Forecast</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
     <outboundMessages>
         <fullName>Opportunity_Change_OM</fullName>
         <apiVersion>40.0</apiVersion>
@@ -495,6 +504,20 @@
             <value>True</value>
         </criteriaItems>
         <description>Workflow Rule to Prevent Editing to Sales Plan Opportunities</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Forecast Contracting Opportunities</fullName>
+        <actions>
+            <name>Update_In_Forecast</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Contracting</value>
+        </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
 </Workflow>

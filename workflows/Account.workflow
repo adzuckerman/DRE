@@ -44,10 +44,6 @@
             <name>Account_Change_OM</name>
             <type>OutboundMessage</type>
         </actions>
-        <actions>
-            <name>Account_Change_OM_Test</name>
-            <type>OutboundMessage</type>
-        </actions>
         <active>true</active>
         <description>Account Changed Rule for Doc Data Sync</description>
         <formula>true</formula>

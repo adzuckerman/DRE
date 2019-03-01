@@ -51,6 +51,7 @@ public with sharing class RevenueCalculationUtil2 {
             }
         }
         
+        // Invoices are no longer deleted when the opportunity is closed won
         List<Invoice__c> existingInvoices = [
             SELECT In_Forecast__c, Invoice_Num__c, Invoice_Amount__c, Invoice_Date__c, Actual_Invoice_Date__c, Opportunity__c, Milestone_Description__c
             FROM Invoice__c
@@ -59,7 +60,7 @@ public with sharing class RevenueCalculationUtil2 {
         
         isTriggerEnabled = false;
         delete schedulesToDelete;
-        delete existingInvoices;
+        delete existingInvoices; //delete invoices?
         isTriggerEnabled = true;
     
         Map<Id, List<Monthly_Revenue_Schedule__c>> monthlyRevenues = generateMonthlyRevenues(oppos);
@@ -77,6 +78,7 @@ public with sharing class RevenueCalculationUtil2 {
         upsert schedulesToUpsert;
         isTriggerEnabled = true;
         
+        //Invoices are no longer deleted when the opportunity is closed won
         List<Invoice__c> invoicesToUpsert = configureInvoices([
             SELECT POC__c, Revenue__c, Date__c, Product__c, Product__r.Name, Monthly_Revenue_Schedule__r.Opportunity__r.Amount, Monthly_Revenue_Schedule__r.Costs__c, Monthly_Revenue_Schedule__r.Gross__c, Monthly_Revenue_Schedule__r.Opportunity__r.Product_Category__c, Monthly_Revenue_Schedule__r.Opportunity__c, Revenue_Type__c
             FROM Product_Revenue_Schedule__c
@@ -85,7 +87,7 @@ public with sharing class RevenueCalculationUtil2 {
         ], existingInvoices);
         isTriggerEnabled = false;
         upsert invoicesToUpsert;
-        isTriggerEnabled = true;
+        isTriggerEnabled = true; //delete invoices?
     }
     
     public static Map<Id, List<Monthly_Revenue_Schedule__c>> generateMonthlyRevenues(List<Opportunity> oppos) {
@@ -98,7 +100,9 @@ public with sharing class RevenueCalculationUtil2 {
             
             existingMonthlyRevenues.put(String.valueOf(revenue.Opportunity__c) + String.valueOf(revenue.Date__c.month()) + String.valueOf(revenue.Date__c.year()), revenue);
         }
-    
+    	
+        system.debug('existingMonthlyRevenues----' + existingMonthlyRevenues);
+        
         Map<Id, List<Monthly_Revenue_Schedule__c>> result = new Map<Id, List<Monthly_Revenue_Schedule__c>>();
         
         Map<Id, Opportunity> schedulesOpportunities = new Map<Id, Opportunity>([
@@ -130,10 +134,13 @@ public with sharing class RevenueCalculationUtil2 {
                     continue;
                 }
                 
-                duration = startDate.monthsBetween(endDate);
+                duration = startDate.monthsBetween(endDate) + 2;
             }
+            system.debug('duration' + duration);
             
             for (Integer i = 0; i < duration; i++) {
+                //system.debug('special key---' + String.valueOf(opp.Id) + String.valueOf(startDate.addMonths(i).month()) + String.valueOf(startDate.addMonths(i).year()));
+                //system.debug('existingMRS----' + existingMonthlyRevenues.get(String.valueOf(opp.Id) + String.valueOf(startDate.addMonths(i).month()) + String.valueOf(startDate.addMonths(i).year())).Id);
                 result.get(opp.Id).add(
                     new Monthly_Revenue_Schedule__c(
                         Id = existingMonthlyRevenues.containsKey(String.valueOf(opp.Id) + String.valueOf(startDate.addMonths(i).month()) + String.valueOf(startDate.addMonths(i).year())) ? existingMonthlyRevenues.get(String.valueOf(opp.Id) + String.valueOf(startDate.addMonths(i).month()) + String.valueOf(startDate.addMonths(i).year())).Id : null,
@@ -143,15 +150,39 @@ public with sharing class RevenueCalculationUtil2 {
                 );
             }
         }
-        
+        system.debug('result----' + result);
         return result;
     }
 
     public static void calculateInvoices(List<Invoice__c> invoices) {
         Decimal currentAmountSum = 0.0;
+        
+        List<Net_Accounts_Receivable_Months__mdt> accReceivable = [
+            SELECT Months__c
+            FROM Net_Accounts_Receivable_Months__mdt
+            LIMIT 1
+        ];
+        
+        integer invNo = 0;
         for (Invoice__c invoice : invoices) {
             currentAmountSum += invoice.Invoice_Amount__c != null ? invoice.Invoice_Amount__c : 0.0;
+            system.debug('invoice.Accrued_Revenue__c BEFORE----' + invoice.Accrued_Revenue__c);
             invoice.Deferred_Revenue__c = currentAmountSum - (invoice.Accrued_Revenue__c != null ? invoice.Accrued_Revenue__c : 0.0);
+            invoice.Cumulative_Invoices__c = currentAmountSum;
+            system.debug('currentAmountSum----' + currentAmountSum);
+            system.debug('invoice.Deferred_Revenue__c----' + invoice.Deferred_Revenue__c);
+            system.debug('invoice.Accrued_Revenue__c----' + invoice.Accrued_Revenue__c);
+            
+            invoice.Net_Accounts_Receivable__c = invoice.Invoice_Amount__c != null ? invoice.Invoice_Amount__c : 0.0;
+            for (Integer i = invNo - Integer.valueOf(accReceivable[0].Months__c) + 1; i >= 0 && i < invNo; i++) {
+                invoice.Net_Accounts_Receivable__c += invoices[i].Invoice_Amount__c != null ? invoices[i].Invoice_Amount__c : 0;
+            }
+            invNo++;
+			//logic to validate cumulative invoices does not exceed Opp amount          
+            if(trigger.isExecuting && invoice.Cumulative_Invoices__c > invoice.Opportunity_Amount__c ){
+                trigger.newMap.get(invoice.id).addError('Cumulative invoices exceed the opportunity amount. Please verify the invoice amounts.');
+                return;
+            }
         }
         
         isTriggerEnabled = false;
@@ -159,7 +190,7 @@ public with sharing class RevenueCalculationUtil2 {
         isTriggerEnabled = true;
     }
     
-    public static void calculateSchedules(List<Product_Revenue_Schedule__c> scheds) {
+    public static void calculateSchedules(List<Product_Revenue_Schedule__c> scheds, Date currentPRSDate) {
         if (scheds.isEmpty()) {
             return;
         }
@@ -193,9 +224,15 @@ public with sharing class RevenueCalculationUtil2 {
         }
         
         Decimal currentPocSum = 0;
+
         for (Product_Revenue_Schedule__c sched : scheds) {
-            if (sched.Date__c <= Date.today() || isProductScheduleLocked(lockedDates, sched)) {
+            if ((sched.Date__c <= Date.today() || isProductScheduleLocked(lockedDates, sched)) && !sched.Monthly_Revenue_Schedule__r.Opportunity__r.Unlock_Future_Revenue__c) {
                 currentPocSum += sched.POC__c;
+                system.debug('Date.today() sched.Date__c---' + sched.Date__c);
+            }
+            else if ((sched.Date__c <= currentPRSDate || isProductScheduleLocked(lockedDates, sched)) && sched.Monthly_Revenue_Schedule__r.Opportunity__r.Unlock_Future_Revenue__c) {
+                currentPocSum += sched.POC__c;
+                system.debug('currentPRSDate sched.Date__c---' + sched.Date__c);
             }
             else {
                 schedsToUpdate.add(sched);
@@ -206,6 +243,7 @@ public with sharing class RevenueCalculationUtil2 {
             sched.POC__c = (100.0 - currentPocSum) / schedsToUpdate.size();
             sched.Revenue__c = productAmount * sched.POC__c / 100.0;
         }
+        system.debug('schedsToUpdate----' + schedsToUpdate);
         
         isTriggerEnabled = false;
         update schedsToUpdate;
@@ -243,6 +281,17 @@ public with sharing class RevenueCalculationUtil2 {
         Decimal currentOppCumulativeInvoices = 0.0;
         Decimal currentOppInvoiceDefRevenue = 0.0;
         Decimal currentOppInvoiceAccruedRevenue = 0.0;
+        
+        // Add 2 more months?
+        Date maxDate = null;
+        for (Date invDate : oppoSchedulesMap.keyset()) {
+            if (maxDate == null || maxDate < invDate) {
+                maxDate = invDate;
+            }
+        }
+        oppoSchedulesMap.put(maxDate.addDays(1).AddMonths(1).addDays(-1), new List<Product_Revenue_Schedule__c>());
+        oppoSchedulesMap.put(maxDate.addDays(1).AddMonths(2).addDays(-1), new List<Product_Revenue_Schedule__c>());
+        
         for (Date invDate : oppoSchedulesMap.keySet()) {
         
             Decimal currentMonthOppInvoiceRevenue = 0.0;
@@ -252,8 +301,8 @@ public with sharing class RevenueCalculationUtil2 {
             Decimal currentMonthOppInvoiceRevenueSubscr = 0.0;
             for (Product_Revenue_Schedule__c schedule : oppoSchedulesMap.get(invDate)) {
                 currentMonthOppInvoiceRevenue += schedule.Revenue__c;
-                currentMonthOppInvoiceCost += schedule.Monthly_Revenue_Schedule__r.Costs__c;
-                currentMonthOppInvoiceGrossProfit += schedule.Monthly_Revenue_Schedule__r.Gross__c;
+                currentMonthOppInvoiceCost = schedule.Monthly_Revenue_Schedule__r.Costs__c;
+                currentMonthOppInvoiceGrossProfit = schedule.Monthly_Revenue_Schedule__r.Gross__c;
                 currentMonthOppInvoiceRevenueServ += schedule.Revenue_Type__c == ContractInformationCtrl.SERVICES ? schedule.Revenue__c : 0;
                 currentMonthOppInvoiceRevenueSubscr += schedule.Revenue_Type__c == ContractInformationCtrl.SUBSCRIPTION ? schedule.Revenue__c : 0;
             }
@@ -343,6 +392,8 @@ public with sharing class RevenueCalculationUtil2 {
                 
             if (sched.POC__c != ((Product_Revenue_Schedule__c) Trigger.oldMap.get(sched.Id)).POC__c) {
                 sched.Revenue__c = productAmount * sched.POC__c / 100.0;
+                system.debug('sched.POC__c----' + sched.POC__c);
+                system.debug('sched.Revenue__c----' + sched.Revenue__c);
             }
             else if (sched.Revenue__c != ((Product_Revenue_Schedule__c) Trigger.oldMap.get(sched.Id)).Revenue__c) {
                 sched.POC__c = sched.Revenue__c * 100.0 / productAmount;
@@ -354,7 +405,7 @@ public with sharing class RevenueCalculationUtil2 {
         if (oppos.isEmpty() || monthlyRevenues.isEmpty()) {
             return new List<Product_Revenue_Schedule__c>();
         }
-        
+        system.debug('monthlyRevenues---' + monthlyRevenues);
         List<Product_Revenue_Schedule__c> schedulesToUpsert = new List<Product_Revenue_Schedule__c>();
     
         Map<Id, Map<Id, decimal>> productsMap = new Map<Id, Map<Id, decimal>>();
@@ -404,7 +455,7 @@ public with sharing class RevenueCalculationUtil2 {
         
         for (Opportunity opp : [
             SELECT Amount, Product_Category__c, Contract_Start__c, Contract_End__c, Override_Allocations__c,
-            	(SELECT Id, Contract_Start__c, Contract_End__c, Product2Id FROM OpportunityLineItems)
+            	(SELECT Id, Contract_Start__c, Contract_End__c, Product2Id, Product2.Revenue_Period__c FROM OpportunityLineItems)
             FROM Opportunity 
             WHERE Id IN :oppos]) {
             
@@ -441,14 +492,16 @@ public with sharing class RevenueCalculationUtil2 {
 	                    productAmount -= lockedProductAllocations.get(oli.Product2Id);
 	                }
 	                
-	                Date productStartDate = oli.Contract_Start__c != null ? oli.Contract_Start__c : opp.Contract_Start__c;
-	                Date productEndDate = oli.Contract_End__c != null ? oli.Contract_End__c : opp.Contract_End__c;
-	                Date startDate = opp.Contract_Start__c > productStartDate ? productStartDate : opp.Contract_Start__c;
-	                Date endDate = opp.Contract_End__c < productEndDate ? productEndDate : opp.Contract_End__c;
+	                Date startDate = oli.Contract_Start__c != null ? oli.Contract_Start__c : opp.Contract_Start__c;
+	                Date endDate = oli.Contract_End__c != null ? oli.Contract_End__c : opp.Contract_End__c;
+	                //Date startDate = opp.Contract_Start__c > productStartDate ? productStartDate : opp.Contract_Start__c;
+	                //Date endDate = opp.Contract_End__c < productEndDate ? productEndDate : opp.Contract_End__c;
 	                Integer duration = startDate.monthsBetween(endDate);
 	                Integer lockedDuration = 0; 
+                    
+                    //integer xduration = oli.Product2.Revenue_Period__c != null ? (integer)oli.Product2.Revenue_Period__c : duration;
 	               
-	                for (Integer i = 0; i < duration; i++) {
+	                for (Integer i = 1; i < duration + 1; i++) {
 	                    if (!lockedDates.contains(
 	                        String.valueOf(startDate.addMonths(1 + i).toStartOfMonth().addDays(-1).month())
 	                        + String.valueOf(startDate.addMonths(1 + i).toStartOfMonth().addDays(-1).year()))) {
@@ -458,17 +511,20 @@ public with sharing class RevenueCalculationUtil2 {
 	                    lockedDuration++;
 	                }
 	                
-	                for (Integer i = 0; i < duration; i++) {
+	                for (Integer i = 1; i < duration + 1; i++) {
 	                    if (lockedDates.contains(
 	                        String.valueOf(startDate.addMonths(1 + i).toStartOfMonth().addDays(-1).month())
 	                        + String.valueOf(startDate.addMonths(1 + i).toStartOfMonth().addDays(-1).year()))) {
 	                        
 	                        continue;
 	                    }
-	                
+	                	
+                        system.debug('monthlyOppoDateIdMap---' + monthlyOppoDateIdMap.get(opp.Id));
+                        system.debug('startDate---' + startDate.addMonths(1 + i).toStartOfMonth().addDays(-1));
+                        system.debug('monthlyOppoDateIdMap Date---' + monthlyOppoDateIdMap.get(opp.Id).get(startDate.addMonths(1 + i).toStartOfMonth().addDays(-1)));
 	                    schedulesToUpsert.add(
 	                        new Product_Revenue_Schedule__c(
-	                            Monthly_Revenue_Schedule__c = monthlyOppoDateIdMap.get(opp.Id).get(startDate.addMonths(1 + i).toStartOfMonth().addDays(-1)),
+                                Monthly_Revenue_Schedule__c = monthlyOppoDateIdMap.get(opp.Id).get(startDate.addMonths(i).toStartOfMonth().addDays(-1)),
 	                            Product__c = oli.Product2Id,
 	                            //Date__c = startDate.addMonths(2 + i).toStartOfMonth().addDays(-1),
 	                            // Date__c = startDate.addMonths(1 + i).toStartOfMonth().addDays(-1),
@@ -480,7 +536,7 @@ public with sharing class RevenueCalculationUtil2 {
 	            }
             }
         }
-        
+        system.debug('schedulesToUpsert----' + schedulesToUpsert);
         return schedulesToUpsert;
     }
     
@@ -525,6 +581,17 @@ public with sharing class RevenueCalculationUtil2 {
             Decimal currentOppCumulativeInvoices = 0.0;
             Decimal currentOppInvoiceDefRevenue = 0.0;
             Decimal currentOppInvoiceAccruedRevenue = 0.0;
+            
+            // Add 2 more months?
+            Date maxDate = null;
+            for (Date invDate : oppoSchedulesMap.get(oppoId).keyset()) {
+                if (maxDate == null || maxDate < invDate) {
+                    maxDate = invDate;
+                }
+            }
+            oppoSchedulesMap.get(oppoId).put(maxDate.addDays(1).AddMonths(1).addDays(-1), new List<Product_Revenue_Schedule__c>());
+            oppoSchedulesMap.get(oppoId).put(maxDate.addDays(1).AddMonths(2).addDays(-1), new List<Product_Revenue_Schedule__c>());
+            
             for (Date invDate : oppoSchedulesMap.get(oppoId).keySet()) {
             
                 Decimal currentMonthOppInvoiceRevenue = 0.0;
@@ -534,8 +601,8 @@ public with sharing class RevenueCalculationUtil2 {
                 Decimal currentMonthOppInvoiceRevenueSubscr = 0.0;
                 for (Product_Revenue_Schedule__c schedule : oppoSchedulesMap.get(oppoId).get(invDate)) {
                     currentMonthOppInvoiceRevenue += schedule.Revenue__c;
-                    currentMonthOppInvoiceCosts += schedule.Monthly_Revenue_Schedule__r.Costs__c;
-                    currentMonthOppInvoiceGrossProfit += schedule.Monthly_Revenue_Schedule__r.Gross__c;
+                    currentMonthOppInvoiceCosts = schedule.Monthly_Revenue_Schedule__r.Costs__c;
+                    currentMonthOppInvoiceGrossProfit = schedule.Monthly_Revenue_Schedule__r.Gross__c;
                     currentMonthOppInvoiceRevenueServ += schedule.Revenue_Type__c == ContractInformationCtrl.SERVICES ? schedule.Revenue__c : 0;
                     currentMonthOppInvoiceRevenueSubscr += schedule.Revenue_Type__c == ContractInformationCtrl.SUBSCRIPTION ? schedule.Revenue__c : 0;
                 }

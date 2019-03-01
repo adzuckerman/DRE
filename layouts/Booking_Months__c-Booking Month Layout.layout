@@ -13,11 +13,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Customer_Product__c</field>
+                <field>Month__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Month__c</field>
+                <field>Customer_Product__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -67,7 +67,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00hq0000001Zocf</masterLabel>
+        <masterLabel>00h2F000000OuKI</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

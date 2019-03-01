@@ -1,0 +1,82 @@
+<apex:page controller="ToggleAdminBatchProgress" showHeader="true" sidebar="false"  lightningStylesheets="true">
+    <head>
+        <apex:slds />
+        <style type="text/css">
+            .dateFormat{
+               visibility:hidden;
+            }
+        </style>
+        <script type="text/javascript">
+            function showTab(tabName, element){
+                if(tabName=="first_tab") {
+                    document.getElementById("second_tab_header").classList.remove("slds-is-active");     
+                    document.getElementById("first_tab_header").classList.add("slds-is-active");
+                        
+                    document.getElementById("second_tab").classList.remove("slds-show");
+                    document.getElementById("second_tab").classList.add("slds-hide");
+                    
+                    document.getElementById("first_tab").classList.remove("slds-hide");
+                    document.getElementById("first_tab").classList.add("slds-show");
+                } else{
+                    document.getElementById("first_tab_header").classList.remove("slds-is-active");     
+                    document.getElementById("second_tab_header").classList.add("slds-is-active");  
+                        
+                    document.getElementById("first_tab").classList.remove("slds-show");
+                    document.getElementById("first_tab").classList.add("slds-hide");
+                    document.getElementById("second_tab").classList.remove("slds-hide");
+                    document.getElementById("second_tab").classList.add("slds-show");
+                }
+            }
+        </script>
+    </head>
+
+    <body class="slds-scope">
+        <apex:form >
+            <apex:pageBlock title="Toggl Admin">
+            <apex:pageMessages />
+            <div class="slds-tabs_card slds-tabs_default">
+              <ul class="slds-tabs_default__nav" role="tablist">
+                <li id="first_tab_header" class="slds-tabs_default__item slds-is-active" title="Toggle To Salesforce" role="presentation">
+                  <a class="slds-tabs_default__link" href="javascript:showTab('first_tab',this);" role="tab" tabindex="0" aria-selected="true" aria-controls="first_tab" id="first_tab__item">Toggle To Salesforce</a>
+                </li>
+                <li id="second_tab_header" class="slds-tabs_default__item " title="Time Entries" role="presentation">
+                  <a class="slds-tabs_default__link" href="javascript:showTab('second_tab',this);" role="tab" tabindex="-1" aria-selected="false" aria-controls="second_tab" id="second_tab__item">Time Entries</a>
+                </li>
+              </ul>
+              <div id="first_tab" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="first_tab__item">
+                <apex:pageBlockSection columns="1" >
+                    
+                    <table style="width:100%">
+                        <tr>
+                            <td>
+                               <apex:inputField id="text-input-id-1" style="width:200px" html-placeholder="From Date" styleclass="slds-input" value="{!c.StartDate}" />
+                            </td>
+                        </tr>    
+                        <tr>
+                            <td>         
+                                <apex:inputField id="text-input-id-2" style="width:200px" html-placeholder="To Date" styleclass="slds-input" value="{!c.EndDate}" />
+                        
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:200px;"></td>
+                            <td>         
+                                <apex:commandButton value="Start Toggle To Salesforce Batch" action="{!StartBatch}" />
+                            </td>
+                        </tr>
+                    </table>
+                    <c:BatchJobsProgress bComponentLabel="Toggle To Salesforce Batch Progress" apexClass="TogglToSalesforceBatch" noOfJobs="5" />
+                </apex:pageBlockSection>
+              </div>
+              <div id="second_tab" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="second_tab__item">
+                <apex:pageBlockSection columns="1">
+                    <apex:commandButton value="Start Time Entries Batch" action="{!StartBatch2}" />
+                    
+                    <c:BatchJobsProgress bComponentLabel="Toggl Time Entries Batch Progress" noOfDays="{!noOfDays}" apexClass="TogglTimeEntriesBatch" noOfJobs="5" />
+                </apex:pageBlockSection>
+              </div>
+            </div>
+            </apex:pageBlock>
+        </apex:form>
+    </body>
+</apex:page>

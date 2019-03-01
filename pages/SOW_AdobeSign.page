@@ -1,0 +1,15 @@
+<apex:page showHeader="true" sidebar="true" standardController="Preferred_Vendor_Request__c" extensions="SOW_AdobeSignController" action="{!RedirectToUrl}">
+	
+	<apex:pageBlock >
+
+		<apex:form >
+
+			<apex:pageMessages id="messageSection"/>
+
+			<apex:commandButton style="width: 55px; margin-top: 10px; margin-bottom: 10px;" value="Back" action="{!GoBack}" />
+
+		</apex:form>
+
+	</apex:pageBlock>
+
+</apex:page>

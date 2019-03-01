@@ -6,7 +6,7 @@
     <label>ClientFeedbackRequestedBtn</label>
     <packageVersions>
         <majorNumber>1</majorNumber>
-        <minorNumber>714</minorNumber>
+        <minorNumber>742</minorNumber>
         <namespace>TASKRAY</namespace>
     </packageVersions>
 </ApexPage>

@@ -58,7 +58,8 @@ public class ContractInformationCtrlTest {
             AccountId = [SELECT Id FROM Account LIMIT 1].Id,
             Pricebook2Id = [SELECT Id FROM Pricebook2 WHERE Name = :RevenueCalculationUtil.PRICEBOOK_NAME LIMIT 1].Id,
             DOC_Data_Configuration__c = 50,
-            DOC_Data_Licensing__c = 50
+            DOC_Data_Licensing__c = 50,
+            Use_New_Forecasting_Algorithm__c = false
         );
     }
 

@@ -20,4 +20,18 @@
         <shortDescription>IsActive_OpportunityTrigger</shortDescription>
         <value>FALSE</value>
     </labels>
+    <labels>
+        <fullName>NoRecordsFound</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoRecordsFound</shortDescription>
+        <value>No records found for the given record Id.</value>
+    </labels>
+    <labels>
+        <fullName>SOW_ErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOW_ErrorMessage</shortDescription>
+        <value>Status must be approved and the PO Number must contain a value.</value>
+    </labels>
 </CustomLabels>

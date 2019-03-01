@@ -62,12 +62,20 @@ public with sharing class RevenueForecastingUtil2 {
         Map<Id, List<Monthly_Revenue_Schedule__c>> result = new Map<Id, List<Monthly_Revenue_Schedule__c>>();
         
         Map<Id, Opportunity> schedulesOpportunities = new Map<Id, Opportunity>([
-            SELECT Id, (SELECT Product2.Revenue_Period__c FROM OpportunityLineItems)
+            SELECT Id, Product_Category__c, (SELECT Product2.Revenue_Period__c FROM OpportunityLineItems)
             FROM Opportunity
             WHERE Id IN :oppos
         ]);
         
-        Map<String, Forecasting_Revenue_Recognition__c> forecastingSettings = Forecasting_Revenue_Recognition__c.getAll();
+        Set<String> productNameList = new Set<String>();
+        for (Opportunity oppTmp : schedulesOpportunities.values()) 
+        {
+            productNameList.add(OpportunityAllHandler.offeringsToProducts.containsKey(oppTmp.Product_Category__c) ? OpportunityAllHandler.offeringsToProducts.get(oppTmp.Product_Category__c) : oppTmp.Product_Category__c);
+        }
+        Map<String, Product2> productsMap = new Map<String, Product2>();
+        for (Product2 prod : [SELECT Id, Name, Revenue_Period__c FROM Product2 WHERE Name IN :productNameList]) {
+            productsMap.put(prod.Name, prod);
+        }
         
         for (Opportunity opp : oppos) {
         
@@ -83,12 +91,15 @@ public with sharing class RevenueForecastingUtil2 {
 	            		noMonths = Math.Max(noMonths, (Integer)oli.Product2.Revenue_Period__c);
 	            }
             } else {
-            	noMonths = Integer.valueOf(forecastingSettings.get(opp.Product_Category__c).Contract_Length__c) + 1;
+                Opportunity oppTmp = schedulesOpportunities.get(opp.Id);
+                string productName = OpportunityAllHandler.offeringsToProducts.containsKey(oppTmp.Product_Category__c) ? OpportunityAllHandler.offeringsToProducts.get(oppTmp.Product_Category__c) : oppTmp.Product_Category__c;
+                if (productsMap.containsKey(productName) && productsMap.get(productName).Revenue_Period__c != null)
+            		noMonths = (integer)productsMap.get(productName).Revenue_Period__c;
             }
             Date endDate = opp.CloseDate.addMonths(noMonths);
             Integer duration = startDate != null && endDate != null ? startDate.monthsBetween(endDate) : 0;
         
-            for (Integer i = 0; i < duration; i++) {
+            for (Integer i = 0; i <= duration; i++) {
                 result.get(opp.Id).add(
                     new Monthly_Revenue_Schedule__c(
                         Id = existingMonthlyRevenues.containsKey(String.valueOf(opp.Id) + String.valueOf(startDate.addMonths(i).month()) + String.valueOf(startDate.addMonths(i).year())) ? existingMonthlyRevenues.get(String.valueOf(opp.Id) + String.valueOf(startDate.addMonths(i).month()) + String.valueOf(startDate.addMonths(i).year())).Id : null,
@@ -128,9 +139,18 @@ public with sharing class RevenueForecastingUtil2 {
             }
             monthlyOppoDateIdMap.get(monthlyRevenue.Opportunity__c).put(monthlyRevenue.Date__c.addMonths(1).toStartOfMonth().addDays(-1), monthlyRevenue.Id);
         }
+        System.debug(monthlyOppoDateIdMap);
         
-        Map<String, Forecasting_Offering_Allocation__c> allocationSettings = Forecasting_Offering_Allocation__c.getAll();
-        Map<String, Forecasting_Revenue_Recognition__c> forecastingSettings = Forecasting_Revenue_Recognition__c.getAll();
+        Set<String> productNameList = new Set<String>();
+        for (sObject oppTmpS : schedulesOpportunities.values()) 
+        {
+            Opportunity oppTmp = (Opportunity)oppTmpS;
+            productNameList.add(OpportunityAllHandler.offeringsToProducts.containsKey(oppTmp.Product_Category__c) ? OpportunityAllHandler.offeringsToProducts.get(oppTmp.Product_Category__c) : oppTmp.Product_Category__c);
+        }
+        Map<String, Product2> productsMap = new Map<String, Product2>();
+        for (Product2 prod : [SELECT Id, Name, Revenue_Period__c, Subscription__c, Services__c FROM Product2 WHERE Name IN :productNameList]) {
+            productsMap.put(prod.Name, prod);
+        }
         
         for (Opportunity opp : [
             SELECT CloseDate, Amount, Product_Category__c,
@@ -146,11 +166,13 @@ public with sharing class RevenueForecastingUtil2 {
 	            		noMonths = Math.Max(noMonths, (Integer)oli.Product2.Revenue_Period__c);
 	            }
             } else {
-            	noMonths = Integer.valueOf(forecastingSettings.get(opp.Product_Category__c).Contract_Length__c) + 1;
+                string productName = OpportunityAllHandler.offeringsToProducts.containsKey(opp.Product_Category__c) ? OpportunityAllHandler.offeringsToProducts.get(opp.Product_Category__c) : opp.Product_Category__c;
+                if (productsMap.containsKey(productName) && productsMap.get(productName).Revenue_Period__c != null)
+            		noMonths = (integer)productsMap.get(productName).Revenue_Period__c;
             }
             Date endDate = opp.CloseDate.addMonths(noMonths);
             // -1 because revenues whould start from 2nd month, first one is empty
-            Integer duration = startDate != null && endDate != null ? startDate.monthsBetween(endDate) - 1 : 0; 
+            Integer duration = startDate != null && endDate != null ? startDate.monthsBetween(endDate) : 0; 
             
             Id subscriptionId = [SELECT Id FROM Product2 WHERE Name = 'Subscription'].Id;
         	Id serviceId = [SELECT Id FROM Product2 WHERE Name = 'Services'].Id;
@@ -158,6 +180,7 @@ public with sharing class RevenueForecastingUtil2 {
             if (opp.OpportunityLineItems != null && opp.OpportunityLineItems.size() > 0) {
             	// If we have products, we use the new algorithm
 	            for (OpportunityLineItem oli : opp.OpportunityLineItems) {
+                    integer xduration = oli.Product2.Revenue_Period__c != null ? (integer)oli.Product2.Revenue_Period__c : duration;
 	            	if (oli.Product2.Subscription__c != null && oli.Product2.Subscription__c > 0) {
 			            //first month empty schedule
 			            schedulesToUpsert.add(
@@ -170,15 +193,15 @@ public with sharing class RevenueForecastingUtil2 {
 			                    Revenue_Category__c = 'Subscription'
 			                ) 
 			            );
-			            for (Integer i = 1; i < duration + 1; i++) {
+			            for (Integer i = 1; i <= xduration; i++) {
 			                if (oli.Product2.Subscription__c != null && oli.Product2.Subscription__c != 0) {
 			                    schedulesToUpsert.add(
 			                        new Product_Revenue_Schedule__c(
 			                            In_Forecast__c = true,
 			                            Monthly_Revenue_Schedule__c = monthlyOppoDateIdMap.get(opp.Id).get(startDate.addMonths(1 + i).toStartOfMonth().addDays(-1)),
 			                            Product__c = oli.Product2Id,
-			                            POC__c = 100.0 * oli.TotalPrice * (oli.Product2.Subscription__c / 100) / duration / (oli.TotalPrice * (oli.Product2.Subscription__c / 100)),
-			                            Revenue__c = 1.0 * oli.TotalPrice * (oli.Product2.Subscription__c / 100) / duration,
+			                            POC__c = 100.0 * oli.TotalPrice * (oli.Product2.Subscription__c / 100) / xduration / (oli.TotalPrice * (oli.Product2.Subscription__c / 100)),
+			                            Revenue__c = 1.0 * oli.TotalPrice * (oli.Product2.Subscription__c / 100) / xduration,
 			                    		Revenue_Category__c = 'Subscription'
 			                        )
 			                    );
@@ -197,15 +220,15 @@ public with sharing class RevenueForecastingUtil2 {
 			                    Revenue_Category__c = 'Services'
 			                )
 			            );
-			            for (Integer i = 1; i < duration + 1; i++) {
+			            for (Integer i = 1; i <= xduration; i++) {
 			                if (oli.Product2.Services__c != null && oli.Product2.Services__c != 0) {
 			                    schedulesToUpsert.add(
 			                        new Product_Revenue_Schedule__c(
 			                            In_Forecast__c = true,
 			                            Monthly_Revenue_Schedule__c = monthlyOppoDateIdMap.get(opp.Id).get(startDate.addMonths(1 + i).toStartOfMonth().addDays(-1)),
 			                            Product__c = oli.Product2Id,
-			                            POC__c = 100.0 * oli.TotalPrice * (oli.Product2.Services__c / 100) / duration / (oli.TotalPrice * (oli.Product2.Services__c / 100)),
-			                            Revenue__c = 1.0 * oli.TotalPrice * (oli.Product2.Services__c / 100) / duration,
+			                            POC__c = 100.0 * oli.TotalPrice * (oli.Product2.Services__c / 100) / xduration / (oli.TotalPrice * (oli.Product2.Services__c / 100)),
+			                            Revenue__c = 1.0 * oli.TotalPrice * (oli.Product2.Services__c / 100) / xduration,
 			                    		Revenue_Category__c = 'Services'
 			                        )
 			                    );
@@ -214,15 +237,20 @@ public with sharing class RevenueForecastingUtil2 {
 		            }
 		        }
             } else {
-            	Forecasting_Offering_Allocation__c oppoSetting = allocationSettings.get(opp.Product_Category__c);
-            	// If we don't have products, we use the old way with the opp amount
+            	// If we don't have products
+            	string productName = OpportunityAllHandler.offeringsToProducts.containsKey(opp.Product_Category__c) ? OpportunityAllHandler.offeringsToProducts.get(opp.Product_Category__c) : opp.Product_Category__c;
+                Product2 productToUse = null;
+                if (productsMap.containsKey(productName))
+            		productToUse = productsMap.get(productName);
+                
 	            schedulesToUpsert.add(
 	                new Product_Revenue_Schedule__c(
 	                    In_Forecast__c = true,
 	                    Monthly_Revenue_Schedule__c = monthlyOppoDateIdMap.get(opp.Id).get(startDate.addMonths(1).toStartOfMonth().addDays(-1)),
 	                    Product__c = subscriptionId,
 	                    POC__c = 0,
-	                    Revenue__c = 0
+	                    Revenue__c = 0,
+			            Revenue_Category__c = 'Subscription'
 	                )
 	            );
 	            schedulesToUpsert.add(
@@ -231,30 +259,33 @@ public with sharing class RevenueForecastingUtil2 {
 	                    Monthly_Revenue_Schedule__c = monthlyOppoDateIdMap.get(opp.Id).get(startDate.addMonths(1).toStartOfMonth().addDays(-1)),
 	                    Product__c = serviceId,
 	                    POC__c = 0,
-	                    Revenue__c = 0
+	                    Revenue__c = 0,
+			            Revenue_Category__c = 'Services'
 	                )
 	            );
 	            
 	            for (Integer i = 1; i < duration + 1; i++) {
-	                if (oppoSetting.Subscription__c != null && oppoSetting.Subscription__c != 0) {
+	                if (productToUse.Subscription__c != null && productToUse.Subscription__c != 0) {
 	                    schedulesToUpsert.add(
 	                        new Product_Revenue_Schedule__c(
 	                            In_Forecast__c = true,
 	                            Monthly_Revenue_Schedule__c = monthlyOppoDateIdMap.get(opp.Id).get(startDate.addMonths(1 + i).toStartOfMonth().addDays(-1)),
 	                            Product__c = subscriptionId,
-	                            POC__c = 100.0 * opp.Amount * (oppoSetting.Subscription__c / 100) / duration / (opp.Amount * (oppoSetting.Subscription__c / 100)),
-	                            Revenue__c = 1.0 * opp.Amount * (oppoSetting.Subscription__c / 100) / duration 
+	                            POC__c = opp.Amount == 0 ? 0 : (100.0 * opp.Amount * (productToUse.Subscription__c / 100) / duration / (opp.Amount * (productToUse.Subscription__c / 100))),
+	                            Revenue__c = opp.Amount == 0 ? 0 : (1.0 * opp.Amount * (productToUse.Subscription__c / 100) / duration),
+			            		Revenue_Category__c = 'Subscription'
 	                        )
 	                    );
 	                }
-	                if (oppoSetting.Services__c != null && oppoSetting.Services__c != 0) {
+	                if (productToUse.Services__c != null && productToUse.Services__c != 0) {
 	                    schedulesToUpsert.add(
 	                        new Product_Revenue_Schedule__c(
 	                            In_Forecast__c = true,
 	                            Monthly_Revenue_Schedule__c = monthlyOppoDateIdMap.get(opp.Id).get(startDate.addMonths(1 + i).toStartOfMonth().addDays(-1)),
 	                            Product__c = serviceId,
-	                            POC__c = 100.0 * opp.Amount * (oppoSetting.Services__c / 100) / duration / (opp.Amount * (oppoSetting.Services__c / 100)),
-	                            Revenue__c = 1.0 * opp.Amount * (oppoSetting.Services__c / 100) / duration 
+	                            POC__c = opp.Amount == 0 ? 0 : (100.0 * opp.Amount * (productToUse.Services__c / 100) / duration / (opp.Amount * (productToUse.Services__c / 100))),
+	                            Revenue__c = opp.Amount == 0 ? 0 : (1.0 * opp.Amount * (productToUse.Services__c / 100) / duration),
+			            		Revenue_Category__c = 'Services'
 	                        )
 	                    );
 	                }
@@ -340,6 +371,7 @@ public with sharing class RevenueForecastingUtil2 {
         		}
         	}
         }
+        System.debug(pricesMap);
         
         List<Invoice__c> invoices = new List<Invoice__c>();
         for (Id oppoId : oppoSchedulesMap.keySet()) {
@@ -353,6 +385,16 @@ public with sharing class RevenueForecastingUtil2 {
             
             Integer bookingMonthNumber = 0;
             
+            // Add 2 more months?
+            Date maxDate = null;
+            for (Date invDate : oppoSchedulesMap.get(oppoId).keyset()) {
+                if (maxDate == null || maxDate < invDate) {
+                    maxDate = invDate;
+                }
+            }
+            oppoSchedulesMap.get(oppoId).put(maxDate.addDays(1).AddMonths(1).addDays(-1), new List<Product_Revenue_Schedule__c>());
+            oppoSchedulesMap.get(oppoId).put(maxDate.addDays(1).AddMonths(2).addDays(-1), new List<Product_Revenue_Schedule__c>());
+            
             for (Date invDate : oppoSchedulesMap.get(oppoId).keySet()) {
                      
                 Decimal currentMonthOppInvoiceRevenue = 0.0;
@@ -361,19 +403,23 @@ public with sharing class RevenueForecastingUtil2 {
                 Decimal currentMonthOppInvoiceRevenueServ = 0.0;
                 Decimal currentMonthOppInvoiceRevenueSubscr = 0.0;
                 Decimal totalAmount = 0.0;
+                Set<Id> productsSet = new Set<Id>();
                 for (Product_Revenue_Schedule__c schedule : oppoSchedulesMap.get(oppoId).get(invDate)) {
-                    currentMonthOppInvoiceRevenue += schedule.Revenue__c;
-                    currentMonthOppInvoiceCost += schedule.Monthly_Revenue_Schedule__r.Costs__c;
-                    currentMonthOppInvoiceGrossProfit += schedule.Monthly_Revenue_Schedule__r.Gross__c;
-                    currentMonthOppInvoiceRevenueServ += schedule.Revenue_Type__c == ContractInformationCtrl.SERVICES ? schedule.Revenue__c : 0;
-                    currentMonthOppInvoiceRevenueSubscr += schedule.Revenue_Type__c == ContractInformationCtrl.SUBSCRIPTION ? schedule.Revenue__c : 0;
-                    
-                    if (pricesMap.containsKey(oppoId)) {
-                    	if (pricesMap.get(oppoId).containsKey(schedule.Product__c)) {
-                    		if (pricesMap.get(oppoId).get(schedule.Product__c).containsKey(bookingMonthNumber)) {
-                    			totalAmount += pricesMap.get(oppoId).get(schedule.Product__c).get(bookingMonthNumber);
-                    		}
-                    	}
+                        currentMonthOppInvoiceRevenue += schedule.Revenue__c;
+                        currentMonthOppInvoiceCost = schedule.Monthly_Revenue_Schedule__r.Costs__c;
+                        currentMonthOppInvoiceGrossProfit = schedule.Monthly_Revenue_Schedule__r.Gross__c;
+                        currentMonthOppInvoiceRevenueServ += schedule.Revenue_Type__c == ContractInformationCtrl.SERVICES ? schedule.Revenue__c : 0;
+                        currentMonthOppInvoiceRevenueSubscr += schedule.Revenue_Type__c == ContractInformationCtrl.SUBSCRIPTION ? schedule.Revenue__c : 0;
+                        
+                    if (!productsSet.contains(schedule.Product__c)) {
+                        productsSet.add(schedule.Product__c);
+                        if (pricesMap.containsKey(oppoId)) {
+                            if (pricesMap.get(oppoId).containsKey(schedule.Product__c)) {
+                                if (pricesMap.get(oppoId).get(schedule.Product__c).containsKey(bookingMonthNumber)) {
+                                    totalAmount += pricesMap.get(oppoId).get(schedule.Product__c).get(bookingMonthNumber);
+                                }
+                            }
+                        }
                     }
                 }
                 

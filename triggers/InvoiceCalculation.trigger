@@ -10,7 +10,7 @@ trigger InvoiceCalculation on Invoice__c (after update) {
         }
         
         RevenueCalculationUtil.calculateInvoices([
-            SELECT Invoice_Amount__c, Invoice_Date__c, Deferred_Revenue__c, Accrued_Revenue__c
+            SELECT Invoice_Amount__c, Invoice_Date__c, Deferred_Revenue__c, Accrued_Revenue__c, Opportunity_Amount__c
             FROM Invoice__c
             WHERE Opportunity__c = :Trigger.new.get(0).Opportunity__c
               AND Opportunity__r.Use_New_Forecasting_Algorithm__c != true
@@ -18,12 +18,17 @@ trigger InvoiceCalculation on Invoice__c (after update) {
         ]);
         
         RevenueCalculationUtil2.calculateInvoices([
-            SELECT Invoice_Amount__c, Invoice_Date__c, Deferred_Revenue__c, Accrued_Revenue__c
+            SELECT Invoice_Amount__c, Invoice_Date__c, Deferred_Revenue__c, Accrued_Revenue__c, Opportunity_Amount__c
             FROM Invoice__c
             WHERE Opportunity__c = :Trigger.new.get(0).Opportunity__c
               AND Opportunity__r.Use_New_Forecasting_Algorithm__c = true
             ORDER BY Invoice_Date__c ASC
         ]);
+        
+        /*
+         * Recalculate GAAP classes if needed
+         */
+        InvoiceHandler.UpdateGAAPOnTimeEntries(Trigger.new, Trigger.oldMap);
         
     }
     

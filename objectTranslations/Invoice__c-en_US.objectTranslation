@@ -100,4 +100,8 @@
             <section>Custom Links</section>
         </sections>
     </layouts>
+    <validationRules>
+        <errorMessage><!-- Cumulative invoices exceed the opportunity amount. Please verify the invoice amounts. --></errorMessage>
+        <name>Cumulative_Inv_Opp_Amount</name>
+    </validationRules>
 </CustomObjectTranslation>

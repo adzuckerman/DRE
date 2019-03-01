@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission set to authorize select users to edit Database and Library data within the Sub-Project records.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Database &amp; Library Edit</label>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TASKRAY__Project__c.Database_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TASKRAY__Project__c.FQ_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TASKRAY__Project__c.Library_Package_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TASKRAY__Project__c.Library_Package_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>TASKRAY__Project__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <recordTypeVisibilities>
+        <recordType>TASKRAY__Project__c.Sub_Project</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

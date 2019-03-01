@@ -9,15 +9,19 @@
 
 trigger OpportunityAll on Opportunity (before insert, before update, after insert, after update, before delete, after delete) {
     
+    if(system.isFuture()){
+    	return;    
+    } 
+
     OpportunityAllHandler handler = new OpportunityAllHandler();
     
-    /*if (Trigger.isInsert) {
+    if (Trigger.isInsert) {
         if (Trigger.isBefore)
             handler.onBeforeInsert(Trigger.New, Trigger.NewMap ) ;
             
         if (Trigger.isAfter) 
             handler.onAfterInsert(Trigger.New, Trigger.NewMap);
-    }*/
+    }
     
     if (Trigger.isUpdate) {
         if (Trigger.isBefore)

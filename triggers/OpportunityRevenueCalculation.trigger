@@ -93,8 +93,8 @@ trigger OpportunityRevenueCalculation on Opportunity (before insert, before upda
                 else
                 	oppsToForecast.add(opp);
             }
-            else if (opp.isClosed && (isOpportunityNew || isForecastingChanged || isOfferingChanged || isAmountChanged 
-                || isStageChanged || isContractEndChanged || isContractStartChanged || isPercentageChanged || isPercentageSettingChanged)) {
+            else if (opp.isClosed && (isOpportunityNew || isOfferingChanged || isAmountChanged 
+                /*|| isStageChanged || isForecastingChanged*/ || isContractEndChanged || isContractStartChanged || isPercentageChanged || isPercentageSettingChanged)) {
                 
                 if (opp.Use_New_Forecasting_Algorithm__c == true)
                 	oppsToSchedule2.add(opp);
@@ -103,10 +103,14 @@ trigger OpportunityRevenueCalculation on Opportunity (before insert, before upda
             }
         }
         
-        RevenueCalculationUtil.calculateOpportunity(oppsToSchedule);
-        RevenueCalculationUtil2.calculateOpportunity(oppsToSchedule2);
-        RevenueForecastingUtil.forecastOpportunity(oppsToForecast);
-        RevenueForecastingUtil2.forecastOpportunity(oppsToForecast2);
+        if (oppsToSchedule.size() > 0)
+        	RevenueCalculationUtil.calculateOpportunity(oppsToSchedule);
+        if (oppsToSchedule2.size() > 0)
+        	RevenueCalculationUtil2.calculateOpportunity(oppsToSchedule2);
+        if (oppsToForecast.size() > 0)
+        	RevenueForecastingUtil.forecastOpportunity(oppsToForecast);
+        if (oppsToForecast2.size() > 0)
+        	RevenueForecastingUtil2.forecastOpportunity(oppsToForecast2);
     }
 
 }

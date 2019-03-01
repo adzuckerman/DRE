@@ -30,7 +30,8 @@ public class OpportunityRevenueAllocationCtrlTest {
             StageName = 'Closed Lost',
             AccountId = [SELECT Id FROM Account LIMIT 1].Id,
             DOC_Data_Configuration__c = 50,
-            DOC_Data_Licensing__c = 50
+            DOC_Data_Licensing__c = 50,
+            Use_New_Forecasting_Algorithm__c = false
         );
         
         Test.setCurrentPage(Page.OpportunityRevenueAllocation);
@@ -48,7 +49,8 @@ public class OpportunityRevenueAllocationCtrlTest {
         Test.stopTest();
         
         System.assertEquals(1, customCtrl.schedulesList.size(), 'Should be one row for one product.');
-        System.assertEquals(6, customCtrl.schedulesList.get(0).size(), 'Should be six schedules for one product.');
+        System.assertEquals(6, customCtrl.schedulesList.get(0).schedules.size(), 'Should be six schedules for one product.');
+        System.assertEquals('DOC Data Configuration', customCtrl.schedulesList.get(0).Name);
     }
     
     static testmethod void testCalculateRevenueAmount_Success() {

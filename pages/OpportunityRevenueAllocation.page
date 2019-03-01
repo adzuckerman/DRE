@@ -116,12 +116,25 @@
                 <apex:repeat value="{!schedulesList}" var="schedules">
                     <tr>
                         <td>
-                            <div class="slds-truncate slds-p-horizontal--x-small" title="{!schedules[0].Product__r.Name}">{!schedules[0].Product__r.Name}</div>
+                            <div class="slds-truncate slds-p-horizontal--x-small" title="{!schedules.Name}">{!schedules.Name}</div>
                         </td>
-                        <apex:repeat value="{!schedules}" var="schedule">
+                        <apex:repeat value="{!schedules.schedules}" var="schedule">
                             <td>
-                                <div id="{!schedule.Id}" class = "{!IF(
-                                    OR(
+                            	<div id="{!schedule.Id}" class = "{!IF(
+									AND(
+                                    	OR(
+                                            schedule.Id = null, 
+                                            schedule.Date__c >= TODAY(), 
+                                            lockedSchedules[schedule.Id],
+                                            isForecasted
+                                    	), 
+                                    	!schedule.Monthly_Revenue_Schedule__r.Opportunity__r.Unlock_Future_Revenue__c
+                                    ),
+                                    'notEditableSchedule', 
+                                    'editableSchedule'
+                                )}" onclick="editSchedule(this)">
+                                <!--<div id="{!schedule.Id}" class = "{!IF(
+									OR(
                                         schedule.Id = null, 
                                         schedule.Date__c >= TODAY(), 
                                         lockedSchedules[schedule.Id],
@@ -129,7 +142,16 @@
                                     ), 
                                     'notEditableSchedule', 
                                     'editableSchedule'
-                                )}" onclick="editSchedule(this)">
+                                )}" onclick="editSchedule(this)">-->
+                                	<!--<div id="{!schedule.Id}" class = "{!IF(
+                                    OR(
+                                        schedule.Id = null, 
+                                        lockedSchedules[schedule.Id],
+                                        isForecasted
+                                    ), 
+                                    'notEditableSchedule', 
+                                    'editableSchedule'
+                                )}" onclick="editSchedule(this)">-->
                                     <div>
                                         <apex:outputField styleClass="slds-truncate" title="{!schedule.POC__c}" value="{!schedule.POC__c}"/>
                                     </div>

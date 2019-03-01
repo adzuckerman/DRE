@@ -22,9 +22,13 @@ public with sharing class TogglToSalesforceTest {
         insert testCustomLog;
         Test.setCreatedDate(testCustomLog.Id, Datetime.now().addDays(-100));
 
+        Integer days = 30;
+    	Date until = Date.today();
+    	Date since = until.addDays(-days);
+        
         Test.startTest();
         Test.setMock(HttpCalloutMock.class.class, new TogglToSalesforceMock(''));
-        Database.executeBatch(new TogglToSalesforceBatch(), 1);
+        Database.executeBatch(new TogglToSalesforceBatch(days, until, since), 1);
         Test.stopTest();
 
         List<Account> accounts = [SELECT Id, Name FROM Account];

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <customValue>
+        <fullName>CoE</fullName>
+        <default>false</default>
+        <label>CoE</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Hub</fullName>
+        <default>false</default>
+        <label>Data Hub</label>
+    </customValue>
+    <customValue>
         <fullName>DOC Data Configuration</fullName>
         <default>false</default>
         <label>DOC Data Configuration</label>
@@ -9,6 +19,11 @@
         <fullName>DOC Data Licensing</fullName>
         <default>false</default>
         <label>DOC Data Licensing</label>
+    </customValue>
+    <customValue>
+        <fullName>DOC Label</fullName>
+        <default>false</default>
+        <label>DOC Label</label>
     </customValue>
     <customValue>
         <fullName>DOC Library Configuration</fullName>
@@ -21,29 +36,14 @@
         <label>DOC Library Licensing</label>
     </customValue>
     <customValue>
-        <fullName>Services</fullName>
+        <fullName>DOC Search</fullName>
         <default>false</default>
-        <label>Services</label>
+        <label>DOC Search</label>
     </customValue>
     <customValue>
-        <fullName>Subscription</fullName>
+        <fullName>DOC Track</fullName>
         <default>false</default>
-        <label>Subscription</label>
-    </customValue>
-    <customValue>
-        <fullName>DOC Label</fullName>
-        <default>false</default>
-        <label>DOC Label</label>
-    </customValue>
-    <customValue>
-        <fullName>Data Hub</fullName>
-        <default>false</default>
-        <label>Data Hub</label>
-    </customValue>
-    <customValue>
-        <fullName>Project</fullName>
-        <default>false</default>
-        <label>Project</label>
+        <label>DOC Track</label>
     </customValue>
     <customValue>
         <fullName>GROWTH</fullName>
@@ -56,14 +56,19 @@
         <label>IHME</label>
     </customValue>
     <customValue>
-        <fullName>DOC Search</fullName>
+        <fullName>Project</fullName>
         <default>false</default>
-        <label>DOC Search</label>
+        <label>Project</label>
     </customValue>
     <customValue>
-        <fullName>DOC Track</fullName>
+        <fullName>Services</fullName>
         <default>false</default>
-        <label>DOC Track</label>
+        <label>Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Subscription</fullName>
+        <default>false</default>
+        <label>Subscription</label>
     </customValue>
     <masterLabel>Offering Type</masterLabel>
     <sorted>false</sorted>

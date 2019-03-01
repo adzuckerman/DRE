@@ -186,4 +186,12 @@
         <label><!-- Send_to_EchoSign --></label>
         <name>echosign_dev1__Send_to_EchoSign</name>
     </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
 </CustomObjectTranslation>

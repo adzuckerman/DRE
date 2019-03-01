@@ -56,7 +56,6 @@
         <searchResultsAdditionalFields>PRODUCT.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>PRODUCT.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>PRODUCT.DEFAULT_PRICE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.DESCRIPTION</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>PRODUCT2.FAMILY_ENUM</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" />
     </searchLayouts>
 </CustomObject>

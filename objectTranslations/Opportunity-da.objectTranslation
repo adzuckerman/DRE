@@ -1216,6 +1216,14 @@
         <name>Is_Proposal_Submitted__c</name>
     </fields>
     <fields>
+        <label><!-- Record Locked ? --></label>
+        <name>Record_Locked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use New Forecasting Algorithm --></label>
+        <name>Use_New_Forecasting_Algorithm__c</name>
+    </fields>
+    <fields>
         <label><!-- Offering --></label>
         <name>Product_Category__c</name>
         <picklistValues>
@@ -1225,6 +1233,10 @@
         <picklistValues>
             <masterLabel>ASH DOC Search</masterLabel>
             <translation><!-- ASH DOC Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CoE</masterLabel>
+            <translation><!-- CoE --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>DOC Label</masterLabel>
@@ -1259,14 +1271,28 @@
             <translation><!-- Service Project Platform --></translation>
         </picklistValues>
     </fields>
-    <fields>
-        <label><!-- Record Locked ? --></label>
-        <name>Record_Locked__c</name>
-    </fields>
-    <fields>
-        <label><!-- Use New Forecasting Algorithm --></label>
-        <name>Use_New_Forecasting_Algorithm__c</name>
-    </fields>
+    <layouts>
+        <layout>Opportunity Layout SDoc</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Renewal Opportunity Layout</layout>
+        <sections>
+            <label><!-- Contracting --></label>
+            <section>Contracting</section>
+        </sections>
+        <sections>
+            <label><!-- Emails --></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label><!-- Proposal Drafting --></label>
+            <section>Proposal Drafting</section>
+        </sections>
+    </layouts>
     <layouts>
         <layout>Opportunity Layout</layout>
         <sections>
@@ -1308,32 +1334,6 @@
         <sections>
             <label><!-- Revenue Allocation --></label>
             <section>Revenue Allocation</section>
-        </sections>
-        <sections>
-            <label><!-- Sales Plan --></label>
-            <section>Sales Plan</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Opportunity Layout SDoc</layout>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Renewal Opportunity Layout</layout>
-        <sections>
-            <label><!-- Contracting --></label>
-            <section>Contracting</section>
-        </sections>
-        <sections>
-            <label><!-- Emails --></label>
-            <section>Emails</section>
-        </sections>
-        <sections>
-            <label><!-- Proposal Drafting --></label>
-            <section>Proposal Drafting</section>
         </sections>
     </layouts>
     <quickActions>
@@ -1431,6 +1431,14 @@
         <errorMessage><!-- You cannot advance beyond Written Proposal/Price Quote - Internal Review until it is approved. --></errorMessage>
         <name>Written_Quote_Until_Approved_Over_1M</name>
     </validationRules>
+    <validationRules>
+        <errorMessage><!-- To advance Opportunity Stage passed Capabilities Presentation, a Proposal must be submitted and approved for the Project Offering. --></errorMessage>
+        <name>Proposal_Approval_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Total invoices are more than the opportunity amount. Please verify the sum of all invoices does not exceed the opportunity amount. --></errorMessage>
+        <name>Total_Inv_More_than_Opp_Amount</name>
+    </validationRules>
     <webLinks>
         <label><!-- DeliveryStatus --></label>
         <name>Litmos__DeliveryStatus</name>
@@ -1458,5 +1466,13 @@
     <webLinks>
         <label><!-- Send_to_EchoSign --></label>
         <name>echosign_dev1__Send_to_EchoSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
     </webLinks>
 </CustomObjectTranslation>

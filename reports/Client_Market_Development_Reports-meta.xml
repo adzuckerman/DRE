@@ -80,5 +80,10 @@
         <sharedTo>rkoretoff@doctorevidence.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
+    <folderShares>
+        <accessLevel>EditAllContents</accessLevel>
+        <sharedTo>slewis@doctorevidence.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
     <name>Client &amp; Market Development Reports</name>
 </ReportFolder>

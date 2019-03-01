@@ -118,12 +118,6 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Junction_Kbase__c.TaskRay_Project__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>SNF-Resp-009c</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>CHILD_NAME</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>

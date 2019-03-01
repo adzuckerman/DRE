@@ -16,6 +16,27 @@ public class OpportunityBalanceSheetSectionCtrlTest {
             Name = 'DOC Data Configuration'
         );
         
+        insert new Pricebook2(
+            Name = RevenueCalculationUtil.PRICEBOOK_NAME, 
+            IsActive = true
+        );
+        
+        insert new PricebookEntry(
+            Product2Id = [SELECT Id FROM Product2 LIMIT 1].Id,
+            Pricebook2Id = Test.getStandardPriceBookId(),
+            UnitPrice = 100000,
+            IsActive = false,
+            UseStandardPrice = false
+        );
+
+        insert new PricebookEntry(
+            Product2Id = [SELECT Id FROM Product2 LIMIT 1].Id,
+            Pricebook2Id = [SELECT Id FROM Pricebook2 WHERE Name = :RevenueCalculationUtil.PRICEBOOK_NAME LIMIT 1].Id,
+            UnitPrice = 100000,
+            IsActive = true,
+            UseStandardPrice = false
+        );
+        
         insert new Account(
             Name = 'test'
         );
@@ -30,7 +51,9 @@ public class OpportunityBalanceSheetSectionCtrlTest {
             StageName = 'Closed Lost',
             AccountId = [SELECT Id FROM Account LIMIT 1].Id,
             DOC_Data_Configuration__c = 50,
-            DOC_Data_Licensing__c = 50
+            DOC_Data_Licensing__c = 50,
+            Use_New_Forecasting_Algorithm__c = false,
+            Pricebook2Id = [SELECT Id FROM Pricebook2 WHERE Name = :RevenueCalculationUtil.PRICEBOOK_NAME LIMIT 1].Id
         );
         
         Test.setCurrentPage(Page.OpportunityBalanceSheetSection);

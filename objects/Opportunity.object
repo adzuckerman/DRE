@@ -2740,71 +2740,6 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Product_Category__c</fullName>
-        <externalId>false</externalId>
-        <label>Offering</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>ASCO DOC Search</fullName>
-                    <default>false</default>
-                    <label>ASCO DOC Search</label>
-                </value>
-                <value>
-                    <fullName>ASH DOC Search</fullName>
-                    <default>false</default>
-                    <label>ASH DOC Search</label>
-                </value>
-                <value>
-                    <fullName>Data Hub</fullName>
-                    <default>true</default>
-                    <label>Data Hub</label>
-                </value>
-                <value>
-                    <fullName>DOC Label</fullName>
-                    <default>false</default>
-                    <label>DOC Label</label>
-                </value>
-                <value>
-                    <fullName>DOC Search</fullName>
-                    <default>false</default>
-                    <label>DOC Search</label>
-                </value>
-                <value>
-                    <fullName>DOC Track</fullName>
-                    <default>false</default>
-                    <label>DOC Track</label>
-                </value>
-                <value>
-                    <fullName>GROWTH</fullName>
-                    <default>false</default>
-                    <label>GROWTH</label>
-                </value>
-                <value>
-                    <fullName>IHME</fullName>
-                    <default>false</default>
-                    <label>IHME</label>
-                </value>
-                <value>
-                    <fullName>Project</fullName>
-                    <default>false</default>
-                    <label>Project</label>
-                </value>
-                <value>
-                    <fullName>Service Project Platform</fullName>
-                    <default>false</default>
-                    <label>Service Project Platform</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Record_Locked__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -3147,6 +3082,146 @@
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
+    <fields>
+        <fullName>First_non_NA_Invoice_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>First non NA Invoice Date</label>
+        <summarizedField>Invoice__c.Actual_Invoice_Date__c</summarizedField>
+        <summaryFilterItems>
+            <field>Invoice__c.Invoice_Num__c</field>
+            <operation>notEqual</operation>
+            <value>NA</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Invoice__c.Invoice_Num__c</field>
+            <operation>notEqual</operation>
+            <value>TBD</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Invoice__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Product_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Offering</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ASCO DOC Search</fullName>
+                    <default>false</default>
+                    <label>ASCO DOC Search</label>
+                </value>
+                <value>
+                    <fullName>ASH DOC Search</fullName>
+                    <default>false</default>
+                    <label>ASH DOC Search</label>
+                </value>
+                <value>
+                    <fullName>CoE</fullName>
+                    <default>false</default>
+                    <label>CoE</label>
+                </value>
+                <value>
+                    <fullName>Data Hub</fullName>
+                    <default>true</default>
+                    <label>Data Hub</label>
+                </value>
+                <value>
+                    <fullName>DOC Label</fullName>
+                    <default>false</default>
+                    <label>DOC Label</label>
+                </value>
+                <value>
+                    <fullName>DOC Search</fullName>
+                    <default>false</default>
+                    <label>DOC Search</label>
+                </value>
+                <value>
+                    <fullName>DOC Track</fullName>
+                    <default>false</default>
+                    <label>DOC Track</label>
+                </value>
+                <value>
+                    <fullName>GROWTH</fullName>
+                    <default>false</default>
+                    <label>GROWTH</label>
+                </value>
+                <value>
+                    <fullName>IHME</fullName>
+                    <default>false</default>
+                    <label>IHME</label>
+                </value>
+                <value>
+                    <fullName>Project</fullName>
+                    <default>false</default>
+                    <label>Project</label>
+                </value>
+                <value>
+                    <fullName>Service Project Platform</fullName>
+                    <default>false</default>
+                    <label>Service Project Platform</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Proposal_Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Proposal Approved</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SyncedQuoteId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Toggl_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Toggl Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Toggl_Pre_Sale_Project_Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Toggl Pre-Sale Project Approved</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Unlock_Future_Revenue__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Unlock Future Revenue</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
@@ -3173,20 +3248,6 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
-    <listViews>
-        <fullName>All_Opps_SFID</fullName>
-        <columns>Opportunity_ID__c</columns>
-        <columns>OPPORTUNITY.NAME</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>Product_Category__c</columns>
-        <columns>OPPORTUNITY.STAGE_NAME</columns>
-        <columns>OPPORTUNITY.CLOSE_DATE</columns>
-        <columns>OPPORTUNITY.AMOUNT</columns>
-        <columns>Sales_Plan_Amount__c</columns>
-        <columns>OPPORTUNITY.CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <label>All Opps - SFID</label>
-    </listViews>
     <listViews>
         <fullName>ClosingNextMonth</fullName>
         <filterScope>Everything</filterScope>
@@ -3468,6 +3529,30 @@
         <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Mine</filterScope>
         <label>2011 Target View</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Opps_SFID</fullName>
+        <columns>Opportunity_ID__c</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Product_Category__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Sales_Plan_Amount__c</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notEqual</operation>
+            <value>Closed Won,Closed Lost</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2018</value>
+        </filters>
+        <label>All Opps - SFID</label>
     </listViews>
     <recordTypes>
         <fullName>Default_Opportunity_Record_Type</fullName>
@@ -4017,6 +4102,10 @@
             </values>
             <values>
                 <fullName>ASH DOC Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CoE</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -5662,6 +5751,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>CoE</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>DOC Label</fullName>
                 <default>false</default>
             </values>
@@ -6119,6 +6212,30 @@ IF(ISBLANK(DOC_Library_Licensing__c ), 0, DOC_Library_Licensing__c ) != 1))</err
      !ISPICKVAL( Product_Category__c, "DOC Label")
 )</errorConditionFormula>
         <errorMessage>You cannot advance beyond Written Proposal/Price Quote - Internal Review until it is approved.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Proposal_Approval_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+ISPICKVAL(Product_Category__c, "Project"),
+NOT(Proposal_Approved__c),   
+OR( 
+ISPICKVAL( StageName, "Proposal Requested" ), 
+ISPICKVAL( StageName, "Proposal Submitted" ), 
+ISPICKVAL( StageName, "Renewal" ), 
+ISPICKVAL( StageName, "Verbal Commitment" ), 
+ISPICKVAL( StageName, "Contracting" ), 
+ISPICKVAL( StageName, "Closed Won" )
+)  
+)</errorConditionFormula>
+        <errorMessage>To advance Opportunity Stage passed Capabilities Presentation, a Proposal must be submitted and approved for the Project Offering.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Total_Inv_More_than_Opp_Amount</fullName>
+        <active>true</active>
+        <description>Total Invoices are more than the Opportunity Amount.</description>
+        <errorConditionFormula>false</errorConditionFormula>
+        <errorMessage>Total invoices are more than the opportunity amount. Please verify the sum of all invoices does not exceed the opportunity amount.</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Upload_Contract</fullName>

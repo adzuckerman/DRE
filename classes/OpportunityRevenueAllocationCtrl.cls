@@ -8,7 +8,7 @@
  */
 public with sharing class OpportunityRevenueAllocationCtrl {
 
-    public List<List<Product_Revenue_Schedule__c>> schedulesList { get; set; }
+    public List<LineWrapper> schedulesList { get; set; }
     public List<String> tableDates { get; private set; }
     public Boolean isForecasted { get; private set; }
     private String opportunityId;
@@ -19,7 +19,9 @@ public with sharing class OpportunityRevenueAllocationCtrl {
         get {
             Map<Id, Boolean> result = new Map<Id, Boolean>();
             List<RevenueCalculationUtil.LockDateWrapper> lockedDates = RevenueCalculationUtil.lockedDates;
-            for (List<Product_Revenue_Schedule__c> scheduleList : schedulesList) {
+            system.debug('lockedDates---' + lockedDates);
+            for (LineWrapper lw : schedulesList) {
+                List<Product_Revenue_Schedule__c> scheduleList = lw.schedules;
                 for (Product_Revenue_Schedule__c schedule : scheduleList) {
                     result.put(schedule.Id, false);
                     for (RevenueCalculationUtil.LockDateWrapper lockedDate : lockedDates) {
@@ -35,6 +37,7 @@ public with sharing class OpportunityRevenueAllocationCtrl {
                     }
                 }
             }
+            system.debug('result---' + result);
             return result;
         }
         private set;
@@ -56,7 +59,7 @@ public with sharing class OpportunityRevenueAllocationCtrl {
     private void loadSchedules() {
         
         List<Product_Revenue_Schedule__c> schedules = [
-            SELECT POC__c, Revenue__c, Date__c, Product__r.Name
+            SELECT Id, POC__c, Revenue__c, Date__c, Product__r.Name, Revenue_Category__c, Product__r.Services__c, Product__r.Subscription__c, Monthly_Revenue_Schedule__r.Opportunity__r.Unlock_Future_Revenue__c
             FROM Product_Revenue_Schedule__c
             WHERE Monthly_Revenue_Schedule__r.Opportunity__c = :opportunityId
             ORDER BY Product__r.Name, Date__c
@@ -68,10 +71,10 @@ public with sharing class OpportunityRevenueAllocationCtrl {
         Map<String, Map<Date, Product_Revenue_Schedule__c>> schedulesMap = new Map<String, Map<Date, Product_Revenue_Schedule__c>>();
 
         for (Product_Revenue_Schedule__c schedule : schedules) {
-            if (!schedulesMap.containsKey(schedule.Product__r.Name)) {
-                schedulesMap.put(schedule.Product__r.Name, new Map<Date, Product_Revenue_Schedule__c>());
+            if (!schedulesMap.containsKey(schedule.Product__r.Name + '~' + schedule.Revenue_Category__c)) {
+                schedulesMap.put(schedule.Product__r.Name + '~' + schedule.Revenue_Category__c, new Map<Date, Product_Revenue_Schedule__c>());
             } 
-            schedulesMap.get(schedule.Product__r.Name).put(schedule.Date__c, schedule);
+            schedulesMap.get(schedule.Product__r.Name + '~' + schedule.Revenue_Category__c).put(schedule.Date__c, schedule);
             
             startDate = (startDate == null || startDate > schedule.Date__c) ? schedule.Date__c : startDate;
             endDate = (endDate == null || endDate < schedule.Date__c) ? schedule.Date__c : endDate;
@@ -93,7 +96,7 @@ public with sharing class OpportunityRevenueAllocationCtrl {
             }
         }
 
-        schedulesList = new List<List<Product_Revenue_Schedule__c>>();
+        schedulesList = new List<LineWrapper>();
         tableDates = new List<String>();
 
         for (String product : schedulesMap.keySet()) {
@@ -111,7 +114,7 @@ public with sharing class OpportunityRevenueAllocationCtrl {
                 }
             }
 
-            schedulesList.add(schedulesByProduct);
+            schedulesList.add(new LineWrapper(schedulesByProduct));
         }
     }
 
@@ -134,8 +137,29 @@ public with sharing class OpportunityRevenueAllocationCtrl {
             catch (DmlException ex) {
                 System.debug(ex);
             }
+            system.debug('schedule----' + schedule);
 
             loadSchedules();
+        }
+    }
+    
+    public class LineWrapper {
+        public List<Product_Revenue_Schedule__c> schedules { get; set; }
+        public String Name {
+            get {
+                if (schedules == null || schedules.size() == 0)
+                    return '';
+                string toReturn = schedules[0].Product__r.Name;
+                if (schedules[0].Product__r.Services__c > 0 && schedules[0].Product__r.Services__c < 100 && schedules[0].Revenue_Category__c == 'Services')
+                    toReturn += ' (svc)';
+                if (schedules[0].Product__r.Subscription__c > 0 && schedules[0].Product__r.Subscription__c < 100 && schedules[0].Revenue_Category__c == 'Subscription')
+                    toReturn += ' (sub)';
+                return toReturn;
+            }
+        }
+        
+        public LineWrapper(List<Product_Revenue_Schedule__c> schedules) {
+            this.schedules = schedules;
         }
     }
 }

@@ -72,7 +72,7 @@
         <fields>Product__c</fields>
         <fields>POC__c</fields>
         <fields>Revenue__c</fields>
-        <fields>Revenue_Type__c</fields>
+        <fields>Revenue_Category__c</fields>
         <relatedList>Product_Revenue_Schedule__c.Monthly_Revenue_Schedule__c</relatedList>
     </relatedLists>
     <relatedLists>

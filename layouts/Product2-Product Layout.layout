@@ -17,7 +17,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Offering__c</field>
+                <field>Subscription__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -27,7 +27,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Family</field>
+                <field>Offering__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -36,10 +36,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Services__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Subscription__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -100,6 +96,7 @@
         <fields>NAME</fields>
         <fields>Month__c</fields>
         <fields>Invoice_Percent__c</fields>
+        <fields>CREATED_DATE</fields>
         <relatedList>Booking_Months__c.Customer_Product__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>

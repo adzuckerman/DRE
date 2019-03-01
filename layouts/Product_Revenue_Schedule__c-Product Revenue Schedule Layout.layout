@@ -27,6 +27,10 @@
                 <field>Date__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Revenue_Type__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>POC__c</field>
             </layoutItems>

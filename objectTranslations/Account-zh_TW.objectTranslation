@@ -289,6 +289,10 @@
         <name>Principal_Consultant_3__c</name>
         <relationshipLabel><!-- Accounts (Principal Consultant 3) --></relationshipLabel>
     </fields>
+    <fieldSets>
+        <label><!-- Account Filter Fields --></label>
+        <name>Account_Filter_Fields</name>
+    </fieldSets>
     <layouts>
         <layout>Account Layout SDoc</layout>
         <sections>
@@ -366,5 +370,13 @@
     <webLinks>
         <label><!-- Send_to_EchoSign --></label>
         <name>echosign_dev1__Send_to_EchoSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
     </webLinks>
 </CustomObjectTranslation>

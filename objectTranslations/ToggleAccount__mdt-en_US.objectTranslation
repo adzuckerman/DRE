@@ -27,4 +27,13 @@
         <label><!-- Delete Logs After Days --></label>
         <name>Delete_Logs_After_Days__c</name>
     </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>ToggleAccount</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ToggleAccounts</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

@@ -65,7 +65,8 @@ private class RevenueCalculationTest {
             AccountId = [SELECT Id FROM Account LIMIT 1].Id,
             Pricebook2Id = [SELECT Id FROM Pricebook2 WHERE Name = :RevenueCalculationUtil.PRICEBOOK_NAME LIMIT 1].Id,
             DOC_Data_Configuration__c = 50,
-            DOC_Data_Licensing__c = 50
+            DOC_Data_Licensing__c = 50,
+            Use_New_Forecasting_Algorithm__c = false
         );
         insert testOpp;
         
@@ -132,7 +133,8 @@ private class RevenueCalculationTest {
             AccountId = [SELECT Id FROM Account LIMIT 1].Id,
             Pricebook2Id = [SELECT Id FROM Pricebook2 WHERE Name = :RevenueCalculationUtil.PRICEBOOK_NAME LIMIT 1].Id,
             DOC_Data_Configuration__c = 50,
-            DOC_Data_Licensing__c = 50
+            DOC_Data_Licensing__c = 50,
+            Use_New_Forecasting_Algorithm__c = false
         );
         
         List<Product_Revenue_Schedule__c> revenues = [
@@ -170,7 +172,8 @@ private class RevenueCalculationTest {
             AccountId = [SELECT Id FROM Account LIMIT 1].Id,
             Pricebook2Id = [SELECT Id FROM Pricebook2 WHERE Name = :RevenueCalculationUtil.PRICEBOOK_NAME LIMIT 1].Id,
             DOC_Data_Configuration__c = 50,
-            DOC_Data_Licensing__c = 50
+            DOC_Data_Licensing__c = 50,
+            Use_New_Forecasting_Algorithm__c = false
         );
         
         List<Product_Revenue_Schedule__c> revenues = [
@@ -211,7 +214,8 @@ private class RevenueCalculationTest {
             AccountId = [SELECT Id FROM Account LIMIT 1].Id,
             Pricebook2Id = [SELECT Id FROM Pricebook2 WHERE Name = :RevenueCalculationUtil.PRICEBOOK_NAME LIMIT 1].Id,
             DOC_Data_Configuration__c = 50,
-            DOC_Data_Licensing__c = 50
+            DOC_Data_Licensing__c = 50,
+            Use_New_Forecasting_Algorithm__c = false
         );
         
         Test.startTest();
@@ -275,7 +279,8 @@ private class RevenueCalculationTest {
             DOC_Data_Configuration__c = null,
             DOC_Data_Licensing__c = null,
             Services_Percentage__c = 100,
-            Override_Allocations__c = true
+            Override_Allocations__c = true,
+            Use_New_Forecasting_Algorithm__c = false
         );
         
         Test.stopTest();

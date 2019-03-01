@@ -104,7 +104,8 @@ private class RevenueForecastingTest {
             StageName = 'New',
             AccountId = [SELECT Id FROM Account LIMIT 1].Id,
             Pricebook2Id = [SELECT Id FROM Pricebook2 WHERE Name = :RevenueCalculationUtil.PRICEBOOK_NAME LIMIT 1].Id,
-            In_Forecast__c = true
+            In_Forecast__c = true,
+            Use_New_Forecasting_Algorithm__c = false
         );
         insert testOpp;
         
@@ -182,7 +183,8 @@ private class RevenueForecastingTest {
             StageName = 'New',
             AccountId = [SELECT Id FROM Account LIMIT 1].Id,
             Pricebook2Id = [SELECT Id FROM Pricebook2 WHERE Name = :RevenueCalculationUtil.PRICEBOOK_NAME LIMIT 1].Id,
-            In_Forecast__c = true
+            In_Forecast__c = true,
+            Use_New_Forecasting_Algorithm__c = false
         );
         insert testOpp;
         
@@ -193,7 +195,7 @@ private class RevenueForecastingTest {
             FROM Product_Revenue_Schedule__c 
             WHERE Monthly_Revenue_Schedule__r.Opportunity__c = :testOpp.Id
                 AND In_Forecast__c = true].isEmpty(), 
-            'Here must not be any generated revenue records presenting.'
+            'There should be no generated revenue records.'
         );
     }
 

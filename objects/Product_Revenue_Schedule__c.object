@@ -91,31 +91,6 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Revenue_Type__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( 
-OR( 
-Product__r.Name = 'Services', 
-Product__r.Name = 'DOC Data Configuration', 
-Product__r.Name = 'DOC Library Configuration' 
-), 'Services Revenue', 
-IF( 
-OR( 
-Product__r.Name = 'Subscription', 
-Product__r.Name = 'DOC Label', 
-Product__r.Name = 'DOC Nhanes', 
-Product__r.Name = 'IMHE', 
-Product__r.Name = 'DOC Library Licensing', 
-Product__r.Name = 'DOC Data Licensing' 
-), 'Subscription Revenue', 'No Type'))</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Revenue Type</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Revenue__c</fullName>
         <externalId>false</externalId>
         <label>Revenue</label>
@@ -159,6 +134,33 @@ Product__r.Name = 'DOC Data Licensing'
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Revenue_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+OR( 
+Product__r.Name = 'Services', 
+Product__r.Name = 'DOC Data Configuration', 
+Product__r.Name = 'DOC Library Configuration' 
+), 'Services Revenue', 
+IF( 
+OR( 
+Product__r.Name = 'Subscription', 
+Product__r.Name = 'DOC Label', 
+Product__r.Name = 'DOC Nhanes', 
+Product__r.Name = 'IMHE', 
+Product__r.Name = 'DOC Library Licensing', 
+Product__r.Name = 'DOC Data Licensing' 
+), 'Subscription Revenue', 
+IF( 
+Monthly_Revenue_Schedule__r.Opportunity__r.Use_New_Forecasting_Algorithm__c, TEXT(Revenue_Category__c),'No Type')))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Revenue Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Monthly_Revenue_Schedule__c</fullName>
