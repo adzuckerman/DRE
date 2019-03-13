@@ -34,10 +34,6 @@
                 <behavior>Readonly</behavior>
                 <field>ListPrice</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Product_Discount__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -26,6 +26,7 @@ public class ToggleProjectUpdate
             tokenString = 'Basic ' + tokenString;
             String  authToken = tokenString;
             
+            List<Messaging.SingleEmailMessage> emails = new List<Messaging.SingleEmailMessage>();
             for(String s: setId)
             {
                 
@@ -42,12 +43,24 @@ public class ToggleProjectUpdate
                 System.debug(response.getBody());
                 
                 // Parse the JSON response
-                if (response.getStatusCode() != 201) {
-                    System.debug('The status code returned was not expected: ' +
-                        response.getStatusCode() + ' ' + response.getStatus());
+                if (response.getStatusCode() != 200 && response.getStatusCode() != 201) {
+                    System.debug('The status code returned was not expected: ' + response.getStatusCode() + ' ' + response.getStatus());
+                    
+                    Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+                    mail.setToAddresses(new String[] { UserInfo.getUserEmail() });
+                    mail.setSenderDisplayName('Salesforce');
+                    mail.setSubject('Project could not be archived');
+                    mail.setUseSignature(false);
+                    mail.setHtmlBody('Project with Toggl Id ' + s + ' could not be archived in Toggl. We received the following error: <br /> <br />' + response.getStatusCode() + ' ' + response.getStatus() + '<br />' + response.getBody());
+                    emails.add(mail);
+                    
                 } else {
                     System.debug(response.getBody());
                 }
+            }
+            
+            if (emails.size() > 0) {
+                Messaging.sendEmail(emails);
             }
         }
        

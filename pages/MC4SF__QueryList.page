@@ -26,7 +26,7 @@
     <c:QueryBuilderSteps currentStep="1" />
 
     <h1 class="slds-text-heading_large slds-p-vertical_small">Select a list</h1>
-    <p>Select the list to populate with this query's results. You may also select segments and interests for your selected list.</p>
+    <p>Select the list to populate with this query's results. You may also select tags and interests for your selected list.</p>
 
 
     <div class="slds-p-vertical_large">
@@ -51,8 +51,8 @@
         </div>
       </div>
       <div class="slds-col slds-small-size--1-of-1 slds-medium-size_1-of-2">
-        <h2 class="slds-text-heading_medium slds-p-vertical_small">Segments</h2>
-        <a href="#" onclick="showAddSegment()"><img src="{!URLFOR($Resource.Assets, 'icons/utility/add.png')}" class="add-icon" style="height:12px;"/>Create a new segment</a><br />
+        <h2 class="slds-text-heading_medium slds-p-vertical_small">Tags</h2>
+        <a href="#" onclick="showAddSegment()"><img src="{!URLFOR($Resource.Assets, 'icons/utility/add.png')}" class="add-icon" style="height:12px;"/>Create a new tag</a><br />
         <div id="new-segment-form" class="slds-form" style="margin-top:10px; display:none;">
           <input type="text" id="new-segment" class="slds-input" placeholder="Enter Name..." style="width:200px;" />
           <button id="addSegmentButton" class="slds-button slds-button_brand" style="vertical-align: top; margin-left:5px;">Add</button>
@@ -61,43 +61,32 @@
         </div>
       </div>
     </div>
-
-
-
   </div>
-
-
   <div class="slds-docked-form-footer" style="{!IF($User.UITheme != 'Theme4d', 'position: absolute !important;', '')}">
     <button type="button" class="slds-button slds-button_neutral" onclick="cancelQuery()">Cancel</button>
     <button type="button" class="slds-button slds-button_brand" onclick="nextStep()">Next</button>
   </div>
-
 </div>
 
 <script src="{!URLFOR($Resource.Assets, 'js/jquery.min.js')}"></script>
 <script>
-
-  var headerSetupObject = function(){
-    var setupObj;
-    setupObj = {
-      title : "MailChimp for Salesforce",
-      pageHeading : "New Query",
-      pageDescription : "Use this tool to create a new query that will be used to determine the Salesforce data you want to migrate to Mailchimp"
-    }
-    return setupObj;
-  };
+	var headerSetupObject = function() {
+		return {
+			title: 'Mailchimp for Salesforce',
+			pageHeading: 'New Query',
+			pageDescription: 'Use this tool to create a new query that will be used to determine the Salesforce data you want to migrate to Mailchimp.'
+		};
+	};
 
     var lists = {};
 
     // Whether an AJAX call is in progress.
     var ajaxInProgress = false;
 
-
     jQuery(function() {
         <apex:outputPanel layout="none" rendered="{!mcQuery.MC4SF__MC_List__c != null}">
             loadList('{!mcQuery.MC4SF__MC_List__c}');
         </apex:outputPanel>
-
 
         jQuery('select[name$="mcList"]').change(function() {
             if (ajaxInProgress) return;
@@ -143,7 +132,6 @@
             }
 
             interestGroup.subscribe = (interestGroup.subscribe == true ? false : true);
-
 
             setInterests();
         });
@@ -243,10 +231,9 @@
 
             clearMessages();
 
-
             var name = jQuery('#new-segment').val();
             if (name == '' || name == undefined) {
-                alert('Please enter a name for the Segment.');
+                alert('Please enter a name for the tag.');
                 return false;
             }
 
@@ -270,10 +257,10 @@
                     html +=   '<div class="slds-form-element">';
                     html +=     '<div class="slds-form-element__control">';
                     html +=       '<span class="slds-checkbox">';
-                    html +=         '<input type="checkbox" name="options" id="'+result+'" checked="checked" />';
-                    html +=         '<label class="slds-checkbox__label" for="'+result+'">';
+                    html +=         '<input type="checkbox" name="options" id="' + result + '" checked="checked" />';
+                    html +=         '<label class="slds-checkbox__label" for="' + result + '">';
                     html +=           '<span class="slds-checkbox_faux"></span>';
-                    html +=           '<span class="slds-form-element__label">'+name+'</span>';
+                    html +=           '<span class="slds-form-element__label" title="' + name + '">' + truncateName(name) + '</span>';
                     html +=         '</label>';
                     html +=       '</span>';
                     html +=     '</div>';
@@ -291,7 +278,7 @@
 
                     setStaticSegments();
                 } else {
-                    alert('Error saving new Segment.');
+                    alert('Error saving new tag.');
                 }
 
                 jQuery('#segmentName #addSegmentButton #newSegmentAdding').toggle();
@@ -304,6 +291,7 @@
 
     function loadList(id) {
         ajaxInProgress = true;
+
         Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.QueryListController.loadList}', id, function(result, event) {
             if (event.status) {
                 lists[id] = result;
@@ -317,7 +305,7 @@
     }
 
     function showAddSegment() {
-      jQuery('#new-segment-form').show();
+		jQuery('#new-segment-form').show();
     }
 
     function displayList(id) {
@@ -333,7 +321,7 @@
         var html = '';
 
         if (list.interestGroupings.length == 0) {
-            html = "<img src=\"{!URLFOR($Resource.MC4SF__Assets, 'icons/utility/info.png')}\" class=\"info-icon\" />This list has no interest groups.";
+            html = "<img src=\"{!URLFOR($Resource.Assets, 'icons/utility/info.png')}\" class=\"info-icon\" />This list has no interest groups.";
         } else {
             var interestsList = jQuery('input[id$="interests"]').val();
             var interests = [];
@@ -372,34 +360,31 @@
                             }
                         }
 
-                        isLast = ((i + 1) == list.interestGroupings.length && (j + 1) == list.interestGroupings[i].interestGroups.length );
+                        isLast = ((i + 1) == list.interestGroupings.length && (j + 1) == list.interestGroupings[i].interestGroups.length);
 
-
-
-                        html += '<div class="interestGroup">';
-                        html +=   '<div class="slds-form-element">';
-                        html +=     '<div class="slds-form-element__control">';
-                        html +=       '<span class="slds-checkbox">';
+                        html += '<div class="interestGroup">'; //A
+                        html +=   '<div class="slds-form-element">'; //B
+                        html +=     '<div class="slds-form-element__control">'; //C
+                        html +=       '<span class="slds-checkbox">'; //D
 
                         if (list.interestGroupings[i].formField == 'radio') {
-                          html +=       '<input type="radio" id="'+list.interestGroupings[i].interestGroups[j].id+'" name="'+list.interestGroupings[i].id+'"' + (list.interestGroupings[i].interestGroups[j].subscribe ? ' checked="checked"' : '') + '/>';
-                          html +=         '<label class="slds-checkbox__label" for="'+list.interestGroupings[i].interestGroups[j].id+'">';
+                          html +=       '<input type="radio" id="' + list.interestGroupings[i].interestGroups[j].id + '" name="' + list.interestGroupings[i].id + '"' + (list.interestGroupings[i].interestGroups[j].subscribe ? ' checked="checked"' : '') + '/>';
+                          html +=       '<label class="slds-checkbox__label" for="' + list.interestGroupings[i].interestGroups[j].id + '">';
                         } else {
-                          html +=       '<input type="checkbox" name="options" id="'+list.interestGroupings[i].interestGroups[j].id+'" '+(list.interestGroupings[i].interestGroups[j].subscribe ? 'checked="checked"' : '')+' />';
-                          html +=         '<label class="slds-checkbox__label" for="'+list.interestGroupings[i].interestGroups[j].id+'">';
-                          html +=           '<span class="slds-checkbox_faux"></span>';
+                          html +=       '<input type="checkbox" name="options" id="' + list.interestGroupings[i].interestGroups[j].id + '" '+(list.interestGroupings[i].interestGroups[j].subscribe ? 'checked="checked"' : '')+' />';
+                          html +=       '<label class="slds-checkbox__label" for="' + list.interestGroupings[i].interestGroups[j].id + '">';
+                          html +=         '<span class="slds-checkbox_faux"></span>';
                         }
 
-                        html +=           '<span class="slds-form-element__label">'+list.interestGroupings[i].interestGroups[j].name+'</span>';
+                        html +=           '<span class="slds-form-element__label" title="' + list.interestGroupings[i].interestGroups[j].name + '">' + truncateName(list.interestGroupings[i].interestGroups[j].name) + '</span>';
                         html +=         '</label>';
-                        html +=       '</span>';
-                        html +=     '</div>';
-                        html +=   '</div>';
-                        html += '</div>';
-
+                        html +=       '</span>'; //D
+                        html +=     '</div>'; //C
+                        html +=   '</div>'; //B
+                        html += '</div>'; //A
                     }
-                    html += '</div>'; // End interestGrouping
 
+                    html += '</div>'; // End interestGrouping
                 }
             }
         }
@@ -409,14 +394,13 @@
         html = '';
 
         if (list.staticSegments.length == 0) {
-            html = '<img src=\"{!URLFOR($Resource.MC4SF__Assets, 'icons/utility/info.png')}\" class=\"info-icon\" />This list has no segments.';
+            html = '<img src=\"{!URLFOR($Resource.Assets, 'icons/utility/info.png')}\" class=\"info-icon\" />This list has no tags.';
         } else {
             var staticSegmentList = jQuery('input[id$="staticSegments"]').val();
             var staticSegments = [];
             if(staticSegmentList != undefined){
               staticSegments = staticSegmentList.split(',');
             }
-
 
             for (var i = 0; i < list.staticSegments.length; i++) {
                 for (var j = 0; j < staticSegments.length; j++) {
@@ -426,16 +410,14 @@
                     }
                 }
 
-
-
                 html += '<div class="staticSegment">';
                 html +=   '<div class="slds-form-element">';
                 html +=     '<div class="slds-form-element__control">';
                 html +=       '<span class="slds-checkbox">';
-                html +=         '<input type="checkbox" name="options" id="'+list.staticSegments[i].id+'" '+(list.staticSegments[i].subscribe ? 'checked="checked"' : '')+' />';
-                html +=         '<label class="slds-checkbox__label" for="'+list.staticSegments[i].id+'">';
+                html +=         '<input type="checkbox" name="options" id="' + list.staticSegments[i].id + '" ' + (list.staticSegments[i].subscribe ? 'checked="checked"' : '') + ' />';
+                html +=         '<label class="slds-checkbox__label" for="' + list.staticSegments[i].id + '">';
                 html +=           '<span class="slds-checkbox_faux"></span>';
-                html +=           '<span class="slds-form-element__label">'+list.staticSegments[i].name+'</span>';
+                html +=           '<span class="slds-form-element__label" title="' + list.staticSegments[i].name + '">' + truncateName(list.staticSegments[i].name) + '</span>';
                 html +=         '</label>';
                 html +=       '</span>';
                 html +=     '</div>';
@@ -444,10 +426,7 @@
             }
         }
 
-
-
         jQuery('#staticSegments').html(html);
-
     }
 
     function setInterests() {
@@ -469,23 +448,21 @@
     }
 
     function nextStep() {
+		var mcList = jQuery('select[name$="mcList"]').val();
 
-      var mcList = jQuery('select[name$="mcList"]').val();
-
-      if(mcList == undefined || mcList == null || mcList == ''){
-        showNoListAlert();
-      }else{
-        nextStepAction();
-      }
-
+		if (mcList == undefined || mcList == null || mcList == '') {
+			showNoListAlert();
+		} else {
+			nextStepAction();
+		}
     }
 
     function closeAlert() {
-      jQuery('.slds-notify_alert').hide();
+		jQuery('.slds-notify_alert').hide();
     }
 
     function showNoListAlert() {
-      jQuery('.slds-notify_alert').show();
+		jQuery('.slds-notify_alert').show();
     }
 
     function setStaticSegments() {
@@ -507,6 +484,16 @@
         jQuery('#messages').removeClass('errorM3 warningM3 confirmM3').hide();
         jQuery('#messages li').remove();
     }
+
+	function truncateName(name) {
+		var maxCharacters = 20;
+
+		if (name != undefined && jQuery.trim(name).length > maxCharacters) {
+			return jQuery.trim(jQuery.trim(name).substring(0, maxCharacters)) + '...';
+		}
+
+		return name;
+	}
 </script>
 
 </apex:page>

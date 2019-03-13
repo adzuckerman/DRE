@@ -42,6 +42,16 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>echosign_dev1__EchoSign_Allow_Delegated_Sending__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>echosign_dev1__EchoSign_Email_Verified__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Alias</field>
             <table>User</table>
         </columns>
@@ -147,6 +157,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>DRE_Point_of_Contact__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Email</field>
             <table>User</table>
         </columns>
@@ -208,6 +223,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>IsProfilePhotoActive</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Hire_Date__c</field>
             <table>User</table>
         </columns>
         <columns>
@@ -387,6 +407,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Termination_Date__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>TimeZoneSidKey</field>
             <table>User</table>
         </columns>
@@ -480,12 +505,32 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>GAAP_Class__c</field>
+            <table>User.Toggl_Time_Entries__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedBy</field>
             <table>User.Toggl_Time_Entries__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedDate</field>
+            <table>User.Toggl_Time_Entries__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c</field>
+            <table>User.Toggl_Time_Entries__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity_ID__c</field>
+            <table>User.Toggl_Time_Entries__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity_Stage_Name__c</field>
             <table>User.Toggl_Time_Entries__r</table>
         </columns>
         <columns>

@@ -23,6 +23,7 @@
     <tabs>Project_Request__c</tabs>
     <tabs>Department_Revenue_Schedule__c</tabs>
     <tabs>Department_Costs__c</tabs>
+    <tabs>Invoice__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -34,6 +35,9 @@
         </mappings>
         <mappings>
             <tab>Department_Revenue_Schedule__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Invoice__c</tab>
         </mappings>
         <mappings>
             <tab>Project_Request__c</tab>

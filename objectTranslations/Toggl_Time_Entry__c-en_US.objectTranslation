@@ -92,6 +92,14 @@
         <name>User__c</name>
         <relationshipLabel><!-- Toggl Time Entries --></relationshipLabel>
     </fields>
+    <fields>
+        <label><!-- Opportunity ID --></label>
+        <name>Opportunity_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Stage Name --></label>
+        <name>Opportunity_Stage_Name__c</name>
+    </fields>
     <caseValues>
         <plural>false</plural>
         <value>Toggl Time Entry</value>

@@ -8,6 +8,6 @@
     </values>
     <values>
         <field>Product_Name__c</field>
-        <value xsi:type="xsd:string">CoE</value>
+        <value xsi:type="xsd:string">Saas Subscription &amp; Professional Services</value>
     </values>
 </CustomMetadata>

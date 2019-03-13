@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>TASKRAY__Project__c.Secondary_Project_Name__c</field>
+    </columns>
+    <columns>
+        <field>TASKRAY__Project__c.Description__c</field>
+    </columns>
+    <columns>
+        <field>TASKRAY__Project__c.Contracted_Service__c</field>
+    </columns>
+    <columns>
+        <field>TASKRAY__Project__c.Principal_Scientist__c</field>
+    </columns>
+    <columns>
+        <field>TASKRAY__Project__c.TASKRAY__Project_End__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>TASKRAY__Project__c.Project_Stage__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Protocol Development Queue,Protocol Development,Library Queue,Library Production,Pre-Production,Configuration Queue,Configuration,Ontology,Custom Deliverables,Escalated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>TASKRAY__Project__c.Project</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TASKRAY__Project__c.TASKRAY__trAccount__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Doctor Evidence</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TASKRAY__Project__c.Contracted_Service__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Rapid Assessment</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Project List</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$TASKRAY__Project__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>TASKRAY__Project__c.Archived_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -20,6 +20,7 @@ public class ToggleProjectUpdateTest {
         TASKRAY__Project__c tProject = new TASKRAY__Project__c();
         tProject.TASKRAY__trAccount__c = acc.Id;
         tProject.Name = 'sa4-test-project';
+        tProject.Toggl_Id__c = '912345678';
         insert tProject;
         
         Toggl_Time_Entry__c tte = new Toggl_Time_Entry__c();
@@ -50,7 +51,7 @@ public class ToggleProjectUpdateTest {
     
     private static testmethod void testToggleProjectUpdate1(){
          // Set mock callout class 
-        Test.setMock(HttpCalloutMock.class, new HTTPMockCallout());
+        Test.setMock(HttpCalloutMock.class, new HTTPMockCallout(false));
         // from the class that implements HttpCalloutMock. 
         Set<String> aId = new Set<String>();
         aId.add('912345678');

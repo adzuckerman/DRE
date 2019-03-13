@@ -141,16 +141,6 @@
         <columns>Amount__c</columns>
         <columns>Financials__c</columns>
         <filterScope>Everything</filterScope>
-        <filters>
-            <field>Financials__c</field>
-            <operation>notEqual</operation>
-            <value>Budget</value>
-        </filters>
-        <filters>
-            <field>NAME</field>
-            <operation>equals</operation>
-            <value>2072</value>
-        </filters>
         <label>All</label>
     </listViews>
 </CustomObject>

@@ -13,4 +13,5 @@
     <tabs>Project_Request__c</tabs>
     <tabs>Department_Revenue_Schedule__c</tabs>
     <tabs>Department_Costs__c</tabs>
+    <tabs>Invoice__c</tabs>
 </CustomApplication>

@@ -27,16 +27,14 @@ public class ProjectRequestHandler {
             	pr.Requester_Contact__c = requestToContact.get(pr.id).id;		       
             }
             else {
-                if (pr.Requester_Name__c != null) {
-                    Contact c = new Contact(
-                        FirstName = pr.Requester_Name__c.split (' ')[0], 
-                        LastName = pr.Requester_Name__c.split(' ')[pr.Requester_Name__c.split(' ').size() - 1],
-                        Email = pr.Requester_Email__c,
-                        AccountId = [SELECT Id, Name FROM Account WHERE Name = 'Sanofi' LIMIT 1].Id,
-                        Contact_Type__c = 'Project'
-                    );
-                    requestToContactInsertMap.put(pr.id,c);
-                }
+                Contact c = new Contact(
+                    FirstName = pr.Requester_Name__c.split (' ')[0], 
+                    LastName = pr.Requester_Name__c.split(' ')[pr.Requester_Name__c.split(' ').size() - 1],
+                    Email = pr.Requester_Email__c,
+                    AccountId = [SELECT Id, Name FROM Account WHERE Name = 'Sanofi' LIMIT 1].Id,
+                    Contact_Type__c = 'Project'
+                );
+                requestToContactInsertMap.put(pr.id,c);
             }		   
         }
         insert requestToContactInsertMap.values();

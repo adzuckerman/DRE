@@ -282,4 +282,9 @@
         </displayedFields>
         <label>Stats</label>
     </fieldSets>
+    <listViews>
+        <fullName>MC4SF__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
 </CustomObject>

@@ -7,11 +7,11 @@
         <label>Additional Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>TriNet_ID__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Toggl_Id__c</field>
             </layoutItems>
             <layoutItems>
@@ -19,7 +19,7 @@
                 <field>DRE_Point_of_Contact__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Hire_Date__c</field>
             </layoutItems>
             <layoutItems>

@@ -9,8 +9,7 @@
 public with sharing class TogglToSalesforceTest {
 
     @testSetup
-    public static void init() {
-
+    public static void init() { 
     }
 
     @isTest
@@ -22,13 +21,9 @@ public with sharing class TogglToSalesforceTest {
         insert testCustomLog;
         Test.setCreatedDate(testCustomLog.Id, Datetime.now().addDays(-100));
 
-        Integer days = 30;
-    	Date until = Date.today();
-    	Date since = until.addDays(-days);
-        
         Test.startTest();
         Test.setMock(HttpCalloutMock.class.class, new TogglToSalesforceMock(''));
-        Database.executeBatch(new TogglToSalesforceBatch(days, until, since), 1);
+        Database.executeBatch(new TogglToSalesforceBatch(365, Date.today(), Date.today().addDays(-365)), 1);
         Test.stopTest();
 
         List<Account> accounts = [SELECT Id, Name FROM Account];
@@ -37,7 +32,7 @@ public with sharing class TogglToSalesforceTest {
 
         System.assertEquals(2, accounts.size(), 'Accounts weren\'t created');
         System.assertEquals(4, timeEnrtries.size(), 'Time Entries weren\'t created');
-        System.assertEquals(0, customLogs.size(), 'Logs are not empty');
+        System.assertEquals(0, customLogs.size(), 'Logs are not empty'); 
     }
 
     @isTest

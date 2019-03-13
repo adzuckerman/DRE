@@ -19,16 +19,25 @@
         <field>User$Department</field>
     </columns>
     <columns>
+        <field>User.Toggl_Time_Entries__r$Opportunity_ID__c</field>
+    </columns>
+    <columns>
         <field>User.Toggl_Time_Entries__r$Account__c</field>
+    </columns>
+    <columns>
+        <field>User.Toggl_Time_Entries__r$Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>User.Toggl_Time_Entries__r$Opportunity_Stage_Name__c</field>
+    </columns>
+    <columns>
+        <field>User.Toggl_Time_Entries__r$Toggl_Id__c</field>
     </columns>
     <columns>
         <field>User.Toggl_Time_Entries__r$Project_Name__c</field>
     </columns>
     <columns>
-        <field>User.Toggl_Time_Entries__r$Description__c</field>
-    </columns>
-    <columns>
-        <field>User.Toggl_Time_Entries__r$Tags__c</field>
+        <field>User.Toggl_Time_Entries__r$Project__c</field>
     </columns>
     <columns>
         <field>User.Toggl_Time_Entries__r$Start_Date__c</field>
@@ -38,6 +47,9 @@
     </columns>
     <columns>
         <field>User.Toggl_Time_Entries__r$Duration_Computed__c</field>
+    </columns>
+    <columns>
+        <field>User.Toggl_Time_Entries__r$GAAP_Class__c</field>
     </columns>
     <format>Tabular</format>
     <name>Toggl Time Entries</name>
@@ -54,8 +66,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>User.Toggl_Time_Entries__r$Start_Date__c</dateColumn>
-        <endDate>2018-03-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2018-03-16</startDate>
     </timeFrameFilter>
 </Report>

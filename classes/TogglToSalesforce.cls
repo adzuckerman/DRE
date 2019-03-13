@@ -164,16 +164,15 @@ public with sharing class TogglToSalesforce {
                         alias = userWrappers.get(timeEntry.uid).name;
                     }
                     System.debug('User Email---' + userWrappers.get(timeEntry.uid).email);
-                    
                     usersToCreate.put(String.valueOf(timeEntry.uid),
                         new User(
                             LastName = userWrappers.get(timeEntry.uid).name,
                             Email = userWrappers.get(timeEntry.uid).email,
                             ProfileId = newUserProfileId,
                             IsActive = false,
-                            Username = userWrappers.get(timeEntry.uid).email, //UserInfo.getUserName().substringAfterLast('.com') == null ? userWrappers.get(timeEntry.uid).email : userWrappers.get(timeEntry.uid).email + '.' + UserInfo.getUserName().substringAfterLast('.com'),
+                            Username = userWrappers.get(timeEntry.uid).email + (Label.User_Creation_Suffix == '-' ? '' : Label.User_Creation_Suffix),
                             Alias = alias,
-                            CommunityNickname = userWrappers.get(timeEntry.uid).email, //UserInfo.getUserName().substringAfterLast('.com') == null ? userWrappers.get(timeEntry.uid).email : userWrappers.get(timeEntry.uid).email + '.' + UserInfo.getUserName().substringAfterLast('.com'),
+                            CommunityNickname = userWrappers.get(timeEntry.uid).email + (Label.User_Creation_Suffix == '-' ? '' : Label.User_Creation_Suffix),
                             Department = 'Department',
                             Division = 'Division', 
                             Title = 'Title',
@@ -323,9 +322,9 @@ public with sharing class TogglToSalesforce {
 	                if (taskrayType == 'SFID' && projectName2 == 'Pre-Sale') {
 	                    GAAPClass = 'Sales & Marketing';
 	                } 
-	                else if (taskrayType == 'PICO ID' && projectName.startsWith('DRE') && opportunityStageName == 'Closed Won') {
+	                /*else if (taskrayType == 'PICO ID' && projectName.startsWith('DRE') && opportunityStageName == 'Closed Won') {
 	                	GAAPClass = 'Sales & Marketing';
-	                }
+	                }*/
 	                else if(taskrayType == 'Contract ID' || taskrayType == 'PICO ID' || taskRayType == 'SFID' || projectName == 'Doc Label' || projectName == 'Data Hub')
 	                {
 	                    if (!String.isEmpty(opportunityStageName)) {
@@ -357,6 +356,9 @@ public with sharing class TogglToSalesforce {
 	                else if (projectName == 'Pre-Sale') {
 	                    GAAPClass = 'Sales & Marketing';
 	                }
+                    else if (projectName == 'Partnership' && projectName2 == 'General'){
+                        GAAPClass = 'Sales & Marketing';
+                    }
 	            } else {
 	                if(accountName == 'Doctor Evidence')
 	                {
@@ -364,11 +366,13 @@ public with sharing class TogglToSalesforce {
 	                        GAAPClass = 'Sales & Marketing';
 	                    } else if (projectName == 'Admin/Internal' && (projectName2 == 'Tech Issues' || projectName2 == 'Audit')) {
 	                    	GAAPClass = 'Research & Development';
-	                    } else if (projectName == 'Guidelines/GROWTH' && opportunityStageName == 'Closed Won') {
+                        } else if (projectName == 'Guidelines/GROWTH') { // && opportunityStageName == 'Closed Won') {
 	                    	GAAPClass = 'Sales & Marketing';
-	                    } else if (projectName == 'Patient Project' && opportunityStageName == 'Closed Won') {
+                        } else if (projectName == 'Patient Project') { //&& opportunityStageName == 'Closed Won') {
 	                    	GAAPClass = 'Sales & Marketing';
-	                    } else { 
+                        } else if (taskrayType == 'PICO ID' && projectName.startsWith('DRE')) { //&& opportunityStageName == 'Closed Won') {
+	                		GAAPClass = 'Sales & Marketing';
+	                	} else { 
 	                        GAAPClass = 'General & Administrative'; 
 	                    }
 	                } else {

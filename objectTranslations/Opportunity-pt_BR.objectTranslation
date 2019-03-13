@@ -821,42 +821,6 @@
         <name>Proposal_Outline_Draft_A2__c</name>
     </fields>
     <fields>
-        <label><!-- Proposal Owner --></label>
-        <name>Proposal_Owner__c</name>
-        <picklistValues>
-            <masterLabel>Ash Srivastava</masterLabel>
-            <translation><!-- Ash Srivastava --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Ben Taylor</masterLabel>
-            <translation><!-- Ben Taylor --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Egbe Ubamadu</masterLabel>
-            <translation><!-- Egbe Ubamadu --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Erin Murray</masterLabel>
-            <translation><!-- Erin Murray --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Fasahath Husain</masterLabel>
-            <translation><!-- Fasahath Husain --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Mir Fazeli</masterLabel>
-            <translation><!-- Mir Fazeli --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Rebecca Diekemper</masterLabel>
-            <translation><!-- Rebecca Diekemper --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Roshan Shah</masterLabel>
-            <translation><!-- Roshan Shah --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <label><!-- Proposal Request Date --></label>
         <name>Proposal_Request_Date__c</name>
     </fields>
@@ -1224,19 +1188,23 @@
         <name>Use_New_Forecasting_Algorithm__c</name>
     </fields>
     <fields>
+        <label><!-- First non NA Invoice Date --></label>
+        <name>First_non_NA_Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operations Description --></label>
+        <name>Operations_Description__c</name>
+    </fields>
+    <fields>
         <label><!-- Offering --></label>
         <name>Product_Category__c</name>
         <picklistValues>
-            <masterLabel>ASCO DOC Search</masterLabel>
-            <translation><!-- ASCO DOC Search --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>ASH DOC Search</masterLabel>
-            <translation><!-- ASH DOC Search --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>CoE</masterLabel>
             <translation><!-- CoE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOC Congress</masterLabel>
+            <translation><!-- DOC Congress --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>DOC Label</masterLabel>
@@ -1270,6 +1238,46 @@
             <masterLabel>Service Project Platform</masterLabel>
             <translation><!-- Service Project Platform --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proposal Approved --></label>
+        <name>Proposal_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposal Owner --></label>
+        <name>Proposal_Owner__c</name>
+        <picklistValues>
+            <masterLabel>Ben Taylor</masterLabel>
+            <translation><!-- Ben Taylor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Egbe Ubamadu</masterLabel>
+            <translation><!-- Egbe Ubamadu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erin Murray</masterLabel>
+            <translation><!-- Erin Murray --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greg Lieberman</masterLabel>
+            <translation><!-- Greg Lieberman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mir Fazeli</masterLabel>
+            <translation><!-- Mir Fazeli --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Toggl Id --></label>
+        <name>Toggl_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Toggl Pre-Sale Project Approved --></label>
+        <name>Toggl_Pre_Sale_Project_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unlock Future Revenue --></label>
+        <name>Unlock_Future_Revenue__c</name>
     </fields>
     <layouts>
         <layout>Opportunity Layout SDoc</layout>

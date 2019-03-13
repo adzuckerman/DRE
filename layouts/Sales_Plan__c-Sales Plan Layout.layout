@@ -27,6 +27,10 @@
                 <behavior>Required</behavior>
                 <field>SP_Therapeutic_Area__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SP_Opportunity_Owner__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -2,8 +2,6 @@
     <alerts>
         <fullName>Email_PC_Team_to_Review_Modify_Project_Request_Upon_Submission</fullName>
         <ccEmails>pc@doctorevidence.com</ccEmails>
-        <ccEmails>adam@omnivodigital.com</ccEmails>
-        <ccEmails>rkoretoff@doctorevidence.com</ccEmails>
         <ccEmails>ce@doctorevidence.com</ccEmails>
         <description>Email PC Team to Review / Modify Project Request Upon Submission</description>
         <protected>false</protected>

@@ -68,19 +68,6 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Monthly_Revenue_Schedule__c</fullName>
-        <externalId>false</externalId>
-        <label>Monthly Revenue Schedule</label>
-        <referenceTo>Monthly_Revenue_Schedule__c</referenceTo>
-        <relationshipLabel>Department Revenue Schedules</relationshipLabel>
-        <relationshipName>Department_Revenue_Schedules</relationshipName>
-        <relationshipOrder>1</relationshipOrder>
-        <reparentableMasterDetail>true</reparentableMasterDetail>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields>
         <fullName>Opportunity__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -125,6 +112,19 @@
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
+    <fields>
+        <fullName>Monthly_Revenue_Schedule__c</fullName>
+        <externalId>false</externalId>
+        <label>Monthly Revenue Schedule</label>
+        <referenceTo>Monthly_Revenue_Schedule__c</referenceTo>
+        <relationshipLabel>Department Revenue Schedules</relationshipLabel>
+        <relationshipName>Department_Revenue_Schedules</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -151,5 +151,18 @@
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>DRE_Default</fullName>
+        <columns>NAME</columns>
+        <columns>Monthly_Revenue_Schedule__c</columns>
+        <columns>Opportunity_ID__c</columns>
+        <columns>Opportunity__c</columns>
+        <columns>Department__c</columns>
+        <columns>MRS_Date__c</columns>
+        <columns>Import_Date__c</columns>
+        <columns>Costs__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>DRE Default</label>
     </listViews>
 </CustomObject>

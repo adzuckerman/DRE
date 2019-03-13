@@ -1429,61 +1429,6 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Proposal_Owner__c</fullName>
-        <externalId>false</externalId>
-        <label>Proposal Owner</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Ash Srivastava</fullName>
-                    <default>false</default>
-                    <label>Ash Srivastava</label>
-                </value>
-                <value>
-                    <fullName>Ben Taylor</fullName>
-                    <default>false</default>
-                    <label>Ben Taylor</label>
-                </value>
-                <value>
-                    <fullName>Egbe Ubamadu</fullName>
-                    <default>false</default>
-                    <label>Egbe Ubamadu</label>
-                </value>
-                <value>
-                    <fullName>Erin Murray</fullName>
-                    <default>false</default>
-                    <label>Erin Murray</label>
-                </value>
-                <value>
-                    <fullName>Fasahath Husain</fullName>
-                    <default>false</default>
-                    <label>Fasahath Husain</label>
-                </value>
-                <value>
-                    <fullName>Mir Fazeli</fullName>
-                    <default>true</default>
-                    <label>Mir Fazeli</label>
-                </value>
-                <value>
-                    <fullName>Rebecca Diekemper</fullName>
-                    <default>false</default>
-                    <label>Rebecca Diekemper</label>
-                </value>
-                <value>
-                    <fullName>Roshan Shah</fullName>
-                    <default>false</default>
-                    <label>Roshan Shah</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Proposal_Request_Date__c</fullName>
         <externalId>false</externalId>
         <label>Proposal Request Date</label>
@@ -1973,6 +1918,143 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Is_Proposal_Submitted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Proposal Submitted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Record_Locked__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Record Locked ?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Services_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Services</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>15</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Services__c</fullName>
+        <description>Services</description>
+        <externalId>false</externalId>
+        <label>Services</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Subscription_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Subscription</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>15</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Use_New_Forecasting_Algorithm__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Use New Forecasting Algorithm</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>First_non_NA_Invoice_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>First non NA Invoice Date</label>
+        <summarizedField>Invoice__c.Actual_Invoice_Date__c</summarizedField>
+        <summaryFilterItems>
+            <field>Invoice__c.Invoice_Num__c</field>
+            <operation>notEqual</operation>
+            <value>NA</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Invoice__c.Invoice_Num__c</field>
+            <operation>notEqual</operation>
+            <value>TBD</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Invoice__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Proposal_Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Proposal Approved</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SyncedQuoteId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Toggl_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Toggl Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Toggl_Pre_Sale_Project_Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Toggl Pre-Sale Project Approved</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Unlock_Future_Revenue__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Unlock Future Revenue</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Asset_Type__c</fullName>
         <description>Condition of the current content asset</description>
         <externalId>false</externalId>
@@ -2021,7 +2103,6 @@
                 <controllingFieldValue>DOC Label</controllingFieldValue>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>ASCO DOC Search</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
                 <valueName>N/A</valueName>
             </valueSettings>
@@ -2310,7 +2391,6 @@
                 <controllingFieldValue>DOC Label</controllingFieldValue>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>ASCO DOC Search</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
                 <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>N/A</valueName>
@@ -2687,7 +2767,6 @@
                 <controllingFieldValue>DOC Label</controllingFieldValue>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>ASCO DOC Search</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
                 <controllingFieldValue>Project</controllingFieldValue>
                 <valueName>N/A</valueName>
@@ -2730,61 +2809,120 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Is_Proposal_Submitted__c</fullName>
-        <defaultValue>false</defaultValue>
+        <fullName>Operations_Description__c</fullName>
         <externalId>false</externalId>
-        <label>Is Proposal Submitted</label>
+        <label>Operations Description</label>
+        <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
+        <type>LongTextArea</type>
+        <visibleLines>25</visibleLines>
     </fields>
     <fields>
-        <fullName>Record_Locked__c</fullName>
-        <defaultValue>false</defaultValue>
+        <fullName>Product_Category__c</fullName>
         <externalId>false</externalId>
-        <label>Record Locked ?</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Services_Percentage__c</fullName>
-        <externalId>false</externalId>
-        <label>Services</label>
-        <precision>18</precision>
+        <label>Offering</label>
         <required>false</required>
-        <scale>15</scale>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Percent</type>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CoE</fullName>
+                    <default>false</default>
+                    <label>CoE</label>
+                </value>
+                <value>
+                    <fullName>Data Hub</fullName>
+                    <default>true</default>
+                    <label>Data Hub</label>
+                </value>
+                <value>
+                    <fullName>DOC Congress</fullName>
+                    <default>false</default>
+                    <label>DOC Congress</label>
+                </value>
+                <value>
+                    <fullName>DOC Label</fullName>
+                    <default>false</default>
+                    <label>DOC Label</label>
+                </value>
+                <value>
+                    <fullName>DOC Search</fullName>
+                    <default>false</default>
+                    <label>DOC Search</label>
+                </value>
+                <value>
+                    <fullName>DOC Track</fullName>
+                    <default>false</default>
+                    <label>DOC Track</label>
+                </value>
+                <value>
+                    <fullName>GROWTH</fullName>
+                    <default>false</default>
+                    <label>GROWTH</label>
+                </value>
+                <value>
+                    <fullName>IHME</fullName>
+                    <default>false</default>
+                    <label>IHME</label>
+                </value>
+                <value>
+                    <fullName>Project</fullName>
+                    <default>false</default>
+                    <label>Project</label>
+                </value>
+                <value>
+                    <fullName>Service Project Platform</fullName>
+                    <default>false</default>
+                    <label>Service Project Platform</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
-        <fullName>Services__c</fullName>
-        <description>Services</description>
+        <fullName>Proposal_Owner__c</fullName>
         <externalId>false</externalId>
-        <label>Services</label>
-        <precision>18</precision>
+        <label>Proposal Owner</label>
         <required>false</required>
-        <scale>2</scale>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Subscription_Percentage__c</fullName>
-        <externalId>false</externalId>
-        <label>Subscription</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>15</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ben Taylor</fullName>
+                    <default>false</default>
+                    <label>Ben Taylor</label>
+                </value>
+                <value>
+                    <fullName>Egbe Ubamadu</fullName>
+                    <default>false</default>
+                    <label>Egbe Ubamadu</label>
+                </value>
+                <value>
+                    <fullName>Erin Murray</fullName>
+                    <default>false</default>
+                    <label>Erin Murray</label>
+                </value>
+                <value>
+                    <fullName>Mir Fazeli</fullName>
+                    <default>true</default>
+                    <label>Mir Fazeli</label>
+                </value>
+                <value>
+                    <fullName>Greg Lieberman</fullName>
+                    <default>false</default>
+                    <label>Greg Lieberman</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Therapeutic_Area__c</fullName>
@@ -3026,12 +3164,10 @@
             <valueSettings>
                 <controllingFieldValue>DOC Track</controllingFieldValue>
                 <controllingFieldValue>GROWTH</controllingFieldValue>
-                <controllingFieldValue>ASCO DOC Search</controllingFieldValue>
                 <controllingFieldValue>Data Hub</controllingFieldValue>
                 <controllingFieldValue>IHME</controllingFieldValue>
                 <controllingFieldValue>Service Project Platform</controllingFieldValue>
                 <controllingFieldValue>Project</controllingFieldValue>
-                <controllingFieldValue>ASH DOC Search</controllingFieldValue>
                 <valueName>Oncology</valueName>
             </valueSettings>
             <valueSettings>
@@ -3071,156 +3207,6 @@
                 <valueName>Radiology</valueName>
             </valueSettings>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>Use_New_Forecasting_Algorithm__c</fullName>
-        <defaultValue>true</defaultValue>
-        <externalId>false</externalId>
-        <label>Use New Forecasting Algorithm</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>First_non_NA_Invoice_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>First non NA Invoice Date</label>
-        <summarizedField>Invoice__c.Actual_Invoice_Date__c</summarizedField>
-        <summaryFilterItems>
-            <field>Invoice__c.Invoice_Num__c</field>
-            <operation>notEqual</operation>
-            <value>NA</value>
-        </summaryFilterItems>
-        <summaryFilterItems>
-            <field>Invoice__c.Invoice_Num__c</field>
-            <operation>notEqual</operation>
-            <value>TBD</value>
-        </summaryFilterItems>
-        <summaryForeignKey>Invoice__c.Opportunity__c</summaryForeignKey>
-        <summaryOperation>min</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Summary</type>
-    </fields>
-    <fields>
-        <fullName>Product_Category__c</fullName>
-        <externalId>false</externalId>
-        <label>Offering</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>ASCO DOC Search</fullName>
-                    <default>false</default>
-                    <label>ASCO DOC Search</label>
-                </value>
-                <value>
-                    <fullName>ASH DOC Search</fullName>
-                    <default>false</default>
-                    <label>ASH DOC Search</label>
-                </value>
-                <value>
-                    <fullName>CoE</fullName>
-                    <default>false</default>
-                    <label>CoE</label>
-                </value>
-                <value>
-                    <fullName>Data Hub</fullName>
-                    <default>true</default>
-                    <label>Data Hub</label>
-                </value>
-                <value>
-                    <fullName>DOC Label</fullName>
-                    <default>false</default>
-                    <label>DOC Label</label>
-                </value>
-                <value>
-                    <fullName>DOC Search</fullName>
-                    <default>false</default>
-                    <label>DOC Search</label>
-                </value>
-                <value>
-                    <fullName>DOC Track</fullName>
-                    <default>false</default>
-                    <label>DOC Track</label>
-                </value>
-                <value>
-                    <fullName>GROWTH</fullName>
-                    <default>false</default>
-                    <label>GROWTH</label>
-                </value>
-                <value>
-                    <fullName>IHME</fullName>
-                    <default>false</default>
-                    <label>IHME</label>
-                </value>
-                <value>
-                    <fullName>Project</fullName>
-                    <default>false</default>
-                    <label>Project</label>
-                </value>
-                <value>
-                    <fullName>Service Project Platform</fullName>
-                    <default>false</default>
-                    <label>Service Project Platform</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Proposal_Approved__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Proposal Approved</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>SyncedQuoteId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Toggl_Id__c</fullName>
-        <externalId>false</externalId>
-        <label>Toggl Id</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Toggl_Pre_Sale_Project_Approved__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Toggl Pre-Sale Project Approved</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Unlock_Future_Revenue__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Unlock Future Revenue</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
@@ -3542,16 +3528,6 @@
         <columns>Sales_Plan_Amount__c</columns>
         <columns>OPPORTUNITY.CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
-        <filters>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <operation>notEqual</operation>
-            <value>Closed Won,Closed Lost</value>
-        </filters>
-        <filters>
-            <field>OPPORTUNITY.CLOSE_DATE</field>
-            <operation>greaterOrEqual</operation>
-            <value>1/1/2018</value>
-        </filters>
         <label>All Opps - SFID</label>
     </listViews>
     <recordTypes>
@@ -4097,15 +4073,11 @@
         <picklistValues>
             <picklist>Product_Category__c</picklist>
             <values>
-                <fullName>ASCO DOC Search</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ASH DOC Search</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>CoE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DOC Congress</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -4155,10 +4127,6 @@
         <picklistValues>
             <picklist>Proposal_Owner__c</picklist>
             <values>
-                <fullName>Ash Srivastava</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Ben Taylor</fullName>
                 <default>false</default>
             </values>
@@ -4171,19 +4139,11 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fasahath Husain</fullName>
+                <fullName>Greg Lieberman</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Mir Fazeli</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rebecca Diekemper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Roshan Shah</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4917,10 +4877,6 @@
         <picklistValues>
             <picklist>Product_Category__c</picklist>
             <values>
-                <fullName>ASCO DOC Search</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>DOC Label</fullName>
                 <default>false</default>
             </values>
@@ -4959,10 +4915,6 @@
         <picklistValues>
             <picklist>Proposal_Owner__c</picklist>
             <values>
-                <fullName>Ash Srivastava</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Ben Taylor</fullName>
                 <default>false</default>
             </values>
@@ -4975,19 +4927,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fasahath Husain</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Mir Fazeli</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rebecca Diekemper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Roshan Shah</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -5743,15 +5683,11 @@
         <picklistValues>
             <picklist>Product_Category__c</picklist>
             <values>
-                <fullName>ASCO DOC Search</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ASH DOC Search</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>CoE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DOC Congress</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -5801,10 +5737,6 @@
         <picklistValues>
             <picklist>Proposal_Owner__c</picklist>
             <values>
-                <fullName>Ash Srivastava</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Ben Taylor</fullName>
                 <default>false</default>
             </values>
@@ -5817,20 +5749,12 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fasahath Husain</fullName>
+                <fullName>Greg Lieberman</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Mir Fazeli</fullName>
                 <default>true</default>
-            </values>
-            <values>
-                <fullName>Rebecca Diekemper</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Roshan Shah</fullName>
-                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -6053,12 +5977,6 @@
         <errorMessage>You cannot advance beyond Competitive RFP until it is approved.</errorMessage>
     </validationRules>
     <validationRules>
-        <fullName>Contract_Upload_Required</fullName>
-        <active>true</active>
-        <errorConditionFormula>IsWon &amp;&amp; !Contract_Uploaded__c</errorConditionFormula>
-        <errorMessage>Contract must be uploaded to mark an Opportunity as Closed Won. If you require an override, please contact a system administrator.</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Customer_Verbal_Commit</fullName>
         <active>false</active>
         <errorConditionFormula>AND(
@@ -6134,12 +6052,6 @@ IF(ISBLANK(DOC_Library_Licensing__c ), 0, DOC_Library_Licensing__c ) != 1))</err
         <errorConditionFormula>and(Plan_Year__c &gt;= 2010, Plan_Year__c &lt;=2099)</errorConditionFormula>
         <errorDisplayField>X2015_Plan__c</errorDisplayField>
         <errorMessage>Enter a valid year</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Proposal_Upload_Required</fullName>
-        <active>true</active>
-        <errorConditionFormula>(ISPICKVAL(StageName,"Proposal Submitted") ||  Probability &gt; 0.5)  &amp;&amp; !Proposal_Uploaded__c</errorConditionFormula>
-        <errorMessage>Proposal must be uploaded to mark an Opportunity as Proposal Submitted. If you require an override, please contact a system administrator.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Renewal</fullName>
@@ -6236,6 +6148,18 @@ ISPICKVAL( StageName, "Closed Won" )
         <description>Total Invoices are more than the Opportunity Amount.</description>
         <errorConditionFormula>false</errorConditionFormula>
         <errorMessage>Total invoices are more than the opportunity amount. Please verify the sum of all invoices does not exceed the opportunity amount.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Contract_Upload_Required</fullName>
+        <active>false</active>
+        <errorConditionFormula>IsWon &amp;&amp; !Contract_Uploaded__c</errorConditionFormula>
+        <errorMessage>Contract must be uploaded to mark an Opportunity as Closed Won. If you require an override, please contact a system administrator.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Proposal_Upload_Required</fullName>
+        <active>false</active>
+        <errorConditionFormula>(ISPICKVAL(StageName,"Proposal Submitted") ||  Probability &gt; 0.5)  &amp;&amp; !Proposal_Uploaded__c</errorConditionFormula>
+        <errorMessage>Proposal must be uploaded to mark an Opportunity as Proposal Submitted. If you require an override, please contact a system administrator.</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>Upload_Contract</fullName>

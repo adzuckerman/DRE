@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ProcessInstance$ProcessDefinition</field>
+    </columns>
+    <columns>
+        <field>ProcessInstance$TargetName</field>
+    </columns>
+    <columns>
+        <field>ProcessInstance$LastActor</field>
+    </columns>
+    <columns>
+        <field>ProcessInstance$TableEnumOrId</field>
+    </columns>
+    <columns>
+        <field>ProcessInstance$CurrentNodeName</field>
+    </columns>
+    <columns>
+        <field>ProcessInstance$Status</field>
+    </columns>
+    <columns>
+        <field>ProcessInstance$SubmittedBy</field>
+    </columns>
+    <columns>
+        <field>ProcessInstance$CreatedDate</field>
+    </columns>
+    <description>To see status of project Toggl creation status</description>
+    <filter>
+        <criteriaItems>
+            <column>ProcessInstance$ProcessDefinition</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Approve Toggl Project Creation</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Toggl Project Creation</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Approval_Processes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ProcessInstance$ProcessDefinition</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>ProcessInstance$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

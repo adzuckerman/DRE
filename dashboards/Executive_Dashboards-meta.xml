@@ -16,18 +16,8 @@
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
-        <accessLevel>EditAllContents</accessLevel>
-        <sharedTo>jpark@doctorevidence.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
         <accessLevel>Manage</accessLevel>
         <sharedTo>mdelaguila@doctorevidence.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>Manage</accessLevel>
-        <sharedTo>mnewton@doctorevidence.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>

@@ -2,17 +2,22 @@
 <ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
     <folderShares>
         <accessLevel>EditAllContents</accessLevel>
+        <sharedTo>ahinojosa@doctorevidence.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>EditAllContents</accessLevel>
         <sharedTo>astamegna@doctorevidence.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
         <accessLevel>EditAllContents</accessLevel>
-        <sharedTo>asrivastava@doctorevidence.com</sharedTo>
+        <sharedTo>btaylor@doctorevidence.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
         <accessLevel>EditAllContents</accessLevel>
-        <sharedTo>btaylor@doctorevidence.com</sharedTo>
+        <sharedTo>bob@doctorevidence.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
@@ -33,6 +38,11 @@
     <folderShares>
         <accessLevel>EditAllContents</accessLevel>
         <sharedTo>glieberman@doctorevidence.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>EditAllContents</accessLevel>
+        <sharedTo>ilara@doctorevidence.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
@@ -57,11 +67,6 @@
     </folderShares>
     <folderShares>
         <accessLevel>EditAllContents</accessLevel>
-        <sharedTo>mnewton@doctorevidence.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>EditAllContents</accessLevel>
         <sharedTo>mfazeli@doctorevidence.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
@@ -77,12 +82,17 @@
     </folderShares>
     <folderShares>
         <accessLevel>EditAllContents</accessLevel>
-        <sharedTo>rkoretoff@doctorevidence.com</sharedTo>
+        <sharedTo>slewis@doctorevidence.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
         <accessLevel>EditAllContents</accessLevel>
-        <sharedTo>slewis@doctorevidence.com</sharedTo>
+        <sharedTo>sgarcia@doctorevidence.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>skanters@doctorevidence.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <name>Client &amp; Market Development Reports</name>

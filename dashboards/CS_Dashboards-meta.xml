@@ -10,10 +10,5 @@
         <sharedTo>ilara@doctorevidence.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
-    <folderShares>
-        <accessLevel>EditAllContents</accessLevel>
-        <sharedTo>rkoretoff@doctorevidence.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
     <name>CS Dashboards</name>
 </DashboardFolder>

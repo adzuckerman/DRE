@@ -14,7 +14,9 @@
     <tabs>standard-Dashboard</tabs>
     <tabs>Kbase__c</tabs>
     <tabs>Contract_and_Revenue__c</tabs>
+    <tabs>standard-WaveHome</tabs>
     <tabs>Project_Request__c</tabs>
     <tabs>Department_Revenue_Schedule__c</tabs>
     <tabs>Department_Costs__c</tabs>
+    <tabs>Invoice__c</tabs>
 </CustomApplication>

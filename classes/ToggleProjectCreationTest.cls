@@ -11,35 +11,61 @@
 @isTest
 public class ToggleProjectCreationTest {
 
-    private static testmethod void testToggleProjectCreation(){
+    private static testmethod void testToggleProjectCreationNew(){
     
         Account acc = new Account();
         acc.Name = 'Test Acc';
         insert acc;
         
         TASKRAY__Project__c tProject = new TASKRAY__Project__c();
+        tProject.Toggl_Auto_Creation_Approved__c = true;
         tProject.TASKRAY__trAccount__c = acc.Id;
         tProject.Name = 'sa4-test-project';
         insert tProject;
         
-        Toggl_Time_Entry__c tte = new Toggl_Time_Entry__c();
-        tte.Account__c = acc.Id;
-        tte.Project_Name__c = 'sa4-test-project | toggle project name';
-        tte.Start_Date__c = (Date.Today()).addDays(-60);
-        tte.Project__c = tProject.Id;
-        tte.Toggl_Id__c = '912345678';
-        insert tte;
+        Test.setMock(HttpCalloutMock.class, new HTTPMockCallout());
         
-        Set<Id> pIds = new Set<Id>();
-        pIds.add(tProject.Id);
         Test.StartTest();
-            Test.setMock(HttpCalloutMock.class, new HTTPMockCallout());
-            ToggleProjectCreation.CreateToggleProject(pIds);
-            
+        
+        ToggleProjectCreation.CreateToggleProject(new Set<Id> { tProject.Id });
+        
         Test.StopTest();
         
-        
+        tProject = [SELECT Toggl_Id__c FROM TASKRAY__Project__c WHERE Id = :tProject.Id];
+        System.assertEquals('912345678', tProject.Toggl_Id__c);
     }
     
+    private static testmethod void testToggleProjectCreationExisting(){
+    
+        Account acc = new Account();
+        acc.Name = 'Test Acc';
+        insert acc;
+        
+        Opportunity opp = new Opportunity();
+        opp.Name = 'Test 348975';
+        opp.AccountId = acc.Id;
+        opp.StageName = 'Prospecting';
+        opp.CloseDate = Date.today();
+        insert opp;
+        
+        TASKRAY__Project__c tProject = new TASKRAY__Project__c();
+        tProject.Toggl_Auto_Creation_Approved__c = true;
+        tProject.TASKRAY__trAccount__c = acc.Id;
+        tProject.Name = 'sa4-test-WXYA';
+        tProject.Secondary_Project_Name__c = 'X';
+        tProject.TASKRAY__trOpportunity__c = opp.Id;
+        insert tProject;
+        
+        Test.setMock(HttpCalloutMock.class, new HTTPMockCallout());
+        
+        Test.StartTest();
+        
+        ToggleProjectCreation.CreateToggleProject(new Set<Id> { tProject.Id });
+        
+        Test.StopTest();
+        
+        tProject = [SELECT Toggl_Id__c FROM TASKRAY__Project__c WHERE Id = :tProject.Id];
+        System.assertEquals('912345679', tProject.Toggl_Id__c);
+    }
     
 }

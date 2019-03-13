@@ -28,6 +28,12 @@
             <operator>notEqual</operator>
             <value>Sandra Zelman Lewis</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>USERS.NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Melanie Golob</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>Account Assignments_Pharma</name>

@@ -350,6 +350,13 @@
         <name>Contact_Filter_Fields</name>
     </fieldSets>
     <layouts>
+        <layout>Contact Layout SDoc</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
         <layout>Contact Layout</layout>
         <sections>
             <label><!-- Custom Links --></label>
@@ -360,19 +367,16 @@
             <section>Emails</section>
         </sections>
         <sections>
+            <label><!-- Litmos --></label>
+            <section>Litmos</section>
+        </sections>
+        <sections>
             <label><!-- Training Widget --></label>
             <section>Training Widget</section>
         </sections>
         <sections>
             <label><!-- Training Widget (Read Only) --></label>
             <section>Training Widget (Read Only)</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Contact Layout SDoc</layout>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
         </sections>
     </layouts>
     <validationRules>

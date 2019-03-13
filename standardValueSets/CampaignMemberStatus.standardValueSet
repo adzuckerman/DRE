@@ -12,6 +12,11 @@
         <label>Account Created, no further activity</label>
     </standardValue>
     <standardValue>
+        <fullName>Attended</fullName>
+        <default>false</default>
+        <label>Attended</label>
+    </standardValue>
+    <standardValue>
         <fullName>Attended 1st Meeting</fullName>
         <default>false</default>
         <label>Attended 1st Meeting</label>
@@ -190,5 +195,10 @@
         <fullName>Trained, Modules 3-4</fullName>
         <default>false</default>
         <label>Trained, Modules 3-4</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trained Twice</fullName>
+        <default>false</default>
+        <label>Trained Twice</label>
     </standardValue>
 </StandardValueSet>

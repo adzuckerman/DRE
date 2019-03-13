@@ -120,6 +120,30 @@
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/Rejection_Email_Notification</template>
     </alerts>
+    <alerts>
+        <fullName>PO_Set_Notification</fullName>
+        <ccEmails>accountspayable@doctorevidence.com</ccEmails>
+        <description>PO Set Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>emurray@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>hkim@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mdelaguila@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sgarcia@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/PO_Set_Email_Notification</template>
+    </alerts>
     <fieldUpdates>
         <fullName>Approved_Status</fullName>
         <field>Status__c</field>

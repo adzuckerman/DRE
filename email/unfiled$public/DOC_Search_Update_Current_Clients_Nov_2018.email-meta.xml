@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DOC Search Update-Current Clients-Nov 2018</name>
+    <style>none</style>
+    <subject>DOC Search 2018 Updates Increase Precision for Medical Searches</subject>
+    <textOnly>*|DOC Search 2018 Updates Increase Precision for Medical Searches|*
+
+DOC Search 2018 Updates Increase Precision for Medical Searches
+View this email in your browser
+
+Dear {!Contact.FirstName},
+
+You have enterprise-wide access to DOC Search, Doctor Evidence’s newest AI literature search tool.
+Access DOC Search by logging in to: https://docdata.doctorevidence.com
+
+DOC Search is a powerful medical search engine, fueled by natural language processing (NLP) and artificial intelligence, which enables you to:
+
+Quickly evaluate the evidence landscape across a wide range of medical data sources to identify, analyze, and monitor the available evidence.
+Search over 30+ million items, including trial registries, manuscripts, conference abstracts, drug labels, and news articles (PubMed, ClinicalTrials.gov, WHO-ICTRP, DailyMed, EPAR, and 85 RSS feeds).
+Identify KOLs and their scientific networks
+Save searches for automated literature monitoring
+
+Click here to receive training and/or more information on DOC Search
+
+New features released in November:
+
+New data sources, including meeting abstracts from the American Society of Hematology (ASH) and American Society of Clinical Oncology (ASCO)
+Drug labels are now linked to the trials and publications that supported each USPI
+More precise searching &amp; review, including the ability to limit searches to title, abstract, or affiliation fields
+Monitor literature with automated weekly email alerts
+
+Click here to see a 3-minute video update
+
+DOC Search technology is populated with ASH and ASCO meeting abstracts, enabling analysis of methods, results, and trends to prepare for upcoming meetings:
+
+Meeting Preparation: New meeting abstracts are released in-system on the embargo date. Save searches and immediately receive targeted reference lists to prepare for upcoming meetings
+Automated Term Indexing: NLP technology is applied to all meeting abstracts to index the reported patient characteristics, interventions, and outcome measures. Review a summary table of this automated term indexing to identify the top co-occurring concepts in your topic area of interest.
+Author Analysis: Identify the top thought leaders presenting in your topic areas of interest and inform strategy and planning for meeting attendance. Review an author&apos;s full list of publications, along with their affiliations, contact information, scientific network, and more.
+Lineage: Quickly navigate between associated references with automated linkage to the other data sources in DOC Search. Follow the lineage of a study from the original trial registration, to meeting abstracts, and all the way to primary and secondary manuscript publications, news articles, and drug labels.
+
+ASH DOC Search and ASCO DOC Search are separate, supplementary add-on content options to the DOC Search base subscription.
+
+If you need any specific help with DOC Search please contact Greg Lieberman, Associate Director, DOC Search at glieberman@doctorevidence.com</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

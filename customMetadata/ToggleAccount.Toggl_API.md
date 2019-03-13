@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>Days__c</field>
-        <value xsi:type="xsd:double">15.0</value>
+        <value xsi:type="xsd:double">38.0</value>
     </values>
     <values>
         <field>Delete_Logs_After_Days__c</field>

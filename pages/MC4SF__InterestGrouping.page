@@ -129,7 +129,7 @@
 			var pHeading = ({!MC4SF__MC_Interest_Grouping__c.Id != null} ? '{!MC_Interest_Grouping__c.MC_List__r.Name}' : 'MC Interest Grouping');
 			setupObj = {
 				pageHeading : pHeading,
-				title : "MailChimp for Salesforce",
+				title : "Mailchimp for Salesforce",
 			}
 			return setupObj;
 		}

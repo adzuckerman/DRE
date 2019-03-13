@@ -69,18 +69,6 @@
         <visibleLines>5</visibleLines>
     </fields>
     <fields>
-        <fullName>Duration_Computed__c</fullName>
-        <externalId>false</externalId>
-        <formula>(End_Date__c  - Start_Date__c) * 24</formula>
-        <label>Duration Computed</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Duration__c</fullName>
         <externalId>false</externalId>
         <label>Duration</label>
@@ -237,6 +225,39 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
+    <fields>
+        <fullName>Duration_Computed__c</fullName>
+        <externalId>false</externalId>
+        <formula>(End_Date__c - Start_Date__c) * 24</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duration Computed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Opportunity_ID__c</formula>
+        <label>Opportunity ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Stage_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity__r.StageName)</formula>
+        <label>Opportunity Stage Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -255,11 +276,39 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Toggl Time Entries</pluralLabel>
-    <searchLayouts />
+    <searchLayouts>
+        <searchResultsAdditionalFields>Project__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Project_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Opportunity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Opportunity_Stage_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>GAAP_Class__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <listViews>
-        <fullName>All</fullName>
+        <fullName>DRE_Default</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>Opportunity_ID__c</columns>
+        <columns>Account__c</columns>
+        <columns>Opportunity__c</columns>
+        <columns>Project__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>User__c</columns>
+        <columns>Email__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Duration_Computed__c</columns>
+        <columns>GAAP_Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Project_Name__c</field>
+            <operation>startsWith</operation>
+            <value>DRE</value>
+        </filters>
+        <label>DRE Default</label>
+    </listViews>
+    <listViews>
+        <fullName>Laura_Guild</fullName>
         <columns>OBJECT_ID</columns>
         <columns>NAME</columns>
         <columns>Toggl_Id__c</columns>
@@ -277,10 +326,10 @@
         <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>Project_Name__c</field>
-            <operation>contains</operation>
-            <value>3115</value>
+            <field>User__c</field>
+            <operation>equals</operation>
+            <value>Laura Guild</value>
         </filters>
-        <label>All</label>
+        <label>Laura Guild</label>
     </listViews>
 </CustomObject>

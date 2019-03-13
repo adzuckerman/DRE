@@ -12,11 +12,11 @@
 <div class="slds-grid">
 		<div class="slds-text-body_regular">
 			This area is currently blank because a shared campaign report URL for this campaign doesn’t currently exist.
-			When you send campaigns through MailChimp, you’re able to generate shareable links for your campaign reports
+			When you send campaigns through Mailchimp, you’re able to generate shareable links for your campaign reports
 			so that outside collaborators can view the results. To populate this space with your campaign report and a
 			functional share link, follow these steps in our Knowledge Base:
 			<a href="http://kb.mailchimp.com/reports/share-a-campaign-report">http://kb.mailchimp.com/reports/share-a-campaign-report</a>.
-			After you’ve shared the report in MailChimp, click the Refresh Campaign Stats button on this page to display the report and a working URL.
+			After you’ve shared the report in Mailchimp, click the Refresh Campaign Stats button on this page to display the report and a working URL.
 		</div>
 </div>
 

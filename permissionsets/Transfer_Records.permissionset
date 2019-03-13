@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>To allow users to reassign owners or opportunities, accounts, etc.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Transfer Records</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>TransferAnyEntity</name>
+    </userPermissions>
+</PermissionSet>

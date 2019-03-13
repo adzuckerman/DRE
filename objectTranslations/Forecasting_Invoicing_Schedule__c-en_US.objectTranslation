@@ -31,6 +31,30 @@
         <label><!-- Booking_Month +6 --></label>
         <name>Booking_Month_6__c</name>
     </fields>
+    <fields>
+        <label><!-- Booking_Month +10 --></label>
+        <name>Booking_Month_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking_Month +11 --></label>
+        <name>Booking_Month_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking_Month +12 --></label>
+        <name>Booking_Month_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking_Month +7 --></label>
+        <name>Booking_Month_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking_Month +8 --></label>
+        <name>Booking_Month_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking_Month +9 --></label>
+        <name>Booking_Month_9__c</name>
+    </fields>
     <caseValues>
         <plural>false</plural>
         <value>Forecasting Invoicing Schedule</value>

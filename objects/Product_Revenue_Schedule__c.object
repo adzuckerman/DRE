@@ -152,8 +152,8 @@ Product__r.Name = 'DOC Nhanes',
 Product__r.Name = 'IMHE', 
 Product__r.Name = 'DOC Library Licensing', 
 Product__r.Name = 'DOC Data Licensing' 
-), 'Subscription Revenue', 
-IF( 
+), 'Subscription Revenue',
+IF(
 Monthly_Revenue_Schedule__r.Opportunity__r.Use_New_Forecasting_Algorithm__c, TEXT(Revenue_Category__c),'No Type')))</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Revenue Type</label>

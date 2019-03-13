@@ -13,46 +13,6 @@
         <name>SP_Close_Date__c</name>
     </fields>
     <fields>
-        <label><!-- SP Offering --></label>
-        <name>SP_Offering__c</name>
-        <picklistValues>
-            <masterLabel>ASCO DOC Search</masterLabel>
-            <translation><!-- ASCO DOC Search --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>DOC Label</masterLabel>
-            <translation><!-- DOC Label --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>DOC NHANES</masterLabel>
-            <translation><!-- DOC NHANES --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>DOC Track</masterLabel>
-            <translation><!-- DOC Track --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Data Hub</masterLabel>
-            <translation><!-- Data Hub --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>GROWTH</masterLabel>
-            <translation><!-- GROWTH --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>IHME Data Mart</masterLabel>
-            <translation><!-- IHME Data Mart --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Project</masterLabel>
-            <translation><!-- Project --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Services</masterLabel>
-            <translation><!-- Services --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <label><!-- SP Opportunity ID --></label>
         <name>SP_Opportunity_ID__c</name>
         <relationshipLabel><!-- Sales Plan --></relationshipLabel>
@@ -132,6 +92,71 @@
             <masterLabel>Pulmonary/Respiratory Diseases</masterLabel>
             <translation><!-- Pulmonary/Respiratory Diseases --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SP Offering --></label>
+        <name>SP_Offering__c</name>
+        <picklistValues>
+            <masterLabel>ASCO DOC Search</masterLabel>
+            <translation><!-- ASCO DOC Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CoE</masterLabel>
+            <translation><!-- CoE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOC Congress</masterLabel>
+            <translation><!-- DOC Congress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOC Label</masterLabel>
+            <translation><!-- DOC Label --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOC NHANES</masterLabel>
+            <translation><!-- DOC NHANES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOC Search</masterLabel>
+            <translation><!-- DOC Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOC Track</masterLabel>
+            <translation><!-- DOC Track --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Hub</masterLabel>
+            <translation><!-- Data Hub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROWTH</masterLabel>
+            <translation><!-- GROWTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IHME</masterLabel>
+            <translation><!-- IHME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IHME Data Mart</masterLabel>
+            <translation><!-- IHME Data Mart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project</masterLabel>
+            <translation><!-- Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Project Platform</masterLabel>
+            <translation><!-- Service Project Platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation><!-- Services --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SP Opportunity Owner --></label>
+        <name>SP_Opportunity_Owner__c</name>
+        <relationshipLabel><!-- Sales Plans --></relationshipLabel>
     </fields>
     <caseValues>
         <plural>false</plural>

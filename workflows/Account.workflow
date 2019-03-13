@@ -46,7 +46,8 @@
         </actions>
         <active>true</active>
         <description>Account Changed Rule for Doc Data Sync</description>
-        <formula>true</formula>
+        <formula>ISNEW() || 
+ISCHANGED(Name)</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

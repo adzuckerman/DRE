@@ -83,18 +83,15 @@
 	</div>
 
 	<script type="text/javascript">
-
-		var headerSetupObject = function(){
-			var setupObj;
-			setupObj = {
-				pageHeading : "{!MC_Query__c.Name}",
-				title : "MC Interest Groups",
-				buttons : createButtons()
-			}
-			return setupObj;
+		var headerSetupObject = function() {
+			return {
+				pageHeading: '{!JSENCODE(MC_Query__c.Name)}',
+				title: 'MC Query',
+				buttons: createButtons()
+			};
 		};
 
-		function createButtons(){
+		function createButtons() {
 		 buttonsArr = [{
 			 title : "Go Back",
 			 onclick : "goBackNavigation"

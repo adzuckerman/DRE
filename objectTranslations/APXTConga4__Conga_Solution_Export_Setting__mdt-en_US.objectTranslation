@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Conga Solution Export Environment --></label>
+        <name>APXTConga4__Conga_Solution_Export_Environment__c</name>
+        <relationshipLabel><!-- Conga Solution Export Settings --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Conga Solution Export Setting</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

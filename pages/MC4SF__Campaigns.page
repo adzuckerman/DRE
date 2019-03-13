@@ -12,10 +12,10 @@
     var headerSetupObject = function () {
       var setupObj;
       setupObj = {
-        title: "MailChimp for Salesforce"
+        title: "Mailchimp for Salesforce"
       }
       return setupObj;
     };
-    setPageMessages('WARNING', 'The MailChimp for Salesforce application does not support creating new MC Campaigns from within Salesforce.');
+    setPageMessages('WARNING', 'The Mailchimp for Salesforce application does not support creating new MC Campaigns from within Salesforce.');
   </script>
 </apex:page>

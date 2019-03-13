@@ -261,7 +261,7 @@
 					        <div class="slds-truncate" title="Order">Order</div>
 					      </th>
 					      <th scope="col">
-					        <div class="slds-truncate" title="MailChimp Id">MailChimp Id</div>
+					        <div class="slds-truncate" title="Mailchimp Id">Mailchimp Id</div>
 					      </th>
 					      <th scope="col">
 					        <div class="slds-truncate" title="Contact Field Mapping">Contact Field Mapping</div>
@@ -678,7 +678,7 @@
 				title : "Retrieve from Mailchimp",
 				onclick : "loadList"
 			},{
-				title : "MailChimp Field Mapping",
+				title : "Mailchimp Field Mapping",
 				onclick : "goToFieldMapping"
 			}];
 			return buttonsArr;

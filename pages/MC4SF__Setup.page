@@ -78,7 +78,7 @@
       <div class="slds-card__body slds-card__body_inner">
         <ol style="line-height:1.2rem;">
           <li> 1. This app works best when field mappings are complete. We recommend mapping fields before syncing data. </li>
-          <li> 2. The initial hourly sync will upload all MailChimp subscribers into Salesforce and link them to existing Contacts and Leads. </li>
+          <li> 2. The initial hourly sync will upload all Mailchimp subscribers into Salesforce and link them to existing Contacts and Leads. </li>
           <li> 3. An initial upload usually takes a few minutes, but can take several hours for large lists. </li>
           <li> 4. If the Create Leads from MC option is chosen, the sync process will create a new Lead whenever a Subscriber's email address cannot be found on an existing Salesforce Contact or Lead. Please be sure your org's Lead configuration is ready for an initial upload! </li>
         </ol>
@@ -302,7 +302,7 @@
 
               <h1 class="slds-text-heading_medium slds-p-vertical_xx-small introStep3" style="display:inline-block;">Data Sync</h1>
               <p class="slds-p-bottom_x-small">
-                Enabling will schedule a series of batch tasks. The data sync updates your MailChimp subscriber fields with the corresponding contact/lead field data each hour, and updates the Salesforce contacts/leads with the MailChimp subscriber campaign activity each night.
+                Enabling will schedule a series of batch tasks. The data sync updates your Mailchimp subscriber fields with the corresponding contact/lead field data each hour, and updates the Salesforce contacts/leads with the Mailchimp subscriber campaign activity each night.
               </p>
 
               <div class="slds-form-element slds-p-bottom_large">
@@ -315,14 +315,14 @@
                 </label>
               </div>
 
-              <h1 class="slds-text-heading_medium slds-p-vertical_xx-small introStep2" style="display:inline-block;">Allow MailChimp to create Leads in Salesforce</h1>
+              <h1 class="slds-text-heading_medium slds-p-vertical_xx-small introStep2" style="display:inline-block;">Allow Mailchimp to create Leads in Salesforce</h1>
               <p class="slds-p-bottom_x-small">
-                Enabling this feature will allow MailChimp to create new leads in Salesforce for email addresses that don't match existing leads or contacts.
+                Enabling this feature will allow Mailchimp to create new leads in Salesforce for email addresses that don't match existing leads or contacts.
               </p>
 
               <div class="slds-form-element">
                 <label class="slds-checkbox_toggle slds-grid">
-                  <span class="slds-form-element__label slds-m-bottom_none" style="line-height: 1.5rem;">MailChimp Lead Creation</span>
+                  <span class="slds-form-element__label slds-m-bottom_none" style="line-height: 1.5rem;">Mailchimp Lead Creation</span>
                   <apex:inputCheckbox id="createLeads" value="{!createLeads}" disabled="{!NOT(isMailChimpAdmin)}" onchange="updateCreateLeadsAction(); return false;"/>
                   <span id="toggle-desc" class="slds-checkbox_faux_container" aria-live="assertive">
                     <span class="slds-checkbox_faux"></span>
@@ -348,7 +348,7 @@
   var headerSetupObject = function(){
     var setupObj;
     setupObj = {
-      title : "MailChimp for Salesforce",
+      title : "Mailchimp for Salesforce",
       pageHeading : "Setup",
       pageDescription : "Configure the Mailchimp for Salesforce application"
     }
@@ -377,7 +377,7 @@
     if(!createLeads){
       if($(el).prop("checked") == true){
         $(el).prop("checked", false);
-        alert('Before enabling this setting, please turn on \'Allow MailChimp to create Leads in Salesforce\' in Setting tab.');
+        alert('Before enabling this setting, please turn on \'Allow Mailchimp to create Leads in Salesforce\' in Setting tab.');
       }else{
         updateListsAction();
       }
@@ -409,7 +409,7 @@
     var unmappedFields = {!haveUnmappedFields};
     var notChecked = $('[id$="enableHourlySync"]').is(':checked');
     if(notChecked && unmappedFields){
-      if (!(confirm('Some MailChimp fields have not been mapped to Salesforce fields. We recommend mapping fields BEFORE turning on the Data sync.'))) {
+      if (!(confirm('Some Mailchimp fields have not been mapped to Salesforce fields. We recommend mapping fields BEFORE turning on the Data sync.'))) {
         event.stopPropagation();
         return false;
       }
@@ -418,7 +418,7 @@
   });
 
   if(!({!hourlyJobScheduled})){
-    setPageMessages('INFO','The MailChimp for Salesforce has been set up and is ready to start synchronizing data. Click the "Data Sync" button on the Settings tab to start the magic.');
+    setPageMessages('INFO','The Mailchimp for Salesforce has been set up and is ready to start synchronizing data. Click the "Data Sync" button on the Settings tab to start the magic.');
   }
 
   // Handle changing the active tab and it's content
@@ -434,7 +434,7 @@
 
       $('.freddie').css('width', '35px').addClass('introStep1');
 
-      $('div.links').prepend('<a id="tourLink" href="#">Take a Tour of the MailChimp Settings</a> | ');
+      $('div.links').prepend('<a id="tourLink" href="#">Take a Tour of the Mailchimp Settings</a> | ');
 
       $('#tourLink').click(function() {
           showTour();
@@ -468,7 +468,7 @@
       steps.push(
           {
               element: $('.introStep1')[0],  //RK: Done
-              intro: '<b>WELCOME TO THE MAILCHIMP FOR SALESFORCE SETUP PAGE</b><br/><br/>MailChimp for Salesforce features the ability to update MailChimp subscriber information based on the contact/lead fields in Salesforce, create new leads from MailChimp subscribers, and view MailChimp campaign activity and reports within your Salesforce account.<br/><br/>Click the \"Next\" button to take a tour of the MailChimp for Salesforce application. If you have additional questions, check out the documentation in the MailChimp Knowledge Base.<br/><br/><a href="http://eepurl.com/B_Bdb">About MailChimp for Salesforce.</a><br/><a href="http://eepurl.com/CqRNz">Install MailChimp for Salesforce.</a><br/><a href="http://eepurl.com/bdNhqv">MailChimp for Salesforce Features.</a><br/>',
+              intro: '<b>WELCOME TO THE MAILCHIMP FOR SALESFORCE SETUP PAGE</b><br/><br/>Mailchimp for Salesforce features the ability to update Mailchimp subscriber information based on the contact/lead fields in Salesforce, create new leads from Mailchimp subscribers, and view Mailchimp campaign activity and reports within your Salesforce account.<br/><br/>Click the \"Next\" button to take a tour of the Mailchimp for Salesforce application. If you have additional questions, check out the documentation in the Mailchimp Knowledge Base.<br/><br/><a href="http://eepurl.com/B_Bdb">About Mailchimp for Salesforce.</a><br/><a href="http://eepurl.com/CqRNz">Install Mailchimp for Salesforce.</a><br/><a href="http://eepurl.com/bdNhqv">Mailchimp for Salesforce Features.</a><br/>',
 
               position: 'right'
           }
@@ -477,7 +477,7 @@
       steps.push(
           {
               element: $('.introStep2')[0],  //RK: Done
-              intro: '<b>ALLOW MAILCHIMP TO CREATE LEADS IN SALESFORCE</b><br/><br/>Enabling this feature will allow MailChimp to create new leads in Salesforce for email addresses that don\'t match existing leads or contacts.',
+              intro: '<b>ALLOW MAILCHIMP TO CREATE LEADS IN SALESFORCE</b><br/><br/>Enabling this feature will allow Mailchimp to create new leads in Salesforce for email addresses that don\'t match existing leads or contacts.',
               position: 'right'
           }
       );
@@ -485,7 +485,7 @@
       steps.push(
           {
               element: $('.introStep3')[0],  //RK: Done
-              intro: '<b>TURN ON/OFF DATA SYNC</b><br/><br/>Enabling the data sync feature will schedule a series of batch tasks. The data sync updates your MailChimp subscriber fields with the corresponding contact/lead field data each hour, and it updates the Salesforce contacts/leads with the MailChimp subscriber campaign activity each night.',
+              intro: '<b>TURN ON/OFF DATA SYNC</b><br/><br/>Enabling the data sync feature will schedule a series of batch tasks. The data sync updates your Mailchimp subscriber fields with the corresponding contact/lead field data each hour, and it updates the Salesforce contacts/leads with the Mailchimp subscriber campaign activity each night.',
               position: 'right'
           }
       );
@@ -493,7 +493,7 @@
       steps.push(
           {
               element: $('.introStep4')[0],  //RK: Done
-              intro: '<b>REFRESH ALL LISTS</b><br/><br/>The "Refresh All Lists" button updates all of the list field data. This button updates Salesforce with the MailChimp lists, list fields, and groups.',
+              intro: '<b>REFRESH ALL LISTS</b><br/><br/>The "Refresh All Lists" button updates all of the list field data. This button updates Salesforce with the Mailchimp lists, list fields, and groups.',
               position: 'left'
           }
       );
@@ -502,7 +502,7 @@
           steps.push(
               {
                   element: $('.introStep5')[0],     //RK: Done
-                  intro: '<b>MAP FIELDS</b><br/><br/>The "Map Fields" link takes you to the field mapping page for each list. You can edit the field mapping for existing list fields or create new MailChimp list fields. The field mapping settings are used to match MailChimp list fields with their corresponding contact/lead fields.<br/><br/>The permissions for the leads, contacts, and accounts should be set to "Public Read/Write" in order for the MailChimp for Salesforce app to work properly. In order to edit these permissions, go to Setup > Administer > Security Controls > Sharing Settings.',
+                  intro: '<b>MAP FIELDS</b><br/><br/>The "Map Fields" link takes you to the field mapping page for each list. You can edit the field mapping for existing list fields or create new Mailchimp list fields. The field mapping settings are used to match Mailchimp list fields with their corresponding contact/lead fields.<br/><br/>The permissions for the leads, contacts, and accounts should be set to "Public Read/Write" in order for the Mailchimp for Salesforce app to work properly. In order to edit these permissions, go to Setup > Administer > Security Controls > Sharing Settings.',
                   position: 'right'
               }
           );
@@ -512,7 +512,7 @@
           steps.push(
               {
                   element: $('.introStep6')[0], //RK: Done
-                  intro: '<b>SYNC LIST</b><br/><br/>The "Sync List" link updates Salesforce with the MailChimp list settings, fields, segments, and groups. If the sync settings for the list allow subscriber activity, then this link will update the contacts/leads with the MailChimp campaign activity.',
+                  intro: '<b>SYNC LIST</b><br/><br/>The "Sync List" link updates Salesforce with the Mailchimp list settings, fields, tags, and groups. If the sync settings for the list allow subscriber activity, then this link will update the contacts/leads with the Mailchimp campaign activity.',
                   position: 'right'
               }
           );
@@ -521,7 +521,7 @@
       steps.push(
           {
               element: $('.introStep7')[0],   //RK: Done
-              intro: '<b>NEW QUERY</b><br/><br/>The "New Query" button takes you to the query builder. Queries function to subscribe contacts/leads to the MailChimp list, and to update existing MailChimp list subscribers based on the corresponding contacts/leads in Salesforce. When updating existing subscribers, the Salesforce data will overwrite the MailChimp list field data. Using the filters on step two of the query builder, it’s possible to query all of the contacts/leads or to query specific contacts/leads based on their Salesforce field data.',
+              intro: '<b>NEW QUERY</b><br/><br/>The "New Query" button takes you to the query builder. Queries function to subscribe contacts/leads to the Mailchimp list, and to update existing Mailchimp list subscribers based on the corresponding contacts/leads in Salesforce. When updating existing subscribers, the Salesforce data will overwrite the Mailchimp list field data. Using the filters on step two of the query builder, it’s possible to query all of the contacts/leads or to query specific contacts/leads based on their Salesforce field data.',
               position: 'left'
           }
       );
@@ -530,7 +530,7 @@
           steps.push(
               {
                   element: $('.introStep8')[0], //RK: Done
-                  intro: '<b>RUN QUERY</b><br/><br/>The "Run Query" link functions to manually run an existing query. Queries function to subscribe contacts/leads to the MailChimp list, and to update existing MailChimp list subscribers based on the corresponding contacts/leads in Salesforce.',
+                  intro: '<b>RUN QUERY</b><br/><br/>The "Run Query" link functions to manually run an existing query. Queries function to subscribe contacts/leads to the Mailchimp list, and to update existing Mailchimp list subscribers based on the corresponding contacts/leads in Salesforce.',
                   position: 'right'
               }
           );

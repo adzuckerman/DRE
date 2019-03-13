@@ -257,7 +257,7 @@
 var headerSetupObject = function(){
 	var setupObj;
 	setupObj = {
-		title : "MailChimp for Salesforce",
+		title : "Mailchimp for Salesforce",
 		pageHeading : "New Query",
 		pageDescription : "Use this tool to create a new query that will be used to determine the Salesforce data you want to migrate to Mailchimp"
 	}

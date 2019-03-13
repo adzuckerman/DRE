@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>PO set email notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PO Set Email Notification</name>
+    <style>none</style>
+    <subject>{!TASKRAY__Project__c.Name} External Vendor Request</subject>
+    <textOnly>To Whom it May Concern:
+
+The request for the following preferred vendor and project has been approved by all the parties and a PO has been generated.
+
+To view the Request Form please click here.
+https://doctorevidence.my.com/{!Preferred_Vendor_Request__c.Id} 
+
+Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -8,6 +8,6 @@
     </values>
     <values>
         <field>Product_Name__c</field>
-        <value xsi:type="xsd:string">Data Extract and Micro Simulation</value>
+        <value xsi:type="xsd:string">Microsimulation</value>
     </values>
 </CustomMetadata>

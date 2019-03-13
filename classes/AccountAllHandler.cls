@@ -28,7 +28,7 @@ public class AccountAllHandler {
     
     private void CreateToggleClient(list<Account>newList, list<Account>oldList, map<id, Account> newMap, map<id, Account> oldMap) {
         
-        if(newList.size() > 0)
+        if(!System.isBatch() && newList.size() > 0)
         {
             
             // Limit: 10 callouts per transaction

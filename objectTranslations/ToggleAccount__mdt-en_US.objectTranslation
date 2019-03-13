@@ -36,4 +36,11 @@
         <value>ToggleAccounts</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>ToggleAccount Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
 </CustomObjectTranslation>

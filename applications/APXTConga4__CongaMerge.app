@@ -17,4 +17,5 @@
     <tabs>APXTConga4__CongaMerge</tabs>
     <tabs>APXTConga4__Composer_QuickMerge__c</tabs>
     <tabs>standard-report</tabs>
+    <tabs>Invoice__c</tabs>
 </CustomApplication>

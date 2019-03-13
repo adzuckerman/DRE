@@ -48,7 +48,7 @@
         <field>FULL_NAME</field>
     </columns>
     <filter>
-        <booleanFilter>(1 OR 6) AND 2 AND 3 AND 4 AND 5</booleanFilter>
+        <booleanFilter>(1 OR 6) AND 2 AND 3 AND 4 AND 5 AND 7</booleanFilter>
         <criteriaItems>
             <column>ACCOUNT_OWNER</column>
             <isUnlocked>true</isUnlocked>
@@ -84,6 +84,12 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Melanie Golob</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Sales Plan</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

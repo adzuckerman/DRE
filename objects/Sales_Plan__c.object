@@ -70,65 +70,6 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>SP_Offering__c</fullName>
-        <externalId>false</externalId>
-        <label>SP Offering</label>
-        <required>true</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>ASCO DOC Search</fullName>
-                    <default>false</default>
-                    <label>ASCO DOC Search</label>
-                </value>
-                <value>
-                    <fullName>Data Hub</fullName>
-                    <default>false</default>
-                    <label>Data Hub</label>
-                </value>
-                <value>
-                    <fullName>DOC Label</fullName>
-                    <default>false</default>
-                    <label>DOC Label</label>
-                </value>
-                <value>
-                    <fullName>DOC NHANES</fullName>
-                    <default>false</default>
-                    <label>DOC NHANES</label>
-                </value>
-                <value>
-                    <fullName>DOC Track</fullName>
-                    <default>false</default>
-                    <label>DOC Track</label>
-                </value>
-                <value>
-                    <fullName>GROWTH</fullName>
-                    <default>false</default>
-                    <label>GROWTH</label>
-                </value>
-                <value>
-                    <fullName>IHME Data Mart</fullName>
-                    <default>false</default>
-                    <label>IHME Data Mart</label>
-                </value>
-                <value>
-                    <fullName>Project</fullName>
-                    <default>false</default>
-                    <label>Project</label>
-                </value>
-                <value>
-                    <fullName>Services</fullName>
-                    <default>false</default>
-                    <label>Services</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>SP_Opportunity_ID__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
@@ -253,6 +194,101 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>SP_Offering__c</fullName>
+        <externalId>false</externalId>
+        <label>SP Offering</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ASCO DOC Search</fullName>
+                    <default>false</default>
+                    <label>ASCO DOC Search</label>
+                </value>
+                <value>
+                    <fullName>Data Hub</fullName>
+                    <default>false</default>
+                    <label>Data Hub</label>
+                </value>
+                <value>
+                    <fullName>DOC Label</fullName>
+                    <default>false</default>
+                    <label>DOC Label</label>
+                </value>
+                <value>
+                    <fullName>DOC NHANES</fullName>
+                    <default>false</default>
+                    <label>DOC NHANES</label>
+                </value>
+                <value>
+                    <fullName>DOC Track</fullName>
+                    <default>false</default>
+                    <label>DOC Track</label>
+                </value>
+                <value>
+                    <fullName>GROWTH</fullName>
+                    <default>false</default>
+                    <label>GROWTH</label>
+                </value>
+                <value>
+                    <fullName>IHME Data Mart</fullName>
+                    <default>false</default>
+                    <label>IHME Data Mart</label>
+                </value>
+                <value>
+                    <fullName>Project</fullName>
+                    <default>false</default>
+                    <label>Project</label>
+                </value>
+                <value>
+                    <fullName>Services</fullName>
+                    <default>false</default>
+                    <label>Services</label>
+                </value>
+                <value>
+                    <fullName>CoE</fullName>
+                    <default>false</default>
+                    <label>CoE</label>
+                </value>
+                <value>
+                    <fullName>DOC Search</fullName>
+                    <default>false</default>
+                    <label>DOC Search</label>
+                </value>
+                <value>
+                    <fullName>DOC Congress</fullName>
+                    <default>false</default>
+                    <label>DOC Congress</label>
+                </value>
+                <value>
+                    <fullName>Service Project Platform</fullName>
+                    <default>false</default>
+                    <label>Service Project Platform</label>
+                </value>
+                <value>
+                    <fullName>IHME</fullName>
+                    <default>false</default>
+                    <label>IHME</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SP_Opportunity_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>SP Opportunity Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Sales_Plans</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -277,6 +313,11 @@
     <visibility>Public</visibility>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>SP_Account_ID__c</columns>
+        <columns>SP_Opportunity_ID__c</columns>
+        <columns>SP_Amount__c</columns>
+        <columns>SP_Close_Date__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

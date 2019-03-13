@@ -143,6 +143,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>DRE_Point_of_Contact__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Email</field>
             <table>User</table>
         </columns>
@@ -204,6 +209,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>IsProfilePhotoActive</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Hire_Date__c</field>
             <table>User</table>
         </columns>
         <columns>
@@ -383,12 +393,27 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Termination_Date__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>TimeZoneSidKey</field>
             <table>User</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Title</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Toggl_Id__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TriNet_ID__c</field>
             <table>User</table>
         </columns>
         <columns>

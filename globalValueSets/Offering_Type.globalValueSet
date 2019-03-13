@@ -11,6 +11,11 @@
         <label>Data Hub</label>
     </customValue>
     <customValue>
+        <fullName>DOC Congress</fullName>
+        <default>false</default>
+        <label>DOC Congress</label>
+    </customValue>
+    <customValue>
         <fullName>DOC Data Configuration</fullName>
         <default>false</default>
         <label>DOC Data Configuration</label>

@@ -60,17 +60,6 @@
         <template>unfiled$public/Stage_Notification_v2</template>
     </alerts>
     <alerts>
-        <fullName>Customer_Verbal_Commit</fullName>
-        <description>Customer Verbal Commit</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>mnewton@doctorevidence.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>unfiled$public/Stage_Notification_v2</template>
-    </alerts>
-    <alerts>
         <fullName>Doc_Label_Unanimous_Approval</fullName>
         <description>Doc Label Unanimous Approval</description>
         <protected>false</protected>
@@ -88,21 +77,6 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/Approval_of_Written_Proposal_Price_Quote</template>
-    </alerts>
-    <alerts>
-        <fullName>Finalizing_Contract_SOW</fullName>
-        <description>Finalizing Contract/SOW</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>ahinojosa@doctorevidence.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>bob@doctorevidence.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>unfiled$public/Finalizing_Contract_SOW</template>
     </alerts>
     <alerts>
         <fullName>Mika_Approved_Closed_Won</fullName>
@@ -162,17 +136,6 @@
         <template>unfiled$public/Approved_Closed_Won</template>
     </alerts>
     <alerts>
-        <fullName>Negotiating_Contract_SOW</fullName>
-        <description>Negotiating Contract/SOW</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>mnewton@doctorevidence.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>unfiled$public/Stage_Notification_v2</template>
-    </alerts>
-    <alerts>
         <fullName>Notification_of_Unanimous_Approval</fullName>
         <description>Notification of Unanimous Approval</description>
         <protected>false</protected>
@@ -215,11 +178,76 @@
         <template>unfiled$public/Approval_of_Written_Proposal_Price_Quote</template>
     </alerts>
     <alerts>
+        <fullName>RFP</fullName>
+        <ccEmails>adam@cloudmineconsulting.com</ccEmails>
+        <description>RFP</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Stage_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Customer_Verbal_Commit</fullName>
+        <description>Customer Verbal Commit</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>dhodgson@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sgarcia@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Stage_Notification_v2</template>
+    </alerts>
+    <alerts>
+        <fullName>Finalizing_Contract_SOW</fullName>
+        <description>Finalizing Contract/SOW</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>bob@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>dhodgson@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>hkim@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sgarcia@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Finalizing_Contract_SOW</template>
+    </alerts>
+    <alerts>
+        <fullName>Negotiating_Contract_SOW</fullName>
+        <description>Negotiating Contract/SOW</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>bob@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>dhodgson@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sgarcia@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Stage_Notification_v2</template>
+    </alerts>
+    <alerts>
         <fullName>Proposal_Review</fullName>
         <description>Proposal Review</description>
         <protected>false</protected>
         <recipients>
-            <recipient>ahinojosa@doctorevidence.com</recipient>
+            <recipient>dhodgson@doctorevidence.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -230,19 +258,15 @@
         <template>unfiled$public/Proposal_Review</template>
     </alerts>
     <alerts>
-        <fullName>RFP</fullName>
-        <ccEmails>adam@cloudmineconsulting.com</ccEmails>
-        <description>RFP</description>
-        <protected>false</protected>
-        <senderType>CurrentUser</senderType>
-        <template>unfiled$public/Stage_Approval</template>
-    </alerts>
-    <alerts>
         <fullName>Renewal</fullName>
         <description>Renewal</description>
         <protected>false</protected>
         <recipients>
-            <recipient>mnewton@doctorevidence.com</recipient>
+            <recipient>dhodgson@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sgarcia@doctorevidence.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -253,7 +277,11 @@
         <description>Verbal Proposal/Price Quote</description>
         <protected>false</protected>
         <recipients>
-            <recipient>mnewton@doctorevidence.com</recipient>
+            <recipient>dhodgson@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sgarcia@doctorevidence.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -264,19 +292,15 @@
         <description>Written Proposal/Price Quote</description>
         <protected>false</protected>
         <recipients>
-            <recipient>ahinojosa@doctorevidence.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
             <recipient>bob@doctorevidence.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>hkim@doctorevidence.com</recipient>
+            <recipient>dhodgson@doctorevidence.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>mnewton@doctorevidence.com</recipient>
+            <recipient>hkim@doctorevidence.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -291,7 +315,15 @@
         <description>Written Proposal/Price Quote - Client Submitted</description>
         <protected>false</protected>
         <recipients>
-            <recipient>mnewton@doctorevidence.com</recipient>
+            <recipient>bob@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>dhodgson@doctorevidence.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sgarcia@doctorevidence.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -302,19 +334,15 @@
         <description>Written Proposal/Price Quote - Internal Review</description>
         <protected>false</protected>
         <recipients>
-            <recipient>ahinojosa@doctorevidence.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
             <recipient>bob@doctorevidence.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>hkim@doctorevidence.com</recipient>
+            <recipient>dhodgson@doctorevidence.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>mnewton@doctorevidence.com</recipient>
+            <recipient>hkim@doctorevidence.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -485,17 +513,6 @@
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>
     <rules>
-        <fullName>DocTimely Opportunity Changed Rule</fullName>
-        <actions>
-            <name>Opportunity_Change_OM</name>
-            <type>OutboundMessage</type>
-        </actions>
-        <active>true</active>
-        <description>Opportunity Changed Rule for DocData Sync</description>
-        <formula>true</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
         <fullName>Sales Plan Opportunity Lock</fullName>
         <active>false</active>
         <criteriaItems>
@@ -519,5 +536,22 @@
             <value>Contracting</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>DocTimely Opportunity Changed Rule</fullName>
+        <actions>
+            <name>Opportunity_Change_OM</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <description>Opportunity Changed Rule for DocData Sync</description>
+        <formula>ISNEW() || 
+ISCHANGED(AccountId) || 
+ISCHANGED(CloseDate) || 
+ISCHANGED(Contract_End__c) || 
+ISCHANGED(Name) || 
+ISCHANGED(Opportunity_ID__c) || 
+ISCHANGED(StageName)</formula>
+        <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

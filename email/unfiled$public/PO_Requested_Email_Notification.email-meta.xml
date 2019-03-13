@@ -8,7 +8,7 @@
     <subject>{!TASKRAY__Project__c.Name} External Vendor Request</subject>
     <textOnly>To Whom it May Concern:
 
-The request for the following preferred vendor and project has been approved by all the parties pending final approval.
+The request for the following preferred vendor and project has been approved by all the parties pending a PO.
 
 Please obtain a PO No. and to enter the PO No. in the Request Form please click here.
 https://doctorevidence.my.com/{!Preferred_Vendor_Request__c.Id} 

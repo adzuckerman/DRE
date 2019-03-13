@@ -4,15 +4,15 @@
  *                
  */
 
-@isTest(seealldata=true)
+@isTest
 public with sharing class ToggleAdminBatchProgressTest {
    
     @isTest
     public static void testToggleAdminBatch() {
         
         ToggleAdminBatchProgress TAB = new ToggleAdminBatchProgress();
-        TAB.noOfDays = '3';
-        TAB.c.StartDate = Date.Today();
+        TAB.noOfDays = '365';
+        TAB.c.StartDate = Date.Today().addDays(-365);
         TAB.c.EndDate = Date.Today();
         
         //Test.setCreatedDate(testCustomLog.Id, Datetime.now().addDays(-100));
@@ -48,6 +48,7 @@ public with sharing class ToggleAdminBatchProgressTest {
             BJP.getBatchJobs();
             //Database.executeBatch(new TogglToSalesforceBatch(), 1);
         Test.stopTest();
+            BJP.getBatchJobs();
 
         List<Account> accounts = [SELECT Id, Name FROM Account];
         List<Toggl_Time_Entry__c> timeEnrtries = [SELECT Id FROM Toggl_Time_Entry__c];

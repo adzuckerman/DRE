@@ -12,9 +12,9 @@
 			var recordName = $('[id$="recordIdName"]').val();
 			var setupObj;
 			setupObj = {
-				title : "MailChimp for Salesforce",
-				pageHeading : "MailChimp List - " + recordName,
-				pageDescription : "Add and configure mappings for your MailChimp list."
+				title : "Mailchimp for Salesforce",
+				pageHeading : "Mailchimp List - " + recordName,
+				pageDescription : "Add and configure mappings for your Mailchimp list."
 			}
 			return setupObj;
 		}

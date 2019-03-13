@@ -95,10 +95,6 @@
                 <behavior>Edit</behavior>
                 <field>Net_Accounts_Receivable__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Opportunity_Amount__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>

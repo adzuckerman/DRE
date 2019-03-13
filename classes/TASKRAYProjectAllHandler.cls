@@ -26,6 +26,7 @@ public class TASKRAYProjectAllHandler {
     //Handler for after Update methods
     public void onAfterUpdate(list<TASKRAY__Project__c> newList, map<id, TASKRAY__Project__c> newMap,  map<id, TASKRAY__Project__c> oldMap) {
         CreateToggleProjet(newList, null, newMap, oldMap);
+        ChangeGAAPClassesBasedOnPOC(newList, oldMap);
     }
 
     //Handler for before Deletes methods
@@ -33,7 +34,29 @@ public class TASKRAYProjectAllHandler {
     //Handler for after Deletes methods
     //public void onAfterDelete(list<TASKRAY__Project__c> oldList , map<id, TASKRAY__Project__c> oldMap) {}
     
-    private static integer NumberOfCallouts = 50;
+    private static integer NumberOfCallouts = 45;
+    
+    private void ChangeGAAPClassesBasedOnPOC(List<TASKRAY__Project__c> newList, Map<id, TASKRAY__Project__c> oldMap) {
+    	
+    	List<TASKRAY__Project__c> pocList = new List<TASKRAY__Project__c>();
+    	for (TASKRAY__Project__c newPrj : newList) {
+    		TASKRAY__Project__c oldPrj = oldMap.get(newPrj.Id);
+			if (newPrj.POC__c == 'POC' && oldPrj.POC__c != 'POC') {
+				pocList.add(newPrj);
+			}
+			if (newPrj.POC__c == 'Not POC' && oldPrj.POC__c != 'Not POC') {
+				pocList.add(newPrj); 
+			}
+    	}
+    	
+    	if (pocList.size() > 0) {
+    		List<Toggl_Time_Entry__c> tes = [SELECT Id, Project_Name__c, Account__r.Name, Start_Date__c FROM Toggl_Time_Entry__c WHERE Project__c IN :pocList OR Sub_Project__r.TASKRAY__Project_Parent__c IN :pocList];
+    		if (tes.size() > 0) {
+    			TogglGAAPClassBatch.SetGAAPClass(tes, false);
+    		}
+    	}
+    	
+    }
     
     private void CreateToggleProjet(list<TASKRAY__Project__c>newList, list<TASKRAY__Project__c>oldList, map<id, TASKRAY__Project__c> newMap, map<id, TASKRAY__Project__c> oldMap) {
         Set<Id> TProjectIds = new Set<Id>();
@@ -98,13 +121,20 @@ public class TASKRAYProjectAllHandler {
     // Add Toggle Project to Archive (Active = false) when Salesforce TASKRAY__Project is archived
     private void AutoArchiveTogglProject(list<TASKRAY__Project__c>newList, list<TASKRAY__Project__c>oldList, map<id, TASKRAY__Project__c> newMap, map<id, TASKRAY__Project__c> oldMap) {
         Set<String> TProjectIds = new Set<String>();
+        List<Messaging.SingleEmailMessage> emails = new List<Messaging.SingleEmailMessage>();
         for(TASKRAY__Project__c proj : newList) {
             TASKRAY__Project__c oldProject = oldMap.get(proj.Id);
-            if( oldProject.Archived_Date__c == null && proj.Archived_Date__c != null) {
+            if (proj.Archived_Date__c != null && proj.Archived_Date__c != oldProject.Archived_Date__c) {
                 if (proj.Toggl_Id__c != null && proj.Toggl_Id__c != '') {
                 	TProjectIds.add(proj.Toggl_Id__c); 
                 }else {
-                    // TODO: Error handling ?
+                    Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+                    mail.setToAddresses(new String[] { UserInfo.getUserEmail() });
+                    mail.setSenderDisplayName('Salesforce');
+                    mail.setSubject('Archived Project doesn\'t have a Toggl Id');
+                    mail.setUseSignature(false);
+                    mail.setHtmlBody('Project ' + proj.Name + ' could not be archived in Toggl because it doesn\'t have a Toggl Id.');
+                    emails.add(mail);
                 }
             }
         }
@@ -159,6 +189,10 @@ public class TASKRAYProjectAllHandler {
                 }
             }
             
+        }
+        
+        if (emails.size() > 0) {
+            Messaging.sendEmail(emails);
         }
     }
     

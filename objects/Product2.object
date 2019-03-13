@@ -139,16 +139,6 @@
         <trackHistory>false</trackHistory>
         <type>Percent</type>
     </fields>
-    <fields>
-        <fullName>Pseudo_Key__c</fullName>
-        <externalId>true</externalId>
-        <label>Pseudo Key</label>
-        <length>255</length>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <searchLayouts>
@@ -171,7 +161,13 @@
     <sharingModel>ReadWrite</sharingModel>
     <listViews>
         <fullName>AllProducts</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>PRODUCT2.DESCRIPTION</columns>
+        <columns>PRODUCT2.FAMILY</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>PRODUCT2.LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
-        <label>All Products</label>
+        <label>All Price Allocations</label>
     </listViews>
 </CustomObject>

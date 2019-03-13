@@ -145,6 +145,10 @@
         <errorMessage><!-- Litmos is already activated for this user --></errorMessage>
         <name>Litmos__Litmos_Validation</name>
     </validationRules>
+    <validationRules>
+        <errorMessage><!-- The User Department, Division, or Title were found to be blank. Please complete these fields to save the User record. --></errorMessage>
+        <name>Incomplete_User_Fields</name>
+    </validationRules>
     <webLinks>
         <label><!-- Sync_Training_Now --></label>
         <name>Litmos__Sync_Training_Now</name>

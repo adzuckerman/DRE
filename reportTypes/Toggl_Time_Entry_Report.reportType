@@ -38,7 +38,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Duration_Computed__c</field>
+            <table>Toggl_Time_Entry__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>End_Date__c</field>
+            <table>Toggl_Time_Entry__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GAAP_Class__c</field>
             <table>Toggl_Time_Entry__c</table>
         </columns>
         <columns>
@@ -49,6 +59,21 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedDate</field>
+            <table>Toggl_Time_Entry__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c</field>
+            <table>Toggl_Time_Entry__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity_ID__c</field>
+            <table>Toggl_Time_Entry__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity_Stage_Name__c</field>
             <table>Toggl_Time_Entry__c</table>
         </columns>
         <columns>

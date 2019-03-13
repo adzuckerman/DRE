@@ -449,6 +449,18 @@
         <name>TaskRay_Project__c</name>
         <relationshipLabel><!-- Project Requests --></relationshipLabel>
     </fields>
+    <fields>
+        <label><!-- Intention to Publish --></label>
+        <name>Intention_to_Publish__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
     <caseValues>
         <plural>false</plural>
         <value>Project Request</value>

@@ -84,6 +84,10 @@
         <name>Opportunity__c</name>
         <relationshipLabel><!-- Invoices --></relationshipLabel>
     </fields>
+    <fields>
+        <label><!-- Opportunity Amount --></label>
+        <name>Opportunity_Amount__c</name>
+    </fields>
     <caseValues>
         <plural>false</plural>
         <value>Invoice</value>

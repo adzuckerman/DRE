@@ -22,8 +22,8 @@
 var headerSetupObject = function(){
 	var setupObj;
 	setupObj = {
-		title : "MailChimp for Salesforce",
-		pageHeading : "MailChimp Membership",
+		title : "Mailchimp for Salesforce",
+		pageHeading : "Mailchimp Membership",
 	}
 	return setupObj;
 };

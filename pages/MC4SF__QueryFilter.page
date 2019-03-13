@@ -38,7 +38,7 @@
 		<h2 class="slds-text-heading_large slds-p-bottom_small ">Build Filters</h2>
 
 
-	  <p>Select the list to populate with this query's results. You may also select segments and interests for your selected list.</p>
+	  <p>Select the list to populate with this query's results. You may also select tags and interests for your selected list.</p>
 
 		<div class="slds-p-vertical_medium">
 			<div class="slds-form-element" style="display: inline-block;">
@@ -324,7 +324,7 @@
 	var headerSetupObject = function(){
 		var setupObj;
 		setupObj = {
-			title : "MailChimp for Salesforce",
+			title : "Mailchimp for Salesforce",
 			pageHeading : "New Query",
 			pageDescription : "Use this tool to create a new query that will be used to determine the Salesforce data you want to migrate to Mailchimp"
 		}

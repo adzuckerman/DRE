@@ -170,4 +170,11 @@
         <filterScope>Everything</filterScope>
         <label>All Users</label>
     </listViews>
+    <validationRules>
+        <fullName>Incomplete_User_Fields</fullName>
+        <active>false</active>
+        <description>Incomplete user fields.</description>
+        <errorConditionFormula>OR(Department  = "", Division = "", Title = "")</errorConditionFormula>
+        <errorMessage>The User Department, Division, or Title were found to be blank. Please complete these fields to save the User record.</errorMessage>
+    </validationRules>
 </CustomObject>
